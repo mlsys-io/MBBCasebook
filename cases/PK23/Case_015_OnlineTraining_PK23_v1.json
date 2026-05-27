@@ -1,0 +1,599 @@
+{
+  "case_id": "015",
+  "version": "v1",
+  "source": {
+    "title": "Online training",
+    "inspired_by": "McKinsey & Company",
+    "year": "2022",
+    "author": "Peter K.",
+    "reference": "Peter-K.org, Case #15",
+    "casebook_abbr": "PK23"
+  },
+  "case_type": "interviewer_driven",
+  "case_type_origin": null,
+  "annotation_mode": null,
+  "case_arch": {
+    "primary": "Implementation",
+    "tags": [
+      "Implementation",
+      "Operational Efficiency"
+    ],
+    "standard_tags": [
+      "Profitability",
+      "Market Entry",
+      "Revenue Growth",
+      "Cost Optimization",
+      "Investment Decision",
+      "Merger and Acquisition",
+      "Pricing Strategy",
+      "Growth Strategy",
+      "Operational Efficiency",
+      "Due Diligence",
+      "Market Sizing",
+      "Competitive Response",
+      "Digital Transformation",
+      "Turnaround / Restructuring",
+      "Supply Chain",
+      "Comparison",
+      "Implementation"
+    ]
+  },
+  "difficulty": "Hard",
+  "industry": "Financial Services / Asset Management",
+  "topic": "Implementation — design and rollout of an online training program for financial consultants at a global asset management firm",
+  "expected_duration_minutes": "15-20",
+  "opening_prompt": "Hi, I'd like to solve some consulting cases with you. Pls be a good interviewee to have a potential test in consulting cases. For the case problem-solving, pls do not assume any numbers or assumptions before my confirmation. I will give you the context upon request. I need you to answer the following questions for the client. Before you start, feel free to ask me 2-3 clarifying questions about the client.\n\nCase Questions:\nQ1. What do you want to know in order to design and implement the online training program to educate financial consultants on SI's mutual funds and sales techniques?\nQ2. The client has piloted three modules of the learning program. Could you calculate how many consultants successfully graduated from the pilot program?\nQ3. The pilot showed low completion rate and low overall learning outcome. What could we do to increase completion rate and learning outcome in the next pilot?\nQ4. Poor pilot results also revealed misalignment and lack of clarity in expected goals. What success metrics of the online training program do you think SI should track and target?\n\nHere is the basic context for the client:\nOur client is Shey Investment, SI, a British-American global asset management group. They offer a range of financial products to individuals, intermediary advisors and institutional investors. SI manages $290B in assets. Over the last several years SI expanded its offerings of mutual funds that its financial consultants should know well to advise them to SI's clients. The CEO has hired your team to build an online training program aimed at educating all 300 financial consultants on mutual funds and sales techniques to effectively close client deals related to these mutual funds. What do you need to know to design and implement this online training program?",
+  "structure_1_client_basic_context": {
+    "company": "Shey Investment (SI)",
+    "type": "British-American global asset management group",
+    "situation": "SI manages $290B in assets. Over the last several years SI expanded its offerings of mutual funds that its financial consultants should know well to advise them to SI's clients.",
+    "action": "The CEO has hired your team to build an online training program aimed at educating all 300 financial consultants on mutual funds and sales techniques to effectively close client deals related to these mutual funds.",
+    "ask": "What do you need to know to design and implement this online training program?"
+  },
+  "structure_2_information_upon_request": {
+    "item_1": {
+      "item_id": "item_1",
+      "trigger": "Analyst asks about or includes 'mutual funds portfolio / fund types / product breadth' in their framework or questions",
+      "core_dimensional_concept": "SI mutual fund offerings breadth and types",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar (e.g. 'Online training program content / Required content')",
+          "sub-bullet under product or content pillar",
+          "explicit clarifying question about fund types or number of funds",
+          "hypothesis-driven assumption about product complexity"
+        ],
+        "alternative_phrasings": [
+          "types of mutual funds",
+          "product range",
+          "fund categories",
+          "breadth of offerings",
+          "equities and bonds"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'funds' only in passing as part of describing SI's business (e.g. 'SI offers mutual funds to clients') without making it a structural question about content scope — F passing mention",
+        "Analyst asks about client financials without specifically probing fund type diversity — G adjacent dimension"
+      ],
+      "info": "SI offers 50+ different mutual funds. A mutual fund is an investment fund that pools money from many investors to purchase securities; different types of mutual funds invest in different types of securities (e.g. equities, bonds)"
+    },
+    "item_2": {
+      "item_id": "item_2",
+      "trigger": "Analyst asks about or includes 'SI revenue / financial health / budget / management fees' in their framework or questions",
+      "core_dimensional_concept": "SI revenue profile and financial capacity",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar (e.g. 'Financial feasibility / Budget')",
+          "sub-bullet under feasibility or financial pillar",
+          "explicit clarifying question about SI's revenue or financial standing",
+          "hypothesis-driven assumption about budget availability"
+        ],
+        "alternative_phrasings": [
+          "revenue base",
+          "management fees",
+          "financial capacity",
+          "budget for training",
+          "company financials"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'cost' or 'budget' only as a concern without specifically asking about SI's revenue or financial position — F passing mention",
+        "Analyst asks about profitability of individual funds rather than SI's overall revenue — G adjacent dimension"
+      ],
+      "info": "SI enjoys $2.2B in revenue, mostly from management fees (2022)"
+    },
+    "item_3": {
+      "item_id": "item_3",
+      "trigger": "Analyst asks about or includes 'number of employees / workforce size / headcount' in their framework or questions",
+      "core_dimensional_concept": "SI employee base and workforce scale",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar (e.g. 'Financial consultants [learners] / Target audience')",
+          "sub-bullet under learner audience or scale pillar",
+          "explicit clarifying question about company size or employee count",
+          "hypothesis-driven assumption about training scale"
+        ],
+        "alternative_phrasings": [
+          "employee count",
+          "headcount",
+          "company size",
+          "number of staff",
+          "workforce"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions employees only as incidental context (e.g. 'SI is a large company') without asking about specific workforce size — F passing mention",
+        "Analyst asks about number of financial consultants specifically (that is already in structure_1) — G adjacent dimension already covered"
+      ],
+      "info": "SI employs 3,000 full-time employees globally"
+    },
+    "item_4": {
+      "item_id": "item_4",
+      "trigger": "Analyst asks about or includes 'existing / current training / in-house training / internal courses' in their framework or questions",
+      "core_dimensional_concept": "SI existing internal training infrastructure",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar (e.g. 'Current knowledge and capability gaps / Existing programs')",
+          "sub-bullet under current state or baseline assessment pillar",
+          "explicit clarifying question about existing training programs or materials",
+          "hypothesis-driven assumption about training maturity"
+        ],
+        "alternative_phrasings": [
+          "current training",
+          "existing programs",
+          "in-house courses",
+          "internal learning",
+          "training baseline"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions training only in the context of the new program being designed, not asking about what already exists — F passing mention",
+        "Analyst asks about external vendors without first asking about internal training status — G adjacent dimension"
+      ],
+      "info": "SI uses an internally designed basic online courses that financial consultants take to learn about SI's mutual funds, contracts, legal aspects, etc."
+    },
+    "item_5": {
+      "item_id": "item_5",
+      "trigger": "Analyst asks about or includes 'external vendors / outsourcing / third-party training / workshops' in their framework or questions",
+      "core_dimensional_concept": "SI current external vendor training arrangement",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar (e.g. 'Implementation / Build vs buy / Vendor management')",
+          "sub-bullet under implementation or resource pillar",
+          "explicit clarifying question about use of external providers or vendors",
+          "hypothesis-driven assumption about outsourcing vs in-house build"
+        ],
+        "alternative_phrasings": [
+          "external providers",
+          "outsourced training",
+          "third-party vendors",
+          "workshops",
+          "build vs buy"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions sales techniques only in the context of what consultants should learn, not probing how training is currently delivered — F passing mention",
+        "Analyst asks about training content without asking about the delivery mechanism or vendor status — G adjacent dimension"
+      ],
+      "info": "Currently SI hires vendors that conduct a series of workshops for financial consultants to improve their sales skills to sell more mutual funds"
+    }
+  },
+  "structure_3_case_questions": {
+    "Q1": {
+      "q_id": "Q1",
+      "type": "framework",
+      "question_text": "What do you want to know in order to design and implement the online training program to educate financial consultants on SI's mutual funds and sales techniques?",
+      "information_to_share_upfront": null,
+      "information_upon_request": "See structure_2 items 1-5. Release only items per semantic touch judgment; not by mere keyword presence.",
+      "state_machine": {
+        "next_question": "Q2",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable framework answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q2": {
+      "q_id": "Q2",
+      "type": "quantitative",
+      "question_text": "The client has piloted three modules of the learning program. Could you calculate how many consultants successfully graduated from the pilot program?",
+      "information_to_share_upfront": [
+        "Please share with the candidate the following information: There are three consecutive online modules and each module had a different completion rate. In order to move to the next module learners should complete the previous one. To graduate from the pilot program learners should pass an exam."
+      ],
+      "information_upon_request": [
+        {
+          "item_id": "Q2_item_1",
+          "trigger": "Analyst asks for the number of participants, or asks how many consultants participated in the pilot",
+          "core_dimensional_concept": "pilot participant count",
+          "release_conditions": {
+            "structural_position": [
+              "explicit clarifying question about participant number",
+              "sub-bullet under calculation setup asking for total N",
+              "hypothesis-driven assumption about pilot size"
+            ],
+            "alternative_phrasings": [
+              "how many people in the pilot",
+              "number of participants",
+              "pilot group size",
+              "total learners"
+            ]
+          },
+          "disqualifying": [
+            "Analyst starts calculating without asking for the base number — not a trigger, just absent"
+          ],
+          "info": "40 financial consultants participated in the pilot"
+        },
+        {
+          "item_id": "Q2_item_2",
+          "trigger": "Analyst asks for Module 1 completion rate",
+          "core_dimensional_concept": "Module 1 completion rate",
+          "release_conditions": {
+            "structural_position": [
+              "explicit clarifying question about module 1 data",
+              "sub-bullet in calculation asking for module-by-module rates"
+            ],
+            "alternative_phrasings": [
+              "module 1 pass rate",
+              "first module completion",
+              "how many finished module 1"
+            ]
+          },
+          "disqualifying": [
+            "Analyst asks about overall completion without specifying module-level data — G adjacent dimension"
+          ],
+          "info": "90% of learners completed Module 1"
+        },
+        {
+          "item_id": "Q2_item_3",
+          "trigger": "Analyst asks for Module 2 completion or dropout rate",
+          "core_dimensional_concept": "Module 2 dropout rate",
+          "release_conditions": {
+            "structural_position": [
+              "explicit clarifying question about module 2 data",
+              "sub-bullet in calculation asking for module-by-module rates"
+            ],
+            "alternative_phrasings": [
+              "module 2 completion",
+              "dropped out on module 2",
+              "second module attrition"
+            ]
+          },
+          "disqualifying": [
+            "Analyst asks about overall attrition without specifying module 2 — G adjacent dimension"
+          ],
+          "info": "One third of learners dropped out on Module 2"
+        },
+        {
+          "item_id": "Q2_item_4",
+          "trigger": "Analyst asks for Module 3 completion rate",
+          "core_dimensional_concept": "Module 3 completion rate",
+          "release_conditions": {
+            "structural_position": [
+              "explicit clarifying question about module 3 data",
+              "sub-bullet in calculation asking for module-by-module rates"
+            ],
+            "alternative_phrasings": [
+              "module 3 completion",
+              "third module pass rate",
+              "how many finished module 3"
+            ]
+          },
+          "disqualifying": [
+            "Analyst asks about overall completion without specifying module 3 — G adjacent dimension"
+          ],
+          "info": "75% of learners completed Module 3"
+        },
+        {
+          "item_id": "Q2_item_5",
+          "trigger": "Analyst asks for the exam pass rates (first and second attempt)",
+          "core_dimensional_concept": "final exam pass rates by attempt",
+          "release_conditions": {
+            "structural_position": [
+              "explicit clarifying question about exam pass rate",
+              "sub-bullet in calculation asking about exam outcomes",
+              "hypothesis-driven assumption about exam pass rate"
+            ],
+            "alternative_phrasings": [
+              "exam pass rate",
+              "first attempt pass rate",
+              "second attempt pass rate",
+              "graduation exam results"
+            ]
+          },
+          "disqualifying": [
+            "Analyst asks about overall graduation rate without probing exam attempt breakdown — G adjacent dimension"
+          ],
+          "info": "Out of the learners who completed all three modules, 50% passed the exam on their 1st attempt and 70% of the rest passed it on the 2nd attempt"
+        }
+      ],
+      "appendix": {
+        "appendix_Q2_pilot_data": {
+          "title": "Q2 Pilot Program Data (share upfront)",
+          "release_rule": "Share the upfront information at the start of Q2; remaining data points released upon request per Q2_item_1 through Q2_item_5",
+          "table": {
+            "upfront_information": {
+              "structure": "Three consecutive online modules; each module has a different completion rate",
+              "prerequisite": "In order to move to the next module learners should complete the previous one",
+              "graduation_requirement": "To graduate from the pilot program learners should pass an exam"
+            },
+            "upon_request_data": {
+              "pilot_participants": "40 financial consultants",
+              "module_1_completion_rate": "90%",
+              "module_2_dropout_rate": "One third of learners dropped out on Module 2",
+              "module_3_completion_rate": "75%",
+              "exam_pass_rate_1st_attempt": "50% of those who completed all three modules",
+              "exam_pass_rate_2nd_attempt": "70% of those who did not pass on 1st attempt"
+            }
+          }
+        }
+      },
+      "state_machine": {
+        "next_question": "Q3",
+        "skip_logic": false,
+        "max_attempts": 2,
+        "scoring_on_transition": {
+          "attempt_1_correct": "Full score",
+          "attempt_2_correct": "0 score per core_principles",
+          "both_attempts_wrong": "0 score; interviewer provides correct answer (15 out of 40) before Q3"
+        },
+        "transition_condition": "Analyst provides a numerical answer (1st or 2nd attempt completed)"
+      }
+    },
+    "Q3": {
+      "q_id": "Q3",
+      "type": "qualitative",
+      "question_text": "The pilot showed low completion rate and low overall learning outcome. What could we do to increase completion rate and learning outcome in the next pilot?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q4",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q4": {
+      "q_id": "Q4",
+      "type": "qualitative",
+      "question_text": "Poor pilot results also revealed misalignment and lack of clarity in expected goals. What success metrics of the online training program do you think SI should track and target?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": null,
+        "skip_logic": false,
+        "transition_condition": "Case ends after Q4"
+      }
+    }
+  },
+  "structure_4_ground_truth": {
+    "Q1_ground_truth": {
+      "type": "framework",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_online_training_program_educators": {
+          "keypoints": [
+            "Program architecture (e.g. asynchronous, webinars, tests)",
+            "Required content (e.g. mutual funds info, legal aspects)",
+            "Expected learning outcomes (e.g. knowledge, sales skill boost)"
+          ],
+          "subtotal": 3
+        },
+        "pillar_2_financial_consultants_learners": {
+          "keypoints": [
+            "Target audience of consultants (e.g. geo, size, roles)",
+            "Current knowledge and capability gaps",
+            "Success metrics for learners (e.g. sales increase, learner satisfaction)"
+          ],
+          "subtotal": 3
+        },
+        "pillar_3_feasibility_assessment": {
+          "keypoints": [
+            "Required talent to design the program (e.g. instructional designers, subject matter experts)",
+            "Operational feasibility (e.g. time, complexity)",
+            "Financial feasibility (e.g. capex required)",
+            "Maintenance of the program in future"
+          ],
+          "subtotal": 4
+        },
+        "pillar_4_implementation": {
+          "keypoints": [
+            "PMO (project management office) and team",
+            "Workstreams (incl. deliverables, ownership and deadlines)",
+            "Expected milestones (e.g. 30-60-90 days)"
+          ],
+          "subtotal": 3
+        }
+      },
+      "total_keypoints": 13,
+      "minimum_expected": "Cover at least 2 pillars with at least 2 keypoints each (covering educators/content and learners dimensions at minimum)",
+      "outstanding_threshold": "Cover all 4 pillars with majority of keypoints covered across all pillars"
+    },
+    "Q2_ground_truth": {
+      "type": "quantitative",
+      "quantitative_part": {
+        "correct_final_answer": "15 participants (15 out of 40 financial consultants graduated from the pilot program)",
+        "accepted_values": [
+          15
+        ],
+        "tolerance_pct": 0.0,
+        "zero_tolerance": true,
+        "scoring_method": "Binary: correct number = full credit; incorrect = zero credit",
+        "calculation_steps": {
+          "step_1_learners_completing_all_three_modules": {
+            "formula": "40 participants × 90% × (1 - 1/3) × 75%",
+            "result": "40 × 0.9 × (2/3) × 0.75 = 18 participants completed all three modules"
+          },
+          "step_2_passed_on_1st_attempt": {
+            "formula": "18 participants × 50%",
+            "result": "9 participants passed exam on 1st attempt"
+          },
+          "step_3_passed_on_2nd_attempt": {
+            "formula": "(18 - 9) participants × 70%",
+            "result": "9 × 70% = 6.3 → 6 participants passed exam on 2nd attempt"
+          },
+          "step_4_total_graduates": {
+            "formula": "9 participants + 6 participants",
+            "result": "15 participants total graduated"
+          }
+        }
+      },
+      "qualitative_part": {
+        "scoring_note": "Qualitative portion of Q2 is scored as 100% total, split into two tiers. Within each tier, use 3-level scoring per",
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "tier_1_basic": {
+          "weight_of_Q2_qualitative_total": "50%",
+          "keypoints": [
+            "15, or less than half of the initial participants, successfully graduated from the pilot program"
+          ],
+          "note": "Expected from every candidate. Single point worth 50% of qualitative score."
+        },
+        "tier_2_advanced": {
+          "weight_of_Q2_qualitative_total": "50%",
+          "points_available": 3,
+          "weight_per_point": "~16.7% of qualitative total",
+          "keypoints": [
+            "While the exam pass rate sounds reasonable (15 out of 18), it's alarming to see such a low completion rate (18 out of 40, or less than half) which might be driven by the low quality of the training materials, low motivation or busy schedules of consultants",
+            "40 participants is more than 10% of 300 financial consultants which likely makes the pilot results statistically representative",
+            "While the end-of-course knowledge testing is important, what matters the most is if this online training program will bring material change in consultants' work. For example, if it will lead to sales increase or fewer mistakes in advising clients"
+          ],
+          "note": "Not expected from every candidate. Each advanced point adds ~16.7% to qualitative score."
+        },
+        "minimum_expected": "Correct numerical answer (15) + Tier 1 basic contextualization (covered)",
+        "outstanding_threshold": "Correct numerical answer (15) + Tier 1 covered + at least 2 Tier 2 advanced comments covered"
+      }
+    },
+    "Q3_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_increase_quality_of_video_content": {
+          "keypoints": [
+            "Make more engaging - Shorten videos (e.g. microlearning)",
+            "Make more engaging - Improve storytelling and avoid dry language",
+            "Make more engaging - Change teaching techniques every 10-15 min to avoid attention fatigue",
+            "Offer more practical examples of how this will help consultants",
+            "Validate the content with subject matter experts",
+            "Set strict deadlines to create sense of urgency",
+            "Offer rewards/bonuses for best exam scores"
+          ],
+          "subtotal": 7
+        },
+        "pillar_2_offer_more_opportunities_to_practice": {
+          "keypoints": [
+            "Incorporate more quick quizzes throughout modules",
+            "Add mandatory reflective journaling to solidify learnings (e.g. \"Which of my clients would I offer this mutual fund, and what factors will gauge their interest in it?\")",
+            "Create app-based flashcards for additional practice",
+            "Offer optional drill exercises"
+          ],
+          "subtotal": 4
+        },
+        "pillar_3_make_it_social": {
+          "keypoints": [
+            "Allow comments and in-course discussions",
+            "Crowd-source opinions on complex topics",
+            "Do in-course surveys and share aggregated results",
+            "Ensure social pressure (e.g. share anonymised progress curve, percentiles)",
+            "Encourage peer-to-peer practice where possible"
+          ],
+          "subtotal": 5
+        },
+        "pillar_4_provide_post_graduation_learning_options": {
+          "keypoints": [
+            "Offer 1-on-1 mentorship to solidify learnings",
+            "Conduct another exam 3 months after graduation",
+            "Create app-based exercises for consultants to revisit materials during their commute or work-out"
+          ],
+          "subtotal": 3
+        }
+      },
+      "total_keypoints": 19,
+      "minimum_expected": "Cover at least 2 pillars with at least 2 keypoints each",
+      "outstanding_threshold": "Cover all 4 pillars with at least 2-3 keypoints per pillar (7+ keypoints total)"
+    },
+    "Q4_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_learning_outcomes": {
+          "keypoints": [
+            "Program completion rate",
+            "Pass rate of the program's exam",
+            "Long-term retained knowledge and skills (e.g. 3 months/6 months after program completion)",
+            "% of learners that received industry certificates (in case they exist)",
+            "Learners' satisfaction",
+            "Acknowledgement as best-in-class training program in the industry by independent experts"
+          ],
+          "subtotal": 6
+        },
+        "pillar_2_business_results": {
+          "keypoints": [
+            "Sales increase - Number of new clients and amount of new funds",
+            "Sales increase - Cross-selling and up-selling for existing clients",
+            "Improvement in customer satisfaction",
+            "Number and frequency of advising mistakes",
+            "Improvement in brand perception due to higher quality of investment advising"
+          ],
+          "subtotal": 5
+        }
+      },
+      "total_keypoints": 11,
+      "minimum_expected": "Cover at least 1 learning outcome metric and 1 business result metric (at least 3 keypoints total)",
+      "outstanding_threshold": "Cover both pillars with at least 3 keypoints each (covering both learning and business dimensions comprehensively)"
+    }
+  },
+  "state_machine_global": {
+    "case_type": "interviewer_driven",
+    "skip_logic": false,
+    "mandatory_sequence": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4"
+    ],
+    "rules": [
+      "Q1 cannot be skipped under any circumstances",
+      "Questions must proceed in linear order Q1 → Q2 → Q3 → Q4",
+      "A question may not be advanced until the current question receives a scoreable answer (1st or 2nd attempt)",
+      "If analyst pre-covers a later question's keypoints in an earlier answer, record as pre-coverage but still ask the later question in sequence",
+      "No question may be skipped even if pre-covered"
+    ]
+  },
+  "scoring_summary": {
+    "Q1": {
+      "type": "framework",
+      "total_keypoints": 13,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q2": {
+      "type": "quantitative",
+      "part_1_quantitative": {
+        "correct_answer": "15 participants",
+        "zero_tolerance": true,
+        "scoring": "Binary: Full credit if correct; zero credit if incorrect"
+      },
+      "part_2_qualitative": {
+        "total_keypoints": 4,
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "human_review_priority": "false-partial > false-not-covered > covered",
+        "tier_1_basic": {
+          "keypoints": 1,
+          "weight": "50% of qualitative score"
+        },
+        "tier_2_advanced": {
+          "keypoints": 3,
+          "weight_per_point": "~16.7% of qualitative score",
+          "weight_total": "50% of qualitative score"
+        }
+      }
+    },
+    "Q3": {
+      "type": "qualitative",
+      "total_keypoints": 19,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q4": {
+      "type": "qualitative",
+      "total_keypoints": 11,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    }
+  }
+}

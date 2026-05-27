@@ -1,0 +1,551 @@
+{
+  "case_id": "003",
+  "version": "v1",
+  "source": {
+    "title": "Climate Change",
+    "inspired_by": "McKinsey & Company",
+    "year": "2022",
+    "author": "Peter K.",
+    "reference": "Peter-K.org, Case #3",
+    "casebook_abbr": "PK23"
+  },
+  "case_type": "interviewer_driven",
+  "case_type_origin": null,
+  "annotation_mode": null,
+  "case_arch": {
+    "primary": "Wild Card",
+    "tags": [
+      "Wild Card",
+      "Growth Strategy",
+      "Operational Efficiency"
+    ],
+    "standard_tags": [
+      "Profitability",
+      "Market Entry",
+      "Revenue Growth",
+      "Cost Optimization",
+      "Investment Decision",
+      "Merger and Acquisition",
+      "Pricing Strategy",
+      "Growth Strategy",
+      "Operational Efficiency",
+      "Due Diligence",
+      "Market Sizing",
+      "Competitive Response",
+      "Digital Transformation",
+      "Turnaround / Restructuring",
+      "Supply Chain",
+      "Comparison",
+      "Wild Card"
+    ]
+  },
+  "difficulty": "Hard",
+  "industry": "Government / Public Policy / Environment",
+  "topic": "Wild Card — Building a plan to reduce GHG emissions and foster climate resilience for a West European country",
+  "expected_duration_minutes": "15-20",
+  "opening_prompt": "Hi, I'd like to solve some consulting cases with you. Pls be a good interviewee to have a potential test in consulting cases. For the case problem-solving, pls do not assume any numbers or assumptions before my confirmation. I will give you the context upon request. I need you to answer the following questions for the client. Before you start, feel free to ask me 2-3 clarifying questions about the client.\n\nQ1: What factors would you consider in building a plan to reduce GHG emissions in Franland?\nQ2: What solutions can you come up with to reduce Franland's GHG emissions?\nQ3: By how much (percentage-wise) will Franland be able to decrease GHG emissions from 2021 to 2030?\nQ4: In case of ongoing high GHG emissions, Franland would like to be ready for the adverse effects of climate change. What initiatives to foster climate resilience can you suggest?\n\nHere is the basic context for the client:\nThe government of a West European country Franland has been under international pressure recently to accelerate the decarbonization of its economy. According to scientists, to reverse the odds of the most dangerous and irreversible effects of climate change, the countries should cooperate to limit global warming to 1.5 degrees Celsius by 2030. In particular, Franland should reduce its greenhouse gas (GHG) emissions by 20% by 2030. They have hired your team to help them out. What factors would you consider in building a plan to reduce GHG emissions?",
+  "structure_1_client_basic_context": {
+    "company": "Franland Government",
+    "type": "West European country government",
+    "situation": "The government of a West European country Franland has been under international pressure recently to accelerate the decarbonization of its economy. According to scientists, to reverse the odds of the most dangerous and irreversible effects of climate change, the countries should cooperate to limit global warming to 1.5 degrees Celsius by 2030.",
+    "action": "Franland should reduce its greenhouse gas (GHG) emissions by 20% by 2030.",
+    "ask": "They have hired your team to help them out. What factors would you consider in building a plan to reduce GHG emissions?"
+  },
+  "structure_2_information_upon_request": {
+    "item_1": {
+      "item_id": "item_1",
+      "trigger": "Analyst asks about or includes the size/profile of Franland's population or economy in their framework",
+      "core_dimensional_concept": "Franland population size and economic profile",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet about country profile or background",
+          "explicit clarifying question about Franland's size or economy",
+          "hypothesis about Franland being a developed country",
+          "sub-bullet under 'GHG emissions in Franland' or 'country context'"
+        ],
+        "alternative_phrasings": [
+          "country size",
+          "population",
+          "economic development level",
+          "GDP per capita",
+          "developed vs developing country"
+        ]
+      },
+      "disqualifying": [
+        "Analyst merely mentions 'country' or 'economy' as part of describing the broader climate change context — passing reference without structural focus on Franland's specific profile (F passing pattern)",
+        "Analyst mentions 'economic impact of climate change' as a risk sub-bullet — that is climate impact dimension, not Franland's economic profile (G adjacent dimension pattern)"
+      ],
+      "info": "Franland is a developed country with 60M people"
+    },
+    "item_2": {
+      "item_id": "item_2",
+      "trigger": "Analyst asks about or includes Franland's key economic sectors or industry structure in their framework",
+      "core_dimensional_concept": "Franland economic sector structure",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet listing the sectors of the economy",
+          "explicit clarifying question about which sectors drive GHG emissions",
+          "hypothesis about dominant industries in Franland",
+          "enumeration of sectors (e.g., '1. Industry, 2. Agriculture, 3. Transportation')"
+        ],
+        "alternative_phrasings": [
+          "key sectors",
+          "industries",
+          "economic sectors",
+          "sector breakdown",
+          "major contributors to economy"
+        ]
+      },
+      "disqualifying": [
+        "Analyst says 'sectors that emit GHG' in the context of listing emission sources — that is about GHG contributors, not Franland's economic sector structure specifically (G adjacent dimension pattern)",
+        "Analyst mentions 'industrial activity' as part of a general GHG framework without probing which sectors define Franland's economy (F passing pattern)"
+      ],
+      "info": "Franland enjoys multiple strong sectors — industries, agriculture, power/energy, transportation, etc."
+    },
+    "item_3": {
+      "item_id": "item_3",
+      "trigger": "Analyst asks about or includes Franland's current GHG emission level or baseline data in their framework",
+      "core_dimensional_concept": "Franland current GHG emission baseline",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet about current GHG level or historical data",
+          "explicit clarifying question about how much GHG Franland currently emits",
+          "hypothesis about Franland's emission volume",
+          "enumeration listing 'current level of emissions' as a dimension to analyze"
+        ],
+        "alternative_phrasings": [
+          "current emission level",
+          "GHG baseline",
+          "how much does Franland emit",
+          "emission volume",
+          "historical GHG data"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions '20% reduction target' from the prompt without probing the absolute current level — that is the target, not the baseline data (G adjacent dimension pattern)",
+        "Analyst refers to 'benchmarking vs other countries' without specifically asking for Franland's own current figure (F passing pattern)"
+      ],
+      "info": "Franland's GHG emissions were ~360 metric tons of carbon dioxide equivalent (MtCO2e) in 2021"
+    },
+    "item_4": {
+      "item_id": "item_4",
+      "trigger": "Analyst asks about or includes the trajectory or trend of Franland's GHG emissions in their framework",
+      "core_dimensional_concept": "Franland GHG emission trend and sufficiency gap",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet about emission trend or trajectory",
+          "explicit clarifying question about whether emissions are already declining",
+          "hypothesis about whether current policies are sufficient to meet the 2030 target",
+          "analysis of gap between current trajectory and required target"
+        ],
+        "alternative_phrasings": [
+          "emission trend",
+          "trajectory",
+          "current pace of reduction",
+          "are emissions declining",
+          "policy gap",
+          "sufficiency of current measures"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'the 20% target by 2030' from the prompt without asking whether current trends suggest Franland is on track — that is restating the goal, not probing the trajectory gap (F passing pattern)",
+        "Analyst discusses future emission reduction solutions without first establishing whether the current trend is sufficient (G adjacent dimension — they are discussing solutions, not trajectory)"
+      ],
+      "info": "Franland's GHG emissions are expected to keep declining, but not fast enough to meet its national mitigation targets by 2030"
+    }
+  },
+  "structure_3_case_questions": {
+    "Q1": {
+      "q_id": "Q1",
+      "type": "framework",
+      "question_text": "What factors would you consider in building a plan to reduce GHG emissions in Franland?",
+      "information_to_share_upfront": null,
+      "information_upon_request": "See structure_2 items 1-4. Release only by semantic touch; not by mere keyword presence.",
+      "state_machine": {
+        "next_question": "Q2",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable framework answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q2": {
+      "q_id": "Q2",
+      "type": "qualitative",
+      "question_text": "What solutions can you come up with to reduce Franland's GHG emissions?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q3",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q3": {
+      "q_id": "Q3",
+      "type": "quantitative",
+      "question_text": "By how much (percentage-wise) will Franland be able to decrease GHG emissions from 2021 to 2030?",
+      "information_to_share_upfront": [
+        "We expect the following decline in GHG emissions across sectors by 2030 (2021 as a base year): Agriculture - 10%, Industry - 20%, Buildings - 30%, Transport - 40%, The rest - negligeable change"
+      ],
+      "information_upon_request": [
+        {
+          "item_id": "Q3_item_1",
+          "trigger": "Analyst asks for the breakdown of Franland's current GHG emissions by sector, or asks what Appendix 1 contains",
+          "core_dimensional_concept": "Franland GHG emissions breakdown by sector (Appendix 1)",
+          "release_conditions": {
+            "structural_position": [
+              "explicit request for Appendix 1 or sector-level emission data",
+              "explicit question about how much each sector emits in MtCO2e",
+              "acknowledgment that they need the absolute sector figures to calculate the weighted average reduction"
+            ],
+            "alternative_phrasings": [
+              "emission data by sector",
+              "how much does each sector emit",
+              "sector breakdown",
+              "appendix",
+              "absolute figures"
+            ]
+          },
+          "disqualifying": [
+            "Analyst merely mentions 'sector' in the context of discussing which sectors to target — that is solution-design, not probing for the quantitative sector data needed for calculation (F passing pattern)"
+          ],
+          "info": "Appendix 1: Franland's GHG emissions by sector, MtCO2e/year (2021 data, total 357 MtCO2e): Transport 120, Industry 69, Buildings 63, Agriculture 47, Energy (own use) 23, Power 18, Waste 17"
+        }
+      ],
+      "appendix": {
+        "appendix_1": {
+          "title": "Franland's GHG emissions by sector, MtCO2e/year (Metric tons of carbon dioxide equivalent)",
+          "release_rule": "Share only upon request when analyst asks for sector breakdown data",
+          "table": {
+            "Transport": {
+              "2021_MtCO2e": 120,
+              "2021_percentage": "34%"
+            },
+            "Industry": {
+              "2021_MtCO2e": 69,
+              "2021_percentage": "19%"
+            },
+            "Buildings": {
+              "2021_MtCO2e": 63,
+              "2021_percentage": "18%"
+            },
+            "Agriculture": {
+              "2021_MtCO2e": 47,
+              "2021_percentage": "13%"
+            },
+            "Energy_own_use": {
+              "2021_MtCO2e": 23,
+              "2021_percentage": "6%"
+            },
+            "Power": {
+              "2021_MtCO2e": 18,
+              "2021_percentage": "5%"
+            },
+            "Waste": {
+              "2021_MtCO2e": 17,
+              "2021_percentage": "5%"
+            },
+            "Total_2021": 357
+          }
+        }
+      },
+      "state_machine": {
+        "next_question": "Q4",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides numerical answer (correct = full credit; incorrect = 0 credit per zero_tolerance); then contextualization assessed before advancing to Q4",
+        "max_attempts": 2,
+        "scoring_on_transition": {
+          "attempt_1_correct": "Full score",
+          "attempt_2_correct": "0 score per core_principles",
+          "both_attempts_wrong": "0 score; interviewer provides correct answer (24%) before Q4"
+        }
+      }
+    },
+    "Q4": {
+      "q_id": "Q4",
+      "type": "qualitative",
+      "question_text": "In case of ongoing high GHG emissions, Franland would like to be ready for the adverse effects of climate change. What initiatives to foster climate resilience can you suggest?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": null,
+        "skip_logic": false,
+        "transition_condition": "Case ends after Q4"
+      }
+    }
+  },
+  "structure_4_ground_truth": {
+    "Q1_ground_truth": {
+      "type": "framework",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_GHG_emissions_in_Franland": {
+          "keypoints": [
+            "Types of gases",
+            "Current level and historical data",
+            "Break-down by region",
+            "Benchmarking vs other European countries"
+          ],
+          "subtotal": 4
+        },
+        "pillar_2_Sectors_that_burn_fossil_fuels": {
+          "keypoints": [
+            "Industry",
+            "Power generation",
+            "Transportation"
+          ],
+          "subtotal": 3
+        },
+        "pillar_3_Other_sectors_emitting_GHG": {
+          "keypoints": [
+            "Agriculture/livestock",
+            "Waste management",
+            "Deforestation"
+          ],
+          "subtotal": 3
+        },
+        "pillar_4_Potential_action_areas": {
+          "keypoints": [
+            "Legislation & taxation",
+            "Investment in technology",
+            "Awareness & education"
+          ],
+          "subtotal": 3
+        }
+      },
+      "total_keypoints": 13,
+      "minimum_expected": "At least 2 pillars covered with representative keypoints (e.g., pillar_1 + pillar_2)",
+      "outstanding_threshold": "All 4 pillars covered, with at least 2 keypoints per pillar"
+    },
+    "Q2_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_Industry": {
+          "keypoints": [
+            "Promote electrification of operations (that require heating, e.g. in construction)",
+            "Encourage industrial efficiency (e.g. implement less energy-consuming tech)",
+            "Eliminate energy waste",
+            "Set targets for recycling (e.g. plastics)"
+          ],
+          "subtotal": 4
+        },
+        "pillar_2_Power_generation": {
+          "keypoints": [
+            "Invest in renewables (wind/solar)",
+            "Invest in hydroelectric power plants"
+          ],
+          "subtotal": 2
+        },
+        "pillar_3_Transportation": {
+          "keypoints": [
+            "Promote electric vehicles (e.g. subsidies)",
+            "Invest in self-driving technology (e.g. to ensure more energy-efficient driving)",
+            "Consider advancing \"ubérization\" (to reduce personal use of cars)"
+          ],
+          "subtotal": 3
+        },
+        "pillar_4_Agriculture_and_food_consumption": {
+          "keypoints": [
+            "Reduce livestock (to cut down on methane)",
+            "Promote plant-based/cultivated meat",
+            "Inspire vegetarian diets",
+            "Upgrade cultivation methods",
+            "Minimize food waste"
+          ],
+          "subtotal": 5
+        }
+      },
+      "total_keypoints": 14,
+      "minimum_expected": "At least 3 sectors mentioned with at least 1 solution per sector (4 ideas minimum per casebook guidance)",
+      "outstanding_threshold": "All 4 sectors covered with 2+ solutions per sector; 7+ ideas total"
+    },
+    "Q3_ground_truth": {
+      "type": "quantitative",
+      "quantitative_part": {
+        "correct_final_answer": "24%",
+        "accepted_values": [
+          0.24
+        ],
+        "tolerance_pct": 0.0,
+        "zero_tolerance": true,
+        "scoring_method": "Binary: correct number = full credit; incorrect = zero credit",
+        "calculation_steps": {
+          "step_1_agriculture_reduction": {
+            "formula": "Agriculture 2021 emissions × Agriculture reduction rate = 47 MtCO2e × 10%",
+            "result": "4.7 MtCO2e ≈ 5 MtCO2e"
+          },
+          "step_2_industry_reduction": {
+            "formula": "Industry 2021 emissions × Industry reduction rate = 69 MtCO2e × 20%",
+            "result": "13.8 MtCO2e ≈ 14 MtCO2e"
+          },
+          "step_3_buildings_reduction": {
+            "formula": "Buildings 2021 emissions × Buildings reduction rate = 63 MtCO2e × 30%",
+            "result": "18.9 MtCO2e ≈ 19 MtCO2e"
+          },
+          "step_4_transport_reduction": {
+            "formula": "Transport 2021 emissions × Transport reduction rate = 120 MtCO2e × 40%",
+            "result": "48 MtCO2e"
+          },
+          "step_5_total_reduction": {
+            "formula": "Sum of all sector reductions = 5 + 14 + 19 + 48",
+            "result": "86 MtCO2e (casebook rounds intermediate steps)"
+          },
+          "step_6_percentage_reduction": {
+            "formula": "Total reduction / 2021 total GHG emissions = 86 / 357",
+            "result": "24.1% ≈ 24%"
+          }
+        }
+      },
+      "qualitative_part": {
+        "scoring_note": "Qualitative portion of Q3 is scored as 100% total, split into two tiers. Within each tier, use 3-level scoring per",
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "tier_1_basic": {
+          "weight_of_Q3_qualitative_total": "50%",
+          "keypoints": [
+            "Based on the current estimates, Franland will be able to decrease its GHG emissions by 24% and meet its target of 20% by 2030"
+          ],
+          "note": "Expected from every candidate. Single point worth 50% of qualitative score."
+        },
+        "tier_2_advanced": {
+          "weight_of_Q3_qualitative_total": "50%",
+          "points_available": 3,
+          "weight_per_point": "~16.7% of qualitative total",
+          "keypoints": [
+            "More than half of the reduction is supposed to come from greener transport, which makes sense given rapid growth of electric vehicles and high oil prices over the last ten years",
+            "I'd imagine that buildings emissions come from burning gas for heating and cooking. Switching gas stoves and gas heaters to electric ones might be incredibly capex intensive, so 30% emission reduction seems a bit aggressive target",
+            "It's surprising to see that Franland doesn't expect a lot of reduction from agriculture. With strong trends of healthier nutrition, rapidly expanding number of vegetarians and sky-rocketing demand for plant-based meats, I'd expect to see a more encouraging decline in GHG than 10%"
+          ],
+          "note": "Not expected from every candidate. Each advanced point adds ~16.7% to qualitative score."
+        },
+        "minimum_expected": "Correct numerical answer (24%) + Tier 1 basic contextualization (covered)",
+        "outstanding_threshold": "Correct numerical answer + Tier 1 covered + at least 2 Tier 2 advanced comments covered"
+      }
+    },
+    "Q4_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_Hazard_mitigation": {
+          "sub_category_General": {
+            "keypoints_in_category": [
+              "Create early-warning systems",
+              "Build climate risk insurance schemes"
+            ]
+          },
+          "sub_category_Heatwaves": {
+            "keypoints_in_category": [
+              "Invest in urban greening",
+              "Increase covered public areas with AC and water stations"
+            ]
+          },
+          "sub_category_Wildfires": {
+            "keypoints_in_category": [
+              "Invest in emergency services (e.g. fire-fighting equipment)",
+              "Improve forest management"
+            ]
+          },
+          "sub_category_Floods": {
+            "keypoints_in_category": [
+              "Build flood protection infrastructure (e.g. dams)",
+              "Floodproof buildings and drains in high-risk areas",
+              "Limit new construction in high-risk areas"
+            ]
+          },
+          "keypoints": [
+            "Create early-warning systems",
+            "Build climate risk insurance schemes",
+            "Invest in urban greening",
+            "Increase covered public areas with AC and water stations",
+            "Invest in emergency services (e.g. fire-fighting equipment)",
+            "Improve forest management",
+            "Build flood protection infrastructure (e.g. dams)",
+            "Floodproof buildings and drains in high-risk areas",
+            "Limit new construction in high-risk areas"
+          ],
+          "subtotal": 9
+        },
+        "pillar_2_Agriculture_resilience": {
+          "keypoints": [
+            "Increase strategic supplies of food and seeds",
+            "Encourage crop and livestock diversification",
+            "Invest in R&D of crop and breed genetics to develop heat-tolerant varieties",
+            "Expand farmlands to low-risk areas"
+          ],
+          "subtotal": 4
+        },
+        "pillar_3_Fresh_water_availability": {
+          "keypoints": [
+            "Expand water storage capacity",
+            "Upgrade the water filtration systems",
+            "Diversify water supply sources",
+            "Promote water conservation measures among population"
+          ],
+          "subtotal": 4
+        }
+      },
+      "total_keypoints": 17,
+      "minimum_expected": "At least 2 pillars covered with 2+ initiatives per pillar (4 ideas minimum)",
+      "outstanding_threshold": "All 3 pillars covered, with at least 3 initiatives from pillar_1 spanning different sub-categories, plus 2+ initiatives each from pillars 2 and 3"
+    }
+  },
+  "state_machine_global": {
+    "case_type": "interviewer_driven",
+    "skip_logic": false,
+    "mandatory_sequence": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4"
+    ],
+    "rules": [
+      "Q1 cannot be skipped under any circumstances",
+      "Questions must proceed in linear order Q1 → Q2 → Q3 → Q4",
+      "A question may not be advanced until the current question receives a scoreable answer (1st or 2nd attempt)",
+      "If analyst pre-covers a later question's keypoints in an earlier answer, record as pre-coverage but still ask the later question in sequence",
+      "No question may be skipped even if pre-covered",
+      "For Q3: if analyst fails to answer correctly after 2 attempts, interviewer provides correct answer (24%) before proceeding to Q4"
+    ]
+  },
+  "scoring_summary": {
+    "Q1": {
+      "type": "framework",
+      "total_keypoints": 13,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q2": {
+      "type": "qualitative",
+      "total_keypoints": 14,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q3": {
+      "type": "quantitative",
+      "part_1_quantitative": {
+        "correct_answer": "24%",
+        "zero_tolerance": true,
+        "scoring": "Binary: Full credit if correct; zero credit if incorrect"
+      },
+      "part_2_qualitative": {
+        "total_keypoints": 4,
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "human_review_priority": "false-partial > false-not-covered > covered",
+        "tier_1_basic": {
+          "keypoints": 1,
+          "weight": "50% of qualitative score"
+        },
+        "tier_2_advanced": {
+          "keypoints": 3,
+          "weight_per_point": "~16.7% of qualitative score",
+          "weight_total": "50% of qualitative score"
+        }
+      }
+    },
+    "Q4": {
+      "type": "qualitative",
+      "total_keypoints": 17,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    }
+  }
+}

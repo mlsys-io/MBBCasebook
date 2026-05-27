@@ -1,0 +1,659 @@
+{
+  "case_id": "004",
+  "version": "v1",
+  "source": {
+    "title": "Getaway Airlines",
+    "inspired_by": "BCG",
+    "year": "2021",
+    "author": "Peter K.",
+    "reference": "Peter-K.org, Case #4",
+    "casebook_abbr": "PK21"
+  },
+  "case_type": "interviewer_driven",
+  "case_type_origin": "candidate_led",
+  "annotation_mode": "CL_to_IL_override",
+  "case_arch": {
+    "primary": "Profitability",
+    "tags": [
+      "Profitability",
+      "Revenue Growth"
+    ]
+  },
+  "difficulty": "Easy",
+  "industry": "Airlines / Transportation",
+  "topic": "Profitability diagnosis and revenue growth strategy for a U.S. regional vacation airline",
+  "expected_duration_minutes": 20,
+  "opening_prompt": "Hi, I'd like to solve some consulting cases with you. Pls be a good interviewee to have a potential test in consulting cases. For the case problem-solving, pls do not assume any numbers or assumptions before my confirmation. I will give you the context upon request. I need you to answer the following questions for the client. Before you start, feel free to ask me 2-3 clarifying questions about the client.\n\nQ1: How would you approach this problem? What areas would you explore to attack this issue?\nQ2: What revenue growth ideas can you suggest to double the market share in Getaway Airlines' four major destinations (Las Vegas, Los Angeles, Portland, and Fort Myers)?\nQ3: How would the client's profits change if we succeed in doubling Getaway Airlines' market shares in their four major destinations?\nQ4: How can Getaway Airlines boost their revenue apart from expanding their market share?\nQ5: You are in the client's meeting and the manager asked you to provide your recommendations.\n\nHere is the basic context for the client:\nGetaway Airlines is a U.S. passenger airline that serves mostly vacation destinations. Their revenue has been increasing, however their profits are on decline. Last year their operating profitability dropped to 10%. The CEO has invited your team to look into the issue and help them turn things around. We're in early 2020 (before the pandemic).",
+  "structure_1_client_basic_context": {
+    "company": "Getaway Airlines",
+    "type": "U.S. passenger airline serving mostly vacation destinations",
+    "situation": "Revenue has been increasing, however their profits are on decline. Last year their operating profitability dropped to 10%.",
+    "action": "The CEO has invited your team to look into the issue and help them turn things around.",
+    "ask": "Look into the profitability issue and help turn things around. We're in early 2020 (before the pandemic)."
+  },
+  "structure_2_information_upon_request": {
+    "item_1": {
+      "item_id": "item_1",
+      "trigger": "Analyst asks about or includes the client's network, routes, or geographic reach/coverage in their framework or questions",
+      "core_dimensional_concept": "client route network and geographic coverage",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet about client overview or operations (e.g., 'Network', 'Routes', 'Geographic reach')",
+          "explicit clarifying question about where the airline flies or how many destinations",
+          "sub-bullet under Getaway Airlines assessment pillar mentioning destinations or coverage"
+        ],
+        "alternative_phrasings": [
+          "number of destinations",
+          "flight routes",
+          "where does the airline fly",
+          "markets served",
+          "destination coverage"
+        ]
+      },
+      "disqualifying": [
+        "Only mentions 'concentration risk in certain destinations' under the Risk pillar — this is a risk dimension, not the network-coverage subject itself (F passing)",
+        "Only says 'U.S. domestic market' without probing the specific route network — an adjacent-dimension modifier, does not touch the route network itself (G)"
+      ],
+      "info": "The client offers nonstop flights to 50 destinations across the U.S., Caribbean, Mexico and Central America."
+    },
+    "item_2": {
+      "item_id": "item_2",
+      "trigger": "Analyst asks about or includes the client's hub location or operational base in their framework or questions",
+      "core_dimensional_concept": "client hub location",
+      "release_conditions": {
+        "structural_position": [
+          "explicit clarifying question about where the airline is based or where its hub is",
+          "sub-bullet under Getaway Airlines or operations pillar mentioning hub or base",
+          "framework pillar about client operations including hub reference"
+        ],
+        "alternative_phrasings": [
+          "home base",
+          "headquarters location",
+          "main airport",
+          "base of operations"
+        ]
+      },
+      "disqualifying": [
+        "Only says 'operations efficiency' or 'operational structure' without asking about the specific hub or base — F passing mention",
+        "Only says 'Midwest market' without specifically asking about the hub location — G adjacent-dimension modifier, does not touch the hub itself"
+      ],
+      "info": "The airline has a hub in Minneapolis."
+    },
+    "item_3": {
+      "item_id": "item_3",
+      "trigger": "Analyst asks about or includes the client's top/major destinations or key markets in their framework or questions",
+      "core_dimensional_concept": "client major destination markets",
+      "release_conditions": {
+        "structural_position": [
+          "explicit clarifying question about which destinations or markets are most important",
+          "framework pillar or sub-bullet about key markets or major destinations",
+          "hypothesis-driven assumption referencing specific destination cities or 'top markets'"
+        ],
+        "alternative_phrasings": [
+          "key markets",
+          "top destinations",
+          "priority cities",
+          "main routes",
+          "largest markets"
+        ]
+      },
+      "disqualifying": [
+        "Only loosely refers to 'leisure destinations' or 'vacation markets' without asking for specific cities — F passing mention, does not touch the specific major destinations",
+        "Only says 'we should focus on high-growth destinations' without touching the four major destinations themselves — G adjacent-dimension modifier"
+      ],
+      "info": "The client's four major destinations are Las Vegas, Los Angeles, Portland, and Fort Myers."
+    },
+    "item_4": {
+      "item_id": "item_4",
+      "trigger": "Analyst asks about or includes the competitive landscape or market share of top airlines in the U.S. in their framework or questions",
+      "core_dimensional_concept": "U.S. airline market concentration and major competitor share",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar about U.S. airlines market or competitive landscape",
+          "explicit clarifying question about market concentration or top competitors' share",
+          "sub-bullet about major airlines or market share under industry/market pillar"
+        ],
+        "alternative_phrasings": [
+          "market concentration",
+          "big airlines market share",
+          "top players",
+          "industry structure",
+          "competitive intensity"
+        ]
+      },
+      "disqualifying": [
+        "Only mentions 'competition is high' or 'competitive market' without asking about market share or top-player concentration — F passing mention",
+        "Only mentions 'responding to competition' under the Strategy pillar rather than asking for market-concentration data — G adjacent dimension"
+      ],
+      "info": "Top-4 U.S. airlines capture 64% of the market."
+    },
+    "item_5": {
+      "item_id": "item_5",
+      "trigger": "Analyst asks about the client's profitability growth goals or targets set by management",
+      "core_dimensional_concept": "client profitability growth goal or target",
+      "release_conditions": {
+        "structural_position": [
+          "explicit clarifying question about profitability target or goal (e.g., 'What is the target margin improvement?')",
+          "framework pillar or sub-bullet about financial goals or success criteria",
+          "hypothesis-driven assumption about a specific profitability target"
+        ],
+        "alternative_phrasings": [
+          "target profitability",
+          "profit improvement goal",
+          "financial target",
+          "what does success look like",
+          "desired margin"
+        ]
+      },
+      "disqualifying": [
+        "Only mentions 'profitability is declining' at the Problem-framing stage without asking the specific target — F passing, merely restating the prompt rather than asking about the goal",
+        "Only says 'we need to improve margins' without touching whether there is a specific target — G adjacent-dimension modifier"
+      ],
+      "info": "The client didn't provide any goals of profitability growth."
+    }
+  },
+  "structure_3_case_questions": {
+    "Q1": {
+      "q_id": "Q1",
+      "type": "framework",
+      "question_text": "How would you approach this problem? What areas would you explore to attack this issue?",
+      "information_to_share_upfront": null,
+      "information_upon_request": "See structure_2 items 1–5. Release only items per semantic touch judgment; not by mere keyword presence.",
+      "state_machine": {
+        "next_question": "Q2",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable framework answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q2": {
+      "q_id": "Q2",
+      "type": "qualitative",
+      "question_text": "What revenue growth ideas can you suggest to double the market share in Getaway Airlines' four major destinations (Las Vegas, Los Angeles, Portland, and Fort Myers)?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q3",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer with at least 4 ideas (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q3": {
+      "q_id": "Q3",
+      "type": "quantitative",
+      "question_text": "How would the client's profits change if we succeed in doubling Getaway Airlines' market shares in their four major destinations?",
+      "information_to_share_upfront": [
+        "Appendix 1: Getaway Airlines' sales metrics, 2019 (share with analyst at start of Q3)"
+      ],
+      "information_upon_request": [
+        {
+          "item_id": "Q3_item_1",
+          "trigger": "Analyst asks about the total sales or revenue figure for the client",
+          "core_dimensional_concept": "total client sales in 2019",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question about total revenue or sales (e.g., 'What were total sales in 2019?')",
+              "calculation step requiring total revenue as input",
+              "hypothesis-driven assumption about total revenue level"
+            ],
+            "alternative_phrasings": [
+              "total revenue",
+              "annual sales",
+              "top-line figure",
+              "what's the total size of the business"
+            ]
+          },
+          "disqualifying": [
+            "Only says 'we need revenue data' without explicitly asking for total sales — F passing, must explicitly touch the total-sales concept",
+            "Only mentions revenue in the market-share-calculation context rather than asking about total revenue itself — G adjacent-dimension modifier"
+          ],
+          "info": "The sales were $0.5B in 2019."
+        },
+        {
+          "item_id": "Q3_item_2",
+          "trigger": "Analyst asks about how to treat fixed costs when market share doubles",
+          "core_dimensional_concept": "fixed cost behavior assumption when doubling market share",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question about cost assumptions for the doubling scenario (e.g., 'Should I assume costs stay fixed or scale?')",
+              "calculation step where analyst pauses to ask about cost treatment",
+              "framework assumption about cost structure proportionality"
+            ],
+            "alternative_phrasings": [
+              "do costs scale with volume",
+              "fixed vs variable cost assumption",
+              "cost structure assumption",
+              "should costs double too"
+            ]
+          },
+          "disqualifying": [
+            "Only says 'cost structure' as a framework pillar without asking about cost assumptions under the doubled-growth scenario — F passing",
+            "Only mentions costs in passing while asking about revenue — G adjacent-dimension modifier, does not specifically engage the cost-behavior assumption"
+          ],
+          "info": "We can assume that fixed costs will increase proportionally as doubling market share is a substantial growth."
+        },
+        {
+          "item_id": "Q3_item_3",
+          "trigger": "Analyst asks about whether the market size of each destination will grow or stay the same",
+          "core_dimensional_concept": "destination market size assumption",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question about total market size at each destination (e.g., 'Will the market size grow or should I assume it's constant?')",
+              "calculation step requiring total market size at destination to compute doubled share",
+              "hypothesis-driven assumption about market size stability"
+            ],
+            "alternative_phrasings": [
+              "total market size assumption",
+              "will the pie grow",
+              "constant market assumption",
+              "passenger volume at each destination"
+            ]
+          },
+          "disqualifying": [
+            "Only says 'market dynamics' or 'market trends' without touching the specific market-size assumption — F passing",
+            "Only mentions market size in the competitive-landscape context rather than asking the assumption — G adjacent-dimension modifier"
+          ],
+          "info": "We can assume that the market size for each destination will stay the same."
+        }
+      ],
+      "appendix": {
+        "appendix_1": {
+          "title": "Getaway Airlines' sales metrics, 2019",
+          "release_rule": "Share upfront with analyst at the start of Q3",
+          "table": {
+            "hub": {
+              "Minneapolis_MN": {
+                "type": "Hub",
+                "passengers_k": 1300,
+                "market_share_pct": 7.3
+              }
+            },
+            "destinations": {
+              "Las_Vegas_NV": {
+                "type": "Destination",
+                "passengers_k": 270,
+                "market_share_pct": 1.2
+              },
+              "Los_Angeles_CA": {
+                "type": "Destination",
+                "passengers_k": 140,
+                "market_share_pct": 0.5
+              },
+              "Portland_OR": {
+                "type": "Destination",
+                "passengers_k": 140,
+                "market_share_pct": 1.5
+              },
+              "Fort_Myers_FL": {
+                "type": "Destination",
+                "passengers_k": 130,
+                "market_share_pct": 2.6
+              },
+              "Other": {
+                "type": "Destination",
+                "passengers_k": 1200,
+                "market_share_pct": 0.1
+              }
+            }
+          }
+        }
+      },
+      "state_machine": {
+        "next_question": "Q4",
+        "skip_logic": false,
+        "max_attempts": 2,
+        "scoring_on_transition": {
+          "attempt_1_correct": "Full score",
+          "attempt_2_correct": "0 score per core_principles",
+          "both_attempts_wrong": "0 score; interviewer provides correct answer ($10M increase) before next question"
+        },
+        "transition_condition": "Analyst provides numerical answer and contextualization (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q4": {
+      "q_id": "Q4",
+      "type": "qualitative",
+      "question_text": "How can Getaway Airlines boost their revenue apart from expanding their market share?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q5",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer with at least 4 ideas (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q5": {
+      "q_id": "Q5",
+      "type": "qualitative",
+      "question_text": "You are in the client's meeting and the manager asked you to provide your recommendations.",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": null,
+        "skip_logic": false,
+        "transition_condition": "Case ends after Q5"
+      }
+    }
+  },
+  "structure_4_ground_truth": {
+    "Q1_ground_truth": {
+      "type": "framework",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_us_airlines_market": {
+          "keypoints": [
+            "Growth rate",
+            "Major airlines",
+            "Average profitability for similar-size players"
+          ],
+          "subtotal": 3
+        },
+        "pillar_2_getaway_airlines": {
+          "keypoints": [
+            "Customer segments (e.g. low-cost, regular, premium)",
+            "Major destinations",
+            "Offerings",
+            "Marketing strategy"
+          ],
+          "subtotal": 4
+        },
+        "pillar_3_profitability_assessment": {
+          "keypoints": [
+            "Revenue analysis",
+            "Pricing strategy - Volume dynamics",
+            "Cost structure - Fixed costs",
+            "Cost structure - Variable costs"
+          ],
+          "subtotal": 4
+        },
+        "pillar_4_strategies_to_increase_margins": {
+          "keypoints": [
+            "Increase sales",
+            "Streamline costs"
+          ],
+          "subtotal": 2
+        }
+      },
+      "total_keypoints": 13,
+      "minimum_expected": "At least 2 pillars covered with substantive content; Profitability assessment pillar covered with at least Revenue analysis and Cost structure",
+      "outstanding_threshold": "All 4 pillars covered, including Pricing strategy - Volume dynamics and both Cost structure sub-items"
+    },
+    "Q2_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_upgrade_marketing_strategy": {
+          "keypoints": [
+            "Invest in aggressive marketing campaigns and promotions",
+            "Launch loyalty card for regular customers from these destinations"
+          ],
+          "subtotal": 2
+        },
+        "pillar_2_change_pricing": {
+          "keypoints": [
+            "Introduce vacation packages for these destinations (e.g. with hotel, car)",
+            "Bundle offerings (e.g. basic, economy, premium)",
+            "Offer family travel flight deals",
+            "Adopt subscription options for regular travelers from these cities",
+            "Adjust pricing levels to match WTP (willingness-to-pay) at each specific destination"
+          ],
+          "subtotal": 5
+        },
+        "pillar_3_increase_efficiency_of_distribution": {
+          "keypoints": [
+            "Expand network of travel agencies and online booking platforms to sell tickets for these destinations",
+            "Increase incentives (e.g. sales commissions) for existing distribution partners",
+            "Launch a smartphone app for regular travelers"
+          ],
+          "subtotal": 3
+        },
+        "pillar_4_improve_and_enhance_value_proposition": {
+          "keypoints": [
+            "Improve passenger experience for these destinations (e.g. no delays, no wait time, friendly staff)",
+            "Offer higher frequency of flights from/to these destinations",
+            "Offer larger planes to increase the capacity of flights (if capacity is a bottleneck to grow sales)",
+            "Address pain points (if any) (e.g. improve online ticketing, check-in)"
+          ],
+          "subtotal": 4
+        }
+      },
+      "total_keypoints": 14,
+      "minimum_expected": "At least 4 ideas across at least 2 different pillars",
+      "outstanding_threshold": "At least 7-8 ideas covering all 4 pillars (Upgrade marketing / Change pricing / Distribution / Value proposition)"
+    },
+    "Q3_ground_truth": {
+      "type": "quantitative",
+      "quantitative_part": {
+        "correct_final_answer": "$10M increase in profits (casebook version using 20% approximation) — also accept ~$10.7M (precise calculation using 680/3180 = 21.38%)",
+        "accepted_values": [
+          10000000,
+          10700000
+        ],
+        "tolerance_pct": 0.02,
+        "zero_tolerance": false,
+        "scoring_method": "Binary: correct number = full credit; incorrect = zero credit. Accept both $10M and ~$10.7M; any other value = zero credit",
+        "calculation_steps": {
+          "step_1_current_total_profits": {
+            "formula": "Operating profitability % × Total sales = 10% × $0.5B",
+            "result": "$50M"
+          },
+          "step_2_share_of_top4_destinations": {
+            "formula": "(Las Vegas + Los Angeles + Portland + Fort Myers passengers) ÷ Total passengers = (270+140+140+130) ÷ (1,300+270+140+140+130+1,200) = 680 ÷ 3,180",
+            "result": "≈20% (casebook rounds to 20%; precise = 21.38%)"
+          },
+          "step_3_estimated_profits_of_top4": {
+            "formula": "Current total profits × Share of top-4 = $50M × 20%",
+            "result": "$10M (casebook version; precise: $50M × 21.38% = $10.69M)"
+          },
+          "step_4_new_profits_of_top4": {
+            "formula": "Estimated profits of top-4 × 2 (doubling market share)",
+            "result": "$20M (casebook version; precise: $21.38M)"
+          },
+          "step_5_profit_increase": {
+            "formula": "New profits of top-4 - Estimated profits of top-4 = $20M - $10M",
+            "result": "$10M increase (casebook version; precise: ~$10.7M)"
+          }
+        }
+      },
+      "qualitative_part": {
+        "scoring_note": "Qualitative portion of Q3 is scored as 100% total, split into two tiers. Within each tier, use 3-level scoring per",
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "tier_1_basic": {
+          "weight_of_Q3_qualitative_total": "50%",
+          "keypoints": [
+            "By doubling the market share in the client's four major markets, they will be able to capture additional $10M in profits"
+          ],
+          "note": "Expected from every candidate. Single point worth 50% of qualitative score."
+        },
+        "tier_2_advanced": {
+          "weight_of_Q3_qualitative_total": "50%",
+          "points_available": 3,
+          "weight_per_point": "~16.7% of qualitative total",
+          "keypoints": [
+            "Such dramatic volume growth would likely strengthen economies of scale and enable the client to improve its profitability even more (e.g. the client might get volume discounts for increased supplies; parking and other airport fees are likely stay the same while the sales go up)",
+            "Given the client's quite low share in the top markets, doubling sales doesn't seem overaggressive and might be realistic",
+            "We assumed that each passenger on average generates the same revenue, however four major destinations might be served by a lot of airlines, ensuring high price pressure and lower revenue per passenger than in other destinations; thus our answer might be lower than $10M"
+          ],
+          "note": "Not expected from every candidate. Each advanced point adds ~16.7% to qualitative score."
+        },
+        "minimum_expected": "Correct numerical answer + Tier 1 basic contextualization (covered)",
+        "outstanding_threshold": "Correct numerical answer + Tier 1 covered + at least 2 Tier 2 advanced comments covered"
+      }
+    },
+    "Q4_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_cross_selling": {
+          "sub_pillar_pre_board_services": {
+            "keypoints": [
+              "Priority boarding",
+              "Lounge access"
+            ],
+            "subtotal": 2
+          },
+          "sub_pillar_pre_board_fees": {
+            "keypoints": [
+              "Check-in fee",
+              "Ticket exchange fee",
+              "Cancellation fee"
+            ],
+            "subtotal": 3
+          },
+          "sub_pillar_on_board": {
+            "keypoints": [
+              "New food/beverage options (incl. pre-order)",
+              "New entertainment options (e.g. e-learning courses)",
+              "New merchandise items",
+              "Internet access",
+              "Cell-phone services"
+            ],
+            "subtotal": 5
+          },
+          "sub_pillar_other_services": {
+            "keypoints": [
+              "Loyalty credit card"
+            ],
+            "subtotal": 1
+          },
+          "keypoints": [
+            "Priority boarding",
+            "Lounge access",
+            "Check-in fee",
+            "Ticket exchange fee",
+            "Cancellation fee",
+            "New food/beverage options (incl. pre-order)",
+            "New entertainment options (e.g. e-learning courses)",
+            "New merchandise items",
+            "Internet access",
+            "Cell-phone services",
+            "Loyalty credit card"
+          ],
+          "subtotal": 11
+        },
+        "pillar_2_up_selling": {
+          "keypoints": [
+            "Fee to upgrade seat class",
+            "Upgraded packages for corporate clients (e.g. larger # of flights, higher quality food)"
+          ],
+          "subtotal": 2
+        },
+        "pillar_3_diversification": {
+          "keypoints": [
+            "Cargo/mail delivery",
+            "Ads services for other companies to promote their products onboard",
+            "Aerial picture services",
+            "Charters for corporate retreats"
+          ],
+          "subtotal": 4
+        }
+      },
+      "total_keypoints": 17,
+      "minimum_expected": "At least 4 ideas across at least 2 pillars; Cross-selling and Up-selling categories both touched",
+      "outstanding_threshold": "At least 7-8 ideas covering all 3 pillars (Cross-selling / Up-selling / Diversification), including items from multiple sub-categories of cross-selling"
+    },
+    "Q5_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_recommendation": {
+          "keypoints": [
+            "The client should focus on doubling its sales in four major destinations to increase their profits"
+          ],
+          "subtotal": 1
+        },
+        "pillar_2_reasoning": {
+          "keypoints": [
+            "This strategy will boost profits by 20%, or $10M",
+            "The client's current shares in those markets are in low single-digit numbers, so doubling sales seem realistic",
+            "The client has $0.5B in sales and likely enjoys deep marketing pockets to support doubling sales in short-listed markets"
+          ],
+          "subtotal": 3
+        },
+        "pillar_3_risks": {
+          "keypoints": [
+            "Competitive response",
+            "Larger-than-expected investment in marketing and distribution",
+            "Higher operational complexity"
+          ],
+          "subtotal": 3
+        },
+        "pillar_4_next_steps": {
+          "keypoints": [
+            "Design a risk mitigation strategy",
+            "Assess potential cost reduction opportunities"
+          ],
+          "subtotal": 2
+        }
+      },
+      "total_keypoints": 9,
+      "minimum_expected": "Recommendation pillar covered + at least 1 reasoning point covered",
+      "outstanding_threshold": "All 4 pillars covered, including at least 2 reasoning points and at least 1 risk"
+    }
+  },
+  "state_machine_global": {
+    "case_type": "interviewer_driven",
+    "skip_logic": false,
+    "mandatory_sequence": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5"
+    ],
+    "rules": [
+      "Q1 cannot be skipped under any circumstances",
+      "Questions must proceed in linear order Q1 → Q2 → Q3 → Q4 → Q5",
+      "A question may not be advanced until the current question receives a scoreable answer (1st or 2nd attempt)",
+      "If analyst pre-covers a later question's keypoints in an earlier answer, record as pre-coverage but still ask the later question in sequence",
+      "No question may be skipped even if pre-covered"
+    ]
+  },
+  "scoring_summary": {
+    "Q1": {
+      "type": "framework",
+      "total_keypoints": 13,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q2": {
+      "type": "qualitative",
+      "total_keypoints": 14,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q3": {
+      "type": "quantitative",
+      "part_1_quantitative": {
+        "correct_answer": "$10M increase (casebook version) — also accept ~$10.7M (precise calculation). See _a3_q5_note in Q3_ground_truth.",
+        "zero_tolerance": true,
+        "scoring": "Binary: Full credit if correct ($10M or ~$10.7M); zero credit if any other value"
+      },
+      "part_2_qualitative": {
+        "total_keypoints": 4,
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "human_review_priority": "false-partial > false-not-covered > covered",
+        "tier_1_basic": {
+          "keypoints": 1,
+          "weight": "50% of qualitative score"
+        },
+        "tier_2_advanced": {
+          "keypoints": 3,
+          "weight_per_point": "~16.7% of qualitative score",
+          "weight_total": "50% of qualitative score"
+        }
+      }
+    },
+    "Q4": {
+      "type": "qualitative",
+      "total_keypoints": 17,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q5": {
+      "type": "qualitative",
+      "total_keypoints": 9,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    }
+  }
+}

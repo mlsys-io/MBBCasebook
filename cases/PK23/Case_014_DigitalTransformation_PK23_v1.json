@@ -1,0 +1,570 @@
+{
+  "case_id": "014",
+  "version": "v1",
+  "source": {
+    "title": "Digital Transformation",
+    "inspired_by": "McKinsey & Company",
+    "year": "2023",
+    "author": "Peter K.",
+    "reference": "Peter-K.org, Case #14",
+    "casebook_abbr": "PK23"
+  },
+  "case_type": "interviewer_driven",
+  "case_type_origin": null,
+  "annotation_mode": null,
+  "case_arch": {
+    "primary": "Digital Transformation",
+    "tags": [
+      "Digital Transformation",
+      "Implementation",
+      "Operational Efficiency"
+    ],
+    "standard_tags": [
+      "Profitability",
+      "Market Entry",
+      "Revenue Growth",
+      "Cost Optimization",
+      "Investment Decision",
+      "Merger and Acquisition",
+      "Pricing Strategy",
+      "Growth Strategy",
+      "Operational Efficiency",
+      "Due Diligence",
+      "Market Sizing",
+      "Competitive Response",
+      "Digital Transformation",
+      "Turnaround / Restructuring",
+      "Supply Chain",
+      "Comparison"
+    ]
+  },
+  "difficulty": "Hard",
+  "industry": "Pharmaceuticals / Biopharmaceuticals",
+  "topic": "Implementation — digital transformation of sales function for a biopharmaceutical company",
+  "expected_duration_minutes": "15-20",
+  "opening_prompt": "Hi, I'd like to solve some consulting cases with you. Pls be a good interviewee to have a potential test in consulting cases. For the case problem-solving, pls do not assume any numbers or assumptions before my confirmation. I will give you the context upon request. I need you to answer the following questions for the client. Before you start, feel free to ask me 2-3 clarifying questions about the client.\n\nQ1: What factors should your team explore to help Bio Co digitalize their sales function?\n\nQ2: The manager reached out to you and asked for your thoughts on what sales processes and customer touch points can Bio Co digitalize?\n\nQ3: It seems like a lot of value can be unlocked through sales digitalization. However, the CEO is afraid that salesforce will push back. What might be the reasons of salesforce's potential reluctance to adopt new tech?\n\nQ4: Your manager would like to understand how much time it'll take to train all the Bio Co salespeople to transition on the new software. Can you run the numbers?\n\nHere is the basic context for the client:\nA global biopharmaceutical company Bio Co focuses on R&D for medications on severe central nervous system disorders, inflammatory disorders, and oncology. A quarter of its 10k employees are salespeople who follow traditional sales practices. For example, they share information about prescriptions with doctors and other medical practitioners typically during face-to-face visits. The Bio Co's CEO believes that sales digitalization might unlock a lot of value for the company. They have hired your team to conduct a digital transformation for their sales function. How would you help the client?",
+  "structure_1_client_basic_context": {
+    "company": "Bio Co",
+    "type": "Global biopharmaceutical company",
+    "situation": "A global biopharmaceutical company Bio Co focuses on R&D for medications on severe central nervous system disorders, inflammatory disorders, and oncology. A quarter of its 10k employees are salespeople who follow traditional sales practices. For example, they share information about prescriptions with doctors and other medical practitioners typically during face-to-face visits.",
+    "action": "They have hired your team to conduct a digital transformation for their sales function.",
+    "ask": "The Bio Co's CEO believes that sales digitalization might unlock a lot of value for the company. How would you help the client?"
+  },
+  "structure_2_information_upon_request": {
+    "item_1": {
+      "item_id": "item_1",
+      "trigger": "Analyst asks about or includes 'digitalization' or 'digitization' definition in framework — e.g. asks what digitalization means or distinguishes it from digitization",
+      "core_dimensional_concept": "definition of digitalization and digitization",
+      "release_conditions": {
+        "structural_position": [
+          "explicit clarifying question about what digitalization or digitization means",
+          "framework pillar or sub-bullet on 'defining digitalization'",
+          "hypothesis-driven assumption about what digitalization involves"
+        ],
+        "alternative_phrasings": [
+          "what is digitalization",
+          "definition of digital transformation",
+          "digitization vs digitalization",
+          "scope of digital"
+        ]
+      },
+      "disqualifying": [
+        "Analyst uses the word 'digital' or 'digitalization' as a modifier in another topic (e.g. 'digital sales channels') without asking for the definition — passing mention per F pattern"
+      ],
+      "info": "Digitalization is the use of tech, data, and analytics to design business processes. Digitization is the conversion of analog information to digital formats. Digital Transformation is business transformation enabled by digitalization."
+    },
+    "item_2": {
+      "item_id": "item_2",
+      "trigger": "Analyst asks about Bio Co's financial performance — revenue, profit margin, or financial size",
+      "core_dimensional_concept": "Bio Co revenue and net profit margin",
+      "release_conditions": {
+        "structural_position": [
+          "explicit clarifying question about Bio Co's financials or revenue",
+          "framework pillar on 'company financials' or 'current performance'",
+          "sub-bullet under client context or feasibility pillar asking about financial resources"
+        ],
+        "alternative_phrasings": [
+          "revenue",
+          "profit margin",
+          "financial performance",
+          "how much does Bio Co make",
+          "company size"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'financial assessment' or 'financial feasibility' as a pillar name without asking for actual numbers — structural label without probing for data per G pattern"
+      ],
+      "info": "Bio Co enjoys $6B in revenue and 15% net profit margin (2022)."
+    },
+    "item_3": {
+      "item_id": "item_3",
+      "trigger": "Analyst asks about Bio Co's prior digitalization experience, digital capabilities, or digital track record",
+      "core_dimensional_concept": "Bio Co's prior digital transformation experience in R&D",
+      "release_conditions": {
+        "structural_position": [
+          "explicit question about whether Bio Co has done digitalization before",
+          "framework pillar or sub-bullet on 'existing digital capabilities' or 'digital maturity'",
+          "clarifying question about Bio Co's experience with technology or digital projects"
+        ],
+        "alternative_phrasings": [
+          "prior digital experience",
+          "digital maturity",
+          "has Bio Co done this before",
+          "existing tech capabilities",
+          "track record with digitalization"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'existing software' as a pillar name in the context of sales tools without specifically probing Bio Co's track record in digitalization — per G pattern (adjacent concept)"
+      ],
+      "info": "Bio Co has successfully digitalized R&D — built digital capabilities shortened study timelines and improved access for a more diverse range of participants."
+    },
+    "item_4": {
+      "item_id": "item_4",
+      "trigger": "Analyst asks about the current level of sales process digitalization at Bio Co",
+      "core_dimensional_concept": "current level of sales process digitalization at Bio Co",
+      "release_conditions": {
+        "structural_position": [
+          "explicit question about current state of sales technology or digitalization",
+          "framework pillar or sub-bullet on 'current sales technology' or 'as-is state'",
+          "clarifying question about what tools salespeople currently use"
+        ],
+        "alternative_phrasings": [
+          "current sales tools",
+          "existing sales software",
+          "current state of digitalization",
+          "as-is sales process",
+          "what technology does salesforce use now"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'existing sales software' as a pillar label without asking about the current digitalization level — label mention without probing per F passing pattern"
+      ],
+      "info": "The current level of sales process digitalization at Bio Co is minimal."
+    },
+    "item_5": {
+      "item_id": "item_5",
+      "trigger": "Analyst asks about Bio Co's goals, targets, or budget for the digitalization project",
+      "core_dimensional_concept": "Bio Co's goals and capex expectations for the digitalization project",
+      "release_conditions": {
+        "structural_position": [
+          "explicit question about goals, KPIs, or success metrics for the project",
+          "framework pillar on 'project goals' or 'success criteria'",
+          "clarifying question about budget or investment expectations"
+        ],
+        "alternative_phrasings": [
+          "project goals",
+          "success metrics",
+          "budget",
+          "capex",
+          "how much is Bio Co willing to invest",
+          "what are the targets"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'financial assessment' or 'implementation cost' as a generic pillar without asking specifically about goals or budget — per G pattern (adjacent concept, not the target dimension)"
+      ],
+      "info": "Bio Co doesn't have any goals but realizes this project will be capex heavy."
+    }
+  },
+  "structure_3_case_questions": {
+    "Q1": {
+      "q_id": "Q1",
+      "type": "framework",
+      "question_text": "What factors should your team explore to help Bio Co digitalize their sales function?",
+      "information_to_share_upfront": null,
+      "information_upon_request": "See structure_2 items 1-5. Release only items per semantic touch judgment; not by mere keyword presence.",
+      "state_machine": {
+        "next_question": "Q2",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable framework answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q2": {
+      "q_id": "Q2",
+      "type": "qualitative",
+      "question_text": "The manager reached out to you and asked for your thoughts on what sales processes and customer touch points can Bio Co digitalize?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q3",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q3": {
+      "q_id": "Q3",
+      "type": "qualitative",
+      "question_text": "It seems like a lot of value can be unlocked through sales digitalization. However, the CEO is afraid that salesforce will push back. What might be the reasons of salesforce's potential reluctance to adopt new tech?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q4",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q4": {
+      "q_id": "Q4",
+      "type": "quantitative",
+      "question_text": "Your manager would like to understand how much time it'll take to train all the Bio Co salespeople to transition on the new software. Can you run the numbers?",
+      "information_to_share_upfront": [
+        "Each training cycle lasts 2 months and can accommodate 500 salespeople"
+      ],
+      "information_upon_request": [
+        {
+          "item_id": "Q4_item_1",
+          "trigger": "Analyst asks how many salespeople need to be trained (or probes for total number of salespeople)",
+          "core_dimensional_concept": "total number of salespeople to be trained",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question about how many salespeople there are",
+              "formula setup step asking for total headcount",
+              "clarifying question about scale of training program"
+            ],
+            "alternative_phrasings": [
+              "how many salespeople",
+              "total salespeople",
+              "headcount",
+              "number of people to train"
+            ]
+          },
+          "disqualifying": [
+            "Analyst uses the number 2,500 or 'a quarter of 10k' from the upfront context without explicitly asking for it as a clarification — the prompt itself already states a quarter of 10k employees are salespeople, so the number is derivable from structure_1 without a separate request"
+          ],
+          "info": "The number of salespeople is given in the prompt (a quarter of 10k which is 2.5k)."
+        },
+        {
+          "item_id": "Q4_item_2",
+          "trigger": "Analyst asks about the pass rate or exam pass rate for the training cycle",
+          "core_dimensional_concept": "exam pass rate for training cycle",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question about pass rate or success rate of training",
+              "formula step asking what percentage of trainees pass",
+              "clarifying question about training outcomes or failure rates"
+            ],
+            "alternative_phrasings": [
+              "pass rate",
+              "success rate",
+              "how many pass",
+              "exam results",
+              "what percentage pass"
+            ]
+          },
+          "disqualifying": [
+            "Analyst assumes a 100% pass rate without asking — generic assumption without probing per E hypothesis-driven assumption (which would count) vs ignoring the dimension entirely"
+          ],
+          "info": "Each training program ends with an exam, and the expected pass rate is 80%."
+        },
+        {
+          "item_id": "Q4_item_3",
+          "trigger": "Analyst asks about what happens to salespeople who fail the training exam (additional cycles, re-training)",
+          "core_dimensional_concept": "re-training policy for salespeople who fail the exam",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question about re-training or additional cycles for failures",
+              "formula step asking how failures are handled",
+              "clarifying question about what happens after failing the exam"
+            ],
+            "alternative_phrasings": [
+              "additional training cycles",
+              "re-training",
+              "what happens to those who fail",
+              "second chance",
+              "repeat training"
+            ]
+          },
+          "disqualifying": [
+            "Analyst assumes failures simply drop out or are not retrained, without asking — ignoring the dimension entirely per false-not-covered pattern"
+          ],
+          "info": "Bio Co will run additional training cycles for those who didn't pass. The pass rate for additional cycles is expected to be 100%."
+        }
+      ],
+      "appendix": {
+        "appendix_Q4": {
+          "title": "Q4 Training Math — Data Points",
+          "release_rule": "Share upfront: 'Each training cycle lasts 2 months and can accommodate 500 salespeople'. Remaining items released upon request only.",
+          "table": {
+            "upfront_data": {
+              "training_cycle_duration_months": 2,
+              "salespeople_per_cycle": 500
+            },
+            "upon_request_data": {
+              "total_salespeople": "2,500 (a quarter of 10k — given in prompt)",
+              "pass_rate_initial_cycle": "80%",
+              "additional_cycles_for_failures": "Yes — Bio Co will run additional training cycles for those who didn't pass",
+              "pass_rate_additional_cycles": "100%"
+            }
+          }
+        }
+      },
+      "state_machine": {
+        "next_question": null,
+        "skip_logic": false,
+        "transition_condition": "Case ends after Q4"
+      }
+    }
+  },
+  "structure_4_ground_truth": {
+    "Q1_ground_truth": {
+      "type": "framework",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_salesforce": {
+          "sales_processes": {
+            "keypoints": [
+              "Admin",
+              "Account development",
+              "KPI tracking"
+            ],
+            "subtotal": 3
+          },
+          "keypoints": [
+            "Organizational structure",
+            "Existing sales software",
+            "Admin",
+            "Account development",
+            "KPI tracking"
+          ],
+          "subtotal": 5
+        },
+        "pillar_2_healthcare_providers": {
+          "keypoints": [
+            "Customer segments",
+            "Current level of digitalization of customer journey (e.g. product research, customer support)",
+            "Existing software to analyze customer behavior"
+          ],
+          "subtotal": 3
+        },
+        "pillar_3_management": {
+          "keypoints": [
+            "Marketing software (e.g. campaign assessment, A/B test analysis)",
+            "Reporting software"
+          ],
+          "subtotal": 2
+        },
+        "pillar_4_implementation": {
+          "keypoints": [
+            "Financial assessment",
+            "Operational feasibility",
+            "Required talent",
+            "Required team (e.g. PMO, project management office)"
+          ],
+          "subtotal": 4
+        }
+      },
+      "total_keypoints": 14,
+      "minimum_expected": "Cover at least 3 of 4 pillars with substantive content — Salesforce and Implementation pillars are most critical",
+      "outstanding_threshold": "All 4 pillars covered with specificity; Sales processes sub-items identified; Implementation feasibility items including talent and PMO mentioned"
+    },
+    "Q2_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_admin": {
+          "keypoints": [
+            "Lead identification",
+            "Lead verification",
+            "Contract preparation",
+            "Electronic signature",
+            "Day planning (incl. route planning)",
+            "Presentation pre-population with client's data",
+            "Scheduling intro/follow-up calls and meetings",
+            "Client status updates",
+            "Dashboard preparation (e.g. with personal stats)"
+          ],
+          "subtotal": 9
+        },
+        "pillar_2_sales": {
+          "keypoints": [
+            "Data-based insights about patient population changes and local health environment dynamics (to tailor sales pitch)",
+            "Predictive analytics on healthcare providers' likelihood of switching therapies/medicines",
+            "AI-powered recommendations for cross-selling and up-selling to providers",
+            "Tablet-based digital questionnaires for client profiling"
+          ],
+          "subtotal": 4
+        },
+        "pillar_3_customer_journey": {
+          "product_research_at_site": {
+            "keypoints": [
+              "Intuitive design",
+              "Powerful search function",
+              "Short and on-the-point video presentations"
+            ],
+            "subtotal": 3
+          },
+          "qas": {
+            "keypoints": [
+              "AI-enabled chatbots for general questions",
+              "Webchat and video-calls with experts"
+            ],
+            "subtotal": 2
+          },
+          "keypoints": [
+            "Intuitive design",
+            "Powerful search function",
+            "Short and on-the-point video presentations",
+            "AI-enabled chatbots for general questions",
+            "Webchat and video-calls with experts"
+          ],
+          "subtotal": 5
+        }
+      },
+      "total_keypoints": 18,
+      "minimum_expected": "At least 3 admin items + 2 sales items + 1 customer journey item identified",
+      "outstanding_threshold": "All 3 pillars covered with multiple specific items; includes both product research at site and Q&A customer journey sub-sections"
+    },
+    "Q3_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_painful_changes_in_sales_process": {
+          "keypoints": [
+            "Threat to salesperson's autonomy (e.g. own judgement on when to interact is replaced by AI-suggested time to interact)",
+            "Software might replace parts of face-to-face interaction and jeopardize client relationships",
+            "Software might be perceived as additional burden (new admin work) that takes time from sales",
+            "Increased sales efficiency will likely lead to changes in the incentive structure (Bio Co will likely decrease sales commissions)"
+          ],
+          "subtotal": 4
+        },
+        "pillar_2_skill_development_issues": {
+          "keypoints": [
+            "Lack of tech savviness",
+            "Inefficient training",
+            "Complicated software; too steep learning curve (e.g. too time-consuming to learn how to use it)",
+            "Limited ongoing support (e.g. long response time from helpdesk)"
+          ],
+          "subtotal": 4
+        },
+        "pillar_3_poor_change_management": {
+          "keypoints": [
+            "Lack of support from middle management/direct supervisors",
+            "No advocates, no champions",
+            "Lack of top-picture importance of sales digitalization",
+            "Lack of top-management's encouragement",
+            "Organisation-wide inertia"
+          ],
+          "subtotal": 5
+        }
+      },
+      "total_keypoints": 13,
+      "minimum_expected": "At least 2 pillars identified with at least 2 items each",
+      "outstanding_threshold": "All 3 pillars covered with specific items; includes change management pillar with management support and inertia items"
+    },
+    "Q4_ground_truth": {
+      "type": "quantitative",
+      "quantitative_part": {
+        "correct_final_answer": "12 months, or 1 year",
+        "accepted_values": [
+          12,
+          1
+        ],
+        "tolerance_pct": 0.02,
+        "zero_tolerance": false,
+        "scoring_method": "Binary: correct number = full credit; incorrect = zero credit",
+        "calculation_steps": {
+          "step_1_number_of_initial_training_cycles": {
+            "formula": "Total salespeople ÷ salespeople per cycle = 2,500 ÷ 500",
+            "result": "5 cycles"
+          },
+          "step_2_number_of_salespeople_who_fail": {
+            "formula": "Salespeople per cycle × (1 - pass rate) × number of cycles = 500 × (1 - 80%) × 5",
+            "result": "500 salespeople who fail"
+          },
+          "step_3_number_of_additional_training_cycles": {
+            "formula": "Salespeople who fail ÷ salespeople per cycle = 500 ÷ 500",
+            "result": "1 additional cycle"
+          },
+          "step_4_total_time_for_training": {
+            "formula": "(Initial cycles + additional cycles) × months per cycle = (5 + 1) × 2",
+            "result": "12 months, or 1 year"
+          }
+        }
+      },
+      "qualitative_part": {
+        "scoring_note": "Qualitative portion of Q4 is scored as 100% total, split into two tiers. Within each tier, use 3-level scoring per",
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "tier_1_basic": {
+          "weight_of_Q4_qualitative_total": "50%",
+          "keypoints": [
+            "It'll take an entire year for Bio Co to successfully train all their salespeople"
+          ],
+          "note": "Expected from every candidate. Single point worth 50% of qualitative score."
+        },
+        "tier_2_advanced": {
+          "weight_of_Q4_qualitative_total": "50%",
+          "points_available": 3,
+          "weight_per_point": "16.7% of qualitative total",
+          "keypoints": [
+            "These calculations don't consider a potentially high churn rate as a lot of salespeople might be reluctant to change their over-years-built sales technics and might quit. The estimated timeline also doesn't take into consideration new hires",
+            "A one-year training program might require a large budget and a separate PMO (Program Management Office) with dedicated staff. Given learning and development might not be a core competency of Bio Co, the company might need to bring external consultants",
+            "Such a long training period might create tensions among salespeople as some of them get access to the new software far earlier than others and thus might have unfair advantage and earn far higher sales commissions (driven by the tech)"
+          ],
+          "note": "Not expected from every candidate. Each advanced point adds 12.5% to qualitative score."
+        },
+        "minimum_expected": "Correct numerical answer (12 months / 1 year) + Tier 1 basic contextualization (covered)",
+        "outstanding_threshold": "Correct numerical answer + Tier 1 covered + at least 2 Tier 2 advanced comments covered"
+      }
+    }
+  },
+  "state_machine_global": {
+    "case_type": "interviewer_driven",
+    "skip_logic": false,
+    "mandatory_sequence": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4"
+    ],
+    "rules": [
+      "Q1 cannot be skipped under any circumstances",
+      "Questions must proceed in linear order Q1 → Q2 → Q3 → Q4",
+      "A question may not be advanced until the current question receives a scoreable answer (1st or 2nd attempt)",
+      "If analyst pre-covers a later question's keypoints in an earlier answer, record as pre-coverage but still ask the later question in sequence",
+      "No question may be skipped even if pre-covered"
+    ]
+  },
+  "scoring_summary": {
+    "Q1": {
+      "type": "framework",
+      "total_keypoints": 14,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q2": {
+      "type": "qualitative",
+      "total_keypoints": 18,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q3": {
+      "type": "qualitative",
+      "total_keypoints": 13,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q4": {
+      "type": "quantitative",
+      "part_1_quantitative": {
+        "correct_answer": "12 months, or 1 year",
+        "zero_tolerance": true,
+        "scoring": "Binary: Full credit if correct; zero credit if incorrect"
+      },
+      "part_2_qualitative": {
+        "total_keypoints": 4,
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "human_review_priority": "false-partial > false-not-covered > covered",
+        "tier_1_basic": {
+          "keypoints": 1,
+          "weight": "50% of qualitative score"
+        },
+        "tier_2_advanced": {
+          "keypoints": 3,
+          "weight_per_point": "12.5% of qualitative score",
+          "weight_total": "50% of qualitative score"
+        }
+      }
+    }
+  }
+}

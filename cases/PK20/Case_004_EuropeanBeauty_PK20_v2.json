@@ -1,0 +1,931 @@
+{
+  "case_id": "004",
+  "version": "v2",
+  "source": {
+    "title": "European Beauty Company",
+    "inspired_by": "McKinsey & Company",
+    "year": 2020,
+    "author": "Peter K.",
+    "reference": "Peter-K.thinkific.com, Case #4",
+    "casebook_abbr": "PK20"
+  },
+  "case_type": "interviewer_driven",
+  "case_arch": {
+    "primary": "Profitability",
+    "tags": [
+      "Profitability",
+      "Revenue Growth",
+      "Investment Decision"
+    ]
+  },
+  "difficulty": "Hard",
+  "industry": "Consumer Goods / Beauty & Cosmetics",
+  "topic": "Profitability improvement for a European beauty company — revenue growth, cost analysis, and digital investment",
+  "expected_duration_minutes": 30,
+  "opening_prompt": "Hi, I'd like to solve some consulting cases with you. Pls be a good interviewee to have a potential test in consulting cases. For the case problem-solving, pls do not assume any numbers or assumptions before my confirmation. I will give you the context upon request. I need you to answer the following questions for the client. Before you start, feel free to ask me 2-3 clarifying questions about the client.\n\nQ1. What factors would you consider to drive the profitability up?\nQ2. What revenue growth opportunities can you suggest?\nQ3. The client employs in-store beauty advisors (directly or through retail partners). What are the revenue drivers through advisors?\nQ4. Your analyst put together some financial information of the client and sent you these charts. What do they tell you?\nQ5. Based on the chart, what is the client's total costs of beauty consultants/beauty advisors as % of the total revenue?\nQ6. The client is considering to launch a new product line that is expected to increase the revenue from €120M to €130M in 2020. How will it change the beauty advisor costs as % of revenue?\nQ7. The client is considering the development of a smartphone-based digital beauty advisor. What is payback period of this investment?\nQ8. Is it a good investment? What do you think about this payback period?\nQ9. Lots of customers appreciate face-to-face interaction. What are ways to ensure great digital experience instead of face-to-face?\n\nHere is the basic context for the client:\nYour client is a European beauty company that offers fragrance, makeup, and skincare. Their profitability has been decreasing recently. They have reached out to you to get your advice on how they can increase their profitability.",
+  "structure_1_client_basic_context": {
+    "company": "A European beauty company",
+    "type": "Beauty company (fragrance, makeup, skincare)",
+    "situation": "Profitability has been decreasing recently.",
+    "action": "Client is seeking advice on how to increase their profitability.",
+    "ask": "How can they increase their profitability?"
+  },
+  "structure_2_information_upon_request": {
+    "item_1": {
+      "item_id": "item_1",
+      "trigger": "Analyst asks about distribution channels or how the client's products reach customers",
+      "core_dimensional_concept": "distribution channels used by the client",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar named 'Distribution', 'Channels', or 'Go-to-Market'",
+          "explicit clarifying question about what retail channels or distribution partners the client uses",
+          "sub-bullet under client analysis asking about where customers purchase products"
+        ],
+        "alternative_phrasings": [
+          "distribution channels",
+          "how are products sold",
+          "retail partners",
+          "where do customers buy",
+          "sales channels"
+        ]
+      },
+      "disqualifying": [
+        "Only mentions 'channel mix' or 'channel strategy' as a broad dimension under the Revenue pillar without explicitly asking about specific channels",
+        "Only says 'distribution is a factor' as a passing reference without asking for specific channel types"
+      ],
+      "info": "Distribution channels include chain retail stores (similar to Walmart, Target) and beauty chains (similar to Sephora, Ulta)."
+    },
+    "item_2": {
+      "item_id": "item_2",
+      "trigger": "Analyst asks about the client's product portfolio or which products are core vs new",
+      "core_dimensional_concept": "product portfolio composition — legacy vs recently launched product lines",
+      "release_conditions": {
+        "structural_position": [
+          "explicit clarifying question about which products are new vs legacy/core",
+          "framework pillar named 'Product Lines', 'Portfolio', or 'Product Mix' asking about the line-up",
+          "sub-bullet asking about relative maturity of product categories"
+        ],
+        "alternative_phrasings": [
+          "what are the core products",
+          "which product lines are new",
+          "legacy vs new products",
+          "what products does the client sell",
+          "how long have they had each product line"
+        ]
+      },
+      "disqualifying": [
+        "Only lists 'product lines' as a dimension under the Revenue pillar without asking which are legacy vs new",
+        "Only says 'fragrance, makeup, skincare' as a passing reference from the prompt without asking about product maturity"
+      ],
+      "info": "Makeup offerings are the client's legacy products, and they recently launched a skincare line."
+    },
+    "item_3": {
+      "item_id": "item_3",
+      "trigger": "Analyst asks about financial goals or profitability targets",
+      "core_dimensional_concept": "client's financial goal or profitability target",
+      "release_conditions": {
+        "structural_position": [
+          "explicit clarifying question about what target margin or profitability improvement the client wants",
+          "framework pillar named 'Financial Goal', 'Success Metrics', or 'Target'",
+          "direct question: 'What is the client's target profitability?' or 'What financial goal should we hit?'"
+        ],
+        "alternative_phrasings": [
+          "financial goal",
+          "profitability target",
+          "what margin does the client want",
+          "target profit improvement",
+          "what does success look like financially"
+        ]
+      },
+      "disqualifying": [
+        "Only lists 'profitability' as a dimension under the Financial Analysis pillar without asking for the client's specific target",
+        "Only says 'improve profitability' as a passing reference from the prompt without asking for specific goals"
+      ],
+      "info": "We don't know about the financial goals of the client."
+    },
+    "item_4": {
+      "item_id": "item_4",
+      "trigger": "Analyst asks about geographic scope or which countries/regions the client operates in",
+      "core_dimensional_concept": "geographic scope of the client's operations",
+      "release_conditions": {
+        "structural_position": [
+          "explicit clarifying question about which countries or regions the client operates in",
+          "framework pillar named 'Geography', 'Geographic Footprint', or 'Market Scope'",
+          "direct question: 'Which European countries does the client operate in?' or 'What is the geographic footprint?'"
+        ],
+        "alternative_phrasings": [
+          "geographic scope",
+          "which countries",
+          "where does the client operate",
+          "European markets covered",
+          "geographic footprint"
+        ]
+      },
+      "disqualifying": [
+        "Only says 'European beauty company' as a passing reference from the prompt without asking about specific countries or market coverage",
+        "Only lists 'European market' as a generic dimension under the Market pillar without asking about specific countries"
+      ],
+      "info": "The client operates in multiple European countries."
+    }
+  },
+  "structure_3_case_questions": {
+    "Q1": {
+      "q_id": "Q1",
+      "type": "framework",
+      "question_text": "What factors would you consider to drive the profitability up?",
+      "information_to_share_upfront": null,
+      "information_upon_request": "See structure_2 items 1–4. Release only items by semantic touch (release when the analyst structurally engages the dimension; not on a passing reference), not by mere keyword presence.",
+      "state_machine": {
+        "next_question": "Q2",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable framework answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q2": {
+      "q_id": "Q2",
+      "type": "qualitative",
+      "question_text": "What revenue growth opportunities can you suggest?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q3",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q3": {
+      "q_id": "Q3",
+      "type": "qualitative",
+      "question_text": "The client employs in-store beauty advisors (directly or through retail partners). What are the revenue drivers through advisors?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q4",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q4": {
+      "q_id": "Q4",
+      "type": "qualitative",
+      "question_text": "Your analyst put together some financial information of the client and sent you these charts. What do they tell you?",
+      "information_to_share_upfront": [
+        "Appendix 1 — Client's annual revenue (M EUR 2018-20F) and in-store beauty advisor/consultant costs by product line (see appendix field below)"
+      ],
+      "information_upon_request": null,
+      "appendix": {
+        "appendix_1": {
+          "title": "Financial charts: annual revenue and beauty advisor costs by product line (2018-20F)",
+          "release_rule": "Share upfront with analyst at the start of Q4",
+          "charts": {
+            "chart_1_annual_revenue_M_EUR": {
+              "2018": 100,
+              "2019": 108,
+              "2020F": 120
+            },
+            "chart_2_beauty_advisor_costs_pct_of_total_revenue": {
+              "makeup": {
+                "2018_pct": 13.8,
+                "2019_pct": 14.3,
+                "2020F_pct": 15.0,
+                "2018_M_EUR": 13.8,
+                "2019_M_EUR": 15.4,
+                "2020F_M_EUR": 18.0
+              },
+              "fragrance": {
+                "2018_pct": 5.2,
+                "2019_pct": 6.2,
+                "2020F_pct": 7.5,
+                "2018_M_EUR": 5.2,
+                "2019_M_EUR": 6.7,
+                "2020F_M_EUR": 9.0
+              },
+              "skin_care": {
+                "2018_pct": 1.0,
+                "2019_pct": 1.5,
+                "2020F_pct": 2.5,
+                "2018_M_EUR": 1.0,
+                "2019_M_EUR": 1.7,
+                "2020F_M_EUR": 3.0
+              }
+            }
+          },
+          "footnote": "The client hires beauty advisors directly or its retail partners provide their beauty consultants for a sales commission."
+        }
+      },
+      "state_machine": {
+        "next_question": "Q5",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer reading the charts (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q5": {
+      "q_id": "Q5",
+      "type": "quantitative",
+      "question_text": "Based on the chart, what is the client's total costs of beauty consultants/beauty advisors as % of the total revenue? Pls list the 'year - %' respectively one by one.",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q6",
+        "skip_logic": false,
+        "max_attempts": 2,
+        "scoring_on_transition": {
+          "attempt_1_correct": "Full score",
+          "attempt_2_correct": "0 score per core_principles §7.2",
+          "both_attempts_wrong": "0 score; interviewer provides correct answers (20%, 22%, 25%) before Q6"
+        },
+        "transition_condition": "Case proceeds to Q6 after 1st or 2nd attempt; if both wrong, Judge LLM provides correct answers (20%, 22%, 25%) before Q6"
+      }
+    },
+    "Q6": {
+      "q_id": "Q6",
+      "type": "quantitative",
+      "question_text": "The client is considering to launch a new product line that is expected to increase the revenue from €120M to €130M in 2020. How will it change the beauty advisor costs as % of revenue?",
+      "information_to_share_upfront": null,
+      "information_upon_request": [
+        {
+          "item_id": "Q6_item_1",
+          "trigger": "Analyst asks about the sales commission rate for beauty advisors on the new product",
+          "core_dimensional_concept": "sales commission rate for beauty advisors on the new product line",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question about what commission rate applies to the new product",
+              "quantitative setup asking for beauty advisor cost rate for the incremental revenue",
+              "direct question: 'What commission rate will we pay advisors on the new product?'"
+            ],
+            "alternative_phrasings": [
+              "commission rate for new product",
+              "what percent do advisors earn on the new line",
+              "beauty advisor cost rate for new product",
+              "sales commission on new product",
+              "what is the incentive rate"
+            ]
+          },
+          "disqualifying": [
+            "Only says 'beauty advisor costs' broadly without asking for the specific commission rate for the new product",
+            "Only mentions 'incentive structure' as a passing reference without asking for the specific % number"
+          ],
+          "info": "The client will pay 12% sales commission to beauty advisors to sell the new product."
+        },
+        {
+          "item_id": "Q6_item_2",
+          "trigger": "Analyst asks about the sales channel for the new product (whether it is sold through advisors only or also other channels)",
+          "core_dimensional_concept": "exclusive sales channel assumption for the new product",
+          "release_conditions": {
+            "structural_position": [
+              "explicit clarifying question about whether the new product is sold exclusively through advisors",
+              "quantitative setup asking whether other channels (e.g. e-commerce, own stores) also sell the new product",
+              "direct question: 'Will the new product be sold only through beauty advisors?'"
+            ],
+            "alternative_phrasings": [
+              "sold only through advisors",
+              "exclusive channel for new product",
+              "are there other sales channels",
+              "distribution assumption for new product",
+              "channel mix for new product launch"
+            ]
+          },
+          "disqualifying": [
+            "Only says 'distribution strategy' as a passing reference without asking whether advisors are the exclusive channel",
+            "Only mentions 'go-to-market' broadly without asking for the specific channel-exclusivity assumption"
+          ],
+          "info": "We can assume that new product will be sold solely through beauty advisors."
+        }
+      ],
+      "state_machine": {
+        "next_question": "Q7",
+        "skip_logic": false,
+        "max_attempts": 2,
+        "scoring_on_transition": {
+          "attempt_1_correct": "Full score",
+          "attempt_2_correct": "0 score per core_principles §7.2",
+          "both_attempts_wrong": "0 score; interviewer provides correct answer (24%) before Q7"
+        },
+        "transition_condition": "Case proceeds to Q7 after 1st or 2nd attempt; if both wrong, Judge LLM provides correct answer (24%) before Q7"
+      }
+    },
+    "Q7": {
+      "q_id": "Q7",
+      "type": "quantitative",
+      "question_text": "The client is considering the development of a smartphone-based digital beauty advisor. What is payback period of this investment?",
+      "information_to_share_upfront": null,
+      "information_upon_request": [
+        {
+          "item_id": "Q7_item_1",
+          "trigger": "Analyst asks about what the digital solution entails or what it does",
+          "core_dimensional_concept": "features and functionality of the smartphone-based digital beauty advisor",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question asking what the app or digital solution will do",
+              "investment analysis setup asking for product description before computing benefits",
+              "direct question: 'What does the digital beauty advisor do?' or 'What features does the app have?'"
+            ],
+            "alternative_phrasings": [
+              "what does the app do",
+              "features of digital solution",
+              "what is the digital beauty advisor",
+              "describe the smartphone app",
+              "what functionality does it offer"
+            ]
+          },
+          "disqualifying": [
+            "Only mentions 'digital solution' as a passing reference without asking for functionality details",
+            "Only lists 'digital product' under the Investment Analysis pillar without asking for a description"
+          ],
+          "info": "The digital solution will include a smartphone app with AI/AR features: consumers can upload a selfie photo and the platform will instantly provide detailed diagnostics and recommendations of specific products and treatments tailored to their needs and personal preferences; consumers can 'try' cosmetics before they buy through digital makeup sampling and try-on features (i.e. AR — augmented reality)."
+        },
+        {
+          "item_id": "Q7_item_2",
+          "trigger": "Analyst asks about the upfront investment cost to build the digital solution",
+          "core_dimensional_concept": "upfront investment required to build the digital solution",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question about the cost to develop or build the app",
+              "payback calculation setup asking for the initial investment amount",
+              "direct question: 'How much will it cost to build the app?' or 'What is the investment?'"
+            ],
+            "alternative_phrasings": [
+              "investment cost",
+              "how much to build",
+              "upfront investment",
+              "development cost",
+              "capex for the digital solution"
+            ]
+          },
+          "disqualifying": [
+            "Only says 'this requires investment' as a passing reference without asking for the specific amount",
+            "Only lists 'capex' as a dimension under the Investment pillar without asking for the figure"
+          ],
+          "info": "The expected investment to build the digital solution is €2.1M."
+        },
+        {
+          "item_id": "Q7_item_3",
+          "trigger": "Analyst asks about ongoing operational costs to maintain the digital solution",
+          "core_dimensional_concept": "annual operational costs to maintain the digital solution",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question about maintenance, running costs, or opex for the app",
+              "payback calculation setup asking for annual cost to offset against savings",
+              "direct question: 'What are the ongoing costs to maintain the app?'"
+            ],
+            "alternative_phrasings": [
+              "ongoing costs",
+              "maintenance cost",
+              "annual opex",
+              "running costs",
+              "cost to maintain the app"
+            ]
+          },
+          "disqualifying": [
+            "Only says 'there will be ongoing costs' as a passing reference without asking for the specific annual figure",
+            "Only loosely states 'operational expenses' under the Cost pillar without asking for the maintenance-cost figure"
+          ],
+          "info": "The ongoing operational costs to maintain the digital solution is €0.2M per year."
+        },
+        {
+          "item_id": "Q7_item_4",
+          "trigger": "Analyst asks how much the digital solution will reduce beauty advisor costs",
+          "core_dimensional_concept": "projected reduction in beauty advisor costs from the digital solution",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question about the cost savings or reduction in advisor costs from the app",
+              "payback calculation setup asking for the annual savings from the investment",
+              "direct question: 'How much will the app reduce beauty advisor costs?'"
+            ],
+            "alternative_phrasings": [
+              "cost savings",
+              "reduction in advisor costs",
+              "how much does it save",
+              "beauty advisor cost reduction",
+              "% savings from the technology"
+            ]
+          },
+          "disqualifying": [
+            "Only says 'the app will reduce costs' as a passing reference without asking for the specific % reduction",
+            "Only lists 'cost savings' under the Benefits pillar without asking for the specific projected percentage"
+          ],
+          "info": "We project that the technology should reduce beauty advisor costs by 5%."
+        }
+      ],
+      "state_machine": {
+        "next_question": "Q8",
+        "skip_logic": false,
+        "max_attempts": 2,
+        "scoring_on_transition": {
+          "attempt_1_correct": "Full score",
+          "attempt_2_correct": "0 score per core_principles §7.2",
+          "both_attempts_wrong": "0 score; interviewer provides correct answer (1.5 years) before Q8"
+        },
+        "transition_condition": "Case proceeds to Q8 after 1st or 2nd attempt; if both wrong, Judge LLM states: 'The correct payback period for Q7 is 1.5 years. Is it a good investment? What do you think about this payback period?'"
+      }
+    },
+    "Q8": {
+      "q_id": "Q8",
+      "type": "qualitative",
+      "question_text": "Is it a good investment? What do you think about this payback period?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q9",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer contextualizing the 1.5 year payback (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q9": {
+      "q_id": "Q9",
+      "type": "qualitative",
+      "question_text": "Lots of customers appreciate face-to-face interaction. What are ways to ensure great digital experience instead of face-to-face?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": null,
+        "skip_logic": false,
+        "transition_condition": "Case ends after Q9"
+      }
+    }
+  },
+  "structure_4_ground_truth": {
+    "Q1_ground_truth": {
+      "type": "framework",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_fragrance_and_makeup_market": {
+          "keypoints": [
+            "Growth rate",
+            "Major brands and their market shares",
+            "Typical profitability"
+          ],
+          "subtotal": 3
+        },
+        "pillar_2_european_beauty_company": {
+          "keypoints": [
+            "Customer segments (e.g. B2B – entertainment industry, hair salons, etc.; high-end/low-end?)",
+            "Key product lines",
+            "Distribution channels (e.g. own branded stores, department/drug stores, etc.)"
+          ],
+          "subtotal": 3
+        },
+        "pillar_3_profitability": {
+          "keypoints": [
+            "Revenue analysis — Current level and growth rate",
+            "Revenue analysis — Break-down by product line and channel",
+            "Cost structure (high VC business?)"
+          ],
+          "subtotal": 3
+        }
+      },
+      "total_keypoints": 9,
+      "minimum_expected": "Cover at least 2 pillars; key points include market growth rate and competition, client business model (product lines, customer segments), and financial analysis (revenue and cost structure); minimum 4 keypoints",
+      "outstanding_threshold": "All 3 pillars covered with majority of sub-items in a clearly structured issue tree; profitability breakdown by product line and channel included"
+    },
+    "Q2_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_upgrade_marketing_strategy": {
+          "keypoints": [
+            "Launch loyalty card for regular customers",
+            "Invest in aggressive marketing campaigns and promotions",
+            "Build/strengthen credibility through regular publications re beauty products in print, blogs, YouTube, etc."
+          ],
+          "subtotal": 3
+        },
+        "pillar_2_change_pricing": {
+          "keypoints": [
+            "Introduce bundles",
+            "Offer family packages",
+            "Develop subscription options",
+            "Adjust pricing levels to match WTP (willingness-to-pay)"
+          ],
+          "subtotal": 4
+        },
+        "pillar_3_increase_efficiency_of_distribution": {
+          "keypoints": [
+            "Launch e-commerce option",
+            "Increase incentives (e.g. sales commissions) for retail partners",
+            "Add new retail chains and beauty chains to official distributors",
+            "Start own-branded stores",
+            "Offer franchising"
+          ],
+          "subtotal": 5
+        },
+        "pillar_4_improve_and_expand_value_proposition": {
+          "keypoints": [
+            "Improve CX (e.g. better select, train, assess, and incentivize customer-facing staff)",
+            "Develop digital solution to facilitate customer journey (e.g. personalized recommendation, information on skincare products)",
+            "Address pain points (if any) (e.g. improve packaging, quality of products)",
+            "Develop adjacent offerings to cross-sell/up-sell",
+            "Build offerings for B2B (e.g. cosmetics/haircut salons, entertainment industry)",
+            "Consider going into high-end, product for men, etc.",
+            "Consider white-labeling"
+          ],
+          "subtotal": 7
+        }
+      },
+      "total_keypoints": 19,
+      "minimum_expected": "At least 4 ideas across at least 2 pillars",
+      "outstanding_threshold": "8+ ideas structured across all 4 pillars (upgrade marketing / change pricing / improve distribution / expand value proposition), delivered fluently on the fly without taking notes"
+    },
+    "Q3_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_increase_sales_efficiency": {
+          "keypoints": [
+            "Strengthen the selection criteria to hire only best-in-class salespeople/beauty advisors",
+            "Invest in advanced sales training program for beauty consultants",
+            "Conduct regular assessments of the beauty consultants",
+            "Improve incentives for beauty consultants (e.g. increase sales commissions, perks, improve career growth opportunities)"
+          ],
+          "subtotal": 4
+        },
+        "pillar_2_expand_division_of_beauty_advisors": {
+          "keypoints": [
+            "Hire more in-house beauty advisors",
+            "Increase the number of beauty consultants provided by retail partners"
+          ],
+          "subtotal": 2
+        }
+      },
+      "total_keypoints": 6,
+      "minimum_expected": "At least 3 ideas across at least 1 pillar",
+      "outstanding_threshold": "6 ideas covering both pillars (increase efficiency AND expand division), delivered fluently on the fly without taking notes"
+    },
+    "Q4_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "tier_1_basic": {
+        "weight_of_Q4_total": "50%",
+        "keypoints": [
+          "The client's revenue is steadily increasing, which is a healthy sign",
+          "The costs for beauty advisors are constantly going up across all product lines"
+        ],
+        "note": "Expected from every candidate. 2 points, each worth 25% of qualitative score."
+      },
+      "tier_2_advanced": {
+        "weight_of_Q4_total": "50%",
+        "points_available": 5,
+        "weight_per_point": "10% of qualitative total",
+        "keypoints": [
+          "The client is a medium-sized company and has been experiencing a rapid growth of almost 10% annually which is far above the growth rate of 2-3% typical for mature markets. That might suggest that the client has been aggressively investing in marketing pushing their costs up",
+          "The root cause of the profitability decline is likely in growing costs as revenue is increasing",
+          "The costs for beauty advisors are likely sales commissions - the sales commissions increased across product lines as percentages in grey circles augmented",
+          "The costs for beauty advisors are likely sales commissions - And/or the share of sales generated by the beauty advisors grows rapidly (due to cannibalization of non-assisted sales (without beauty advisors), increase in number or quality of beauty advisors)",
+          "It seems like makeup is a client's legacy product line, and skin care is fairly new, which might explain the rapid growth skin care [if sales commissions grow, it is likely driven by pro rata increase in sales]"
+        ],
+        "note": "Not expected from every candidate. Each advanced point adds 10% to qualitative score."
+      },
+      "total_keypoints": 7,
+      "minimum_expected": "Both basic comments (tier_1) covered",
+      "outstanding_threshold": "Both basic + at least 3 advanced comments covered; demonstrates analytical depth on chart interpretation"
+    },
+    "Q5_ground_truth": {
+      "type": "quantitative",
+      "quantitative_part": {
+        "correct_final_answer": "20% (2018), 22% (2019), 25% (2020F)",
+        "accepted_answer_parts": {
+          "2018": {
+            "accepted_values": [
+              0.2
+            ],
+            "tolerance_pct": 0.0,
+            "zero_tolerance": true
+          },
+          "2019": {
+            "accepted_values": [
+              0.22
+            ],
+            "tolerance_pct": 0.0,
+            "zero_tolerance": true
+          },
+          "2020F": {
+            "accepted_values": [
+              0.25
+            ],
+            "tolerance_pct": 0.0,
+            "zero_tolerance": true
+          }
+        },
+        "scoring_method": "Binary: all three correct numbers = full credit; any incorrect = zero credit",
+        "calculation_steps": {
+          "step_1_2018": {
+            "formula": "13.8% + 5.2% + 1.0% (sum of per-product-line % of total revenue, from chart bars)",
+            "result": "20.0%"
+          },
+          "step_2_2019": {
+            "formula": "14.3% + 6.2% + 1.5%",
+            "result": "22.0%"
+          },
+          "step_3_2020F": {
+            "formula": "15.0% + 7.5% + 2.5%",
+            "result": "25.0%"
+          }
+        }
+      },
+      "qualitative_part": {
+        "scoring_note": "Q5 qualitative (contextualization of the 20/22/25% answers) is scored as 100% total, split into two tiers.",
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "tier_1_basic": {
+          "weight_of_Q5_qualitative_total": "50%",
+          "keypoints": [
+            "The costs grew from 20% to 25% as percentage of revenue, which indicates a potential problem area"
+          ],
+          "note": "Expected from every candidate."
+        },
+        "tier_2_advanced": {
+          "weight_of_Q5_qualitative_total": "50%",
+          "points_available": 3,
+          "weight_per_point": "16.7% of qualitative total",
+          "keypoints": [
+            "Such an explosive growth of the beauty advisor costs has been destroying the margins which dropped by 5 percentage points. Given that beauty products are fairly commoditized and differentiate mostly based on brand, the profitability in this industry is likely slim and reduction by 5 percentage points might wipe out almost the entire margin.",
+            "It seems like increase in sales commissions (beauty advisor costs) might be a common trend as it happens across different segments",
+            "It might also be driven by the shift in sales channel mix if the client started relying more on beauty consultants (e.g. to improve customer experience and strengthen brand) than on non-assisted offline sales and e-commerce"
+          ],
+          "note": "Not expected from every candidate."
+        }
+      },
+      "minimum_expected": "All three correct % answers + tier_1 basic contextualization",
+      "outstanding_threshold": "All three correct answers + tier_1 + at least 2 tier_2 advanced comments covered"
+    },
+    "Q6_ground_truth": {
+      "type": "quantitative",
+      "quantitative_part": {
+        "correct_final_answer": "24%",
+        "accepted_values": [
+          0.24
+        ],
+        "tolerance_pct": 0.0,
+        "zero_tolerance": true,
+        "scoring_method": "Binary: correct number = full credit; incorrect = zero credit",
+        "calculation_steps": {
+          "step_1_base_advisor_costs": {
+            "formula": "25.0% × €120M (2020F total revenue before launch)",
+            "result": "€30M"
+          },
+          "step_2_incremental_advisor_costs": {
+            "formula": "12% commission × (€130M − €120M) incremental revenue",
+            "result": "€1.2M"
+          },
+          "step_3_new_total_advisor_costs": {
+            "formula": "(€30M + €1.2M) ÷ €130M",
+            "result": "24.0%"
+          }
+        }
+      },
+      "qualitative_part": {
+        "scoring_note": "Q6 qualitative (contextualization of the 24% answer) is scored as 100% total, split into two tiers.",
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "tier_1_basic": {
+          "weight_of_Q6_qualitative_total": "50%",
+          "keypoints": [
+            "The costs as percentage of revenue is going to decrease from 25% to 24%, which makes the launch of a new product attractive."
+          ],
+          "note": "Expected from every candidate."
+        },
+        "tier_2_advanced": {
+          "weight_of_Q6_qualitative_total": "50%",
+          "points_available": 3,
+          "weight_per_point": "16.7% of qualitative total",
+          "keypoints": [
+            "The final decision on the product launch will depend on a wide variety of factors like the market size for that product, the market's growth rate, competitive landscape, typical profitability, operational feasibility, potential risks, etc.",
+            "12% looks quite conservative and far below the beauty advisor costs for other client's product lines. That might suggest that beauty advisors wouldn't be that encouraged to sell our products and our sales goal of €10M might not be met",
+            "The economics of the new product isn't solely driven by the sales commission, so the comprehensive analysis of the entire cost structure and potential synergies with the core business (e.g. same distribution channels, economies of scale in supply chain) will be needed to assess the financial implications of this product launch"
+          ],
+          "note": "Not expected from every candidate."
+        }
+      },
+      "minimum_expected": "Correct answer (24%) + tier_1 basic contextualization",
+      "outstanding_threshold": "Correct answer + tier_1 + at least 2 tier_2 advanced comments covered"
+    },
+    "Q7_ground_truth": {
+      "type": "quantitative",
+      "quantitative_part": {
+        "correct_final_answer": "1.5 years",
+        "accepted_values": [
+          1.5
+        ],
+        "tolerance_pct": 0.0,
+        "zero_tolerance": true,
+        "scoring_method": "Binary: correct number = full credit; incorrect = zero credit",
+        "calculation_steps": {
+          "step_1_annual_cost_savings": {
+            "formula": "€31.5M (total advisor costs base) × 5% reduction − €0.2M (annual maintenance cost)",
+            "result": "€1.575M − €0.2M ≈ €1.4M per year"
+          },
+          "step_2_payback_period": {
+            "formula": "€2.1M (investment) ÷ €1.4M (annual savings)",
+            "result": "1.5 years"
+          }
+        }
+      }
+    },
+    "Q8_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "scoring_note": "Q8 qualitative is scored as 100% total, split into two tiers. Within each tier, use 3-level scoring.",
+      "tier_1_basic": {
+        "weight_of_Q8_qualitative_total": "50%",
+        "keypoints": [
+          "The payback of 1.5 years seems reasonable and we should recommend to proceed with the investment"
+        ],
+        "note": "Expected from every candidate."
+      },
+      "tier_2_advanced": {
+        "weight_of_Q8_qualitative_total": "50%",
+        "points_available": 4,
+        "weight_per_point": "12.5% of qualitative total",
+        "keypoints": [
+          "The digital solution will likely contribute to the revenue growth - it might drive additional demand as the app will help customers educate themselves on the client's products and develop the connection with the client's brand",
+          "The digital solution will likely contribute to the revenue growth - it would also improve customer experience and might become a great marketing story to go viral and attract new customers",
+          "IT budgets and timeline for software solutions are often underestimated, so there might be a risk of increase in needed funding and launch delays",
+          "If the digital solution is a great success, the other players (\"fast followers\") will replicate it and launch their own versions, taking away the competitive advantage of the client"
+        ],
+        "note": "Not expected from every candidate. Each advanced point adds 12.5% to qualitative score."
+      },
+      "total_keypoints": 5,
+      "minimum_expected": "Tier_1 basic: payback seems reasonable, recommend to proceed",
+      "outstanding_threshold": "Tier_1 + at least 2 tier_2 advanced comments; demonstrates awareness of revenue upside, implementation risk, and competitive dynamics"
+    },
+    "Q9_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_top_notch_smartphone_app_design": {
+          "keypoints": [
+            "Easy to navigate",
+            "Fast and reliable",
+            "Versatile (works on all the smartphone platforms)",
+            "High-quality design"
+          ],
+          "subtotal": 4
+        },
+        "pillar_2_advanced_smartphone_app_features": {
+          "ai_ar_features": [
+            "\"Virtual\" try-on of makeup products",
+            "Makeup and skincare product recommendations based on selfie AI analysis"
+          ],
+          "social_features": [
+            "Sharing with friends and posting on social networks",
+            "Community forums to ask qs"
+          ],
+          "purchasing_functionalities": [
+            "Purchasing functionalities (e.g. order through the app to pick up)"
+          ],
+          "keypoints": [
+            "\"Virtual\" try-on of makeup products",
+            "Makeup and skincare product recommendations based on selfie AI analysis",
+            "Sharing with friends and posting on social networks",
+            "Community forums to ask qs",
+            "Purchasing functionalities (e.g. order through the app to pick up)"
+          ],
+          "subtotal": 5
+        },
+        "pillar_3_flawless_smartphone_app_support": {
+          "keypoints": [
+            "24/7",
+            "Highly trained and knowledgeable customer service agents",
+            "Customer-oriented and friendly",
+            "Low wait time to talk to agent"
+          ],
+          "subtotal": 4
+        }
+      },
+      "total_keypoints": 13,
+      "minimum_expected": "At least 4 ideas across at least 2 pillars",
+      "outstanding_threshold": "8+ ideas structured across all 3 pillars (app design / app features / app support), delivered fluently on the fly without taking notes"
+    }
+  },
+  "state_machine_global": {
+    "case_type": "interviewer_driven",
+    "skip_logic": false,
+    "mandatory_sequence": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5",
+      "Q6",
+      "Q7",
+      "Q8",
+      "Q9"
+    ],
+    "rules": [
+      "Q1 cannot be skipped under any circumstances",
+      "Questions must proceed in linear order Q1 → Q2 → Q3 → Q4 → Q5 → Q6 → Q7 → Q8 → Q9",
+      "A question may not be advanced until the current question receives a scoreable answer (1st or 2nd attempt)",
+      "Appendix 1 must be shared upfront at the start of Q4",
+      "If analyst pre-covers a later question's keypoints in an earlier answer, record as pre-coverage but still ask the later question in sequence",
+      "No question may be skipped even if pre-covered",
+      "Q8 references 'this payback period' from Q7 — per §4.3.C: if Q7 both attempts wrong, Judge LLM provides correct answer (1.5 years) before Q8",
+      "Q9 is the last question — case ends after Q9"
+    ]
+  },
+  "scoring_summary": {
+    "Q1": {
+      "type": "framework",
+      "total_keypoints": 9,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q2": {
+      "type": "qualitative",
+      "total_keypoints": 19,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q3": {
+      "type": "qualitative",
+      "total_keypoints": 6,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q4": {
+      "type": "qualitative",
+      "total_keypoints": 7,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered",
+      "tier_1_basic": {
+        "keypoints": 2,
+        "weight": "50% of qualitative score (25% each)"
+      },
+      "tier_2_advanced": {
+        "keypoints": 5,
+        "weight_per_point": "10% of qualitative score",
+        "weight_total": "50% of qualitative score"
+      }
+    },
+    "Q5": {
+      "type": "quantitative",
+      "part_1_quantitative": {
+        "correct_answer": "20% (2018), 22% (2019), 25% (2020F)",
+        "zero_tolerance": true,
+        "scoring": "Binary: all three correct = full credit; any incorrect = zero credit"
+      },
+      "part_2_qualitative": {
+        "total_keypoints": 4,
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "human_review_priority": "false-partial > false-not-covered > covered",
+        "tier_1_basic": {
+          "keypoints": 1,
+          "weight": "50% of qualitative score"
+        },
+        "tier_2_advanced": {
+          "keypoints": 3,
+          "weight_per_point": "16.7% of qualitative score",
+          "weight_total": "50% of qualitative score"
+        }
+      }
+    },
+    "Q6": {
+      "type": "quantitative",
+      "part_1_quantitative": {
+        "correct_answer": "24%",
+        "zero_tolerance": true,
+        "scoring": "Binary: Full credit if correct; zero credit if incorrect"
+      },
+      "part_2_qualitative": {
+        "total_keypoints": 4,
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "human_review_priority": "false-partial > false-not-covered > covered",
+        "tier_1_basic": {
+          "keypoints": 1,
+          "weight": "50% of qualitative score"
+        },
+        "tier_2_advanced": {
+          "keypoints": 3,
+          "weight_per_point": "16.7% of qualitative score",
+          "weight_total": "50% of qualitative score"
+        }
+      }
+    },
+    "Q7": {
+      "type": "quantitative",
+      "part_1_quantitative": {
+        "correct_answer": "1.5 years",
+        "zero_tolerance": true,
+        "scoring": "Binary: Full credit if correct; zero credit if incorrect"
+      }
+    },
+    "Q8": {
+      "type": "qualitative",
+      "total_keypoints": 5,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered",
+      "tier_1_basic": {
+        "keypoints": 1,
+        "weight": "50% of qualitative score"
+      },
+      "tier_2_advanced": {
+        "keypoints": 4,
+        "weight_per_point": "12.5% of qualitative score",
+        "weight_total": "50% of qualitative score"
+      }
+    },
+    "Q9": {
+      "type": "qualitative",
+      "total_keypoints": 13,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    }
+  }
+}

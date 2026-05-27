@@ -1,0 +1,648 @@
+{
+  "case_id": "010",
+  "version": "v1",
+  "source": {
+    "title": "Plant-Based Meat",
+    "inspired_by": "McKinsey & Company",
+    "year": "2023",
+    "author": "Peter K.",
+    "reference": "Peter-K.org, Case #10",
+    "casebook_abbr": "PK23"
+  },
+  "case_type": "interviewer_driven",
+  "case_type_origin": null,
+  "annotation_mode": null,
+  "case_arch": {
+    "primary": "Impact of Trend",
+    "tags": [
+      "Impact of Trend",
+      "Growth Strategy",
+      "Operational Efficiency"
+    ],
+    "standard_tags": [
+      "Profitability",
+      "Market Entry",
+      "Revenue Growth",
+      "Cost Optimization",
+      "Investment Decision",
+      "Merger and Acquisition",
+      "Pricing Strategy",
+      "Growth Strategy",
+      "Operational Efficiency",
+      "Due Diligence",
+      "Market Sizing",
+      "Competitive Response",
+      "Digital Transformation",
+      "Turnaround / Restructuring",
+      "Supply Chain",
+      "Comparison",
+      "Impact of Trend"
+    ]
+  },
+  "difficulty": "Hard",
+  "industry": "Fast Food / Food & Beverage",
+  "topic": "Impact of trend — assessing the strategic, operational, and financial implications of plant-based meat for a regional fast-food chain",
+  "expected_duration_minutes": 20,
+  "opening_prompt": "Hi, I'd like to solve some consulting cases with you. Pls be a good interviewee to have a potential test in consulting cases. For the case problem-solving, pls do not assume any numbers or assumptions before my confirmation. I will give you the context upon request. I need you to answer the following questions for the client. Before you start, feel free to ask me 2-3 clarifying questions about the client.\n\nQ1: What factors should UDB consider in assessing the impact of the rapidly growing popularity of plant-based meat on UDB over the next five years?\n\nQ2: If UDB decides to launch a plant-based burger across its chain, what impact on the company's operations will this launch have?\n\nQ3: How will this decision of introducing a vegan burger impact UDB financially? What drivers would you consider in assessing financial implications of this new menu item?\n\nQ4: UDB would like to launch a plant-based burger to capitalize on the boom of alternative meats and success stories of other players like Carl's Jr, Burger King, Shake Shack, etc. What additional annual gross profits should UDB expect from this new burger?\n\nHere is the basic context for the client:\nThe CEO of a $1B regional fast-food chain Up-N-Down Burger (UDB) has asked your team to help her prepare for the annual strategy meeting with the executives. Specifically, she is concerned about the rapidly growing popularity of plant-based meat and the implications of this major innovation for UDB over the next 5 years. The chain hasn't baked this new trend in its strategy yet, but a lot of other fast-food players have already started adjusting to this new reality. How should UDB think about the quickly expanding segment of 'meatless' meat?",
+  "structure_1_client_basic_context": {
+    "company": "Up-N-Down Burger (UDB)",
+    "type": "$1B regional fast-food chain",
+    "situation": "The rapidly growing popularity of plant-based meat and the implications of this major innovation for UDB over the next 5 years. The chain hasn't baked this new trend in its strategy yet, but a lot of other fast-food players have already started adjusting to this new reality.",
+    "action": "Thinking about how to respond to the quickly expanding segment of 'meatless' meat",
+    "ask": "Help the CEO prepare for the annual strategy meeting with the executives by assessing the impact of plant-based meat on UDB over the next 5 years"
+  },
+  "structure_2_information_upon_request": {
+    "item_1": {
+      "item_id": "item_1",
+      "trigger": "Analyst asks about or includes UDB's current locations, geographic footprint, or market presence in framework",
+      "core_dimensional_concept": "UDB geographic footprint and store count",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar (e.g., 'UDB's current presence / Footprint')",
+          "sub-bullet under competitive landscape or client context pillar",
+          "explicit clarifying question about UDB's number of locations or states",
+          "question about UDB's regional focus or California presence"
+        ],
+        "alternative_phrasings": [
+          "number of stores",
+          "store locations",
+          "geographic coverage",
+          "regional presence",
+          "California focus"
+        ]
+      },
+      "disqualifying": [
+        "Merely mentions 'UDB's market' or 'UDB's current market' as a passing reference without asking about specific locations or store count — a G adjacent-dimension modifier (adjacent concept, not the specific-footprint dimension)"
+      ],
+      "info": "UDB's chain has 400 locations in five states with a major focus on California"
+    },
+    "item_2": {
+      "item_id": "item_2",
+      "trigger": "Analyst asks about or includes UDB's current menu offerings or plant-based meat offerings in framework",
+      "core_dimensional_concept": "UDB current plant-based menu offerings",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar (e.g., 'UDB's menu / Current offerings')",
+          "sub-bullet under UDB's menu or competitive assessment pillar",
+          "explicit clarifying question about whether UDB currently offers plant-based burgers",
+          "hypothesis about UDB's current menu gap"
+        ],
+        "alternative_phrasings": [
+          "current menu",
+          "existing offerings",
+          "plant-based options",
+          "Impossible Burger",
+          "vegan burger availability"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'menu expansion' as a strategic option without asking about UDB's current menu gap — this is a F passing mention (mentioning menu expansion as a strategy, not probing current offerings)"
+      ],
+      "info": "UDB doesn't offer 'Impossible' burger or any other plant-based meat offerings"
+    },
+    "item_3": {
+      "item_id": "item_3",
+      "trigger": "Analyst asks about or includes competitive landscape of plant-based meat in fast food in framework",
+      "core_dimensional_concept": "competitive landscape of plant-based fast food offerings",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar (e.g., 'Competitive landscape / Competitors')",
+          "sub-bullet under competitive analysis pillar",
+          "explicit question about which fast-food chains offer plant-based burgers",
+          "question about market leader or first movers in plant-based fast food"
+        ],
+        "alternative_phrasings": [
+          "competitors",
+          "fast-food industry",
+          "other chains",
+          "Burger King",
+          "market peers",
+          "industry benchmark"
+        ]
+      },
+      "disqualifying": [
+        "Mentions 'competition' or 'market competition' in a generic strategic context without specifically probing which players offer plant-based burgers — G adjacent-dimension modifier (generic competition reference, not the specific plant-based competitive landscape)"
+      ],
+      "info": "In the U.S., eight fast-food chains offer vegan burgers, incl. giant Burger King with Impossible Whopper"
+    },
+    "item_4": {
+      "item_id": "item_4",
+      "trigger": "Analyst asks about or includes competitive setbacks or failed plant-based initiatives among fast-food peers in framework",
+      "core_dimensional_concept": "McDonald's plant-based burger discontinuation",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet under competitive landscape",
+          "sub-bullet under risk analysis or lessons-learned pillar",
+          "explicit question about McDonald's vegan burger or McPlant",
+          "question about failed plant-based initiatives or discontinuations in the industry"
+        ],
+        "alternative_phrasings": [
+          "McDonald's",
+          "McPlant",
+          "discontinued offerings",
+          "failed plant-based launches",
+          "rural market challenges",
+          "risk of discontinuation"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'risk of failure' or 'market risk' in a generic framework without specifically probing McDonald's or known industry failures — F passing mention (generic risk mention, not specific competitive failure dimension)"
+      ],
+      "info": "After a trial run in 2021-22, McDonald's discontinued its vegan burger (McPlant) due to low sales (especially in rural areas) with no plans to re-introduce it"
+    },
+    "item_5": {
+      "item_id": "item_5",
+      "trigger": "Analyst asks about or includes customer segmentation, flexitarians, or plant-based meat consumer profile in framework",
+      "core_dimensional_concept": "plant-based meat consumer profile and flexitarian segment",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar (e.g., 'Customers / Consumer segments')",
+          "sub-bullet under customer analysis or demand pillar",
+          "explicit question about the size of vegetarian or flexitarian population",
+          "hypothesis about the target customer for plant-based offerings"
+        ],
+        "alternative_phrasings": [
+          "flexitarians",
+          "vegetarians",
+          "vegans",
+          "customer segments",
+          "target customers",
+          "consumer profile",
+          "meatless market size"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'customers' or 'customer base' as a pillar name without drilling into the specific population data or flexitarian segment — F passing mention (pillar label only, not the dimensional concept of consumer profile and segment size)"
+      ],
+      "info": "While only 8% of the U.S. population consider themselves vegetarians or vegans, more than 40% describe themselves as flexitarians (semi-vegetarians who follow a primarily vegetarian diet but occasionally eat meat or fish)"
+    }
+  },
+  "structure_3_case_questions": {
+    "Q1": {
+      "q_id": "Q1",
+      "type": "framework",
+      "question_text": "What factors should UDB consider in assessing the impact of the rapidly growing popularity of plant-based meat on UDB over the next five years?",
+      "information_to_share_upfront": null,
+      "information_upon_request": "See structure_2 items 1-5. Release only items per semantic touch judgment; not by mere keyword presence.",
+      "state_machine": {
+        "next_question": "Q2",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable framework answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q2": {
+      "q_id": "Q2",
+      "type": "qualitative",
+      "question_text": "If UDB decides to launch a plant-based burger across its chain, what impact on the company's operations will this launch have?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q3",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q3": {
+      "q_id": "Q3",
+      "type": "qualitative",
+      "question_text": "How will this decision of introducing a vegan burger impact UDB financially? What drivers would you consider in assessing financial implications of this new menu item?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q4",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q4": {
+      "q_id": "Q4",
+      "type": "quantitative",
+      "question_text": "UDB would like to launch a plant-based burger to capitalize on the boom of alternative meats and success stories of other players like Carl's Jr, Burger King, Shake Shack, etc. What additional annual gross profits should UDB expect from this new burger?",
+      "information_to_share_upfront": [
+        "UDB charges $5 for its signature burger"
+      ],
+      "information_upon_request": [
+        {
+          "item_id": "Q4_item_1",
+          "trigger": "Analyst asks about expected sales volume or number of burgers sold per location per day",
+          "core_dimensional_concept": "expected daily sales volume per store",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question about sales volume or units sold per day",
+              "sub-bullet under revenue calculation framework",
+              "hypothesis about daily sales rate referencing McDonald's or industry benchmarks"
+            ],
+            "alternative_phrasings": [
+              "units per day",
+              "burgers sold daily",
+              "sales volume",
+              "number of transactions",
+              "McPlant sales benchmark"
+            ]
+          },
+          "disqualifying": [
+            "Analyst mentions 'revenue' or 'sales' as a calculation input category without specifically asking for the volume figure — F passing mention (revenue category label, not the specific daily volume dimension)"
+          ],
+          "info": "In 2022 McDonald's expected 40-60 McPlants (plant-based burgers) sold per location daily. We can project 50 burgers sold per store every day for UDB"
+        },
+        {
+          "item_id": "Q4_item_2",
+          "trigger": "Analyst asks about the pricing premium for the plant-based burger over the signature burger",
+          "core_dimensional_concept": "plant-based burger price premium",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question about price or premium pricing for the new burger",
+              "sub-bullet under pricing or revenue calculation",
+              "hypothesis about a price premium for plant-based products"
+            ],
+            "alternative_phrasings": [
+              "premium",
+              "price difference",
+              "higher price",
+              "pricing strategy",
+              "markup"
+            ]
+          },
+          "disqualifying": [
+            "Analyst mentions 'price' generically as one calculation variable without asking for the specific premium percentage — F passing mention (variable label only)"
+          ],
+          "info": "Given plant-based burger is a premium product UDB plans to charge a 20% premium over its signature burger"
+        },
+        {
+          "item_id": "Q4_item_3",
+          "trigger": "Analyst asks about the number of UDB stores or clarifies the chain size for the calculation",
+          "core_dimensional_concept": "UDB total store count for calculation",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question about number of stores or locations",
+              "sub-bullet under scale or revenue calculation",
+              "hypothesis about store count in the math setup"
+            ],
+            "alternative_phrasings": [
+              "number of locations",
+              "store count",
+              "chain size",
+              "400 stores",
+              "total locations"
+            ]
+          },
+          "disqualifying": [
+            "Mentions 'scale' or 'network' without specifically asking for the store-count figure — G adjacent-dimension modifier (adjacent concept, not the specific-number dimension)"
+          ],
+          "info": "UDB enjoys a large chain of 400 stores"
+        },
+        {
+          "item_id": "Q4_item_4",
+          "trigger": "Analyst asks about the gross profit margin for the new plant-based burger",
+          "core_dimensional_concept": "gross profit margin for new burger",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question about margin or gross profit rate",
+              "sub-bullet under profitability or gross profit calculation",
+              "hypothesis about margin profile for plant-based products"
+            ],
+            "alternative_phrasings": [
+              "gross margin",
+              "profitability rate",
+              "margin percentage",
+              "cost structure",
+              "profit per burger"
+            ]
+          },
+          "disqualifying": [
+            "Analyst mentions 'profit' or 'profitability' as a calculation output without asking for the specific margin input figure — F passing mention (result category, not the margin input dimension)"
+          ],
+          "info": "Gross profit margin for new burgers is estimated at 70%"
+        },
+        {
+          "item_id": "Q4_item_5",
+          "trigger": "Analyst asks about the number of operating days per year to use in the calculation",
+          "core_dimensional_concept": "annual operating days assumption",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question about operating days or days per year",
+              "sub-bullet under revenue calculation with time dimension",
+              "hypothesis about annual days assumption"
+            ],
+            "alternative_phrasings": [
+              "days per year",
+              "operating days",
+              "annual days",
+              "days open",
+              "360 days"
+            ]
+          },
+          "disqualifying": [
+            "Analyst mentions 'annual' or 'per year' as a time frame without asking for the specific days assumption — F passing mention (time frame label, not the specific days input)"
+          ],
+          "info": "Please assume 360 days/year"
+        }
+      ],
+      "appendix": {
+        "appendix_1": {
+          "title": "Q4 Math Exercise — Data Provided Upfront",
+          "release_rule": "Share upfront with analyst at the start of Q4",
+          "table": {
+            "UDB_signature_burger_price": "$5"
+          }
+        },
+        "appendix_2": {
+          "title": "Q4 Math Exercise — Data Upon Request",
+          "release_rule": "Release only upon analyst request per Q4 information_upon_request items",
+          "table": {
+            "McPlant_benchmark_daily_sales": "40-60 per location daily (2022 McDonald's expectation)",
+            "projected_UDB_daily_sales_per_store": "50 burgers/store/day",
+            "price_premium_over_signature": "20%",
+            "total_UDB_stores": "400",
+            "gross_profit_margin_new_burger": "70%",
+            "operating_days_per_year": "360"
+          }
+        }
+      },
+      "state_machine": {
+        "next_question": null,
+        "skip_logic": false,
+        "transition_condition": "Case ends after Q4"
+      }
+    }
+  },
+  "structure_4_ground_truth": {
+    "Q1_ground_truth": {
+      "type": "framework",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_customers": {
+          "keypoints": [
+            "Customer mix - Vegans and vegetarians",
+            "Customer mix - Sustainability supporters",
+            "Regional differences in diets",
+            "Adoption cycle (e.g. early adopters, early majority)"
+          ],
+          "subtotal": 4
+        },
+        "pillar_2_competitive_landscape": {
+          "keypoints": [
+            "New fast-food chains with focus on plant-based meat",
+            "First movers and fast followers among existing players",
+            "New industry standards and expectations"
+          ],
+          "subtotal": 3
+        },
+        "pillar_3_udbs_menu": {
+          "keypoints": [
+            "Brand-new menu items (e.g. plant-based ostrich meat)",
+            "Vegan alternatives for existing menu items",
+            "Wider range of plant-based meat (e.g. frozen/fresh/ambient)"
+          ],
+          "subtotal": 3
+        },
+        "pillar_4_udbs_marketing": {
+          "keypoints": [
+            "Brand implications",
+            "Market education",
+            "New drivers (e.g. sustainability, health)"
+          ],
+          "subtotal": 3
+        }
+      },
+      "total_keypoints": 13,
+      "minimum_expected": "At least 3 of 4 pillars covered with 1-2 keypoints each",
+      "outstanding_threshold": "All 4 pillars covered with 3+ keypoints per pillar, including both sub-items under Customer mix"
+    },
+    "Q2_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_supply_chain": {
+          "keypoints": [
+            "Find and build new supplier relationships",
+            "Likely hire new account managers for plant-based meat suppliers",
+            "Develop new routes to deliver raw materials to UDB's warehouses"
+          ],
+          "subtotal": 3
+        },
+        "pillar_2_storage_and_logistics": {
+          "keypoints": [
+            "Potentially invest in storage facility expansion",
+            "Build in additional safety measures in warehouses to avoid contamination of plant-based meat from animal meat",
+            "Consider expanding fleet of refrigerated trucks to transport 'meatless' patties to UDB's stores",
+            "Ensure strategic supply buffer of plant-based meat to mitigate potential supply chain disruptions (in case limited number of suppliers fail to accommodate explosive market demand in future)"
+          ],
+          "subtotal": 4
+        },
+        "pillar_3_stores": {
+          "new_operational_processes": {
+            "keypoints": [
+              "Develop new cooking methods for new pattie (e.g. to ensure flavors and safety)",
+              "Update storage processes (as shelf-life is likely shorter)",
+              "Elaborate and implement new quality control procedures (e.g. to ensure consistency in prep, storage, taste)"
+            ],
+            "subtotal": 3
+          },
+          "new_enhanced_capabilities": {
+            "keypoints": [
+              "Potentially invest in new cooking equipment and fridges (incl. to avoid cross-contamination with animal meat)",
+              "Train personnel",
+              "Update software systems with new menu items, new reports, etc.",
+              "Ensure enough capacity (e.g. seats, staff, equipment) to accommodate potential spike in demand at a launch"
+            ],
+            "subtotal": 4
+          },
+          "keypoints": [
+            "Develop new cooking methods for new pattie (e.g. to ensure flavors and safety)",
+            "Update storage processes (as shelf-life is likely shorter)",
+            "Elaborate and implement new quality control procedures (e.g. to ensure consistency in prep, storage, taste)",
+            "Potentially invest in new cooking equipment and fridges (incl. to avoid cross-contamination with animal meat)",
+            "Train personnel",
+            "Update software systems with new menu items, new reports, etc.",
+            "Ensure enough capacity (e.g. seats, staff, equipment) to accommodate potential spike in demand at a launch"
+          ],
+          "subtotal": 7
+        }
+      },
+      "total_keypoints": 14,
+      "minimum_expected": "At least 2 of 3 operational areas covered with 2+ keypoints each",
+      "outstanding_threshold": "All 3 areas covered with 3+ keypoints each, including both processes and capabilities sub-areas under Stores"
+    },
+    "Q3_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_revenue_implications": {
+          "revenue_increase": {
+            "keypoints": [
+              "Sales increase due to more menu options",
+              "Novelty-driven spike in sales at the launch",
+              "Long-term sales increase due to appeal to new customer segments (e.g. vegans)"
+            ],
+            "subtotal": 3
+          },
+          "revenue_decline": {
+            "keypoints": [
+              "Potential cannibalization",
+              "Hypothetical brand damage resulting in sales drop (e.g. if brand essence is tied up with meat)"
+            ],
+            "subtotal": 2
+          },
+          "keypoints": [
+            "Sales increase due to more menu options",
+            "Novelty-driven spike in sales at the launch",
+            "Long-term sales increase due to appeal to new customer segments (e.g. vegans)",
+            "Potential cannibalization",
+            "Hypothetical brand damage resulting in sales drop (e.g. if brand essence is tied up with meat)"
+          ],
+          "subtotal": 5
+        },
+        "pillar_2_opex_implications": {
+          "change_in_variable_costs": {
+            "keypoints": [
+              "New raw materials",
+              "New packaging",
+              "Additional transportation expenses",
+              "Potentially higher food waste (e.g. in case of shorter shelf-life)",
+              "Likely additional bonuses to store crew members to incentivize sales of plant-based burgers"
+            ],
+            "subtotal": 5
+          },
+          "change_in_fixed_costs": {
+            "keypoints": [
+              "Crew member trainings"
+            ],
+            "subtotal": 1
+          },
+          "keypoints": [
+            "New raw materials",
+            "New packaging",
+            "Additional transportation expenses",
+            "Potentially higher food waste (e.g. in case of shorter shelf-life)",
+            "Likely additional bonuses to store crew members to incentivize sales of plant-based burgers",
+            "Crew member trainings"
+          ],
+          "subtotal": 6
+        },
+        "pillar_3_capex_implications": {
+          "keypoints": [
+            "Potential investment in new refrigerated trucks",
+            "Potential storage facility expansion",
+            "Potential new cooking equipment and fridges for stores",
+            "R&D to develop a new menu item based on plant-based meat patties supplied by UDB's partners"
+          ],
+          "subtotal": 4
+        }
+      },
+      "total_keypoints": 15,
+      "minimum_expected": "At least 2 of 3 financial areas covered with 2+ keypoints each",
+      "outstanding_threshold": "All 3 areas covered with 3+ keypoints each, including both revenue increase and revenue decline sub-areas, and both variable and fixed cost drivers"
+    },
+    "Q4_ground_truth": {
+      "type": "quantitative",
+      "quantitative_part": {
+        "correct_final_answer": "$30M additional annual gross profits",
+        "accepted_values": [
+          30000000,
+          30240000
+        ],
+        "tolerance_pct": 0.02,
+        "zero_tolerance": false,
+        "scoring_method": "Binary: correct number = full credit; incorrect = zero credit",
+        "calculation_steps": {
+          "step_1_price_for_plant_based_burger": {
+            "formula": "$5 (signature burger price) × (1 + 20% premium) = $6",
+            "result": "$6 per plant-based burger"
+          },
+          "step_2_expected_annual_sales": {
+            "formula": "$6 × 50 burgers/day × 360 days × 400 stores",
+            "result": "$43M (approximately $43,200,000)"
+          },
+          "step_3_expected_annual_gross_profits": {
+            "formula": "$43M × 70% gross profit margin",
+            "result": "$30M (approximately $30,240,000)"
+          }
+        }
+      },
+      "qualitative_part": {
+        "scoring_note": "Qualitative portion of Q4 is scored as 100% total, split into two tiers. Within each tier, use 3-level scoring per",
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "tier_1_basic": {
+          "weight_of_Q4_qualitative_total": "50%",
+          "keypoints": [
+            "Given our assumptions, a plant-based burger is going to generate $30M in additional annual gross profit"
+          ],
+          "note": "Expected from every candidate. Single point worth 50% of qualitative score."
+        },
+        "tier_2_advanced": {
+          "weight_of_Q4_qualitative_total": "50%",
+          "points_available": 3,
+          "weight_per_point": "~16.7% of qualitative total",
+          "keypoints": [
+            "We haven't considered cannibalization though, as plant-based burgers will likely eat into the sales of conventional burgers. Thus, the overall impact on profits is likely to be lower",
+            "Gross profit margin doesn't tell the whole story. UDB will need to invest in R&D to develop a new menu item based on plant-based meat patties from its suppliers. The chain might also need to run a marketing campaign and incur other fixed costs. So, even with such a lucrative gross margin, the net margin might turn out to be slim",
+            "$43M is only 4% of revenue increase which makes sense to test the water, but UDB might want to expand its alternative meat offerings as vegans, vegetarians, and general sustainability supporters represent far larger portion of the population than 4%"
+          ],
+          "note": "Not expected from every candidate. Each advanced point adds ~16.7% to qualitative score."
+        },
+        "minimum_expected": "Correct numerical answer ($30M) + Tier 1 basic contextualization (covered)",
+        "outstanding_threshold": "Correct numerical answer ($30M) + Tier 1 covered + at least 2 Tier 2 advanced comments covered"
+      }
+    }
+  },
+  "state_machine_global": {
+    "case_type": "interviewer_driven",
+    "skip_logic": false,
+    "mandatory_sequence": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4"
+    ],
+    "rules": [
+      "Q1 cannot be skipped under any circumstances",
+      "Questions must proceed in linear order Q1 → Q2 → Q3 → Q4",
+      "A question may not be advanced until the current question receives a scoreable answer (1st or 2nd attempt)",
+      "If analyst pre-covers a later question's keypoints in an earlier answer, record as pre-coverage but still ask the later question in sequence",
+      "No question may be skipped even if pre-covered"
+    ]
+  },
+  "scoring_summary": {
+    "Q1": {
+      "type": "framework",
+      "total_keypoints": 13,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q2": {
+      "type": "qualitative",
+      "total_keypoints": 14,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q3": {
+      "type": "qualitative",
+      "total_keypoints": 15,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q4": {
+      "type": "quantitative",
+      "part_1_quantitative": {
+        "correct_answer": "$30M",
+        "zero_tolerance": true,
+        "scoring": "Binary: Full credit if correct; zero credit if incorrect"
+      },
+      "part_2_qualitative": {
+        "total_keypoints": 4,
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "human_review_priority": "false-partial > false-not-covered > covered",
+        "tier_1_basic": {
+          "keypoints": 1,
+          "weight": "50% of qualitative score"
+        },
+        "tier_2_advanced": {
+          "keypoints": 3,
+          "weight_per_point": "~16.7% of qualitative score",
+          "weight_total": "50% of qualitative score"
+        }
+      }
+    }
+  }
+}

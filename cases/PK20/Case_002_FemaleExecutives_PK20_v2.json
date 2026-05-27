@@ -1,0 +1,671 @@
+{
+  "case_id": "002",
+  "version": "v2",
+  "source": {
+    "title": "Female Executives",
+    "inspired_by": "McKinsey & Company",
+    "year": 2020,
+    "author": "Peter K.",
+    "reference": "Peter-K.thinkific.com, Case #2",
+    "casebook_abbr": "PK20"
+  },
+  "case_type": "interviewer_driven",
+  "case_type_origin": null,
+  "annotation_mode": null,
+  "case_arch": {
+    "primary": "Organizational Performance",
+    "tags": [
+      "Organizational Performance",
+      "Talent Strategy",
+      "Diversity & Inclusion"
+    ]
+  },
+  "difficulty": "Hard",
+  "industry": "Retail",
+  "topic": "Increasing female executive representation — workforce diversity pipeline and talent strategy",
+  "expected_duration_minutes": 30,
+  "opening_prompt": "Hi, I'd like to solve some consulting cases with you. Pls be a good interviewee to have a potential test in consulting cases. For the case problem-solving, pls do not assume any numbers or assumptions before my confirmation. I will give you the context upon request. I need you to answer the following questions for the client. Before you start, feel free to ask me 2-3 clarifying questions about the client.\n\nQ1. What would you like to evaluate to have more women in executive suite?\nQ2. Based on the chart what are the issues with the current process?\nQ3. All else being equal how many women should we attract to the entry level to increase number of female execs by four over time?\nQ4. What do you think about this number? [5,000 new hires]\nQ5. Speaking of recruiting externally. How many female directors do they need to attract to hit the goal of four more female executives?\nQ6. What else should the client do to increase the number of female executives (apart from hiring directors externally)?\n\nHere is the basic context for the client:\nYou have a U.S.-based retail client that would like to more closely mirror its clientele and its workforce. Currently 25% of their executive team are women, and the client would like to increase this share. What would you like to evaluate to have more women in executive suite?",
+  "structure_1_client_basic_context": {
+    "company": "A U.S.-based retail client",
+    "type": "Retail company",
+    "situation": "Currently 25% of their executive team are women. The client would like to more closely mirror its clientele and its workforce.",
+    "action": "The client would like to increase the share of women in executive suite.",
+    "ask": "What would you like to evaluate to have more women in executive suite?"
+  },
+  "structure_2_information_upon_request": {
+    "item_1": {
+      "item_id": "item_1",
+      "trigger": "Analyst asks about the client's business model or how the company makes money",
+      "core_dimensional_concept": "client's business model",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar named 'Business Model', 'Revenue Model', or 'Client Overview'",
+          "explicit clarifying question about how the client generates revenue or what products/services it sells",
+          "sub-bullet under client analysis asking about revenue streams or profit model"
+        ],
+        "alternative_phrasings": [
+          "how does the client make money",
+          "what is the business model",
+          "revenue streams",
+          "what does the client sell",
+          "how do they generate profit"
+        ]
+      },
+      "disqualifying": [
+        "Only lists 'revenue growth' or 'profitability' as framework items under the Financial pillar without explicitly asking about the business model itself",
+        "Only says 'retail client' as a passing reference without touching the specific business-model question (F pattern)"
+      ],
+      "info": "We don't have any information about the client's b-model."
+    },
+    "item_2": {
+      "item_id": "item_2",
+      "trigger": "Analyst asks about geographic scope or market coverage of the client",
+      "core_dimensional_concept": "geographic scope of client's operations",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar named 'Geography', 'Market Coverage', or 'Geographic Footprint'",
+          "explicit clarifying question about whether the client operates nationally, regionally, or internationally",
+          "sub-bullet under market analysis asking about geographic presence"
+        ],
+        "alternative_phrasings": [
+          "geographic footprint",
+          "national or regional",
+          "which markets does the client operate in",
+          "where does the client have stores",
+          "U.S. only or global"
+        ]
+      },
+      "disqualifying": [
+        "Only says 'geographic concentration risk' under the Risk pillar without explicitly asking about market geography",
+        "Only says 'U.S.-based' from the prompt as a passing reference without asking further about geographic scope"
+      ],
+      "info": "The client has a national geographical footprint."
+    },
+    "item_3": {
+      "item_id": "item_3",
+      "trigger": "Analyst asks for the definition of 'executive' or what level counts as executive",
+      "core_dimensional_concept": "definition of executive level and current female representation rate",
+      "release_conditions": {
+        "structural_position": [
+          "explicit clarifying question asking what qualifies someone as an executive (e.g. VP and above?)",
+          "framework sub-item under 'Client's % of women among execs' asking how the indicator is defined",
+          "direct question: 'What is the definition of executive?' or 'What role counts as executive?'"
+        ],
+        "alternative_phrasings": [
+          "what is an executive",
+          "how do you define executive",
+          "VP and above",
+          "definition of executive level",
+          "what level counts as executive"
+        ]
+      },
+      "disqualifying": [
+        "Only loosely states 'senior leadership' or 'management team' as pillars under Framework without asking for the specific executive definition",
+        "Only mentions 'executive suite' as a passing reference from the prompt without asking for a definition"
+      ],
+      "info": "Executive level is VP and above (currently 2% of all employees)."
+    },
+    "item_4": {
+      "item_id": "item_4",
+      "trigger": "Analyst asks about total number of employees or company headcount",
+      "core_dimensional_concept": "total employee headcount of the client",
+      "release_conditions": {
+        "structural_position": [
+          "explicit clarifying question about how many employees the company has",
+          "framework sub-item asking for company size or scale",
+          "direct question: 'How many employees does the company have?' or 'What is the total headcount?'"
+        ],
+        "alternative_phrasings": [
+          "how many employees",
+          "company size",
+          "total headcount",
+          "total FTEs",
+          "how large is the company"
+        ]
+      },
+      "disqualifying": [
+        "Only lists 'company resources' or 'organizational scale' as a pillar under Framework without asking for the specific headcount",
+        "Only mentions 'company workforce' as a passing reference without explicitly asking for the number"
+      ],
+      "info": "There are 1k employees in the company."
+    },
+    "item_5": {
+      "item_id": "item_5",
+      "trigger": "Analyst asks about the specific target number of additional female executives",
+      "core_dimensional_concept": "specific numerical goal for increasing female executive count",
+      "release_conditions": {
+        "structural_position": [
+          "explicit clarifying question about the quantitative target (how many more female executives)",
+          "framework sub-item under 'Goal' or 'Success Metrics' asking for specific KPI",
+          "direct question: 'What is the target for female executives?' or 'How many more female execs does the client want?'"
+        ],
+        "alternative_phrasings": [
+          "target number of female execs",
+          "how many more female executives",
+          "specific goal",
+          "quantitative target",
+          "what is the objective"
+        ]
+      },
+      "disqualifying": [
+        "Only lists 'success metrics' broadly under Framework without asking for the specific numerical target",
+        "Only mentions 'increase female representation' as a passing reference without asking for the specific number"
+      ],
+      "info": "The client would like to have four more female execs."
+    }
+  },
+  "structure_3_case_questions": {
+    "Q1": {
+      "q_id": "Q1",
+      "type": "framework",
+      "question_text": "What would you like to evaluate to have more women in executive suite?",
+      "information_to_share_upfront": null,
+      "information_upon_request": "See structure_2 items 1–5. Release only items by semantic touch (release when the analyst structurally engages the dimension; not on a passing reference), not by mere keyword presence.",
+      "state_machine": {
+        "next_question": "Q2",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable framework answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q2": {
+      "q_id": "Q2",
+      "type": "qualitative",
+      "question_text": "Based on the chart what are the issues with the current process?",
+      "information_to_share_upfront": [
+        "Appendix 1 — Chart 1: Client's organizational structure and employee lifecycle (see appendix field below)"
+      ],
+      "information_upon_request": null,
+      "appendix": {
+        "appendix_1": {
+          "title": "Chart 1: Client's organizational structure and employee lifecycle",
+          "release_rule": "Share upfront with analyst at the start of Q2",
+          "table": {
+            "levels": {
+              "executives_vps_plus": {
+                "ftes": "20 FTEs",
+                "promotion_rate_from_below": "6%",
+                "attrition_rate": "-5%"
+              },
+              "directors": {
+                "ftes": "80 FTEs",
+                "promotion_rate_from_below": "15%",
+                "attrition_rate": "-10%"
+              },
+              "managers": {
+                "ftes": "400 FTEs",
+                "promotion_rate_from_below": "25%",
+                "attrition_rate": "-20%"
+              },
+              "entry_level": {
+                "ftes": "500 FTEs",
+                "promotion_rate_from_below": null,
+                "attrition_rate": "-50%"
+              }
+            },
+            "note": "Promotion rate = for those who didn't quit. FTEs = full-time employees."
+          }
+        }
+      },
+      "state_machine": {
+        "next_question": "Q3",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer reading the chart (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q3": {
+      "q_id": "Q3",
+      "type": "quantitative",
+      "question_text": "All else being equal how many women should we attract to the entry level to increase number of female execs by four over time?",
+      "information_to_share_upfront": null,
+      "information_upon_request": [
+        {
+          "item_id": "Q3_item_1",
+          "trigger": "Analyst asks whether female employees have the same or different attrition/promotion rates as the overall company",
+          "core_dimensional_concept": "whether female employee rates equal overall company rates",
+          "release_conditions": {
+            "structural_position": [
+              "explicit clarifying question about whether to use female-specific or overall rates",
+              "quantitative setup asking whether gender differences in attrition/promotion should be assumed",
+              "direct question: 'Do women have the same promotion/attrition rates as the overall company?'"
+            ],
+            "alternative_phrasings": [
+              "do women have the same attrition rate",
+              "female-specific rates",
+              "can we assume same rates for women",
+              "should we assume same rates",
+              "gender differences in attrition or promotion"
+            ]
+          },
+          "disqualifying": [
+            "Only loosely states 'gender bias in promotions' as a risk under Framework without asking specifically whether rates differ for the calculation",
+            "Only says 'female employees face barriers' as a passing reference without asking for a rate assumption"
+          ],
+          "info": "We can assume that female employees have the same attrition and promotion rates as the entire company."
+        },
+        {
+          "item_id": "Q3_item_2",
+          "trigger": "Analyst asks whether the rates will change over time or whether they should be assumed constant",
+          "core_dimensional_concept": "stability of attrition and promotion rates over time",
+          "release_conditions": {
+            "structural_position": [
+              "explicit clarifying question about whether rates are stable or will change",
+              "quantitative setup asking whether to assume constant or evolving rates",
+              "direct question: 'Can we assume the rates stay the same over time?'"
+            ],
+            "alternative_phrasings": [
+              "will the rates change",
+              "stable rates assumption",
+              "constant over time",
+              "do we assume rates stay the same",
+              "are rates fixed"
+            ]
+          },
+          "disqualifying": [
+            "Only says 'market conditions may affect attrition' under the Risk pillar as a passing reference without asking for a specific rate-stability assumption",
+            "Only says 'over time' in the question text without asking whether rates are constant"
+          ],
+          "info": "We expect that the attrition and promotion rates won't change materially over time."
+        },
+        {
+          "item_id": "Q3_item_3",
+          "trigger": "Analyst asks for the definition of attrition rate or how it is calculated",
+          "core_dimensional_concept": "definition of attrition rate (numerator and denominator)",
+          "release_conditions": {
+            "structural_position": [
+              "explicit clarifying question about how attrition rate is defined or measured",
+              "quantitative setup confirming denominator used for attrition calculation",
+              "direct question: 'How is attrition rate defined?' or 'Attrition rate as % of what?'"
+            ],
+            "alternative_phrasings": [
+              "how is attrition defined",
+              "definition of attrition rate",
+              "what does attrition rate mean",
+              "attrition as % of what",
+              "how to calculate attrition"
+            ]
+          },
+          "disqualifying": [
+            "Only mentions 'attrition rate' as a dimension under Framework without asking for its specific definition",
+            "Only says 'employees who left' as a passing reference without asking for a formal definition"
+          ],
+          "info": "The attrition rate is the number of employees who quit or were fired as a % of the average number of employees."
+        },
+        {
+          "item_id": "Q3_item_4",
+          "trigger": "Analyst asks for the definition of promotion rate or its calculation basis",
+          "core_dimensional_concept": "definition of promotion rate (denominator basis)",
+          "release_conditions": {
+            "structural_position": [
+              "explicit clarifying question about how promotion rate is defined or what its denominator is",
+              "quantitative setup confirming whether promotion rate is % of all employees or those who stayed",
+              "direct question: 'How is promotion rate defined?' or 'Promotion rate as % of those who stayed?'"
+            ],
+            "alternative_phrasings": [
+              "how is promotion rate defined",
+              "promotion rate denominator",
+              "% of all employees or those who stayed",
+              "definition of promotion rate",
+              "promotion rate calculation basis"
+            ]
+          },
+          "disqualifying": [
+            "Only mentions 'promotion rate' as a dimension under Framework without asking for its specific definition",
+            "Only says 'internal promotions' as a passing reference without asking for a formal definition"
+          ],
+          "info": "The promotion rate is the number of promoted employees as % of those who stayed with the company (and didn't quit)."
+        }
+      ],
+      "state_machine": {
+        "next_question": "Q4",
+        "skip_logic": false,
+        "max_attempts": 2,
+        "scoring_on_transition": {
+          "attempt_1_correct": "Full score",
+          "attempt_2_correct": "0 score per core_principles §7.2",
+          "both_attempts_wrong": "0 score; interviewer provides correct answer (5,000) before Q4"
+        },
+        "transition_condition": "Case proceeds to Q4 after 1st or 2nd attempt; if both wrong, Judge LLM states: 'The correct answer to Q3 is 5,000 women at the entry level. What do you think about this number?'"
+      }
+    },
+    "Q4": {
+      "q_id": "Q4",
+      "type": "qualitative",
+      "question_text": "What do you think about this number? [5,000 new hires]",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q5",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer contextualizing the 5,000 figure (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q5": {
+      "q_id": "Q5",
+      "type": "quantitative",
+      "question_text": "Speaking of recruiting externally. How many female directors do they need to attract to hit the goal of four more female executives?",
+      "information_to_share_upfront": null,
+      "information_upon_request": "Uses same assumptions as Q3: female employees have same rates as company average (Q3_item_1); rates won't change materially (Q3_item_2); attrition and promotion rate definitions (Q3_items_3-4). Re-release Q3 upon_request items if analyst asks during Q5 context.",
+      "state_machine": {
+        "next_question": "Q6",
+        "skip_logic": false,
+        "max_attempts": 2,
+        "scoring_on_transition": {
+          "attempt_1_correct": "Full score",
+          "attempt_2_correct": "0 score per core_principles §7.2",
+          "both_attempts_wrong": "0 score; interviewer provides correct answer (74) before Q6"
+        },
+        "transition_condition": "Case proceeds to Q6 after 1st or 2nd attempt; if both wrong, Judge LLM provides correct answer (74) before Q6"
+      }
+    },
+    "Q6": {
+      "q_id": "Q6",
+      "type": "qualitative",
+      "question_text": "What else should the client do to increase the number of female executives (apart from hiring directors externally)?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": null,
+        "skip_logic": false,
+        "transition_condition": "Case ends after Q6"
+      }
+    }
+  },
+  "structure_4_ground_truth": {
+    "Q1_ground_truth": {
+      "type": "framework",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_external_outlook": {
+          "keypoints": [
+            "Benchmarking against major retail players",
+            "Change of this % over time"
+          ],
+          "subtotal": 2
+        },
+        "pillar_2_clients_pct_women_among_execs": {
+          "keypoints": [
+            "Definition of the indicator (e.g. what is an executive role?)",
+            "Historical dynamics",
+            "Break-down by department"
+          ],
+          "subtotal": 3
+        },
+        "pillar_3_career_funnel": {
+          "keypoints": [
+            "Stages and channels (external recruiting vs internal promotions)",
+            "Performance (e.g. conversion rate, drop-out rate)",
+            "Size of funnel (e.g. # women, # executive spots)"
+          ],
+          "subtotal": 3
+        },
+        "pillar_4_key_drivers_to_attract_women": {
+          "keypoints": [
+            "Compensation level",
+            "Brand perception of the client as employer",
+            "Female employees' satisfaction"
+          ],
+          "subtotal": 3
+        }
+      },
+      "total_keypoints": 11,
+      "minimum_expected": "Cover at least 2 pillars; key points include analysis of external factors (benchmarking and overall trend), analysis of the indicator (% of female execs and trend), and process flow (career funnel and its performance/stages); minimum 4 keypoints",
+      "outstanding_threshold": "All 4 pillars covered with majority of sub-items in a clearly structured issue tree; analysis of both internal and external factors; funnel analysis included"
+    },
+    "Q2_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_promotion_rate": {
+          "keypoints": [
+            "Due to potential rapid growth the company might need more managers and encourage accelerated promotions which often comes at the expense of managers' quality (e.g. poor leadership and toxic culture)",
+            "It might be driven by high attrition rate (which frees up vacancies), high competition for managers and narrow talent pool",
+            "The company might rely heavily on the internal hiring than on attracting outside talent which brings fresh ideas/new expertise"
+          ],
+          "subtotal": 3
+        },
+        "pillar_2_organizational_pyramid": {
+          "keypoints": [
+            "A good number of managers might not have subordinates at all",
+            "The company underutilizes their managers (and thus experiences low productivity) and might benefit from consolidation of some functions to increase the ratio",
+            "The company might struggle with filling up entry level roles (which might lead to increased overtime of existing entry level employees, lower morale, lower customer satisfaction, higher attrition, etc.)"
+          ],
+          "subtotal": 3
+        },
+        "pillar_3_attrition_rate": {
+          "keypoints": [
+            "Despite it might be natural for the retail industry (low-pay high-stress jobs), it also requires state-of-the-art recruiting, training and HR ops which might be expensive",
+            "It might affect customer experience, culture, brand, etc.",
+            "It might cause constant disruption to the work processes (as it's more time-consuming to find a manager than entry level)",
+            "It might suggest high recruiting expenses that might be optimized",
+            "It might indicate low morale, low compensation, lots of low-performance managers who are fired"
+          ],
+          "entry_level_attrition": [
+            "Despite it might be natural for the retail industry (low-pay high-stress jobs), it also requires state-of-the-art recruiting, training and HR ops which might be expensive",
+            "It might affect customer experience, culture, brand, etc."
+          ],
+          "manager_attrition": [
+            "It might cause constant disruption to the work processes (as it's more time-consuming to find a manager than entry level)",
+            "It might suggest high recruiting expenses that might be optimized",
+            "It might indicate low morale, low compensation, lots of low-performance managers who are fired"
+          ],
+          "subtotal": 5
+        }
+      },
+      "total_keypoints": 11,
+      "minimum_expected": "At least 4 ideas across at least 2 pillars from the chart",
+      "outstanding_threshold": "8+ ideas structured across all 3 pillars (promotion rate / organizational pyramid / attrition rate), delivered fluently on the fly without taking notes"
+    },
+    "Q3_ground_truth": {
+      "type": "quantitative",
+      "quantitative_part": {
+        "correct_final_answer": "5,000 (casebook rounded 0.81→0.8) — also accept 4,938 (precise: 15×0.9×0.06=0.81, multiplier=4/0.81≈4.938, 1000×4.938≈4,938)",
+        "accepted_values": [
+          5000,
+          4938
+        ],
+        "tolerance_pct": 0.02,
+        "zero_tolerance": false,
+        "scoring_method": "Binary: Accept both 5,000 and 4,938; any other value = zero credit",
+        "calculation_steps": {
+          "step_1_entry_to_managers": {
+            "formula": "1,000 entry level × (1 − 50% attrition) × 25% promotion rate",
+            "result": "125 managers"
+          },
+          "step_2_managers_to_directors": {
+            "formula": "125 managers × (1 − 20% attrition) × 15% promotion rate",
+            "result": "15 directors"
+          },
+          "step_3_directors_to_executives": {
+            "formula": "15 directors × (1 − 10% attrition) × 6% promotion rate",
+            "result": "0.8 executives"
+          },
+          "step_4_multiplier": {
+            "formula": "Client wants 4 more executives; 0.8 executives per 1,000 hires → multiplier = 4 / 0.8 = 5",
+            "result": "5×"
+          },
+          "step_5_total_entry_hires": {
+            "formula": "1,000 × 5",
+            "result": "5,000 women at entry level"
+          }
+        }
+      }
+    },
+    "Q4_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "scoring_note": "Q4 qualitative is scored as 100% total, split into two tiers. Within each tier, use 3-level scoring per",
+      "tier_1_basic": {
+        "weight_of_Q4_qualitative_total": "50%",
+        "keypoints": [
+          "It seems too high and unrealistic for the company that employs 1,000 FTEs"
+        ],
+        "note": "Expected from every candidate. Single point worth 50% of qualitative score."
+      },
+      "tier_2_advanced": {
+        "weight_of_Q4_qualitative_total": "50%",
+        "points_available": 4,
+        "weight_per_point": "12.5% of qualitative total",
+        "keypoints": [
+          "It seems very expensive in terms of recruiting costs for this many employees",
+          "Assuming the existing scale, it might take the company 20 years to naturally hire 5,000 entry level employees [currently, the company is likely to hire 250 FTEs per year to replace those who quit – 500 FTEs × 50% = 250 FTEs], and not all of them will be women",
+          "The improvement in promotion rates for female employees, reduction in the attrition rates, and overall growth of the company might help achieve the goal, but aren't likely to increase the number of female executives materially faster",
+          "The client might consider hiring female executives from outside of the company to hit the goal in the foreseen future"
+        ],
+        "note": "Not expected from every candidate. Each advanced point adds 12.5% to qualitative score."
+      },
+      "total_keypoints": 5,
+      "minimum_expected": "At least tier_1 basic comment (it seems too high / unrealistic)",
+      "outstanding_threshold": "Tier 1 covered + at least 2 Tier 2 advanced comments covered"
+    },
+    "Q5_ground_truth": {
+      "type": "quantitative",
+      "quantitative_part": {
+        "correct_final_answer": "74",
+        "accepted_values": [
+          74
+        ],
+        "tolerance_pct": 0.0,
+        "zero_tolerance": true,
+        "scoring_method": "Binary: correct number = full credit; incorrect = zero credit",
+        "calculation_steps": {
+          "step_1_directors_to_executives": {
+            "formula": "100 female directors × (1 − 10% attrition) × 6% promotion rate",
+            "result": "5.4 executives per 100 directors hired"
+          },
+          "step_2_solve_for_x": {
+            "formula": "If 100 directors → 5.4 executives, and X directors → 4 executives: X = (100 × 4) / 5.4",
+            "result": "≈ 74 female directors"
+          }
+        }
+      },
+      "qualitative_part": {
+        "scoring_note": "3 contextualization comments from casebook. No explicit tier split in casebook — treated as flat keypoints scored individually with 3-level scoring.",
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "keypoints": [
+          "The number of directors will need to sky-rocket (almost double), which might not be justified by the business needs",
+          "It will boost overhead costs and increase management complexity",
+          "It might also be extremely expensive and time-consuming to recruit such a high number of high-profile professionals"
+        ],
+        "total_keypoints": 3
+      },
+      "minimum_expected": "Correct numerical answer (74) + at least 1 contextualization comment",
+      "outstanding_threshold": "Correct numerical answer + all 3 contextualization comments covered"
+    },
+    "Q6_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_recruit_women": {
+          "keypoints": [
+            "Ensure positive brand of a company as employer",
+            "Ensure competitive pay and perks (e.g. maternity leave, discounted daycare services)",
+            "Focus on women-dedicated recruiting events (e.g. Women Career Conferences, build own recruiting events for women)",
+            "Develop a recruiting force dedicated to attracting female talent"
+          ],
+          "subtotal": 4
+        },
+        "pillar_2_retain_women": {
+          "keypoints": [
+            "Create healthy corporate culture",
+            "Provide high-quality training and development programs",
+            "Build women mentorship and coaching programs",
+            "Conduct women events regularly",
+            "Ensure attractive career growth opportunities (e.g. vertically and horizontally)",
+            "Address pain points based on the exit interviews",
+            "Launch or strengthen women employee resource group"
+          ],
+          "subtotal": 7
+        },
+        "pillar_3_promote_women": {
+          "keypoints": [
+            "Build diversity goals into the company's priorities",
+            "Hold managers/directors accountable for the diversity targets by including % female employees in the performance reviews",
+            "Conduct regular trainings re management biases, diversity & inclusion"
+          ],
+          "subtotal": 3
+        }
+      },
+      "total_keypoints": 14,
+      "minimum_expected": "At least 4 ideas across at least 2 pillars",
+      "outstanding_threshold": "8+ ideas structured across all 3 pillars (recruit / retain / promote), delivered fluently on the fly without taking notes"
+    }
+  },
+  "state_machine_global": {
+    "case_type": "interviewer_driven",
+    "skip_logic": false,
+    "mandatory_sequence": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5",
+      "Q6"
+    ],
+    "rules": [
+      "Q1 cannot be skipped under any circumstances",
+      "Questions must proceed in linear order Q1 → Q2 → Q3 → Q4 → Q5 → Q6",
+      "A question may not be advanced until the current question receives a scoreable answer (1st or 2nd attempt)",
+      "Appendix 1 must be shared upfront at the start of Q2",
+      "If analyst pre-covers a later question's keypoints in an earlier answer, record as pre-coverage but still ask the later question in sequence",
+      "No question may be skipped even if pre-covered",
+      "Q4 references '5,000 new hires' from Q3 — per §4.3.C: if Q3 both attempts wrong, Judge LLM provides correct answer (5,000) before Q4",
+      "Q6 contextually references external director hiring (Q5 topic) but is not §4.3.C dependent — ask regardless of Q5 outcome"
+    ]
+  },
+  "scoring_summary": {
+    "Q1": {
+      "type": "framework",
+      "total_keypoints": 11,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q2": {
+      "type": "qualitative",
+      "total_keypoints": 11,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q3": {
+      "type": "quantitative",
+      "part_1_quantitative": {
+        "correct_answer": "5,000 or 4,938",
+        "zero_tolerance": true,
+        "scoring": "Binary: Accept both 5,000 and 4,938; any other value = zero credit"
+      }
+    },
+    "Q4": {
+      "type": "qualitative",
+      "total_keypoints": 5,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered",
+      "tier_1_basic": {
+        "keypoints": 1,
+        "weight": "50% of qualitative score"
+      },
+      "tier_2_advanced": {
+        "keypoints": 4,
+        "weight_per_point": "12.5% of qualitative score",
+        "weight_total": "50% of qualitative score"
+      }
+    },
+    "Q5": {
+      "type": "quantitative",
+      "part_1_quantitative": {
+        "correct_answer": "74",
+        "zero_tolerance": true,
+        "scoring": "Binary: Full credit if correct; zero credit if incorrect"
+      },
+      "part_2_qualitative": {
+        "total_keypoints": 3,
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "human_review_priority": "false-partial > false-not-covered > covered"
+      }
+    },
+    "Q6": {
+      "type": "qualitative",
+      "total_keypoints": 14,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    }
+  }
+}

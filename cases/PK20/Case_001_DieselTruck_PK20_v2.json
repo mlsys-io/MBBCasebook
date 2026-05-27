@@ -1,0 +1,667 @@
+{
+  "case_id": "001",
+  "version": "v2",
+  "source": {
+    "title": "Diesel Truck Manufacturer",
+    "inspired_by": "McKinsey & Company",
+    "year": 2020,
+    "author": "Peter K.",
+    "reference": "Peter-K.thinkific.com, Case #1",
+    "casebook_abbr": "PK20"
+  },
+  "case_type": "interviewer_driven",
+  "case_type_origin": null,
+  "annotation_mode": null,
+  "case_arch": {
+    "primary": "Market Entry",
+    "tags": [
+      "Market Entry",
+      "Investment Decision",
+      "Pricing Strategy"
+    ]
+  },
+  "difficulty": "Hard",
+  "industry": "Transportation / Automotive Manufacturing",
+  "topic": "Market entry evaluation — electric truck (e-truck) production and pricing",
+  "expected_duration_minutes": 25,
+  "opening_prompt": "Hi, I'd like to solve some consulting cases with you. Pls be a good interviewee to have a potential test in consulting cases. For the case problem-solving, pls do not assume any numbers or assumptions before my confirmation. I will give you the context upon request. I need you to answer the following questions for the client. Before you start, feel free to ask me 2-3 clarifying questions about the client.\n\nQ1. How would you evaluate if they should produce and sell e-trucks?\nQ2. What's important for customers? What are their purchasing decision making criteria for choosing an electric truck (and making a switch from a diesel truck)?\nQ3. Based on the table how much should we charge for the electric truck?\nQ4. What considerations should we have based on this price of $221k? What other factors would you think of?\n\nHere is the basic context for the client:\nYour client is a diesel truck manufacturer that primarily sells to 3PL (3-rd party logistics companies), carriers, and private fleet companies (e.g. Amazon). They would like to enter the electric car market. How would you evaluate if they should produce and sell e-trucks?",
+  "structure_1_client_basic_context": {
+    "company": "A diesel truck manufacturer",
+    "type": "Diesel truck manufacturer",
+    "situation": "Primarily sells to 3PL (3-rd party logistics companies), carriers, and private fleet companies (e.g. Amazon).",
+    "action": "They would like to enter the electric car market.",
+    "ask": "How would you evaluate if they should produce and sell e-trucks?"
+  },
+  "structure_2_information_upon_request": {
+    "item_1": {
+      "item_id": "item_1",
+      "trigger": "Analyst asks about what 3PL means or what the client's customers do",
+      "core_dimensional_concept": "nature and function of 3PL customers",
+      "release_conditions": {
+        "structural_position": [
+          "explicit clarifying question about what 3PL stands for or what 3PL companies do",
+          "framework pillar named 'Customer Profile' or 'Client's Customers' with sub-item asking about customer business model",
+          "sub-bullet under client analysis asking how the client's customers generate revenue"
+        ],
+        "alternative_phrasings": [
+          "what is 3PL",
+          "what do the logistics companies do",
+          "what is the business model of the customers",
+          "third-party logistics"
+        ]
+      },
+      "disqualifying": [
+        "Only mentions 'customer concentration risk' under the Risk pillar without asking about the 3PL's specific business model (a risk dimension, not the business-model subject)",
+        "Only loosely states 'logistics sector' without touching the specific functional definition of 3PL customers (passing reference, F pattern)"
+      ],
+      "info": "3PL are businesses that provide distribution, warehousing, and fulfilment services."
+    },
+    "item_2": {
+      "item_id": "item_2",
+      "trigger": "Analyst asks about geographic focus or market scope",
+      "core_dimensional_concept": "geographic scope of the client's operations",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar named 'Geography', 'Market', or 'Geographic Footprint'",
+          "explicit clarifying question about domestic vs international or which countries/regions are targeted",
+          "sub-bullet under market analysis asking about geographic presence or market focus"
+        ],
+        "alternative_phrasings": [
+          "where does the client operate",
+          "domestic or international",
+          "which markets are targeted",
+          "geographic presence",
+          "U.S. only or global"
+        ]
+      },
+      "disqualifying": [
+        "Only says 'geographic concentration risk' under the Risk pillar — a risk dimension, not the geographic-coverage subject itself",
+        "Only says 'market scope' as a passing reference without explicitly touching the geography dimension (G pattern)"
+      ],
+      "info": "The client focuses on the U.S."
+    },
+    "item_3": {
+      "item_id": "item_3",
+      "trigger": "Analyst asks about the e-truck target segment or customer type",
+      "core_dimensional_concept": "e-truck target customer segment (B2B vs B2C)",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar named 'Target Customers', 'Customer Segments', or 'B2B vs B2C'",
+          "explicit clarifying question about who the client plans to sell e-trucks to",
+          "sub-bullet under client/market analysis asking whether e-truck targets same or different customers"
+        ],
+        "alternative_phrasings": [
+          "B2B or B2C",
+          "who will buy the e-truck",
+          "target segment for electric trucks",
+          "same customers as diesel trucks",
+          "commercial vs consumer market"
+        ]
+      },
+      "disqualifying": [
+        "Only says 'market acceptance risk' under the Risk pillar without touching the specific customer segment (a risk dimension, not the target-customer subject)",
+        "Only mentions 'fleet customers' as a passing reference without actively asking about B2B/B2C positioning"
+      ],
+      "info": "The client plans to offer electric trucks and target B2B segment."
+    },
+    "item_4": {
+      "item_id": "item_4",
+      "trigger": "Analyst asks about financial goal or success metrics",
+      "core_dimensional_concept": "client's financial goal or return target for this investment",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar named 'Financial Goal', 'Investment Objectives', or 'Success Metrics'",
+          "explicit clarifying question about ROI target, profitability goal, or what financial success looks like",
+          "sub-bullet under valuation pillar asking for the desired return or hurdle rate"
+        ],
+        "alternative_phrasings": [
+          "what is the financial goal",
+          "ROI target",
+          "profitability objective",
+          "hurdle rate",
+          "what does success look like financially"
+        ]
+      },
+      "disqualifying": [
+        "Only lists the 'NPV / capex' calculation framework under the Valuation pillar rather than actively asking about the client's target return (an analysis method, not a question about the target)",
+        "Only asks 'what is the timeline' without touching the financial-goal or expected-return dimension"
+      ],
+      "info": "The client didn't share a financial goal."
+    }
+  },
+  "structure_3_case_questions": {
+    "Q1": {
+      "q_id": "Q1",
+      "type": "framework",
+      "question_text": "How would you evaluate if they should produce and sell e-trucks?",
+      "information_to_share_upfront": null,
+      "information_upon_request": "See structure_2 items 1–4. Release only items by semantic touch (release when the analyst structurally engages the dimension; not on a passing reference), not by mere keyword presence.",
+      "state_machine": {
+        "next_question": "Q2",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable framework answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q2": {
+      "q_id": "Q2",
+      "type": "qualitative",
+      "question_text": "What's important for customers? What are their purchasing decision making criteria for choosing an electric truck (and making a switch from a diesel truck)?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q3",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q3": {
+      "q_id": "Q3",
+      "type": "quantitative",
+      "question_text": "Based on the table how much should we charge for the electric truck?",
+      "information_to_share_upfront": [
+        "Appendix 1 (energy consumption and price for energy comparison between average diesel truck and e-truck — see appendix field below)"
+      ],
+      "information_upon_request": [
+        {
+          "item_id": "Q3_item_1",
+          "trigger": "Analyst asks about the current price of a diesel truck (as reference/anchor)",
+          "core_dimensional_concept": "current market price of a diesel truck",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question asking for the price of a diesel truck to use as pricing anchor",
+              "quantitative setup asking for baseline price before calculating e-truck premium",
+              "direct question: 'What is the current price of a diesel truck?'"
+            ],
+            "alternative_phrasings": [
+              "diesel truck price",
+              "current truck price",
+              "price anchor",
+              "baseline price",
+              "how much does a diesel truck cost"
+            ]
+          },
+          "disqualifying": [
+            "Only says 'price competitiveness risk' under the Risk pillar without actively asking about the specific diesel-truck price",
+            "Only mentions 'truck costs' as a passing reference without touching the specific current-price figure"
+          ],
+          "info": "The current average price of a diesel truck is $125,000."
+        },
+        {
+          "item_id": "Q3_item_2",
+          "trigger": "Analyst asks about salvage value at end of useful life",
+          "core_dimensional_concept": "salvage value of trucks at end of useful life",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question about residual value or salvage value of the truck",
+              "TCO calculation setup asking whether to factor in end-of-life value",
+              "direct question: 'What is the salvage value of the trucks?'"
+            ],
+            "alternative_phrasings": [
+              "residual value",
+              "scrap value",
+              "end of life value",
+              "truck value at end of useful life"
+            ]
+          },
+          "disqualifying": [
+            "Only says 'asset depreciation risk' under the Risk pillar without actively asking for the salvage-value figure",
+            "Only mentions 'depreciation' as a cost item without touching the salvage-value dimension"
+          ],
+          "info": "The salvage value is the same for both diesel and electric trucks."
+        },
+        {
+          "item_id": "Q3_item_3",
+          "trigger": "Analyst asks about annual mileage or how much truckers drive per year",
+          "core_dimensional_concept": "average annual mileage per truck",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question about miles driven per year to compute energy costs",
+              "quantitative formula setup using mileage as an input variable",
+              "direct question: 'How many miles does an average trucker drive per year?'"
+            ],
+            "alternative_phrasings": [
+              "annual mileage",
+              "miles per year",
+              "how far do trucks travel annually",
+              "distance driven per year",
+              "average utilization in miles"
+            ]
+          },
+          "disqualifying": [
+            "Only says 'utilization rate' without touching the specific annual-mileage figure (adjacent dimension, G pattern)",
+            "Only mentions 'mileage affects value' under the Revenue pillar as a passing reference"
+          ],
+          "info": "Average trucker travels 68k miles a year."
+        },
+        {
+          "item_id": "Q3_item_4",
+          "trigger": "Analyst asks about the useful life of the trucks",
+          "core_dimensional_concept": "useful life / analysis time horizon for trucks",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question about how many years trucks last for TCO calculation",
+              "TCO or payback calculation setup asking for time period",
+              "direct question: 'What is the useful life of the trucks?'"
+            ],
+            "alternative_phrasings": [
+              "useful life",
+              "how many years does the truck last",
+              "truck lifespan",
+              "depreciation period",
+              "time horizon for the calculation"
+            ]
+          },
+          "disqualifying": [
+            "Only says 'technology obsolescence risk' under the Risk pillar without touching the specific lifespan figure",
+            "Only says 'long-term investment' without actively asking about the number of years of useful life (passing reference, F pattern)"
+          ],
+          "info": "The useful life is 4 years for both diesel and electric trucks."
+        },
+        {
+          "item_id": "Q3_item_5",
+          "trigger": "Analyst asks about maintenance costs for diesel trucks",
+          "core_dimensional_concept": "annual maintenance costs for diesel trucks",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question about annual maintenance or service costs for a diesel truck",
+              "TCO calculation setup requesting maintenance cost input",
+              "direct question: 'How much does it cost to maintain a diesel truck per year?'"
+            ],
+            "alternative_phrasings": [
+              "maintenance cost",
+              "service cost",
+              "repair cost",
+              "spare parts cost",
+              "annual upkeep"
+            ]
+          },
+          "disqualifying": [
+            "Only says 'maintenance risk for e-trucks' under the Risk pillar without touching the specific diesel-truck maintenance-cost figure",
+            "Only says 'lower maintenance for e-trucks' as a passing reference without actively asking about the baseline figure"
+          ],
+          "info": "Services/maintenance costs (tires, parts, oil, lube, etc.) for a diesel truck is $20,600 per year. An electric truck has fewer moving parts, thus they cost less to maintain. The estimated savings are 50%."
+        },
+        {
+          "item_id": "Q3_item_6",
+          "trigger": "Analyst asks about other costs or whether to include additional cost categories",
+          "core_dimensional_concept": "whether other cost categories are material for the TCO calculation",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question asking if there are other costs to include",
+              "TCO setup asking whether insurance, tolls, or other items are relevant",
+              "direct question: 'Are there any other costs we should factor in?'"
+            ],
+            "alternative_phrasings": [
+              "other costs",
+              "anything else to include",
+              "additional cost items",
+              "what about insurance or other fees"
+            ]
+          },
+          "disqualifying": [
+            "Only mentions 'insurance' as a cost-item sub-bullet under Framework without actively asking whether it should be included in the calculation (passing reference)"
+          ],
+          "info": "All other costs are negligible."
+        },
+        {
+          "item_id": "Q3_item_7",
+          "trigger": "Analyst asks about competitors or other e-trucks on the market",
+          "core_dimensional_concept": "existence of competitor e-trucks in the market",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question about competitor e-truck pricing or whether other e-trucks exist",
+              "framework pillar named 'Competition' or 'Competitive Landscape' asking about e-truck competitors",
+              "direct question: 'Are there other e-trucks in the market to benchmark against?'"
+            ],
+            "alternative_phrasings": [
+              "competitor e-trucks",
+              "other electric trucks available",
+              "benchmark against competitors",
+              "what do other e-trucks cost",
+              "competitive pricing"
+            ]
+          },
+          "disqualifying": [
+            "Only loosely states 'competitive landscape' under the Market pillar without explicitly touching whether other electric trucks exist (G pattern)",
+            "Only says 'competition is relevant' as a passing reference"
+          ],
+          "info": "There are no similar products in the market yet (no other electric trucks)."
+        }
+      ],
+      "appendix": {
+        "appendix_1": {
+          "title": "Energy consumption and price for energy comparison: diesel truck vs. e-truck",
+          "release_rule": "Share upfront with analyst at the start of Q3",
+          "table": {
+            "energy_consumption": {
+              "average_diesel_truck": "5 miles per gallon of diesel",
+              "e_truck": "2 kWh per 1 mile"
+            },
+            "price_for_energy": {
+              "average_diesel_truck": "$2.5 per gallon of diesel",
+              "e_truck": "$0.15 per 1kWh"
+            }
+          }
+        }
+      },
+      "state_machine": {
+        "next_question": "Q4",
+        "skip_logic": false,
+        "max_attempts": 2,
+        "scoring_on_transition": {
+          "attempt_1_correct": "Full score",
+          "attempt_2_correct": "0 score per core_principles 7.2",
+          "both_attempts_wrong": "0 score; interviewer provides correct answer ($221k) before Q4"
+        },
+        "transition_condition": "Case proceeds to Q4 after 1st or 2nd attempt; if both wrong, Judge LLM states: 'The correct answer to Q3 is $221k. What considerations should we have based on this price of $221k? What other factors would you think of?'"
+      }
+    },
+    "Q4": {
+      "q_id": "Q4",
+      "type": "qualitative",
+      "question_text": "What considerations should we have based on this price of $221k? What other factors would you think of?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": null,
+        "skip_logic": false,
+        "transition_condition": "Case ends after Q4"
+      }
+    }
+  },
+  "structure_4_ground_truth": {
+    "Q1_ground_truth": {
+      "type": "framework",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_e_truck_market": {
+          "keypoints": [
+            "Size and growth rate",
+            "Largest e-truck producers (incl. market shares and key differentiating points)",
+            "Average margin in the space"
+          ],
+          "subtotal": 3
+        },
+        "pillar_2_diesel_truck_manufacturer": {
+          "keypoints": [
+            "Target customer segments for e-trucks (same B2B or B2C too?)",
+            "Expected e-truck model (e.g. type, key selling points)",
+            "Distribution (own/partner dealerships; online; etc.)"
+          ],
+          "subtotal": 3
+        },
+        "pillar_3_valuation": {
+          "keypoints": [
+            "Expected capex",
+            "Investment criteria (e.g. ROI, NPV, payback period)",
+            "Expected profitability — Revenue (incl. synergy analysis)",
+            "Expected profitability — Costs (incl. synergy analysis)"
+          ],
+          "subtotal": 4
+        },
+        "pillar_4_market_entry_risks": {
+          "keypoints": [
+            "Market specific risks",
+            "Financial risks",
+            "Operational risks"
+          ],
+          "subtotal": 3
+        }
+      },
+      "total_keypoints": 13,
+      "minimum_expected": "Cover at least 2 pillars; key points include market size, growth rate, competition, average margins in the space, client business model, and barriers for entry; minimum 4 keypoints",
+      "outstanding_threshold": "All 4 pillars covered with majority of sub-items in a clearly structured issue tree; financial analysis included even without financial goal being shared"
+    },
+    "Q2_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_financial_analysis": {
+          "keypoints": [
+            "Price of the truck",
+            "Maintenance costs (spare parts, maintenance services)",
+            "Fuel/electricity consumption",
+            "Insurance",
+            "Truck's useful life",
+            "Truck's capacity (e.g. power, payload, mileage range)",
+            "Expected utilization rate (due to lower number of repairs)",
+            "Salvage value of the truck",
+            "Expected ROI/payback/etc.",
+            "Capex to build charging stations at their garages"
+          ],
+          "costs_factors": [
+            "Price of the truck",
+            "Maintenance costs (spare parts, maintenance services)",
+            "Fuel/electricity consumption",
+            "Insurance"
+          ],
+          "revenue_factors": [
+            "Truck's useful life",
+            "Truck's capacity (e.g. power, payload, mileage range)",
+            "Expected utilization rate (due to lower number of repairs)",
+            "Salvage value of the truck"
+          ],
+          "investment": [
+            "Expected ROI/payback/etc.",
+            "Capex to build charging stations at their garages"
+          ],
+          "subtotal": 10
+        },
+        "pillar_2_strategic_value": {
+          "keypoints": [
+            "Better brand image as environmentally friendly",
+            "Less dependency on oil & gas price fluctuations",
+            "Less legal risks to meet the pollution requirements"
+          ],
+          "improvement_in_CX": [
+            "Better brand image as environmentally friendly"
+          ],
+          "risk_diversification": [
+            "Less dependency on oil & gas price fluctuations",
+            "Less legal risks to meet the pollution requirements"
+          ],
+          "subtotal": 3
+        },
+        "pillar_3_risks": {
+          "keypoints": [
+            "Lack of mechanics and service stations to support e-trucks",
+            "Increase in operational complexity as now there are two fleets: regular trucks and e-trucks",
+            "Potential flaws in the design of e-trucks (as they haven't stood the test of time yet)",
+            "Too long charging time",
+            "Lack of charging infrastructure in the region",
+            "Loss in economies of scale (e.g. in purchasing spare parts for both fleets instead of one fleet)",
+            "Underestimated costs/exaggerated revenues"
+          ],
+          "operational_risks": [
+            "Lack of mechanics and service stations to support e-trucks",
+            "Increase in operational complexity as now there are two fleets: regular trucks and e-trucks",
+            "Potential flaws in the design of e-trucks (as they haven't stood the test of time yet)",
+            "Too long charging time",
+            "Lack of charging infrastructure in the region"
+          ],
+          "financial_risks": [
+            "Loss in economies of scale (e.g. in purchasing spare parts for both fleets instead of one fleet)",
+            "Underestimated costs/exaggerated revenues"
+          ],
+          "subtotal": 7
+        }
+      },
+      "total_keypoints": 20,
+      "minimum_expected": "At least 4 ideas across at least 2 pillars",
+      "outstanding_threshold": "8+ ideas structured across all 3 pillars with sub-categories, delivered fluently on the fly without taking notes"
+    },
+    "Q3_ground_truth": {
+      "type": "quantitative",
+      "quantitative_part": {
+        "correct_final_answer": "$221k",
+        "accepted_values": [
+          221000
+        ],
+        "tolerance_pct": 0.0,
+        "zero_tolerance": true,
+        "scoring_method": "Binary: correct number = full credit; incorrect = zero credit",
+        "calculation_steps": {
+          "step_1_diesel_energy_cost_per_year": {
+            "formula": "68k mi / 5 mi per gallon × $2.5 per gallon",
+            "result": "$34k per year"
+          },
+          "step_2_diesel_maintenance_cost_per_year": {
+            "formula": "$20,600 per year (given upon request)",
+            "result": "$20.6k per year"
+          },
+          "step_3_diesel_tco_per_year": {
+            "formula": "$34k + $20.6k",
+            "result": "≈$55k per year"
+          },
+          "step_4_diesel_tco_over_lifetime": {
+            "formula": "$55k × 4 years",
+            "result": "$220k"
+          },
+          "step_5_etruck_energy_cost_per_year": {
+            "formula": "68k mi × 2 kWh/mi × $0.15 per kWh",
+            "result": "$20.4k per year"
+          },
+          "step_6_etruck_maintenance_cost_per_year": {
+            "formula": "$20.6k × 50% savings",
+            "result": "$10.3k per year"
+          },
+          "step_7_etruck_tco_per_year": {
+            "formula": "$20.4k + $10.3k",
+            "result": "≈$31k per year"
+          },
+          "step_8_etruck_tco_over_lifetime": {
+            "formula": "$31k × 4 years",
+            "result": "$124k"
+          },
+          "step_9_total_savings": {
+            "formula": "$220k − $124k",
+            "result": "$96k"
+          },
+          "step_10_etruck_price": {
+            "formula": "$125k (diesel price) + $96k (value generated for customer)",
+            "result": "$221k"
+          }
+        }
+      },
+      "qualitative_part": {
+        "scoring_note": "Qualitative portion of Q3 is scored as 100% total, split into two tiers. Within each tier, use 3-level scoring per",
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "tier_1_basic": {
+          "weight_of_Q3_qualitative_total": "50%",
+          "keypoints": [
+            "The e-truck generates value of almost $100k for a customer, thus this value might be baked into the price of the e-truck: $125k + $96k = $221k"
+          ],
+          "note": "Expected from every candidate. Single point worth 50% of qualitative score."
+        },
+        "tier_2_advanced": {
+          "weight_of_Q3_qualitative_total": "50%",
+          "points_available": 4,
+          "weight_per_point": "12.5% of qualitative total",
+          "keypoints": [
+            "We didn't take into the consideration the time value of money, so the value will be lower if we apply some interest rate to each of four years",
+            "The calculated value depends on the diesel price, and oil & gas prices fluctuate a lot. In case of drop in diesel prices (like in 2020), the value might drop too",
+            "The calculated price doesn't account for the customers' willingness to pay (WTP), which might be lower as customers might be price sensitive (even despite the estimated positive value)",
+            "We assumed the average mileage of 68k, but there will be customers with far higher and far lower mileages, and for them the generated value will vary"
+          ],
+          "note": "Not expected from every candidate. Each advanced point adds 12.5% to qualitative score."
+        },
+        "minimum_expected": "Correct numerical answer ($221k) + Tier 1 basic contextualization (covered)",
+        "outstanding_threshold": "Correct numerical answer + Tier 1 covered + at least 2 Tier 2 advanced comments covered"
+      }
+    },
+    "Q4_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_factor_in_other_criteria": {
+          "keypoints": [
+            "How much value might the e-truck generate on the revenue side? — Higher payload in comparison with diesel trucks?",
+            "How much value might the e-truck generate on the revenue side? — Higher utilization rate due to lower number of repairs?",
+            "What are the typical investment criteria for our customers and does our price help them meet these criteria? (e.g. ROI, payback period)",
+            "Should we decrease the price to balance out the potential operational risks? (e.g. lack of mechanics, lack of charging infrastructure, etc.)"
+          ],
+          "subtotal": 4
+        },
+        "pillar_2_strengthen_hypothesis": {
+          "keypoints": [
+            "Benchmark (with other e-trucks in the market) [there is no other e-trucks — this confirms no competitive price pressure]",
+            "Assess willingness-to-pay of different customer groups (e.g. long-haul carriers vs regional carriers; large vs small carriers; etc.)",
+            "Define the goal of our pricing (e.g. maximize profits, market share, or number of trucks sold) which might affect the final decision on pricing"
+          ],
+          "subtotal": 3
+        },
+        "pillar_3_next_steps": {
+          "keypoints": [
+            "Develop leasing programs",
+            "Design risk mitigation plan",
+            "Build marketing strategy based on the price"
+          ],
+          "subtotal": 3
+        }
+      },
+      "total_keypoints": 10,
+      "minimum_expected": "At least 4 considerations across at least 2 pillars",
+      "outstanding_threshold": "8+ ideas structured across all 3 pillars (factor in criteria / strengthen hypothesis / next steps), delivered fluently on the fly without taking notes"
+    }
+  },
+  "state_machine_global": {
+    "case_type": "interviewer_driven",
+    "skip_logic": false,
+    "mandatory_sequence": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4"
+    ],
+    "rules": [
+      "Q1 cannot be skipped under any circumstances",
+      "Questions must proceed in linear order Q1 → Q2 → Q3 → Q4",
+      "A question may not be advanced until the current question receives a scoreable answer (1st or 2nd attempt)",
+      "If analyst pre-covers a later question's keypoints in an earlier answer, record as pre-coverage but still ask the later question in sequence",
+      "No question may be skipped even if pre-covered",
+      "Q4 references '$221k' from Q3 — per §4.3.C: if Q3 both attempts wrong, Judge LLM provides correct answer before Q4"
+    ]
+  },
+  "scoring_summary": {
+    "Q1": {
+      "type": "framework",
+      "total_keypoints": 13,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q2": {
+      "type": "qualitative",
+      "total_keypoints": 20,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q3": {
+      "type": "quantitative",
+      "part_1_quantitative": {
+        "correct_answer": "$221k",
+        "zero_tolerance": true,
+        "scoring": "Binary: Full credit if correct; zero credit if incorrect"
+      },
+      "part_2_qualitative": {
+        "total_keypoints": 5,
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "human_review_priority": "false-partial > false-not-covered > covered",
+        "tier_1_basic": {
+          "keypoints": 1,
+          "weight": "50% of qualitative score"
+        },
+        "tier_2_advanced": {
+          "keypoints": 4,
+          "weight_per_point": "12.5% of qualitative score",
+          "weight_total": "50% of qualitative score"
+        }
+      }
+    },
+    "Q4": {
+      "type": "qualitative",
+      "total_keypoints": 10,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    }
+  }
+}

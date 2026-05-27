@@ -1,0 +1,597 @@
+{
+  "case_id": "001",
+  "version": "v1",
+  "source": {
+    "title": "Lasio Virus",
+    "inspired_by": "McKinsey & Company",
+    "year": 2023,
+    "author": "Peter K.",
+    "reference": "Peter-K.org, Case #1",
+    "casebook_abbr": "PK23"
+  },
+  "case_type": "interviewer_driven",
+  "case_arch": {
+    "primary": "Wild Card",
+    "tags": [
+      "Wild Card",
+      "Public Health",
+      "Operations",
+      "Social Impact"
+    ]
+  },
+  "difficulty": "Hard",
+  "industry": "Public Health / International Development",
+  "topic": "Vaccination rate improvement — designing a plan to vaccinate 90% of children against Lasio virus in 2 years",
+  "expected_duration_minutes": 20,
+  "opening_prompt": "Hi, I'd like to solve some consulting cases with you. Pls be a good interviewee to have a potential test in consulting cases. For the case problem-solving, pls do not assume any numbers or assumptions before my confirmation. I will give you the context upon request. I need you to answer the following questions for the client. Before you start, feel free to ask me 2-3 clarifying questions about the client.\n\nQ1. What factors would you consider to help this country boost the Lasio vaccination rate to 90% in 2 years?\nQ2. How to ensure the reliable supply chain of Lasio vaccines to vaccination providers?\nQ3. What suggestions do you have to increase the number of children vaccinated against Lasio in this country? (Assuming reliable supply of vaccines and no costs for patients)\nQ4. What is the minimum number of vaccines required for the country to achieve a vaccination rate of 90%?\n\nHere is the basic context for the client:\nA major African country has been facing a rapidly increasing number of child infections with Lasio, a deadly virus. Lasio spreads from person to person and can invade an infected person's brain and spinal cord, causing paralysis. Most countries eradicated Lasio through vaccination, but this African country has been struggling of reaching 90% vaccination level needed to stop the virus. Currently only 50% of children are fully vaccinated against Lasio. The World Health Organization (WHO) has brought your team to design a plan to vaccinate 90% of children in the country and stop the virus in 2 years.",
+  "structure_1_client_basic_context": {
+    "company": "A major African country (client brought to WHO)",
+    "type": "Government / Public health entity in a major African country",
+    "situation": "A major African country has been facing a rapidly increasing number of child infections with Lasio, a deadly virus. Lasio spreads from person to person and can invade an infected person's brain and spinal cord, causing paralysis. Most countries eradicated Lasio through vaccination, but this African country has been struggling of reaching 90% vaccination level needed to stop the virus. Currently only 50% of children are fully vaccinated against Lasio.",
+    "action": "The World Health Organization (WHO) has brought your team in",
+    "ask": "to design a plan to vaccinate 90% of children in the country and stop the virus in 2 years"
+  },
+  "structure_2_information_upon_request": {
+    "item_1": {
+      "item_id": "item_1",
+      "trigger": "Analyst asks about the target age group for Lasio or which children are most affected",
+      "core_dimensional_concept": "target age group most affected by the Lasio virus",
+      "release_conditions": {
+        "structural_position": [
+          "explicit clarifying question about which age group of children is affected by Lasio",
+          "framework pillar named 'Target Population', 'Patient Demographics', or 'Age Groups'",
+          "sub-bullet under patient population analysis asking about age breakdown of affected children"
+        ],
+        "alternative_phrasings": [
+          "what age group is affected",
+          "which children are most vulnerable",
+          "age breakdown of infections",
+          "what age are the children",
+          "under what age does Lasio affect children"
+        ]
+      },
+      "disqualifying": [
+        "Only loosely states 'children' as an affected group without touching the specific age band (F passing reference)",
+        "Only mentions 'vulnerable population' under the Risk pillar without asking for the specific age-band definition"
+      ],
+      "info": "Lasio mainly affects children under 5 years of age."
+    },
+    "item_2": {
+      "item_id": "item_2",
+      "trigger": "Analyst asks about the total number of children in the country or population size",
+      "core_dimensional_concept": "total children population in the country",
+      "release_conditions": {
+        "structural_position": [
+          "explicit clarifying question about how many children are in the country",
+          "framework pillar named 'Population Size', 'Market Size', or 'Children Population'",
+          "quantitative setup asking for total population to scale the problem or estimate coverage gaps"
+        ],
+        "alternative_phrasings": [
+          "how many children in the country",
+          "total population of children",
+          "population size",
+          "how large is the target group",
+          "children population figure"
+        ]
+      },
+      "disqualifying": [
+        "Only mentions 'large country' as background under Framework without actively asking for the specific child-population figure (passing reference, F pattern)",
+        "Only says 'population coverage' without touching the specific population-size figure"
+      ],
+      "info": "There are 5M children in the country."
+    },
+    "item_3": {
+      "item_id": "item_3",
+      "trigger": "Analyst asks about the vaccination protocol, number of doses, or method of vaccine administration",
+      "core_dimensional_concept": "vaccine administration protocol — number of doses and delivery method",
+      "release_conditions": {
+        "structural_position": [
+          "explicit clarifying question about how many doses are required or how the vaccine is administered",
+          "framework pillar named 'Vaccination Protocol', 'Dosing Schedule', or 'Administration Method'",
+          "sub-bullet under vaccination analysis asking whether it is a one-shot or multi-shot vaccine"
+        ],
+        "alternative_phrasings": [
+          "how many doses",
+          "one shot or two shots",
+          "how is the vaccine administered",
+          "oral or injection",
+          "dosing schedule",
+          "vaccination protocol"
+        ]
+      },
+      "disqualifying": [
+        "Only says 'compliance risk with multi-dose regimen' under the Risk pillar without actively asking about the specific dosing method (G pattern)",
+        "Only mentions 'vaccination process' without touching the specific dose or administration method (F pattern)"
+      ],
+      "info": "Children should receive two doses of vaccine orally (by drops in the mouth)."
+    },
+    "item_4": {
+      "item_id": "item_4",
+      "trigger": "Analyst asks about vaccine storage requirements or cold chain requirements",
+      "core_dimensional_concept": "vaccine cold chain / storage temperature requirements",
+      "release_conditions": {
+        "structural_position": [
+          "explicit clarifying question about how the vaccine needs to be stored or cold chain requirements",
+          "framework pillar named 'Cold Chain', 'Storage Requirements', or 'Vaccine Logistics'",
+          "sub-bullet under supply chain or warehousing analysis asking about temperature or storage conditions"
+        ],
+        "alternative_phrasings": [
+          "storage requirements",
+          "cold chain",
+          "temperature requirements",
+          "how is the vaccine stored",
+          "refrigeration needs",
+          "storage conditions"
+        ]
+      },
+      "disqualifying": [
+        "Only loosely states 'logistics risk' under the Risk pillar without touching the specific storage temperature or cold-chain requirement (G pattern)",
+        "Only says 'supply chain challenges' without asking about the specific storage-temperature spec (passing reference, F pattern)"
+      ],
+      "info": "The vaccine is stored at low temperatures (2°C/35°F)."
+    },
+    "item_5": {
+      "item_id": "item_5",
+      "trigger": "Analyst asks about vaccine safety or known side-effects",
+      "core_dimensional_concept": "vaccine safety profile — known side-effects",
+      "release_conditions": {
+        "structural_position": [
+          "explicit clarifying question about whether the vaccine has known side-effects",
+          "framework pillar named 'Vaccine Safety', 'Side-Effects', or 'Safety Profile'",
+          "sub-bullet under patient population or trust analysis asking about safety concerns or adverse reactions"
+        ],
+        "alternative_phrasings": [
+          "side effects",
+          "safety profile",
+          "adverse reactions",
+          "is the vaccine safe",
+          "any known risks of the vaccine"
+        ]
+      },
+      "disqualifying": [
+        "Only loosely states 'public perception risk' under the Risk pillar without actively asking about known vaccine side effects (G pattern)",
+        "Only mentions 'vaccine hesitancy' without asking whether there are actual recorded side effects (passing reference, F pattern)"
+      ],
+      "info": "There are no known side-effects of the vaccine."
+    },
+    "item_6": {
+      "item_id": "item_6",
+      "trigger": "Analyst asks about vaccine hesitancy drivers, anti-vaccine sentiment, or misinformation",
+      "core_dimensional_concept": "presence of anti-vaccine misinformation in high-risk communities",
+      "release_conditions": {
+        "structural_position": [
+          "explicit clarifying question about what is causing hesitancy or distrust of the vaccine",
+          "framework pillar named 'Misinformation', 'Anti-Vaccine Sentiment', or 'Trust Barriers'",
+          "sub-bullet under patient population or awareness analysis asking about the source or nature of vaccine hesitancy"
+        ],
+        "alternative_phrasings": [
+          "anti-vaccine videos",
+          "misinformation",
+          "vaccine hesitancy drivers",
+          "distrust of vaccine",
+          "what is causing people not to vaccinate",
+          "social media campaigns against vaccination"
+        ]
+      },
+      "disqualifying": [
+        "Only mentions 'Trust and misconceptions' as a pillar title under Framework without actively asking about the specific source of misinformation (G pattern)",
+        "Only says 'awareness issues' without touching the specifics of anti-vaccine videos or misinformation (passing reference, F pattern)"
+      ],
+      "info": "Anti-viral vaccine videos have been circulating in the high-risk communities."
+    },
+    "item_7": {
+      "item_id": "item_7",
+      "trigger": "Analyst asks about the current state of vaccine supply to providers or existing supply chain challenges",
+      "core_dimensional_concept": "current supply chain reliability challenges for vaccine delivery to providers",
+      "release_conditions": {
+        "structural_position": [
+          "explicit clarifying question about the current supply chain situation or known supply bottlenecks",
+          "framework pillar named 'Supply Chain', 'Current Supply Issues', or 'Provider Availability'",
+          "sub-bullet under vaccination providers analysis asking about current reliability or availability of vaccines at clinics"
+        ],
+        "alternative_phrasings": [
+          "current supply chain status",
+          "supply challenges",
+          "are vaccines available at clinics",
+          "supply bottlenecks",
+          "reliable supply to providers",
+          "vaccine stockouts"
+        ]
+      },
+      "disqualifying": [
+        "Only lists 'Vaccination providers' as a pillar under Framework without actively asking whether current supply is reliable (G pattern)",
+        "Only says 'supply chain is important' without touching whether a supply-reliability problem already exists (passing reference, F pattern)"
+      ],
+      "info": "The country has been struggling to ensure a reliable supply of vaccines to vaccination providers."
+    }
+  },
+  "structure_3_case_questions": {
+    "Q1": {
+      "q_id": "Q1",
+      "type": "framework",
+      "question_text": "What factors would you consider to help this country boost the Lasio vaccination rate to 90% in 2 years?",
+      "information_to_share_upfront": null,
+      "information_upon_request": "See structure_2 items 1–7. Release only items by semantic touch (release when the analyst structurally engages the dimension; not on a passing reference), not by mere keyword presence.",
+      "state_machine": {
+        "next_question": "Q2",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable framework answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q2": {
+      "q_id": "Q2",
+      "type": "qualitative",
+      "question_text": "How to ensure the reliable supply chain of Lasio vaccines to vaccination providers?",
+      "information_to_share_upfront": null,
+      "information_upon_request": "See structure_2 items 3–4 (vaccine dosing/administration and cold-chain storage requirements) if analyst asks specifically in the context of supply chain design. Release by semantic touch.",
+      "state_machine": {
+        "next_question": "Q3",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q3": {
+      "q_id": "Q3",
+      "type": "qualitative",
+      "question_text": "What suggestions do you have to increase the number of children vaccinated against Lasio in this country? (Assuming reliable supply of vaccines and no costs for patients)",
+      "information_to_share_upfront": null,
+      "information_upon_request": "See structure_2 items 5–6 (vaccine safety / no side-effects; anti-vaccine videos circulating) if analyst asks specifically about patient hesitancy drivers or safety in this context. Release by semantic touch.",
+      "state_machine": {
+        "next_question": "Q4",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q4": {
+      "q_id": "Q4",
+      "type": "quantitative",
+      "question_text": "What is the minimum number of vaccines required for the country to achieve a vaccination rate of 90%?",
+      "information_to_share_upfront": [
+        "Current vaccination results:",
+        "— 50% of children are fully vaccinated (received 2 doses)",
+        "— 20% of children received 1 dose",
+        "— 30% of children didn't receive any doses",
+        "Children of all age groups are subject to vaccination"
+      ],
+      "information_upon_request": [
+        {
+          "item_id": "Q4_item_1",
+          "trigger": "Analyst asks about vaccine wastage rate or loss rate due to storage or forecasting issues",
+          "core_dimensional_concept": "vaccine wastage rate due to poor storage conditions and inadequate demand forecasting",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question about what percentage of vaccines are wasted or lost",
+              "quantitative calculation setup asking whether to factor in wastage or spoilage",
+              "direct question: 'What is the vaccine waste rate?' or 'Do we need to account for wastage?'"
+            ],
+            "alternative_phrasings": [
+              "vaccine waste",
+              "wastage rate",
+              "spoilage",
+              "loss rate",
+              "how many vaccines are lost",
+              "waste percentage",
+              "accounting for waste"
+            ]
+          },
+          "disqualifying": [
+            "Only loosely mentions 'minimize waste' in the supply-chain analysis under Q2 without actively asking, in the Q4 calculation context, for the specific waste-rate figure (different question context; no cross-question release)",
+            "Only says 'we should account for inefficiencies' without touching the specific waste-rate percentage (passing reference, F pattern)"
+          ],
+          "info": "Due to poor storage conditions and inadequate vaccine demand forecasting, 25% of vaccines go to waste."
+        },
+        {
+          "item_id": "Q4_item_2",
+          "trigger": "Analyst asks about the total number of children in the country for the calculation (if not already released in structure_2 item_2)",
+          "core_dimensional_concept": "total children population for the quantitative calculation",
+          "release_conditions": {
+            "structural_position": [
+              "explicit request for the children population figure to set up the calculation",
+              "direct question: 'How many children are in the country?' in Q4 calculation context",
+              "quantitative formula setup requiring a population figure as input"
+            ],
+            "alternative_phrasings": [
+              "how many children",
+              "population figure",
+              "total children",
+              "5 million",
+              "number of children in the country"
+            ]
+          },
+          "disqualifying": [
+            "This information was already touched and released in structure_2 item_2 — do not release it again; the Judge LLM should simply prompt the analyst to use the previously provided 5M figure",
+            "Only asks 'how many vaccines are needed' without explicitly requesting the population figure (passing reference, F pattern)"
+          ],
+          "info": "The children population is 5M in this country. [Note: may already have been released via structure_2 item_2 if analyst asked earlier — do not re-release if already given.]"
+        },
+        {
+          "item_id": "Q4_item_3",
+          "trigger": "Analyst asks whether to factor in population growth rate or newborns in the calculation",
+          "core_dimensional_concept": "children population growth rate assumption for calculation purposes",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question about whether population growth should be included in the calculation",
+              "direct question: 'Should we factor in birth rate or population growth?'",
+              "quantitative setup that identifies uncertainty about whether the population is static or growing"
+            ],
+            "alternative_phrasings": [
+              "population growth rate",
+              "birth rate",
+              "should we account for new children",
+              "newborns",
+              "growing population",
+              "static vs dynamic population"
+            ]
+          },
+          "disqualifying": [
+            "Only mentions 'birth rate in African countries is high' as an advanced comment during Q4 contextualization without actively asking, at the calculation-setup stage, whether it should be folded into the growth rate (G pattern)",
+            "Only loosely mentions 'population dynamics' without explicitly asking whether the growth rate is ignored (passing reference, F pattern)"
+          ],
+          "info": "The children population growth rate can be neglected [for the purposes of this calculation]."
+        }
+      ],
+      "state_machine": {
+        "next_question": null,
+        "skip_logic": false,
+        "max_attempts": 2,
+        "scoring_on_transition": {
+          "attempt_1_correct": "Full score",
+          "attempt_2_correct": "0 score per core_principles 7.2",
+          "both_attempts_wrong": "0 score; interviewer provides correct answer (4M vaccines) before contextualization"
+        },
+        "transition_condition": "Case ends after Q4. If both attempts wrong, Judge LLM states: 'The correct answer to Q4 is 4M vaccines. Can you walk me through what the answer means and what caveats you would flag?'"
+      }
+    }
+  },
+  "structure_4_ground_truth": {
+    "Q1_ground_truth": {
+      "type": "framework",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_vaccination": {
+          "keypoints": [
+            "% vaccinated, growth rate",
+            "Break-down by age groups and regions",
+            "Vaccine efficacy"
+          ],
+          "subtotal": 3
+        },
+        "pillar_2_vaccination_providers": {
+          "keypoints": [
+            "Vaccination providers (e.g. hospitals, mobile clinics)",
+            "Availability of vaccines and equipment",
+            "Capacity (# of nurses, storage)",
+            "Geographical footprint"
+          ],
+          "subtotal": 4
+        },
+        "pillar_3_patient_population": {
+          "keypoints": [
+            "Awareness",
+            "Accessibility (e.g. in rural areas)",
+            "Trust and misconceptions"
+          ],
+          "subtotal": 3
+        },
+        "pillar_4_government": {
+          "keypoints": [
+            "Vaccination funding (available budget)",
+            "Accountability levels (e.g. local, state, federal)",
+            "Vaccination progress monitoring (e.g. frequency, granularity)",
+            "Engagement and coordination"
+          ],
+          "subtotal": 4
+        }
+      },
+      "total_keypoints": 14,
+      "minimum_expected": "Cover at least 2 pillars with keypoints; minimum 4 keypoints; structured MECE approach",
+      "outstanding_threshold": "All 4 pillars covered with majority of keypoints in a clearly structured issue tree; candidate opens with a 15-second big-picture horizontal overview before drilling down"
+    },
+    "Q2_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_production": {
+          "keypoints": [
+            "Maximize utilization rate of existing vaccine manufacturers (e.g. add new shifts)",
+            "Expand domestic production capacity (e.g. invest in new production lines and factories)",
+            "Partner with foreign vaccine manufacturers"
+          ],
+          "subtotal": 3
+        },
+        "pillar_2_warehousing": {
+          "keypoints": [
+            "Ensure storage quality (e.g. microclimatic) and minimize waste",
+            "Minimize idle capacity",
+            "Expand existing warehouses",
+            "Invest in new storage facilities"
+          ],
+          "subtotal": 4
+        },
+        "pillar_3_transportation": {
+          "keypoints": [
+            "Upgrade the existing fleet of refrigerated trucks",
+            "Expand the fleet",
+            "Ensure high-quality maintenance services (e.g. build supplies of spare parts, hire and train more mechanics)",
+            "Strengthen the truck driver force (e.g. hire more, train, incentivize)"
+          ],
+          "subtotal": 4
+        },
+        "pillar_4_storage_at_clinics": {
+          "keypoints": [
+            "Modify the design of vaccine packaging to ensure longer shelf-life and storage time",
+            "Equip clinics with necessary refrigeration capabilities",
+            "Train staff to minimize vaccine waste due to improper storage and vaccine administration",
+            "Improve demand forecasting models to better predict required amount of vaccines"
+          ],
+          "subtotal": 4
+        }
+      },
+      "total_keypoints": 15,
+      "minimum_expected": "At least 4 ideas across at least 2 pillars",
+      "outstanding_threshold": "7-9 ideas structured into the 4 supply chain pillars (Production / Warehousing / Transportation / Storage at clinics), delivered fluently on the fly without taking notes"
+    },
+    "Q3_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_increase_awareness_and_address_misconceptions": {
+          "keypoints": [
+            "Launch a top-notch vaccination web-portal",
+            "Offer 24/7 hotline",
+            "Run educational ads",
+            "Recruit celebrities and other vaccine advocates",
+            "Partner with community leaders to promote Lasio vaccination",
+            "Send out reminders for next vaccine dose (e.g. text messages, emails)"
+          ],
+          "subtotal": 6
+        },
+        "pillar_2_improve_access": {
+          "keypoints": [
+            "Maximize participation of healthcare providers in vaccination efforts",
+            "Offer Lasio vaccination at pharmacies",
+            "Launch a network of mobile clinics to offer Lasio vaccination",
+            "Increase the capacity of existing vaccination providers (e.g. dispatch more nurses)",
+            "Offer transportation in remote regions to vaccination sites"
+          ],
+          "subtotal": 5
+        },
+        "pillar_3_improve_vaccination_experience": {
+          "keypoints": [
+            "Expand working hours and days",
+            "Ensure no lines",
+            "Accommodate walk-ins",
+            "Invest in training staff to be knowledgeable and friendly"
+          ],
+          "subtotal": 4
+        },
+        "pillar_4_offer_additional_benefits": {
+          "keypoints": [
+            "Offer candies for kids",
+            "Offer small gifts (e.g. toys)",
+            "Offer food for families",
+            "Offer other healthcare services (e.g. physical checkups)"
+          ],
+          "subtotal": 4
+        }
+      },
+      "total_keypoints": 19,
+      "minimum_expected": "At least 4 ideas across at least 2 pillars",
+      "outstanding_threshold": "7-8 ideas structured across all 4 pillars (awareness / access / experience / additional benefits), delivered fluently on the fly without taking notes"
+    },
+    "Q4_ground_truth": {
+      "type": "quantitative",
+      "quantitative_part": {
+        "correct_final_answer": "4M vaccines",
+        "accepted_values": [
+          4000000
+        ],
+        "tolerance_pct": 0.0,
+        "zero_tolerance": true,
+        "scoring_method": "Binary: correct number = full credit; incorrect = zero credit",
+        "calculation_steps": {
+          "step_1_vaccines_for_children_with_1_dose": {
+            "formula": "5M × 20% × 1 dose",
+            "result": "1M vaccines"
+          },
+          "step_2_vaccines_for_children_with_no_doses": {
+            "formula": "5M × (90% − 50% − 20%) × 2 doses = 5M × 20% × 2",
+            "result": "2M vaccines"
+          },
+          "step_3_total_doses_before_waste": {
+            "formula": "1M + 2M",
+            "result": "3M vaccines"
+          },
+          "step_4_total_doses_including_waste": {
+            "formula": "3M ÷ (1 − 25%)",
+            "result": "4M vaccines"
+          }
+        }
+      },
+      "qualitative_part": {
+        "scoring_note": "Qualitative portion of Q4 is scored as 100% total, split into two tiers. Within each tier, use 3-level scoring per",
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "tier_1_basic": {
+          "weight_of_Q4_qualitative_total": "50%",
+          "keypoints": [
+            "At least 4M vaccines will be required to bridge the vaccination gap and vaccinate 90% of the children"
+          ],
+          "note": "Expected from every candidate. Single point worth 50% of qualitative score."
+        },
+        "tier_2_advanced": {
+          "weight_of_Q4_qualitative_total": "50%",
+          "points_available": 3,
+          "weight_per_point": "~16.7% of qualitative total",
+          "keypoints": [
+            "More adequate vaccine demand forecasts and additional investment in refrigerating equipment might allow to reduce the vaccine waste and thus decrease number of required vaccines",
+            "The birth rate in African countries is likely far higher than in the developed world, so a substantial number of additional vaccines might be required for newborns (that aren't considered in the calculation)",
+            "New distribution methods (e.g. mobile clinics, health camps) might boost the vaccination but also increase the waste rate leading to a higher required number of vaccines"
+          ],
+          "note": "Not expected from every candidate. Each advanced point adds ~16.7% to qualitative score."
+        },
+        "minimum_expected": "Correct numerical answer (4M vaccines) + Tier 1 basic contextualization (covered)",
+        "outstanding_threshold": "Correct numerical answer + Tier 1 covered + at least 2 Tier 2 advanced comments covered"
+      }
+    }
+  },
+  "state_machine_global": {
+    "case_type": "interviewer_driven",
+    "skip_logic": false,
+    "mandatory_sequence": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4"
+    ],
+    "rules": [
+      "Q1 cannot be skipped under any circumstances",
+      "Questions must proceed in linear order Q1 → Q2 → Q3 → Q4",
+      "A question may not be advanced until the current question receives a scoreable answer (1st or 2nd attempt)",
+      "If analyst pre-covers a later question's keypoints in an earlier answer, record as pre-coverage but still ask the later question in sequence",
+      "No question may be skipped even if pre-covered",
+      "Q4 upfront data (vaccination rate breakdown) must be shared at the start of Q4 before the analyst begins the calculation"
+    ]
+  },
+  "scoring_summary": {
+    "Q1": {
+      "type": "framework",
+      "total_keypoints": 14,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q2": {
+      "type": "qualitative",
+      "total_keypoints": 15,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q3": {
+      "type": "qualitative",
+      "total_keypoints": 19,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q4": {
+      "type": "quantitative",
+      "part_1_quantitative": {
+        "correct_answer": "4M vaccines",
+        "zero_tolerance": true,
+        "scoring": "Binary: Full credit if correct; zero credit if incorrect"
+      },
+      "part_2_qualitative": {
+        "total_keypoints": 4,
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "human_review_priority": "false-partial > false-not-covered > covered",
+        "tier_1_basic": {
+          "keypoints": 1,
+          "weight": "50% of qualitative score"
+        },
+        "tier_2_advanced": {
+          "keypoints": 3,
+          "weight_per_point": "~16.7% of qualitative score",
+          "weight_total": "50% of qualitative score"
+        }
+      }
+    }
+  }
+}

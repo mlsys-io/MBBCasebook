@@ -1,0 +1,565 @@
+{
+  "case_id": "006",
+  "version": "v1",
+  "source": {
+    "title": "Customer Engagement",
+    "inspired_by": "McKinsey & Company",
+    "year": "2023",
+    "author": "Peter K.",
+    "reference": "Peter-K.org, Case #6, 2023",
+    "casebook_abbr": "PK23"
+  },
+  "case_type": "interviewer_driven",
+  "case_type_origin": null,
+  "annotation_mode": null,
+  "case_arch": {
+    "primary": "Growth Strategy",
+    "tags": [
+      "Growth Strategy",
+      "Revenue Growth",
+      "Digital Transformation"
+    ],
+    "standard_tags": [
+      "Profitability",
+      "Market Entry",
+      "Revenue Growth",
+      "Cost Optimization",
+      "Investment Decision",
+      "Merger and Acquisition",
+      "Pricing Strategy",
+      "Growth Strategy",
+      "Operational Efficiency",
+      "Due Diligence",
+      "Market Sizing",
+      "Competitive Response",
+      "Digital Transformation",
+      "Turnaround / Restructuring",
+      "Supply Chain",
+      "Comparison"
+    ]
+  },
+  "difficulty": "Hard",
+  "industry": "Retail / Grocery / Supermarket",
+  "topic": "Customer engagement strategy — boost customer engagement for a Texas-based supermarket chain through livestreaming events",
+  "expected_duration_minutes": 20,
+  "opening_prompt": "Hi, I'd like to solve some consulting cases with you. Pls be a good interviewee to have a potential test in consulting cases. For the case problem-solving, pls do not assume any numbers or assumptions before my confirmation. I will give you the context upon request. I need you to answer the following questions for the client. Before you start, feel free to ask me 2-3 clarifying questions about the client.\n\nQ1: What factors would you consider to help the client boost their customer engagement?\n\nQ2: The client would like to embrace livestream commerce as a way to build consumer engagement and present a modern, innovative image to customers. What sales will a series of livestreaming events generate for the client over 2023-24?\n\nQ3: Some regional supermarket chains have already piloted livestreaming events (LEs), for example, with virtual cooking classes, where they feature local chefs. Each event racks up 200k-500k views. Why are customers so attracted to LEs?\n\nQ4: What are some advantages that Y-E-S will enjoy if they succeed in building out a regular series of livestreaming events?\n\nHere is the basic context for the client:\nTexas-based supermarket chain Y-E-S saw a drop in their customer engagement in 2020-21 driven by the pandemic. The customer engagement didn't improve in 2022 after most pandemic-related restrictions were lifted. The decreased customer engagement hurts Y-E-S' brand perception, marketing efficiency, and financial results. They have approached your team to build a robust actionable strategy to boost their customer engagement. What areas would you investigate to help the client?",
+  "structure_1_client_basic_context": {
+    "company": "Y-E-S",
+    "type": "Texas-based supermarket chain",
+    "situation": "Y-E-S saw a drop in their customer engagement in 2020-21 driven by the pandemic. The customer engagement didn't improve in 2022 after most pandemic-related restrictions were lifted. The decreased customer engagement hurts Y-E-S' brand perception, marketing efficiency, and financial results.",
+    "action": "Approached your team to build a robust actionable strategy to boost their customer engagement",
+    "ask": "What areas would you investigate to help the client?"
+  },
+  "structure_2_information_upon_request": {
+    "item_1": {
+      "item_id": "item_1",
+      "trigger": "Analyst asks about or includes the size, scale, or footprint of Y-E-S (number of stores, revenue, geographic presence) in their framework or clarifying questions",
+      "core_dimensional_concept": "Y-E-S store network and annual sales scale",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet covering 'client profile' or 'company overview'",
+          "clarifying question about size, revenue, or number of locations",
+          "hypothesis-driven assumption about scale (e.g. 'I'd assume Y-E-S has hundreds of stores')",
+          "sub-bullet under a 'current situation' or 'client context' pillar"
+        ],
+        "alternative_phrasings": [
+          "number of stores",
+          "store count",
+          "annual revenue",
+          "geographic footprint",
+          "company size"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'scale' only as a passing modifier (e.g. 'at scale, marketing becomes more challenging') without asking about Y-E-S' specific store count or revenue — F passing mention pattern"
+      ],
+      "info": "Supermarket chain Y-E-S has 400 stores in Texas and Mexico and generates $22B in annual sales (2022)"
+    },
+    "item_2": {
+      "item_id": "item_2",
+      "trigger": "Analyst asks about or includes the product categories or offering breadth of Y-E-S in framework or clarifying questions",
+      "core_dimensional_concept": "Y-E-S product category breadth and customer need coverage",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet covering 'product mix' or 'offerings'",
+          "clarifying question about what products Y-E-S sells",
+          "sub-bullet under 'customer segments' or 'business model' discussing what needs Y-E-S serves",
+          "hypothesis about product range (e.g. 'I'd assume Y-E-S covers multiple categories')"
+        ],
+        "alternative_phrasings": [
+          "product range",
+          "categories sold",
+          "assortment",
+          "what does Y-E-S offer",
+          "product mix"
+        ]
+      },
+      "disqualifying": [
+        "Analyst discusses 'product quality' broadly as a competitive advantage without asking what specific categories Y-E-S offers — G adjacent dimension pattern"
+      ],
+      "info": "Y-E-S offers groceries and products across a wide variety of needs: beauty, pets, kids, health, home, and others"
+    },
+    "item_3": {
+      "item_id": "item_3",
+      "trigger": "Analyst asks about or includes Y-E-S' value proposition, competitive positioning, or pricing strategy in their framework",
+      "core_dimensional_concept": "Y-E-S value proposition and competitive positioning",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar covering 'competitive positioning' or 'value proposition'",
+          "sub-bullet under 'brand' or 'customer perception' pillar",
+          "clarifying question about what makes Y-E-S different from competitors",
+          "hypothesis about pricing tier (e.g. 'I'd assume Y-E-S competes on price')"
+        ],
+        "alternative_phrasings": [
+          "competitive advantage",
+          "what Y-E-S is known for",
+          "pricing tier",
+          "quality positioning",
+          "location convenience"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'price competition' only as a passing reference to general market dynamics without specifically asking about Y-E-S' own positioning — F passing mention pattern"
+      ],
+      "info": "Y-E-S is known for affordable prices, high quality, and convenient locations"
+    },
+    "item_4": {
+      "item_id": "item_4",
+      "trigger": "Analyst asks about or includes Y-E-S' digital presence, e-commerce capability, or online channel in their framework",
+      "core_dimensional_concept": "Y-E-S digital footprint and online channel maturity",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar covering 'digital' or 'online channels'",
+          "sub-bullet under 'marketing channels' or 'customer touchpoints' referencing digital/online",
+          "clarifying question about Y-E-S' website, app, social media presence",
+          "hypothesis about e-commerce maturity (e.g. 'I'd assume Y-E-S has some online presence')"
+        ],
+        "alternative_phrasings": [
+          "digital presence",
+          "e-commerce",
+          "online store",
+          "social media",
+          "digital footprint",
+          "online channels"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'digital marketing' only as a generic channel category in a brainstorm list without specifically asking whether Y-E-S has a developed digital footprint — F passing mention pattern"
+      ],
+      "info": "Y-E-S doesn't enjoy a developed digital footprint (incl. online store, social media, online news)"
+    },
+    "item_5": {
+      "item_id": "item_5",
+      "trigger": "Analyst asks about or includes brand perception, local identity, or customer loyalty / community belonging of Y-E-S in their framework",
+      "core_dimensional_concept": "Y-E-S local brand identity and community pride",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar covering 'brand perception' or 'brand equity'",
+          "sub-bullet under 'customer engagement' or 'customer loyalty' referencing local affiliation",
+          "clarifying question about how customers perceive Y-E-S relative to national chains",
+          "hypothesis about brand sentiment (e.g. 'I'd assume customers have an emotional connection with Y-E-S')"
+        ],
+        "alternative_phrasings": [
+          "local brand",
+          "community pride",
+          "Texas identity",
+          "customer loyalty",
+          "brand affiliation",
+          "local chain perception"
+        ]
+      },
+      "disqualifying": [
+        "Analyst discusses 'brand' generally as part of a broad framework pillar (e.g. 'Brand equity' as one of four pillars) without asking specifically about Y-E-S' local chain identity — G adjacent dimension pattern"
+      ],
+      "info": "Y-E-S is perceived as a local chain and Texans are proud of shopping at Y-E-S"
+    }
+  },
+  "structure_3_case_questions": {
+    "Q1": {
+      "q_id": "Q1",
+      "type": "framework",
+      "question_text": "What factors would you consider to help the client boost their customer engagement?",
+      "information_to_share_upfront": null,
+      "information_upon_request": "See structure_2 items 1–5. Release only items per semantic touch judgment; not by mere keyword presence.",
+      "state_machine": {
+        "next_question": "Q2",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable framework answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q2": {
+      "q_id": "Q2",
+      "type": "quantitative",
+      "question_text": "The client would like to embrace livestream commerce as a way to build consumer engagement and present a modern, innovative image to customers. What sales will a series of livestreaming events generate for the client over 2023-24?",
+      "information_to_share_upfront": [
+        "Appendix 1. Livestream commerce"
+      ],
+      "information_upon_request": [
+        {
+          "item_id": "Q2_item_1",
+          "trigger": "Analyst asks about the number of livestreaming events Y-E-S plans to run, or asks for a benchmark to estimate event volume",
+          "core_dimensional_concept": "planned number of livestreaming events per year using Walmart as benchmark",
+          "release_conditions": {
+            "structural_position": [
+              "clarifying question about how many events Y-E-S plans",
+              "request for a volume benchmark or comparable",
+              "framework setup asking for event frequency or number",
+              "hypothesis about number of events (e.g. 'I'd assume Y-E-S runs a few dozen events')"
+            ],
+            "alternative_phrasings": [
+              "number of events",
+              "event volume",
+              "how many livestreams",
+              "frequency of events",
+              "Walmart benchmark"
+            ]
+          },
+          "disqualifying": [
+            "Analyst mentions 'event planning' only as a generic operational consideration without asking specifically how many events Y-E-S will run — F passing mention pattern"
+          ],
+          "info": "We can use Walmart's event volume as a benchmark for Y-E-S and plan 30 livestreaming events in 2023 and 100 events in 2024"
+        },
+        {
+          "item_id": "Q2_item_2",
+          "trigger": "Analyst asks about the expected revenue or sales per livestreaming event",
+          "core_dimensional_concept": "expected average sales per livestreaming event",
+          "release_conditions": {
+            "structural_position": [
+              "clarifying question about revenue per event or ticket size",
+              "request for average sales per event data",
+              "formula setup where analyst identifies sales/event as a needed variable",
+              "hypothesis about per-event revenue (e.g. 'I'd assume each event generates some thousands of dollars')"
+            ],
+            "alternative_phrasings": [
+              "sales per event",
+              "revenue per event",
+              "average event revenue",
+              "per-event ticket size",
+              "event yield"
+            ]
+          },
+          "disqualifying": [
+            "Analyst discusses 'monetization strategy' broadly without specifically asking for the per-event sales figure — G adjacent dimension pattern"
+          ],
+          "info": "The expected average sales per event is $30k in 2023 and $50k in 2024"
+        }
+      ],
+      "appendix": {
+        "appendix_1": {
+          "title": "Livestream commerce",
+          "release_rule": "Share upfront with analyst at the start of Q2",
+          "table": {
+            "livestream_commerce_us_market_b_usd": {
+              "2020": 6,
+              "2021": 11,
+              "2022": 18,
+              "2023F": 26
+            },
+            "walmart_livestreaming_events_us": {
+              "2021": 30,
+              "2022": 100
+            }
+          }
+        }
+      },
+      "state_machine": {
+        "next_question": "Q3",
+        "skip_logic": false,
+        "max_attempts": 2,
+        "scoring_on_transition": {
+          "attempt_1_correct": "Full score",
+          "attempt_2_correct": "0 score per core_principles",
+          "both_attempts_wrong": "0 score; interviewer provides correct answer before next question"
+        },
+        "transition_condition": "Analyst provides quantitative answer (correct or 2nd attempt completed)"
+      }
+    },
+    "Q3": {
+      "q_id": "Q3",
+      "type": "qualitative",
+      "question_text": "Some regional supermarket chains have already piloted livestreaming events (LEs), for example, with virtual cooking classes, where they feature local chefs. Each event racks up 200k-500k views. Why are customers so attracted to LEs?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q4",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q4": {
+      "q_id": "Q4",
+      "type": "qualitative",
+      "question_text": "What are some advantages that Y-E-S will enjoy if they succeed in building out a regular series of livestreaming events?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": null,
+        "skip_logic": false,
+        "transition_condition": "Case ends after Q4"
+      }
+    }
+  },
+  "structure_4_ground_truth": {
+    "Q1_ground_truth": {
+      "type": "framework",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_customer_engagement": {
+          "keypoints": [
+            "Target audience, key customer groups",
+            "Customer engagement metrics adopted by Y-E-S",
+            "Current level and historical data"
+          ],
+          "subtotal": 3
+        },
+        "pillar_2_impact_of_low_customer_engagement": {
+          "keypoints": [
+            "Financial implications",
+            "Brand equity",
+            "Marketing efficiency",
+            "Employees' morale"
+          ],
+          "subtotal": 4
+        },
+        "pillar_3_offline_online_shopping": {
+          "keypoints": [
+            "Overall experience (e.g. NPS, customer satisfaction rate)",
+            "Customer purchasing behavior (e.g. # visits, time spent in-store, average purchase)",
+            "Customer flow (e.g. churn/retention, % new)"
+          ],
+          "subtotal": 3
+        },
+        "pillar_4_marketing_channels": {
+          "keypoints": [
+            "Social media (e.g. # comments/likes)",
+            "Emails/newsletters (e.g. open rate, click rate)",
+            "Loyalty program (e.g. # members, point redemptions)",
+            "Marketing events/promotions"
+          ],
+          "subtotal": 4
+        }
+      },
+      "total_keypoints": 14,
+      "minimum_expected": "At least 3 of 4 pillars identified with at least 1 keypoint each covered",
+      "outstanding_threshold": "All 4 pillars covered with 2+ keypoints each covered"
+    },
+    "Q2_ground_truth": {
+      "type": "quantitative",
+      "quantitative_part": {
+        "correct_final_answer": "$5.9M (precise calculation) — also accept ~$6M (casebook rounded summary); scoring_method note: Accept both $5.9M and $6M (or ~$6M); any other value = zero credit",
+        "accepted_values": [
+          5900000,
+          6000000
+        ],
+        "tolerance_pct": 0.02,
+        "zero_tolerance": false,
+        "scoring_method": "Binary: correct number = full credit; incorrect = zero credit. Accept both $5.9M and ~$6M",
+        "calculation_steps": {
+          "step_1_2023_revenue": {
+            "formula": "$30k per event × 30 events in 2023",
+            "result": "$900k"
+          },
+          "step_2_2024_revenue": {
+            "formula": "$50k per event × 100 events in 2024",
+            "result": "$5M"
+          },
+          "step_3_total_2023_24": {
+            "formula": "$900k + $5M",
+            "result": "$5.9M (casebook summary: ~$6M)"
+          }
+        }
+      },
+      "qualitative_part": {
+        "scoring_note": "Qualitative portion of Q2 is scored as 100% total, split into two tiers. Within each tier, use 3-level scoring per",
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "tier_1_basic": {
+          "weight_of_Q2_qualitative_total": "50%",
+          "keypoints": [
+            "Based on current assumptions, Y-E-S should expect $6M (or $5.9M) in additional revenue from livestreaming events"
+          ],
+          "note": "Expected from every candidate. Single point worth 50% of qualitative score."
+        },
+        "tier_2_advanced": {
+          "weight_of_Q2_qualitative_total": "50%",
+          "points_available": 3,
+          "weight_per_point": "16.7% of qualitative total",
+          "keypoints": [
+            "Livestreaming events do enable Y-E-S to reach out to a larger audience, however they might also cause some cannibalization as price-sensitive customers might hold off purchasing at the Y-E-S stores hoping to get promotional discounts during the events",
+            "$6M in additional revenue is negligible for such a multi-billion-dollar supermarket chain as Y-E-S. However, livestreaming events might create a lot of buzz, strengthen the feeling of community, and boost the excitement about the brand",
+            "$30k-$50k in sales per event isn't exaggerated and sounds reasonable as U.S. consumers have grown up watching QVC and other shopping channels on TV, so the concept of shopping as a form of entertainment isn't entirely new"
+          ],
+          "note": "Not expected from every candidate. Each advanced point adds 16.7% to qualitative score."
+        },
+        "minimum_expected": "Correct numerical answer + Tier 1 basic contextualization (covered)",
+        "outstanding_threshold": "Correct numerical answer + Tier 1 covered + at least 2 Tier 2 advanced comments covered"
+      }
+    },
+    "Q3_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_consumer_habits": {
+          "sub_pillar_shopping": {
+            "keypoints": [
+              "Consumers are accustomed with live shopping on TV",
+              "Online shopping skills got a boost during the pandemic"
+            ],
+            "subtotal": 2
+          },
+          "sub_pillar_content_consumption": {
+            "keypoints": [
+              "Gen Z and Millennials crave interactive experiences",
+              "During the pandemic people got used to consuming live events (e.g. zoom meetings)"
+            ],
+            "subtotal": 2
+          },
+          "keypoints": [
+            "Consumers are accustomed with live shopping on TV",
+            "Online shopping skills got a boost during the pandemic",
+            "Gen Z and Millennials crave interactive experiences",
+            "During the pandemic people got used to consuming live events (e.g. zoom meetings)"
+          ],
+          "subtotal": 4
+        },
+        "pillar_2_social_value": {
+          "sub_pillar_community": {
+            "keypoints": [
+              "LEs create community feeling, sense of belonging to like-minded people",
+              "Consumers get elevated shopping experience - social shopping (vs solitary traditional online shopping)",
+              "Consumers get social validation (e.g. likes, hearts) for their purchases"
+            ],
+            "subtotal": 3
+          },
+          "sub_pillar_friendship": {
+            "keypoints": [
+              "LEs offer a new way of hanging out with friends",
+              "LEs might spark new friendships with other participants"
+            ],
+            "subtotal": 2
+          },
+          "keypoints": [
+            "LEs create community feeling, sense of belonging to like-minded people",
+            "Consumers get elevated shopping experience - social shopping (vs solitary traditional online shopping)",
+            "Consumers get social validation (e.g. likes, hearts) for their purchases",
+            "LEs offer a new way of hanging out with friends",
+            "LEs might spark new friendships with other participants"
+          ],
+          "subtotal": 5
+        },
+        "pillar_3_exclusive_benefits": {
+          "keypoints": [
+            "Participants get access to new or limited-edition products",
+            "Supermarket chains might offer discounts/coupons for participants",
+            "Consumers might develop new skills (e.g. cooking)"
+          ],
+          "subtotal": 3
+        },
+        "pillar_4_marketing": {
+          "keypoints": [
+            "Early adopters might appreciate the sense of novelty of LEs",
+            "LEs are a form of entertainment and might feature celebrities and product experts"
+          ],
+          "subtotal": 2
+        }
+      },
+      "total_keypoints": 14,
+      "minimum_expected": "At least 3 of 4 pillars identified with at least 1 keypoint each covered",
+      "outstanding_threshold": "All 4 pillars covered with 2+ keypoints each; or 3 pillars fully covered + high-quality contextualization"
+    },
+    "Q4_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_financials": {
+          "keypoints": [
+            "Immediate sales",
+            "Postponed sales due to increased brand recognition",
+            "Reach out to new consumer segments (especially Gen Z and young Millennials)",
+            "Low opex sales channel"
+          ],
+          "subtotal": 4
+        },
+        "pillar_2_marketing": {
+          "keypoints": [
+            "A buzz among customers",
+            "Boosted Y-E-S' followship at social networks",
+            "Customer data (e.g. excitement about new products, price-sensitivity)",
+            "Ability to test new products and get market feedback",
+            "Word-of-mouth marketing after LEs"
+          ],
+          "subtotal": 5
+        },
+        "pillar_3_brand": {
+          "keypoints": [
+            "Stronger brand awareness",
+            "Higher brand relevance (as modern and up-to-date)",
+            "More robust community around brand"
+          ],
+          "subtotal": 3
+        }
+      },
+      "total_keypoints": 12,
+      "minimum_expected": "At least 2 of 3 pillars identified with at least 1 keypoint each covered",
+      "outstanding_threshold": "All 3 pillars covered with 2+ keypoints each covered"
+    }
+  },
+  "state_machine_global": {
+    "case_type": "interviewer_driven",
+    "skip_logic": false,
+    "mandatory_sequence": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4"
+    ],
+    "rules": [
+      "Q1 cannot be skipped under any circumstances",
+      "Questions must proceed in linear order Q1 → Q2 → Q3 → Q4",
+      "A question may not be advanced until the current question receives a scoreable answer (1st or 2nd attempt)",
+      "If analyst pre-covers a later question's keypoints in an earlier answer, record as pre-coverage but still ask the later question in sequence",
+      "No question may be skipped even if pre-covered"
+    ]
+  },
+  "scoring_summary": {
+    "Q1": {
+      "type": "framework",
+      "total_keypoints": 14,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q2": {
+      "type": "quantitative",
+      "part_1_quantitative": {
+        "correct_answer": "$5.9M (also accept ~$6M)",
+        "zero_tolerance": true,
+        "scoring": "Binary: Full credit if correct ($5.9M or ~$6M); zero credit if incorrect"
+      },
+      "part_2_qualitative": {
+        "total_keypoints": 4,
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "human_review_priority": "false-partial > false-not-covered > covered",
+        "tier_1_basic": {
+          "keypoints": 1,
+          "weight": "50% of qualitative score"
+        },
+        "tier_2_advanced": {
+          "keypoints": 3,
+          "weight_per_point": "16.7% of qualitative score",
+          "weight_total": "50% of qualitative score"
+        }
+      }
+    },
+    "Q3": {
+      "type": "qualitative",
+      "total_keypoints": 14,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q4": {
+      "type": "qualitative",
+      "total_keypoints": 12,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    }
+  }
+}

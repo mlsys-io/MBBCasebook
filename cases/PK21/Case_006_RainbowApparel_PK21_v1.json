@@ -1,0 +1,599 @@
+{
+  "case_id": "006",
+  "version": "v1",
+  "source": {
+    "title": "Rainbow Apparel",
+    "inspired_by": "Bain & Company",
+    "year": "2021",
+    "author": "Peter K.",
+    "reference": "Peter-K.org, Case #6",
+    "casebook_abbr": "PK21"
+  },
+  "case_type": "interviewer_driven",
+  "case_type_origin": "candidate_led",
+  "annotation_mode": "CL_to_IL_override",
+  "case_arch": {
+    "primary": "Profitability",
+    "tags": [
+      "Profitability",
+      "Revenue Growth",
+      "Growth Strategy"
+    ]
+  },
+  "difficulty": "Easy",
+  "industry": "Retail / Children's Apparel",
+  "topic": "Profitability improvement plan for a high-quality children's clothing brand",
+  "expected_duration_minutes": 20,
+  "opening_prompt": "Hi, I'd like to solve some consulting cases with you. Pls be a good interviewee to have a potential test in consulting cases. For the case problem-solving, pls do not assume any numbers or assumptions before my confirmation. I will give you the context upon request. I need you to answer the following questions for the client. Before you start, feel free to ask me 2-3 clarifying questions about the client.\n\nQ1. How would you structure your approach to find the solution to this problem?\nQ2. What revenue growth opportunities should the client explore to increase their top-line (sales)?\nQ3. The client is considering launching a new product line in their boutique chain – toys. Will this increase their profitability?\nQ4. What other product lines would it make sense for Rainbow Apparel to consider expanding to?\nQ5. You're in the client's meeting and they would like to know your preliminary recommendations.\n\nHere is the basic context for the client:\nRainbow Apparel, the high-quality children's clothing brand inspired by the beauty of global cultures, has invited your team to build a robust profitability improvement plan. During 2016-19 their profitability was slowly declining even though their product is superior to other brands and each season they offer unique apparel collection. It is early 2020 (before the pandemic).",
+  "structure_1_client_basic_context": {
+    "company": "Rainbow Apparel",
+    "type": "High-quality children's clothing brand",
+    "situation": "Profitability was slowly declining during 2016-19 even though their product is superior to other brands and each season they offer unique apparel collection.",
+    "action": "Has invited your team to build a robust profitability improvement plan.",
+    "ask": "It is early 2020 (before the pandemic)."
+  },
+  "structure_2_information_upon_request": {
+    "item_1": {
+      "item_id": "item_1",
+      "trigger": "Analyst asks about or includes 'product lines' or 'product portfolio' or 'what products does the client sell' in their framework or clarifying questions",
+      "core_dimensional_concept": "client product line portfolio",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet referencing product lines or portfolio mix",
+          "explicit clarifying question about what the client sells or product categories",
+          "hypothesis-driven assumption about product range (e.g., 'I assume they sell multiple product lines')"
+        ],
+        "alternative_phrasings": [
+          "product categories",
+          "what products do they sell",
+          "product mix",
+          "merchandise categories"
+        ]
+      },
+      "disqualifying": [
+        "Only says 'product revenue' as a modifier under the Revenue pillar rather than structurally exploring product lines themselves (F passing mention)",
+        "Only mentions 'apparel' generically without specifically following up on product-line composition (G adjacent-dimension modifier, does not touch the product-line portfolio itself)"
+      ],
+      "info": "Rainbow Apparel offers three product lines: apparel, shoes and accessories."
+    },
+    "item_2": {
+      "item_id": "item_2",
+      "trigger": "Analyst asks about or includes 'target customer' or 'customer segment' or 'who are the customers' in their framework or clarifying questions",
+      "core_dimensional_concept": "target customer age segment",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet referencing customer segment or target audience",
+          "explicit clarifying question about who buys the products or what age group",
+          "hypothesis-driven mention of customer demographics (e.g., 'children's clothing so likely ages X-Y')"
+        ],
+        "alternative_phrasings": [
+          "target audience",
+          "customer demographics",
+          "who buys the product",
+          "age group"
+        ]
+      },
+      "disqualifying": [
+        "Only mentions 'children's brand' as a modifier in the company description (F passing mention, not as a structural analysis dimension)",
+        "Only says 'customer acquisition' or 'customer retention' without specifying an age band or segment (G adjacent-dimension modifier, does not touch the target-customer age segment itself)"
+      ],
+      "info": "Their target audience is children of ages 0-16."
+    },
+    "item_3": {
+      "item_id": "item_3",
+      "trigger": "Analyst asks about or includes 'distribution channels' or 'where are products sold' or 'sales channels' in their framework or clarifying questions",
+      "core_dimensional_concept": "distribution channels and retail presence",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet referencing channels or distribution",
+          "explicit clarifying question about where the products are sold or how they reach customers",
+          "hypothesis-driven mention of retail format (e.g., 'do they sell online or in stores?')"
+        ],
+        "alternative_phrasings": [
+          "where are products sold",
+          "retail locations",
+          "sales channels",
+          "e-commerce vs brick-and-mortar",
+          "boutique presence"
+        ]
+      },
+      "disqualifying": [
+        "Only mentions 'channel revenue' as a calculation dimension under the Revenue pillar rather than exploring channel structure itself (F passing mention)",
+        "Only mentions 'Nordstrom' as a competitor rather than the distribution-channel subject itself (G adjacent-dimension modifier)"
+      ],
+      "info": "Their products are available online, in 250 boutiques across the U.S. and exclusive Nordstrom locations."
+    },
+    "item_4": {
+      "item_id": "item_4",
+      "trigger": "Analyst asks about or includes 'revenue' or 'sales figure' or 'how big is the company' or 'company size' in their framework or clarifying questions",
+      "core_dimensional_concept": "company revenue scale",
+      "release_conditions": {
+        "structural_position": [
+          "explicit clarifying question about revenue, sales volume, or company size",
+          "framework pillar or sub-bullet quantifying company financials",
+          "hypothesis-driven assumption about revenue level (e.g., 'I'd estimate revenues around...')"
+        ],
+        "alternative_phrasings": [
+          "annual revenue",
+          "how much do they sell",
+          "company size",
+          "top line",
+          "sales volume"
+        ]
+      },
+      "disqualifying": [
+        "Only mentions 'revenue growth' as a goal direction of the analysis framework rather than asking for the specific revenue figure (F passing mention)",
+        "Only mentions a decline in 'profitability' without following up on the specific revenue magnitude (G adjacent-dimension modifier)"
+      ],
+      "info": "They reached $40M in sales in 2019."
+    },
+    "item_5": {
+      "item_id": "item_5",
+      "trigger": "Analyst asks about or includes 'geography' or 'where does the client operate' or 'geographic presence' in their framework or clarifying questions",
+      "core_dimensional_concept": "geographic operating footprint",
+      "release_conditions": {
+        "structural_position": [
+          "explicit clarifying question about where the client operates geographically",
+          "framework pillar or sub-bullet referencing geographic market or market scope",
+          "hypothesis-driven assumption about geographic coverage (e.g., 'I'd assume they operate domestically')"
+        ],
+        "alternative_phrasings": [
+          "where do they operate",
+          "domestic vs international",
+          "market geography",
+          "regions served"
+        ]
+      },
+      "disqualifying": [
+        "Only mentions 'global cultures' as a brand-positioning modifier rather than asking about operating geographic scope (F passing mention)",
+        "Only says 'market expansion' as a growth-strategy dimension but does not follow up on the current geographic scope (G adjacent-dimension modifier)"
+      ],
+      "info": "Rainbow Apparel operates in the U.S. only."
+    },
+    "item_6": {
+      "item_id": "item_6",
+      "trigger": "Analyst asks about or includes 'profitability target' or 'financial goal' or 'what does the client want to achieve' in their framework or clarifying questions",
+      "core_dimensional_concept": "client profitability improvement target",
+      "release_conditions": {
+        "structural_position": [
+          "explicit clarifying question about the client's financial goal or target profitability",
+          "framework pillar or sub-bullet referencing success metrics or financial targets",
+          "hypothesis-driven question about desired profit margin or improvement goal"
+        ],
+        "alternative_phrasings": [
+          "target profitability",
+          "financial objective",
+          "profit target",
+          "what margin are they aiming for",
+          "success criteria"
+        ]
+      },
+      "disqualifying": [
+        "Only mentions 'profitability analysis' as a framework component rather than following up on the specific target value (F passing mention)",
+        "Only says 'improve profitability' as the overall case goal direction without following up on the specific target figure (G adjacent-dimension modifier)"
+      ],
+      "info": "The client didn't provide any specific profitability goal."
+    }
+  },
+  "structure_3_case_questions": {
+    "Q1": {
+      "q_id": "Q1",
+      "type": "framework",
+      "question_text": "How would you structure your approach to find the solution to this problem?",
+      "information_to_share_upfront": null,
+      "information_upon_request": "See structure_2 items 1-6. Release only items per semantic touch judgment; not by mere keyword presence.",
+      "state_machine": {
+        "next_question": "Q2",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable framework answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q2": {
+      "q_id": "Q2",
+      "type": "qualitative",
+      "question_text": "What revenue growth opportunities should the client explore to increase their top-line (sales)?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q3",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q3": {
+      "q_id": "Q3",
+      "type": "quantitative",
+      "question_text": "The client is considering launching a new product line in their boutique chain – toys. Will this increase their profitability?",
+      "information_to_share_upfront": [
+        "Appendix 1: Rainbow Apparel financial metrics 2019 (Apparel: 60% sales share, 25% profit margin; Shoes: 30% sales share, 30% profit margin; Accessories: 10% sales share, 50% profit margin)"
+      ],
+      "information_upon_request": [
+        {
+          "item_id": "Q3_item_1",
+          "trigger": "Analyst asks about or includes 'total sales' or 'what is total revenue' or 'how big are the sales' for context in calculation",
+          "core_dimensional_concept": "total company sales figure for calculation base",
+          "release_conditions": {
+            "structural_position": [
+              "explicit request for the total revenue or sales figure to use as calculation base",
+              "hypothesis-driven assumption about total sales that requires confirmation",
+              "numbered calculation step asking for total company revenue"
+            ],
+            "alternative_phrasings": [
+              "total revenue",
+              "how much does the company sell in total",
+              "base sales figure",
+              "total top line"
+            ]
+          },
+          "disqualifying": [
+            "Only mentions 'sales growth' as an analysis direction without following up on the specific total-sales figure used in the calculation (F passing mention)",
+            "Only says '$40M' and then starts calculating without explicitly asking for the figure (already holds the information, so no trigger needed)"
+          ],
+          "info": "The total sales were $40M in 2019."
+        },
+        {
+          "item_id": "Q3_item_2",
+          "trigger": "Analyst asks about or includes 'toys revenue forecast' or 'how much will toys generate' or 'projected toys financials'",
+          "core_dimensional_concept": "toys product line revenue and profit forecast",
+          "release_conditions": {
+            "structural_position": [
+              "explicit request for toys revenue or profit projections",
+              "hypothesis-driven question about toys financial performance",
+              "framework step asking what financial data exists for the toys product line"
+            ],
+            "alternative_phrasings": [
+              "toys sales forecast",
+              "projected toys revenue",
+              "toys profit projection",
+              "expected toys financials"
+            ]
+          },
+          "disqualifying": [
+            "Only says 'toys' as a new-product-line category without following up on the specific financial-forecast figure (F passing mention)",
+            "Only mentions 'new product line contribution' under the profitability-analysis framework without following up on the specific toys figure (G adjacent-dimension modifier)"
+          ],
+          "info": "Toys are forecast to generate $4M in annual revenue and $1.2M in profits."
+        }
+      ],
+      "appendix": {
+        "appendix_1": {
+          "title": "Rainbow Apparel financial metrics, 2019",
+          "release_rule": "Share upfront with analyst at the start of Q3",
+          "table": {
+            "apparel": {
+              "sales_share_pct": "60%",
+              "profit_margin_pct": "25%"
+            },
+            "shoes": {
+              "sales_share_pct": "30%",
+              "profit_margin_pct": "30%"
+            },
+            "accessories": {
+              "sales_share_pct": "10%",
+              "profit_margin_pct": "50%"
+            }
+          }
+        }
+      },
+      "state_machine": {
+        "next_question": "Q4",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable quantitative answer (correct final answer, or 2nd attempt completed); then advance to Q4"
+      }
+    },
+    "Q4": {
+      "q_id": "Q4",
+      "type": "qualitative",
+      "question_text": "What other product lines would it make sense for Rainbow Apparel to consider expanding to?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q5",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q5": {
+      "q_id": "Q5",
+      "type": "qualitative",
+      "question_text": "You're in the client's meeting and they would like to know your preliminary recommendations.",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": null,
+        "skip_logic": false,
+        "transition_condition": "Case ends after Q5"
+      }
+    }
+  },
+  "structure_4_ground_truth": {
+    "Q1_ground_truth": {
+      "type": "framework",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_high_end_kids_apparel_market": {
+          "keypoints": [
+            "Growth rate of the market",
+            "Top brands (incl. market shares, positioning, channels)",
+            "Typical margins among players"
+          ],
+          "subtotal": 3
+        },
+        "pillar_2_rainbow_apparel": {
+          "keypoints": [
+            "Main product lines (e.g. jeans, formal, athletic)",
+            "Customer segments (e.g. age, boys/girls)",
+            "Marketing strategy",
+            "Distribution channels"
+          ],
+          "subtotal": 4
+        },
+        "pillar_3_companys_profitability": {
+          "keypoints": [
+            "Revenue level and growth rate",
+            "Cost structure - Fixed costs",
+            "Cost structure - Variable costs"
+          ],
+          "subtotal": 3
+        },
+        "pillar_4_profit_growth_areas": {
+          "keypoints": [
+            "Sales growth opportunities",
+            "Cost reduction areas"
+          ],
+          "subtotal": 2
+        }
+      },
+      "total_keypoints": 12,
+      "minimum_expected": "Cover at least 3 of the 4 pillars with at least 1 substantive keypoint each; profitability pillar (revenue + cost structure) should be present",
+      "outstanding_threshold": "Cover all 4 pillars with multiple keypoints each, including specific market context and both revenue and cost dimensions in profitability"
+    },
+    "Q2_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_upgrade_marketing_strategy": {
+          "keypoints": [
+            "Invest in aggressive marketing campaigns and promotions",
+            "Launch loyalty card for regular customers",
+            "Start co-marketing activities with other high-end children's brand (e.g. children food, kids entertainment)"
+          ],
+          "subtotal": 3
+        },
+        "pillar_2_change_pricing": {
+          "keypoints": [
+            "Adjust pricing levels to match WTP (willingness-to-pay)",
+            "Do micro-pricing by adjusting prices of a specific location to take in its area's price-sensitivity",
+            "Bundle apparel and shoes (e.g. sell 'looks')"
+          ],
+          "subtotal": 3
+        },
+        "pillar_3_increase_efficiency_of_distribution": {
+          "keypoints": [
+            "Expand network of own-branded boutiques",
+            "Develop more partnerships with premium department stores",
+            "Design a smartphone app to enable regular customers do mobile purchases",
+            "Invest in their online store and increase its efficiency and conversion rates",
+            "Expand to new regions/countries"
+          ],
+          "subtotal": 5
+        },
+        "pillar_4_improve_and_enhance_value_proposition": {
+          "keypoints": [
+            "Improve in-store customer experience (e.g. friendly staff, intuitive lay-out)",
+            "Expand size of boutiques where possible (if capacity is a bottleneck to grow sales)",
+            "Add new product lines and/or adjacent products",
+            "Consider creating a luxury collection or affordable luxury collection"
+          ],
+          "subtotal": 4
+        }
+      },
+      "total_keypoints": 15,
+      "minimum_expected": "Cover at least 2 pillars with at least 1 substantive revenue growth idea each; minimum 4 total ideas",
+      "outstanding_threshold": "Cover all 4 pillars with multiple specific ideas per pillar; at least 7 total ideas with some depth of reasoning"
+    },
+    "Q3_ground_truth": {
+      "type": "quantitative",
+      "quantitative_part": {
+        "correct_final_answer": "30% — the profitability will stay the same at 30% (casebook answer). Also accept: toys profitability (30%) is slightly higher than the precise overall company profitability (29% = $11.6M / $40M), meaning profitability would marginally increase — this is the precise calculation result. A3-Q5 note: casebook rounds overall profitability to 30% (from exact 29%); toys profitability = 30% exact. Accept both conclusions: '30% stays same' (casebook) and 'toys at 30% vs ~29% overall, slight increase' (precise). Any other value = zero credit.",
+        "accepted_values": [
+          0.3,
+          0.29
+        ],
+        "tolerance_pct": 0.02,
+        "zero_tolerance": false,
+        "scoring_method": "Binary: casebook answer = '30% stays the same' = full credit; also accept precise answer '29% overall vs 30% toys, slight increase'; any other value = zero credit. A3-Q5 rounding check applied.",
+        "calculation_steps": {
+          "step_1_profits_from_apparel": {
+            "formula": "$40M × 60% × 25%",
+            "result": "$6M"
+          },
+          "step_2_profits_from_shoes": {
+            "formula": "$40M × 30% × 30%",
+            "result": "$3.6M"
+          },
+          "step_3_profits_from_accessories": {
+            "formula": "$40M × 10% × 50%",
+            "result": "$2M"
+          },
+          "step_4_overall_profitability_exact": {
+            "formula": "($6M + $3.6M + $2M) ÷ $40M = $11.6M ÷ $40M",
+            "result": "29% (exact) — casebook rounds to 30%"
+          },
+          "step_5_toys_profitability": {
+            "formula": "$1.2M ÷ $4M",
+            "result": "30% (exact)"
+          },
+          "step_6_conclusion_casebook": {
+            "formula": "Toys profitability (30%) ≈ Overall profitability (30% per casebook rounding)",
+            "result": "The profitability will stay the same — at 30% (casebook version)"
+          },
+          "step_6_conclusion_precise": {
+            "formula": "Toys profitability (30%) vs Overall profitability (29% exact)",
+            "result": "Toys profitability is marginally higher; overall profitability would slightly increase (precise version)"
+          }
+        }
+      },
+      "qualitative_part": {
+        "scoring_note": "Qualitative portion of Q3 is scored as 100% total, split into two tiers. Within each tier, use 3-level scoring per",
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "tier_1_basic": {
+          "weight_of_Q3_qualitative_total": "50%",
+          "keypoints": [
+            "Toys will help the client increase their revenue by $4M but the profitability will stay the same — at 30%"
+          ],
+          "note": "Expected from every candidate. Single point worth 50% of qualitative score."
+        },
+        "tier_2_advanced": {
+          "weight_of_Q3_qualitative_total": "50%",
+          "points_available": 4,
+          "weight_per_point": "12.5% of qualitative total",
+          "keypoints": [
+            "Such high double-digit profit margins make sense as we're in the high-end space where companies typically charge high prices for high-quality products",
+            "Accessories are likely used to cross-sell customers, so no wonder they constitute small portion of business",
+            "We'll probably need to sacrifice some shelves and space dedicated currently to apparel and shoes to offer toys in the boutique chain, thus toys might cannibalize the sales from the core business",
+            "Toys sales might be limited as Rainbow Apparel's brand enjoys strong association with clothing, not toys, but they might be an attractive cross-selling opportunity and the client might consider increasing prices for toys as typically customers are price inelastic to add-ons"
+          ],
+          "note": "Not expected from every candidate. Each advanced point adds 12.5% to qualitative score."
+        },
+        "minimum_expected": "Correct numerical answer (30%) + Tier 1 basic contextualization (covered)",
+        "outstanding_threshold": "Correct numerical answer (30%) + Tier 1 covered + at least 2 Tier 2 advanced comments covered"
+      }
+    },
+    "Q4_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_same_customer_segments_close_to_core": {
+          "keypoints": [
+            "Expand apparel/shoe range for different use cases (e.g. swimsuits, formal, athletic, casual, warm/cool)",
+            "Widen range of accessories (e.g. backpacks, caps, bows, sunglasses, bracelets)"
+          ],
+          "subtotal": 2
+        },
+        "pillar_2_same_customer_segments_far_from_core": {
+          "keypoints": [
+            "Beauty products for kids",
+            "Bed & bath products for kids (e.g. towels, sheets)",
+            "Children's food",
+            "Offer cleaning products for apparel/shoes (e.g. shoe polish, shoe brush)"
+          ],
+          "subtotal": 4
+        },
+        "pillar_3_new_customer_segments": {
+          "keypoints": [
+            "Enter a luxury segment — offer ultra-premium apparel for children",
+            "Start offering apparel/shoes for parents",
+            "Expand to a value segment",
+            "Develop product lines for young adults"
+          ],
+          "subtotal": 4
+        }
+      },
+      "total_keypoints": 10,
+      "minimum_expected": "Cover at least 2 pillars with at least 1 concrete product line idea each; minimum 4 ideas total",
+      "outstanding_threshold": "Cover all 3 pillars with multiple specific ideas; at least 6-7 ideas with some rationale connecting to Rainbow Apparel's positioning"
+    },
+    "Q5_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_recommendation": {
+          "keypoints": [
+            "Based on our initial analysis, the client should consider expanding its product portfolio with high-margin offerings to address more needs of their core segment — children"
+          ],
+          "subtotal": 1
+        },
+        "pillar_2_reasoning": {
+          "keypoints": [
+            "First, high-margin products like accessories (e.g. backpack, caps) will boost profitability",
+            "Secondly, it's not too far from the client's core, so launch of new products shouldn't be capex-heavy and substantially increase operational complexity",
+            "Thirdly, targeting the existing customer segment will strengthen the brand and should require excessive marketing budgets"
+          ],
+          "subtotal": 3
+        },
+        "pillar_3_risks": {
+          "keypoints": [
+            "However, we should consider and evaluate risks like potential competitive response, product-market mismatch and lack of funding"
+          ],
+          "subtotal": 1
+        },
+        "pillar_4_next_steps": {
+          "keypoints": [
+            "To move from here I'd suggest to create a risk mitigation plan and conduct a deep-dive assessment of the attractiveness of each potential high-margin option to expand to"
+          ],
+          "subtotal": 1
+        }
+      },
+      "total_keypoints": 6,
+      "minimum_expected": "Recommendation pillar covered + at least 1 reasoning point covered",
+      "outstanding_threshold": "All 4 pillars covered, including all 3 reasoning points and risk + next steps"
+    }
+  },
+  "state_machine_global": {
+    "case_type": "interviewer_driven",
+    "skip_logic": false,
+    "mandatory_sequence": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5"
+    ],
+    "rules": [
+      "Q1 cannot be skipped under any circumstances",
+      "Questions must proceed in linear order Q1 → Q2 → Q3 → Q4 → Q5",
+      "A question may not be advanced until the current question receives a scoreable answer (1st or 2nd attempt)",
+      "If analyst pre-covers a later question's keypoints in an earlier answer, record as pre-coverage but still ask the later question in sequence",
+      "No question may be skipped even if pre-covered"
+    ]
+  },
+  "scoring_summary": {
+    "Q1": {
+      "type": "framework",
+      "total_keypoints": 12,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q2": {
+      "type": "qualitative",
+      "total_keypoints": 15,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q3": {
+      "type": "quantitative",
+      "part_1_quantitative": {
+        "correct_answer": "30% (casebook: profitability stays the same); also accept: 29% overall vs 30% toys (slight increase — precise calculation). A3-Q5 rounding double-answer applied.",
+        "zero_tolerance": true,
+        "scoring": "Binary: Full credit if '30% stays same' or '29% overall vs 30% toys slight increase'; zero credit if any other value"
+      },
+      "part_2_qualitative": {
+        "total_keypoints": 5,
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "human_review_priority": "false-partial > false-not-covered > covered",
+        "tier_1_basic": {
+          "keypoints": 1,
+          "weight": "50% of qualitative score"
+        },
+        "tier_2_advanced": {
+          "keypoints": 4,
+          "weight_per_point": "12.5% of qualitative score",
+          "weight_total": "50% of qualitative score"
+        }
+      }
+    },
+    "Q4": {
+      "type": "qualitative",
+      "total_keypoints": 10,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q5": {
+      "type": "qualitative",
+      "total_keypoints": 6,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    }
+  }
+}

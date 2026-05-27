@@ -1,0 +1,580 @@
+{
+  "case_id": "010",
+  "version": "v1",
+  "source": {
+    "title": "Kitchen World",
+    "inspired_by": "McKinsey & Company",
+    "year": "2021",
+    "author": "Peter K.",
+    "reference": "Peter-K.org, Case #10",
+    "casebook_abbr": "PK21"
+  },
+  "case_type": "interviewer_driven",
+  "case_type_origin": null,
+  "annotation_mode": null,
+  "case_arch": {
+    "primary": "Revenue Growth",
+    "tags": [
+      "Revenue Growth",
+      "Growth Strategy"
+    ]
+  },
+  "difficulty": "Medium-Hard",
+  "industry": "Retail / Kitchenware",
+  "topic": "Revenue growth strategy for a high-end kitchenware retail chain exploring loyalty program expansion",
+  "expected_duration_minutes": "15-20",
+  "opening_prompt": "Hi, I'd like to solve some consulting cases with you. Pls be a good interviewee to have a potential test in consulting cases. For the case problem-solving, pls do not assume any numbers or assumptions before my confirmation. I will give you the context upon request. I need you to answer the following questions for the client. Before you start, feel free to ask me 2-3 clarifying questions about the client.\n\nQ1: What would be your plan of attack to help Kitchen World create a revenue growth strategy?\n\nQ2: The team is thinking about launching a loyalty program to increase the client's sales. What are the factors you would think of to design it?\n\nQ3: The client used a 3rd party loyalty card platform to run a pilot. Based on the results of this pilot (see Appendix 1), what would be a 1-year break-even number of loyalty card members for Kitchen World?\n\nQ4: If the client decides to go ahead and introduce a loyalty program, what risks should they anticipate?\n\nHere is the basic context for the client:\nKitchen World is a high-end retail chain offering a wide variety of kitchenware — cookware, dinnerware, bakeware, electrics, and tools. With 100 stores across the U.S. and Canada and a recently developed online channel, Kitchen World generates $200M a year. However, the growth trajectory has flattened out over the last three years. So, they are looking for a 3-year sales growth strategy. We're in early 2020 (before the pandemic).",
+  "structure_1_client_basic_context": {
+    "company": "Kitchen World",
+    "type": "High-end retail chain offering a wide variety of kitchenware — cookware, dinnerware, bakeware, electrics, and tools",
+    "situation": "With 100 stores across the U.S. and Canada and a recently developed online channel, Kitchen World generates $200M a year. However, the growth trajectory has flattened out over the last three years.",
+    "action": "Looking for a 3-year sales growth strategy",
+    "ask": "Help Kitchen World create a revenue growth strategy (early 2020, before the pandemic)"
+  },
+  "structure_2_information_upon_request": {
+    "item_1": {
+      "item_id": "item_1",
+      "trigger": "Analyst asks about or includes online channel / digital channel / e-commerce revenue in framework or analysis",
+      "core_dimensional_concept": "online channel revenue contribution",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar (e.g., 'Revenue channels' / 'Channel mix')",
+          "sub-bullet under revenue analysis pillar",
+          "explicit clarifying question about online vs. in-store split",
+          "hypothesis about digital/e-commerce contribution"
+        ],
+        "alternative_phrasings": [
+          "digital sales",
+          "e-commerce revenue",
+          "online vs. in-store",
+          "channel breakdown"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'channels' only as a passing modifier (e.g., 'expanding marketing channels') without referencing online/digital revenue contribution — F passing mention pattern"
+      ],
+      "info": "Online channel accounts for around 5-10% of the client's revenue"
+    },
+    "item_2": {
+      "item_id": "item_2",
+      "trigger": "Analyst asks about or includes customer segments / B2B vs B2C / types of customers served in framework or analysis",
+      "core_dimensional_concept": "customer segment composition B2C and B2B",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar (e.g., 'Customer segments' / 'Target customers')",
+          "sub-bullet under Kitchen World / business model pillar",
+          "explicit clarifying question about who Kitchen World sells to",
+          "hypothesis-driven assumption about B2B component"
+        ],
+        "alternative_phrasings": [
+          "B2B customers",
+          "commercial clients",
+          "restaurant clients",
+          "who are the customers"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'customer' only in passing (e.g., 'customer loyalty') without probing the B2C vs. B2B distinction — G adjacent dimension pattern"
+      ],
+      "info": "Kitchen World targets both B2C and B2B (e.g. premium restaurants, upscale hotels)"
+    },
+    "item_3": {
+      "item_id": "item_3",
+      "trigger": "Analyst asks about or includes total market size / kitchenware market / TAM in framework or analysis",
+      "core_dimensional_concept": "North American kitchenware market size and high-end segment",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar (e.g., 'Market size' / 'TAM' / 'High-end kitchenware market')",
+          "sub-bullet under market analysis pillar",
+          "explicit clarifying question about total market or high-end segment size",
+          "hypothesis about addressable market scale"
+        ],
+        "alternative_phrasings": [
+          "total addressable market",
+          "market opportunity",
+          "how big is the market",
+          "industry size"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'market' only as part of 'market entry' or 'market share' without asking about total market size — F passing mention that references market as adjective not subject"
+      ],
+      "info": "Overall kitchenware market in North America was $18B (2019) with the high-end segment capturing around 10% of it"
+    },
+    "item_4": {
+      "item_id": "item_4",
+      "trigger": "Analyst asks about or includes competitive landscape / key competitors / market fragmentation in framework or analysis",
+      "core_dimensional_concept": "competitive landscape and key market players",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar (e.g., 'Competition' / 'Competitive landscape' / 'External factors')",
+          "sub-bullet under market analysis or external environment pillar",
+          "explicit clarifying question about main competitors",
+          "hypothesis about market concentration"
+        ],
+        "alternative_phrasings": [
+          "key competitors",
+          "who else is in the space",
+          "market players",
+          "competitive dynamics"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'competitive' only as a modifier (e.g., 'competitive pricing') without identifying or asking about specific market players — G adjacent dimension pattern"
+      ],
+      "info": "The space is fairly fragmented with several big-name chains like Sur la Table* and Williams Sonoma (*Declared bankruptcy in July/20 and was acquired by Marquee Brands and CSC Generation. At the time of the case (early 2020), it was a major player)"
+    },
+    "item_5": {
+      "item_id": "item_5",
+      "trigger": "Analyst asks about or includes client growth targets / sales goals / revenue targets in framework or analysis",
+      "core_dimensional_concept": "client growth ambition and absence of specific sales goals",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar (e.g., 'Financial goals' / 'Growth targets')",
+          "sub-bullet under Kitchen World or financial analysis pillar",
+          "explicit clarifying question about what growth target the client wants to achieve",
+          "hypothesis about revenue or growth aspiration"
+        ],
+        "alternative_phrasings": [
+          "revenue target",
+          "how much growth does the client want",
+          "what is the goal",
+          "financial objectives"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'goal' only as a generic term (e.g., 'our goal is to maximize revenue') without specifically asking about the client's stated growth target — F passing mention"
+      ],
+      "info": "The client didn't provide us with any sales goals, but expects ambitious growth plan"
+    }
+  },
+  "structure_3_case_questions": {
+    "Q1": {
+      "q_id": "Q1",
+      "type": "framework",
+      "question_text": "What would be your plan of attack to help Kitchen World create a revenue growth strategy?",
+      "information_to_share_upfront": null,
+      "information_upon_request": "See structure_2 items 1-5. Release only items per semantic touch judgment; not by mere keyword presence.",
+      "state_machine": {
+        "next_question": "Q2",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable framework answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q2": {
+      "q_id": "Q2",
+      "type": "qualitative",
+      "question_text": "The team is thinking about launching a loyalty program to increase the client's sales. What are the factors you would think of to design it?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q3",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q3": {
+      "q_id": "Q3",
+      "type": "quantitative",
+      "question_text": "The client used a 3rd party loyalty card platform to run a pilot. Based on the results of this pilot (see Appendix 1), what would be a 1-year break-even number of loyalty card members for Kitchen World?",
+      "information_to_share_upfront": [
+        "Appendix 1 — Pilot results (Store A pilot vs Store B control group)"
+      ],
+      "information_upon_request": [
+        {
+          "item_id": "Q3_item_1",
+          "trigger": "Analyst asks about or includes profit margins / profitability of the stores in calculation",
+          "core_dimensional_concept": "store profit margins for pilot and control",
+          "release_conditions": {
+            "structural_position": [
+              "explicit clarifying question about profit margin or profitability",
+              "calculation step referencing margin percentage",
+              "hypothesis-driven assumption about store margins"
+            ],
+            "alternative_phrasings": [
+              "profit margin",
+              "profitability",
+              "margin percentage",
+              "how profitable are the stores"
+            ]
+          },
+          "disqualifying": [
+            "Analyst mentions 'profit' only in the context of break-even concept without asking for specific margin data — F passing mention pattern"
+          ],
+          "info": "Profit margins: 19% for store A (pilot); 20% for store B (control group)"
+        },
+        {
+          "item_id": "Q3_item_2",
+          "trigger": "Analyst asks about or includes costs of building / running own loyalty card platform in calculation",
+          "core_dimensional_concept": "own loyalty card platform investment costs",
+          "release_conditions": {
+            "structural_position": [
+              "explicit clarifying question about platform costs or investment required",
+              "calculation step referencing capex or opex for loyalty platform",
+              "hypothesis about cost of building or maintaining the system"
+            ],
+            "alternative_phrasings": [
+              "platform cost",
+              "investment cost",
+              "capex",
+              "how much does it cost to build"
+            ]
+          },
+          "disqualifying": [
+            "Analyst mentions 'cost' only as a generic factor without asking for specific platform investment figures — G adjacent dimension pattern"
+          ],
+          "info": "Expenses on own loyalty card platform: $4M in capex to build; $0.1M in annual opex to maintain (e.g. to upgrade the software, fix potential bugs, analyze loyalty card data and organize marketing campaigns, etc.)"
+        }
+      ],
+      "appendix": {
+        "appendix_1": {
+          "title": "Pilot results — Store A (pilot) vs Store B (control group)",
+          "release_rule": "Share upfront with analyst at the start of Q3",
+          "table": {
+            "number_of_unique_customers_per_year": {
+              "store_A_pilot": "50k",
+              "store_B_control_group": "50k"
+            },
+            "loyalty_card_penetration_pct_customers": {
+              "store_A_pilot": "20%",
+              "store_B_control_group": "0%"
+            },
+            "annualized_visits_per_customer": {
+              "store_A_pilot": "12",
+              "store_B_control_group": "10"
+            },
+            "average_value_of_purchase_per_visit": {
+              "store_A_pilot": "$50",
+              "store_B_control_group": "$52"
+            }
+          }
+        }
+      },
+      "state_machine": {
+        "next_question": "Q4",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides correct numerical answer (82k) or 2nd attempt completed; if both attempts wrong, provide correct answer (82k) before Q4",
+        "max_attempts": 2,
+        "scoring_on_transition": {
+          "attempt_1_correct": "Full score",
+          "attempt_2_correct": "0 score per core_principles",
+          "both_attempts_wrong": "0 score; interviewer provides correct answer (82k) before next question"
+        }
+      }
+    },
+    "Q4": {
+      "q_id": "Q4",
+      "type": "qualitative",
+      "question_text": "If the client decides to go ahead and introduce a loyalty program, what risks should they anticipate?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": null,
+        "skip_logic": false,
+        "transition_condition": "Case ends after Q4"
+      }
+    }
+  },
+  "structure_4_ground_truth": {
+    "Q1_ground_truth": {
+      "type": "framework",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_high_end_kitchenware_US_market": {
+          "keypoints": [
+            "Growth rate",
+            "Major premium kitchenware chains",
+            "Recent changes in customer behavior and other trends"
+          ],
+          "subtotal": 3
+        },
+        "pillar_2_kitchen_world": {
+          "keypoints": [
+            "Customer segments (e.g. B2C/B2B, professionals vs amateurs, gifts vs for yourself)",
+            "Product range",
+            "Marketing strategy"
+          ],
+          "subtotal": 3
+        },
+        "pillar_3_revenue_analysis": {
+          "keypoints": [
+            "Growth rate and market share",
+            "Break-down by region, product line and customer segment",
+            "Pricing strategy"
+          ],
+          "subtotal": 3
+        },
+        "pillar_4_sales_growth_opportunities": {
+          "keypoints": [
+            "Geographical expansion",
+            "Market share increase",
+            "New customer segments",
+            "Product innovation"
+          ],
+          "subtotal": 4
+        }
+      },
+      "total_keypoints": 13,
+      "minimum_expected": "Cover at least 2 pillars with substantive keypoints; must include revenue analysis or sales growth opportunities",
+      "outstanding_threshold": "Cover all 4 pillars with at least 2 keypoints each; include concrete examples or hypotheses"
+    },
+    "Q2_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_financial_reasons": {
+          "cost_factors": {
+            "keypoints": [
+              "Capex for software and hardware",
+              "Opex: marketing, IT (e.g. upgrading, bug fixing), and overhead",
+              "Loyalty model (e.g. planned discounts, points schedule)"
+            ],
+            "subtotal": 3
+          },
+          "revenue_factors": {
+            "keypoints": [
+              "Forecasted increase in number of customers, frequency of visits, average ticket",
+              "Improved pricing due to stronger loyalty"
+            ],
+            "subtotal": 2
+          },
+          "investment_criteria": {
+            "keypoints": [
+              "Target ROI/payback/etc."
+            ],
+            "subtotal": 1
+          },
+          "keypoints": [
+            "Capex for software and hardware",
+            "Opex: marketing, IT (e.g. upgrading, bug fixing), and overhead",
+            "Loyalty model (e.g. planned discounts, points schedule)",
+            "Forecasted increase in number of customers, frequency of visits, average ticket",
+            "Improved pricing due to stronger loyalty",
+            "Target ROI/payback/etc."
+          ],
+          "subtotal": 6
+        },
+        "pillar_2_strategic_value": {
+          "customer_data_collection": {
+            "keypoints": [
+              "Increased efficiency of marketing (e.g. via deeper segments insights, direct email access to customers)",
+              "Improved customer segmentation",
+              "Better transparency of customer experience for strategic decision making (e.g. metrics of loyalty program will help track brand quality)"
+            ],
+            "subtotal": 3
+          },
+          "stronger_personalization": {
+            "keypoints": [
+              "Strengthened brand loyalty (e.g. via tailored messages and new perks)",
+              "More brand advocates",
+              "Augmented customer experience"
+            ],
+            "subtotal": 3
+          },
+          "keypoints": [
+            "Increased efficiency of marketing (e.g. via deeper segments insights, direct email access to customers)",
+            "Improved customer segmentation",
+            "Better transparency of customer experience for strategic decision making (e.g. metrics of loyalty program will help track brand quality)",
+            "Strengthened brand loyalty (e.g. via tailored messages and new perks)",
+            "More brand advocates",
+            "Augmented customer experience"
+          ],
+          "subtotal": 6
+        },
+        "pillar_3_risks": {
+          "financial_risks": {
+            "keypoints": [
+              "Lack of funding",
+              "Underestimated costs",
+              "Exaggerated revenue assumptions (e.g. lack of customers' interest as high-end clients aren't usually price-sensitive)",
+              "Cannibalization (high-volume customers will get into loyalty program to get discounts)",
+              "Undermined value of loyalty program due to limited network effect (the client has only 100 stores for the entire North America)"
+            ],
+            "subtotal": 5
+          },
+          "operational_risks": {
+            "keypoints": [
+              "Long implementation period",
+              "Potential disruption of processes during the implementation",
+              "Increase in operational complexity",
+              "Risk of inferior or unreliable loyalty program software"
+            ],
+            "subtotal": 4
+          },
+          "keypoints": [
+            "Lack of funding",
+            "Underestimated costs",
+            "Exaggerated revenue assumptions (e.g. lack of customers' interest as high-end clients aren't usually price-sensitive)",
+            "Cannibalization (high-volume customers will get into loyalty program to get discounts)",
+            "Undermined value of loyalty program due to limited network effect (the client has only 100 stores for the entire North America)",
+            "Long implementation period",
+            "Potential disruption of processes during the implementation",
+            "Increase in operational complexity",
+            "Risk of inferior or unreliable loyalty program software"
+          ],
+          "subtotal": 9
+        }
+      },
+      "total_keypoints": 21,
+      "minimum_expected": "Cover at least 2 of 3 pillars; provide at least 3 factors total",
+      "outstanding_threshold": "Cover all 3 pillars with 4+ factors each; demonstrate structured top-down brainstorming (financial + strategic + risk dimensions)"
+    },
+    "Q3_ground_truth": {
+      "type": "quantitative",
+      "quantitative_part": {
+        "correct_final_answer": "82k loyalty card members",
+        "accepted_values": [
+          82000
+        ],
+        "tolerance_pct": 0.0,
+        "zero_tolerance": true,
+        "scoring_method": "Binary: correct number = full credit; incorrect = zero credit",
+        "calculation_steps": {
+          "step_1_annual_profit_store_A": {
+            "formula": "50k customers × 12 visits × $50/visit × 19% margin",
+            "result": "$5.7M"
+          },
+          "step_2_annual_profit_store_B": {
+            "formula": "50k customers × 10 visits × $52/visit × 20% margin",
+            "result": "$5.2M"
+          },
+          "step_3_annual_incremental_profit": {
+            "formula": "$5.7M - $5.2M",
+            "result": "$0.5M"
+          },
+          "step_4_number_of_loyalty_card_members": {
+            "formula": "50k customers × 20% penetration",
+            "result": "10k members"
+          },
+          "step_5_incremental_contribution_margin_per_member_per_year": {
+            "formula": "$0.5M ÷ 10k members",
+            "result": "$50 per member per year"
+          },
+          "step_6_break_even_number_of_members": {
+            "formula": "($4M capex + $0.1M annual opex) ÷ $50 per member",
+            "result": "82k members"
+          }
+        }
+      },
+      "qualitative_part": {
+        "scoring_note": "Qualitative portion of Q3 is scored as 100% total, split into two tiers. Within each tier, use 3-level scoring per",
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "tier_1_basic": {
+          "weight_of_Q3_qualitative_total": "50%",
+          "keypoints": [
+            "One year after the loyalty card launch the client will need to have 82k members to break-even"
+          ],
+          "note": "Expected from every candidate. Single point worth 50% of qualitative score."
+        },
+        "tier_2_advanced": {
+          "weight_of_Q3_qualitative_total": "50%",
+          "points_available": 4,
+          "weight_per_point": "12.5% of qualitative total",
+          "keypoints": [
+            "Given the average annual spending of around $500 (=$52×10 visits) and the client's sales of $200M, the number of unique customers is around 400k, which means that break-even point is at ~20% penetration which seems achievable",
+            "If the client considers longer horizon (3-4 years instead of 1 year), the break-even point will drop considerably and might be more achievable",
+            "The 20% penetration rate in store A seems reasonable as high-end customers aren't typically price-sensitive and thus might express less appetite for a loyalty card",
+            "Lower average value of purchase ($50) might be the result of promotions and discounts, potential cannibalization of high-volume customers who got a loyalty card, and change in product mix"
+          ],
+          "note": "Not expected from every candidate. Each advanced point adds 12.5% to qualitative score."
+        },
+        "minimum_expected": "Correct numerical answer (82k) + Tier 1 basic contextualization (covered)",
+        "outstanding_threshold": "Correct numerical answer + Tier 1 covered + at least 2 Tier 2 advanced comments covered"
+      }
+    },
+    "Q4_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_market_specific_risks": {
+          "keypoints": [
+            "Competitive response (e.g. aggressive marketing campaign or launch of competitive loyalty cards)",
+            "Potential negative brand implications (e.g. high discounts offered by loyalty program might hurt high-end brand)"
+          ],
+          "subtotal": 2
+        },
+        "pillar_2_financial_risks": {
+          "keypoints": [
+            "Lack of funding",
+            "Underestimated costs",
+            "Exaggerated revenue assumptions (e.g. lack of customers' interest as high-end clients aren't usually price-sensitive)",
+            "Cannibalization (high-volume customers will get into loyalty program to get discounts)",
+            "Undermined value of loyalty program due to limited network effect (the client has only 100 stores for the entire North America)"
+          ],
+          "subtotal": 5
+        },
+        "pillar_3_operational_risks": {
+          "keypoints": [
+            "Long implementation period (software development, employee training, etc.)",
+            "Potential disruption of processes during the implementation",
+            "Increase in operational complexity",
+            "Risk of inferior or unreliable loyalty program software."
+          ],
+          "subtotal": 4
+        }
+      },
+      "total_keypoints": 11,
+      "minimum_expected": "Cover at least 2 of 3 risk categories; provide at least 4 risks total",
+      "outstanding_threshold": "Cover all 3 risk categories with substantive examples; demonstrate awareness of high-end brand sensitivity"
+    }
+  },
+  "state_machine_global": {
+    "case_type": "interviewer_driven",
+    "skip_logic": false,
+    "mandatory_sequence": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4"
+    ],
+    "rules": [
+      "Q1 cannot be skipped under any circumstances",
+      "Questions must proceed in linear order Q1 → Q2 → Q3 → Q4",
+      "A question may not be advanced until the current question receives a scoreable answer (1st or 2nd attempt)",
+      "If analyst pre-covers a later question's keypoints in an earlier answer, record as pre-coverage but still ask the later question in sequence",
+      "No question may be skipped even if pre-covered"
+    ]
+  },
+  "scoring_summary": {
+    "Q1": {
+      "type": "framework",
+      "total_keypoints": 13,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q2": {
+      "type": "qualitative",
+      "total_keypoints": 21,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q3": {
+      "type": "quantitative",
+      "part_1_quantitative": {
+        "correct_answer": "82k loyalty card members",
+        "zero_tolerance": true,
+        "scoring": "Binary: Full credit if correct; zero credit if incorrect"
+      },
+      "part_2_qualitative": {
+        "total_keypoints": 5,
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "human_review_priority": "false-partial > false-not-covered > covered",
+        "tier_1_basic": {
+          "keypoints": 1,
+          "weight": "50% of qualitative score"
+        },
+        "tier_2_advanced": {
+          "keypoints": 4,
+          "weight_per_point": "12.5% of qualitative score",
+          "weight_total": "50% of qualitative score"
+        }
+      }
+    },
+    "Q4": {
+      "type": "qualitative",
+      "total_keypoints": 11,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    }
+  }
+}

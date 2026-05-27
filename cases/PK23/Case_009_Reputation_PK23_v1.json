@@ -1,0 +1,687 @@
+{
+  "case_id": "009",
+  "version": "v1",
+  "source": {
+    "title": "Reputation",
+    "inspired_by": "McKinsey & Company",
+    "year": "2023",
+    "author": "Peter K.",
+    "reference": "Peter-K.org, Case #9",
+    "casebook_abbr": "PK23"
+  },
+  "case_type": "interviewer_driven",
+  "case_type_origin": null,
+  "annotation_mode": null,
+  "case_arch": {
+    "primary": "Wild Card",
+    "tags": [
+      "Wild Card",
+      "Growth Strategy",
+      "Operational Efficiency"
+    ],
+    "standard_tags": [
+      "Profitability",
+      "Market Entry",
+      "Revenue Growth",
+      "Cost Optimization",
+      "Investment Decision",
+      "Merger and Acquisition",
+      "Pricing Strategy",
+      "Growth Strategy",
+      "Operational Efficiency",
+      "Due Diligence",
+      "Market Sizing",
+      "Competitive Response",
+      "Digital Transformation",
+      "Turnaround / Restructuring",
+      "Supply Chain",
+      "Comparison",
+      "Wild Card"
+    ]
+  },
+  "difficulty": "Hard",
+  "industry": "Education / Performing Arts",
+  "topic": "Wild card — helping a top acting school retain its reputation and navigate expansion challenges",
+  "expected_duration_minutes": 18,
+  "opening_prompt": "Hi, I'd like to solve some consulting cases with you. Pls be a good interviewee to have a potential test in consulting cases. For the case problem-solving, pls do not assume any numbers or assumptions before my confirmation. I will give you the context upon request. I need you to answer the following questions for the client. Before you start, feel free to ask me 2-3 clarifying questions about the client.\n\nQ1: What factors should we consider to help RSSD retain their top-notch reputation of one of the best colleges with acting programs in the world?\n\nQ2: RSSD plans to expand its faculty which will enable the school to serve more students. How many more applicants should RSSD attract to expand the class size if the school wants to ensure the same student-to-faculty ratio and acceptance rate?\n\nQ3: RSSD would like to hire five high-caliber professors in acting to strengthen their faculty and increase the class size. What factors would matter for new professors to join RSSD?\n\nQ4: As a top acting school, RSSD is vulnerable to potential reputational risks. What might cause issues to RSSD's reputation in future?\n\nHere is the basic context for the client:\nRobert Sandler School of Drama (RSSD), an internationally recognized top U.S. acting school, would like to retain their standing as a reputable and one of the best colleges with acting programs in the world. RSSD offers students a four-year, sequenced program leading to a Bachelor of Fine Arts in Drama. Students take extensive core curriculum classes of acting, voice and speech, and movement. Classes are small and an emphasis is placed on highly individualized, personal attention, as well as developing a sense of collaboration and working in an ensemble.",
+  "structure_1_client_basic_context": {
+    "company": "Robert Sandler School of Drama (RSSD)",
+    "type": "Internationally recognized top U.S. acting school",
+    "situation": "RSSD would like to retain their standing as a reputable and one of the best colleges with acting programs in the world. RSSD offers students a four-year, sequenced program leading to a Bachelor of Fine Arts in Drama. Students take extensive core curriculum classes of acting, voice and speech, and movement. Classes are small and an emphasis is placed on highly individualized, personal attention, as well as developing a sense of collaboration and working in an ensemble.",
+    "action": "Seeking to maintain and strengthen their top-notch reputation",
+    "ask": "What factors should we consider to help RSSD retain their top-notch reputation?"
+  },
+  "structure_2_information_upon_request": {
+    "item_1": {
+      "item_id": "item_1",
+      "trigger": "Analyst asks about or includes founding history or age of institution in framework",
+      "core_dimensional_concept": "RSSD founding history and institutional age",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet about institutional background or history",
+          "explicit clarifying question about when RSSD was founded",
+          "hypothesis about long-standing reputation or legacy",
+          "question about institutional longevity"
+        ],
+        "alternative_phrasings": [
+          "how long has RSSD been around",
+          "history of the school",
+          "institutional heritage",
+          "established tradition"
+        ]
+      },
+      "disqualifying": [
+        "Analyst merely mentions 'reputation' in passing without asking about its historical roots — F passing mention, not structural touch on founding history dimension"
+      ],
+      "info": "RSSD was founded in 1914"
+    },
+    "item_2": {
+      "item_id": "item_2",
+      "trigger": "Analyst asks about or includes alum achievements or alumni track record in framework",
+      "core_dimensional_concept": "RSSD alumni awards and industry recognition",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet about alum reputation or success",
+          "explicit clarifying question about notable alumni achievements",
+          "list item under alum quality or prestige dimension",
+          "hypothesis about alumni career outcomes"
+        ],
+        "alternative_phrasings": [
+          "alum success rate",
+          "notable graduates",
+          "alumni recognition",
+          "award-winning alumni"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'alumni employment' as a generic outcome metric without asking about specific awards or recognition — G adjacent dimension, not the specific awards track record dimension"
+      ],
+      "info": "RSSD alumni have received 13 Oscar Academy Awards (motion picture), 142 Emmy Awards (television industry), 52 Tony Awards (theater)"
+    },
+    "item_3": {
+      "item_id": "item_3",
+      "trigger": "Analyst asks about or includes class size or student-to-faculty ratio in framework",
+      "core_dimensional_concept": "RSSD class size relative to peer institutions",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet about class size or selectivity",
+          "explicit clarifying question about how RSSD's class size compares to peers",
+          "question or hypothesis about student-to-faculty ratio",
+          "list item about educational quality indicators"
+        ],
+        "alternative_phrasings": [
+          "how big are the classes",
+          "student-to-teacher ratio",
+          "enrollment size",
+          "class capacity"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'quality of education' broadly without specifically probing class size or peer comparison — F passing reference that does not structurally touch the class size dimension"
+      ],
+      "info": "RSSD has one of the smallest class sizes among top drama schools in the world"
+    },
+    "item_4": {
+      "item_id": "item_4",
+      "trigger": "Analyst asks about or includes acceptance rate or selectivity in framework",
+      "core_dimensional_concept": "RSSD acceptance rate and selectivity",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet about student quality or selectivity",
+          "explicit clarifying question about acceptance rate",
+          "hypothesis about admissions competitiveness",
+          "list item under student quality dimension"
+        ],
+        "alternative_phrasings": [
+          "how selective is RSSD",
+          "admission competition",
+          "how hard to get in",
+          "application success rate"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'students' as a pillar name without probing admissions selectivity — G adjacent pillar label, not a structural touch on the acceptance rate dimension"
+      ],
+      "info": "The acceptance rate to the RSSD's acting program is only 0.4%"
+    },
+    "item_5": {
+      "item_id": "item_5",
+      "trigger": "Analyst asks about or includes faculty background, professional credentials, or faculty quality in framework",
+      "core_dimensional_concept": "RSSD faculty professional background and ethics commitment",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet about faculty quality or credentials",
+          "explicit clarifying question about who teaches at RSSD",
+          "hypothesis about faculty professional standards",
+          "list item under faculty dimension"
+        ],
+        "alternative_phrasings": [
+          "who are the professors",
+          "faculty expertise",
+          "teaching staff background",
+          "professional practitioners as faculty"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'faculty' as a pillar label without asking about their specific professional background or ethics standards — F passing pillar label, not a structural touch on faculty professional credentials dimension"
+      ],
+      "info": "The RSSD's faculty consists of working theater and movie professionals committed to teaching the highest standards of quality and professional ethics"
+    },
+    "item_6": {
+      "item_id": "item_6",
+      "trigger": "Analyst asks about or includes tuition cost, affordability, or financial accessibility of the program",
+      "core_dimensional_concept": "RSSD program tuition and financial accessibility",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet about tuition or program cost",
+          "explicit clarifying question about how much the program costs",
+          "hypothesis about financial barriers to enrollment",
+          "list item under student recruitment or accessibility dimension"
+        ],
+        "alternative_phrasings": [
+          "tuition fees",
+          "cost of the program",
+          "financial aid",
+          "affordability of RSSD"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'funding' or 'donations' in context of school investment without probing student tuition affordability — G adjacent dimension (school finance vs student tuition), not structural touch on program accessibility"
+      ],
+      "info": "Due to the recent generous donation, the RSSD's programs are free for students"
+    }
+  },
+  "structure_3_case_questions": {
+    "Q1": {
+      "q_id": "Q1",
+      "type": "framework",
+      "question_text": "What factors should we consider to help RSSD retain their top-notch reputation of one of the best colleges with acting programs in the world?",
+      "information_to_share_upfront": null,
+      "information_upon_request": "See structure_2 items 1-6. Release only by semantic touch; not by mere keyword presence.",
+      "state_machine": {
+        "next_question": "Q2",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable framework answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q2": {
+      "q_id": "Q2",
+      "type": "quantitative",
+      "question_text": "RSSD plans to expand its faculty which will enable the school to serve more students. How many more applicants should RSSD attract to expand the class size if the school wants to ensure the same student-to-faculty ratio and acceptance rate?",
+      "information_to_share_upfront": [
+        "Appendix 1: Top-10 acting schools in the world, 2022 (share the full table)"
+      ],
+      "information_upon_request": [
+        {
+          "item_id": "Q2_item_1",
+          "trigger": "Analyst asks about the type or duration of the RSSD program to calculate student-to-faculty ratio correctly",
+          "core_dimensional_concept": "RSSD program type and duration",
+          "release_conditions": {
+            "structural_position": [
+              "explicit clarifying question about program length or degree type",
+              "question about how many years students are enrolled",
+              "hypothesis about student cohort size based on multi-year program"
+            ],
+            "alternative_phrasings": [
+              "how long is the program",
+              "bachelor or master",
+              "program duration",
+              "years of study"
+            ]
+          },
+          "disqualifying": [
+            "Analyst assumes a specific program length without asking — F passive assumption, not a structural probing of program duration dimension"
+          ],
+          "info": "RSSD offers a four-year acting program leading to a Bachelor of Fine Arts in Drama"
+        },
+        {
+          "item_id": "Q2_item_2",
+          "trigger": "Analyst asks about how many new faculty RSSD plans to hire",
+          "core_dimensional_concept": "Number of new lecturers/professors RSSD plans to hire",
+          "release_conditions": {
+            "structural_position": [
+              "explicit clarifying question about faculty expansion size",
+              "question about the number of new hires planned",
+              "hypothesis about scale of faculty increase"
+            ],
+            "alternative_phrasings": [
+              "how many new professors",
+              "number of additional faculty",
+              "faculty headcount increase",
+              "how many hires"
+            ]
+          },
+          "disqualifying": [
+            "Analyst mentions 'faculty expansion' generically without probing the specific number of new hires — F passing mention, not a structural touch on the quantity of new professors dimension"
+          ],
+          "info": "RSSD plans to hire five more lecturers/professors in acting"
+        }
+      ],
+      "appendix": {
+        "appendix_1": {
+          "title": "Top-10 acting schools in the world, 2022",
+          "release_rule": "Share upfront with analyst at the start of Q2",
+          "table": {
+            "rank_1_juilliard_school": {
+              "region": "US",
+              "class_size": 18,
+              "number_of_applicants": 1500,
+              "faculty_size": 18,
+              "student_to_faculty_ratio": "N/A",
+              "acceptance_rate": "1.2%"
+            },
+            "rank_2_nyu_tisch": {
+              "region": "US",
+              "class_size": "300*",
+              "number_of_applicants": "3,000*",
+              "faculty_size": "N/A",
+              "student_to_faculty_ratio": "N/A",
+              "acceptance_rate": "10.0%"
+            },
+            "rank_3_david_geffen": {
+              "region": "US",
+              "class_size": 18,
+              "number_of_applicants": "~1,000",
+              "faculty_size": 34,
+              "student_to_faculty_ratio": 2,
+              "acceptance_rate": "1.6%"
+            },
+            "rank_4_london_academy": {
+              "region": "UK",
+              "class_size": 20,
+              "number_of_applicants": 3500,
+              "faculty_size": 20,
+              "student_to_faculty_ratio": 6,
+              "acceptance_rate": "0.9%"
+            },
+            "rank_5_robert_sandler_rssd": {
+              "region": "US",
+              "class_size": 12,
+              "number_of_applicants": 3000,
+              "faculty_size": 23,
+              "student_to_faculty_ratio": 2,
+              "acceptance_rate": "0.4%"
+            },
+            "rank_6_royal_academy": {
+              "region": "UK",
+              "class_size": 28,
+              "number_of_applicants": 3500,
+              "faculty_size": 42,
+              "student_to_faculty_ratio": 2,
+              "acceptance_rate": "0.8%"
+            },
+            "rank_7_ucla": {
+              "region": "US",
+              "class_size": "50*",
+              "number_of_applicants": "600*",
+              "faculty_size": 30,
+              "student_to_faculty_ratio": 5,
+              "acceptance_rate": "8.3%"
+            },
+            "rank_8_usc": {
+              "region": "US",
+              "class_size": 32,
+              "number_of_applicants": 516,
+              "faculty_size": "N/A",
+              "student_to_faculty_ratio": "N/A",
+              "acceptance_rate": "6.2%"
+            },
+            "rank_9_guildhall": {
+              "region": "UK",
+              "class_size": 26,
+              "number_of_applicants": 2610,
+              "faculty_size": 31,
+              "student_to_faculty_ratio": 2,
+              "acceptance_rate": "1.0%"
+            },
+            "rank_10_national_institute": {
+              "region": "Australia",
+              "class_size": 26,
+              "number_of_applicants": 1000,
+              "faculty_size": "N/A",
+              "student_to_faculty_ratio": "N/A",
+              "acceptance_rate": "2.6%"
+            }
+          }
+        }
+      },
+      "state_machine": {
+        "next_question": "Q3",
+        "skip_logic": false,
+        "max_attempts": 2,
+        "scoring_on_transition": {
+          "attempt_1_correct": "Full score",
+          "attempt_2_correct": "0 score per core_principles",
+          "both_attempts_wrong": "0 score; interviewer provides correct answer before next question"
+        },
+        "transition_condition": "Analyst provides numerical answer (correct or 2nd attempt completed); case proceeds to Q3"
+      }
+    },
+    "Q3": {
+      "q_id": "Q3",
+      "type": "qualitative",
+      "question_text": "RSSD would like to hire five high-caliber professors in acting to strengthen their faculty and increase the class size. What factors would matter for new professors to join RSSD?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q4",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q4": {
+      "q_id": "Q4",
+      "type": "qualitative",
+      "question_text": "As a top acting school, RSSD is vulnerable to potential reputational risks. What might cause issues to RSSD's reputation in future?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": null,
+        "skip_logic": false,
+        "transition_condition": "Case ends after Q4"
+      }
+    }
+  },
+  "structure_4_ground_truth": {
+    "Q1_ground_truth": {
+      "type": "framework",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_robert_sandler_school_of_drama": {
+          "keypoints": [
+            "Rankings/ratings",
+            "Brand perception",
+            "Marketing and PR strategy"
+          ],
+          "subtotal": 3
+        },
+        "pillar_2_faculty": {
+          "keypoints": [
+            "Talent management",
+            "Research & publications",
+            "Student-to-faculty ratio",
+            "Curriculum and performances"
+          ],
+          "subtotal": 4
+        },
+        "pillar_3_students": {
+          "keypoints": [
+            "Class size",
+            "Quality of students (e.g. acceptance rate, grades)",
+            "Employment prep"
+          ],
+          "subtotal": 3
+        },
+        "pillar_4_alums": {
+          "keypoints": [
+            "Size of alum community",
+            "Reputation of alum (e.g. awards, roles)",
+            "Current employment"
+          ],
+          "subtotal": 3
+        }
+      },
+      "total_keypoints": 13,
+      "minimum_expected": "Cover at least 3 of the 4 pillars with at least 1 keypoint each",
+      "outstanding_threshold": "Cover all 4 pillars with at least 2-3 keypoints each"
+    },
+    "Q2_ground_truth": {
+      "type": "quantitative",
+      "quantitative_part": {
+        "correct_final_answer": "500 more applicants",
+        "accepted_values": [
+          500
+        ],
+        "tolerance_pct": 0.0,
+        "zero_tolerance": true,
+        "scoring_method": "Binary: correct number = full credit; incorrect = zero credit",
+        "calculation_steps": {
+          "step_1_new_faculty_size": {
+            "formula": "Current faculty + new hires = 23 + 5",
+            "result": "28 total faculty"
+          },
+          "step_2_new_class_size_per_year": {
+            "formula": "New faculty × student-to-faculty ratio ÷ program years = 28 × 2 ÷ 4",
+            "result": "14 students per year (new class size)"
+          },
+          "step_3_additional_students_needed": {
+            "formula": "New class size − current class size = 14 − 12",
+            "result": "2 additional students needed"
+          },
+          "step_4_additional_applicants": {
+            "formula": "Additional students ÷ acceptance rate = 2 ÷ 0.4%",
+            "result": "500 additional applicants"
+          }
+        }
+      },
+      "qualitative_part": {
+        "scoring_note": "Qualitative portion of Q2 is scored as 100% total, split into two tiers. Within each tier, use 3-level scoring per",
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "tier_1_basic": {
+          "weight_of_Q2_qualitative_total": "50%",
+          "keypoints": [
+            "RSSD should increase their marketing efforts to attract additional 500 applicants in order to get 2 more students to ensure the same student-to-faculty ratio"
+          ],
+          "note": "Expected from every candidate. Single point worth 50% of qualitative score."
+        },
+        "tier_2_advanced": {
+          "weight_of_Q2_qualitative_total": "50%",
+          "points_available": 3,
+          "weight_per_point": "16.7% of qualitative total",
+          "keypoints": [
+            "Such a rapid dramatic increase in applicant pool (by ~20%) might result in poorer candidate quality and drop in the acceptance rate or new students' level which will hurt the school's reputation",
+            "Despite the increase in the class size, it'll remain the smallest among top-10 acting schools and thus shouldn't negatively affect the program's quality and the school's reputation",
+            "The class size increase should create a buzz among candidates and correspondent media and strengthen brand awareness of RSSD"
+          ],
+          "note": "Not expected from every candidate. Each advanced point adds 16.7% to qualitative score."
+        },
+        "minimum_expected": "Correct numerical answer (500) + Tier 1 basic contextualization (covered)",
+        "outstanding_threshold": "Correct numerical answer + Tier 1 covered + at least 2 Tier 2 advanced comments covered"
+      }
+    },
+    "Q3_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_spiritual_perks": {
+          "keypoints": [
+            "Honor to be part of such a reputable school (e.g. famous alums)",
+            "Honor to work side-by-side with distinguished acting professionals from faculty (e.g. Oscar award winners)",
+            "Pride of teaching a new generation of actors",
+            "Ability to pay back to their school (if they are RSSD's alums)",
+            "Ability to direct a production (and satisfy professional ambitions)"
+          ],
+          "subtotal": 5
+        },
+        "pillar_2_compensation": {
+          "keypoints": [
+            "Attractive salaries",
+            "Strong healthcare plan",
+            "Appealing retirement plan",
+            "High-quality childcare",
+            "Annual bonuses",
+            "Strong labor union",
+            "Subsidized apartment rent"
+          ],
+          "subtotal": 7
+        },
+        "pillar_3_work_conditions": {
+          "keypoints": [
+            "Creative freedom in teaching (ability to promote their own acting techniques)",
+            "Small teaching groups",
+            "Outstanding hand-picked students (due to strict selection process and low acceptance rate)",
+            "Proximity to school",
+            "Proximity to cultural hubs (e.g. NYC, LA, Chicago)"
+          ],
+          "subtotal": 5
+        },
+        "pillar_4_culture": {
+          "keypoints": [
+            "Strong leadership of current administration",
+            "Healthy culture and community of faculty",
+            "Personal connections to existing faculty (e.g. from previous work experience)",
+            "Plenty of school events"
+          ],
+          "subtotal": 4
+        }
+      },
+      "total_keypoints": 21,
+      "minimum_expected": "Cover at least 3 of the 4 pillars with at least 1 keypoint each (4 ideas minimum)",
+      "outstanding_threshold": "Cover all 4 pillars with 2+ keypoints per pillar (7-8 ideas)"
+    },
+    "Q4_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_rssds_administration": {
+          "business_risks": {
+            "keypoints": [
+              "Drop in RSSD's rankings",
+              "Inadequate marketing (e.g. inefficient messages, channels, low volume)",
+              "Lack of investment in up-to-date tech and equipment"
+            ],
+            "subtotal": 3
+          },
+          "legal_risks": {
+            "keypoints": [
+              "Reputation",
+              "Bribery",
+              "Legal issues with accreditation",
+              "Lawsuits against RSSD"
+            ],
+            "subtotal": 4
+          },
+          "keypoints": [
+            "Drop in RSSD's rankings",
+            "Inadequate marketing (e.g. inefficient messages, channels, low volume)",
+            "Lack of investment in up-to-date tech and equipment",
+            "Reputation",
+            "Bribery",
+            "Legal issues with accreditation",
+            "Lawsuits against RSSD"
+          ],
+          "subtotal": 7
+        },
+        "pillar_2_faculty": {
+          "culture_risks": {
+            "keypoints": [
+              "Toxic culture and questionable role modelling",
+              "Low morale"
+            ],
+            "subtotal": 2
+          },
+          "instructional_risks": {
+            "keypoints": [
+              "Poor quality of teaching",
+              "Too experimental curriculum",
+              "Creativity crisis"
+            ],
+            "subtotal": 3
+          },
+          "unprofessional_behavior": {
+            "keypoints": [
+              "PR (e.g. unethical statements in social media)"
+            ],
+            "subtotal": 1
+          },
+          "talent_management_risks": {
+            "keypoints": [
+              "Unusually high drop out rate",
+              "Strikes"
+            ],
+            "subtotal": 2
+          },
+          "keypoints": [
+            "Toxic culture and questionable role modelling",
+            "Low morale",
+            "Poor quality of teaching",
+            "Too experimental curriculum",
+            "Creativity crisis",
+            "PR (e.g. unethical statements in social media)",
+            "Unusually high drop out rate",
+            "Strikes"
+          ],
+          "subtotal": 8
+        },
+        "pillar_3_students": {
+          "keypoints": [
+            "Poor performances (e.g. harsh critics' reviews of end-of-semester public performances)",
+            "Unusually high drop out rate",
+            "PR (e.g. unethical posts in social media)"
+          ],
+          "subtotal": 3
+        },
+        "pillar_4_alums": {
+          "keypoints": [
+            "Low employment rate right after graduation",
+            "Limited successes (e.g. no big roles, no awards, especially in recent graduation classes)",
+            "PR (e.g. unethical statements in social media)"
+          ],
+          "subtotal": 3
+        }
+      },
+      "total_keypoints": 21,
+      "minimum_expected": "Cover at least 3 of the 4 pillars with at least 1 keypoint each (4 ideas minimum)",
+      "outstanding_threshold": "Cover all 4 pillars with 2+ keypoints per pillar (7-8 ideas)"
+    }
+  },
+  "state_machine_global": {
+    "case_type": "interviewer_driven",
+    "skip_logic": false,
+    "mandatory_sequence": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4"
+    ],
+    "rules": [
+      "Q1 cannot be skipped under any circumstances",
+      "Questions must proceed in linear order Q1 → Q2 → Q3 → Q4",
+      "A question may not be advanced until the current question receives a scoreable answer (1st or 2nd attempt)",
+      "If analyst pre-covers a later question's keypoints in an earlier answer, record as pre-coverage but still ask the later question in sequence",
+      "No question may be skipped even if pre-covered"
+    ]
+  },
+  "scoring_summary": {
+    "Q1": {
+      "type": "framework",
+      "total_keypoints": 13,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q2": {
+      "type": "quantitative",
+      "part_1_quantitative": {
+        "correct_answer": "500 more applicants",
+        "zero_tolerance": true,
+        "scoring": "Binary: Full credit if correct; zero credit if incorrect"
+      },
+      "part_2_qualitative": {
+        "total_keypoints": 4,
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "human_review_priority": "false-partial > false-not-covered > covered",
+        "tier_1_basic": {
+          "keypoints": 1,
+          "weight": "50% of qualitative score"
+        },
+        "tier_2_advanced": {
+          "keypoints": 3,
+          "weight_per_point": "16.7% of qualitative score",
+          "weight_total": "50% of qualitative score"
+        }
+      }
+    },
+    "Q3": {
+      "type": "qualitative",
+      "total_keypoints": 21,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q4": {
+      "type": "qualitative",
+      "total_keypoints": 21,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    }
+  }
+}

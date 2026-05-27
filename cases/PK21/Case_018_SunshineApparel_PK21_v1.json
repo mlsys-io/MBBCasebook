@@ -1,0 +1,683 @@
+{
+  "case_id": "018",
+  "version": "v1",
+  "source": {
+    "title": "Sunshine Apparel",
+    "inspired_by": "BCG",
+    "year": "2020",
+    "author": "Peter K.",
+    "reference": "Peter-K.org, Case #18",
+    "casebook_abbr": "PK21"
+  },
+  "case_type": "interviewer_driven",
+  "case_type_origin": "candidate_led",
+  "annotation_mode": "CL_to_IL_override",
+  "case_arch": {
+    "primary": "Market Entry",
+    "tags": [
+      "Market Entry",
+      "Comparison"
+    ]
+  },
+  "difficulty": "Medium-Hard",
+  "industry": "Consumer Goods / Apparel / Toy",
+  "topic": "Market entry decision — Sunshine Apparel considering entering the traditional toy space (dolls segment)",
+  "expected_duration_minutes": 20,
+  "opening_prompt": "Hi, I'd like to solve some consulting cases with you. Pls be a good interviewee to have a potential test in consulting cases. For the case problem-solving, pls do not assume any numbers or assumptions before my confirmation. I will give you the context upon request. I need you to answer the following questions for the client. Before you start, feel free to ask me 2-3 clarifying questions about the client.\n\nQ1. What factors would you consider to assess the toy market entry opportunity for Sunshine Apparel?\n\nQ2. Sunshine Apparel is entertaining the idea of entering the doll market. What is the break-even market share that Sunshine Apparel should capture within 1 year if they decide to start offering dolls?\n\nQ3. What distribution channels can Sunshine Apparel consider if they decide to start offering dolls?\n\nQ4. The client is unsure if they should prioritize DTC (direct-to-consumer) or mass market retailers for their potential doll business. What are your thoughts?\n\nQ5. During the client's meeting, the team manager asks you to summarize your recommendations.\n\nHere is the basic context for the client:\nSunshine Apparel offers cool, stylish kid's clothes with unique designs that inspire kids to be outdoors and explore the world with a spirit of adventure. The management is looking for product expansion opportunities and they consider entering the traditional toy space (not video-games). The CEO has hired your team to assess how reasonable this strategy is.",
+  "structure_1_client_basic_context": {
+    "company": "Sunshine Apparel",
+    "type": "Apparel company offering cool, stylish kid's clothes with unique designs",
+    "situation": "Management is looking for product expansion opportunities and they consider entering the traditional toy space (not video-games)",
+    "action": "The CEO has hired your team to assess how reasonable this strategy is",
+    "ask": "Assess the reasonableness of entering the traditional toy space"
+  },
+  "structure_2_information_upon_request": {
+    "item_1": {
+      "item_id": "item_1",
+      "trigger": "Analyst asks about or includes Sunshine Apparel's financial size, revenue, sales scale, or company financials in their framework",
+      "core_dimensional_concept": "Sunshine Apparel revenue and profit margin",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet referencing client financials / company size",
+          "explicit clarifying question about Sunshine Apparel's current revenue or margins",
+          "hypothesis-driven assumption about the client's financial baseline",
+          "numbered enumeration item referencing financial profile"
+        ],
+        "alternative_phrasings": [
+          "client's current revenue",
+          "sales size",
+          "EBT margin",
+          "profitability of the client",
+          "how big is Sunshine Apparel"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'financial risks' in a risk pillar without specifically asking about the client's current financial size — this is F passing mention; margin/financials is used as a risk modifier not as a subject of inquiry",
+        "Analyst says 'we need to assess if this is financially viable' without specifying interest in the client's current revenue or margin profile — vague general statement, not a dimensional touch on client financials per D/E standard"
+      ],
+      "info": "Sunshine Apparel has $1B in sales and enjoys 4% EBT margin"
+    },
+    "item_2": {
+      "item_id": "item_2",
+      "trigger": "Analyst asks about or includes Sunshine Apparel's existing distribution network, retail footprint, or store presence in their framework",
+      "core_dimensional_concept": "Sunshine Apparel retail store network",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet referencing existing distribution / retail infrastructure",
+          "explicit clarifying question about how Sunshine Apparel currently sells its products",
+          "sub-bullet under client capabilities or synergies pillar referencing store network",
+          "hypothesis-driven assumption about leveraging existing channels"
+        ],
+        "alternative_phrasings": [
+          "existing distribution channels",
+          "current retail presence",
+          "store footprint",
+          "physical stores",
+          "how does Sunshine Apparel sell today"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'distribution channels' as a framework pillar for the toy market entry without specifically referencing Sunshine Apparel's existing network — asking about future distribution is G adjacent concept, not about the client's current store network",
+        "Analyst lists 'retail' as one of many distribution channel options without probing whether Sunshine Apparel already has stores — F passing mention, not a dimensional touch on the client's existing retail footprint"
+      ],
+      "info": "Sunshine Apparel has a network of 200 retail stores and outlets nationwide"
+    },
+    "item_3": {
+      "item_id": "item_3",
+      "trigger": "Analyst asks about or includes the client's revenue growth target or financial goal for the expansion in their framework",
+      "core_dimensional_concept": "client revenue growth target from expansion",
+      "release_conditions": {
+        "structural_position": [
+          "explicit clarifying question about the client's financial objectives or revenue target from toy entry",
+          "framework pillar or sub-bullet referencing success metrics or financial goals",
+          "hypothesis-driven assumption about required revenue from the new segment",
+          "enumeration item referencing what financial success looks like for the client"
+        ],
+        "alternative_phrasings": [
+          "how much revenue does the client want to generate",
+          "what is the target size of the toy business",
+          "financial objectives for this entry",
+          "revenue goal",
+          "sales target"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'revenue growth' as a general market trend dimension (e.g. 'toy market is growing') — this is F passing mention about market not about the client's specific growth target",
+        "Analyst structures financial assessment pillar without specifically asking about the client's target — using 'expected revenue' as a generic pillar label is G adjacent, not a direct inquiry into the client's stated objective"
+      ],
+      "info": "The company would like to increase their sales by 10% through this expansion in a reasonable timeframe"
+    },
+    "item_4": {
+      "item_id": "item_4",
+      "trigger": "Analyst asks about or includes the U.S. toy market trend, recent market growth, or pandemic-driven market dynamics in their framework",
+      "core_dimensional_concept": "U.S. toy market 2020 growth trend",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet referencing toy market growth rate or recent market trends",
+          "explicit clarifying question about how the U.S. toy market has performed recently",
+          "hypothesis-driven assumption about pandemic impact on toy demand",
+          "enumeration item referencing market size trajectory or 2020 market dynamics"
+        ],
+        "alternative_phrasings": [
+          "toy market growth",
+          "market size trend",
+          "pandemic impact on toys",
+          "how is the toy market doing",
+          "market dynamics"
+        ]
+      },
+      "disqualifying": [
+        "Analyst simply says 'we should look at market size' as a pillar without probing market trend or recent growth dynamics — F passing mention, market size as a category label does not constitute a dimensional touch on the 2020 pandemic growth trend",
+        "Analyst discusses general competitive landscape without referencing market growth trajectory — G adjacent dimension; competition is a separate concept from market trend"
+      ],
+      "info": "The U.S. toy market jumped in 2020 as families took toys to help keep their children engaged, active, and delighted in times of hardship (see Appendix 1)"
+    },
+    "item_5": {
+      "item_id": "item_5",
+      "trigger": "Analyst asks about or includes the competitive landscape concentration, competitive fragmentation, or market structure in their framework",
+      "core_dimensional_concept": "U.S. toy market competitive fragmentation",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet referencing competitive landscape, market concentration, or key players",
+          "explicit clarifying question about how concentrated or fragmented the toy market is",
+          "hypothesis-driven assumption about ease of entry based on competitive structure",
+          "enumeration item referencing competitor market share or number of players"
+        ],
+        "alternative_phrasings": [
+          "who are the key players",
+          "how fragmented is the market",
+          "market concentration",
+          "competitive intensity",
+          "dominant players"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'competition' broadly as one pillar label in the framework without asking about fragmentation or market share distribution — F passing mention; listing 'competition' as a bucket does not constitute dimensional touch on market fragmentation",
+        "Analyst asks about pricing dynamics or margins (which relates to profitability) rather than the structural fragmentation of competitors — G adjacent concept, different dimension"
+      ],
+      "info": "The competitive landscape is quite fragmented (see Appendix 2)"
+    }
+  },
+  "structure_3_case_questions": {
+    "Q1": {
+      "q_id": "Q1",
+      "type": "framework",
+      "question_text": "What factors would you consider to assess the toy market entry opportunity for Sunshine Apparel?",
+      "information_to_share_upfront": null,
+      "information_upon_request": "See structure_2 items 1-5. Release only upon dimensional touch per A-G; not by mere keyword presence.",
+      "state_machine": {
+        "next_question": "Q2",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable framework answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q2": {
+      "q_id": "Q2",
+      "type": "quantitative",
+      "question_text": "Sunshine Apparel is entertaining the idea of entering the doll market. What is the break-even market share that Sunshine Apparel should capture within 1 year if they decide to start offering dolls?",
+      "information_to_share_upfront": [
+        "Sunshine Apparel plans to sell their dolls at $30 per unit"
+      ],
+      "information_upon_request": [
+        {
+          "item_id": "Q2_item_1",
+          "trigger": "Analyst asks about the investment cost, capex, or total investment needed for entering the doll market",
+          "core_dimensional_concept": "doll production investment amount",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question about how much investment or capex is required",
+              "sub-bullet under break-even calculation referencing investment or fixed cost",
+              "hypothesis-driven assumption about the investment size",
+              "framework pillar referencing required capex for the doll business"
+            ],
+            "alternative_phrasings": [
+              "how much are we investing",
+              "capex for doll production",
+              "fixed investment",
+              "upfront cost",
+              "total investment needed"
+            ]
+          },
+          "disqualifying": [
+            "Analyst mentions 'variable costs' or 'cost per unit' without specifically asking about the total investment amount — adjacent financial dimension per G; unit economics is separate from total investment",
+            "Analyst asks about 'operating costs' broadly — F passing mention if not specifically probing the upfront production investment"
+          ],
+          "info": "The client plans to invest $4.5M in the production of dolls"
+        },
+        {
+          "item_id": "Q2_item_2",
+          "trigger": "Analyst asks about or probes the target profit margin, contribution margin, or competitor margin data for the doll/toy business",
+          "core_dimensional_concept": "toy industry profit margin benchmark",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question about what margin to assume or what competitors earn",
+              "sub-bullet referencing contribution margin per unit in break-even structure",
+              "hypothesis-driven assumption about the margin (e.g. 'I'll assume X% margin')",
+              "enumeration item referencing margin or profitability benchmark"
+            ],
+            "alternative_phrasings": [
+              "what margin should I use",
+              "industry margin",
+              "profit per doll",
+              "contribution margin",
+              "EBT margin for toy players"
+            ]
+          },
+          "disqualifying": [
+            "Analyst already states a specific margin assumption without asking (e.g. 'I'll assume 10% margin') — if analyst provides a self-stated assumption, this qualifies as E hypothesis-driven assumption and item should be released; only disqualify if analyst uses 'margin' in a passing way (F pattern) like 'toys have thin margins in general' without probing specific data",
+            "Analyst asks about 'revenue' or 'market size' only — G adjacent; market size and margins are separate dimensions"
+          ],
+          "info": "The team doesn't have estimated margins but put together other players' data - Appendix 3 [the candidate can suggest target margin based on this data]"
+        },
+        {
+          "item_id": "Q2_item_3",
+          "trigger": "Analyst asks about the size of the doll market segment or the total addressable market for dolls",
+          "core_dimensional_concept": "doll segment market size",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question about what is the size of the doll segment",
+              "sub-bullet under break-even calculation referencing total addressable market or segment size",
+              "hypothesis-driven assumption about the doll market size",
+              "enumeration item asking for data on dolls as a category"
+            ],
+            "alternative_phrasings": [
+              "how big is the doll market",
+              "TAM for dolls",
+              "size of the doll segment",
+              "doll market share data",
+              "what percentage of toy market are dolls"
+            ]
+          },
+          "disqualifying": [
+            "Analyst asks about the total toy market size without specifically referencing the doll segment — G adjacent dimension; total market ≠ doll segment specifically",
+            "Analyst mentions 'market share' as a concept in the break-even formula without asking for the doll segment data — F passing mention if 'market share' is used as a formula placeholder, not as a request for the doll-specific market size data"
+          ],
+          "info": "The market size data for the doll segment is in Appendix 1"
+        }
+      ],
+      "appendix": {
+        "appendix_1": {
+          "title": "U.S. traditional toy market size by segment",
+          "release_rule": "Share upfront with analyst at the start of Q2 when doll segment data is requested; Appendix 1 contains toy market segmentation by year (2018-2020)",
+          "table": {
+            "market_total_USD_B": {
+              "2018": 29,
+              "2019": 28,
+              "2020": 33
+            },
+            "dolls_segment_pct": {
+              "2018": "15%",
+              "2019": "15%",
+              "2020": "14%"
+            },
+            "dolls_segment_USD_B_2020": 4.6
+          }
+        },
+        "appendix_3": {
+          "title": "Profit margin of top-5 toy manufacturers in the U.S.",
+          "release_rule": "Share when analyst requests margin/profitability data for toy players (Q2_item_2 triggered)",
+          "table": {
+            "note": "EBT (Earnings Before Taxes) margin, % (2020)",
+            "Hasbro": "14%",
+            "Mattel": "12%",
+            "Lego": "N/A",
+            "Spin_Master": "-1%",
+            "Funko": "2%"
+          }
+        }
+      },
+      "state_machine": {
+        "next_question": "Q3",
+        "skip_logic": false,
+        "max_attempts": 2,
+        "scoring_on_transition": {
+          "attempt_1_correct": "Full score",
+          "attempt_2_correct": "0 score per core_principles",
+          "both_attempts_wrong": "0 score; interviewer provides correct answer before next question"
+        },
+        "transition_condition": "Analyst provides break-even market share answer (1st or 2nd attempt)"
+      }
+    },
+    "Q3": {
+      "q_id": "Q3",
+      "type": "qualitative",
+      "question_text": "What distribution channels can Sunshine Apparel consider if they decide to start offering dolls?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q4",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q4": {
+      "q_id": "Q4",
+      "type": "qualitative",
+      "question_text": "The client is unsure if they should prioritize DTC (direct-to-consumer) or mass market retailers for their potential doll business. What are your thoughts?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q5",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q5": {
+      "q_id": "Q5",
+      "type": "qualitative",
+      "question_text": "During the client's meeting, the team manager asks you to summarize your recommendations.",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": null,
+        "skip_logic": false,
+        "transition_condition": "Case ends after Q5"
+      }
+    }
+  },
+  "structure_4_ground_truth": {
+    "Q1_ground_truth": {
+      "type": "framework",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_US_traditional_toy_market": {
+          "keypoints": [
+            "Size and growth rate by toy segment",
+            "Competitive landscape (e.g. top toy producers, positioning, share)",
+            "Average margins"
+          ],
+          "subtotal": 3
+        },
+        "pillar_2_sunshine_apparel": {
+          "keypoints": [
+            "Target children groups (e.g. age, high-end/low-end)",
+            "Planned product segments (puzzles, dolls, building sets, etc.)",
+            "Marketing strategy"
+          ],
+          "subtotal": 3
+        },
+        "pillar_3_financial_assessment": {
+          "keypoints": [
+            "Expected profitability - Forecasted revenue and market share",
+            "Expected profitability - Estimated costs",
+            "Potential synergies",
+            "Required capex"
+          ],
+          "subtotal": 4
+        },
+        "pillar_4_risk_assessment": {
+          "keypoints": [
+            "Market specific",
+            "Financial",
+            "Operational"
+          ],
+          "subtotal": 3
+        }
+      },
+      "total_keypoints": 13,
+      "minimum_expected": "At least 2 pillars with substantive keypoints covered (e.g. market assessment + financial assessment); minimum 5 keypoints covered",
+      "outstanding_threshold": "All 4 pillars covered with at least 2 keypoints each; total covered ≥ 10 keypoints"
+    },
+    "Q2_ground_truth": {
+      "type": "quantitative",
+      "quantitative_part": {
+        "correct_final_answer": "2% break-even market share within 1 year (assuming 5% contribution margin)",
+        "accepted_values": [
+          0.02
+        ],
+        "tolerance_pct": 0.0,
+        "zero_tolerance": true,
+        "scoring_method": "Binary: correct number = full credit; incorrect = zero credit",
+        "calculation_steps": {
+          "step_1_contribution_margin_per_doll": {
+            "formula": "Selling price × contribution margin % = $30 × 5% (canonical estimate from Appendix 3)",
+            "result": "$1.5 per doll"
+          },
+          "step_2_break_even_volume": {
+            "formula": "Total investment ÷ contribution margin per doll = $4.5M ÷ $1.5",
+            "result": "3 million units"
+          },
+          "step_3_break_even_sales": {
+            "formula": "Break-even volume × selling price = 3M units × $30",
+            "result": "$90M"
+          },
+          "step_4_doll_segment_size": {
+            "formula": "Total toy market × doll segment share = $33B × 14%",
+            "result": "$4.6B"
+          },
+          "step_5_break_even_market_share": {
+            "formula": "Break-even sales ÷ doll segment size = $90M ÷ $4.6B",
+            "result": "2%"
+          }
+        }
+      },
+      "qualitative_part": {
+        "scoring_note": "Qualitative portion of Q2 is scored as 100% total, split into two tiers. Within each tier, use 3-level scoring per",
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "tier_1_basic": {
+          "weight_of_Q2_qualitative_total": "50%",
+          "keypoints": [
+            "Sunshine Apparel should capture 2% of the doll market in order to break-even within 1 year"
+          ],
+          "note": "Expected from every candidate. Single point worth 50% of qualitative score."
+        },
+        "tier_2_advanced": {
+          "weight_of_Q2_qualitative_total": "50%",
+          "points_available": 3,
+          "weight_per_point": "~16.7% of qualitative total",
+          "keypoints": [
+            "$90M in sales sounds a bit too ambitious for a newcomer, although Sunshine Apparel likely enjoys deep marketing pockets and established distribution infrastructure they can leverage to jump-start and grow their doll business",
+            "Margins vary a lot across major toy players and are likely highly dependent on the economies of scale as top-2 players enjoy healthy double-digit profitability whereas smaller toy manufacturers are in low single-digit numbers or even in the red zone. Break-even 2% market share might not be sufficient scale to ensure healthy economics, and thus our margin estimate might be exaggerated",
+            "Given this is a crowded space, Sunshine Apparel might need aggressive initial marketing campaign to win market share which will add to their investment and thus increase the break-even point"
+          ],
+          "note": "Not expected from every candidate. Each advanced point adds ~16.7% to qualitative score."
+        },
+        "minimum_expected": "Correct numerical answer + Tier 1 basic contextualization (covered)",
+        "outstanding_threshold": "Correct numerical answer + Tier 1 covered + at least 2 Tier 2 advanced comments covered"
+      }
+    },
+    "Q3_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_offline_channels": {
+          "sub_pillar_retail_chains": {
+            "keypoints": [
+              "Specialty toy retail chains (e.g. Toys R Us that went bankrupt)",
+              "Mass market retailers (e.g. Walmart, Target)",
+              "Own branded stores of Sunshine Apparel",
+              "Other retailers (e.g. pharmacies like CVS, family fast food chains like McDonalds, electronic stores like BestBuy)"
+            ],
+            "subtotal": 4
+          },
+          "sub_pillar_individual_operators": {
+            "keypoints": [
+              "Wholesale distributors",
+              "Mom-and-pop toy stores",
+              "Vending toy machines"
+            ],
+            "subtotal": 3
+          },
+          "subtotal": 7,
+          "keypoints": [
+            "Specialty toy retail chains (e.g. Toys R Us that went bankrupt)",
+            "Mass market retailers (e.g. Walmart, Target)",
+            "Own branded stores of Sunshine Apparel",
+            "Other retailers (e.g. pharmacies like CVS, family fast food chains like McDonalds, electronic stores like BestBuy)",
+            "Wholesale distributors",
+            "Mom-and-pop toy stores",
+            "Vending toy machines"
+          ]
+        },
+        "pillar_2_online_channels": {
+          "sub_pillar_DTC": {
+            "keypoints": [
+              "Own online store of Sunshine Apparel",
+              "Subscription boxes of Sunshine Apparel"
+            ],
+            "subtotal": 2
+          },
+          "standalone_online_keypoints": {
+            "keypoints": [
+              "Online marketplaces (e.g. Amazon)",
+              "Online partners (e.g. toy bloggers, social media influencers selling toys)"
+            ],
+            "subtotal": 2
+          },
+          "subtotal": 4,
+          "keypoints": [
+            "Own online store of Sunshine Apparel",
+            "Subscription boxes of Sunshine Apparel",
+            "Online marketplaces (e.g. Amazon)",
+            "Online partners (e.g. toy bloggers, social media influencers selling toys)"
+          ]
+        }
+      },
+      "total_keypoints": 11,
+      "minimum_expected": "At least 3 distinct distribution channels covering both offline and online dimensions; minimum 4 keypoints covered",
+      "outstanding_threshold": "Both offline and online pillars substantively covered; at least 7 keypoints total covered across both pillars"
+    },
+    "Q4_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_financial_factors": {
+          "sub_pillar_cost_factors": {
+            "keypoints": [
+              "Capex [DTC will require investment in online platform, delivery capabilities and marketing]",
+              "Opex [Retailers will charge a distribution commission]"
+            ],
+            "subtotal": 2
+          },
+          "sub_pillar_revenue_factors": {
+            "keypoints": [
+              "Access to customers [Retailers will provide immediate access to a decent share of customer base, also some customer groups don't buy toys online]",
+              "Geographical footprint [Retailers will provide large coverage]",
+              "Pricing flexibility [might be limited as retailers might have price restrictions in their stores]",
+              "Trends [e-commerce is a growing trend and DTC might help Sunshine Apparel capitalize on this trend]"
+            ],
+            "subtotal": 4
+          },
+          "subtotal": 6,
+          "keypoints": [
+            "Capex [DTC will require investment in online platform, delivery capabilities and marketing]",
+            "Opex [Retailers will charge a distribution commission]",
+            "Access to customers [Retailers will provide immediate access to a decent share of customer base, also some customer groups don't buy toys online]",
+            "Geographical footprint [Retailers will provide large coverage]",
+            "Pricing flexibility [might be limited as retailers might have price restrictions in their stores]",
+            "Trends [e-commerce is a growing trend and DTC might help Sunshine Apparel capitalize on this trend]"
+          ]
+        },
+        "pillar_2_strategic_criteria": {
+          "keypoints": [
+            "New capabilities [DTC might enable the client to develop new core skills that they can leverage in other verticals of their business]",
+            "Better customer experience [DTC will allow the client to control end-to-end customer journey]",
+            "Data on customer behavior [DTC might offer arguably more in-depth data on customers purchasing behavior by tracking their online activities in the e-store]",
+            "Increased differentiation of marketing (e.g. direct email access to customers)",
+            "Brand considerations [DTC might strengthen Sunshine Apparel's brand]"
+          ],
+          "subtotal": 5
+        },
+        "pillar_3_potential_risks": {
+          "sub_pillar_financial_risks": {
+            "keypoints": [
+              "Lack of funding",
+              "Undevestimated costs",
+              "Exaggerated revenue assumptions [e.g. product-market mismatch in case of lack of differentiation of Sunshine Apparel's dolls]",
+              "Increased dependency on some retailers that might account for a material portion of sales (e.g. Toys R Us bankruptcy led to drop in sales for a lot of toy brands)"
+            ],
+            "subtotal": 4
+          },
+          "sub_pillar_operational_risks": {
+            "keypoints": [
+              "Increase in operational complexity",
+              "Long implementation period",
+              "Potential disruption of processes during the implementation",
+              "Lack of expertise in DTC"
+            ],
+            "subtotal": 4
+          },
+          "subtotal": 8,
+          "keypoints": [
+            "Lack of funding",
+            "Undevestimated costs",
+            "Exaggerated revenue assumptions [e.g. product-market mismatch in case of lack of differentiation of Sunshine Apparel's dolls]",
+            "Increased dependency on some retailers that might account for a material portion of sales (e.g. Toys R Us bankruptcy led to drop in sales for a lot of toy brands)",
+            "Increase in operational complexity",
+            "Long implementation period",
+            "Potential disruption of processes during the implementation",
+            "Lack of expertise in DTC"
+          ]
+        }
+      },
+      "total_keypoints": 19,
+      "minimum_expected": "At least 2 pillars covered (e.g. financial + strategic or financial + risks); minimum 5 keypoints covered",
+      "outstanding_threshold": "All 3 pillars substantively covered including both DTC and retailer perspectives in financial factors; at least 12 keypoints covered"
+    },
+    "Q5_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_recommendation": {
+          "keypoints": [
+            "We would recommend Sunshine Apparel to proceed with its entry strategy [into the U.S. toy market]"
+          ],
+          "subtotal": 1
+        },
+        "pillar_2_reasoning": {
+          "keypoints": [
+            "The U.S. toy market is $33B and sky-rocketed in 2020 due to the increase in home childcare during the pandemic",
+            "The competitive landscape seems favorable as it's crowded and there is no dominant player which offers a fair opportunity to win a market share",
+            "Sunshine Apparel might capture some synergies by entering the toy space"
+          ],
+          "subtotal": 3
+        },
+        "pillar_3_risks": {
+          "keypoints": [
+            "It might take time to reach a break-even point",
+            "There might be limited appetite for client's toys especially if they aren't too differentiated",
+            "This product expansion might increase operational complexity of Sunshine Apparel's business considerably"
+          ],
+          "subtotal": 3
+        },
+        "pillar_4_next_steps": {
+          "keypoints": [
+            "Designing a go-to-market strategy",
+            "Developing a risk mitigation plan",
+            "Assess the competitive landscape a bit in more detail"
+          ],
+          "subtotal": 3
+        }
+      },
+      "total_keypoints": 10,
+      "minimum_expected": "Recommendation pillar covered + at least 1 reasoning point covered; minimum 3 keypoints total",
+      "outstanding_threshold": "All 4 pillars covered; at least 2 reasoning points, at least 1 risk, at least 1 next step covered; minimum 7 keypoints total"
+    }
+  },
+  "state_machine_global": {
+    "case_type": "interviewer_driven",
+    "skip_logic": false,
+    "mandatory_sequence": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5"
+    ],
+    "rules": [
+      "Q1 cannot be skipped under any circumstances",
+      "Linear progression Q1 → Q2 → Q3 → Q4 → Q5, no skipping",
+      "A question may not be advanced until the current question receives a scoreable answer (1st or 2nd attempt)",
+      "If analyst pre-covers a later question's keypoints in an earlier answer, record as pre-coverage but still ask the later question in sequence",
+      "No question may be skipped even if pre-covered"
+    ]
+  },
+  "scoring_summary": {
+    "Q1": {
+      "type": "framework",
+      "total_keypoints": 13,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q2": {
+      "type": "quantitative",
+      "part_1_quantitative": {
+        "correct_answer": "2% break-even market share (canonical: 5% margin assumption); accept other margin assumptions if calculation logic is correct",
+        "zero_tolerance": true,
+        "scoring": "Binary: Full credit if correct; zero credit if incorrect"
+      },
+      "part_2_qualitative": {
+        "total_keypoints": 4,
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "human_review_priority": "false-partial > false-not-covered > covered",
+        "tier_1_basic": {
+          "keypoints": 1,
+          "weight": "50% of qualitative score"
+        },
+        "tier_2_advanced": {
+          "keypoints": 3,
+          "weight_per_point": "~16.7% of qualitative score",
+          "weight_total": "50% of qualitative score"
+        }
+      }
+    },
+    "Q3": {
+      "type": "qualitative",
+      "total_keypoints": 11,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q4": {
+      "type": "qualitative",
+      "total_keypoints": 19,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q5": {
+      "type": "qualitative",
+      "total_keypoints": 10,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    }
+  }
+}

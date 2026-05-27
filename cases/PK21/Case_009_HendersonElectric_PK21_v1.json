@@ -1,0 +1,674 @@
+{
+  "case_id": "009",
+  "version": "v1",
+  "source": {
+    "title": "Henderson Electric",
+    "inspired_by": "Bain & Company",
+    "year": "2021",
+    "author": "Peter K.",
+    "reference": "Peter-K.org, Case #9",
+    "casebook_abbr": "PK21"
+  },
+  "case_type": "interviewer_driven",
+  "case_type_origin": "candidate_led",
+  "annotation_mode": "CL_to_IL_override",
+  "case_arch": {
+    "primary": "Revenue Growth",
+    "tags": [
+      "Revenue Growth",
+      "Growth Strategy"
+    ]
+  },
+  "difficulty": "Medium",
+  "industry": "Industrial Software / HVAC Technology",
+  "topic": "Revenue growth strategy for IoT-enabled industrial air conditioning monitoring software",
+  "expected_duration_minutes": 20,
+  "opening_prompt": "Hi, I'd like to solve some consulting cases with you. Pls be a good interviewee to have a potential test in consulting cases. For the case problem-solving, pls do not assume any numbers or assumptions before my confirmation. I will give you the context upon request. I need you to answer the following questions for the client. Before you start, feel free to ask me 2-3 clarifying questions about the client.\n\nQ1. How would you approach analysing the low sales of the client's software and developing recommendations?\nQ2. Any ideas on how to help Henderson Electric increase the sales of their monitoring software?\nQ3. What is the break-even number of clients for this software?\nQ4. Out of 16k large manufacturing facilities in the U.S. only 4k have adopted the software to monitor and manage their air conditioning units. Why don't the rest 12k do the same?\nQ5. The client has just entered the room and would like to know how the project is going and what your current recommendations are.\n\nHere is the basic context for the client:\nHenderson Electric offers industrial air conditioning units, maintenance services and Internet-of-Things (IoT) enabled software to monitor the air conditioning system functionality in real-time. The overall sales are $1B, however the software revenue remains low. The CEO has hired your team to design a revenue growth plan to boost sales of their IoT-enabled software.",
+  "structure_1_client_basic_context": {
+    "company": "Henderson Electric",
+    "type": "Industrial air conditioning and IoT software company",
+    "situation": "Henderson Electric offers industrial air conditioning units, maintenance services and Internet-of-Things (IoT) enabled software to monitor the air conditioning system functionality in real-time. The overall sales are $1B, however the software revenue remains low.",
+    "action": "The CEO has hired your team to design a revenue growth plan to boost sales of their IoT-enabled software.",
+    "ask": "Design a revenue growth plan to boost sales of their IoT-enabled software."
+  },
+  "structure_2_information_upon_request": {
+    "item_1": {
+      "item_id": "item_1",
+      "trigger": "Analyst asks about or includes 'client customer types' or 'target industries/segments' in framework or clarifying questions",
+      "core_dimensional_concept": "client customer segments and industry verticals",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar (e.g., 'Customer segments' / 'Target market')",
+          "sub-bullet under market or customer analysis",
+          "explicit clarifying question about who the clients are or which industries they serve"
+        ],
+        "alternative_phrasings": [
+          "who are the clients",
+          "target industries",
+          "customer base",
+          "which sectors",
+          "end markets"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'market size' or 'total addressable market' without specifying customer types or industry verticals — market sizing is adjacent but not the same dimension (G: neighboring dimension modifier)",
+        "Analyst refers to 'customer satisfaction' as a passing modifier in a risk pillar without probing customer segments (F: passing mention)"
+      ],
+      "info": "The client serves a wide variety of storage facilities and factories — food processing, medicine production, computer chip manufacturing, etc."
+    },
+    "item_2": {
+      "item_id": "item_2",
+      "trigger": "Analyst asks about or includes 'product portfolio' or 'what other products/services Henderson Electric offers' in framework or questions",
+      "core_dimensional_concept": "Henderson Electric product and service portfolio beyond software",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar (e.g., 'Henderson Electric overview' / 'Product portfolio')",
+          "sub-bullet under company or business model analysis",
+          "explicit clarifying question about what else the company sells or offers"
+        ],
+        "alternative_phrasings": [
+          "product range",
+          "service offerings",
+          "what else does the company sell",
+          "other business lines",
+          "revenue streams"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'pricing strategy' for the software only without asking about the broader product portfolio (G: neighboring dimension — software pricing is not the same as full product portfolio)",
+        "Analyst uses 'cooling equipment' in passing as an industry descriptor without probing what Henderson Electric specifically sells (F: passing mention)"
+      ],
+      "info": "The client offers all kind of air conditioning units and cooling equipment."
+    },
+    "item_3": {
+      "item_id": "item_3",
+      "trigger": "Analyst asks about or includes 'software value proposition' or 'what the software does / key features' in framework or clarifying questions",
+      "core_dimensional_concept": "software functionality and value proposition",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar (e.g., 'Software features' / 'Value proposition' / 'Product analysis')",
+          "sub-bullet under competitive advantage or customer value analysis",
+          "explicit clarifying question about what the software does or how it helps customers"
+        ],
+        "alternative_phrasings": [
+          "what does the software do",
+          "software capabilities",
+          "key features",
+          "how does the software help customers",
+          "use case"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'software revenue' or 'software sales' as a topic without probing what the software actually does or its features (G: neighboring dimension — revenue topic is not the same as functionality)",
+        "Analyst uses 'IoT' as a label without asking about specific alerts or maintenance functionality (F: passing mention of technology category without probing function)"
+      ],
+      "info": "The software alerts customers on system failure, unusual behavior, and maintenance cycle to reduce repair costs."
+    },
+    "item_4": {
+      "item_id": "item_4",
+      "trigger": "Analyst asks about or includes 'software compatibility' or 'whether the software works with other brands' equipment' in framework or questions",
+      "core_dimensional_concept": "software cross-brand compatibility and versatility",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet (e.g., 'Competitive advantage' / 'Product differentiation')",
+          "explicit question about compatibility with third-party or competitor equipment",
+          "sub-bullet under value proposition or market opportunity"
+        ],
+        "alternative_phrasings": [
+          "works with other manufacturers",
+          "compatible with other brands",
+          "interoperability",
+          "third-party equipment",
+          "agnostic platform"
+        ]
+      },
+      "disqualifying": [
+        "Analyst asks about 'competitors' in the market generally without specifically asking whether the software works with their equipment (G: competitive landscape is adjacent but not software compatibility)",
+        "Analyst mentions 'differentiation' as a pillar name without asking about cross-brand functionality (F: passing reference to differentiation concept)"
+      ],
+      "info": "The software is versatile and can work on equipment of other producers too."
+    },
+    "item_5": {
+      "item_id": "item_5",
+      "trigger": "Analyst asks about or includes 'revenue goals' or 'financial targets for software' in framework or clarifying questions",
+      "core_dimensional_concept": "software revenue targets and financial goals",
+      "release_conditions": {
+        "structural_position": [
+          "explicit clarifying question about revenue target or growth goal for the software",
+          "framework pillar (e.g., 'Financial objectives' / 'Revenue goals')",
+          "sub-bullet under financial analysis"
+        ],
+        "alternative_phrasings": [
+          "revenue target",
+          "growth target",
+          "financial goal",
+          "what is the desired revenue level",
+          "what is success"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'overall sales are $1B' from the prompt as a framework anchor without specifically asking about software revenue targets (F: passing reference to known upfront data, not a probe for undisclosed targets)",
+        "Analyst discusses 'profitability' as a general pillar without specifically asking what the target revenue or growth goal is (G: neighboring financial dimension)"
+      ],
+      "info": "No revenue goals provided."
+    }
+  },
+  "structure_3_case_questions": {
+    "Q1": {
+      "q_id": "Q1",
+      "type": "framework",
+      "question_text": "How would you approach analysing the low sales of the client's software and developing recommendations?",
+      "information_to_share_upfront": null,
+      "information_upon_request": "See structure_2 items 1-5. Release only items per semantic touch judgment; not by mere keyword presence.",
+      "state_machine": {
+        "next_question": "Q2",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable framework answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q2": {
+      "q_id": "Q2",
+      "type": "qualitative",
+      "question_text": "Any ideas on how to help Henderson Electric increase the sales of their monitoring software?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q3",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q3": {
+      "q_id": "Q3",
+      "type": "quantitative",
+      "question_text": "What is the break-even number of clients for this software?",
+      "information_to_share_upfront": [
+        "Appendix 1 — Cost structure for Henderson Electric's monitoring software"
+      ],
+      "information_upon_request": [
+        {
+          "item_id": "Q3_item_1",
+          "trigger": "Analyst asks about or includes 'software subscription price' or 'revenue per client' in their calculation setup",
+          "core_dimensional_concept": "software subscription price per client",
+          "release_conditions": {
+            "structural_position": [
+              "explicit clarifying question about price or revenue per client",
+              "calculation setup step asking for revenue-side data",
+              "sub-bullet under revenue analysis for break-even"
+            ],
+            "alternative_phrasings": [
+              "how much does the software cost",
+              "revenue per client",
+              "annual contract value",
+              "price per subscription",
+              "what is the price"
+            ]
+          },
+          "disqualifying": [
+            "Analyst mentions 'pricing strategy' as a framework pillar in Q1 or Q2 without specifically asking for the actual price figure needed for Q3 calculation (G: pricing strategy concept is adjacent to but not the same as asking for the specific price datum)"
+          ],
+          "info": "Average subscription price for the software is $28k per year."
+        },
+        {
+          "item_id": "Q3_item_2",
+          "trigger": "Analyst asks about or includes 'pricing model type' or 'whether subscription or one-time payment' in their calculation or clarifying questions",
+          "core_dimensional_concept": "software pricing model type",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question about payment structure or business model",
+              "calculation setup asking whether recurring or one-time revenue",
+              "sub-bullet under revenue model analysis"
+            ],
+            "alternative_phrasings": [
+              "subscription or one-time",
+              "recurring revenue",
+              "SaaS model",
+              "licensing model",
+              "payment structure"
+            ]
+          },
+          "disqualifying": [
+            "Analyst lists 'subscription' as one of several possible ideas in Q2 brainstorm without probing the current model (F: passing mention in brainstorm context)"
+          ],
+          "info": "Currently Henderson Electric offers only subscription option."
+        },
+        {
+          "item_id": "Q3_item_3",
+          "trigger": "Analyst asks about or includes 'current number of clients' or 'current client base size' in their calculation",
+          "core_dimensional_concept": "current active client count",
+          "release_conditions": {
+            "structural_position": [
+              "explicit clarifying question about current client base",
+              "calculation step asking for current revenue or current client count",
+              "sub-bullet under current state analysis for break-even"
+            ],
+            "alternative_phrasings": [
+              "how many clients currently",
+              "current subscriber count",
+              "existing customers",
+              "how many accounts",
+              "current base"
+            ]
+          },
+          "disqualifying": [
+            "Analyst mentions '4k clients' from Q4 context (large manufacturing adopters) without specifically asking about current software subscribers — these are different data points (G: Q4 adoption figure is adjacent but not current subscriber count for break-even)"
+          ],
+          "info": "Current number of clients is 500."
+        }
+      ],
+      "appendix": {
+        "appendix_1": {
+          "title": "Cost structure for Henderson Electric's monitoring software, 2020",
+          "release_rule": "Share upfront with analyst at the start of Q3",
+          "table": {
+            "fixed_costs": {
+              "research_and_development": "$8M",
+              "sales_and_marketing": "$6M",
+              "overhead": "$2M"
+            },
+            "variable_costs": {
+              "software_customization": "$2.5M",
+              "helpdesk_support": "$1.5M"
+            }
+          }
+        }
+      },
+      "state_machine": {
+        "next_question": "Q4",
+        "skip_logic": false,
+        "max_attempts": 2,
+        "scoring_on_transition": {
+          "attempt_1_correct": "Full score",
+          "attempt_2_correct": "0 score per core_principles",
+          "both_attempts_wrong": "0 score; interviewer provides correct answer before next question"
+        },
+        "transition_condition": "Analyst provides correct numerical answer (800 clients), or 2nd attempt completed"
+      }
+    },
+    "Q4": {
+      "q_id": "Q4",
+      "type": "qualitative",
+      "question_text": "Out of 16k large manufacturing facilities in the U.S. only 4k have adopted the software to monitor and manage their air conditioning units. Why don't the rest 12k do the same?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q5",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q5": {
+      "q_id": "Q5",
+      "type": "qualitative",
+      "question_text": "The client has just entered the room and would like to know how the project is going and what your current recommendations are.",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": null,
+        "skip_logic": false,
+        "transition_condition": "Case ends after Q5"
+      }
+    }
+  },
+  "structure_4_ground_truth": {
+    "Q1_ground_truth": {
+      "type": "framework",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_software_for_industrial_hvac": {
+          "keypoints": [
+            "Growth rate of the segment",
+            "Major software providers (incl. market share, positioning)",
+            "Recent trends in adoption of this software type"
+          ],
+          "subtotal": 3
+        },
+        "pillar_2_henderson_electric": {
+          "keypoints": [
+            "Differentiating points of IoT-enabled software",
+            "Target client groups and their key purchasing decision-making factors",
+            "Salesforce and its efficiency"
+          ],
+          "subtotal": 3
+        },
+        "pillar_3_analysis_of_software_sales": {
+          "keypoints": [
+            "Pricing model (e.g. one-time payment, subscription)",
+            "Number of clients and growth rate",
+            "Revenue structure by type of clients"
+          ],
+          "subtotal": 3
+        },
+        "pillar_4_revenue_growth_strategies": {
+          "keypoints": [
+            "Marketing strategy",
+            "Pricing strategy",
+            "Distribution channels",
+            "Value proposition"
+          ],
+          "subtotal": 4
+        }
+      },
+      "total_keypoints": 13,
+      "minimum_expected": "Cover at least 2 pillars with some depth; include both diagnostic (understanding the problem) and solution (revenue growth strategies) dimensions",
+      "outstanding_threshold": "Cover all 4 pillars with specific sub-points; distinguish between company-level analysis and market-level analysis; include differentiated revenue growth levers"
+    },
+    "Q2_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_upgrade_marketing_strategy": {
+          "keypoints": [
+            "Typically, the touch points (e.g. events, printed media, ads) the prospects have with the company increase the chance of closing a contract",
+            "Organize more marketing events for qualified prospects (e.g. parties, industry events, invite-only dinners)",
+            "Publish more analytical pieces/reports on the value of this type of software (to build credibility and attract potential clients)",
+            "Invest in marketing campaigns and promotions"
+          ],
+          "subtotal": 4
+        },
+        "pillar_2_change_pricing": {
+          "keypoints": [
+            "The price sensitivity of different stakeholders (e.g. CIO, CFO) might vary, so the client should educate prospects on created value to justify pricing and be flexible to accommodate different perspectives on prices",
+            "Adjust pricing levels to match WTP (willingness-to-pay)",
+            "Bundle software with equipment sales",
+            "Offer different monetization models — subscription, pricing tiers (e.g. Basic vs Advanced), free trials (if feasible), etc."
+          ],
+          "subtotal": 4
+        },
+        "pillar_3_increase_effectiveness_of_distribution": {
+          "salesforce": {
+            "keypoints": [
+              "Select stricter, train better, incentivize more generously, assess more often, ensure healthy culture",
+              "Identify major prospects' objections and design a playbook to address those"
+            ],
+            "subtotal": 2
+          },
+          "work_with_prospects": {
+            "keypoints": [
+              "Reactivate old qualified prospects",
+              "Ensure follow-ups and reminders",
+              "Use news and recent developments to reach out"
+            ],
+            "subtotal": 3
+          },
+          "keypoints": [
+            "Select stricter, train better, incentivize more generously, assess more often, ensure healthy culture",
+            "Identify major prospects' objections and design a playbook to address those",
+            "Reactivate old qualified prospects",
+            "Ensure follow-ups and reminders",
+            "Use news and recent developments to reach out"
+          ],
+          "subtotal": 5
+        },
+        "pillar_4_improve_and_protect_value_proposition": {
+          "features": {
+            "keypoints": [
+              "Customize features of the software where possible",
+              "Analyse the market and adjust sales pitch and actual sales pitch to match competitors' value propositions"
+            ],
+            "subtotal": 2
+          },
+          "pain_points": {
+            "keypoints": [
+              "Provide 24/7 helpdesk support",
+              "Reinforce IT teams to shorten bug fix cycles",
+              "Share shorter implementation plan"
+            ],
+            "subtotal": 3
+          },
+          "keypoints": [
+            "Customize features of the software where possible",
+            "Analyse the market and adjust sales pitch and actual sales pitch to match competitors' value propositions",
+            "Provide 24/7 helpdesk support",
+            "Reinforce IT teams to shorten bug fix cycles",
+            "Share shorter implementation plan"
+          ],
+          "subtotal": 5
+        }
+      },
+      "total_keypoints": 18,
+      "minimum_expected": "At least 4 ideas across at least 2 pillars",
+      "outstanding_threshold": "7+ ideas across 3-4 pillars with specific contextualization"
+    },
+    "Q3_ground_truth": {
+      "type": "quantitative",
+      "quantitative_part": {
+        "correct_final_answer": "800 clients (Henderson Electric needs to add 300 more accounts to reach 800 clients and break-even on this software)",
+        "accepted_values": [
+          800
+        ],
+        "tolerance_pct": 0.0,
+        "zero_tolerance": true,
+        "scoring_method": "Binary: correct number = full credit; incorrect = zero credit",
+        "calculation_steps": {
+          "step_1_current_bottom_line": {
+            "formula": "500 clients × $28k − ($8M + $6M + $2M + $2.5M + $1.5M) = 500 × $28k − $20M",
+            "result": "$14M − $20M = −$6M (current loss)"
+          },
+          "step_2_variable_cost_per_unit": {
+            "formula": "($2.5M + $1.5M) ÷ 500 clients",
+            "result": "$4M ÷ 500 = $8k per client"
+          },
+          "step_3_contribution_margin": {
+            "formula": "$28k (price) − $8k (variable cost per client)",
+            "result": "$20k contribution margin per client"
+          },
+          "step_4_additional_clients_needed": {
+            "formula": "$6M (current loss) ÷ $20k (contribution margin)",
+            "result": "300 additional clients needed"
+          },
+          "step_5_total_break_even_clients": {
+            "formula": "500 (current) + 300 (additional needed)",
+            "result": "800 clients total to break even"
+          }
+        }
+      },
+      "qualitative_part": {
+        "scoring_note": "Qualitative portion of Q3 is scored as 100% total, split into two tiers. Within each tier, use 3-level scoring per",
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "tier_1_basic": {
+          "weight_of_Q3_qualitative_total": "50%",
+          "keypoints": [
+            "In order to break-even on its software Henderson Electric should have 800 active clients"
+          ],
+          "note": "Expected from every candidate. Correct contextualization of the numerical answer."
+        },
+        "tier_2_advanced": {
+          "weight_of_Q3_qualitative_total": "50%",
+          "points_available": 5,
+          "weight_per_point": "10% of qualitative total",
+          "keypoints": [
+            "300 additional clients seems like an aggressive goal and might not be realistic",
+            "Such a dramatic increase of 60% in the client base might take time and substantially increase marketing costs pushing break-even point up",
+            "A rapid market share expansion might trigger considerable competitive response making additional contracts even more challenging",
+            "The economics of software doesn't consider potential synergies — for example, software maintenance alarms might encourage factories to purchase maintenance services from Henderson Electric",
+            "Variable costs are a small portion of the total costs which makes sense as software businesses are usually high on IT engineer expenses (R&D) and marketing costs to educate clients re the software features"
+          ],
+          "note": "Not expected from every candidate. Each advanced point adds 12.5% to qualitative score."
+        },
+        "minimum_expected": "Correct numerical answer (800 clients) + Tier 1 basic contextualization (covered)",
+        "outstanding_threshold": "Correct numerical answer + Tier 1 covered + at least 2 Tier 2 advanced comments covered"
+      }
+    },
+    "Q4_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_financial_reasons": {
+          "cost_factors": {
+            "keypoints": [
+              "High price for software",
+              "High costs for follow-up software customization",
+              "Additional in-house IT resources needed to support software"
+            ],
+            "subtotal": 3
+          },
+          "investment_criteria": {
+            "keypoints": [
+              "Unclear ROI/payback/etc."
+            ],
+            "subtotal": 1
+          },
+          "keypoints": [
+            "High price for software",
+            "High costs for follow-up software customization",
+            "Additional in-house IT resources needed to support software",
+            "Unclear ROI/payback/etc."
+          ],
+          "subtotal": 4
+        },
+        "pillar_2_low_perceived_value": {
+          "keypoints": [
+            "Low level of incidents/repairs that software is designed to prevent",
+            "Efficient and budget-friendly in-house manual reporting",
+            "Low number of air conditioning units",
+            "Air conditioning units don't represent critical equipment [vs food storage where malfunctioning cooling system might lead to spoilage]"
+          ],
+          "subtotal": 4
+        },
+        "pillar_3_risks": {
+          "financial_risks": {
+            "keypoints": [
+              "The company is locked in contract and software prices might increase"
+            ],
+            "subtotal": 1
+          },
+          "operational_risks": {
+            "keypoints": [
+              "Long implementation period",
+              "Potential disruption to processes during the implementation"
+            ],
+            "subtotal": 2
+          },
+          "software_specific_risks": {
+            "keypoints": [
+              "Potential bugs and other flaws in the software",
+              "Lack of vendor's ability to customize and/or support software",
+              "Lack of usability (too complicated)",
+              "Questionable security (not hack-proof)"
+            ],
+            "subtotal": 4
+          },
+          "keypoints": [
+            "The company is locked in contract and software prices might increase",
+            "Long implementation period",
+            "Potential disruption to processes during the implementation",
+            "Potential bugs and other flaws in the software",
+            "Lack of vendor's ability to customize and/or support software",
+            "Lack of usability (too complicated)",
+            "Questionable security (not hack-proof)"
+          ],
+          "subtotal": 7
+        }
+      },
+      "total_keypoints": 15,
+      "minimum_expected": "Cover at least 2 of the 3 major categories (Financial / Perceived value / Risks) with at least 1 specific point each",
+      "outstanding_threshold": "Cover all 3 categories with at least 2-3 specific points each"
+    },
+    "Q5_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_recommendation": {
+          "keypoints": [
+            "It's pleasurable to work on this project and help you boost your software sales. Preliminarily we see a sizeable total addressable market of 16k large manufacturing enterprises and we have designed a detailed sales growth plan with a lot of initiatives, including reinforcing your salesforce"
+          ],
+          "subtotal": 1
+        },
+        "pillar_2_reasoning": {
+          "keypoints": [
+            "First, corporate sales are mostly driven by salesforce; so high-quality salespeople are the key success factor to boost sales",
+            "Secondly, given long sales cycle and the fact that 12k big-scale factories don't use this software, you might need far more salespeople to digest so many potential leads",
+            "Thirdly, decent market share of 10-15% (500/4k) suggests your salesforce is qualified"
+          ],
+          "subtotal": 3
+        },
+        "pillar_3_risks": {
+          "keypoints": [
+            "Explore risks and look into potential lack of talent to staff your salesforce",
+            "Disruption to the established culture by ballooning the salesforce's size",
+            "Decrease in quality of new salespeople if we soften selection criteria to accelerate recruitment"
+          ],
+          "subtotal": 3
+        },
+        "pillar_4_next_steps": {
+          "keypoints": [
+            "Conduct a holistic assessment of other revenue growth opportunities",
+            "Design a risk mitigation strategy",
+            "Analyse the competitive landscape"
+          ],
+          "subtotal": 3
+        }
+      },
+      "total_keypoints": 10,
+      "minimum_expected": "Recommendation pillar covered + at least 1 reasoning point",
+      "outstanding_threshold": "All 4 pillars covered (recommendation + at least 2 reasoning points + at least 1 risk + at least 1 next step)"
+    }
+  },
+  "state_machine_global": {
+    "case_type": "interviewer_driven",
+    "skip_logic": false,
+    "mandatory_sequence": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5"
+    ],
+    "rules": [
+      "Q1 cannot be skipped under any circumstances",
+      "Questions must proceed in linear order Q1 → Q2 → Q3 → Q4 → Q5",
+      "A question may not be advanced until the current question receives a scoreable answer (1st or 2nd attempt)",
+      "If analyst pre-covers a later question's keypoints in an earlier answer, record as pre-coverage but still ask the later question in sequence",
+      "No question may be skipped even if pre-covered"
+    ]
+  },
+  "scoring_summary": {
+    "Q1": {
+      "type": "framework",
+      "total_keypoints": 13,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q2": {
+      "type": "qualitative",
+      "total_keypoints": 18,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q3": {
+      "type": "quantitative",
+      "part_1_quantitative": {
+        "correct_answer": "800 clients",
+        "zero_tolerance": true,
+        "scoring": "Binary: Full credit if correct; zero credit if incorrect"
+      },
+      "part_2_qualitative": {
+        "total_keypoints": 6,
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "human_review_priority": "false-partial > false-not-covered > covered",
+        "tier_1_basic": {
+          "keypoints": 1,
+          "weight": "50% of qualitative score"
+        },
+        "tier_2_advanced": {
+          "keypoints": 5,
+          "weight_per_point": "10% of qualitative score",
+          "weight_total": "50% of qualitative score"
+        }
+      }
+    },
+    "Q4": {
+      "type": "qualitative",
+      "total_keypoints": 15,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q5": {
+      "type": "qualitative",
+      "total_keypoints": 10,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    }
+  }
+}

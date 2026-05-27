@@ -1,0 +1,14 @@
+# Source casebook PDFs are NOT redistributed (license / copyright).
+*.pdf
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*~
+.idea/
+.vscode/
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/

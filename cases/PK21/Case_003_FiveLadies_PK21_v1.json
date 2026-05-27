@@ -1,0 +1,530 @@
+{
+  "case_id": "003",
+  "version": "v1",
+  "source": {
+    "title": "Five Ladies",
+    "inspired_by": "McKinsey & Company",
+    "year": "2021",
+    "author": "Peter K.",
+    "reference": "Peter-K.org, Case #3",
+    "casebook_abbr": "PK21"
+  },
+  "case_type": "interviewer_driven",
+  "case_type_origin": null,
+  "annotation_mode": null,
+  "case_arch": {
+    "primary": "Profitability",
+    "tags": [
+      "Profitability",
+      "Cost Optimization"
+    ],
+    "standard_tags": [
+      "Profitability",
+      "Market Entry",
+      "Revenue Growth",
+      "Cost Optimization",
+      "Investment Decision",
+      "Merger and Acquisition",
+      "Pricing Strategy",
+      "Growth Strategy",
+      "Operational Efficiency",
+      "Due Diligence",
+      "Market Sizing",
+      "Competitive Response",
+      "Digital Transformation",
+      "Turnaround / Restructuring",
+      "Supply Chain",
+      "Comparison"
+    ]
+  },
+  "difficulty": "Easy-Medium",
+  "industry": "Food & Beverage / Fast Food Restaurant",
+  "topic": "Profitability improvement strategy for a U.S. national fast food burger chain",
+  "expected_duration_minutes": "15-20",
+  "opening_prompt": "Hi, I'd like to solve some consulting cases with you. Pls be a good interviewee to have a potential test in consulting cases. For the case problem-solving, pls do not assume any numbers or assumptions before my confirmation. I will give you the context upon request. I need you to answer the following questions for the client. Before you start, feel free to ask me 2-3 clarifying questions about the client.\n\nQ1: What factors would you consider to help the client design profitability improvement strategy?\nQ2: Your teammate is going to cover revenue analysis, and the manager asked you to explore costs. What are the major expenses of Five Ladies?\nQ3: Based on benchmarking analysis, the client's smallware costs (e.g. utensils, paper plates) exceed similar expenses of other players. What might be the reasons behind it?\nQ4: The client is considering two options to reduce costs for utensils — renegotiate purchasing prices or build own utensil production. What annual savings does each option offer?\n\nHere is the basic context for the client:\nA national fast food restaurant chain, Five Ladies, that sells burgers, reached $2.4B in sales in 2020 and has 2k restaurants in the U.S., 75% of which are owned by the company and 25% are franchisees.",
+  "structure_1_client_basic_context": {
+    "company": "Five Ladies",
+    "type": "National fast food restaurant chain that sells burgers",
+    "situation": "The chain reached $2.4B in sales in 2020 and has 2k restaurants in the U.S., 75% of which are owned by the company and 25% are franchisees.",
+    "action": "The client has reached out for advice on how to improve profitability.",
+    "ask": "Help the client design a profitability improvement strategy."
+  },
+  "structure_2_information_upon_request": {
+    "item_1": {
+      "item_id": "item_1",
+      "trigger": "Analyst asks about or includes geographic focus / international expansion plans of Five Ladies in framework",
+      "core_dimensional_concept": "Five Ladies geographic focus and expansion plans",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet referencing geographic scope or market geography",
+          "clarifying question about international presence or expansion",
+          "hypothesis about growth through geographic expansion"
+        ],
+        "alternative_phrasings": [
+          "international expansion",
+          "geographic footprint",
+          "global strategy",
+          "new markets",
+          "overseas presence"
+        ]
+      },
+      "disqualifying": [
+        "Only loosely mentions 'growth opportunities' under the Revenue Growth pillar without naming the geographic-expansion dimension — does not engage the geography dimension itself",
+        "Only says 'the U.S. market' as descriptive background rather than actively probing a geographic-focus strategy"
+      ],
+      "info": "Five Ladies is focused on the U.S. and don't have plans to go abroad."
+    },
+    "item_2": {
+      "item_id": "item_2",
+      "trigger": "Analyst asks about or includes operating margin / current profitability level of Five Ladies in framework",
+      "core_dimensional_concept": "Five Ladies current operating margin",
+      "release_conditions": {
+        "structural_position": [
+          "explicit clarifying question about current margin or profitability level",
+          "framework pillar or sub-bullet referencing margin analysis or current financial performance",
+          "hypothesis about target margin or margin gap"
+        ],
+        "alternative_phrasings": [
+          "profit margin",
+          "current profitability",
+          "EBIT margin",
+          "margin level",
+          "financial performance baseline"
+        ]
+      },
+      "disqualifying": [
+        "Only states 'improve margins' as a goal under the Cost Reduction pillar without asking about the current margin level — here margin is the goal, not the subject",
+        "Only uses 'profitability' to loosely refer to the problem background without focusing on the current margin value"
+      ],
+      "info": "The client's operating margin is 12%."
+    },
+    "item_3": {
+      "item_id": "item_3",
+      "trigger": "Analyst asks about or includes specific profitability improvement goal or target of Five Ladies",
+      "core_dimensional_concept": "client specific profitability improvement goal",
+      "release_conditions": {
+        "structural_position": [
+          "explicit clarifying question about specific financial target or improvement goal",
+          "framework pillar referencing target profitability or improvement magnitude",
+          "hypothesis-driven assumption about what margin target the client is aiming for"
+        ],
+        "alternative_phrasings": [
+          "target margin",
+          "improvement target",
+          "financial goal",
+          "profitability objective",
+          "how much to improve"
+        ]
+      },
+      "disqualifying": [
+        "Only asks 'how to improve the margin' (how to improve) rather than asking for the specific target value (how much / what target) — touches the method dimension, not the target dimension",
+        "Only lists 'profitability goal' as a framework pillar title without actively following up on the specific value"
+      ],
+      "info": "The client doesn't have any specific goal to improve their profitability."
+    },
+    "item_4": {
+      "item_id": "item_4",
+      "trigger": "Analyst asks about or includes product positioning / price segment / competitive positioning of Five Ladies",
+      "core_dimensional_concept": "Five Ladies product category and price positioning",
+      "release_conditions": {
+        "structural_position": [
+          "explicit clarifying question about price point, product tier, or competitive positioning",
+          "framework pillar or sub-bullet referencing competitive positioning or product segment",
+          "hypothesis about Five Ladies being premium vs standard fast food"
+        ],
+        "alternative_phrasings": [
+          "price point",
+          "product positioning",
+          "competitive tier",
+          "premium vs value segment",
+          "menu price range"
+        ]
+      },
+      "disqualifying": [
+        "Only loosely mentions 'competition' under the Competitive Landscape pillar without focusing on price-segment or product-category positioning",
+        "Only says 'fast food market' as an industry description without touching the specific price-tier dimension"
+      ],
+      "info": "Five Ladies play in the 'better burger' category (hamburgers in the $9-11 range)."
+    },
+    "item_5": {
+      "item_id": "item_5",
+      "trigger": "Analyst asks about or includes customer type / B2B vs B2C breakdown of Five Ladies revenue",
+      "core_dimensional_concept": "Five Ladies customer type and B2B vs B2C revenue mix",
+      "release_conditions": {
+        "structural_position": [
+          "explicit clarifying question about customer segments or B2B vs B2C split",
+          "framework pillar or sub-bullet referencing customer types or revenue channel breakdown",
+          "hypothesis about corporate catering or bulk order revenue"
+        ],
+        "alternative_phrasings": [
+          "customer segments",
+          "B2B vs B2C",
+          "corporate clients",
+          "revenue channels",
+          "customer mix"
+        ]
+      },
+      "disqualifying": [
+        "Only mentions 'customer analysis' as a generic dimension under the Revenue pillar without explicitly touching the B2B vs B2C split — customer analysis is an adjacent dimension, not the B2B/B2C subject itself",
+        "Only says 'end consumers' without actively probing the source of corporate clients"
+      ],
+      "info": "Five Ladies is mostly a B2C business with some sales coming from B2B."
+    }
+  },
+  "structure_3_case_questions": {
+    "Q1": {
+      "q_id": "Q1",
+      "type": "framework",
+      "question_text": "What factors would you consider to help the client design profitability improvement strategy?",
+      "information_to_share_upfront": null,
+      "information_upon_request": "See structure_2 items 1–5. Release only items per semantic touch judgment; not by mere keyword presence.",
+      "state_machine": {
+        "next_question": "Q2",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable framework answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q2": {
+      "q_id": "Q2",
+      "type": "qualitative",
+      "question_text": "Your teammate is going to cover revenue analysis, and the manager asked you to explore costs. What are the major expenses of Five Ladies?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q3",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q3": {
+      "q_id": "Q3",
+      "type": "qualitative",
+      "question_text": "Based on benchmarking analysis, the client's smallware costs (e.g. utensils, paper plates) exceed similar expenses of other players. What might be the reasons behind it?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q4",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q4": {
+      "q_id": "Q4",
+      "type": "quantitative",
+      "question_text": "The client is considering two options to reduce costs for utensils — renegotiate purchasing prices or build own utensil production. What annual savings does each option offer?",
+      "information_to_share_upfront": [
+        "A package of 500 items costs $10 for spoons and $6 for forks.",
+        "The client doesn't offer other types of utensils – just spoons and forks.",
+        "The potential investment in the own utensil production is expected to be by $10M."
+      ],
+      "information_upon_request": [
+        {
+          "item_id": "Q4_item_1",
+          "trigger": "Analyst asks about total annual utensil consumption volume or asks how many utensils Five Ladies uses",
+          "core_dimensional_concept": "annual utensil consumption volume and split by type",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question about total volume consumed per year",
+              "calculation setup step referencing annual quantity",
+              "hypothesis or assumption about utensil usage volume"
+            ],
+            "alternative_phrasings": [
+              "how many utensils",
+              "annual consumption",
+              "total quantity",
+              "volume of utensils"
+            ]
+          },
+          "disqualifying": [
+            "Only asks 'how many restaurants' without touching the utensil-consumption-volume subject itself — restaurant count is a proxy, not the utensil-volume dimension"
+          ],
+          "info": "The client consumes 160M utensils annually. Half of the utensils is spoons, and the other half is forks."
+        },
+        {
+          "item_id": "Q4_item_2",
+          "trigger": "Analyst asks about details of Option 1 (price renegotiation) — what percentage reduction or how much saving is achievable",
+          "core_dimensional_concept": "Option 1 price renegotiation savings rate",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question about renegotiation discount rate or % cost reduction for Option 1",
+              "calculation setup step for Option 1 referencing reduction percentage",
+              "hypothesis about price reduction achievable through renegotiation"
+            ],
+            "alternative_phrasings": [
+              "renegotiation discount",
+              "price reduction percentage",
+              "how much cheaper",
+              "savings rate for option 1"
+            ]
+          },
+          "disqualifying": [
+            "Only asks 'what are the options' without touching the specific discount-rate dimension of Option 1 — asking about option content is not the same as asking about the discount rate"
+          ],
+          "info": "Option 1 Price renegotiation: The client plans to reduce costs for utensils by 5% through renegotiation of prices. The cost reduction is forecasted at 50%."
+        }
+      ],
+      "appendix": {
+        "appendix_1": {
+          "title": "Q4 Utensil Cost Calculation Data",
+          "release_rule": "Share upfront with analyst at the start of Q4",
+          "table": {
+            "spoons": {
+              "cost_per_500_package_usd": 10,
+              "share_of_volume": "50%",
+              "annual_volume_items": "160M * 50% = 80M",
+              "annual_volume_packages": "80M / 500 = 160k",
+              "annual_expenses_usd": "160k * $10 = $1.6M"
+            },
+            "forks": {
+              "cost_per_500_package_usd": 6,
+              "share_of_volume": "50%",
+              "annual_volume_items": "160M * 50% = 80M",
+              "annual_volume_packages": "80M / 500 = 160k",
+              "annual_expenses_usd": "160k * $6 = $0.96M"
+            },
+            "total_annual_expenses_usd": "$1.6M + $0.96M = $2.56M"
+          }
+        }
+      },
+      "state_machine": {
+        "next_question": null,
+        "skip_logic": false,
+        "transition_condition": "Case ends after Q4"
+      }
+    }
+  },
+  "structure_4_ground_truth": {
+    "Q1_ground_truth": {
+      "type": "framework",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_fast_food_burger_market": {
+          "keypoints": [
+            "Growth rate",
+            "Major fast food burger chains (e.g. market share, positioning)",
+            "Typical profitability",
+            "Customer trends"
+          ],
+          "subtotal": 4
+        },
+        "pillar_2_five_ladies": {
+          "keypoints": [
+            "Major menu items",
+            "Key target customer groups",
+            "Marketing strategy"
+          ],
+          "subtotal": 3
+        },
+        "pillar_3_margin_analysis": {
+          "keypoints": [
+            "Revenue break-down - By region",
+            "Revenue break-down - Product line",
+            "Cost structure - Fixed costs",
+            "Cost structure - Variable costs"
+          ],
+          "subtotal": 4
+        },
+        "pillar_4_profitability_improvement_areas": {
+          "keypoints": [
+            "Revenue growth recommendations",
+            "Cost reduction initiatives"
+          ],
+          "subtotal": 2
+        }
+      },
+      "total_keypoints": 13,
+      "minimum_expected": "Cover at least 3 of the 4 pillars with substantive content; Margin analysis pillar should include revenue and cost dimensions",
+      "outstanding_threshold": "Cover all 4 pillars; within Margin analysis correctly identify sub-dimensions (revenue breakdown by region/product line, cost structure fixed/variable); within Profitability improvement areas identify both revenue and cost levers"
+    },
+    "Q2_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_fixed_costs": {
+          "keypoints": [
+            "Rent and utilities [as this is offline customer-facing business]",
+            "Maintenance [to support cooking and commercial equipment]",
+            "Marketing [likely high as this is a commoditized industry and players win market share through active marketing and high brand awareness]",
+            "Overhead",
+            "R&D",
+            "Transportation"
+          ],
+          "subtotal": 6
+        },
+        "pillar_2_variable_costs": {
+          "keypoints": [
+            "Labor [this is a labor-intensive business with likely low level of automation]",
+            "Food supplies, packaging and smallware",
+            "Distribution fees [in case Five Ladies use UberEats, DoorDash or similar distribution partners]",
+            "Credit card commissions",
+            "Discounts [in case of promotions]"
+          ],
+          "subtotal": 5
+        }
+      },
+      "total_keypoints": 11,
+      "minimum_expected": "Identify at least 4 expenses across fixed and variable categories; recognize the fixed vs variable cost distinction",
+      "outstanding_threshold": "Identify 7+ expenses across both categories; provide contextualized reasoning (e.g. why marketing is likely high, why labor is variable)"
+    },
+    "Q3_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_higher_unit_price": {
+          "keypoints": [
+            "Lack of consolidation in purchasing - The stores purchase supplies individually",
+            "Lack of consolidation in purchasing - The stores purchase supplies ad hoc, not in bulk",
+            "Lack of consolidation in purchasing - There is no strategic long-term agreement with suppliers of smallware",
+            "More expensive types of smallware - The stores purchase more high-end items (e.g. silver plastic utensils instead of regular plastic)",
+            "More expensive types of smallware - The stores purchase more compostable or biodegradable items",
+            "Sub-optimal cost structure [e.g. high shipping costs for smallware]",
+            "Low quality supplier management - The client doesn't consider all the relevant suppliers",
+            "Low quality supplier management - The client doesn't consider supply chains from low-cost countries"
+          ],
+          "subtotal": 8
+        },
+        "pillar_2_larger_volume": {
+          "keypoints": [
+            "Not ideal operational processes - Higher waste of smallware during regular operations",
+            "Not ideal operational processes - Lack of process standardization of providing smallware to customers (e.g. smallware is included with the meal even if customers don't need it)",
+            "Not ideal operational processes - Low compliance with the processes mentioned above",
+            "Not ideal operational processes - Smallware is available at self-service in-store stations which leads to excessive usage of smallware",
+            "Other volume drivers - Menu consists of more meals that require smallware (e.g. salads require containers and utensils vs burgers don't)",
+            "Other volume drivers - Different customer preferences (e.g. sit-down vs to-go)"
+          ],
+          "subtotal": 6
+        }
+      },
+      "total_keypoints": 14,
+      "minimum_expected": "Identify at least 2 reasons from each pillar (higher unit price and larger volume); recognize the two-dimensional structure of the problem",
+      "outstanding_threshold": "Cover 8+ keypoints across both pillars; recognize both unit price and volume dimensions with at least 2 sub-reasons each"
+    },
+    "Q4_ground_truth": {
+      "type": "quantitative",
+      "quantitative_part": {
+        "correct_final_answer": "Option 1 annual savings: $0.128M (exact) — also accept $0.13M (casebook rounded); Option 2 annual savings: $1.28M (exact) — also accept $1.3M (casebook rounded)",
+        "scoring_method": "Binary: correct numbers = full credit; incorrect = zero credit. Accept both exact and casebook-rounded values per A3-Q5 dual-answer rule. Scoring note: Accept Option 1 = $0.128M or $0.13M; Option 2 = $1.28M or $1.3M; any other value = zero credit.",
+        "calculation_steps": {
+          "step_1_total_annual_expenses": {
+            "formula": "Spoons: 160M * 50% / 500 * $10 = 160k * $10 = $1.6M; Forks: 160M * 50% / 500 * $6 = 160k * $6 = $0.96M; Total = $1.6M + $0.96M = $2.56M",
+            "result": "$2.56M total annual utensil expenses"
+          },
+          "step_2_option1_savings": {
+            "formula": "$2.56M * 5% = $0.128M (exact); casebook shows $0.13M (rounded)",
+            "result": "$0.128M (exact) / $0.13M (casebook rounded)"
+          },
+          "step_3_option2_savings": {
+            "formula": "$2.56M * 50% = $1.28M (exact); casebook shows $1.3M (rounded)",
+            "result": "$1.28M (exact) / $1.3M (casebook rounded)"
+          },
+          "step_4_option2_payback": {
+            "formula": "$10M / $1.3M = ~7.7 years (exact: $10M / $1.28M = ~7.8 years); casebook shows 8 years (rounded)",
+            "result": "~8 years payback period for Option 2 (for context, not the primary answer)"
+          }
+        },
+        "accepted_answer_parts": {
+          "Option_1_annual_savings": {
+            "accepted_values": [
+              128000,
+              130000
+            ],
+            "tolerance_pct": 0.02,
+            "zero_tolerance": false
+          },
+          "Option_2_annual_savings": {
+            "accepted_values": [
+              1280000,
+              1300000
+            ],
+            "tolerance_pct": 0.02,
+            "zero_tolerance": false
+          }
+        }
+      },
+      "qualitative_part": {
+        "scoring_note": "Qualitative portion of Q4 is scored as 100% total, split into two tiers. Within each tier, use 3-level scoring per",
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "tier_1_basic": {
+          "weight_of_Q4_qualitative_total": "50%",
+          "keypoints": [
+            "The client will capture $0.13M in cost savings annually through renegotiating purchasing prices and x10 more by launching own production of utensils",
+            "The client's growth over time will lead to larger purchasing volume and potentially higher volume discounts for option 1"
+          ],
+          "note": "Expected from every candidate. Each point worth 25% of qualitative score."
+        },
+        "tier_2_advanced": {
+          "weight_of_Q4_qualitative_total": "50%",
+          "points_available": 3,
+          "weight_per_point": "~16.7% of qualitative total",
+          "keypoints": [
+            "The investment option will increase operational complexity, might dilute the focus of management, and offers a fairly long payback period",
+            "Process optimization to eliminate utensil waste and adjustment of business model (e.g. menu) to reduce utensil usage might offer additional venues to capture cost savings",
+            "Bundling utensils purchasing with other smallware purchasing might offer additional volume discounts"
+          ],
+          "note": "Not expected from every candidate. Each advanced point adds ~16.7% to qualitative score."
+        },
+        "minimum_expected": "Correct numerical answer for both options + Tier 1 basic contextualization (at least 1 of 2 covered)",
+        "outstanding_threshold": "Correct numerical answer + both Tier 1 covered + at least 2 Tier 2 advanced comments covered"
+      }
+    }
+  },
+  "state_machine_global": {
+    "case_type": "interviewer_driven",
+    "skip_logic": false,
+    "mandatory_sequence": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4"
+    ],
+    "rules": [
+      "Q1 cannot be skipped under any circumstances",
+      "Questions must proceed in linear order Q1 → Q2 → Q3 → Q4",
+      "A question may not be advanced until the current question receives a scoreable answer (1st or 2nd attempt)",
+      "If analyst pre-covers a later question's keypoints in an earlier answer, record as pre-coverage but still ask the later question in sequence",
+      "No question may be skipped even if pre-covered"
+    ]
+  },
+  "scoring_summary": {
+    "Q1": {
+      "type": "framework",
+      "total_keypoints": 13,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q2": {
+      "type": "qualitative",
+      "total_keypoints": 11,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q3": {
+      "type": "qualitative",
+      "total_keypoints": 14,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q4": {
+      "type": "quantitative",
+      "part_1_quantitative": {
+        "correct_answer": "Option 1: $0.128M (exact) / $0.13M (casebook rounded); Option 2: $1.28M (exact) / $1.3M (casebook rounded)",
+        "zero_tolerance": true,
+        "scoring": "Binary: Full credit if correct (either exact or casebook-rounded value); zero credit if incorrect"
+      },
+      "part_2_qualitative": {
+        "total_keypoints": 5,
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "human_review_priority": "false-partial > false-not-covered > covered",
+        "tier_1_basic": {
+          "keypoints": 2,
+          "weight": "50% of qualitative score"
+        },
+        "tier_2_advanced": {
+          "keypoints": 3,
+          "weight_per_point": "~16.7% of qualitative score",
+          "weight_total": "50% of qualitative score"
+        }
+      }
+    }
+  }
+}

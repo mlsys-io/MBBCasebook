@@ -1,0 +1,679 @@
+{
+  "case_id": "008",
+  "version": "v1",
+  "source": {
+    "title": "AgriCo",
+    "inspired_by": "BCG",
+    "year": "2021",
+    "author": "Peter K.",
+    "reference": "Peter-K.org, Case #8",
+    "casebook_abbr": "PK21"
+  },
+  "case_type": "interviewer_driven",
+  "case_type_origin": "candidate_led",
+  "annotation_mode": "CL_to_IL_override",
+  "case_arch": {
+    "primary": "Revenue Growth",
+    "tags": [
+      "Revenue Growth",
+      "Pricing Strategy",
+      "Market Entry"
+    ]
+  },
+  "difficulty": "Medium",
+  "industry": "Agriculture / Farm Machinery",
+  "topic": "Revenue growth strategy — reverse 15% sales drop for U.S.-based farm tractor manufacturer",
+  "expected_duration_minutes": 20,
+  "opening_prompt": "Hi, I'd like to solve some consulting cases with you. Pls be a good interviewee to have a potential test in consulting cases. For the case problem-solving, pls do not assume any numbers or assumptions before my confirmation. I will give you the context upon request. I need you to answer the following questions for the client. Before you start, feel free to ask me 2-3 clarifying questions about the client.\n\nQ1: How would you structure your plan to analyse this problem and provide recommendations?\nQ2: In 2020 the U.S. market for farm tractors actually jumped by 18% (see Appendix 1). Despite that the client lost 15% of their sales. What might be the reasons behind it?\nQ3: What criteria do farmers likely use to decide on purchasing a tractor?\nQ4: The client is considering decreasing the prices for compact tractors by 5% to boost sales. How many tractors do they need to sell to break-even on this initiative?\nQ5: The Partner on the project gives you a call and asks to synthesize your current understanding of what the client should do.\n\nHere is the basic context for the client:\nYour client is a U.S.-based agricultural machinery manufacturer that was established in early 1990s and is a well-known and respected brand. The farm tractors represent one of the major product lines they offer. In 2020 their U.S. sales of tractors dropped by 15%. They reached out to you to get your advice on how they can reverse this trend and boost the sales of farm tractors.",
+  "structure_1_client_basic_context": {
+    "company": "AgriCo (name implied; client is a U.S.-based agricultural machinery manufacturer)",
+    "type": "U.S.-based agricultural machinery manufacturer, established in early 1990s, well-known and respected brand",
+    "situation": "In 2020 their U.S. sales of tractors dropped by 15%. Farm tractors represent one of the major product lines they offer.",
+    "action": "They reached out to get advice on how they can reverse this trend and boost the sales of farm tractors.",
+    "ask": "Advise on how to reverse the 15% sales drop trend and boost sales of farm tractors."
+  },
+  "structure_2_information_upon_request": {
+    "item_1": {
+      "item_id": "item_1",
+      "trigger": "Analyst asks about or includes 'why the US farm tractor market grew in 2020' or 'macro/external factors' or 'government aid/stimulus' in framework or clarifying questions",
+      "core_dimensional_concept": "US government covid-19 aid impact on farm tractor market growth",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet related to external/macro environment",
+          "explicit clarifying question about what caused the market to grow in 2020",
+          "sub-bullet under market analysis or industry trends pillar",
+          "hypothesis-driven assumption about government stimulus or demand drivers"
+        ],
+        "alternative_phrasings": [
+          "government aid package",
+          "stimulus for farmers",
+          "covid impact on agriculture",
+          "macro tailwinds for farm tractor market",
+          "pandemic-related demand drivers"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'market growth' only in passing as context for the revenue drop (F passing mention — 'market grew but client fell' — without asking about why the market grew)",
+        "Analyst says 'external factors could have influenced demand' without specifying government aid or macro analysis as a structural pillar (G neighboring dimension — adjacently touches macro but doesn't identify government/covid dimension)"
+      ],
+      "info": "The U.S. covid-19 aid package for U.S. farmers, along with the rise in agriculture product prices, as well as an extended fleet age, all contributed to sky-rocketing growth of farm tractor market in 2020."
+    },
+    "item_2": {
+      "item_id": "item_2",
+      "trigger": "Analyst asks about or includes 'competitive landscape' or 'market concentration' or 'competitor analysis' in framework or clarifying questions",
+      "core_dimensional_concept": "farm tractor market competitive concentration",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar on competitive landscape or market structure",
+          "sub-bullet under industry analysis mentioning number of players or market share",
+          "explicit clarifying question about who the major competitors are or market concentration",
+          "hypothesis about competitive dynamics (e.g. 'market might be fragmented')"
+        ],
+        "alternative_phrasings": [
+          "competitors",
+          "market share of players",
+          "how fragmented is the market",
+          "number of manufacturers",
+          "industry concentration"
+        ]
+      },
+      "disqualifying": [
+        "Analyst lists 'competitive response' as a risk bullet without asking about market structure (F passing — mentions competition in risk context, not as a structural inquiry about concentration)",
+        "Analyst says 'pricing pressure from competitors' as a sub-point without asking who the competitors are or market share data (G neighboring dimension — mentions competitive pressure not market structure itself)"
+      ],
+      "info": "The farm tractor space is fairly fragmented with top-5 manufacturers controlling 30-40% of the market."
+    },
+    "item_3": {
+      "item_id": "item_3",
+      "trigger": "Analyst asks about or includes 'client revenue' or 'client sales figures' or 'current financial size' in framework or clarifying questions",
+      "core_dimensional_concept": "client current revenue / sales base",
+      "release_conditions": {
+        "structural_position": [
+          "explicit clarifying question about client's revenue or sales figures",
+          "framework pillar on revenue analysis or financial baseline",
+          "sub-bullet under 'AgriCo' or 'current state' section asking for revenue data",
+          "hypothesis-driven assumption about client revenue scale"
+        ],
+        "alternative_phrasings": [
+          "how much does the client sell",
+          "client's annual revenue",
+          "total sales",
+          "revenue baseline",
+          "size of the client's business"
+        ]
+      },
+      "disqualifying": [
+        "Analyst asks 'what is the goal for revenue growth' without asking about current revenue (G neighboring dimension — asks about target not current baseline)",
+        "Analyst mentions 'revenue drop' in passing when framing the problem without asking for the actual revenue figure (F passing mention)"
+      ],
+      "info": "The client's U.S. sales of tractors fell to $0.7B in 2020."
+    },
+    "item_4": {
+      "item_id": "item_4",
+      "trigger": "Analyst asks about or includes 'product portfolio' or 'types of tractors' or 'product segmentation' in framework or clarifying questions",
+      "core_dimensional_concept": "client tractor product portfolio segmentation",
+      "release_conditions": {
+        "structural_position": [
+          "explicit clarifying question about what types of tractors the client sells",
+          "framework pillar or sub-bullet on product portfolio or product lines",
+          "sub-bullet under 'AgriCo' section asking about product types or HP segmentation",
+          "hypothesis about different product tiers (e.g. 'client may have different horsepower segments')"
+        ],
+        "alternative_phrasings": [
+          "product mix",
+          "tractor models",
+          "horsepower categories",
+          "product lines",
+          "SKUs or product variants"
+        ]
+      },
+      "disqualifying": [
+        "Analyst asks 'who are the target customers' without asking about product types (G neighboring dimension — customer segmentation is adjacent to but different from product portfolio)",
+        "Analyst mentions 'product differentiation' as a pillar without asking what specific product types exist (F passing — product mentioned but not requesting product segmentation data)"
+      ],
+      "info": "The client offers three types of tractors: compact tractors (under 40 horsepower (HP)), utility tractors (40-100 HP), and high horsepower tractors (100+ HP)."
+    },
+    "item_5": {
+      "item_id": "item_5",
+      "trigger": "Analyst asks about or includes 'revenue target' or 'growth goal' or 'KPIs/success metrics' in framework or clarifying questions",
+      "core_dimensional_concept": "client revenue growth target or goal",
+      "release_conditions": {
+        "structural_position": [
+          "explicit clarifying question about what revenue goal or target the client has",
+          "framework pillar on defining success or setting targets",
+          "sub-bullet asking about the client's desired outcome or aspiration level",
+          "hypothesis about what growth rate would satisfy the client"
+        ],
+        "alternative_phrasings": [
+          "what is the goal",
+          "target revenue",
+          "desired growth",
+          "success metrics",
+          "ambition or aspiration"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'improve sales' as the overall case goal without asking for a specific numeric target (F passing — references goal in general without asking for specific target data)",
+        "Analyst asks 'what is the market growth rate' without asking about client's own revenue target (G neighboring dimension — market growth ≠ client revenue goal)"
+      ],
+      "info": "The client didn't provide any revenue goals."
+    }
+  },
+  "structure_3_case_questions": {
+    "Q1": {
+      "q_id": "Q1",
+      "type": "framework",
+      "question_text": "How would you structure your plan to analyse this problem and provide recommendations?",
+      "information_to_share_upfront": null,
+      "information_upon_request": "See structure_2 items 1–5. Release only per semantic touch; not by mere keyword presence.",
+      "state_machine": {
+        "next_question": "Q2",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable framework answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q2": {
+      "q_id": "Q2",
+      "type": "qualitative",
+      "question_text": "In 2020 the U.S. market for farm tractors actually jumped by 18% (see Appendix 1). Despite that the client lost 15% of their sales. What might be the reasons behind it?",
+      "information_to_share_upfront": [
+        "Appendix 1 — Total U.S. farm tractor sales chart (PNG-18): Total U.S. farm tractor sales, k units (2018-May'21). 2018: 236k, 2019: 245k, 2020: 288k units. Jan-May'21 breakdown by segment: 4-wheel-drive: 136k, High HP (100+ HP): 8k, Utility (40-100 HP): 29k, Compact (0-40 HP): 97k. Government ad hoc disaster assistance: $1B (2018), $1B (2019), $32B (2020), $16B** forecast full year 2021."
+      ],
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q3",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q3": {
+      "q_id": "Q3",
+      "type": "qualitative",
+      "question_text": "What criteria do farmers likely use to decide on purchasing a tractor?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q4",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q4": {
+      "q_id": "Q4",
+      "type": "quantitative",
+      "question_text": "The client is considering decreasing the prices for compact tractors by 5% to boost sales. How many tractors do they need to sell to break-even on this initiative?",
+      "information_to_share_upfront": [
+        "The client's sales of tractors were $0.7B in 2020"
+      ],
+      "information_upon_request": [
+        {
+          "item_id": "Q4_item_1",
+          "trigger": "Analyst asks about or includes 'share of compact tractors' or 'what portion of sales are compact' in their calculation setup or clarifying questions for Q4",
+          "core_dimensional_concept": "compact tractor share of total tractor sales",
+          "release_conditions": {
+            "structural_position": [
+              "explicit clarifying question about compact tractor share or mix",
+              "calculation setup step asking for segment breakdown",
+              "hypothesis-driven assumption about compact tractor proportion"
+            ],
+            "alternative_phrasings": [
+              "what percentage are compact tractors",
+              "breakdown by tractor type",
+              "compact tractor revenue share",
+              "product mix for compact"
+            ]
+          },
+          "disqualifying": [
+            "Analyst mentions 'compact tractors' only in restating the problem (F passing — references compact in problem setup without asking for share data)",
+            "Analyst asks 'what is the average price of compact tractors' without asking for the share (G neighboring dimension — price ≠ share)"
+          ],
+          "info": "The share of compact tractors (under 40 PH) is 50%."
+        },
+        {
+          "item_id": "Q4_item_2",
+          "trigger": "Analyst asks about or includes 'gross margin' or 'contribution margin' or 'profit margin' for compact tractors in their calculation",
+          "core_dimensional_concept": "compact tractor gross margin",
+          "release_conditions": {
+            "structural_position": [
+              "explicit clarifying question about margin for compact tractors",
+              "calculation setup step referencing margin or profit per unit",
+              "hypothesis about margin level for compact segment"
+            ],
+            "alternative_phrasings": [
+              "profit margin",
+              "contribution margin",
+              "margin percentage",
+              "markup on compact tractors",
+              "profitability per unit"
+            ]
+          },
+          "disqualifying": [
+            "Analyst asks for the price of compact tractors without asking about margin (G neighboring dimension — price is adjacent to but not the same as margin)",
+            "Analyst mentions 'profitability' in passing in a risk consideration without asking for margin data (F passing)"
+          ],
+          "info": "The gross margin for compact tractors is 20%."
+        },
+        {
+          "item_id": "Q4_item_3",
+          "trigger": "Analyst asks about or includes 'average price' or 'unit price' of compact tractors in their calculation",
+          "core_dimensional_concept": "compact tractor average unit price",
+          "release_conditions": {
+            "structural_position": [
+              "explicit clarifying question about the price of compact tractors",
+              "calculation setup step referencing unit price or ASP",
+              "hypothesis about pricing level for compact segment"
+            ],
+            "alternative_phrasings": [
+              "how much does a compact tractor cost",
+              "average selling price",
+              "ASP for compact",
+              "unit price",
+              "sticker price"
+            ]
+          },
+          "disqualifying": [
+            "Analyst asks about the 5% price decrease without asking for the baseline price (G neighboring dimension — the decrease percentage ≠ the baseline price)",
+            "Analyst mentions pricing strategy without requesting the numeric price (F passing)"
+          ],
+          "info": "The average price of a compact tractor is $30k."
+        }
+      ],
+      "appendix": {
+        "appendix_1": {
+          "title": "Total U.S. farm tractor sales",
+          "release_rule": "Share upfront with analyst at the start of Q2 (referenced in Q2 question text 'see Appendix 1')",
+          "table": {
+            "total_us_farm_tractor_sales_k_units": {
+              "2018": 236,
+              "2019": 245,
+              "2020": 288
+            },
+            "jan_may_2021_by_segment_k_units": {
+              "4_wheel_drive": 136,
+              "high_hp_100_plus_hp": 8,
+              "utility_40_100_hp": 29,
+              "compact_0_40_hp": 97
+            },
+            "government_ad_hoc_disaster_assistance": {
+              "2018": "$1B",
+              "2019": "$1B",
+              "2020": "$32B",
+              "jan_may_2021_forecast_full_year": "$16B**"
+            }
+          }
+        }
+      },
+      "state_machine": {
+        "next_question": "Q5",
+        "skip_logic": false,
+        "max_attempts": 2,
+        "scoring_on_transition": {
+          "attempt_1_correct": "Full score",
+          "attempt_2_correct": "0 score per core_principles",
+          "both_attempts_wrong": "0 score; interviewer provides correct answer before Q5"
+        },
+        "transition_condition": "Case proceeds to Q5 after Q4 quantitative answer (1st or 2nd attempt or interviewer provides correct answer)"
+      }
+    },
+    "Q5": {
+      "q_id": "Q5",
+      "type": "qualitative",
+      "question_text": "The Partner on the project gives you a call and asks to synthesize your current understanding of what the client should do.",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": null,
+        "skip_logic": false,
+        "transition_condition": "Case ends after Q5"
+      }
+    }
+  },
+  "structure_4_ground_truth": {
+    "Q1_ground_truth": {
+      "type": "framework",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_farm_tractor_market_in_the_US": {
+          "keypoints": [
+            "Growth rate",
+            "Major tractor manufacturers (e.g. market share, positioning, product lines)",
+            "Recent trends"
+          ],
+          "subtotal": 3
+        },
+        "pillar_2_agrico": {
+          "keypoints": [
+            "Types of farm tractors",
+            "Key differentiation points",
+            "Target client groups",
+            "Salesforce (e.g. composition, KPIs, incentives)"
+          ],
+          "subtotal": 4
+        },
+        "pillar_3_revenue_analysis": {
+          "keypoints": [
+            "Current revenue and historical data",
+            "Break-down by tractor type, client group and region",
+            "Pricing strategy"
+          ],
+          "subtotal": 3
+        },
+        "pillar_4_revenue_growth_areas": {
+          "keypoints": [
+            "Strengthen marketing",
+            "Adjust pricing",
+            "Increase efficiency of distribution/salesforce",
+            "Improve value proposition"
+          ],
+          "subtotal": 4
+        }
+      },
+      "total_keypoints": 14,
+      "minimum_expected": "At least 2 of 4 pillars covered with 2+ keypoints each, including Revenue analysis or Revenue growth areas",
+      "outstanding_threshold": "All 4 pillars covered with majority of keypoints covered per pillar"
+    },
+    "Q2_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_poor_marketing_strategy": {
+          "keypoints": [
+            "Low brand awareness among farmers",
+            "Limited marketing budgets allocated to B2B events, ads and promotions",
+            "PR issues in the past (e.g. low reliability of tractors)"
+          ],
+          "subtotal": 3
+        },
+        "pillar_2_inadequate_pricing": {
+          "keypoints": [
+            "Too high base prices",
+            "Uncompetitive discount policy",
+            "Inflexible payment terms",
+            "Too high total cost of ownership (e.g. fuel, maintenance, insurance)",
+            "Less-than-average useful life of a tractor"
+          ],
+          "subtotal": 5
+        },
+        "pillar_3_low_efficiency_of_distribution": {
+          "keypoints": [
+            "Low quality salesforce due to weak selection process and poor training system",
+            "Rare sales team result assessments",
+            "Discouraging incentives (e.g. low sales commission) for dealerships",
+            "Limited network of tractor dealerships",
+            "Poor market analysis to support salesforce's lead identification"
+          ],
+          "subtotal": 5
+        },
+        "pillar_4_unattractive_value_proposition": {
+          "service_issues": {
+            "keypoints": [
+              "Low quality of after-sale service",
+              "Limited network of service centers and lack of spare parts",
+              "Lack of chance to hire for in-house tractor maintenance"
+            ],
+            "subtotal": 3
+          },
+          "keypoints": [
+            "Lack of features in the base model of tractor (e.g. low power, too loud, lack of GPS tracking)",
+            "High frequency of breaking down",
+            "Low quality of after-sale service",
+            "Limited network of service centers and lack of spare parts",
+            "Lack of chance to hire for in-house tractor maintenance"
+          ],
+          "subtotal": 5
+        }
+      },
+      "total_keypoints": 18,
+      "minimum_expected": "At least 2 of 4 pillars covered with at least 2 keypoints each",
+      "outstanding_threshold": "All 4 pillars covered, each with 3+ keypoints covered"
+    },
+    "Q3_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_financial_criteria": {
+          "cost_factors": {
+            "keypoints": [
+              "Price of the tractor",
+              "Maintenance costs (spare parts, maintenance services)",
+              "Fuel consumption",
+              "Insurance",
+              "Labor elimination (in case of self-driving tractors)"
+            ],
+            "subtotal": 5
+          },
+          "revenue_factors": {
+            "keypoints": [
+              "Tractor's useful life",
+              "Tractor's capacity (e.g. power, payload, mileage range)",
+              "Expected utilization rate (depends on number of repairs)",
+              "Salvage value of the tractor"
+            ],
+            "subtotal": 4
+          },
+          "investment_criteria": {
+            "keypoints": [
+              "Expected ROI/payback/etc."
+            ],
+            "subtotal": 1
+          },
+          "keypoints": [
+            "Price of the tractor",
+            "Maintenance costs (spare parts, maintenance services)",
+            "Fuel consumption",
+            "Insurance",
+            "Labor elimination (in case of self-driving tractors)",
+            "Tractor's useful life",
+            "Tractor's capacity (e.g. power, payload, mileage range)",
+            "Expected utilization rate (depends on number of repairs)",
+            "Salvage value of the tractor",
+            "Expected ROI/payback/etc."
+          ],
+          "subtotal": 10
+        },
+        "pillar_2_strategic_criteria": {
+          "operational_improvements": {
+            "keypoints": [
+              "Better reporting (e.g. GPS trackers, activities trackers)"
+            ],
+            "subtotal": 1
+          },
+          "keypoints": [
+            "Better reporting (e.g. GPS trackers, activities trackers)"
+          ],
+          "subtotal": 1
+        },
+        "pillar_3_risks": {
+          "operational_risks": {
+            "keypoints": [
+              "Lack of mechanics and service stations to support tractors",
+              "Increase in operational complexity as now there might be different types of tractors in the fleet",
+              "Potential flaws in the design of tractors (in case of brand-new models of tractors)"
+            ],
+            "subtotal": 3
+          },
+          "financial_risks": {
+            "keypoints": [
+              "Loss in economies of scale (e.g. in purchasing spare parts or the general model of tractors instead of keeping just one type of tractors in fleet)",
+              "Underestimated costs/ exaggerated revenues"
+            ],
+            "subtotal": 2
+          },
+          "keypoints": [
+            "Lack of mechanics and service stations to support tractors",
+            "Increase in operational complexity as now there might be different types of tractors in the fleet",
+            "Potential flaws in the design of tractors (in case of brand-new models of tractors)",
+            "Loss in economies of scale (e.g. in purchasing spare parts or the general model of tractors instead of keeping just one type of tractors in fleet)",
+            "Underestimated costs/ exaggerated revenues"
+          ],
+          "subtotal": 5
+        }
+      },
+      "total_keypoints": 16,
+      "minimum_expected": "Financial criteria pillar covered with at least 3 keypoints; at least 1 Risk keypoint",
+      "outstanding_threshold": "Financial criteria covered with 6+ keypoints across sub-categories; Strategic criteria covered; Risks covered with 3+ keypoints"
+    },
+    "Q4_ground_truth": {
+      "type": "quantitative",
+      "quantitative_part": {
+        "correct_final_answer": "16k units (AgriCo needs to increase compact tractor sales by 33% from current 12k to 16k units to break-even)",
+        "accepted_values": [
+          16000
+        ],
+        "tolerance_pct": 0.0,
+        "zero_tolerance": true,
+        "scoring_method": "Binary: correct number = full credit; incorrect = zero credit",
+        "calculation_steps": {
+          "step_1_current_contribution_margin": {
+            "formula": "$30k (avg price) × 20% (gross margin) = $6k per unit",
+            "result": "$6k per unit"
+          },
+          "step_2_new_contribution_margin": {
+            "formula": "$30k × (20% - 5%) = $30k × 15% = $4.5k per unit",
+            "result": "$4.5k per unit"
+          },
+          "step_3_current_volume": {
+            "formula": "$0.7B (total sales) × 50% (compact share) ÷ $30k (avg price) = $0.35B ÷ $30k = 11,667 ≈ 12k units",
+            "result": "12k units (casebook rounds to 12k)"
+          },
+          "step_4_new_volume_needed": {
+            "formula": "12k units × $6k (old margin) ÷ $4.5k (new margin) = 16k units",
+            "result": "16k units"
+          },
+          "step_5_conclusion": {
+            "formula": "New volume (16k) - Current volume (12k) = 4k additional units needed; 4k/12k = 33% increase",
+            "result": "AgriCo needs to increase sales of compact tractors by 33% from current 12k to 16k units"
+          }
+        }
+      },
+      "qualitative_part": {
+        "scoring_note": "Qualitative portion of Q4 is scored as 100% total, split into two tiers. Within each tier, use 3-level scoring per",
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "tier_1_basic": {
+          "weight_of_Q4_qualitative_total": "50%",
+          "keypoints": [
+            "AgriCo will need to ensure sales of additional 4k units to generate the same amount of gross profit and thus break-even"
+          ],
+          "note": "Expected from every candidate. Single point worth 50% of qualitative score."
+        },
+        "tier_2_advanced": {
+          "weight_of_Q4_qualitative_total": "50%",
+          "points_available": 4,
+          "weight_per_point": "12.5% of qualitative total",
+          "keypoints": [
+            "We assumed that fixed costs won't change, but fixed costs are a step-function and given a dramatic increase in sales (by 33%) it's likely that fixed costs (e.g. equipment maintenance, marketing) will go up",
+            "We should expect competitive response to this aggressive push to expand, and it'll be more challenging to hit a break-even point",
+            "33% increase in sales seems aggressive and we'll need to make sure the client has operational capacity to accommodate this new demand",
+            "Such a jump in volume will likely strengthen economies of scale and improve margins, so we might reach a break-even point earlier"
+          ],
+          "note": "Not expected from every candidate. Each advanced point adds 12.5% to qualitative score."
+        },
+        "minimum_expected": "Correct numerical answer (16k units) + Tier 1 basic contextualization (covered)",
+        "outstanding_threshold": "Correct numerical answer + Tier 1 covered + at least 2 Tier 2 advanced comments covered"
+      }
+    },
+    "Q5_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_recommendation": {
+          "keypoints": [
+            "Based on the initial assessment, the client's sales are far behind the dynamics of the market that gained almost 20% in 2020. In order to boost their sales and at least match the market's growth rate, the client should consider a set of sales growth opportunities that we identified, including potential decrease in price for compact tractors"
+          ],
+          "subtotal": 1
+        },
+        "pillar_2_reasoning": {
+          "keypoints": [
+            "First, compact tractors are likely fairly commoditized as a lot of manufacturers might offer similar options. So, the farmers are likely price-sensitive, and a price decrease might trigger a rapid growth in demand",
+            "Secondly, covid-induced turbulences likely put farmers in tough financial situation and increase market ambiguity, so discounted price might meet farmers' needs"
+          ],
+          "subtotal": 2
+        },
+        "pillar_3_risks": {
+          "keypoints": [
+            "This price decrease might kick off a price war with other tractor manufacturers",
+            "Secondly, create a perception of the client as a value brand",
+            "Thirdly, the economics of this move might not work and we might not reach a break-even point if we decrease the price too much"
+          ],
+          "subtotal": 3
+        },
+        "pillar_4_next_steps": {
+          "keypoints": [
+            "Dig deeper into other sales growth opportunities, build business cases for them and conduct an in-depth analysis of the competitive landscape"
+          ],
+          "subtotal": 1
+        }
+      },
+      "total_keypoints": 7,
+      "minimum_expected": "Recommendation pillar covered + at least 1 reasoning point covered",
+      "outstanding_threshold": "All 4 pillars covered, including both reasoning points and at least 2 risk points"
+    }
+  },
+  "state_machine_global": {
+    "case_type": "interviewer_driven",
+    "skip_logic": false,
+    "mandatory_sequence": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5"
+    ],
+    "rules": [
+      "Q1 cannot be skipped under any circumstances",
+      "Questions must proceed in linear order Q1 → Q2 → Q3 → Q4 → Q5",
+      "A question may not be advanced until the current question receives a scoreable answer (1st or 2nd attempt)",
+      "If analyst pre-covers a later question's keypoints in an earlier answer, record as pre-coverage but still ask the later question in sequence",
+      "No question may be skipped even if pre-covered",
+      "Q4 max_attempts = 2; if both wrong, provide correct answer (16k units) before proceeding to Q5 perC"
+    ]
+  },
+  "scoring_summary": {
+    "Q1": {
+      "type": "framework",
+      "total_keypoints": 14,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q2": {
+      "type": "qualitative",
+      "total_keypoints": 18,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q3": {
+      "type": "qualitative",
+      "total_keypoints": 16,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q4": {
+      "type": "quantitative",
+      "part_1_quantitative": {
+        "correct_answer": "16k units",
+        "zero_tolerance": true,
+        "scoring": "Binary: Full credit if correct; zero credit if incorrect"
+      },
+      "part_2_qualitative": {
+        "total_keypoints": 5,
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "human_review_priority": "false-partial > false-not-covered > covered",
+        "tier_1_basic": {
+          "keypoints": 1,
+          "weight": "50% of qualitative score"
+        },
+        "tier_2_advanced": {
+          "keypoints": 4,
+          "weight_per_point": "12.5% of qualitative score",
+          "weight_total": "50% of qualitative score"
+        }
+      }
+    },
+    "Q5": {
+      "type": "qualitative",
+      "total_keypoints": 7,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    }
+  }
+}

@@ -1,0 +1,501 @@
+{
+  "case_id": "002",
+  "version": "v1",
+  "source": {
+    "title": "Women's equality",
+    "inspired_by": "McKinsey & Company",
+    "year": "2023",
+    "author": "Peter K.",
+    "reference": "Peter-K.org, Case #2",
+    "casebook_abbr": "PK23"
+  },
+  "case_type": "interviewer_driven",
+  "case_type_origin": null,
+  "annotation_mode": null,
+  "case_arch": {
+    "primary": "Wild Card",
+    "tags": [
+      "Wild Card",
+      "Growth Strategy",
+      "Market Sizing"
+    ],
+    "standard_tags": [
+      "Profitability",
+      "Market Entry",
+      "Revenue Growth",
+      "Cost Optimization",
+      "Investment Decision",
+      "Merger and Acquisition",
+      "Pricing Strategy",
+      "Growth Strategy",
+      "Operational Efficiency",
+      "Due Diligence",
+      "Market Sizing",
+      "Competitive Response",
+      "Digital Transformation",
+      "Turnaround / Restructuring",
+      "Supply Chain",
+      "Comparison",
+      "Wild Card"
+    ]
+  },
+  "difficulty": "Hard",
+  "industry": "Public Policy / Social Impact",
+  "topic": "Women's equality — framework for advancing gender parity in Africa, policy recommendations, and quantitative labor force sizing",
+  "expected_duration_minutes": "15-20",
+  "opening_prompt": "Hi, I'd like to solve some consulting cases with you. Pls be a good interviewee to have a potential test in consulting cases. For the case problem-solving, pls do not assume any numbers or assumptions before my confirmation. I will give you the context upon request. I need you to answer the following questions for the client. Before you start, feel free to ask me 2-3 clarifying questions about the client.\n\nQ1: What factors would you consider to advance women's equality and reach gender parity?\nQ2: What would you tell African leaders on tangible next steps to advance women's equality?\nQ3: In 2022 female entrepreneurs contributed $350B to Africa's economy (13% of GDP). Women represent only 20% of African entrepreneurs. How can the African governments empower women's entrepreneurship?\nQ4: How many women should join labor force in Africa to reach the gender parity?\n\nHere is the basic context for the client:\nYou're working on an internal project for McKinsey Global Institute (MGI). Your team is preparing a report on advancing women's equality in Africa. Due to the lack in gender diversity, Africa's social and economic progress can't reach its full potential. At the current rate of progress, Africa could take more than 140 years to achieve gender parity. What factors would you consider to advance women's equality and reach gender parity?",
+  "structure_1_client_basic_context": {
+    "company": "McKinsey Global Institute (MGI)",
+    "type": "Internal project / research report",
+    "situation": "Africa's social and economic progress can't reach its full potential due to lack in gender diversity. At the current rate of progress, Africa could take more than 140 years to achieve gender parity.",
+    "action": "Preparing a report on advancing women's equality in Africa",
+    "ask": "What factors would you consider to advance women's equality and reach gender parity?"
+  },
+  "structure_2_information_upon_request": {
+    "item_1": {
+      "item_id": "item_1",
+      "trigger": "Analyst asks about or includes Africa's population size or demographic breakdown in framework",
+      "core_dimensional_concept": "Africa population size and gender demographic",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet referencing population or demographic data",
+          "explicit clarifying question about Africa's population",
+          "hypothesis-driven assumption about population size or gender split",
+          "quantitative sizing setup mentioning Africa's total population"
+        ],
+        "alternative_phrasings": [
+          "how large is Africa's population",
+          "population breakdown",
+          "number of women in Africa",
+          "demographic data"
+        ]
+      },
+      "disqualifying": [
+        "Only mentions 'large population' as a modifier of Africa, not as the analysis dimension itself (F passing mention)"
+      ],
+      "info": "Africa population is 1.4B (2023), 50% of whom are female"
+    },
+    "item_2": {
+      "item_id": "item_2",
+      "trigger": "Analyst asks about or includes economic impact or GDP potential of women's equality in framework",
+      "core_dimensional_concept": "economic GDP impact of advancing women's equality in Africa",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet on economic impact of gender equality",
+          "explicit question about the economic value or GDP contribution of gender parity",
+          "hypothesis about economic benefits or ROI of women's equality programs",
+          "numbered enumeration including GDP or economic dimension"
+        ],
+        "alternative_phrasings": [
+          "economic value of gender parity",
+          "GDP contribution",
+          "financial impact of women's equality",
+          "economic benefits of closing gender gap"
+        ]
+      },
+      "disqualifying": [
+        "Only repeats 'economic progress' as background modifier in context or opening, not as an independent analysis-framework dimension (F passing mention)"
+      ],
+      "info": "According to experts' estimates, Africa could add $300B-$1T (10%-35%) to its GDP in 5 years by advancing women's equality"
+    },
+    "item_3": {
+      "item_id": "item_3",
+      "trigger": "Analyst asks about historical progress or current state of women's equality advancement in Africa",
+      "core_dimensional_concept": "historical progress on women's equality in Africa since 2015",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet on current state or progress tracking",
+          "explicit question about recent trends or progress in gender equality",
+          "hypothesis about why progress has been slow or stagnant",
+          "analysis dimension covering time trend or baseline assessment"
+        ],
+        "alternative_phrasings": [
+          "progress over time",
+          "recent trends in gender equality",
+          "what has been done so far",
+          "current state of gender parity"
+        ]
+      },
+      "disqualifying": [
+        "Only mentions '140 years to achieve gender parity' as a restatement of the prompt, not as an independent progress-analysis dimension (F passing mention)"
+      ],
+      "info": "Africa has not made much progress in promoting women's equality since 2015"
+    },
+    "item_4": {
+      "item_id": "item_4",
+      "trigger": "Analyst asks about or includes variation across African countries in gender parity progress",
+      "core_dimensional_concept": "geographic variation in gender parity progress across African countries",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet on country-level breakdown or regional variation",
+          "explicit question about which African countries are ahead or behind on gender parity",
+          "hypothesis about leading vs lagging African countries on equality metrics",
+          "enumeration including regional or country-level analysis dimension"
+        ],
+        "alternative_phrasings": [
+          "country breakdown",
+          "regional differences",
+          "which countries are leading",
+          "variation across Africa"
+        ]
+      },
+      "disqualifying": [
+        "Only mentions 'across Africa' as a geographic-scope modifier rather than an independent dimension analyzing cross-country differences (G adjacent-dimension modifier)"
+      ],
+      "info": "Progress towards gender parity varies significantly among African countries"
+    }
+  },
+  "structure_3_case_questions": {
+    "Q1": {
+      "q_id": "Q1",
+      "type": "framework",
+      "question_text": "What factors would you consider to advance women's equality and reach gender parity?",
+      "information_to_share_upfront": null,
+      "information_upon_request": "See structure_2 items 1-4. Release only items per semantic touch judgment; not by mere keyword presence.",
+      "state_machine": {
+        "next_question": "Q2",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable framework answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q2": {
+      "q_id": "Q2",
+      "type": "qualitative",
+      "question_text": "What would you tell African leaders on tangible next steps to advance women's equality?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q3",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q3": {
+      "q_id": "Q3",
+      "type": "qualitative",
+      "question_text": "In 2022 female entrepreneurs contributed $350B to Africa's economy (13% of GDP). Women represent only 20% of African entrepreneurs. How can the African governments empower women's entrepreneurship?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q4",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q4": {
+      "q_id": "Q4",
+      "type": "quantitative",
+      "question_text": "How many women should join labor force in Africa to reach the gender parity?",
+      "information_to_share_upfront": [
+        "See Appendix 1 (Gender inequality at work in Africa, 2019 — Female/Male ratio bar chart)"
+      ],
+      "information_upon_request": [
+        {
+          "item_id": "Q4_item_1",
+          "trigger": "Analyst asks about current female labor force participation rate in Africa",
+          "core_dimensional_concept": "current female labor force participation rate in Africa",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question about what percentage of women currently work in Africa",
+              "calculation setup step asking for current female participation rate",
+              "hypothesis-driven assumption about female participation rate seeking confirmation",
+              "sub-bullet under labor force sizing calculation"
+            ],
+            "alternative_phrasings": [
+              "how many women currently work",
+              "female participation rate",
+              "percentage of women in labor force",
+              "current women employment rate"
+            ]
+          },
+          "disqualifying": [
+            "Only mentions the 0.75 female/male ratio in Appendix 1 as a calculation parameter rather than specifically asking about the current female participation rate itself (G adjacent-dimension modifier)"
+          ],
+          "info": "Currently 30% of females in Africa participate in labor force"
+        },
+        {
+          "item_id": "Q4_item_2",
+          "trigger": "Analyst asks about total population of Africa or total number of women in Africa for calculation",
+          "core_dimensional_concept": "Africa total population and female share for labor force sizing",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question about Africa's total population size",
+              "calculation setup step asking for total population or number of women",
+              "hypothesis about population size seeking confirmation",
+              "sub-bullet under labor force sizing calculation referencing total headcount"
+            ],
+            "alternative_phrasings": [
+              "total population of Africa",
+              "how many people in Africa",
+              "number of women in Africa",
+              "Africa's total female population"
+            ]
+          },
+          "disqualifying": [
+            "Only reuses the '1.4B population' already released in structure_2 item_1, rather than re-asking in the Q4 context (F passing mention — already released globally)"
+          ],
+          "info": "Africa's population is 1.4B, half of whom are females"
+        }
+      ],
+      "appendix": {
+        "appendix_1": {
+          "title": "Gender inequality at work in Africa, 2019 — Female/Male ratio (# of women to # of men)",
+          "release_rule": "Share upfront with analyst at the start of Q4",
+          "table": {
+            "labor_force_participation_rate": {
+              "africa": 0.75,
+              "world_average": 0.64
+            },
+            "formal_employment": {
+              "africa": 0.68,
+              "world_average": 0.86
+            },
+            "professional_and_technical_jobs": {
+              "africa": 0.68,
+              "world_average": 0.73
+            },
+            "unpaid_care_work": {
+              "africa": 0.39,
+              "world_average": 0.33
+            },
+            "leadership_positions": {
+              "africa": 0.33,
+              "world_average": 0.37
+            }
+          }
+        }
+      },
+      "state_machine": {
+        "next_question": null,
+        "skip_logic": false,
+        "transition_condition": "Case ends after Q4"
+      }
+    }
+  },
+  "structure_4_ground_truth": {
+    "Q1_ground_truth": {
+      "type": "framework",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_womens_equality": {
+          "keypoints": [
+            "Definition (e.g. social, political, financial, career)",
+            "Current level and growth rate",
+            "Break-down by African countries"
+          ],
+          "subtotal": 3
+        },
+        "pillar_2_impact_of_gender_inequality": {
+          "keypoints": [
+            "Social impact",
+            "Economic impact",
+            "Political impact"
+          ],
+          "subtotal": 3
+        },
+        "pillar_3_gender_inequality_at_work": {
+          "keypoints": [
+            "Employment rate",
+            "Professional & technical jobs",
+            "Unpaid care work",
+            "Leadership positions"
+          ],
+          "subtotal": 4
+        },
+        "pillar_4_gender_inequality_in_society": {
+          "keypoints": [
+            "Education level",
+            "Political representation",
+            "Digital inclusion (e.g. mobile phone ownership)",
+            "Legal protection"
+          ],
+          "subtotal": 4
+        }
+      },
+      "total_keypoints": 14,
+      "minimum_expected": "Cover at least 3 out of 4 pillars with at least 2 keypoints each",
+      "outstanding_threshold": "Cover all 4 pillars with most keypoints in each pillar"
+    },
+    "Q2_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_education": {
+          "keypoints": [
+            "Create/boost professional programs for girls",
+            "Scale up educational programs for women on financial and digital literacy"
+          ],
+          "subtotal": 2
+        },
+        "pillar_2_business": {
+          "keypoints": [
+            "Encourage business leaders to include gender equality in their corporate goals",
+            "Promote women-friendly corporate cultures",
+            "Empower women's entrepreneurship",
+            "Encourage corporations to launch mentorship programs for women"
+          ],
+          "subtotal": 4
+        },
+        "pillar_3_culture": {
+          "keypoints": [
+            "Run campaigns to promote gender parity at work and in society",
+            "Recruit celebrities and opinion leaders to promote women's equality",
+            "Hold large-scale events promoting women's equality"
+          ],
+          "subtotal": 3
+        },
+        "pillar_4_laws": {
+          "keypoints": [
+            "Strengthen women's rights at work and in society",
+            "Adopt regulations to reinforce gender equality"
+          ],
+          "subtotal": 2
+        }
+      },
+      "total_keypoints": 11,
+      "minimum_expected": "Cover at least 3 out of 4 pillars with at least 1 keypoint each; include at least 1 concrete tangible action",
+      "outstanding_threshold": "Cover all 4 pillars with multiple concrete actions per pillar"
+    },
+    "Q3_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_business_education": {
+          "keypoints": [
+            "Create/support startup incubators and accelerators for women",
+            "Promote mentorship programs for businesswomen",
+            "Launch/strengthen entrepreneurship programs for women"
+          ],
+          "subtotal": 3
+        },
+        "pillar_2_business_opportunities": {
+          "keypoints": [
+            "Organize/sponsor more tradeshows and business conferences for women",
+            "Set targets for government contracts to purchase from women-owned businesses",
+            "Promote women-owned businesses"
+          ],
+          "subtotal": 3
+        },
+        "pillar_3_access_to_finance": {
+          "keypoints": [
+            "Offer grant/subsidies for women-owned businesses",
+            "Create/support investment funds that are focused on investing in women-owned businesses"
+          ],
+          "subtotal": 2
+        }
+      },
+      "total_keypoints": 8,
+      "minimum_expected": "Cover at least 2 out of 3 pillars with at least 1 keypoint each",
+      "outstanding_threshold": "Cover all 3 pillars with multiple concrete government actions per pillar"
+    },
+    "Q4_ground_truth": {
+      "type": "quantitative",
+      "quantitative_part": {
+        "correct_final_answer": "70M (70 million more women should join the labor force)",
+        "accepted_values": [
+          70000000
+        ],
+        "tolerance_pct": 0.0,
+        "zero_tolerance": true,
+        "scoring_method": "Binary: correct number = full credit; incorrect = zero credit",
+        "calculation_steps": {
+          "step_1_current_women_in_labor_force": {
+            "formula": "Africa population × female share × female labor force participation rate = 1.4B × 50% × 30%",
+            "result": "210M women currently in labor force"
+          },
+          "step_2_women_needed_for_gender_parity": {
+            "formula": "Current women in labor force ÷ female/male labor-force-participation ratio (from Appendix 1) = 210M ÷ 0.75",
+            "result": "280M women needed to reach gender parity"
+          },
+          "step_3_additional_women_needed": {
+            "formula": "Women needed - Women currently in labor force = 280M - 210M",
+            "result": "70M additional women needed"
+          }
+        }
+      },
+      "qualitative_part": {
+        "scoring_note": "Qualitative portion of Q4 is scored as 100% total, split into two tiers. Within each tier, use 3-level scoring per",
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "tier_1_basic": {
+          "weight_of_Q4_qualitative_total": "50%",
+          "keypoints": [
+            "70M women should join the labor force to match the number of employed men in Africa"
+          ],
+          "note": "Expected from every candidate. Single point worth 50% of qualitative score."
+        },
+        "tier_2_advanced": {
+          "weight_of_Q4_qualitative_total": "50%",
+          "points_available": 3,
+          "weight_per_point": "16.7% of qualitative total",
+          "keypoints": [
+            "This sounds challenging not only because 70M is sizeable population, but also because Africa demonstrates far higher labor-force-participation rate than the world average of 0.64 (see Appendix 1)",
+            "I'd imagine that a good amount (~50% if not more) of the female population are girls and elderly, who aren't able to join the labor force. That might explain the seemingly low number of 30% of females who participate in the labor force",
+            "Boosting the number of women in the labor force is crucial as it'll have a multiplier effect on other gender parity metrics. For example, it'll improve formal employment of women and number of female managers/leaders"
+          ],
+          "note": "Not expected from every candidate. Each advanced point adds 16.7% to qualitative score."
+        },
+        "minimum_expected": "Correct numerical answer (70M) + Tier 1 basic contextualization (covered)",
+        "outstanding_threshold": "Correct numerical answer + Tier 1 covered + at least 2 Tier 2 advanced comments covered"
+      }
+    }
+  },
+  "state_machine_global": {
+    "case_type": "interviewer_driven",
+    "skip_logic": false,
+    "mandatory_sequence": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4"
+    ],
+    "rules": [
+      "Q1 cannot be skipped under any circumstances",
+      "Questions must proceed in linear order Q1 → Q2 → Q3 → Q4",
+      "A question may not be advanced until the current question receives a scoreable answer (1st or 2nd attempt)",
+      "If analyst pre-covers a later question's keypoints in an earlier answer, record as pre-coverage but still ask the later question in sequence",
+      "No question may be skipped even if pre-covered"
+    ]
+  },
+  "scoring_summary": {
+    "Q1": {
+      "type": "framework",
+      "total_keypoints": 14,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q2": {
+      "type": "qualitative",
+      "total_keypoints": 11,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q3": {
+      "type": "qualitative",
+      "total_keypoints": 8,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q4": {
+      "type": "quantitative",
+      "part_1_quantitative": {
+        "correct_answer": "70M",
+        "zero_tolerance": true,
+        "scoring": "Binary: Full credit if correct; zero credit if incorrect"
+      },
+      "part_2_qualitative": {
+        "total_keypoints": 4,
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "human_review_priority": "false-partial > false-not-covered > covered",
+        "tier_1_basic": {
+          "keypoints": 1,
+          "weight": "50% of qualitative score"
+        },
+        "tier_2_advanced": {
+          "keypoints": 3,
+          "weight_per_point": "16.7% of qualitative score",
+          "weight_total": "50% of qualitative score"
+        }
+      }
+    }
+  }
+}

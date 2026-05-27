@@ -1,0 +1,35 @@
+BACasebook — Non-Commercial Research License
+
+Copyright (c) 2026 The BACasebook Authors.
+
+This dataset (the "Work") is licensed under the Creative Commons
+Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0), with the
+additional terms below. The full CC BY-NC 4.0 legal text is available at
+https://creativecommons.org/licenses/by-nc/4.0/legalcode.
+
+You are free to:
+  - Share — copy and redistribute the Work in any medium or format.
+  - Adapt — remix, transform, and build upon the Work.
+
+Under the following terms:
+  1. Attribution. You must give appropriate credit, including a citation to
+     the BACasebook paper, provide a link to this license, and indicate if
+     changes were made.
+  2. NonCommercial. You may not use the Work for commercial purposes. This
+     restriction extends explicitly to use of the Work as training data for
+     commercial AI systems.
+
+Additional terms specific to BACasebook:
+  A. Source-material copyright. The cases are derived from publicly
+     distributed MBB (McKinsey / Bain / BCG) casebooks compiled by university
+     consulting clubs and from practitioner collections released for
+     educational use. Copyright in the original casebooks remains with their
+     respective authors and clubs. BACasebook redistributes verbatim keypoint
+     extracts only; the full casebook PDFs are NOT included or redistributed.
+  B. Research use. The Work is intended for academic research and evaluation.
+     It must not be used to make hiring, admissions, or other consequential
+     decisions about individuals.
+  C. No warranty. The Work is provided "as is", without warranty of any kind.
+
+If any term above conflicts with the source-casebook licenses, the more
+restrictive term governs.

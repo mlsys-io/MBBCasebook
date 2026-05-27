@@ -1,0 +1,613 @@
+{
+  "case_id": "002",
+  "version": "v1",
+  "source": {
+    "title": "WeShare",
+    "inspired_by": "McKinsey & Company",
+    "year": "2021",
+    "author": "Peter K.",
+    "reference": "Peter-K.org, Case #2",
+    "casebook_abbr": "PK21"
+  },
+  "case_type": "interviewer_driven",
+  "case_type_origin": null,
+  "annotation_mode": null,
+  "case_arch": {
+    "primary": "Profitability",
+    "tags": [
+      "Profitability",
+      "Cost Optimization",
+      "Investment Decision",
+      "Comparison"
+    ]
+  },
+  "difficulty": "Easy",
+  "industry": "Real Estate / Shared Office Space",
+  "topic": "Profitability diagnosis and investment comparison — shared office space provider break-even in 18 months",
+  "expected_duration_minutes": 20,
+  "opening_prompt": "Hi, I'd like to solve some consulting cases with you. Pls be a good interviewee to have a potential test in consulting cases. For the case problem-solving, pls do not assume any numbers or assumptions before my confirmation. I will give you the context upon request. I need you to answer the following questions for the client. Before you start, feel free to ask me 2-3 clarifying questions about the client.\n\nQ1: How would you structure your approach to help the client?\nQ2: Let's talk about the costs first. What would you think WeShare's major expenses are?\nQ3: What would you think their biggest cost item is?\nQ4: To increase their sales CEO would like to expand the asset portfolio and is considering two options of new office buildings. Which one has higher ROI?\n\nHere is the basic context for the client:\nYour client is a shared office space provider — WeShare. WeShare offers office spaces to freelancers, entrepreneurs, and companies in 10 major cities across the U.S., and has 25k members. The company generates $160M in sales annually but is unprofitable. They hired your team to help them break-even in 18 months.",
+  "structure_1_client_basic_context": {
+    "company": "WeShare",
+    "type": "Shared office space provider",
+    "situation": "WeShare offers office spaces to freelancers, entrepreneurs, and companies in 10 major cities across the U.S., and has 25k members. The company generates $160M in sales annually but is unprofitable.",
+    "action": "Hired your team to help them break-even in 18 months",
+    "ask": "Help the client break-even in 18 months"
+  },
+  "structure_2_information_upon_request": {
+    "item_1": {
+      "item_id": "item_1",
+      "trigger": "Analyst asks about or includes historical revenue growth, pre-pandemic performance, or revenue trajectory in framework",
+      "core_dimensional_concept": "historical revenue growth trajectory",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet covering revenue growth or market trends",
+          "explicit clarifying question about how the business performed before the current situation",
+          "hypothesis-driven assumption about revenue decline or drop"
+        ],
+        "alternative_phrasings": [
+          "revenue trend",
+          "top-line growth",
+          "growth rate",
+          "sales trajectory"
+        ]
+      },
+      "disqualifying": [
+        "Only mentions revenue risk or growth risk under the Risk pillar — this is a risk dimension, not the historical-growth subject itself (G adjacent-dimension modifier)",
+        "Only uses 'revenue' to modify another point (e.g., 'revenue-driven business') — here revenue is an adjective, not the subject of growth history (F passing)"
+      ],
+      "info": "Before the pandemic the client aggressively grew, pushing its top-line (sales) by 50% every year. In 2020 though its sales decreased — working from home during covid, a lot of companies scaled back their office spaces."
+    },
+    "item_2": {
+      "item_id": "item_2",
+      "trigger": "Analyst asks about or includes revenue streams, product/service mix, or business model in framework",
+      "core_dimensional_concept": "client revenue sources and service lines",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar covering revenue breakdown or business model",
+          "sub-bullet under client-side or revenue pillar",
+          "explicit clarifying question about how the client makes money or what services they offer"
+        ],
+        "alternative_phrasings": [
+          "revenue streams",
+          "service lines",
+          "product portfolio",
+          "how does the client generate revenue"
+        ]
+      },
+      "disqualifying": [
+        "Only mentions 'shared office space' as a background description — does not develop a service-line analysis (F passing)",
+        "Only mentions 'industry revenue model' under the market analysis pillar without focusing on WeShare itself (G adjacent-dimension modifier)"
+      ],
+      "info": "Most of revenue comes from renting out flex working space. The client also offers office management services (e.g., room booking system, office supply management) and office design consulting."
+    },
+    "item_3": {
+      "item_id": "item_3",
+      "trigger": "Analyst asks about or includes geographic expansion plans, market presence, or growth strategy in framework",
+      "core_dimensional_concept": "geographic expansion plans",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet covering growth levers or market expansion",
+          "explicit clarifying question about whether the client is planning to expand to new cities or countries",
+          "hypothesis-driven assumption about geographic expansion as a lever"
+        ],
+        "alternative_phrasings": [
+          "expansion plans",
+          "geographic footprint",
+          "new markets",
+          "international expansion"
+        ]
+      },
+      "disqualifying": [
+        "Only mentions 'the client is in 10 cities' — this restates existing information rather than asking about an expansion plan (F passing)",
+        "Only loosely mentions 'geographic diversification' under the Market Entry pillar without addressing WeShare's expansion intent (G adjacent-dimension modifier)"
+      ],
+      "info": "The client doesn't plan to expand outside of the U.S."
+    },
+    "item_4": {
+      "item_id": "item_4",
+      "trigger": "Analyst asks about or includes competitive landscape, market share, or key competitors in framework",
+      "core_dimensional_concept": "competitive landscape and market concentration",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar covering industry or competitive dynamics",
+          "sub-bullet under market or external analysis pillar",
+          "explicit clarifying question about who the key competitors are or what market share WeShare holds"
+        ],
+        "alternative_phrasings": [
+          "key players",
+          "competitors",
+          "market share",
+          "competitive dynamics",
+          "industry structure"
+        ]
+      },
+      "disqualifying": [
+        "Only mentions 'competitive market' as a loose background description — does not address specific players or market concentration (G adjacent-dimension modifier)",
+        "Only mentions 'competitive risk' under the Risk pillar — this is a risk dimension, not the competitive-landscape subject itself (G adjacent-dimension modifier)"
+      ],
+      "info": "Top-5 players in this space capture 71% of the market (incl. WeWork that controls 47%). The client isn't part of top-5."
+    }
+  },
+  "structure_3_case_questions": {
+    "Q1": {
+      "q_id": "Q1",
+      "type": "framework",
+      "question_text": "How would you structure your approach to help the client?",
+      "information_to_share_upfront": null,
+      "information_upon_request": "See structure_2 items 1–4. Release only items by semantic touch; not by mere keyword presence.",
+      "state_machine": {
+        "next_question": "Q2",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable framework answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q2": {
+      "q_id": "Q2",
+      "type": "qualitative",
+      "question_text": "Let's talk about the costs first. What would you think WeShare's major expenses are?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q3",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q3": {
+      "q_id": "Q3",
+      "type": "qualitative",
+      "question_text": "What would you think their biggest cost item is?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q4",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q4": {
+      "q_id": "Q4",
+      "type": "quantitative",
+      "question_text": "To increase their sales CEO would like to expand the asset portfolio and is considering two options of new office buildings. Which one has higher ROI?",
+      "information_to_share_upfront": [
+        "Appendix 1: Data on two options of new office building"
+      ],
+      "information_upon_request": [
+        {
+          "item_id": "Q4_item_1",
+          "trigger": "Analyst asks about or needs the contract period for each building option",
+          "core_dimensional_concept": "contract period for each building option",
+          "release_conditions": {
+            "structural_position": [
+              "explicit clarifying question about how long the contract is",
+              "calculation setup mentioning the need for time horizon",
+              "hypothesis-driven assumption about contract duration"
+            ],
+            "alternative_phrasings": [
+              "lease duration",
+              "contract length",
+              "time horizon",
+              "number of years"
+            ]
+          },
+          "disqualifying": [
+            "Only mentions 'ROI calculation' without explicitly asking about the contract term — this is calculation intent, not a precise question about the contract period (F passing)"
+          ],
+          "info": "Contract period is 5 years for option 1 and 4 years for option 2."
+        },
+        {
+          "item_id": "Q4_item_2",
+          "trigger": "Analyst asks about or needs the square footage for each building option",
+          "core_dimensional_concept": "building square footage",
+          "release_conditions": {
+            "structural_position": [
+              "explicit clarifying question about building size or square footage",
+              "calculation setup referencing area/size as a variable",
+              "hypothesis-driven assumption about building size"
+            ],
+            "alternative_phrasings": [
+              "building size",
+              "floor space",
+              "area",
+              "square feet"
+            ]
+          },
+          "disqualifying": [
+            "Only mentions 'per square foot' citing existing Appendix data without asking for the total area (F passing)"
+          ],
+          "info": "Footage is 50k square foot for option 1 and 40k square foot for option 2."
+        },
+        {
+          "item_id": "Q4_item_3",
+          "trigger": "Analyst asks about taxes, implementation costs, or whether to include them in calculation",
+          "core_dimensional_concept": "tax and implementation cost treatment",
+          "release_conditions": {
+            "structural_position": [
+              "explicit clarifying question about whether to include taxes",
+              "question about implementation or redesign costs",
+              "calculation setup mentioning tax or one-time costs"
+            ],
+            "alternative_phrasings": [
+              "taxes",
+              "implementation costs",
+              "redesign costs",
+              "one-time costs"
+            ]
+          },
+          "disqualifying": [
+            "Only mentions 'tax risk' under the Risk pillar — this is a risk dimension, not a question about how tax is handled in the calculation (G adjacent-dimension modifier)"
+          ],
+          "info": "We can neglect taxes and implementation time (redesign) for this calculation."
+        },
+        {
+          "item_id": "Q4_item_4",
+          "trigger": "Analyst asks about growth rate assumptions for revenue or expenses",
+          "core_dimensional_concept": "revenue and expense growth rate assumption",
+          "release_conditions": {
+            "structural_position": [
+              "explicit clarifying question about growth rate",
+              "calculation setup mentioning whether revenue or costs grow over time",
+              "hypothesis-driven assumption about growth"
+            ],
+            "alternative_phrasings": [
+              "growth rate",
+              "revenue growth",
+              "cost escalation",
+              "inflation assumption"
+            ]
+          },
+          "disqualifying": [
+            "Only mentions 'growth potential' as a qualitative analysis dimension without asking for the specific growth-rate value (G adjacent-dimension modifier)"
+          ],
+          "info": "Expected growth rate is 0% (for operational expenses and revenue)."
+        },
+        {
+          "item_id": "Q4_item_5",
+          "trigger": "Analyst asks about whether leasing costs are included in the initial set-up costs",
+          "core_dimensional_concept": "leasing cost inclusion in initial set-up",
+          "release_conditions": {
+            "structural_position": [
+              "explicit clarifying question about what is included in initial set-up costs",
+              "calculation setup asking whether leasing is a separate line item",
+              "question about cost structure of the investment"
+            ],
+            "alternative_phrasings": [
+              "set-up costs",
+              "initial investment",
+              "leasing costs",
+              "what is included in the $3M"
+            ]
+          },
+          "disqualifying": [
+            "Only cites the '$3M initial set-up and total leasing costs' from the Appendix without asking about the composition (F passing)"
+          ],
+          "info": "Annual leasing costs are included in initial set-up and leasing costs."
+        },
+        {
+          "item_id": "Q4_item_6",
+          "trigger": "Analyst asks about discount rate or time value of money for ROI calculation",
+          "core_dimensional_concept": "discount rate and time value of money treatment",
+          "release_conditions": {
+            "structural_position": [
+              "explicit clarifying question about discount rate",
+              "calculation setup mentioning NPV or present value",
+              "hypothesis-driven assumption about cost of capital"
+            ],
+            "alternative_phrasings": [
+              "discount rate",
+              "time value of money",
+              "WACC",
+              "cost of capital",
+              "NPV"
+            ]
+          },
+          "disqualifying": [
+            "Only mentions 'NPV would be better' during advanced contextualization — this is a comment on methodology, not a question about the discount-rate parameter (F passing)"
+          ],
+          "info": "Candidate should be aware that ROI doesn't require time value of money (so no need to clarify an interest rate)."
+        }
+      ],
+      "appendix": {
+        "appendix_1": {
+          "title": "Data on two options of new office building",
+          "release_rule": "Share upfront with analyst at the start of Q4",
+          "table": {
+            "office_building_1": {
+              "initial_setup_and_total_leasing_costs": "$3M",
+              "annual_operational_expenses_per_sf": "$20",
+              "monthly_revenue_per_sf": "$3.5"
+            },
+            "office_building_2": {
+              "initial_setup_and_total_leasing_costs": "$2.5M",
+              "annual_operational_expenses_per_sf": "$15",
+              "monthly_revenue_per_sf": "$3.3"
+            }
+          }
+        }
+      },
+      "state_machine": {
+        "next_question": null,
+        "skip_logic": false,
+        "transition_condition": "Case ends after Q4"
+      }
+    }
+  },
+  "structure_4_ground_truth": {
+    "Q1_ground_truth": {
+      "type": "framework",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_flex_working_space_operators": {
+          "keypoints": [
+            "Market dynamics (growth rate and trends)",
+            "Major shared office space providers (e.g. market share, differentiation)",
+            "Average margin"
+          ],
+          "subtotal": 3
+        },
+        "pillar_2_weshare": {
+          "keypoints": [
+            "Characteristics of target groups — freelancers, entrepreneurs and companies",
+            "Key service lines",
+            "Geographical footprint"
+          ],
+          "subtotal": 3
+        },
+        "pillar_3_profitability_analysis": {
+          "revenue_data": {
+            "keypoints": [
+              "Pricing strategy",
+              "Volume dynamics",
+              "Break-down by client groups and locations"
+            ],
+            "subtotal": 3
+          },
+          "cost_structure": {
+            "keypoints": [
+              "Fixed",
+              "Variable"
+            ],
+            "subtotal": 2
+          },
+          "keypoints": [
+            "Pricing strategy",
+            "Volume dynamics",
+            "Break-down by client groups and locations",
+            "Fixed",
+            "Variable"
+          ],
+          "subtotal": 5
+        },
+        "pillar_4_margin_growth_strategies": {
+          "keypoints": [
+            "Revenue growth",
+            "Cost reduction"
+          ],
+          "subtotal": 2
+        }
+      },
+      "total_keypoints": 13,
+      "minimum_expected": "Cover at least 3 pillars with relevant content (8+ keypoints); Profitability analysis pillar must include both Revenue and Cost dimensions",
+      "outstanding_threshold": "All 4 pillars covered with specific content (11+ keypoints); Profitability analysis pillar includes both sub-pillars with 2+ items each"
+    },
+    "Q2_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_fixed_costs": {
+          "keypoints": [
+            "Rent [this is basically a rent arbitrage business; they lease in bulk and then rent out at a retail price]",
+            "Building maintenance and utilities",
+            "Marketing and sales [might be high as flex working space is a recent concept and WeShare needs to do lots of marketing to educate clients]",
+            "Overhead [e.g. cleaning, security, management]",
+            "R&D [might be high initially to invest in design and renovation; office management software]",
+            "Building insurance",
+            "Real estate taxes [if they own properties]"
+          ],
+          "subtotal": 7
+        },
+        "pillar_2_variable_costs": {
+          "keypoints": [
+            "Snacks and office suppliers [if part of the services]",
+            "Discounts [in case of promotions and/or tiered pricing strategy]"
+          ],
+          "subtotal": 2
+        }
+      },
+      "total_keypoints": 9,
+      "minimum_expected": "At least 4 items covering both fixed and variable cost dimensions",
+      "outstanding_threshold": "7+ items; explicitly distinguishes fixed vs variable costs; covers Rent, Overhead, Marketing, R&D at minimum"
+    },
+    "Q3_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_answer": {
+          "keypoints": [
+            "Rent/Leasing payments"
+          ],
+          "subtotal": 1
+        }
+      },
+      "total_keypoints": 1,
+      "minimum_expected": "Identify rent/leasing as the biggest cost item with reasoning (e.g., rent arbitrage model, high fixed cost nature of the business)",
+      "outstanding_threshold": "Identify rent/leasing as biggest cost AND provide business model insight (e.g., 'high fixed-cost business similar to hotel; rent arbitrage — they lease in bulk at wholesale rates and rent out at retail')"
+    },
+    "Q4_ground_truth": {
+      "type": "quantitative",
+      "quantitative_part": {
+        "correct_final_answer": "Building 1 has higher ROI at 83% vs Building 2 at 60% (casebook calculation) — also accept Building 2 at 57.4% (precise calculation without rounding)",
+        "scoring_method": "Binary: correct identification of Building 1 as higher ROI = full credit; incorrect = zero credit. Accept Building 2 ROI as either ~60% (casebook rounding) or ~57.4% (precise); any other value = zero credit for quantitative part.",
+        "calculation_steps": {
+          "building_1": {
+            "step_1_annual_revenue_per_sf": {
+              "formula": "$3.5 × 12 months",
+              "result": "$42 per sf per year"
+            },
+            "step_2_contribution_margin_per_sf": {
+              "formula": "$42 − $20 (annual operational expenses per sf)",
+              "result": "$22 per sf per year"
+            },
+            "step_3_total_operating_profit": {
+              "formula": "$22 × 50k sf × 5 years",
+              "result": "$5.5M"
+            },
+            "step_4_net_profit": {
+              "formula": "$5.5M − $3M (initial set-up and leasing costs)",
+              "result": "$2.5M"
+            },
+            "step_5_roi": {
+              "formula": "$2.5M / $3M",
+              "result": "83%"
+            }
+          },
+          "building_2_casebook_version": {
+            "step_1_annual_revenue_per_sf": {
+              "formula": "$3.3 × 12 months ≈ $40 (casebook rounds $39.6 to $40)",
+              "result": "$40 per sf per year (casebook rounded)"
+            },
+            "step_2_contribution_margin_per_sf": {
+              "formula": "$40 − $15 (annual operational expenses per sf)",
+              "result": "$25 per sf per year"
+            },
+            "step_3_total_operating_profit": {
+              "formula": "$25 × 40k sf × 4 years",
+              "result": "$4M"
+            },
+            "step_4_net_profit": {
+              "formula": "$4M − $2.5M (initial set-up and leasing costs)",
+              "result": "$1.5M"
+            },
+            "step_5_roi": {
+              "formula": "$1.5M / $2.5M",
+              "result": "60% (casebook version)"
+            }
+          },
+          "building_2_precise_version": {
+            "step_1_annual_revenue_per_sf": {
+              "formula": "$3.3 × 12 months",
+              "result": "$39.6 per sf per year (exact)"
+            },
+            "step_2_contribution_margin_per_sf": {
+              "formula": "$39.6 − $15",
+              "result": "$24.6 per sf per year"
+            },
+            "step_3_total_operating_profit": {
+              "formula": "$24.6 × 40k sf × 4 years",
+              "result": "$3.936M"
+            },
+            "step_4_net_profit": {
+              "formula": "$3.936M − $2.5M",
+              "result": "$1.436M"
+            },
+            "step_5_roi": {
+              "formula": "$1.436M / $2.5M",
+              "result": "57.4% (precise version)"
+            }
+          }
+        },
+        "accepted_answer_parts": {
+          "Building_1_ROI": {
+            "accepted_values": [
+              0.83
+            ],
+            "tolerance_pct": 0.0,
+            "zero_tolerance": true
+          },
+          "Building_2_ROI": {
+            "accepted_values": [
+              0.6,
+              0.574
+            ],
+            "tolerance_pct": 0.02,
+            "zero_tolerance": false
+          }
+        }
+      },
+      "qualitative_part": {
+        "scoring_note": "Qualitative portion of Q4 is scored as 100% total, split into two tiers. Within each tier, use 3-level scoring per",
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "tier_1_basic": {
+          "weight_of_Q4_qualitative_total": "50%",
+          "keypoints": [
+            "The first contract offers ROI of 83%, whereas the second contract is expected to yield ROI of 60%"
+          ],
+          "note": "Expected from every candidate. Single point worth 50% of qualitative score."
+        },
+        "tier_2_advanced": {
+          "weight_of_Q4_qualitative_total": "50%",
+          "points_available": 4,
+          "weight_per_point": "12.5% of qualitative total",
+          "keypoints": [
+            "The difference between two ROIs might not be statistically significant especially given there are a lot of assumptions in the calculations that might be adjusted over time",
+            "The client might want to consider other investment criteria like NPV, IRR and payback period to provide a more comprehensive financial assessment of these two options",
+            "The client should also consider brand implications as building #2 is likely located in a lower cost area and/or might be office space of a lower category",
+            "The client might substantially improve the economics of each deal by extending the length of the contract as additional year(s) won't require new investment in set-up costs"
+          ],
+          "note": "Not expected from every candidate. Each advanced point adds 12.5% to qualitative score."
+        },
+        "minimum_expected": "Correct identification of Building 1 as higher ROI + Tier 1 basic contextualization (covered)",
+        "outstanding_threshold": "Correct numerical answer + Tier 1 covered + at least 2 Tier 2 advanced comments covered"
+      }
+    }
+  },
+  "state_machine_global": {
+    "case_type": "interviewer_driven",
+    "skip_logic": false,
+    "mandatory_sequence": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4"
+    ],
+    "rules": [
+      "Q1 cannot be skipped under any circumstances",
+      "Questions must proceed in linear order Q1 → Q2 → Q3 → Q4",
+      "A question may not be advanced until the current question receives a scoreable answer (1st or 2nd attempt)",
+      "If analyst pre-covers a later question's keypoints in an earlier answer, record as pre-coverage but still ask the later question in sequence",
+      "No question may be skipped even if pre-covered"
+    ]
+  },
+  "scoring_summary": {
+    "Q1": {
+      "type": "framework",
+      "total_keypoints": 13,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q2": {
+      "type": "qualitative",
+      "total_keypoints": 9,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q3": {
+      "type": "qualitative",
+      "total_keypoints": 1,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q4": {
+      "type": "quantitative",
+      "part_1_quantitative": {
+        "correct_answer": "Building 1 has higher ROI at 83%; Building 2 ROI = 60% (casebook) or 57.4% (precise)",
+        "zero_tolerance": true,
+        "scoring": "Binary: Full credit if Building 1 identified as higher ROI with correct calculation; zero credit if incorrect. Accept Building 2 ROI as ~60% or ~57.4%."
+      },
+      "part_2_qualitative": {
+        "total_keypoints": 5,
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "human_review_priority": "false-partial > false-not-covered > covered",
+        "tier_1_basic": {
+          "keypoints": 1,
+          "weight": "50% of qualitative score"
+        },
+        "tier_2_advanced": {
+          "keypoints": 4,
+          "weight_per_point": "12.5% of qualitative score",
+          "weight_total": "50% of qualitative score"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,513 @@
+{
+  "case_id": "015",
+  "version": "v1",
+  "source": {
+    "title": "Guyderma",
+    "inspired_by": "McKinsey & Company",
+    "year": "2020",
+    "author": "Peter K.",
+    "reference": "Peter-K.org, Case #15",
+    "casebook_abbr": "PK21"
+  },
+  "case_type": "interviewer_driven",
+  "case_type_origin": null,
+  "annotation_mode": null,
+  "case_arch": {
+    "primary": "Market Entry",
+    "tags": [
+      "Market Entry",
+      "Investment Decision"
+    ]
+  },
+  "difficulty": "Medium",
+  "industry": "Healthcare / Medical Aesthetics / Beauty",
+  "topic": "Market entry decision — beauty company expanding into plastic surgery solutions (botox segment)",
+  "expected_duration_minutes": "20",
+  "opening_prompt": "Hi, I'd like to solve some consulting cases with you. Pls be a good interviewee to have a potential test in consulting cases. For the case problem-solving, pls do not assume any numbers or assumptions before my confirmation. I will give you the context upon request. I need you to answer the following questions for the client. Before you start, feel free to ask me 2-3 clarifying questions about the client.\n\nQ1: How would you structure your plan of attack for this case?\nQ2: The cosmetic surgery and procedure market grows at 1-2% annually in the U.S. What might be the factors behind such a low growth rate? (see Appendix 1)\nQ3: What risks should Guyderma take into consideration if they decide to expand to aesthetic solutions for cosmetic surgery and procedure market?\nQ4: The client is considering expanding first into the botulinum toxin (botox) segment. What market share should they reach in this segment to hit $10M in profits?\n\nHere is the basic context for the client:\nYour client is a big-name beauty product company Guyderma. They enjoy a developed product portfolio of creams, lotions, cleansers, syrups, masks and other face solutions. The CEO is entertaining the idea of branching out to a new space of solutions for plastic surgeries (e.g. botox, disport and other injection types). They need your advice on whether this might be a wise decision.",
+  "structure_1_client_basic_context": {
+    "company": "Guyderma",
+    "type": "Big-name beauty product company",
+    "situation": "They enjoy a developed product portfolio of creams, lotions, cleansers, syrups, masks and other face solutions. The CEO is entertaining the idea of branching out to a new space of solutions for plastic surgeries (e.g. botox, disport and other injection types).",
+    "action": "Considering expanding into the plastic surgery solutions space (e.g. botox, disport and other injection types)",
+    "ask": "They need advice on whether this might be a wise decision"
+  },
+  "structure_2_information_upon_request": {
+    "item_1": {
+      "item_id": "item_1",
+      "trigger": "Analyst asks about or includes the size of the U.S. plastic procedures market in their framework or questions",
+      "core_dimensional_concept": "U.S. plastic procedures market volume",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar covering market size or market assessment",
+          "sub-bullet under market analysis pillar",
+          "explicit clarifying question about market size or number of procedures"
+        ],
+        "alternative_phrasings": [
+          "how many procedures are done",
+          "market size",
+          "annual volume",
+          "total procedures"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'market' only as a passing reference to the U.S. context without probing market size as a dimension (G: adjacent dimension modifier)"
+      ],
+      "info": "Around 18M plastic procedures are done annually in the U.S."
+    },
+    "item_2": {
+      "item_id": "item_2",
+      "trigger": "Analyst asks about or includes the growth rate of the U.S. plastic procedure space in their framework or questions",
+      "core_dimensional_concept": "U.S. plastic procedure space growth rate",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar covering market growth or market assessment",
+          "sub-bullet under market analysis or market attractiveness",
+          "explicit clarifying question about market growth rate"
+        ],
+        "alternative_phrasings": [
+          "growth rate",
+          "market growth",
+          "CAGR",
+          "how fast is the market growing"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'growth' only in the context of Guyderma's own business expansion plans without asking about market growth rate (G: adjacent dimension modifier)"
+      ],
+      "info": "The U.S. plastic procedure space has been growing at 1-2% per year"
+    },
+    "item_3": {
+      "item_id": "item_3",
+      "trigger": "Analyst asks about or includes the competitive landscape or key players in the plastic surgery solutions space",
+      "core_dimensional_concept": "competitive landscape and dominant players in plastic surgery solutions",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar covering competitive analysis or key players",
+          "sub-bullet under market assessment addressing competition",
+          "explicit clarifying question about competitors or market structure"
+        ],
+        "alternative_phrasings": [
+          "who are the key players",
+          "competitive dynamics",
+          "market structure",
+          "dominant manufacturers"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'competition' only as a risk factor (e.g. 'competitive response risk') without probing the identity or structure of existing players (F: passing mention in another dimension's context)"
+      ],
+      "info": "Solutions for plastic surgeries is a fairly fragmented arena, however each solution has their own dominant players (e.g. the botox segment is mostly controlled by Allergan and Ipsen Pharma)"
+    },
+    "item_4": {
+      "item_id": "item_4",
+      "trigger": "Analyst asks about or includes the distribution model or go-to-market approach for Guyderma's plastic surgery solutions",
+      "core_dimensional_concept": "Guyderma's distribution model and target customer segment",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar covering distribution strategy or go-to-market",
+          "sub-bullet under Guyderma business model or customer analysis",
+          "explicit clarifying question about how Guyderma plans to sell or distribute"
+        ],
+        "alternative_phrasings": [
+          "distribution channel",
+          "go-to-market",
+          "sales channel",
+          "B2B vs B2C",
+          "customer segment"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'distribution' only as a generic risk factor without specifically asking how Guyderma plans to reach customers (F: passing mention without structural inquiry)"
+      ],
+      "info": "Guyderma plans to distribute their plastic surgery solutions among plastic surgeon practices in the U.S."
+    },
+    "item_5": {
+      "item_id": "item_5",
+      "trigger": "Analyst asks about Guyderma's financial goals or profitability targets for this market expansion",
+      "core_dimensional_concept": "client financial goals for market expansion",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar covering financial objectives or investment criteria",
+          "sub-bullet under financials of expansion addressing target returns",
+          "explicit clarifying question about profitability targets or financial goals"
+        ],
+        "alternative_phrasings": [
+          "financial target",
+          "profit goal",
+          "return expectation",
+          "what is the target ROI"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'profitability' only as a financial risk without specifically asking whether the client has a stated profit target (G: adjacent dimension — risk framing vs. objective framing)"
+      ],
+      "info": "The client didn't provide us with any specific goals for this market expansion"
+    }
+  },
+  "structure_3_case_questions": {
+    "Q1": {
+      "q_id": "Q1",
+      "type": "framework",
+      "question_text": "How would you structure your plan of attack for this case?",
+      "information_to_share_upfront": null,
+      "information_upon_request": "See structure_2 items 1-5. Release only items per semantic touch judgment; not by mere keyword presence.",
+      "state_machine": {
+        "next_question": "Q2",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable framework answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q2": {
+      "q_id": "Q2",
+      "type": "qualitative",
+      "question_text": "The cosmetic surgery and procedure market grows at 1-2% annually in the U.S. What might be the factors behind such a low growth rate? (see Appendix 1)",
+      "information_to_share_upfront": "Appendix 1 — Total plastic surgery procedures in the U.S. (2016–2018 chart)",
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q3",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q3": {
+      "q_id": "Q3",
+      "type": "qualitative",
+      "question_text": "What risks should Guyderma take into consideration if they decide to expand to aesthetic solutions for cosmetic surgery and procedure market?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q4",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q4": {
+      "q_id": "Q4",
+      "type": "quantitative",
+      "question_text": "The client is considering expanding first into the botulinum toxin (botox) segment. What market share should they reach in this segment to hit $10M in profits?",
+      "information_to_share_upfront": null,
+      "information_upon_request": [
+        {
+          "item_id": "Q4_item_1",
+          "trigger": "Analyst asks about or needs the wholesale acquisition cost for botox",
+          "core_dimensional_concept": "wholesale acquisition cost per vial of botox",
+          "release_conditions": {
+            "structural_position": [
+              "explicit request for cost or price data for botox",
+              "question about the unit economics or price of botox vials",
+              "sub-bullet under calculation setup asking for cost inputs"
+            ],
+            "alternative_phrasings": [
+              "price per vial",
+              "cost of botox",
+              "acquisition cost",
+              "unit cost"
+            ]
+          },
+          "disqualifying": [
+            "Analyst mentions 'costs' only in a general financial risk context without specifically requesting botox pricing data (F: passing mention)"
+          ],
+          "info": "Wholesales acquisition cost for a 200-unit vial of botox is $1,200"
+        },
+        {
+          "item_id": "Q4_item_2",
+          "trigger": "Analyst asks about or needs the total market volume of botox vials sold in the U.S.",
+          "core_dimensional_concept": "U.S. annual botox vial sales volume",
+          "release_conditions": {
+            "structural_position": [
+              "explicit request for market size in units or volume",
+              "question about total vials sold or market volume",
+              "sub-bullet under market size calculation asking for quantity data"
+            ],
+            "alternative_phrasings": [
+              "how many vials are sold",
+              "market volume",
+              "total units",
+              "annual vial sales"
+            ]
+          },
+          "disqualifying": [
+            "Analyst mentions 'market size' only in a general framework without specifically asking for the quantity/unit data needed for calculation (G: framework-level mention without specific data request)"
+          ],
+          "info": "2.5M vials of botox are sold annually in the U.S."
+        },
+        {
+          "item_id": "Q4_item_3",
+          "trigger": "Analyst asks about or needs the profit margin expected in the botox segment",
+          "core_dimensional_concept": "expected profit margin in the botox segment",
+          "release_conditions": {
+            "structural_position": [
+              "explicit request for margin data in the botox segment",
+              "question about profitability or margin percentage",
+              "sub-bullet under financial calculation asking for margin input"
+            ],
+            "alternative_phrasings": [
+              "margin",
+              "profit margin",
+              "expected profitability",
+              "margin rate"
+            ]
+          },
+          "disqualifying": [
+            "Analyst mentions 'margins' only as a general market characteristic in Q1 framework without specifically requesting the botox margin figure for calculation (F: passing mention in unrelated question context)"
+          ],
+          "info": "The expected margin in the botox segment is 5%"
+        }
+      ],
+      "appendix": {
+        "appendix_1": {
+          "title": "Total plastic surgery procedures in the U.S.",
+          "release_rule": "Share upfront with analyst at the start of Q2 (Appendix 1 is linked to Q2, not Q4)",
+          "table": {
+            "total_procedures_M": {
+              "2016": 17.2,
+              "2017": 17.4,
+              "2018": 17.7
+            },
+            "surgical_M": {
+              "2016": 1.8,
+              "2017": 1.8,
+              "2018": 1.8
+            },
+            "minimally_invasive_M": {
+              "2016": 15.4,
+              "2017": 15.7,
+              "2018": 15.9
+            },
+            "annual_growth_rate_pct": {
+              "2016": "-",
+              "2017": "1.5%",
+              "2018": "1.6%"
+            }
+          }
+        }
+      },
+      "state_machine": {
+        "next_question": null,
+        "skip_logic": false,
+        "transition_condition": "Case ends after Q4"
+      }
+    }
+  },
+  "structure_4_ground_truth": {
+    "Q1_ground_truth": {
+      "type": "framework",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_cosmetic_surgery_solution_market_in_the_US": {
+          "keypoints": [
+            "Market size and growth rate",
+            "Major market segments",
+            "Key solution manufacturers",
+            "Average margins"
+          ],
+          "subtotal": 4
+        },
+        "pillar_2_guyderma": {
+          "keypoints": [
+            "Planned solution offerings",
+            "Key customer groups to target (e.g. B2C/B2B)",
+            "Expected distribution strategy"
+          ],
+          "subtotal": 3
+        },
+        "pillar_3_financials_of_expansion": {
+          "keypoints": [
+            "Forecasted profitability",
+            "Potential synergies",
+            "Expected investment",
+            "Investment criteria (e.g. ROI, NPV)"
+          ],
+          "subtotal": 4
+        },
+        "pillar_4_potential_risks": {
+          "keypoints": [
+            "Market-specific",
+            "Financial",
+            "Operational"
+          ],
+          "subtotal": 3
+        }
+      },
+      "total_keypoints": 14,
+      "minimum_expected": "Cover at least 3 of the 4 pillars with at least 2 keypoints each",
+      "outstanding_threshold": "Cover all 4 pillars with most keypoints in each pillar"
+    },
+    "Q2_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_supply_factors": {
+          "keypoints": [
+            "Likely lack of innovation for new solutions/methods - High R&D expenses",
+            "Likely lack of innovation for new solutions/methods - Long FDA approval",
+            "Potentially limited number of plastic surgeons - Limited number of plastic surgeon schools/programs",
+            "Potentially limited number of plastic surgeons - Low attractiveness of a profession",
+            "Great development of cosmetic non-plastic solutions (e.g. beauty products) that don't require a plastic surgeon"
+          ],
+          "subtotal": 5
+        },
+        "pillar_2_demand_factors": {
+          "keypoints": [
+            "Mature market [usually mature markets have already reached their saturation points and don't grow fast]",
+            "Stigma around plastic procedures",
+            "High price-sensitivity [plastic surgeries might be perceived as too expensive; they aren't typically covered by insurance]",
+            "Low level of awareness of various plastic surgery solutions",
+            "No burning need for plastic procedures for the vast majority of people",
+            "Limited access [plastic surgeons might be mostly in big cities]"
+          ],
+          "subtotal": 6
+        }
+      },
+      "total_keypoints": 11,
+      "minimum_expected": "Cover at least 2 supply factors and 2 demand factors",
+      "outstanding_threshold": "Cover at least 4 supply factors and 4 demand factors"
+    },
+    "Q3_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_market_specific_risks": {
+          "keypoints": [
+            "Change in market dynamics (e.g. constant R&D in this space might lead to brand-new solutions that might make other solutions obsolete)",
+            "Change in customer behavior [e.g. the space is known for a strong stigma around it that might get worse]",
+            "Competitive response (e.g. aggressive marketing campaign)",
+            "Newcomers (in case the market is attractive)"
+          ],
+          "subtotal": 4
+        },
+        "pillar_2_financial_risks": {
+          "keypoints": [
+            "Lower-than-expected revenue and market share [e.g. due to poor marketing, inadequate pricing, sub-optimal distribution]",
+            "Underestimated costs [e.g. higher production costs, larger marketing budgets]",
+            "Lack of funding"
+          ],
+          "subtotal": 3
+        },
+        "pillar_3_operational_risks": {
+          "keypoints": [
+            "Potential side effects of Guyderma new solutions (e.g. which will hurt brand)",
+            "Long FDA approval cycle (if needed), long R&D period or production set-up",
+            "Lack of expertise",
+            "Cannibalization of resources of production and management from client's core business",
+            "Increase in operational complexity"
+          ],
+          "subtotal": 5
+        }
+      },
+      "total_keypoints": 12,
+      "minimum_expected": "Cover at least 2 categories with at least 2 risks each",
+      "outstanding_threshold": "Cover all 3 risk categories with most keypoints in each"
+    },
+    "Q4_ground_truth": {
+      "type": "quantitative",
+      "quantitative_part": {
+        "correct_final_answer": "7% (casebook rounded) — also accept 6.67% (precise calculation: $200M / $3,000M)",
+        "accepted_values": [
+          0.07,
+          0.0667
+        ],
+        "tolerance_pct": 0.02,
+        "zero_tolerance": false,
+        "scoring_method": "Binary: correct number = full credit; incorrect = zero credit. Accept both 7% and 6.67% (or ~6.7%); any other value = zero credit",
+        "calculation_steps": {
+          "step_1_required_botox_sales": {
+            "formula": "Guyderma's required sales of botox = Profit target / Margin = $10M / 5%",
+            "result": "$200M"
+          },
+          "step_2_total_US_botox_market": {
+            "formula": "Estimated botox U.S. market = Wholesale cost per vial × Annual vials sold = $1,200 × 2.5M vials",
+            "result": "$3B ($3,000M)"
+          },
+          "step_3_required_market_share": {
+            "formula": "Guyderma's required market share = Required sales / Total market = $200M / $3,000M",
+            "result": "6.67% (precise) ≈ 7% (casebook rounded)"
+          }
+        }
+      },
+      "qualitative_part": {
+        "scoring_note": "Qualitative portion of Q4 is scored as 100% total, split into two tiers. Within each tier, use 3-level scoring per",
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "tier_1_basic": {
+          "weight_of_Q4_qualitative_total": "50%",
+          "keypoints": [
+            "Given the assumption of 5% margin, the company should plan to reach 7% in the market share in order to get $10M in profits"
+          ],
+          "note": "Expected from every candidate. Single point worth 50% of qualitative score."
+        },
+        "tier_2_advanced": {
+          "weight_of_Q4_qualitative_total": "50%",
+          "points_available": 3,
+          "weight_per_point": "~16.7% of qualitative total",
+          "keypoints": [
+            "5% margin makes sense as botox has been around for a while and its production is likely already standardized and it might be a product with little differentiation and thus high price pressure and low margins",
+            "7% market share sounds a bit ambitious as this is a low margin segment, and so it's volume-driven and we should expect big-name players that enjoy high market shares and represent tough competition",
+            "Profitability is the function of the market share, so if 5% is industry average and there are dominant players, it might suggest that we should expect lower margin and thus higher market share to hit $10M"
+          ],
+          "note": "Not expected from every candidate. Each advanced point adds ~16.7% to qualitative score."
+        },
+        "minimum_expected": "Correct numerical answer + Tier 1 basic contextualization (covered)",
+        "outstanding_threshold": "Correct numerical answer + Tier 1 covered + at least 2 Tier 2 advanced comments covered"
+      }
+    }
+  },
+  "state_machine_global": {
+    "case_type": "interviewer_driven",
+    "skip_logic": false,
+    "mandatory_sequence": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4"
+    ],
+    "rules": [
+      "Q1 cannot be skipped under any circumstances",
+      "Questions must proceed in linear order Q1 → Q2 → Q3 → Q4",
+      "A question may not be advanced until the current question receives a scoreable answer (1st or 2nd attempt)",
+      "If analyst pre-covers a later question's keypoints in an earlier answer, record as pre-coverage but still ask the later question in sequence",
+      "No question may be skipped even if pre-covered"
+    ]
+  },
+  "scoring_summary": {
+    "Q1": {
+      "type": "framework",
+      "total_keypoints": 14,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q2": {
+      "type": "qualitative",
+      "total_keypoints": 11,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q3": {
+      "type": "qualitative",
+      "total_keypoints": 12,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q4": {
+      "type": "quantitative",
+      "part_1_quantitative": {
+        "correct_answer": "7% (casebook rounded) or 6.67% (precise)",
+        "zero_tolerance": true,
+        "scoring": "Binary: Full credit if correct (7% or 6.67%); zero credit if incorrect"
+      },
+      "part_2_qualitative": {
+        "total_keypoints": 4,
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "human_review_priority": "false-partial > false-not-covered > covered",
+        "tier_1_basic": {
+          "keypoints": 1,
+          "weight": "50% of qualitative score"
+        },
+        "tier_2_advanced": {
+          "keypoints": 3,
+          "weight_per_point": "~16.7% of qualitative score",
+          "weight_total": "50% of qualitative score"
+        }
+      }
+    }
+  }
+}

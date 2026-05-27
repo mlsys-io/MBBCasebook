@@ -1,0 +1,529 @@
+{
+  "case_id": "012",
+  "version": "v3",
+  "source": {
+    "title": "Wen Windows",
+    "inspired_by": "L.E.K. Consulting",
+    "year": 2020,
+    "author": "Peter K.",
+    "reference": "Peter-K.org, Case #12",
+    "casebook_abbr": "PK21"
+  },
+  "case_type": "interviewer_driven",
+  "case_type_origin": null,
+  "annotation_mode": null,
+  "case_arch": {
+    "primary": "Revenue Growth",
+    "tags": [
+      "Revenue Growth",
+      "Growth Strategy"
+    ]
+  },
+  "difficulty": "Medium",
+  "industry": "Manufacturing / Building Products (Windows)",
+  "topic": "Revenue growth — market share recovery and growth strategy for vertically integrated window manufacturer",
+  "expected_duration_minutes": 20,
+  "opening_prompt": "Hi, I'd like to solve some consulting cases with you. Pls be a good interviewee to have a potential test in consulting cases. For the case problem-solving, pls do not assume any numbers or assumptions before my confirmation. I will give you the context upon request. I need you to answer the following questions for the client. Before you start, feel free to ask me 2-3 clarifying questions about the client.\n\nQ1. How would you structure your approach to help the client increase their market share?\nQ2. What are the advantages of the vertical integration for the client?\nQ3. The client is considering investing in product development to respond to a growing trend of home automation (e.g. so-called smart windows, voice-activated smart shades). What are some risks of this investment?\nQ4. Wen Windows launched a new energy-efficient window model a couple of years ago, but the model is still unprofitable. How many units of this model should the company sell annually to break-even?\n\nHere is the basic context for the client:\nWen Windows is a vertically integrated window producer, with six manufacturing facilities and 30 service centers around the U.S. Their sales grew until 2019 when the company started losing its market share. They generated $150M in sales in 2019. The CEO has hired you to help them turn things around and boost their sales. The case was in early 2020 (before the pandemic).",
+  "structure_1_client_basic_context": {
+    "company": "Wen Windows",
+    "type": "vertically integrated window producer",
+    "situation": "With six manufacturing facilities and 30 service centers around the U.S., their sales grew until 2019 when the company started losing its market share. They generated $150M in sales in 2019. The case was in early 2020 (before the pandemic).",
+    "action": "The CEO has hired you to help them turn things around and boost their sales.",
+    "ask": "Help Wen Windows turn things around and boost their sales / increase market share."
+  },
+  "structure_2_information_upon_request": {
+    "item_1": {
+      "item_id": "item_1",
+      "trigger": "Analyst asks what vertical integration means for Wen Windows specifically or what they produce in-house",
+      "core_dimensional_concept": "scope of in-house production capabilities under vertical integration",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar named 'Operations', 'Value Chain', or 'Manufacturing Capabilities'",
+          "sub-bullet under Wen Windows analysis asking what components or products they produce in-house",
+          "explicit clarifying question about what vertical integration means for their operations or what they make themselves"
+        ],
+        "alternative_phrasings": [
+          "what does Wen Windows manufacture",
+          "what components do they make in-house",
+          "what does vertical integration mean for them",
+          "in-house production scope",
+          "what is their value chain"
+        ]
+      },
+      "disqualifying": [
+        "Only says 'vertical integration risk' under the Risk pillar without touching the specific production scope (a risk dimension, not the production-capacity subject)",
+        "Only mentions 'vertically integrated' as a passing reference without actively asking about the specific product line or production scope (F pattern)"
+      ],
+      "info": "The vertical integration implies that Wen Windows makes their own glass units, vinyl components, fiberglass frames, etc."
+    },
+    "item_2": {
+      "item_id": "item_2",
+      "trigger": "Analyst asks about customer groups or sales channels (B2C vs B2B)",
+      "core_dimensional_concept": "Wen Windows' customer segment mix (B2C vs B2B)",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar named 'Customer Groups', 'Customer Segments', or 'Sales Channels'",
+          "sub-bullet under Wen Windows analysis asking who they sell to or what their channel mix is",
+          "explicit clarifying question about B2C vs B2B or direct vs indirect customers"
+        ],
+        "alternative_phrasings": [
+          "B2C vs B2B",
+          "who does Wen Windows sell to",
+          "customer mix",
+          "distribution channels",
+          "consumer vs contractor vs builder"
+        ]
+      },
+      "disqualifying": [
+        "Only loosely states 'B2B market' under the Market pillar without engaging Wen Windows' own customer types (passing reference, F pattern)",
+        "Only says 'customer concentration risk' under the Risk pillar — a risk dimension, not the customer-segmentation subject itself"
+      ],
+      "info": "Wen Windows works with both B2C and B2B."
+    },
+    "item_3": {
+      "item_id": "item_3",
+      "trigger": "Analyst asks about product portfolio or current product offerings",
+      "core_dimensional_concept": "Wen Windows' product portfolio breadth and innovation stance",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar named 'Product Portfolio', 'Offerings', or 'Product Lines'",
+          "sub-bullet under Wen Windows analysis asking about types of windows they offer or product variety",
+          "explicit clarifying question about what products they currently sell or whether they have an innovation pipeline"
+        ],
+        "alternative_phrasings": [
+          "what products do they offer",
+          "product variety",
+          "window types",
+          "product range",
+          "existing product portfolio"
+        ]
+      },
+      "disqualifying": [
+        "Only mentions 'product line' as a modifier of another point (adjacent-dimension modifier, G pattern)",
+        "Only says 'new product development' under the Growth pillar without engaging the existing product portfolio itself (passing reference, F pattern)"
+      ],
+      "info": "Wen Windows already offers a wide variety of windows, but still keeps innovating."
+    },
+    "item_4": {
+      "item_id": "item_4",
+      "trigger": "Analyst asks about market size or TAM of the U.S. window market",
+      "core_dimensional_concept": "U.S. window market total size by revenue",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar named 'Market Size', 'TAM', or 'U.S. Windows Industry'",
+          "explicit clarifying question about how big the U.S. window market is in dollar terms",
+          "sub-bullet under industry/market analysis asking for market scale or total revenue"
+        ],
+        "alternative_phrasings": [
+          "total addressable market",
+          "TAM",
+          "how big is the window market",
+          "industry revenue",
+          "market value in dollars"
+        ]
+      },
+      "disqualifying": [
+        "Only says 'market growth potential' under the Growth pillar without touching the current market-size figure (F pattern)",
+        "Only says 'large market' as a passing mention without actively asking for the specific size figure"
+      ],
+      "info": "The size of U.S. window market is around $15B."
+    },
+    "item_5": {
+      "item_id": "item_5",
+      "trigger": "Analyst asks about competitive landscape or number of players in the window market",
+      "core_dimensional_concept": "competitive fragmentation of the U.S. window market",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar named 'Competition', 'Competitive Landscape', or 'Major Window Manufacturers'",
+          "explicit clarifying question about how many players are in the market or how fragmented it is",
+          "sub-bullet under U.S. windows industry analysis asking about market structure or concentration"
+        ],
+        "alternative_phrasings": [
+          "how many competitors",
+          "market fragmentation",
+          "competitive intensity",
+          "number of players",
+          "who are the major competitors"
+        ]
+      },
+      "disqualifying": [
+        "Only says 'competitive risk' under the Risk pillar — a risk dimension, not the market-structure subject itself",
+        "Only says 'competitive market' as a passing mention without touching the specific market structure (F pattern)"
+      ],
+      "info": "The space is quite fragmented with a lot of players."
+    },
+    "item_6": {
+      "item_id": "item_6",
+      "trigger": "Analyst asks about financial targets, revenue goals, or desired growth objectives",
+      "core_dimensional_concept": "Wen Windows' financial targets or revenue growth goals",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar named 'Financial Targets', 'Growth Objectives', or 'Investment Goals'",
+          "explicit clarifying question about what revenue target they want to achieve or what success looks like",
+          "sub-bullet asking for financial goal or target market share"
+        ],
+        "alternative_phrasings": [
+          "revenue target",
+          "growth goal",
+          "what does success look like",
+          "financial objective",
+          "target market share percentage"
+        ]
+      },
+      "disqualifying": [
+        "Only lists 'Revenue analysis' as the name of an analysis dimension under the Framework pillar rather than asking the specific target (passing reference, F pattern)",
+        "Only asks 'what is the current revenue' without touching the target/expected-revenue dimension"
+      ],
+      "info": "No revenue goals provided."
+    }
+  },
+  "structure_3_case_questions": {
+    "Q1": {
+      "q_id": "Q1",
+      "type": "framework",
+      "question_text": "How would you structure your approach to help the client increase their market share?",
+      "information_to_share_upfront": null,
+      "information_upon_request": "See structure_2 items 1–6. Release only items by semantic touch (release when the analyst structurally engages the dimension; not on a passing reference), not by mere keyword presence.",
+      "state_machine": {
+        "next_question": "Q2",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable framework answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q2": {
+      "q_id": "Q2",
+      "type": "qualitative",
+      "question_text": "What are the advantages of the vertical integration for the client?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q3",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q3": {
+      "q_id": "Q3",
+      "type": "qualitative",
+      "question_text": "The client is considering investing in product development to respond to a growing trend of home automation (e.g. so-called smart windows, voice-activated smart shades). What are some risks of this investment?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q4",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q4": {
+      "q_id": "Q4",
+      "type": "quantitative",
+      "question_text": "Wen Windows launched a new energy-efficient window model a couple of years ago, but the model is still unprofitable. How many units of this model should the company sell annually to break-even?",
+      "information_to_share_upfront": [
+        "In 2019 Wen Windows sold 2k units of this model for the total of $1.2M"
+      ],
+      "information_upon_request": [
+        {
+          "item_id": "Q4_item_1",
+          "trigger": "Analyst asks about fixed costs or annual operating costs for this model",
+          "core_dimensional_concept": "annual fixed costs of marketing and production for the energy-efficient model",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question asking for fixed costs to anchor break-even calculation",
+              "break-even formula setup requesting fixed cost input: 'What are the fixed costs for this model?'",
+              "direct question: 'What are the annual marketing and production costs?'"
+            ],
+            "alternative_phrasings": [
+              "fixed costs",
+              "annual overhead",
+              "marketing and production costs",
+              "cost base for this model",
+              "how much does it cost annually to run this product"
+            ]
+          },
+          "disqualifying": [
+            "Only lists 'fixed costs' as a dimension name within the Cost structure framework without actively requesting the specific figure (passing reference, F pattern)",
+            "Only says 'high fixed cost risk' under the Risk pillar — a risk dimension, not a question about the specific amount"
+          ],
+          "info": "Annual fixed costs of marketing and production for this model is $1M."
+        },
+        {
+          "item_id": "Q4_item_2",
+          "trigger": "Analyst asks about gross margin or contribution margin for this model",
+          "core_dimensional_concept": "gross margin (revenue minus variable costs) for the energy-efficient model",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question asking for margin rate to compute contribution margin per unit",
+              "break-even formula setup requesting margin percentage: 'What is the gross / contribution margin?'",
+              "direct question: 'What is the margin on this product?'"
+            ],
+            "alternative_phrasings": [
+              "gross margin",
+              "contribution margin",
+              "profit margin per unit",
+              "margin percentage",
+              "variable cost percentage"
+            ]
+          },
+          "disqualifying": [
+            "Only lists 'gross margin' as a framework dimension under Profitability Analysis without requesting the specific percentage figure (passing reference, F pattern)",
+            "Only says 'margin is key to break-even' without actively asking for the specific margin figure"
+          ],
+          "info": "Gross margin for this model is 30% (revenue minus variable costs)."
+        }
+      ],
+      "state_machine": {
+        "next_question": null,
+        "skip_logic": false,
+        "transition_condition": "Case ends after Q4"
+      }
+    }
+  },
+  "structure_4_ground_truth": {
+    "Q1_ground_truth": {
+      "type": "framework",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_us_windows_industry": {
+          "keypoints": [
+            "Growth rate",
+            "Major window manufacturers (incl. market shares, offerings)"
+          ],
+          "subtotal": 2
+        },
+        "pillar_2_wen_windows": {
+          "keypoints": [
+            "Key window types and adjacency services",
+            "Customer groups (e.g. B2C/B2B; high-end/low-end)",
+            "Value chain",
+            "Marketing and salesforce"
+          ],
+          "subtotal": 4
+        },
+        "pillar_3_market_share": {
+          "keypoints": [
+            "Current market share and its dynamics",
+            "Current revenue and its growth rate",
+            "Revenue breakdown by product line",
+            "Pricing strategy"
+          ],
+          "subtotal": 4
+        },
+        "pillar_4_market_share_growth_areas": {
+          "keypoints": [
+            "Marketing strategy",
+            "Distribution channels",
+            "Pricing strategy",
+            "Value proposition and customer experience"
+          ],
+          "subtotal": 4
+        }
+      },
+      "total_keypoints": 14,
+      "minimum_expected": "Cover at least 2 pillars with sub-items; minimum 4 keypoints; structured MECE approach covering revenue analysis + business model + external factors",
+      "outstanding_threshold": "All 4 pillars covered with majority of sub-items in a clearly structured issue tree; delivered in a coherent 15-second big-picture overview"
+    },
+    "Q2_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_financial_advantages": {
+          "cost_advantages": [
+            "Cost synergies (e.g. shared overhead between value chain steps)",
+            "Streamlined processes between value chain steps",
+            "Capturing the margins of upstream value chain stages (were baked into supplies prices before vertical integration)"
+          ],
+          "revenue_advantages": [
+            "Potentially stronger brand as strict start-to-finish quality control boosts customers' trust"
+          ],
+          "keypoints": [
+            "Cost synergies (e.g. shared overhead between value chain steps)",
+            "Streamlined processes between value chain steps",
+            "Capturing the margins of upstream value chain stages (were baked into supplies prices before vertical integration)",
+            "Potentially stronger brand as strict start-to-finish quality control boosts customers' trust"
+          ],
+          "subtotal": 4
+        },
+        "pillar_2_strategic_advantages": {
+          "new_opportunities": [
+            "More flexibility and value chain expertise to innovate"
+          ],
+          "operational_improvements": [
+            "Higher quality control at every step of the value chain",
+            "Potentially shorter time-to-market cycle",
+            "Potentially faster order production and delivery"
+          ],
+          "risk_mitigation": [
+            "Less probability of supply chain disruptions"
+          ],
+          "keypoints": [
+            "More flexibility and value chain expertise to innovate",
+            "Higher quality control at every step of the value chain",
+            "Potentially shorter time-to-market cycle",
+            "Potentially faster order production and delivery",
+            "Less probability of supply chain disruptions"
+          ],
+          "subtotal": 5
+        }
+      },
+      "total_keypoints": 9,
+      "minimum_expected": "At least 4 ideas across at least 2 categories (financial and strategic)",
+      "outstanding_threshold": "7-8 ideas covering both financial and strategic pillars with sub-categories structured clearly; delivered fluently on the fly without taking notes"
+    },
+    "Q3_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_market_specific_risks": {
+          "keypoints": [
+            "Potentially fairly small nascent market",
+            "Potentially lots of current players and newcomers which will make it hard to differentiate",
+            "Unexpected change in customer preferences (e.g. privacy concerns over voice-assistants)"
+          ],
+          "subtotal": 3
+        },
+        "pillar_2_financial_risks": {
+          "revenue_related": [
+            "Cannibalization of regular window sales",
+            "Exaggerated revenue assumptions (e.g. due to potential product-market mismatch; smart windows might be a premium product whereas Wen Windows might target mass market)"
+          ],
+          "cost_related": [
+            "Higher-than-expected capex required (e.g. equipment, software development)",
+            "Underestimated opex (e.g. spare parts, new equipment operators/mechanics)"
+          ],
+          "keypoints": [
+            "Cannibalization of regular window sales",
+            "Exaggerated revenue assumptions (e.g. due to potential product-market mismatch; smart windows might be a premium product whereas Wen Windows might target mass market)",
+            "Higher-than-expected capex required (e.g. equipment, software development)",
+            "Underestimated opex (e.g. spare parts, new equipment operators/mechanics)"
+          ],
+          "subtotal": 4
+        },
+        "pillar_3_operational_risks": {
+          "keypoints": [
+            "Lack of expertise in smart tech",
+            "Increase in operational complexity",
+            "Longer R&D cycle",
+            "Lack of talent to staff the production of smart windows",
+            "Lack of production capacity suggesting extra capex needed to expand"
+          ],
+          "subtotal": 5
+        }
+      },
+      "total_keypoints": 12,
+      "minimum_expected": "At least 4 risk items across at least 2 pillars (market, financial, or operational)",
+      "outstanding_threshold": "7-8 items covering all 3 pillars (market, financial, operational) with sub-categories structured clearly; delivered fluently on the fly without taking notes"
+    },
+    "Q4_ground_truth": {
+      "type": "quantitative",
+      "quantitative_part": {
+        "correct_final_answer": "5.6k units annually to break-even",
+        "accepted_values": [
+          5600,
+          5556
+        ],
+        "tolerance_pct": 0.02,
+        "zero_tolerance": false,
+        "scoring_method": "Binary: correct number = full credit; incorrect = zero credit",
+        "calculation_steps": {
+          "step_1_average_price_per_unit": {
+            "formula": "$1.2M ÷ 2,000 units",
+            "result": "$600 per unit"
+          },
+          "step_2_contribution_margin_per_unit": {
+            "formula": "$600 × 30%",
+            "result": "$180 per unit"
+          },
+          "step_3_break_even_units": {
+            "formula": "$1M fixed costs ÷ $180 contribution margin per unit",
+            "result": "5,556 ≈ 5.6k units"
+          }
+        }
+      },
+      "qualitative_part": {
+        "scoring_note": "Qualitative portion of Q4 is scored as 100% total, split into two tiers. Within each tier, use 3-level scoring per",
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "tier_1_basic": {
+          "weight_of_Q4_qualitative_total": "50%",
+          "keypoints": [
+            "In order to break-even the client should almost triple their sales from 2k to 5.6k"
+          ],
+          "note": "Expected from every candidate. Single point worth 50% of qualitative score."
+        },
+        "tier_2_advanced": {
+          "weight_of_Q4_qualitative_total": "50%",
+          "points_available": 5,
+          "weight_per_point": "10% of qualitative total",
+          "keypoints": [
+            "At the surface tripling current sales seems like an ambitious goal",
+            "Energy-efficient windows are likely a premium model and if the client's typical target audience is mass market, then the client should adjust their marketing and distribution to increase sales of this model",
+            "30% gross margin seems reasonable as this model brings additional value of energy efficiency and thus might be priced higher",
+            "Current model doesn't represent a substantial portion of overall sales (1.2M/150M) and thus its economics unlikely hurts client's profitability",
+            "Increase in sales will contribute to stronger economies of scale which might improve gross margin and decrease a break-even point"
+          ],
+          "note": "Not expected from every candidate. Each advanced point adds 10% to qualitative score."
+        },
+        "minimum_expected": "Correct numerical answer + Tier 1 basic contextualization (covered)",
+        "outstanding_threshold": "Correct numerical answer + Tier 1 covered + at least 2 Tier 2 advanced comments covered"
+      }
+    }
+  },
+  "state_machine_global": {
+    "case_type": "interviewer_driven",
+    "skip_logic": false,
+    "mandatory_sequence": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4"
+    ],
+    "rules": [
+      "Q1 cannot be skipped under any circumstances",
+      "Questions must proceed in linear order Q1 → Q2 → Q3 → Q4",
+      "A question may not be advanced until the current question receives a scoreable answer (1st or 2nd attempt)",
+      "If analyst pre-covers a later question's keypoints in an earlier answer, record as pre-coverage but still ask the later question in sequence",
+      "No question may be skipped even if pre-covered"
+    ]
+  },
+  "scoring_summary": {
+    "Q1": {
+      "type": "framework",
+      "total_keypoints": 14,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q2": {
+      "type": "qualitative",
+      "total_keypoints": 9,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q3": {
+      "type": "qualitative",
+      "total_keypoints": 12,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q4": {
+      "type": "quantitative",
+      "part_1_quantitative": {
+        "correct_answer": "5.6k units",
+        "zero_tolerance": true,
+        "scoring": "Binary: Full credit if correct; zero credit if incorrect"
+      },
+      "part_2_qualitative": {
+        "total_keypoints": 6,
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "human_review_priority": "false-partial > false-not-covered > covered",
+        "tier_1_basic": {
+          "keypoints": 1,
+          "weight": "50% of qualitative score"
+        },
+        "tier_2_advanced": {
+          "keypoints": 5,
+          "weight_per_point": "10% of qualitative score",
+          "weight_total": "50% of qualitative score"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,890 @@
+{
+  "case_id": "010",
+  "version": "v2",
+  "source": {
+    "title": "Snack food company",
+    "inspired_by": "BCG",
+    "year": "2020",
+    "author": "Peter K.",
+    "reference": "Peter-K.thinkific.com, Case #10",
+    "casebook_abbr": "PK20"
+  },
+  "case_type": "interviewer_driven",
+  "case_type_origin": "candidate_led",
+  "annotation_mode": "CL_to_IL_override",
+  "case_arch": {
+    "primary": "Profitability",
+    "tags": [
+      "Profitability",
+      "Comparison",
+      "Operational Efficiency",
+      "Revenue Growth"
+    ]
+  },
+  "difficulty": "Medium",
+  "industry": "Consumer Goods / Snack Food",
+  "topic": "Profitability decision — whether snack food company should bring distribution in-house vs. continue with outsourced contractor model",
+  "expected_duration_minutes": 28,
+  "opening_prompt": "Hi, I'd like to solve some consulting cases with you. Pls be a good interviewee to have a potential test in consulting cases. For the case problem-solving, pls do not assume any numbers or assumptions before my confirmation. I will give you the context upon request. For all quantitative calculation results, you MUST include the unit alongside the number in your final answer. Always state both the number AND its unit together (e.g., \"$110M\", \"260,000 metric tons\", \"6.7%\", \"5,000 hires\") so your answer is unambiguous. I need you to answer the following questions for the client. Before you start, feel free to ask me 2-3 clarifying questions about the client.\n\nQuestion #1: How would you structure your approach to assess whether the client should switch to the other model?\nQuestion #2: What are the pros and cons of switching to in-house model (vs current outsourced model)?\nQuestion #3: What are the ways to drive the client's sales and accomplish the goal of tripling their revenue?\nQuestion #4: Our analyst did some research re the competitors and here is what they found. What does this table suggest?\nQuestion #5: Can you calculate the total costs as % of sales for each of three players?\nQuestion #6: What would the financial implications be of bringing the distribution in-house? Can you calculate it?\nQuestion #7: You are in the client's meeting and they would like to know your recommendations.\n\nHere is the basic context for the client:\nA snack food company hires a contractor to distribute their products (e.g. cookies, crackers). They would like to bring distribution in-house and hire full-time workers to distribute their products (i.e. put the products on the shelves in the stores). Should they switch to the other model?",
+  "structure_1_client_basic_context": {
+    "company": "Snack food company",
+    "type": "Snack food manufacturer (cookies, crackers)",
+    "situation": "Currently uses a contractor to distribute their products to stores",
+    "action": "Considering bringing distribution in-house by hiring full-time workers to put products on the shelves",
+    "ask": "Should they switch to the in-house distribution model?"
+  },
+  "structure_2_information_upon_request": {
+    "item_1": {
+      "item_id": "item_1",
+      "trigger": "Analyst asks about or includes contractor commission rate / distribution cost structure in framework or analysis",
+      "core_dimensional_concept": "contractor commission rate",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet about distribution costs or contractor economics",
+          "explicit clarifying question about commission or contractor fees",
+          "quantitative analysis setup asking for cost data"
+        ],
+        "alternative_phrasings": [
+          "contractor fee",
+          "outsourcing cost",
+          "distribution commission",
+          "contractor rate"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'distribution costs' only in passing as part of broader cost structure without specifically asking about contractor terms (F passing mention)",
+        "Analyst references 'contractor' only in the context of risk (e.g., 'dependency on contractor') without asking about financials (G adjacent dimension)"
+      ],
+      "info": "The contractor takes 20% commission."
+    },
+    "item_2": {
+      "item_id": "item_2",
+      "trigger": "Analyst asks about or includes client's growth ambition / revenue targets / strategic objectives in framework or analysis",
+      "core_dimensional_concept": "client revenue growth ambition",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet about strategic goals or growth targets",
+          "explicit clarifying question about client ambitions or revenue objectives",
+          "qualitative analysis of strategic value mentioning growth trajectory"
+        ],
+        "alternative_phrasings": [
+          "growth target",
+          "revenue goal",
+          "sales ambition",
+          "strategic objective",
+          "future revenue plans"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'growth' only as a general market trend without asking about client-specific targets (F passing mention)",
+        "Analyst mentions 'revenue' only in the context of financial analysis without probing client's strategic intentions (G adjacent dimension)"
+      ],
+      "info": "The client has ambition to triple their sales in the near future."
+    },
+    "item_3": {
+      "item_id": "item_3",
+      "trigger": "Analyst asks about or includes competitor distribution models / industry benchmarking in framework or analysis",
+      "core_dimensional_concept": "competitor distribution model benchmark",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet about competitor analysis or industry benchmark",
+          "explicit clarifying question about how other players manage distribution",
+          "qualitative analysis listing competitive landscape or best practices"
+        ],
+        "alternative_phrasings": [
+          "industry standard",
+          "competitor model",
+          "peer distribution",
+          "other players in the market",
+          "benchmarking"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'competition' only as a risk factor without asking how competitors handle distribution (G adjacent dimension)",
+        "Analyst mentions 'market players' only in the context of market share without probing distribution model specifics (F passing mention)"
+      ],
+      "info": "Other players own the value chain and do distribution in-house."
+    },
+    "item_4": {
+      "item_id": "item_4",
+      "trigger": "Analyst asks about or includes client's market position / relative size in framework or analysis",
+      "core_dimensional_concept": "client market position and relative size",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet about company size or market position",
+          "explicit clarifying question about client's market share or ranking",
+          "analysis of economies of scale or competitive positioning"
+        ],
+        "alternative_phrasings": [
+          "market share",
+          "company size",
+          "industry ranking",
+          "competitive position",
+          "scale"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'size' only in the context of operational capacity without probing market standing (G adjacent dimension)",
+        "Analyst mentions 'competition' generically without asking where client stands relative to peers (F passing mention)"
+      ],
+      "info": "The client is a large player, but not among top-5 companies."
+    },
+    "item_5": {
+      "item_id": "item_5",
+      "trigger": "Analyst asks about or includes client's geographic footprint / distribution coverage in framework or analysis",
+      "core_dimensional_concept": "client geographic distribution footprint",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet about geographic scope or coverage",
+          "explicit clarifying question about where client operates or sells",
+          "analysis of distribution network or regional reach"
+        ],
+        "alternative_phrasings": [
+          "geographic reach",
+          "national coverage",
+          "distribution area",
+          "regional presence",
+          "store coverage"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'geography' only as a potential new market opportunity without asking about current footprint (G adjacent dimension)",
+        "Analyst mentions 'distribution network' only in the context of in-house build-out without asking about existing coverage (F passing mention)"
+      ],
+      "info": "The client has a national footprint."
+    }
+  },
+  "structure_3_case_questions": {
+    "Q1": {
+      "q_id": "Q1",
+      "type": "framework",
+      "question_text": "How would you structure your approach to assess whether the client should switch to the other model?",
+      "information_to_share_upfront": null,
+      "information_upon_request": "See structure_2 items 1-5. Release only upon dimensional touch per A-G; not by mere keyword presence.",
+      "state_machine": {
+        "next_question": "Q2",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable framework answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q2": {
+      "q_id": "Q2",
+      "type": "qualitative",
+      "question_text": "What are the pros and cons of switching to in-house model (vs current outsourced model)?",
+      "information_to_share_upfront": null,
+      "information_upon_request": "See structure_2 items 1-5. Release only upon dimensional touch per A-G.",
+      "state_machine": {
+        "next_question": "Q3",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q3": {
+      "q_id": "Q3",
+      "type": "qualitative",
+      "question_text": "What are the ways to drive the client's sales and accomplish the goal of tripling their revenue?",
+      "information_to_share_upfront": null,
+      "information_upon_request": "See structure_2 items 1-5. Release only upon dimensional touch per A-G.",
+      "state_machine": {
+        "next_question": "Q4",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q4": {
+      "q_id": "Q4",
+      "type": "qualitative",
+      "question_text": "Our analyst did some research re the competitors and here is what they found. What does this table suggest?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "appendix": {
+        "appendix_1": {
+          "title": "Appendix 1. Competitor comparison table",
+          "release_rule": "Share upfront with candidate at the start of Q4",
+          "type": "table",
+          "question_label": "Question #4",
+          "footnote": "* SKUs — stock keeping units",
+          "table": {
+            "headers": [
+              "Indicator",
+              "Player A",
+              "Player B",
+              "Client"
+            ],
+            "rows": [
+              {
+                "indicator": "Annual volume sold, # items",
+                "Player_A": "1.6M",
+                "Player_B": "2.0M",
+                "Client": "0.4M"
+              },
+              {
+                "indicator": "# SKUs* offered",
+                "Player_A": 150,
+                "Player_B": 200,
+                "Client": 30
+              },
+              {
+                "indicator": "# SKUs* sold out in the stores",
+                "Player_A": "2%",
+                "Player_B": "1%",
+                "Client": "5%"
+              },
+              {
+                "indicator": "# SKUs* misplaced in the stores",
+                "Player_A": "1%",
+                "Player_B": "1%",
+                "Client": "3%"
+              },
+              {
+                "indicator": "% promotion (placed on a special aisle) at: Mass retail stores",
+                "Player_A": "100%",
+                "Player_B": "100%",
+                "Client": "100%"
+              },
+              {
+                "indicator": "% promotion (placed on a special aisle) at: Grocery chains",
+                "Player_A": "100%",
+                "Player_B": "100%",
+                "Client": "90%"
+              },
+              {
+                "indicator": "% promotion (placed on a special aisle) at: Drug stores",
+                "Player_A": "100%",
+                "Player_B": "100%",
+                "Client": "90%"
+              },
+              {
+                "indicator": "Distribution center costs (% of revenue)",
+                "Player_A": "5%",
+                "Player_B": "5%",
+                "Client": "5%"
+              },
+              {
+                "indicator": "Transportation costs (% of revenue)",
+                "Player_A": "2%",
+                "Player_B": "3%",
+                "Client": "-"
+              },
+              {
+                "indicator": "Distribution workers (% of revenue)",
+                "Player_A": "8%",
+                "Player_B": "8%",
+                "Client": "-"
+              },
+              {
+                "indicator": "Distribution commission (% of revenue)",
+                "Player_A": "-",
+                "Player_B": "-",
+                "Client": "20%"
+              }
+            ]
+          }
+        }
+      },
+      "state_machine": {
+        "next_question": "Q5",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q5": {
+      "q_id": "Q5",
+      "type": "quantitative",
+      "question_text": "Can you calculate the total costs as % of sales for each of three players? Pls list the result as 'player name - %' respectively one by one.",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q6",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides correct calculations or 2nd attempt completed"
+      }
+    },
+    "Q6": {
+      "q_id": "Q6",
+      "type": "quantitative",
+      "question_text": "What would the financial implications be of bringing the distribution in-house? Can you calculate it?",
+      "information_to_share_upfront": null,
+      "information_upon_request": [
+        {
+          "item_id": "Q6_item_1",
+          "trigger": "Analyst asks about revenue impact or efficiency assumptions when building in-house distribution",
+          "core_dimensional_concept": "revenue decline from distribution inefficiency at start",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question about revenue impact or decline assumption",
+              "framework pillar about transition costs or ramp-up effects",
+              "hypothesis about efficiency gap between in-house and contractor"
+            ],
+            "alternative_phrasings": [
+              "revenue decline",
+              "efficiency loss",
+              "transition impact on sales",
+              "ramp-up period effect",
+              "productivity during transition"
+            ]
+          },
+          "disqualifying": [
+            "Analyst mentions 'risk' of transition generally without asking for specific revenue impact numbers (G adjacent dimension)",
+            "Analyst mentions 'efficiency' only as a future benefit of in-house model without asking for current transition assumption (F passing mention)"
+          ],
+          "info": "Given that at the beginning the client will lack the necessary expertise and capabilities, we expect that the client's distribution workers will be less efficient than the contractor, so the revenue will decline by 10%."
+        },
+        {
+          "item_id": "Q6_item_2",
+          "trigger": "Analyst asks about unit price or revenue per unit to calculate total revenue",
+          "core_dimensional_concept": "average price per unit",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question about product price or revenue per unit",
+              "quantitative setup asking for price to calculate revenue",
+              "framework pillar about revenue calculation inputs"
+            ],
+            "alternative_phrasings": [
+              "price per unit",
+              "unit price",
+              "average selling price",
+              "revenue per item"
+            ]
+          },
+          "disqualifying": [
+            "Analyst mentions 'pricing strategy' only as a revenue growth lever without asking for current unit price for math calculation (G adjacent dimension)",
+            "Analyst mentions 'revenue' without asking for the specific price input needed for calculation (F passing mention)"
+          ],
+          "info": "The average price per unit is $4.0."
+        },
+        {
+          "item_id": "Q6_item_3",
+          "trigger": "Analyst asks about profit margin to calculate profit impact",
+          "core_dimensional_concept": "client profit margin",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question about profit margin or profitability rate",
+              "quantitative setup asking for margin to calculate profit",
+              "framework pillar about financial performance baseline"
+            ],
+            "alternative_phrasings": [
+              "margin",
+              "profit rate",
+              "profitability",
+              "net margin",
+              "earnings margin"
+            ]
+          },
+          "disqualifying": [
+            "Analyst mentions 'profitability' only as a general concern without asking for specific margin percentage for calculation (F passing mention)",
+            "Analyst mentions 'financial implications' broadly without probing for current margin baseline (G adjacent dimension)"
+          ],
+          "info": "The client's profit margin is 12%."
+        }
+      ],
+      "state_machine": {
+        "next_question": "Q7",
+        "skip_logic": false,
+        "max_attempts": 2,
+        "scoring_on_transition": {
+          "attempt_1_correct": "Full score",
+          "attempt_2_correct": "0 score per core_principles §7.2",
+          "both_attempts_wrong": "0 score; interviewer provides correct answer before Q7"
+        },
+        "transition_condition": "Analyst provides correct final answer or 2nd attempt completed"
+      }
+    },
+    "Q7": {
+      "q_id": "Q7",
+      "type": "qualitative",
+      "question_text": "You are in the client's meeting and they would like to know your recommendations.",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": null,
+        "skip_logic": false,
+        "transition_condition": "Case ends after Q7"
+      }
+    }
+  },
+  "structure_4_ground_truth": {
+    "Q1_ground_truth": {
+      "type": "framework",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_distribution_models": {
+          "keypoints": [
+            "Process flow",
+            "Volume and capacity",
+            "Models of key competitors"
+          ],
+          "subtotal": 3
+        },
+        "pillar_2_financial_analysis": {
+          "keypoints": [
+            "Planned capex",
+            "Projected revenue change",
+            "Expected change in costs",
+            "Financial goals"
+          ],
+          "subtotal": 4
+        },
+        "pillar_3_strategic_value": {
+          "keypoints": [
+            "New opportunities",
+            "Advantages in operations (e.g. speed, quality)",
+            "Improvement in CX (e.g. higher flexibility)",
+            "Risk mitigation"
+          ],
+          "subtotal": 4
+        },
+        "pillar_4_risks": {
+          "keypoints": [
+            "Financial risks",
+            "Operational risks"
+          ],
+          "subtotal": 2
+        }
+      },
+      "total_keypoints": 13,
+      "minimum_expected": "At least 2 pillars covered with substantive content, including Financial analysis",
+      "outstanding_threshold": "All 4 pillars covered with at least 2 keypoints each, demonstrating structured comparison approach"
+    },
+    "Q2_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_financial_analysis": {
+          "costs_factors": {
+            "keypoints": [
+              "Increase in some costs: salaries to in-house distribution workers and transportation",
+              "Cost savings — no commission for distribution contractor"
+            ],
+            "subtotal": 2
+          },
+          "revenue_factors": {
+            "keypoints": [
+              "Potentially higher quality of distribution (e.g. no sold-out, damaged, expired, etc. items) which will improve sales"
+            ],
+            "subtotal": 1
+          },
+          "investment": {
+            "keypoints": [
+              "Potential capex in own truck fleet and trade equipment for distribution workers (e.g. barcode scanners, tablets)"
+            ],
+            "subtotal": 1
+          },
+          "keypoints": [
+            "Increase in some costs: salaries to in-house distribution workers and transportation",
+            "Cost savings — no commission for distribution contractor",
+            "Potentially higher quality of distribution (e.g. no sold-out, damaged, expired, etc. items) which will improve sales",
+            "Potential capex in own truck fleet and trade equipment for distribution workers (e.g. barcode scanners, tablets)"
+          ],
+          "subtotal": 4
+        },
+        "pillar_2_strategic_value": {
+          "new_opportunities": {
+            "keypoints": [
+              "Geo expansion isn't limited to the geo footprint of distribution contractor"
+            ],
+            "subtotal": 1
+          },
+          "advantages_in_operations": {
+            "keypoints": [
+              "More operational flexibility",
+              "Potentially shorter lead times",
+              "More opportunities to experiment and innovate with ops processes"
+            ],
+            "subtotal": 3
+          },
+          "improvement_in_cx": {
+            "keypoints": [
+              "Stronger relationship with distributors given the direct access to them"
+            ],
+            "subtotal": 1
+          },
+          "risk_mitigation": {
+            "keypoints": [
+              "Less risk of delays and de-prioritization if the contractor is overbooked with orders"
+            ],
+            "subtotal": 1
+          },
+          "keypoints": [
+            "Geo expansion isn't limited to the geo footprint of distribution contractor",
+            "More operational flexibility",
+            "Potentially shorter lead times",
+            "More opportunities to experiment and innovate with ops processes",
+            "Stronger relationship with distributors given the direct access to them",
+            "Less risk of delays and de-prioritization if the contractor is overbooked with orders"
+          ],
+          "subtotal": 6
+        },
+        "pillar_3_risks": {
+          "operational_risks": {
+            "keypoints": [
+              "Potentially long time to develop the necessary capabilities to match the distribution contractor (that has been doing it for years)",
+              "Narrow talent pool to staff in-house distribution",
+              "Increase in operational complexity"
+            ],
+            "subtotal": 3
+          },
+          "financial_risks": {
+            "keypoints": [
+              "Lack of scale (low sales) in some regions to make in-house distribution economically viable",
+              "Underestimated costs/exaggerated revenues",
+              "Lack of funding for necessary capex"
+            ],
+            "subtotal": 3
+          },
+          "keypoints": [
+            "Potentially long time to develop the necessary capabilities to match the distribution contractor (that has been doing it for years)",
+            "Narrow talent pool to staff in-house distribution",
+            "Increase in operational complexity",
+            "Lack of scale (low sales) in some regions to make in-house distribution economically viable",
+            "Underestimated costs/exaggerated revenues",
+            "Lack of funding for necessary capex"
+          ],
+          "subtotal": 6
+        }
+      },
+      "total_keypoints": 16,
+      "minimum_expected": "At least 4 keypoints covered across Financial analysis and Strategic value pillars, representing both pros and cons",
+      "outstanding_threshold": "At least 8 keypoints covered across all 3 pillars including Risk pillar"
+    },
+    "Q3_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_upgrade_marketing_strategy": {
+          "keypoints": [
+            "Invest in aggressive marketing campaigns and promotions",
+            "Increase in-store marketing",
+            "Partner with major wine brands to do co-marketing for wine, cheese and cracker pairings"
+          ],
+          "subtotal": 3
+        },
+        "pillar_2_change_pricing": {
+          "keypoints": [
+            "Offer family-size packages (for price-sensitive customers)",
+            "Introduce bundles of different cookies/crackers",
+            "Adjust pricing levels to match WTP (willingness-to-pay)"
+          ],
+          "subtotal": 3
+        },
+        "pillar_3_increase_efficiency_of_distribution": {
+          "keypoints": [
+            "Bring distribution in-house and ensure its top-notch quality (e.g. no sold out, damaged, expired items on the shelves)",
+            "Launch e-commerce",
+            "Incentivize distributors to promote our products (e.g. increase their mark-ups, get best shelf-space)",
+            "Add new distribution channels (e.g. retail chains, groceries, drug stores)",
+            "Partner with creameries, bakeries, dessert places, and coffee shops to sell our products",
+            "Enter vending machine business to sell cookies and crackers"
+          ],
+          "subtotal": 6
+        },
+        "pillar_4_improve_and_expand_value_proposition": {
+          "keypoints": [
+            "Design new flavors, shapes, calorie count, types of cookies/crackers",
+            "Partner with major ice cream brands to do cookie and cream ice cream",
+            "Enter high-end/low-end segments",
+            "Enter corporate segment with cookies for professional meetings",
+            "Consider entering baking and sweets business (e.g. pies, cakes, candies) by leveraging core capabilities and understanding of the customer segments",
+            "Consider white-labeling"
+          ],
+          "subtotal": 6
+        }
+      },
+      "total_keypoints": 18,
+      "minimum_expected": "At least 4 keypoints across at least 2 pillars",
+      "outstanding_threshold": "At least 8 keypoints across 3+ pillars demonstrating structured revenue growth thinking"
+    },
+    "Q4_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_basic_comments": {
+          "keypoints": [
+            "Our client is a smaller player in terms of sales and size of product portfolio",
+            "The quality of client's contractor job is inferior to the other players — number of sold our or misplaced SKUs is far higher than industry averages",
+            "Not all of the client's SKUs are placed on a special aisle",
+            "The client pays distribution commission to their contractor, and the other players use their in-house distribution capabilities"
+          ],
+          "subtotal": 4
+        },
+        "pillar_2_advanced_comments": {
+          "keypoints": [
+            "The drastically higher volume gives other players economies of scale which makes in-house distribution economically viable",
+            "Far more developed product portfolio (# SKUs is 5-7 times higher than our client's) might suggest far more complicated distribution systems in place",
+            "The outsourced contractor serves a wide variety of clients and might not be 100% focused on our client's needs — this might explain fairly high % of sold out and misplaced SKUs which likely hurts our sales and experience of our customers",
+            "Our client's distribution center costs (5%) are aligned with the industry benchmarks, so the client is already a success at some parts of distribution value chain, which might be foundation for capturing the whole distribution value chain (bringing it in-house)"
+          ],
+          "subtotal": 4
+        }
+      },
+      "total_keypoints": 8,
+      "minimum_expected": "At least 2 basic comments covered",
+      "outstanding_threshold": "All 4 basic comments covered plus at least 2 advanced comments"
+    },
+    "Q5_ground_truth": {
+      "type": "quantitative",
+      "quantitative_part": {
+        "correct_final_answer": "Player A: 15% | Player B: 16% | Our client: 25%",
+        "accepted_answer_parts": {
+          "Player_A": {
+            "accepted_values": [
+              0.15
+            ],
+            "tolerance_pct": 0.0,
+            "zero_tolerance": true
+          },
+          "Player_B": {
+            "accepted_values": [
+              0.16
+            ],
+            "tolerance_pct": 0.0,
+            "zero_tolerance": true
+          },
+          "Our_client": {
+            "accepted_values": [
+              0.25
+            ],
+            "tolerance_pct": 0.0,
+            "zero_tolerance": true
+          }
+        },
+        "scoring_method": "Binary: all three correct = full credit; any incorrect = zero credit",
+        "calculation_steps": {
+          "step_1_player_A": {
+            "formula": "Distribution center costs + Transportation costs + Distribution workers = 5% + 2% + 8%",
+            "result": "15%"
+          },
+          "step_2_player_B": {
+            "formula": "Distribution center costs + Transportation costs + Distribution workers = 5% + 3% + 8%",
+            "result": "16%"
+          },
+          "step_3_client": {
+            "formula": "Distribution center costs + Distribution commission = 5% + 20%",
+            "result": "25%"
+          }
+        }
+      },
+      "qualitative_part": {
+        "scoring_note": "Qualitative portion of Q5 is scored as 100% total, split into two tiers. Within each tier, use 3-level scoring per",
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "tier_1_basic": {
+          "weight_of_Q5_qualitative_total": "50%",
+          "keypoints": [
+            "The client's distribution costs are far higher than the industry average"
+          ],
+          "note": "Expected from every candidate. Single point worth 50% of qualitative score."
+        },
+        "tier_2_advanced": {
+          "weight_of_Q5_qualitative_total": "50%",
+          "points_available": 3,
+          "weight_per_point": "~16.7% of qualitative total",
+          "keypoints": [
+            "In-house distribution might dramatically improve the client's margins and economics",
+            "The substantial gap in costs might be also driven by the economies of scale of other players (that our client doesn't enjoy given they are 4-5 times smaller)",
+            "It might also occur that the existing contractor overcharges us, and the client should renegotiate the terms in parallel with transitioning to 100% in-house distribution"
+          ],
+          "note": "Not expected from every candidate. Each advanced point adds ~16.7% to qualitative score."
+        },
+        "minimum_expected": "Correct numerical calculations for all 3 players + Tier 1 basic contextualization (covered)",
+        "outstanding_threshold": "Correct numerical answers + Tier 1 covered + at least 2 Tier 2 advanced comments covered"
+      }
+    },
+    "Q6_ground_truth": {
+      "type": "quantitative",
+      "quantitative_part": {
+        "correct_final_answer": "$240k (new profit after bringing distribution in-house)",
+        "accepted_values": [
+          240000,
+          244800
+        ],
+        "tolerance_pct": 0.02,
+        "zero_tolerance": false,
+        "scoring_method": "Binary: correct number = full credit; incorrect = zero credit",
+        "calculation_steps": {
+          "step_1_current_revenue": {
+            "formula": "0.4M units × $4 per unit",
+            "result": "$1.6M"
+          },
+          "step_2_current_profit": {
+            "formula": "$1.6M × 12%",
+            "result": "$192k"
+          },
+          "step_3_new_revenue_after_inhouse": {
+            "formula": "$1.6M × (1 - 10%)",
+            "result": "$1.44M"
+          },
+          "step_4_distribution_cost_bridge": {
+            "formula": "Costs will bridge half the gap from 25% to industry level (~15-16%); assume distribution costs decrease by 5% (from 20% commission to 15%), adding 5% to profit margin",
+            "result": "New profit margin = 12% + 5% = 17%"
+          },
+          "step_5_new_profit": {
+            "formula": "$1.44M × (12% + 5%) = $1.44M × 17%",
+            "result": "$244.8k ≈ $240k (casebook states $240k)"
+          }
+        }
+      },
+      "qualitative_part": {
+        "scoring_note": "Qualitative portion of Q6 is scored as 100% total, split into two tiers. Within each tier, use 3-level scoring per",
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "tier_1_basic": {
+          "weight_of_Q6_qualitative_total": "50%",
+          "keypoints": [
+            "Despite the client's revenue is expected to decline, the profits are going to jump by almost $50k"
+          ],
+          "note": "Expected from every candidate. Single point worth 50% of qualitative score."
+        },
+        "tier_2_advanced": {
+          "weight_of_Q6_qualitative_total": "50%",
+          "points_available": 5,
+          "weight_per_point": "10% of qualitative total",
+          "keypoints": [
+            "Once the client build the necessary distribution capabilities and develop expertise their revenue will likely restore, which will boost profits even more",
+            "It's also fair to expect that the client will lower # SKUs sold out or misplaced from 3-5% to 1-2% which will contribute to the sales growth too",
+            "Decrease in revenue by 10% will lead to diseconomies of scale (e.g. lower utilization rate of production equipment and logistics, lower volume discounts for raw materials, etc.) which will likely reduce the profit margin and should be added to the analysis",
+            "Our assumption of 5% should be validated based on the benchmarking with similar size players and/or more detailed financial modeling",
+            "We didn't consider potential capex (e.g. for trucks, trade equipment like scanners) in our calculation which might materially change the financial results"
+          ],
+          "note": "Not expected from every candidate. Each advanced point adds 10% to qualitative score."
+        },
+        "minimum_expected": "Correct numerical answer ($240k) + Tier 1 basic contextualization (covered)",
+        "outstanding_threshold": "Correct numerical answer + Tier 1 covered + at least 2 Tier 2 advanced comments covered"
+      }
+    },
+    "Q7_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_recommendation": {
+          "keypoints": [
+            "We would like to recommend for the client to go ahead and make the transition to the in-house distribution model"
+          ],
+          "subtotal": 1
+        },
+        "pillar_2_reasoning": {
+          "keypoints": [
+            "Despite it will reduce the revenue at the beginning, the profits are expected to increase dramatically",
+            "Building in-house distribution capabilities will provide higher control over the value chain and offer more operational flexibility",
+            "It might also help strengthen the relationship with our distributors and react to their concerns quicker"
+          ],
+          "subtotal": 3
+        },
+        "pillar_3_risks": {
+          "keypoints": [
+            "Current lack of distribution expertise",
+            "Increase in operational complexity",
+            "Potentially unfair financial assumptions"
+          ],
+          "subtotal": 3
+        },
+        "pillar_4_next_steps": {
+          "keypoints": [
+            "Build a plan to address potential risks",
+            "Design roadmap to bring distribution in-house",
+            "Try to renegotiate the current 20% rate with the contractor before we complete our transition"
+          ],
+          "subtotal": 3
+        }
+      },
+      "total_keypoints": 10,
+      "minimum_expected": "Recommendation pillar covered + at least 1 reasoning point covered",
+      "outstanding_threshold": "All 4 pillars covered, including at least 2 reasoning points and at least 1 risk point"
+    }
+  },
+  "state_machine_global": {
+    "case_type": "interviewer_driven",
+    "skip_logic": false,
+    "mandatory_sequence": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5",
+      "Q6",
+      "Q7"
+    ],
+    "rules": [
+      "Q1 cannot be skipped under any circumstances",
+      "Questions must proceed in linear order Q1 → Q2 → Q3 → Q4 → Q5 → Q6 → Q7",
+      "A question may not be advanced until the current question receives a scoreable answer (1st or 2nd attempt)",
+      "If analyst pre-covers a later question's keypoints in an earlier answer, record as pre-coverage but still ask the later question in sequence",
+      "No question may be skipped even if pre-covered",
+      "For Q6 (quantitative): if analyst answers incorrectly on both attempts, provide correct answer ($240k new profit) before proceeding to Q7"
+    ]
+  },
+  "scoring_summary": {
+    "Q1": {
+      "type": "framework",
+      "total_keypoints": 13,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q2": {
+      "type": "qualitative",
+      "total_keypoints": 16,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q3": {
+      "type": "qualitative",
+      "total_keypoints": 18,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q4": {
+      "type": "qualitative",
+      "total_keypoints": 8,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q5": {
+      "type": "quantitative",
+      "part_1_quantitative": {
+        "correct_answer": "Player A: 15%, Player B: 16%, Client: 25%",
+        "zero_tolerance": true,
+        "scoring": "Binary: all three correct = full credit; any incorrect = zero credit"
+      },
+      "part_2_qualitative": {
+        "total_keypoints": 4,
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "human_review_priority": "false-partial > false-not-covered > covered",
+        "tier_1_basic": {
+          "keypoints": 1,
+          "weight": "50% of qualitative score"
+        },
+        "tier_2_advanced": {
+          "keypoints": 3,
+          "weight_per_point": "~16.7% of qualitative score",
+          "weight_total": "50% of qualitative score"
+        }
+      }
+    },
+    "Q6": {
+      "type": "quantitative",
+      "part_1_quantitative": {
+        "correct_answer": "$240k",
+        "zero_tolerance": true,
+        "scoring": "Binary: Full credit if correct; zero credit if incorrect"
+      },
+      "part_2_qualitative": {
+        "total_keypoints": 6,
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "human_review_priority": "false-partial > false-not-covered > covered",
+        "tier_1_basic": {
+          "keypoints": 1,
+          "weight": "50% of qualitative score"
+        },
+        "tier_2_advanced": {
+          "keypoints": 5,
+          "weight_per_point": "10% of qualitative score",
+          "weight_total": "50% of qualitative score"
+        }
+      }
+    },
+    "Q7": {
+      "type": "qualitative",
+      "total_keypoints": 10,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    }
+  }
+}

@@ -1,0 +1,696 @@
+{
+  "case_id": "020",
+  "version": "v1",
+  "source": {
+    "title": "Mickey Tires",
+    "inspired_by": "BCG",
+    "year": "2021",
+    "author": "Peter K.",
+    "reference": "Peter-K.org, Case #20",
+    "casebook_abbr": "PK21"
+  },
+  "case_type": "interviewer_driven",
+  "case_type_origin": "candidate_led",
+  "annotation_mode": "CL_to_IL_override",
+  "case_arch": {
+    "primary": "Comparison",
+    "tags": [
+      "Comparison",
+      "Cost Optimization",
+      "Investment Decision"
+    ]
+  },
+  "difficulty": "Hard",
+  "industry": "Manufacturing / Automotive Tires",
+  "topic": "Cost optimization comparison — moving tire production to China (JV) vs. investing in advanced production technology at current Ohio facility",
+  "expected_duration_minutes": "20",
+  "opening_prompt": "Hi, I'd like to solve some consulting cases with you. Pls be a good interviewee to have a potential test in consulting cases. For the case problem-solving, pls do not assume any numbers or assumptions before my confirmation. I will give you the context upon request. I need you to answer the following questions for the client. Before you start, feel free to ask me 2-3 clarifying questions about the client.\n\nQ1: What factors would you consider to help client assess these two options?\nQ2: Before looking into the financials of two options, can you suggest what major expenses Mickey Tires has?\nQ3: In order to assess the economics of two options can you calculate the incremental profits for each of them?\nQ4: How can Mickey Tires maximize the production output in the most cost constrained manner for their current facility or potential factory in China?\nQ5: You are in a client interim meeting. What are your current recommendations?\n\nHere is the basic context for the client:\nMickey Tires is a U.S.-based tire manufacturer. In 2020 their sales shrank by 10% due to the pandemic-related drop in car mileage as states were locked down. With changing consumer habits, such as working from home and sky-rocketed appetite for e-commerce, the client expects downward pressure on demand for tires in 2021 and onwards as people will use vehicles less often. To ensure healthy margins the client is considering cost optimization strategies including moving their production to China or investing in more advanced production process at their current facility in Ohio. What option should they pursue?",
+  "structure_1_client_basic_context": {
+    "company": "Mickey Tires",
+    "type": "U.S.-based tire manufacturer",
+    "situation": "In 2020 their sales shrank by 10% due to the pandemic-related drop in car mileage as states were locked down. With changing consumer habits, such as working from home and sky-rocketed appetite for e-commerce, the client expects downward pressure on demand for tires in 2021 and onwards as people will use vehicles less often.",
+    "action": "The client is considering cost optimization strategies including moving their production to China or investing in more advanced production process at their current facility in Ohio.",
+    "ask": "What option should they pursue?"
+  },
+  "structure_2_information_upon_request": {
+    "item_1": {
+      "item_id": "item_1",
+      "trigger": "Analyst asks about or includes 'product types' or 'vehicle types served' in framework or clarifying questions",
+      "core_dimensional_concept": "tire product range and vehicle types served",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet addressing 'products' or 'customers'",
+          "explicit clarifying question about what types of tires or vehicles Mickey Tires serves",
+          "hypothesis-driven assumption about product mix or target customers"
+        ],
+        "alternative_phrasings": [
+          "product portfolio",
+          "customer segments",
+          "what vehicles do they serve",
+          "types of tires"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'market' broadly without specifying vehicle type or product category (G — adjacent dimension modifier, not the product range concept itself)",
+        "Analyst mentions 'revenue mix' in a passing reference without asking about vehicle types served (F — passing mention)"
+      ],
+      "info": "Mickey Tires offers tires for a wide variety of passenger vehicles"
+    },
+    "item_2": {
+      "item_id": "item_2",
+      "trigger": "Analyst asks about or includes 'geography of sales' or 'international markets' in framework or clarifying questions",
+      "core_dimensional_concept": "sales geography and market split",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet addressing 'geography' or 'market split'",
+          "explicit clarifying question about where Mickey Tires sells its products",
+          "hypothesis-driven assumption about domestic vs. international revenue split"
+        ],
+        "alternative_phrasings": [
+          "domestic vs. international",
+          "where does Mickey Tires sell",
+          "market exposure",
+          "geographic footprint"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'international markets' only as a strategic benefit of moving to China, without asking about current geographic breakdown (F — passing mention of international opportunity, not asking about current sales geography)",
+        "Analyst mentions 'market access' in passing under a strategic benefits pillar without asking for current sales split (G — adjacent dimension)"
+      ],
+      "info": "Mickey Tires sells 80% of their tires in the U.S. and 20% in the international markets"
+    },
+    "item_3": {
+      "item_id": "item_3",
+      "trigger": "Analyst asks about or includes 'customer types' or 'end-market segments' such as OEM vs. replacement in framework or clarifying questions",
+      "core_dimensional_concept": "customer type segmentation — OEM vs. replacement market",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet addressing customer types or demand channels",
+          "explicit clarifying question about who buys Mickey Tires products",
+          "hypothesis-driven assumption about OEM vs. aftermarket split"
+        ],
+        "alternative_phrasings": [
+          "OEM vs. replacement",
+          "new cars vs. aftermarket",
+          "end-user segments",
+          "B2B vs. B2C customers"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'distribution channels' without specifying the OEM vs. replacement customer distinction (G — adjacent concept of distribution, not customer segmentation itself)",
+        "Analyst says 'demand will fall' without asking about the split between new cars and replacement tires (F — passing mention of demand trend without touching the segmentation concept)"
+      ],
+      "info": "Mickey Tires sells tires for new cars and replacement tires"
+    },
+    "item_4": {
+      "item_id": "item_4",
+      "trigger": "Analyst asks about or includes the 'ownership structure' or 'JV structure' of the China option in framework or clarifying questions",
+      "core_dimensional_concept": "China option ownership structure — joint venture requirement",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet on 'ownership structure' or 'JV structure'",
+          "explicit clarifying question about how a Chinese facility would be set up",
+          "hypothesis-driven assumption about partnership or equity structure in China"
+        ],
+        "alternative_phrasings": [
+          "joint venture",
+          "partnership structure",
+          "ownership in China",
+          "equity stake",
+          "control in China"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'risks of China' broadly without asking about the specific ownership/JV structure (F — passing mention of China risk, not the JV ownership concept specifically)",
+        "Analyst mentions 'strategic partnership' in the context of suppliers without asking about the manufacturing JV ownership structure (G — adjacent concept)"
+      ],
+      "info": "In order to move the production to China, Mickey Tires would need to start a JV (joint venture) with a manufacturing company in China"
+    },
+    "item_5": {
+      "item_id": "item_5",
+      "trigger": "Analyst asks about or includes 'number of production facilities' or 'current manufacturing footprint' in framework or clarifying questions",
+      "core_dimensional_concept": "current production facility footprint",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet on 'current operations' or 'production footprint'",
+          "explicit clarifying question about how many factories or facilities Mickey Tires currently operates",
+          "hypothesis-driven assumption about existing manufacturing capacity"
+        ],
+        "alternative_phrasings": [
+          "how many factories",
+          "current manufacturing setup",
+          "existing plants",
+          "number of facilities",
+          "production capacity"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'Ohio' only as a location in passing without asking about the total number of facilities (F — passing mention of Ohio location, not about the footprint concept)",
+        "Analyst mentions 'capacity utilization' without asking about number of current facilities (G — adjacent operational concept, not the facility count)"
+      ],
+      "info": "Mickey Tires has only one production facility (in Ohio)"
+    },
+    "item_6": {
+      "item_id": "item_6",
+      "trigger": "Analyst asks about or includes 'client goals' or 'success metrics' or 'strategic objectives' in framework or clarifying questions",
+      "core_dimensional_concept": "client strategic goals and success metrics",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet addressing 'goals' or 'objectives' or 'success criteria'",
+          "explicit clarifying question about the client's financial or strategic targets",
+          "hypothesis-driven assumption about specific profit targets or ROI thresholds"
+        ],
+        "alternative_phrasings": [
+          "financial targets",
+          "strategic objectives",
+          "success criteria",
+          "what does success look like",
+          "KPIs for the project"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'improve profitability' broadly as a general case objective without asking for specific goals or metrics (F — passing mention of profitability improvement as obvious context, not asking about specific targets)",
+        "Analyst mentions 'cost reduction targets' under financials without specifically asking about client-defined goals (G — adjacent concept of cost reduction vs. explicitly asking about stated goals)"
+      ],
+      "info": "No specific goals provided"
+    }
+  },
+  "structure_3_case_questions": {
+    "Q1": {
+      "q_id": "Q1",
+      "type": "framework",
+      "question_text": "What factors would you consider to help client assess these two options?",
+      "information_to_share_upfront": null,
+      "information_upon_request": "See structure_2 items 1–6. Release only items per semantic touch judgment; not by mere keyword presence.",
+      "state_machine": {
+        "next_question": "Q2",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable framework answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q2": {
+      "q_id": "Q2",
+      "type": "qualitative",
+      "question_text": "Before looking into the financials of two options, can you suggest what major expenses Mickey Tires has?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q3",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q3": {
+      "q_id": "Q3",
+      "type": "quantitative",
+      "question_text": "In order to assess the economics of two options can you calculate the incremental profits for each of them?",
+      "information_to_share_upfront": [
+        "Appendix 1 (Cost structure table)",
+        "Average revenue per tire is $60"
+      ],
+      "information_upon_request": [
+        {
+          "item_id": "Q3_item_1",
+          "trigger": "Analyst asks about or includes 'annual volume' or 'how many tires sold' in calculation setup",
+          "core_dimensional_concept": "annual tire sales volume",
+          "release_conditions": {
+            "structural_position": [
+              "explicit request for annual volume or units sold",
+              "calculation setup where analyst identifies volume as a missing variable",
+              "hypothesis-driven assumption about annual sales volume"
+            ],
+            "alternative_phrasings": [
+              "how many tires",
+              "annual sales volume",
+              "units sold per year",
+              "total volume"
+            ]
+          },
+          "disqualifying": [
+            "Analyst mentions 'market size' broadly without asking for Mickey Tires' specific annual volume (G — adjacent market-level concept, not the firm's annual unit sales)",
+            "Analyst mentions 'revenue' without specifically asking for volume to calculate it (F — passing reference to revenue without touching the unit volume concept)"
+          ],
+          "info": "Mickey Tires sells 3M tires annually"
+        },
+        {
+          "item_id": "Q3_item_2",
+          "trigger": "Analyst asks about or includes 'taxes' or 'tax rate' in calculation setup",
+          "core_dimensional_concept": "tax treatment in profit calculation",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question about whether to include taxes",
+              "calculation setup where analyst identifies taxes as a variable to clarify",
+              "framework item mentioning 'after-tax profit' or 'tax impact'"
+            ],
+            "alternative_phrasings": [
+              "tax rate",
+              "income taxes",
+              "after-tax",
+              "tax effect"
+            ]
+          },
+          "disqualifying": [
+            "Analyst mentions 'cost items' broadly without specifically asking about tax treatment (F — passing mention of costs, not specifically tax)"
+          ],
+          "info": "We can ignore taxes"
+        },
+        {
+          "item_id": "Q3_item_3",
+          "trigger": "Analyst asks about or includes 'whether other costs exist beyond Appendix 1' or 'are there any other cost items'",
+          "core_dimensional_concept": "exhaustiveness of cost structure in Appendix 1",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question about whether Appendix 1 is exhaustive",
+              "clarifying question asking if there are additional costs not shown",
+              "hypothesis-driven assumption about completeness of the cost table"
+            ],
+            "alternative_phrasings": [
+              "are there other costs",
+              "is this the full cost structure",
+              "any additional items",
+              "complete cost list"
+            ]
+          },
+          "disqualifying": [
+            "Analyst asks about a specific cost item (like R&D or marketing) that they believe might be missing — this is asking about a specific item not the exhaustiveness concept itself (G — adjacent specific-item query vs. the exhaustiveness concept)"
+          ],
+          "info": "Cost structure in Appendix 1 is exhaustive (no other cost items)"
+        },
+        {
+          "item_id": "Q3_item_4",
+          "trigger": "Analyst asks about or includes 'depreciation' or 'treatment of $80M investment' in calculation setup",
+          "core_dimensional_concept": "depreciation and capital expenditure treatment",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question about whether to include depreciation",
+              "calculation setup where analyst flags the $80M investment and asks how to treat it",
+              "hypothesis-driven assumption about capital expenditure inclusion"
+            ],
+            "alternative_phrasings": [
+              "depreciation",
+              "capex treatment",
+              "investment impact",
+              "amortization",
+              "how to account for the $80M"
+            ]
+          },
+          "disqualifying": [
+            "Analyst mentions 'investment required' only as a framework consideration without asking how to treat it in the incremental profit calculation (F — passing mention of investment as a factor, not specifically asking for the calculation treatment)"
+          ],
+          "info": "We can neglect depreciation of the capital expenditure (investment of $80M) and its impact on the profits"
+        }
+      ],
+      "appendix": {
+        "appendix_1": {
+          "title": "Cost structure",
+          "release_rule": "Share upfront with analyst at the start of Q3",
+          "table": {
+            "per_tire_variable_costs": {
+              "raw_materials": {
+                "current_facility_ohio_us": "$30",
+                "jv_manufacturing_company_china": "10% lower given proximity to suppliers",
+                "investment_in_more_advanced_production_tech": "5% lower due to waste elimination"
+              },
+              "labor": {
+                "current_facility_ohio_us": "$15",
+                "jv_manufacturing_company_china": "80% lower given abundance of low-wage workers",
+                "investment_in_more_advanced_production_tech": "50% lower due to process automation"
+              },
+              "distribution": {
+                "current_facility_ohio_us": "$3",
+                "jv_manufacturing_company_china": "Will double",
+                "investment_in_more_advanced_production_tech": "Same"
+              },
+              "import_export_tariffs": {
+                "current_facility_ohio_us": "–",
+                "jv_manufacturing_company_china": "0% (for the sake of this case)*",
+                "investment_in_more_advanced_production_tech": "–"
+              }
+            },
+            "investment": {
+              "current_facility_ohio_us": "–",
+              "jv_manufacturing_company_china": "$80M",
+              "investment_in_more_advanced_production_tech": "$80M"
+            },
+            "fixed_costs": {
+              "current_facility_ohio_us": "$18M",
+              "jv_manufacturing_company_china": "Same",
+              "investment_in_more_advanced_production_tech": "Same"
+            }
+          }
+        },
+        "appendix_2": {
+          "title": "U.S. passenger tire shipments",
+          "release_rule": "Reference data — available for analyst if requested; not explicitly tied to Q3 calculation",
+          "description": "U.S. passenger tire shipments MM units 2017-20: 2017=255 (OE 46, Replacement 209), 2018=264 (OE 47, Replacement 217), 2019=268 (OE 45, Replacement 223), 2020=239 (OE 36, Replacement 203). Note: OE = mostly car manufacturers."
+        },
+        "appendix_3": {
+          "title": "U.S. passenger tire brand market shares",
+          "release_rule": "Reference data — available for analyst if requested; not explicitly tied to Q3 calculation",
+          "description": "U.S. passenger tire brand market shares % and MM units 2020: Total 239MM units (OE 36, Replacement 203). OE market: Goodyear 25%, Michelin 20%, Continental 14%, Bridgestone 13%, Firestone 7%, General 7%, others. Replacement market: Goodyear 11%, Michelin 9%, Bridgestone 7%, Continental 7%, Firestone 5%, Falken 5%, Cooper 4%, BFGoodrich 4%, Yokohama 3%, General 3%, other brands 42%."
+        }
+      },
+      "state_machine": {
+        "next_question": "Q4",
+        "skip_logic": false,
+        "max_attempts": 2,
+        "transition_condition": "Analyst provides quantitative answer (correct on 1st or 2nd attempt, or interviewer provides answer before Q4)",
+        "scoring_on_transition": {
+          "attempt_1_correct": "Full score",
+          "attempt_2_correct": "0 score per core_principles",
+          "both_attempts_wrong": "0 score; interviewer provides correct answer before next question"
+        }
+      }
+    },
+    "Q4": {
+      "q_id": "Q4",
+      "type": "qualitative",
+      "question_text": "How can Mickey Tires maximize the production output in the most cost constrained manner for their current facility or potential factory in China?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q5",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q5": {
+      "q_id": "Q5",
+      "type": "qualitative",
+      "question_text": "You are in a client interim meeting. What are your current recommendations?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": null,
+        "skip_logic": false,
+        "transition_condition": "Case ends after Q5"
+      }
+    }
+  },
+  "structure_4_ground_truth": {
+    "Q1_ground_truth": {
+      "type": "framework",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_cost_reduction_strategies": {
+          "keypoints": [
+            "Existing production process (e.g. flow, capabilities)",
+            "More advanced tech option (e.g. timeline, process changes)",
+            "JV in China (e.g. capacity, structure of ownership)"
+          ],
+          "subtotal": 3
+        },
+        "pillar_2_financials_of_both_options": {
+          "keypoints": [
+            "Expected investment",
+            "Estimated costs - Fixed",
+            "Estimated costs - Variable",
+            "Forecasted impact on revenue"
+          ],
+          "subtotal": 4
+        },
+        "pillar_3_strategic_benefits_of_each_option": {
+          "keypoints": [
+            "New opportunities",
+            "Operational improvements",
+            "Impact on customer experience",
+            "Risks mitigation"
+          ],
+          "subtotal": 4
+        },
+        "pillar_4_potential_risks_of_each_option": {
+          "keypoints": [
+            "Financial",
+            "Operational"
+          ],
+          "subtotal": 2
+        }
+      },
+      "total_keypoints": 13,
+      "minimum_expected": "Cover at least 3 of the 4 pillars with at least 2 keypoints each",
+      "outstanding_threshold": "Cover all 4 pillars with most keypoints across all pillars"
+    },
+    "Q2_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_fixed_costs": {
+          "keypoints": [
+            "Rent and utilities (energy, water, etc.)",
+            "Maintenance [this is a capex-heavy business with lots of equipment]",
+            "Marketing [this is a consumer product Mickey Tires likely invests a lot in marketing to maintain strong brand awareness and drive sales]",
+            "Overhead [central services and management]",
+            "Transportation",
+            "R&D [tires are commoditized so the players might invest a lot in R&D to innovate and differentiate]"
+          ],
+          "subtotal": 6
+        },
+        "pillar_2_variable_costs": {
+          "keypoints": [
+            "Labor [it might be labor-intensive business which will justify the move to China]",
+            "Raw materials",
+            "Distribution commissions [for the B2C segment - auto repair and maintenance chains might charge sales-based fee for distribution]",
+            "Discounts",
+            "Import/export duties"
+          ],
+          "subtotal": 5
+        }
+      },
+      "total_keypoints": 11,
+      "minimum_expected": "Identify at least 4 cost items covering both fixed and variable categories",
+      "outstanding_threshold": "Identify 7+ cost items including items from both fixed and variable categories with business contextualization (items in [] brackets)"
+    },
+    "Q3_ground_truth": {
+      "type": "quantitative",
+      "quantitative_part": {
+        "correct_final_answer": "Incremental profit from Chinese facility: $36M; Incremental profit from advanced tech option: $27M",
+        "scoring_method": "Binary: correct numbers = full credit; incorrect = zero credit. Both answers required.",
+        "calculation_steps": {
+          "step_1_current_variable_cost_per_tire": {
+            "formula": "Raw materials + Labor + Distribution = $30 + $15 + $3",
+            "result": "$48 per tire (current variable cost)"
+          },
+          "step_2_china_variable_cost_per_tire": {
+            "formula": "Raw materials*(1-10%) + Labor*(1-80%) + Distribution*2 = $30*0.9 + $15*0.2 + $3*2",
+            "result": "$27 + $3 + $6 = $36 per tire"
+          },
+          "step_3_advanced_tech_variable_cost_per_tire": {
+            "formula": "Raw materials*(1-5%) + Labor*(1-50%) + Distribution (same) = $30*0.95 + $15*0.5 + $3",
+            "result": "$28.5 + $7.5 + $3 = $39 per tire"
+          },
+          "step_4_incremental_profit_china": {
+            "formula": "(Current cost per tire - China cost per tire) × Annual volume = ($48 - $36) × 3M",
+            "result": "$12 × 3M = $36M"
+          },
+          "step_5_incremental_profit_advanced_tech": {
+            "formula": "(Current cost per tire - Advanced tech cost per tire) × Annual volume = ($48 - $39) × 3M",
+            "result": "$9 × 3M = $27M"
+          }
+        },
+        "accepted_answer_parts": {
+          "china_option_investment_USD": {
+            "accepted_values": [
+              36000000
+            ],
+            "tolerance_pct": 0.0,
+            "zero_tolerance": true
+          },
+          "advanced_tech_option_investment_USD": {
+            "accepted_values": [
+              27000000
+            ],
+            "tolerance_pct": 0.0,
+            "zero_tolerance": true
+          }
+        }
+      },
+      "qualitative_part": {
+        "scoring_note": "Qualitative portion of Q3 is scored as 100% total, split into two tiers. Within each tier, use 3-level scoring per",
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "tier_1_basic": {
+          "weight_of_Q3_qualitative_total": "50%",
+          "keypoints": [
+            "The Chinese facility is estimated to generate $36M in additional profits which is higher than $27M in extra profits expected from the investment in the advanced technology",
+            "$9M difference between two options is extra 5 percentage points in profitability [$9M out of $180M, which is 3M units * $60] which is fantastic for such a commoditized product"
+          ],
+          "note": "Expected from every candidate — interpreting the calculation result in business context."
+        },
+        "tier_2_advanced": {
+          "weight_of_Q3_qualitative_total": "50%",
+          "points_available": 3,
+          "weight_per_point": "approximately 16.7% of qualitative total",
+          "keypoints": [
+            "The client should consider various risks of moving production to China, like potential loss of control due to JV's ownership structure, increase in tariffs, quality issues, etc.",
+            "The implementation cycle might be shorter for the introduction of new technology (vs building a new factory in China) and thus investment in more advanced production process might start generating profits earlier than JV in China",
+            "Shutting down the production in Ohio might lead to substantial one-time costs (e.g. severance payments) that should be baked in the financial assessment of the Chinese factory option"
+          ],
+          "note": "Not expected from every candidate. Each advanced point adds approximately 16.7% to qualitative score."
+        },
+        "minimum_expected": "Correct numerical answer ($36M and $27M) + Tier 1 basic contextualization (covered)",
+        "outstanding_threshold": "Correct numerical answer + Tier 1 covered + at least 2 Tier 2 advanced comments covered"
+      }
+    },
+    "Q4_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_increase_availability_of_equipment": {
+          "sub_pillar_routine_maintenance_of_equipment": {
+            "keypoints": [
+              "Reduce number of stops for routine maintenance",
+              "Accelerate speed of routine maintenance"
+            ],
+            "subtotal": 2
+          },
+          "sub_pillar_break_downs_of_equipment": {
+            "keypoints": [
+              "Analyze the root-causes of break-downs and eliminate them",
+              "Accelerate the pace of addressing break-downs"
+            ],
+            "subtotal": 2
+          },
+          "sub_pillar_switching_time_of_equipment": {
+            "keypoints": [
+              "Improve the speed of switching the equipment from producing one tire type to another"
+            ],
+            "subtotal": 1
+          },
+          "subtotal": 5
+        },
+        "pillar_2_improve_productivity": {
+          "sub_pillar_productivity_of_staff": {
+            "keypoints": [
+              "Strengthen training programs",
+              "Introduce higher selection standards for hiring",
+              "Launch and monitor production KPIs",
+              "Increase incentives (if budget permits)"
+            ],
+            "subtotal": 4
+          },
+          "sub_pillar_other_initiatives": {
+            "keypoints": [
+              "Ensure constant supply of materials for all the production stages to avoid idle time of equipment",
+              "Introduce new shifts, hire more staff to increase utilization rate of equipment (if budget permits)"
+            ],
+            "subtotal": 2
+          },
+          "subtotal": 6
+        },
+        "pillar_3_ensure_high_quality_of_output": {
+          "sub_pillar_potential_process_flaws": {
+            "keypoints": [
+              "Decrease % of defective tires",
+              "Decrease % of tires mismatching the clients' technical specifications"
+            ],
+            "subtotal": 2
+          },
+          "subtotal": 2
+        }
+      },
+      "total_keypoints": 13,
+      "minimum_expected": "Cover at least 2 of the 3 pillars (availability / productivity / quality) with at least 2 specific ideas each",
+      "outstanding_threshold": "Cover all 3 pillars with specific, operationally actionable ideas including sub-categories"
+    },
+    "Q5_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_recommendation": {
+          "keypoints": [
+            "moving production to China looks more attractive"
+          ],
+          "subtotal": 1
+        },
+        "pillar_2_reasoning": {
+          "keypoints": [
+            "it'll enable Mickey Tires to improve their profitability by 5 percentage points, which might be material given likely low-margin nature of tire business",
+            "the Chinese factory might offer better access to large international markets that enjoy high number of passenger vehicles like India, China, and other SEA",
+            "location in SEA might offer more diverse supply chain options"
+          ],
+          "subtotal": 3
+        },
+        "pillar_3_risks": {
+          "keypoints": [
+            "there are some substantial risks including increase in tariffs, potential loss in control due to the JV ownership structure, and drop in tire quality"
+          ],
+          "subtotal": 1
+        },
+        "pillar_4_next_steps": {
+          "keypoints": [
+            "To move forward with the project, I'd like to create risk mitigation plan, run scenario and sensitivity analyses to strengthen results of financial modeling, and assess the strategic (non-quantifiable) benefits of both options"
+          ],
+          "subtotal": 1
+        }
+      },
+      "total_keypoints": 6,
+      "minimum_expected": "Recommendation pillar covered + at least 1 reasoning point covered",
+      "outstanding_threshold": "All 4 pillars covered including at least 2 reasoning points and the risk pillar"
+    }
+  },
+  "state_machine_global": {
+    "case_type": "interviewer_driven",
+    "skip_logic": false,
+    "mandatory_sequence": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5"
+    ],
+    "rules": [
+      "Q1 cannot be skipped under any circumstances",
+      "Linear progression Q1 → Q2 → Q3 → Q4 → Q5, no skipping",
+      "A question may not be advanced until the current question receives a scoreable answer (1st or 2nd attempt)",
+      "If analyst pre-covers a later question's keypoints in an earlier answer, record as pre-coverage but still ask the later question in sequence",
+      "No question may be skipped even if pre-covered"
+    ]
+  },
+  "scoring_summary": {
+    "Q1": {
+      "type": "framework",
+      "total_keypoints": 13,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q2": {
+      "type": "qualitative",
+      "total_keypoints": 11,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q3": {
+      "type": "quantitative",
+      "part_1_quantitative": {
+        "correct_answer": "$36M (China) and $27M (advanced tech)",
+        "zero_tolerance": true,
+        "scoring": "Binary: Full credit if both correct; zero credit if either is incorrect"
+      },
+      "part_2_qualitative": {
+        "total_keypoints": 5,
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "human_review_priority": "false-partial > false-not-covered > covered",
+        "tier_1_basic": {
+          "keypoints": 2,
+          "weight": "50% of qualitative score"
+        },
+        "tier_2_advanced": {
+          "keypoints": 3,
+          "weight_per_point": "approximately 16.7% of qualitative score",
+          "weight_total": "50% of qualitative score"
+        }
+      }
+    },
+    "Q4": {
+      "type": "qualitative",
+      "total_keypoints": 13,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q5": {
+      "type": "qualitative",
+      "total_keypoints": 6,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    }
+  }
+}

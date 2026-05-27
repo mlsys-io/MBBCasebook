@@ -1,0 +1,781 @@
+{
+  "case_id": "003",
+  "version": "v4",
+  "case_type_origin": null,
+  "annotation_mode": null,
+  "source": {
+    "title": "Spanish Airlines",
+    "inspired_by": "McKinsey & Company",
+    "year": 2020,
+    "author": "Peter K.",
+    "reference": "Peter-K.thinkific.com, Case #3",
+    "casebook_abbr": "PK20"
+  },
+  "case_type": "interviewer_driven",
+  "case_arch": {
+    "primary": "Profitability",
+    "tags": [
+      "Profitability",
+      "Revenue Growth",
+      "Cost Optimization",
+      "Competitive Response"
+    ]
+  },
+  "difficulty": "Medium",
+  "industry": "Aviation / Airlines",
+  "topic": "Declining profitability — margin improvement for a Spanish low-cost carrier",
+  "expected_duration_minutes": 25,
+  "opening_prompt": "Hi, I'd like to solve some consulting cases with you. Pls be a good interviewee to have a potential test in consulting cases. For the case problem-solving, pls do not assume any numbers or assumptions before my confirmation. I will give you the context upon request. I need you to answer the following questions for the client. Before you start, feel free to ask me 2-3 clarifying questions about the client.\n\nQuestion #1. How would you approach the client's problem?\nQuestion #2. What are some ways for this Spanish low-cost carrier to improve their profitability?\nQuestion #3. Can you name some ideas to create new revenue streams?\nQuestion #4. What are the typical key cost items in the airline business?\nQuestion #5. Which potential scenario would you address first? How would you prioritize these three scenarios?\nQuestion #6. Based on the chart, calculate the annual revenue from passenger tickets.\n\nHere is the basic context for the client:\nA Spanish low-cost airline has been facing declining profitability. They run six domestic routes. Several newcomers have entered the low-cost airline industry in Spain recently. How to improve the client's margins?",
+  "structure_1_client_basic_context": {
+    "company": "Spanish low-cost airline (name undisclosed)",
+    "type": "Low-cost carrier operating domestic routes in Spain",
+    "situation": "The airline has been facing declining profitability. Several newcomers have entered the low-cost airline industry in Spain recently.",
+    "operations": "They run six domestic routes.",
+    "ask": "How to improve the client's margins?"
+  },
+  "structure_2_information_upon_request": {
+    "item_1": {
+      "item_id": "item_1",
+      "trigger": "Analyst asks about the competitive landscape, market structure, or industry concentration of the Spanish airline industry",
+      "core_dimensional_concept": "market concentration and competitive structure of Spanish airline industry",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar named 'Market', 'Competition', 'Competitive Landscape', or 'Industry Structure'",
+          "explicit clarifying question about how many players are in the market or what the competitive dynamics look like",
+          "sub-bullet asking about market share distribution or market concentration"
+        ],
+        "alternative_phrasings": [
+          "who are the main players",
+          "how concentrated is the market",
+          "market structure",
+          "who are the competitors",
+          "competitive landscape in Spain",
+          "industry concentration"
+        ]
+      },
+      "disqualifying": [
+        "Only says 'competitive pressure from new entrants' under the Risk pillar as a passing reference without touching the market structure itself (F pattern)",
+        "Only restates 'newcomers have entered' from the prompt without actively asking about market concentration or the competitive landscape",
+        "Only loosely mentions 'competitive landscape' with no specific players / concentration / share dimension (G adjacent-dimension-modifier pattern)"
+      ],
+      "info": "The airline industry in Spain is fairly consolidated with top-5 players (incl. two low-cost carriers) capturing 95% of the market."
+    },
+    "item_2": {
+      "item_id": "item_2",
+      "trigger": "Analyst asks about the client's market position, ranking, or market share among competitors",
+      "core_dimensional_concept": "client's market position relative to top-5 players",
+      "release_conditions": {
+        "structural_position": [
+          "explicit clarifying question about whether the client is a top player or market leader",
+          "framework sub-item asking about client's market share or relative position",
+          "direct question: 'Is the client a top-5 player?' or 'What is the client's market position?'"
+        ],
+        "alternative_phrasings": [
+          "is the client a market leader",
+          "client's market share",
+          "client's competitive position",
+          "is the client a top player",
+          "how big is the client vs competitors",
+          "client's ranking in the industry"
+        ]
+      },
+      "disqualifying": [
+        "Only says 'client faces competition from larger players' as a passing reference without actively asking about the client's relative ranking (F pattern)",
+        "Only uses 'market position' as a framework pillar name without specifically following up on share/ranking"
+      ],
+      "info": "Our client is not a top-5 player."
+    },
+    "item_3": {
+      "item_id": "item_3",
+      "trigger": "Analyst asks about the client's profitability goal, financial target, or margin objective",
+      "core_dimensional_concept": "client's specific profitability goal or financial target",
+      "release_conditions": {
+        "structural_position": [
+          "explicit clarifying question about what profitability target or margin goal the client has",
+          "framework sub-item under 'Financial Goal' / 'Success Metrics' asking about target margins or ROI",
+          "direct question: 'What is the client's target margin?' or 'What is the profitability goal?'"
+        ],
+        "alternative_phrasings": [
+          "what is the financial goal",
+          "profitability target",
+          "what margin does the client want",
+          "what does success look like financially",
+          "target profit improvement",
+          "specific margin objective"
+        ]
+      },
+      "disqualifying": [
+        "Only lists 'profitability' as a dimension under the Financial Analysis pillar without following up on the specific target value (G pattern)",
+        "Only says 'improve margins' as a restatement of the prompt rather than actively following up on the goal"
+      ],
+      "info": "We don't have any information on the specific profitability goals."
+    },
+    "item_4": {
+      "item_id": "item_4",
+      "trigger": "Analyst asks about the client's customer segments or types of passengers served",
+      "core_dimensional_concept": "customer segments served by the client (leisure vs business)",
+      "release_conditions": {
+        "structural_position": [
+          "explicit clarifying question about whether the client serves business or leisure travelers (or both)",
+          "framework pillar / sub-item named 'Customer Segments' / 'Target Customers' that asks about traveler types",
+          "direct question: 'What type of customers does the client serve?' or 'Leisure or business travelers?'"
+        ],
+        "alternative_phrasings": [
+          "who are the client's customers",
+          "leisure or business travelers",
+          "customer mix",
+          "passenger demographics",
+          "what segments does the client target",
+          "B2B vs B2C"
+        ]
+      },
+      "disqualifying": [
+        "Only mentions 'customer segments' as a generic dimension under the Revenue pillar without following up on the specific traveler type (G pattern)",
+        "Only says 'passenger demand' as a passing reference without explicitly distinguishing leisure vs business"
+      ],
+      "info": "The client serves both leisure and business travellers."
+    }
+  },
+  "structure_3_case_questions": {
+    "Q1": {
+      "q_id": "Q1",
+      "type": "framework",
+      "question_text": "How would you approach the client's problem?",
+      "information_to_share_upfront": null,
+      "information_upon_request": "See structure_2 items 1-4. Release only items semantically triggered by analyst's Q1 framework / clarifying questions per semantic touch (release when the analyst structurally engages the dimension; not on a passing reference). Not by mere keyword presence.",
+      "state_machine": {
+        "next_question": "Q2",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable framework answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q2": {
+      "q_id": "Q2",
+      "type": "qualitative",
+      "question_text": "What are some ways for this Spanish low-cost carrier to improve their profitability?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q3",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q3": {
+      "q_id": "Q3",
+      "type": "qualitative",
+      "question_text": "Can you name some ideas to create new revenue streams?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q4",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q4": {
+      "q_id": "Q4",
+      "type": "qualitative",
+      "question_text": "What are the typical key cost items in the airline business?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q5",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q5": {
+      "q_id": "Q5",
+      "type": "qualitative",
+      "question_text": "Which potential scenario would you address first? How would you prioritize these three scenarios?",
+      "information_to_share_upfront": [
+        "Appendix 1 — Three potential scenarios (see appendix field below)"
+      ],
+      "information_upon_request": null,
+      "appendix": {
+        "appendix_1": {
+          "title": "Three potential scenarios [we are in 2019 and nobody is expecting a pandemic]",
+          "release_rule": "Share upfront with analyst at the start of Q5",
+          "scenarios": {
+            "scenario_A_fuel_costs": "The fuel costs would increase by $12M in 2020",
+            "scenario_B_train_system": "The government would put a high-speed train system and our revenue would decline by $3M in 2020",
+            "scenario_C_load_factor": "The load factor of the airplanes (capacity utilization rate) would decrease by 10% in 2020"
+          }
+        }
+      },
+      "state_machine": {
+        "next_question": "Q6",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable prioritization answer covering scenario sub-points (Layer 1), cross-scenario reasoning (Layer 2), and an explicit ranking (Layer 3) — minimum_expected met, or 2nd attempt completed"
+      }
+    },
+    "Q6": {
+      "q_id": "Q6",
+      "type": "quantitative",
+      "question_text": "Based on the chart, calculate the annual revenue from passenger tickets.",
+      "information_to_share_upfront": [
+        "Appendix 2 — Route map and fleet/operations overview (see appendix field below)"
+      ],
+      "information_upon_request": [
+        {
+          "item_id": "Q6_item_1",
+          "trigger": "Analyst asks about the duration of a single flight",
+          "core_dimensional_concept": "average duration of a single flight",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question asking how long a flight takes",
+              "quantitative setup using flight duration as an input to compute flights per day",
+              "direct question: 'How long is the average flight?' or 'What is the flight duration?'"
+            ],
+            "alternative_phrasings": [
+              "flight duration",
+              "how long is a flight",
+              "average flight time",
+              "length of a flight",
+              "hours per flight"
+            ]
+          },
+          "disqualifying": [
+            "Only says 'flight operations' as a passing reference without following up on the specific duration (F pattern)",
+            "Only mentions 'flight frequency' under the Revenue pillar without asking about flight time"
+          ],
+          "info": "The average length of a flight is 2 hours."
+        },
+        {
+          "item_id": "Q6_item_2",
+          "trigger": "Analyst asks about turnaround time or time on the ground between flights",
+          "core_dimensional_concept": "average ground time per flight (turnaround time)",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question about time between flights or turnaround time",
+              "quantitative setup asking for ground time to compute cycle time per flight",
+              "direct question: 'How long does the plane stay on the ground?' or 'What is the turnaround time?'"
+            ],
+            "alternative_phrasings": [
+              "turnaround time",
+              "time on the ground",
+              "ground time",
+              "time between flights",
+              "layover time"
+            ]
+          },
+          "disqualifying": [
+            "Only says 'operational efficiency' as a passing reference without following up on the specific ground time",
+            "Only mentions 'airport fees' under the Cost pillar without asking about turnaround time"
+          ],
+          "info": "The average time on the ground is 24 min (0.4 hour) per flight."
+        },
+        {
+          "item_id": "Q6_item_3",
+          "trigger": "Analyst asks about number of operating days per year or annual schedule assumption",
+          "core_dimensional_concept": "number of operating days per year for the calculation",
+          "release_conditions": {
+            "structural_position": [
+              "explicit clarifying question about how many days per year the airline operates",
+              "quantitative setup confirming the annual day count for the revenue calculation",
+              "direct question: 'How many days a year does the airline operate?'"
+            ],
+            "alternative_phrasings": [
+              "how many days per year",
+              "annual operating days",
+              "days in a year for calculation",
+              "do they operate every day",
+              "360 or 365 days"
+            ]
+          },
+          "disqualifying": [
+            "Only says 'year-round operations' as a passing reference without following up on the specific number of days",
+            "Only says 'annual revenue' without following up on the annualization day count"
+          ],
+          "info": "It is okay to consider a year equal to 360 days."
+        },
+        {
+          "item_id": "Q6_item_4",
+          "trigger": "Analyst asks about the seating capacity of the aircraft",
+          "core_dimensional_concept": "passenger capacity of the Airbus A-320-200",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question about how many seats the airplane has",
+              "quantitative setup asking for aircraft capacity to compute passengers per flight",
+              "direct question: 'How many seats does the A-320 have?' or 'What is the plane's capacity?'"
+            ],
+            "alternative_phrasings": [
+              "airplane capacity",
+              "number of seats",
+              "how many passengers per plane",
+              "A-320 capacity",
+              "seating capacity"
+            ]
+          },
+          "disqualifying": [
+            "Only says 'fleet' as a passing reference without following up on the specific seat count",
+            "Only mentions 'passengers' under the Revenue pillar without asking about capacity"
+          ],
+          "info": "The passenger capacity of Airbus A-320-200 is 143 passenger seats."
+        },
+        {
+          "item_id": "Q6_item_5",
+          "trigger": "Analyst asks about seat occupancy rate or load factor",
+          "core_dimensional_concept": "average load factor (seat occupancy rate)",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question about what percentage of seats are typically filled",
+              "quantitative setup asking for load factor or occupancy rate to compute effective passengers",
+              "direct question: 'What is the load factor?' or 'What percentage of seats are occupied?'"
+            ],
+            "alternative_phrasings": [
+              "load factor",
+              "occupancy rate",
+              "capacity utilization",
+              "what percentage of seats are filled",
+              "how full are the planes"
+            ]
+          },
+          "disqualifying": [
+            "Only mentions 'load factor decreases by 10%' as scenario context under Q5 Scenario C without following up on the Q6 calculation-baseline load-factor value (cross-question semantic confusion)",
+            "Only says 'utilization' as a passing reference without following up on the specific %"
+          ],
+          "info": "The average load factor (occupation/utilization rate) of seats is 80%."
+        },
+        {
+          "item_id": "Q6_item_6",
+          "trigger": "Analyst asks about the average ticket price",
+          "core_dimensional_concept": "average price per round-trip ticket",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question about what the average ticket price is",
+              "quantitative setup asking for revenue per passenger to compute total revenue",
+              "direct question: 'What is the average ticket price?' or 'How much does a ticket cost?'"
+            ],
+            "alternative_phrasings": [
+              "average ticket price",
+              "price per passenger",
+              "revenue per ticket",
+              "how much do tickets cost",
+              "ticket fare",
+              "round-trip price"
+            ]
+          },
+          "disqualifying": [
+            "Only lists 'pricing strategy' under the Revenue Structure pillar without following up on the specific average price",
+            "Only says 'low-cost carrier pricing' as a passing reference without following up on the specific figure"
+          ],
+          "info": "The average price for a round-trip ticket is $200."
+        }
+      ],
+      "appendix": {
+        "appendix_2": {
+          "title": "Route map and fleet overview",
+          "release_rule": "Share upfront with analyst at the start of Q6",
+          "content": {
+            "cities_served": [
+              "Madrid",
+              "Barcelona",
+              "Valencia",
+              "Seville",
+              "Málaga"
+            ],
+            "number_of_cities": 5,
+            "fleet": "6 planes Airbus A-320-200",
+            "operating_hours": "12 hours a day without weekends and holidays"
+          }
+        }
+      },
+      "state_machine": {
+        "next_question": null,
+        "skip_logic": false,
+        "max_attempts": 2,
+        "scoring_on_transition": {
+          "attempt_1_correct": "Full score per core_principles part_1 (zero tolerance binary)",
+          "attempt_2_correct": "0 score per core_principles",
+          "both_attempts_wrong": "0 score; Judge LLM states correct answer ($123M) and case ends"
+        },
+        "transition_condition": "Case ends after Q6 (number + qualitative contextualization). If both attempts wrong, Judge LLM states correct answer ($123M) before closing."
+      }
+    }
+  },
+  "structure_4_ground_truth": {
+    "Q1_ground_truth": {
+      "type": "framework",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_low_cost_airline_market_in_spain": {
+          "keypoints": [
+            "Growth rate",
+            "Major low-cost carriers in Spain (incl. newcomers)",
+            "Typical margins"
+          ],
+          "subtotal": 3
+        },
+        "pillar_2_clients_business_model": {
+          "keypoints": [
+            "Offerings (e.g. airline tickets, cargo, adjacency services)",
+            "Customer segments (e.g. leisure/business travelers)"
+          ],
+          "subtotal": 2
+        },
+        "pillar_3_financial_analysis": {
+          "keypoints": [
+            "Revenue structure",
+            "Growth rate",
+            "Cost structure"
+          ],
+          "subtotal": 3
+        },
+        "pillar_4_margin_improvement_areas": {
+          "keypoints": [
+            "Decrease costs",
+            "Increase sales - Geographical expansion",
+            "Increase sales - Increase in market share",
+            "Increase sales - New customer segments"
+          ],
+          "subtotal": 4
+        }
+      },
+      "total_keypoints": 12,
+      "minimum_expected": "Cover at least 2 pillars including financial analysis; minimum 4 keypoints; analysis of external factors (market), client business model, and financial structure",
+      "outstanding_threshold": "All 4 pillars covered with majority of sub-items in a clearly structured issue tree"
+    },
+    "Q2_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_increase_sales": {
+          "keypoints": [
+            "Increase market share - More aggressive marketing",
+            "Increase market share - More appealing pricing",
+            "Increase market share - More attractive value proposition (e.g. better pre-boarding and on-boarding customer experience)",
+            "Increase market share - More efficient distribution",
+            "Approach new customer segments (e.g. B2B, students, families)",
+            "Launch new routes/expand to new cities/go internationally",
+            "Launch new services (e.g. new entertainment, new upgrade options)"
+          ],
+          "subtotal": 7
+        },
+        "pillar_2_decrease_costs": {
+          "keypoints": [
+            "Fixed costs - Renegotiate airport fees",
+            "Fixed costs - Optimize maintenance costs",
+            "Fixed costs - Reduce overhead headcount",
+            "Variable costs - Renegotiate fuel prices",
+            "Variable costs - Change suppliers of food/beverages",
+            "Strategic initiatives - Change old airplanes to new ones to save on maintenance, insurance, fuel consumption, etc.",
+            "Strategic initiatives - Change airplane to a larger one on the high-demand route and consolidate routes"
+          ],
+          "subtotal": 7
+        },
+        "pillar_3_focus_on_high_margins": {
+          "keypoints": [
+            "Promote high margin services (e.g. cargo/mail delivery, seat upgrade, food/beverages)",
+            "Focus on customer segments with high life-time value",
+            "Discontinue unprofitable routes"
+          ],
+          "subtotal": 3
+        }
+      },
+      "total_keypoints": 17,
+      "minimum_expected": "At least 4 ideas across at least 2 pillars",
+      "outstanding_threshold": "8+ ideas structured across all 3 pillars (increase sales / decrease costs / focus on high margins), delivered fluently on the fly"
+    },
+    "Q3_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "same_customer_segments": {
+          "cross_selling": {
+            "keypoints": [
+              "Pre-board services - Priority boarding",
+              "Pre-board services - Lounge access",
+              "Pre-board fees - Check-in fee",
+              "Pre-board fees - Ticket exchange fee",
+              "Pre-board fees - Cancellation fee",
+              "On-board - New food/beverage options (incl. pre-order)",
+              "On-board - New entertainment options (e.g. e-learning courses)",
+              "On-board - New merchandise items",
+              "On-board - Internet access",
+              "On-board - Cell-phone services",
+              "Other services - Loyalty credit card"
+            ],
+            "subtotal": 11
+          },
+          "up_selling": {
+            "keypoints": [
+              "Fee to upgrade seat class",
+              "Upgraded packages for corporate clients (e.g. larger # of flights, higher quality food)",
+              "Family travel flight deals",
+              "Airline subscription plans (e.g. monthly unlimited flights/fixed # of flights per year)"
+            ],
+            "subtotal": 4
+          }
+        },
+        "new_customer_segments": {
+          "diversification": {
+            "keypoints": [
+              "Cargo/mail delivery",
+              "Ads services for other companies to promote their products onboard",
+              "Aerial picture services",
+              "Charters for corporate retreats"
+            ],
+            "subtotal": 4
+          }
+        }
+      },
+      "total_keypoints": 19,
+      "minimum_expected": "At least 4 revenue stream ideas",
+      "outstanding_threshold": "8+ ideas structured across cross-selling / up-selling / diversification, delivered fluently"
+    },
+    "Q4_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "keypoints": [
+        "Fixed costs - Airport fees (take-off/landing, taxi, aircraft storage, gates, etc.)",
+        "Fixed costs - Marketing expenses",
+        "Fixed costs - Maintenance costs for aircrafts (e.g. spare parts, maintenance services)",
+        "Fixed costs - Overhead (e.g. management, shared functions)",
+        "Fixed costs - Rent for offices",
+        "Variable costs - Fuel costs",
+        "Variable costs - Crew salaries",
+        "Variable costs - Food/beverage supplies",
+        "Variable costs - Booking commissions to third party (e.g. Kayak, Expedia)",
+        "Variable costs - Promotional discounts",
+        "Variable costs - Credit card fees"
+      ],
+      "total_keypoints": 11,
+      "minimum_expected": "At least 4 cost items",
+      "outstanding_threshold": "8+ items structured into fixed vs. variable costs, delivered fluently on the fly"
+    },
+    "Q5_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level per layer: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts. Layer 3 is binary (correct / incorrect ranking).",
+      "scoring_layer_1_scenario_sub_points": {
+        "weight_of_Q5_total": "50%",
+        "scenario_A_fuel_costs": {
+          "total_keypoints": 8,
+          "weight_of_layer_1": "8/28 of the 50% layer (≈14.3% of Q5 total)",
+          "keypoints": {
+            "A1_direct_impact": "Direct annual financial impact: costs go up by $12M",
+            "A2_indirect_demand_side": "Indirect impact — demand side: if increase in fuel costs is industry-wide, airlines will raise their prices and the demand will decline",
+            "A3_indirect_cost_side": "Indirect impact — cost side: other cost items will increase as fuel is baked into the cost structure of lots of services/products (e.g. food supplies, airport fees)",
+            "A4_expected_duration": "Expected duration of the scenario: will fuel prices drop back to the original levels soon? (potentially temporary)",
+            "A5_risks": "Risks associated with the scenario: further increase in fuel prices driven by soaring prices for oil & gas at the global markets",
+            "A6_feasibility": "Feasibility of planned actions: low — client cannot control external fuel prices; possible actions include hedging or replacing aircraft fleet",
+            "A7_resources_needed": "Resources needed to execute actions: depends on the plan of actions designed to address the consequences of Scenario A",
+            "A8_time_to_yield": "Time needed for actions to yield results: depends on the plan of actions designed to address the consequences of Scenario A"
+          }
+        },
+        "scenario_B_train_system": {
+          "total_keypoints": 10,
+          "weight_of_layer_1": "10/28 of the 50% layer (≈17.9% of Q5 total)",
+          "keypoints": {
+            "B1_direct_impact_revenue": "Direct annual financial impact — revenue: revenue drops by $3M",
+            "B2_direct_impact_variable_costs": "Direct annual financial impact — variable costs: variable costs decrease pro rata with lower passenger volume",
+            "B3_indirect_airport_fees": "Indirect impact — airport fees (demand-side diseconomies of scale): some airport fees might be passenger volume-driven; client might lose volume discounts",
+            "B4_indirect_food_supplies": "Indirect impact — food supplies (supply-side diseconomies of scale): lower purchase volume → client might lose volume discounts for food supplies",
+            "B5_expected_duration": "Expected duration of the scenario: high-speed train system will likely stay (permanent threat)",
+            "B6_risks_geographical": "Risks — geographical expansion: potential expansion of the train system to capture all five cities currently served by the client",
+            "B7_risks_govt_subsidy": "Risks — government subsidy: potential reduction in train ticket prices subsidized by the government, making train more competitive",
+            "B8_feasibility": "Feasibility of planned actions: high — concrete actions can be designed to respond (e.g. focus on time-sensitive routes, bundle services, target segments trains cannot serve)",
+            "B9_resources_needed": "Resources needed to execute actions: depends on the plan of actions designed to address the consequences of Scenario B",
+            "B10_time_to_yield": "Time needed for actions to yield results: depends on the plan of actions designed to address the consequences of Scenario B"
+          }
+        },
+        "scenario_C_load_factor": {
+          "total_keypoints": 10,
+          "weight_of_layer_1": "10/28 of the 50% layer (≈17.9% of Q5 total)",
+          "keypoints": {
+            "C1_direct_impact_revenue": "Direct annual financial impact — revenue: revenue drops by 10%",
+            "C2_direct_impact_variable_costs": "Direct annual financial impact — variable costs: variable costs decrease by 10% pro rata",
+            "C3_indirect_airport_fees": "Indirect impact — airport fees (demand-side diseconomies of scale): client might lose volume discounts for airport fees due to lower passenger volume",
+            "C4_indirect_food_supplies": "Indirect impact — food supplies (supply-side diseconomies of scale): client might lose volume discounts for food supplies due to lower purchase volume",
+            "C5_expected_duration": "Expected duration of the scenario: unclear — may be driven by seasonality and bounce back, or may be a structural decline",
+            "C6_risks_competition": "Risks — competition: further decrease in load factor driven by the original factor (e.g. intensified competition from newcomers)",
+            "C7_risks_brand": "Risks — brand/reputation: brand and reputation risks ('not a successful airline') given the decreasing market share",
+            "C8_feasibility": "Feasibility of planned actions: medium — actions can be taken but effectiveness depends on root cause of load factor decline",
+            "C9_resources_needed": "Resources needed to execute actions: depends on the plan of actions designed to address the consequences of Scenario C",
+            "C10_time_to_yield": "Time needed for actions to yield results: depends on the plan of actions designed to address the consequences of Scenario C"
+          }
+        }
+      },
+      "scoring_layer_2_prioritization_reasoning": {
+        "weight_of_Q5_total": "30%",
+        "total_keypoints": 3,
+        "weight_per_point": "10% of Q5 total",
+        "keypoints": {
+          "L2_1_feasibility": "Feasibility analysis: analyst explicitly evaluates and compares how feasible it is to take action against each of A, B, and C",
+          "L2_2_financial_impact": "Financial impact analysis: analyst explicitly evaluates and compares the total financial impact (direct + indirect) of each of A, B, and C",
+          "L2_3_resources_needed": "Resources needed analysis: analyst explicitly evaluates and compares the resources (people, funds, time) needed to address each of A, B, and C"
+        }
+      },
+      "scoring_layer_3_final_ranking_conclusion": {
+        "weight_of_Q5_total": "20%",
+        "correct_ranking": "B > C > A",
+        "correct_answer_flag": true,
+        "rationale": "Since this case background is in 2019, 'A. fuel cost' is the least feasible factor to consider (client cannot control external fuel prices). 'B. Train system' ensures higher financial impact on a small player like our client, and the high-speed train can connect all five cities served. 'C. load factor' is mid-term. Therefore, the sequence shall be B > C > A. Recommend client prioritize train system as the first factor to react.",
+        "scoring_rule": "Full 20% credit if analyst concludes B > C > A with logical reasoning supported by feasibility/financial impact analysis. Zero credit if ranking order is incorrect."
+      },
+      "total_keypoints_layer_1": 28,
+      "total_keypoints_layer_2": 3,
+      "total_layers": 3,
+      "weight_distribution": "Layer 1 (50%) + Layer 2 (30%) + Layer 3 (20%) = 100% of Q5 total",
+      "minimum_expected": "Cover at least 3 sub-points per scenario in Layer 1 + state a priority order with brief rationale (at least 1 Layer 2 factor referenced)",
+      "outstanding_threshold": "Full coverage of all 28 sub-points in Layer 1 + all 3 Layer 2 reasoning factors explicitly applied across A/B/C + correct B>C>A ranking with full rationale"
+    },
+    "Q6_ground_truth": {
+      "type": "quantitative",
+      "quantitative_part": {
+        "correct_final_answer": "$123M annual revenue from passenger tickets",
+        "accepted_values": [
+          123000000,
+          124000000
+        ],
+        "tolerance_pct": 0.02,
+        "zero_tolerance": false,
+        "scoring_method": "Binary per part_1: correct number = full credit; incorrect = zero credit. Accept $123M–$124M range due to rounding of 143 × 80% = 114.4 → 114.",
+        "calculation_steps": {
+          "step_1_flights_per_day_per_plane": {
+            "formula": "12 hours ÷ (2 hours flight + 0.4 hour on ground)",
+            "result": "5 flights per day per plane"
+          },
+          "step_2_flights_annually": {
+            "formula": "5 flights × 6 planes × 360 days",
+            "result": "10,800 flights per year"
+          },
+          "step_3_passengers_per_flight": {
+            "formula": "143 seats × 80% load factor",
+            "result": "≈ 114 passengers per flight"
+          },
+          "step_4_price_per_flight_per_passenger": {
+            "formula": "$200 round-trip ticket ÷ 2",
+            "result": "$100 per one-way ticket"
+          },
+          "step_5_annual_revenue": {
+            "formula": "10,800 flights × 114 passengers × $100 per ticket",
+            "result": "$123M"
+          }
+        }
+      },
+      "qualitative_part": {
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts. Qualitative portion of Q6 is scored as 100% total, split into two tiers.",
+        "tier_1_basic": {
+          "weight_of_Q6_qualitative_total": "50%",
+          "keypoints": [
+            "The airline's revenue exceeds $123M annually"
+          ],
+          "note": "Expected from every candidate. Single point worth 50% of qualitative score — recognizes total revenue is higher due to ancillary/other streams beyond passenger tickets."
+        },
+        "tier_2_advanced": {
+          "weight_of_Q6_qualitative_total": "50%",
+          "points_available": 3,
+          "weight_per_point": "16.7% of qualitative total",
+          "keypoints": [
+            "The airline likely enjoys other revenue streams like pre-board and on-board services (e.g. upgrade fee, check-in fee, food/beverages, entertainment) as well as other services like cargo/mail delivery, which might be material portion of their revenue too",
+            "The price per ticket is fairly low of only $100, which makes sense as the client is a low-cost carrier",
+            "80% load factor seems high, but I would expect low-cost carriers to have it closer to 90-100% as volume is crucial for their survival (given low prices and high capex)"
+          ],
+          "note": "Not expected from every candidate. Each advanced point adds 16.7% to qualitative score."
+        },
+        "minimum_expected": "Correct numerical answer + Tier 1 basic contextualization",
+        "outstanding_threshold": "Correct numerical answer + Tier 1 + at least 2 Tier 2 advanced comments"
+      }
+    }
+  },
+  "state_machine_global": {
+    "case_type": "interviewer_driven",
+    "skip_logic": false,
+    "mandatory_sequence": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5",
+      "Q6"
+    ],
+    "rules": [
+      "All 6 questions are mandatory and must be asked in linear order Q1 → Q2 → Q3 → Q4 → Q5 → Q6",
+      "Q1 cannot be skipped under any circumstances",
+      "Q3 and Q4 are mandatory in benchmark mode even if Q2 provided comprehensive coverage — benchmark requires full question sequence (casebook conditional language dropped per user spec, documented in each Q's _interviewer_note)",
+      "A question may not be advanced until the current question receives a scoreable answer (1st or 2nd attempt)",
+      "If analyst pre-covers a later question's keypoints in an earlier answer, record as pre-coverage but still ask the later question in sequence",
+      "Appendix 1 must be shared upfront at the start of Q5",
+      "Appendix 2 must be shared upfront at the start of Q6",
+      "Structure_2 items 1-4 may be released during Q1 context only (per semantic touch)",
+      "Q6 information_upon_request items 1-6 may be released during Q6 context only (question-specific)",
+      "Information release follows semantic touch (structural position = release; passing reference = no release), NOT keyword presence"
+    ]
+  },
+  "scoring_summary": {
+    "Q1": {
+      "type": "framework",
+      "total_keypoints": 12,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q2": {
+      "type": "qualitative",
+      "total_keypoints": 17,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts; mandatory question",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q3": {
+      "type": "qualitative",
+      "total_keypoints": 19,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts; mandatory question regardless of Q2 coverage",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q4": {
+      "type": "qualitative",
+      "total_keypoints": 11,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts; mandatory question regardless of Q2 coverage",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q5": {
+      "type": "qualitative",
+      "scoring_layers": {
+        "layer_1_scenario_sub_points": {
+          "weight_of_Q5_total": "50%",
+          "scenario_A_total_keypoints": 8,
+          "scenario_B_total_keypoints": 10,
+          "scenario_C_total_keypoints": 10,
+          "total_keypoints": 28,
+          "scoring_method": "3-level per sub-point per scenario: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required",
+          "human_review_priority": "false-partial > false-not-covered > covered"
+        },
+        "layer_2_prioritization_reasoning": {
+          "weight_of_Q5_total": "30%",
+          "total_keypoints": 3,
+          "weight_per_point": "10% of Q5 total",
+          "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required; check explicit cross-scenario application of feasibility / financial impact / resources needed framework",
+          "human_review_priority": "false-partial > false-not-covered > covered"
+        },
+        "layer_3_final_ranking": {
+          "weight_of_Q5_total": "20%",
+          "correct_answer": "B > C > A",
+          "scoring_method": "Binary: full 20% if B>C>A with sound reasoning; zero if incorrect"
+        }
+      }
+    },
+    "Q6": {
+      "type": "quantitative",
+      "part_1_quantitative": {
+        "correct_answer": "$123M",
+        "zero_tolerance": true,
+        "scoring": "Binary per part_1: Full credit if correct; zero credit if incorrect. Accept $123M–$124M range due to rounding of 143 × 80% = 114.4"
+      },
+      "part_2_qualitative": {
+        "total_keypoints": 4,
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "human_review_priority": "false-partial > false-not-covered > covered",
+        "tier_1_basic": {
+          "keypoints": 1,
+          "weight": "50% of qualitative score"
+        },
+        "tier_2_advanced": {
+          "keypoints": 3,
+          "weight_per_point": "16.7% of qualitative score",
+          "weight_total": "50% of qualitative score"
+        }
+      }
+    }
+  }
+}

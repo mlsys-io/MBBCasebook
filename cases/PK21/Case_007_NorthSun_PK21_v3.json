@@ -1,0 +1,664 @@
+{
+  "case_id": "007",
+  "version": "v3",
+  "source": {
+    "title": "North Sun",
+    "inspired_by": "McKinsey & Company",
+    "year": 2021,
+    "author": "Peter K.",
+    "reference": "Peter-K.org, Case #7",
+    "casebook_abbr": "PK21"
+  },
+  "case_type": "interviewer_driven",
+  "case_type_origin": null,
+  "annotation_mode": null,
+  "case_arch": {
+    "primary": "Revenue Growth",
+    "tags": [
+      "Revenue Growth",
+      "Growth Strategy"
+    ],
+    "standard_tags": [
+      "Profitability",
+      "Market Entry",
+      "Revenue Growth",
+      "Cost Optimization",
+      "Investment Decision",
+      "Merger and Acquisition",
+      "Pricing Strategy",
+      "Growth Strategy",
+      "Operational Efficiency",
+      "Due Diligence",
+      "Market Sizing",
+      "Competitive Response",
+      "Digital Transformation",
+      "Turnaround / Restructuring",
+      "Supply Chain",
+      "Comparison"
+    ]
+  },
+  "difficulty": "Medium",
+  "industry": "Automotive / Electric Vehicles",
+  "topic": "Revenue growth — B2B market share improvement for electric vehicle manufacturer",
+  "expected_duration_minutes": 20,
+  "opening_prompt": "Hi, I'd like to solve some consulting cases with you. Pls be a good interviewee to have a potential test in consulting cases. For the case problem-solving, pls do not assume any numbers or assumptions before my confirmation. I will give you the context upon request. I need you to answer the following questions for the client. Before you start, feel free to ask me 2-3 clarifying questions about the client.\n\nQ1. What do you need to think about to build recommendations for the client?\nQ2. What are your thoughts on the reasons behind the client's low market share in the B2B segment?\nQ3. Based on the initial analysis the conversion rate from prospects to test-drives (from stage 2 to stage 3 – see Appendix 1) is far below industry average. What ideas can you suggest to increase it?\nQ4. The company plans to launch a 1-day marketing event for 1k of its qualified prospects to convert some of them to stage 3 – test drive (see Appendix 1). How many prospects do they need to convert for this event to break-even?\n\nHere is the basic context for the client:\nNorth Sun, a Japanese leading manufacturer of electric passenger vehicles, has been struggling with a low market share in the B2B segment. North Sun enjoys strong positions in the B2C space, both domestically and in the international market. However, North Sun's sales to small and medium size businesses continue staying far below expectations. The CEO has invited you to help them out.",
+  "structure_1_client_basic_context": {
+    "company": "North Sun",
+    "type": "Japanese leading manufacturer of electric passenger vehicles",
+    "situation": "North Sun has been struggling with a low market share in the B2B segment. North Sun enjoys strong positions in the B2C space, both domestically and in the international market. However, North Sun's sales to small and medium size businesses continue staying far below expectations.",
+    "action": "The CEO has invited you to help them out.",
+    "ask": "Help North Sun improve their B2B market share."
+  },
+  "structure_2_information_upon_request": {
+    "item_1": {
+      "item_id": "item_1",
+      "trigger": "Analyst asks about North Sun's market position, dominance, or competitive standing in Japan",
+      "core_dimensional_concept": "North Sun's market share in Japanese battery-electric vehicle market",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar named 'Market Position', 'Competitive Landscape', or 'Market Share'",
+          "explicit clarifying question about North Sun's share of Japanese EV market",
+          "sub-bullet under company or competitive analysis asking about North Sun's domestic standing"
+        ],
+        "alternative_phrasings": [
+          "North Sun's domestic market share",
+          "how dominant is North Sun in Japan",
+          "Japanese EV market leadership",
+          "North Sun's competitive position domestically"
+        ]
+      },
+      "disqualifying": [
+        "Only says 'competitive risk from Japanese OEMs' under the Risk pillar — a risk dimension, not a direct question about market share itself",
+        "Only loosely states 'competitive landscape' as a passing reference without touching North Sun's specific share (F pattern)"
+      ],
+      "info": "North Sun accounts for 65% of all Japanese battery-electric vehicles sold."
+    },
+    "item_2": {
+      "item_id": "item_2",
+      "trigger": "Analyst asks about Japanese brands' positioning in the global EV market or international competitive landscape",
+      "core_dimensional_concept": "Japanese EV brands' share of global pure electric vehicle market",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar named 'Global Market', 'International Competition', or 'Global EV Landscape'",
+          "explicit question about Japanese OEMs' global market share or international position",
+          "sub-bullet under market or competitive analysis asking about Japanese brands vs global players"
+        ],
+        "alternative_phrasings": [
+          "global EV market share for Japanese brands",
+          "how do Japanese EVs compare globally",
+          "international competitiveness of Japanese OEMs",
+          "Japanese EV share of world market"
+        ]
+      },
+      "disqualifying": [
+        "Only says 'global competition risk' under the Risk pillar — a risk dimension, not the global-share subject itself",
+        "Only says 'international market is competitive' as a passing reference without actively touching the global share of Japanese brands (F pattern)"
+      ],
+      "info": "Japanese cars capture 5% of pure electric vehicles sold worldwide."
+    },
+    "item_3": {
+      "item_id": "item_3",
+      "trigger": "Analyst asks about e-vehicle market size, growth rate, or TAM",
+      "core_dimensional_concept": "global e-vehicle market size and growth trajectory (CAGR)",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar named 'Market Size', 'Market Growth', 'TAM', or 'Industry Overview'",
+          "explicit clarifying question about EV market growth rate or total market scale",
+          "sub-bullet under external factors or market analysis asking for industry CAGR or projected size"
+        ],
+        "alternative_phrasings": [
+          "EV market growth rate",
+          "total addressable market for electric vehicles",
+          "e-car industry CAGR",
+          "global EV demand forecast",
+          "how fast is the EV market growing"
+        ]
+      },
+      "disqualifying": [
+        "Only says 'growing market' as a passing reference without actively requesting the specific growth rate or market-size figure (F pattern)",
+        "Only says 'market growth uncertainty' under the Risk pillar — a risk dimension, not a question about the growth-rate figure"
+      ],
+      "info": "The e-vehicle global market size is projected to grow from 4M units in 2021 to 35M units by 2030 (27% CAGR)."
+    },
+    "item_4": {
+      "item_id": "item_4",
+      "trigger": "Analyst asks about who the B2B clients are or what corporate client segments exist for electric cars",
+      "core_dimensional_concept": "major B2B client groups for electric cars",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar named 'Client Segments', 'Target Corporate Groups', or 'B2B Customer Types'",
+          "explicit question about types of corporate buyers of electric cars",
+          "sub-bullet under market or customer analysis asking for B2B customer categories or fleet buyer types"
+        ],
+        "alternative_phrasings": [
+          "corporate client types for EVs",
+          "who buys fleet electric vehicles",
+          "B2B buyer segments",
+          "fleet buyer categories",
+          "institutional clients for electric cars"
+        ]
+      },
+      "disqualifying": [
+        "Only loosely states 'corporate clients' as a modifier without touching the specific customer-base type (G pattern)",
+        "Only says 'B2B product needs' under the Product pillar without engaging the customer-segment type itself"
+      ],
+      "info": "Rental car firms, corporations and government agencies (e.g. police) are among major B2B client groups for electric cars."
+    },
+    "item_5": {
+      "item_id": "item_5",
+      "trigger": "Analyst asks about North Sun's product portfolio, model range, or vehicle types offered",
+      "core_dimensional_concept": "North Sun's product scope (passenger cars only, excluding buses and trucks)",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar named 'Product Portfolio', 'Model Range', or 'Product Scope'",
+          "explicit question about what types of vehicles North Sun manufactures or sells",
+          "sub-bullet under company analysis asking about North Sun's vehicle lineup or B2B product fit"
+        ],
+        "alternative_phrasings": [
+          "what vehicles does North Sun sell",
+          "North Sun vehicle types",
+          "product lineup",
+          "car models offered by North Sun",
+          "does North Sun make buses or trucks"
+        ]
+      },
+      "disqualifying": [
+        "Only says 'product quality issues' without touching product type/scope (F pattern — product is a modifier, not the product-scope subject itself)",
+        "Only says 'product portfolio risk' under the Risk pillar — a risk dimension, not the product-scope subject itself"
+      ],
+      "info": "North Sun's model range of electric vehicles includes only passenger cars (not buses or trucks)."
+    },
+    "item_6": {
+      "item_id": "item_6",
+      "trigger": "Analyst asks about financial targets, revenue goals, or success metrics for the B2B initiative",
+      "core_dimensional_concept": "North Sun's revenue or financial target for B2B growth",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar named 'Financial Targets', 'Success Metrics', or 'Goals'",
+          "explicit clarifying question about what revenue or market share target the client has",
+          "sub-bullet under strategic objectives asking about KPIs or financial success criteria"
+        ],
+        "alternative_phrasings": [
+          "revenue target for B2B",
+          "financial goal",
+          "success criteria",
+          "how will we measure success",
+          "B2B revenue objective",
+          "hurdle rate or KPI"
+        ]
+      },
+      "disqualifying": [
+        "Only asks, in the opening clarification, 'what is the timeline' without touching the financial goal itself",
+        "Only lists 'revenue analysis' as an analysis framework under the Financials pillar rather than actively asking about the financial target"
+      ],
+      "info": "There is no specific revenue goal."
+    }
+  },
+  "structure_3_case_questions": {
+    "Q1": {
+      "q_id": "Q1",
+      "type": "framework",
+      "question_text": "What do you need to think about to build recommendations for the client?",
+      "information_to_share_upfront": null,
+      "information_upon_request": "See structure_2 items 1–6. Release only items by semantic touch (release when the analyst structurally engages the dimension; not on a passing reference), not by mere keyword presence.",
+      "state_machine": {
+        "next_question": "Q2",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable framework answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q2": {
+      "q_id": "Q2",
+      "type": "qualitative",
+      "question_text": "What are your thoughts on the reasons behind the client's low market share in the B2B segment?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q3",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q3": {
+      "q_id": "Q3",
+      "type": "qualitative",
+      "question_text": "Based on the initial analysis the conversion rate from prospects to test-drives (from stage 2 to stage 3 – see Appendix 1) is far below industry average. What ideas can you suggest to increase it?",
+      "information_to_share_upfront": [
+        "Appendix 1 (North Sun's sales funnel for corporate clients — full content defined in Q4 appendix field; share this diagram when asking Q3)"
+      ],
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q4",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q4": {
+      "q_id": "Q4",
+      "type": "quantitative",
+      "question_text": "The company plans to launch a 1-day marketing event for 1k of its qualified prospects to convert some of them to stage 3 – test drive (see Appendix 1). How many prospects do they need to convert for this event to break-even?",
+      "information_to_share_upfront": [
+        "Appendix 1 (North Sun's sales funnel for corporate clients — already shared at Q3; re-reference if needed)"
+      ],
+      "information_upon_request": [
+        {
+          "item_id": "Q4_item_1",
+          "trigger": "Analyst asks about the cost of the marketing event",
+          "core_dimensional_concept": "total cost of the 1-day marketing event",
+          "release_conditions": {
+            "structural_position": [
+              "explicit calculation question asking for the event cost or total spend",
+              "quantitative setup requesting event cost input for break-even calculation",
+              "direct question: 'How much does the marketing event cost?' or 'What is the event budget?'"
+            ],
+            "alternative_phrasings": [
+              "event cost",
+              "how much is the event",
+              "total marketing spend for this event",
+              "event budget",
+              "investment for the 1-day event"
+            ]
+          },
+          "disqualifying": [
+            "Only says 'marketing is expensive' as a passing reference without specifically requesting the event-cost figure (F pattern)",
+            "Only says 'marketing spend risk' under the Risk pillar — a risk dimension, not a question about the specific amount"
+          ],
+          "info": "Total costs of the marketing event are $1M."
+        },
+        {
+          "item_id": "Q4_item_2",
+          "trigger": "Analyst asks about the typical contract details — fleet size and/or price per car",
+          "core_dimensional_concept": "typical B2B contract parameters (fleet size and price per car)",
+          "release_conditions": {
+            "structural_position": [
+              "explicit calculation question about average contract value, fleet size, or revenue per deal",
+              "quantitative setup asking for revenue per contract inputs",
+              "direct question: 'What is the typical fleet size?' or 'What is the price per car?'"
+            ],
+            "alternative_phrasings": [
+              "average contract size",
+              "fleet size per client",
+              "price per electric car",
+              "typical deal size",
+              "revenue per contract"
+            ]
+          },
+          "disqualifying": [
+            "Only says 'fleet buyers' as a customer-base modifier under Market Analysis without requesting the contract-size figure (G pattern)",
+            "Only says 'corporate contracts are large' as a passing reference without actively touching the contract parameters"
+          ],
+          "info": "Typical contract: Fleet size is 40 e-cars. Price per car is $35,000."
+        },
+        {
+          "item_id": "Q4_item_3",
+          "trigger": "Analyst asks about margin per car or profitability of the contract",
+          "core_dimensional_concept": "average margin per car (unit profitability)",
+          "release_conditions": {
+            "structural_position": [
+              "explicit calculation question asking for margin or profit per unit/contract",
+              "quantitative formula setup requiring margin input to compute profit per contract",
+              "direct question: 'What is the margin per car?' or 'What is North Sun's gross margin?'"
+            ],
+            "alternative_phrasings": [
+              "profit margin",
+              "margin percentage",
+              "profitability per car",
+              "gross margin",
+              "unit economics",
+              "contribution margin"
+            ]
+          },
+          "disqualifying": [
+            "Only says 'pricing strategy' under the Pricing pillar without specifically requesting the margin figure",
+            "Only says 'North Sun should improve margins' as a passing reference (F pattern)"
+          ],
+          "info": "Average margin per car is 5%."
+        },
+        {
+          "item_id": "Q4_item_4",
+          "trigger": "Analyst asks about conversion rate from test-drive (stage 3) to contract conclusion (stage 4)",
+          "core_dimensional_concept": "conversion rate from stage 3 (test-drive) to stage 4 (contract conclusion)",
+          "release_conditions": {
+            "structural_position": [
+              "explicit calculation question about stage 3 to stage 4 conversion rate",
+              "quantitative setup asking for conversion rate to determine how many test-drives lead to contracts",
+              "direct question: 'What is the conversion rate from test-drive to contract?'"
+            ],
+            "alternative_phrasings": [
+              "stage 3 to stage 4 conversion",
+              "test-drive to contract rate",
+              "closing rate",
+              "conversion from test-drive to sale",
+              "how many test-drives lead to contracts"
+            ]
+          },
+          "disqualifying": [
+            "Only loosely states 'conversion rates are low' under Sales Funnel as a passing reference without requesting the specific stage 3→4 figure",
+            "Only discusses stage 2→3 conversion under Q3 without actively touching the stage 3→4 dimension itself (G pattern — adjacent dimension)"
+          ],
+          "info": "Average conversion rate from stage 3 (test-drive) to stage 4 (conclude contract) is 20%."
+        },
+        {
+          "item_id": "Q4_item_5",
+          "trigger": "Analyst asks about baseline conversions — how many prospects would convert to test-drive without the marketing event",
+          "core_dimensional_concept": "baseline number of prospects converting to test-drive without the marketing event",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question asking for the counterfactual (conversions without the event)",
+              "quantitative setup asking for baseline to isolate incremental impact of the event",
+              "direct question: 'How many prospects would convert to test-drives anyway, without this event?'"
+            ],
+            "alternative_phrasings": [
+              "baseline conversion",
+              "organic test-drives",
+              "without the event",
+              "counterfactual conversions",
+              "incremental impact of the event",
+              "how many would convert regardless"
+            ]
+          },
+          "disqualifying": [
+            "Only loosely states 'we need to measure incremental impact' under Marketing Effectiveness without specifically requesting the no-campaign conversion-baseline figure",
+            "Only says 'baseline conversion rate' as a passing reference without touching the specific count under the no-campaign scenario (F pattern)"
+          ],
+          "info": "Based on team's estimates 30 prospects will convert to test-drive even without this marketing event."
+        }
+      ],
+      "appendix": {
+        "appendix_1": {
+          "title": "North Sun's sales funnel for corporate clients",
+          "release_rule": "Share upfront with analyst at the start of Q3 (Q3 question text explicitly references this appendix). Re-share or re-reference at Q4 as needed.",
+          "stages": {
+            "stage_01_capture_leads": {
+              "label": "Capture leads",
+              "description": "Leads (or new customers) might be identified through cold/warm outreach (outbound) and inbound inquiries (e.g. site, phone, email)"
+            },
+            "stage_02_nurture_prospects": {
+              "label": "Nurture prospects",
+              "description": "A qualified prospect has confirmed their interest, planned fleet size and allocated budget"
+            },
+            "stage_03_conduct_test_drives": {
+              "label": "Conduct test drives",
+              "description": "Qualified prospects conduct test drives of different e-car models"
+            },
+            "stage_04_convert_sales": {
+              "label": "Convert sales",
+              "description": "Prospects conclude contracts for car fleets"
+            }
+          }
+        }
+      },
+      "state_machine": {
+        "next_question": null,
+        "skip_logic": false,
+        "transition_condition": "Case ends after Q4"
+      }
+    }
+  },
+  "structure_4_ground_truth": {
+    "Q1_ground_truth": {
+      "type": "framework",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_global_b2b_ecar_market": {
+          "keypoints": [
+            "Growth rate",
+            "Top e-car brands with their market shares in B2B",
+            "Recent market trends (e.g. government policies to electricity car fleets)"
+          ],
+          "subtotal": 3
+        },
+        "pillar_2_north_sun": {
+          "keypoints": [
+            "Target corporate client groups",
+            "Key differentiation points of e-car models",
+            "Sales force and other distribution channels"
+          ],
+          "subtotal": 3
+        },
+        "pillar_3_revenue_analysis": {
+          "keypoints": [
+            "Current level, growth rate and market share",
+            "Break-down by region and model",
+            "Pricing strategy"
+          ],
+          "subtotal": 3
+        },
+        "pillar_4_market_share_growth_strategies": {
+          "keypoints": [
+            "Marketing strategy",
+            "Distribution channels",
+            "Pricing strategy",
+            "Client journey and value proposition"
+          ],
+          "subtotal": 4
+        }
+      },
+      "total_keypoints": 13,
+      "minimum_expected": "Cover at least 2 pillars with sub-items; minimum 4 keypoints; structured MECE approach covering Revenue analysis, Business model, and External factors dimensions",
+      "outstanding_threshold": "All 4 pillars covered with majority of sub-items in a clearly structured issue tree"
+    },
+    "Q2_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_poor_marketing_strategy": {
+          "keypoints": [
+            "Low brand awareness among corporate clients",
+            "Limited marketing budgets allocated to B2B events, ads and promotions",
+            "Lack of focus in marketing messages on needs and pain points of the corporate clients",
+            "Mistakes in the past (e.g. high accident rate)"
+          ],
+          "subtotal": 4
+        },
+        "pillar_2_inadequate_pricing": {
+          "keypoints": [
+            "Too high base prices",
+            "Uncompetitive discount policy",
+            "Inflexible payment terms",
+            "Too high total cost of ownership (e.g. charging areas)",
+            "Less-than-average useful life of a car"
+          ],
+          "subtotal": 5
+        },
+        "pillar_3_low_efficiency_of_distribution": {
+          "keypoints": [
+            "Low quality salesforce due to weak selection process and poor training system",
+            "Rare sales team result assessments",
+            "Discouraging incentives (e.g. low sales commission) for salesforce and dealerships",
+            "Limited network of car dealerships",
+            "Underdeveloped online channel (vs strong at Tesla)"
+          ],
+          "subtotal": 5
+        },
+        "pillar_4_sub_optimal_value_proposition": {
+          "product_issues": {
+            "keypoints": [
+              "Lack of features in the base model of e-car",
+              "Limited range",
+              "Long charging times"
+            ],
+            "subtotal": 3
+          },
+          "service_issues": {
+            "keypoints": [
+              "Low-quality of service",
+              "Limited network of service centers and lack of spare parts",
+              "Lack of mechanics to hire for in-house e-car maintenance"
+            ],
+            "subtotal": 3
+          },
+          "subtotal": 6
+        }
+      },
+      "total_keypoints": 20,
+      "minimum_expected": "At least 4 ideas across at least 2 pillars",
+      "outstanding_threshold": "Cover all 4 pillars with sub-categories structured clearly; 7-8 keypoints; delivered fluently on the fly without taking notes"
+    },
+    "Q3_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_strengthen_marketing_strategy": {
+          "keypoints": [
+            "Organize more marketing events for qualified prospects (e.g. parties, showroom events, invite-only dinners)",
+            "Connect current clients with qualified prospects to talk about their experiences",
+            "Attend an industry conference that material portion of qualified prospects will participate in"
+          ],
+          "subtotal": 3
+        },
+        "pillar_2_optimize_pricing": {
+          "keypoints": [
+            "Be more flexible in payment terms and pricing with qualified prospects",
+            "Show the full cost of ownership and provide benchmarking data vs major competitors"
+          ],
+          "subtotal": 2
+        },
+        "pillar_3_increase_efficiency_of_distribution": {
+          "keypoints": [
+            "Select stricter, train better, incentivize more generously, assess more often",
+            "Identify major prospects' objections and design a playbook to address those",
+            "Reactivate old qualified prospects",
+            "Ensure follow-ups and reminders with prospects",
+            "Use news and recent developments to reach out"
+          ],
+          "subtotal": 5,
+          "work_with_prospects": {
+            "keypoints": [
+              "Reactivate old qualified prospects",
+              "Ensure follow-ups and reminders with prospects",
+              "Use news and recent developments to reach out"
+            ],
+            "subtotal": 3
+          }
+        },
+        "pillar_4_improve_value_proposition": {
+          "keypoints": [
+            "Analyze the needs and pain points of specific qualified leads and adjust sales pitch accordingly",
+            "Ensure more flexible timing (incl. weekends and late evenings)",
+            "Offer more flexible place (e.g. bring test-drive to their office)"
+          ],
+          "subtotal": 3
+        }
+      },
+      "total_keypoints": 13,
+      "minimum_expected": "At least 4 ideas across at least 2 pillars",
+      "outstanding_threshold": "7-8 ideas structured into 4 categories, delivered fluently on the fly without taking notes"
+    },
+    "Q4_ground_truth": {
+      "type": "quantitative",
+      "quantitative_part": {
+        "correct_final_answer": "100 prospects need to convert to test-drives for the event to break-even (Note: if candidate does not round intermediate step 14.28→14 and computes directly, ~101-102 may be accepted as false-partial credit)",
+        "accepted_values": [
+          100
+        ],
+        "tolerance_pct": 0.0,
+        "zero_tolerance": true,
+        "scoring_method": "Binary: correct number = full credit; incorrect = zero credit",
+        "calculation_steps": {
+          "step_1_profit_per_average_contract": {
+            "formula": "40 cars × $35,000/car × 5% margin",
+            "result": "$70,000 per contract"
+          },
+          "step_2_contracts_needed_to_break_even": {
+            "formula": "$1M event cost ÷ $70,000 per contract",
+            "result": "~14 contracts (14.3, rounded to 14)"
+          },
+          "step_3_stage3_prospects_needed_for_14_contracts": {
+            "formula": "14 contracts ÷ 20% conversion rate (stage 3 → stage 4)",
+            "result": "70 prospects at stage 3 (incremental)"
+          },
+          "step_4_total_stage3_prospects_needed": {
+            "formula": "70 prospects (incremental needed) + 30 prospects (baseline who convert without the event)",
+            "result": "100 prospects total need to reach stage 3"
+          }
+        }
+      },
+      "qualitative_part": {
+        "scoring_note": "Qualitative portion of Q4 is scored as 100% total, split into two tiers. Within each tier, use 3-level scoring per",
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "tier_1_basic": {
+          "weight_of_Q4_qualitative_total": "50%",
+          "keypoints": [
+            "To make the event break-even, the client needs to convert 100 prospects into test-drives",
+            "10% conversion rate (100 out of 1k participants) seems reasonable"
+          ],
+          "note": "Expected from every candidate. Two points together worth 50% of qualitative score (25% each)."
+        },
+        "tier_2_advanced": {
+          "weight_of_Q4_qualitative_total": "50%",
+          "points_available": 3,
+          "weight_per_point": "~16.7% of qualitative total",
+          "keypoints": [
+            "Currently salesforce converts only 3% of the qualified prospects (30 out of 1k) which might be a bit on the lower end and suggest that the client should strengthen its salesforce through more rigorous selection, advanced training and/or more generous incentives",
+            "The event will promote the brand of the client and assuming high-quality participant experience might improve the conversion rate from stage 3 (test-drive) to stage 4 (contract conclusion)",
+            "The client enjoys a fairly low margin of 5% which makes sense as this is a rapidly growing market and they need to sacrifice profits to propel sales"
+          ],
+          "note": "Not expected from every candidate. Each advanced point adds ~16.7% to qualitative score."
+        },
+        "minimum_expected": "Correct numerical answer + Tier 1 basic contextualization (both keypoints covered)",
+        "outstanding_threshold": "Correct numerical answer + Tier 1 covered + at least 2 Tier 2 advanced comments covered"
+      }
+    }
+  },
+  "state_machine_global": {
+    "case_type": "interviewer_driven",
+    "skip_logic": false,
+    "mandatory_sequence": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4"
+    ],
+    "rules": [
+      "Q1 cannot be skipped under any circumstances",
+      "Questions must proceed in linear order Q1 → Q2 → Q3 → Q4",
+      "A question may not be advanced until the current question receives a scoreable answer (1st or 2nd attempt)",
+      "If analyst pre-covers a later question's keypoints in an earlier answer, record as pre-coverage but still ask the later question in sequence",
+      "No question may be skipped even if pre-covered"
+    ]
+  },
+  "scoring_summary": {
+    "Q1": {
+      "type": "framework",
+      "total_keypoints": 13,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q2": {
+      "type": "qualitative",
+      "total_keypoints": 20,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q3": {
+      "type": "qualitative",
+      "total_keypoints": 13,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q4": {
+      "type": "quantitative",
+      "part_1_quantitative": {
+        "correct_answer": "100 prospects",
+        "zero_tolerance": true,
+        "scoring": "Binary: Full credit if correct; zero credit if incorrect"
+      },
+      "part_2_qualitative": {
+        "total_keypoints": 5,
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "human_review_priority": "false-partial > false-not-covered > covered",
+        "tier_1_basic": {
+          "keypoints": 2,
+          "weight_per_point": "25% of qualitative score",
+          "weight_total": "50% of qualitative score"
+        },
+        "tier_2_advanced": {
+          "keypoints": 3,
+          "weight_per_point": "~16.7% of qualitative score",
+          "weight_total": "50% of qualitative score"
+        }
+      }
+    }
+  }
+}

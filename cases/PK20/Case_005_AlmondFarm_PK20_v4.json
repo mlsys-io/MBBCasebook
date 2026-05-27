@@ -1,0 +1,693 @@
+{
+  "case_id": "Case_005_AlmondFarm_PK20",
+  "case_type": "interviewer_driven",
+  "case_type_origin": "interviewer_driven",
+  "case_arch": {
+    "primary": "M&A / Investment Decision",
+    "tags": [
+      "M&A",
+      "Market Sizing",
+      "PE / Investment",
+      "Brainstorming"
+    ]
+  },
+  "version": "v4",
+  "source": {
+    "casebook": "Peter K. 2020",
+    "casebook_abbr": "PK20",
+    "firm": "McKinsey",
+    "year": 2020,
+    "title": "Almond Farm",
+    "inspired_by": "McKinsey case interview",
+    "author": "Peter K.",
+    "reference": "Case #5. McKinsey. 2020. Almond farm (Peter K. Casebook 2020)"
+  },
+  "industry": "Agriculture / Private Equity",
+  "topic": "PE acquisition evaluation of US almond farm — market sizing + risk assessment",
+  "difficulty": "Medium",
+  "expected_duration_minutes": 30,
+  "annotation_mode": "v14 retroactive (D24 schema migration + Phase 2 backfill)",
+  "opening_prompt": "Hi, I'd like to solve some consulting cases with you. Pls be a good interviewee to have a potential test in consulting cases. For the case problem-solving, pls do not assume any numbers or assumptions before my confirmation. I will give you the context upon request. For all quantitative calculation results, you MUST include the unit alongside the number in your final answer. Always state both the number AND its unit together (e.g., \"$110M\", \"260,000 metric tons\", \"6.7%\", \"5,000 hires\") so your answer is unambiguous. I need you to answer the following questions for the client. Before you start, feel free to ask me 2-3 clarifying questions about the client. Please answer using standard units (e.g., revenue in $M; market size in $B; ratios as decimals; growth rates as %). Q1. How would you approach this problem?\nQ2. Your team dug deeper into the competitive landscape of almond market. Your analyst emailed you this chart. What does it tell you?\nQ3. What is the almond market size going to be in the U.S. in 2025?\nQ4. What can be causing prices of almond to decrease?\nQ5. What could possibly happen (what sort of shocks) that might cause prices of almond to increase in future?\nQ6. What are some risks of acquiring this almond farm? Here is the basic context for the client:\nA PE firm is considering purchasing a U.S.-based almond farm and has brought in your team to advise on whether it is a wise idea.",
+  "scoring_summary": {
+    "human_review_priority": "false-partial > false-not-covered > covered",
+    "Q1": {
+      "type": "framework",
+      "total_keypoints": 11,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q2": {
+      "type": "qualitative",
+      "total_keypoints": 5,
+      "scoring_method": "Within each tier, use 3-level scoring per; tier_1_basic (50%) + tier_2_advanced (50%)",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q3": {
+      "type": "quantitative",
+      "part_1_quantitative": {
+        "correct_answer": "$7.14B (precise: 2,550 × 1.40 = 3,570 M lbs × $2.00) or $7.2B (casebook rounded 3,600 M lbs)",
+        "accepted_values": [
+          7.14,
+          7.2,
+          7140,
+          7200,
+          7140000000,
+          7200000000
+        ],
+        "tolerance_pct": 0.02,
+        "zero_tolerance": false,
+        "scoring": "Binary: correct final answer (any value in accepted_values within 2% tolerance) = full credit"
+      },
+      "part_2_qualitative": {
+        "total_keypoints": 5,
+        "scoring_method": "Within each tier, use 3-level scoring per; tier_1_basic (50%) + tier_2_advanced (50%)",
+        "human_review_priority": "false-partial > false-not-covered > covered"
+      }
+    },
+    "Q4": {
+      "type": "qualitative",
+      "total_keypoints": 12,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q5": {
+      "type": "qualitative",
+      "total_keypoints": 9,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q6": {
+      "type": "qualitative",
+      "total_keypoints": 14,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "total_case_keypoints": 60
+  },
+  "state_machine_global": {
+    "flow": "Q1 → Q2 (Appendix 1) → Q3 (Appendix 2) → Q4 → Q5 → Q6 → End",
+    "rules": [
+      "All 6 questions asked sequentially; no conditional skip logic",
+      "Q3 has a quantitative sub-part followed by a qualitative contextualization sub-part",
+      "Q3 quantitative: max 2 attempts; if both wrong, Judge LLM provides $7.2B per §4.3.C before proceeding to qualitative contextualization",
+      "Q4, Q5, Q6 are brainstorming questions: minimum 4 ideas expected; best practice 8+ ideas with structured approach and on-the-fly delivery without taking notes",
+      "McKinsey typically doesn't require a final recommendation; no synthesis/recommendation question in this case"
+    ]
+  },
+  "structure_1_client_basic_context": {
+    "client": "A U.S.-based almond farm (acquisition target)",
+    "client_context": "PE firm considering the acquisition",
+    "situation": "A PE firm is considering purchasing a U.S.-based almond farm and has brought in your team to advise on whether it is a wise idea.",
+    "objective": "Assess whether the PE firm should acquire the almond farm"
+  },
+  "structure_2_information_upon_request": {
+    "description": "General background information released only upon candidate request. Do not volunteer proactively.",
+    "items": [
+      {
+        "item_id": "S2_1",
+        "trigger": "Candidate asks about the target farm's size, scale, land area, or production capacity",
+        "core_dimensional_concept": "Target farm acreage / physical scale",
+        "release_conditions": {
+          "structural_position": "Release when candidate explicitly inquires about farm size, land area, or physical production scale of the target; candidate must be framing it as a clarifying question about the target's footprint — not about financials or revenue",
+          "alternative_phrasings": [
+            "How big is the farm?",
+            "What is the farm's acreage or size?",
+            "How large is the target's operation?",
+            "What is the production capacity of the farm?"
+          ]
+        },
+        "disqualifying": "Do not release if candidate asks about revenue, headcount, or financial size without specifically asking about land or acreage; e.g., 'what size company is this?' referring to revenues",
+        "info": "The target's almond acreage is 10k acres."
+      },
+      {
+        "item_id": "S2_2",
+        "trigger": "Candidate asks about the target's competitive position, market rank, or standing among U.S. almond farms",
+        "core_dimensional_concept": "Target's market ranking among U.S. almond farms",
+        "release_conditions": {
+          "structural_position": "Release when candidate asks where the target stands relative to peers; must be asking about competitive position or ranking, not about industry concentration in general",
+          "alternative_phrasings": [
+            "Is the target a large or small player?",
+            "What is the target's market share or rank?",
+            "Where does the target rank among almond farms in the U.S.?",
+            "Is this one of the biggest farms?"
+          ]
+        },
+        "disqualifying": "Do not release if candidate is asking about market fragmentation or concentration in the industry overall without specifically asking about the target's own ranking",
+        "info": "The target is one of top-10 players, but not top-5."
+      },
+      {
+        "item_id": "S2_3",
+        "trigger": "Candidate asks about the total addressable market, market size, or total size of the U.S. almond industry",
+        "core_dimensional_concept": "U.S. almond market size (2019 baseline)",
+        "release_conditions": {
+          "structural_position": "Release when candidate asks about total market size of almonds in the U.S. as part of external market context; candidate should be setting up a market sizing or competitive context analysis",
+          "alternative_phrasings": [
+            "How big is the almond market in the U.S.?",
+            "What is the TAM for almonds?",
+            "What is the total U.S. almond market?",
+            "What is the size of the almond industry?"
+          ]
+        },
+        "disqualifying": "Do not release if candidate asks about global or international almond markets (not U.S.-specific); do not release redundantly if Appendix 2 has already been handed over (which contains the 2019 market size figure)",
+        "info": "The market size of almond is $6.2B in the U.S. (2019)."
+      },
+      {
+        "item_id": "S2_4",
+        "trigger": "Candidate asks about the target's business model, value chain position, or whether the farm processes or manufactures almond products",
+        "core_dimensional_concept": "Target's value chain position (grower vs. processor / vertical integration)",
+        "release_conditions": {
+          "structural_position": "Release when candidate explicitly asks whether the target is vertically integrated, what stage of the value chain they operate in, or whether they sell raw almonds vs. finished products",
+          "alternative_phrasings": [
+            "Is the target vertically integrated?",
+            "Does the farm process or just grow almonds?",
+            "What does the target actually produce — raw almonds or finished goods?",
+            "Is this a grower or a processor?"
+          ]
+        },
+        "disqualifying": "Do not release if candidate is asking about customer segments or distribution channels without specifically asking about vertical integration or value chain stage",
+        "info": "The target isn't vertically integrated – they are an almond grower, not an almond processor."
+      }
+    ]
+  },
+  "structure_3_case_questions": {
+    "Q1": {
+      "q_id": "Q1",
+      "type": "framework",
+      "question_text": "How would you approach this problem?",
+      "appendix_provided": null,
+      "information_upon_request": [],
+      "state_machine": {
+        "initial_prompt": "How would you approach this problem?",
+        "transition_condition": "Candidate presents a structured framework covering external market, target profile, valuation, and risks → proceed to Q2",
+        "zero_tolerance": false
+      }
+    },
+    "Q2": {
+      "q_id": "Q2",
+      "type": "qualitative",
+      "question_text": "Your team dug deeper into the competitive landscape of almond market. Your analyst emailed you this chart. What does it tell you?",
+      "appendix_ref": "Q2.appendix.appendix_1",
+      "appendix": {
+        "appendix_1": {
+          "title": "Almond acreage by top almond farms in the U.S.",
+          "release_rule": "Share upfront with analyst at the start of Q2",
+          "type": "pie_chart",
+          "content": {
+            "total_denominator": "1.53M acres (2020)",
+            "note": "85% of almond farms in the U.S. are 250 acres or less.",
+            "segments": {
+              "Paramount Farming": "5.0%",
+              "South Valley Farms": "1.7%",
+              "Agriland Farming": "1.6%",
+              "Farmland Management Services": "1.6%",
+              "Braden Farms": "1.5%",
+              "Other almond farms": "88.6%"
+            }
+          }
+        }
+      },
+      "information_upon_request": [],
+      "state_machine": {
+        "initial_prompt": "Your team dug deeper into the competitive landscape of almond market. Your analyst emailed you this chart. What does it tell you? [Hand Appendix 1 to candidate]",
+        "transition_condition": "Candidate provides observations on market fragmentation and competitive dynamics → proceed to Q3",
+        "zero_tolerance": false
+      }
+    },
+    "Q3": {
+      "q_id": "Q3",
+      "type": "quantitative",
+      "question_text": "What is the almond market size going to be in the U.S. in 2025?",
+      "appendix_ref": "Q3.appendix.appendix_2",
+      "appendix": {
+        "appendix_2": {
+          "title": "Table 1. U.S. almond market indicators (2014-19)",
+          "release_rule": "Share upfront with analyst at the start of Q3",
+          "type": "table",
+          "table": {
+            "headers": [
+              "Indicator",
+              "2014",
+              "2015",
+              "2016",
+              "2017",
+              "2018",
+              "2019"
+            ],
+            "rows": [
+              {
+                "indicator": "Annual production, M lbs",
+                "2014": 1870,
+                "2015": 1900,
+                "2016": 2140,
+                "2017": 2270,
+                "2018": 2280,
+                "2019": 2550
+              },
+              {
+                "indicator": "Production growth rate, %",
+                "2014": "-7%",
+                "2015": "2%",
+                "2016": "13%",
+                "2017": "6%",
+                "2018": "0%",
+                "2019": "12%"
+              },
+              {
+                "indicator": "Price, USD per lbs",
+                "2014": 4.0,
+                "2015": 3.13,
+                "2016": 2.39,
+                "2017": 2.53,
+                "2018": 2.5,
+                "2019": 2.43
+              },
+              {
+                "indicator": "Market size in the U.S., Bn USD",
+                "2014": 7.5,
+                "2015": 5.9,
+                "2016": 5.1,
+                "2017": 5.7,
+                "2018": 5.7,
+                "2019": 6.2
+              }
+            ]
+          }
+        }
+      },
+      "information_upon_request": [
+        {
+          "item_id": "Q3_info_1",
+          "trigger": "Candidate asks about future almond production growth rate or how much production is expected to grow by 2025",
+          "core_dimensional_concept": "Almond production growth rate 2019–2025",
+          "release_conditions": {
+            "structural_position": "Release when candidate has set up the market size formula (production volume × price) and explicitly asks for the production growth assumption to project 2025 output",
+            "alternative_phrasings": [
+              "How much will production grow by 2025?",
+              "What is the expected growth rate for almond production?",
+              "What CAGR / growth rate should I assume for production?",
+              "Is there a forecast for almond output volume?"
+            ]
+          },
+          "disqualifying": "Do not release if candidate asks about market size growth rate (not production volume); do not release if candidate attempts to extrapolate from historical growth rates in Appendix 2 without asking for a forward assumption",
+          "info": "We expect the almond production in the U.S. to grow by 40% during 2019–2025."
+        },
+        {
+          "item_id": "Q3_info_2",
+          "trigger": "Candidate asks about the projected almond price in 2025 or what price assumption to use for the forecast",
+          "core_dimensional_concept": "Projected almond price in 2025 (conservative scenario)",
+          "release_conditions": {
+            "structural_position": "Release when candidate has established the 2025 production forecast and now needs a price input to complete the market size calculation",
+            "alternative_phrasings": [
+              "What price should I use for 2025?",
+              "What is the expected almond price per pound in 2025?",
+              "Is there a price forecast I should use?",
+              "What will the price per lb be in 2025?"
+            ]
+          },
+          "disqualifying": "Do not release if candidate simply reads the 2019 price ($2.43/lb) from Appendix 2 and proceeds without asking for a forward-looking price assumption; do not release if candidate is asking about price trends generally without needing a specific 2025 input",
+          "info": "The conservative scenario suggests that the almond price will drop to $2.00 in 2025."
+        }
+      ],
+      "state_machine": {
+        "initial_prompt": "What is the almond market size going to be in the U.S. in 2025? [Hand Appendix 2 to candidate]",
+        "max_attempts": 2,
+        "scoring_on_transition": {
+          "attempt_1_correct": "Full credit for quantitative_part; proceed to qualitative contextualization",
+          "attempt_2_correct": "Partial credit for quantitative_part; proceed to qualitative contextualization",
+          "both_attempts_wrong": "Judge LLM states '$7.2B' as correct answer per §4.3.C; proceed to qualitative contextualization"
+        },
+        "transition_condition": "Candidate states correct final answer ($7.2B or $7,200M) OR both attempts exhausted → proceed to qualitative contextualization",
+        "zero_tolerance": true
+      }
+    },
+    "Q4": {
+      "q_id": "Q4",
+      "type": "qualitative",
+      "question_text": "What can be causing prices of almond to decrease?",
+      "appendix_provided": null,
+      "information_upon_request": [],
+      "state_machine": {
+        "initial_prompt": "What can be causing prices of almond to decrease?",
+        "transition_condition": "Candidate provides a structured brainstorm of price decline drivers (minimum 4 ideas expected) → proceed to Q5",
+        "zero_tolerance": false
+      }
+    },
+    "Q5": {
+      "q_id": "Q5",
+      "type": "qualitative",
+      "question_text": "What could possibly happen (what sort of shocks) that might cause prices of almond to increase in future?",
+      "appendix_provided": null,
+      "information_upon_request": [],
+      "state_machine": {
+        "initial_prompt": "What could possibly happen (what sort of shocks) that might cause prices of almond to increase in future?",
+        "transition_condition": "Candidate provides a structured brainstorm of price increase shocks (minimum 4 ideas expected) → proceed to Q6",
+        "zero_tolerance": false
+      }
+    },
+    "Q6": {
+      "q_id": "Q6",
+      "type": "qualitative",
+      "question_text": "What are some risks of acquiring this almond farm?",
+      "appendix_provided": null,
+      "information_upon_request": [],
+      "state_machine": {
+        "initial_prompt": "What are some risks of acquiring this almond farm?",
+        "transition_condition": "Candidate provides a structured brainstorm of acquisition risks (minimum 4 ideas expected) → end of case",
+        "zero_tolerance": false
+      }
+    }
+  },
+  "structure_4_ground_truth": {
+    "Q1_ground_truth": {
+      "question": "How would you approach this problem?",
+      "type": "framework",
+      "total_keypoints": 11,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": [
+        {
+          "pillar_name": "Almond market",
+          "subtotal": 3,
+          "keypoints": [
+            "Size and dynamics of almond market",
+            "Key almond producers",
+            "Typical profitability"
+          ]
+        },
+        {
+          "pillar_name": "Target",
+          "subtotal": 2,
+          "keypoints": [
+            "Product mix (e.g. types of almond; vertically integrated?)",
+            "Customer segments (e.g. premium/mass; B2C/B2B)"
+          ]
+        },
+        {
+          "pillar_name": "Target valuation",
+          "subtotal": 4,
+          "keypoints": [
+            "Profitability: Revenue",
+            "Profitability: Cost",
+            "Investment criteria (NPV, ROI, IRR, etc.)",
+            "Target's price"
+          ]
+        },
+        {
+          "pillar_name": "Acquisition risks",
+          "subtotal": 2,
+          "keypoints": [
+            "Market specific risks",
+            "Target specific risks"
+          ]
+        }
+      ]
+    },
+    "Q2_ground_truth": {
+      "question": "Your team dug deeper into the competitive landscape of almond market. Your analyst emailed you this chart. What does it tell you?",
+      "type": "qualitative",
+      "total_keypoints": 5,
+      "scoring_method": "Within each tier, use 3-level scoring per; tier_1_basic (50%) + tier_2_advanced (50%)",
+      "chart_description": "Pie chart — Almond acreage by top almond farms in the U.S. (100% = 1.53M acres, 2020). Named farms: Paramount Farming 5.0%, South Valley Farms 1.7%, Agriland Farming 1.6%, Farmland Management Services 1.6%, Braden Farms 1.5%; Other almond farms 88.6%. Footnote: 85% of almond farms in the U.S. are 250 acres or less.",
+      "tier_1_basic": {
+        "description": "Basic comments (expected from everyone)",
+        "subtotal": 1,
+        "keypoints": [
+          "Top-5 almond farms capture about 11–12% of the market"
+        ]
+      },
+      "tier_2_advanced": {
+        "description": "Advanced comments (for outstanding candidates)",
+        "subtotal": 4,
+        "keypoints": [
+          "The almond farm space is extremely fragmented which adds to the attractiveness of this market given that the target doesn't need to compete against big-name players",
+          "It seems like no player has high market power, high marketing budgets, or strong distribution network",
+          "Given that almond is a highly commoditized product, the price pressure should be incredibly high leaving paper-thin margins; under these conditions economies of scale is likely one of the key success factors, so it's fair to expect the consolidation in this fragmented space",
+          "The competitive landscape represents favorable environment for the target to become a consolidation platform for the PE firm (as one of the strategies to consider)"
+        ]
+      }
+    },
+    "Q3_ground_truth": {
+      "question": "What is the almond market size going to be in the U.S. in 2025?",
+      "type": "quantitative",
+      "quantitative_part": {
+        "correct_final_answer": "$7.14B (precise: 2,550 × 1.40 = 3,570 M lbs × $2.00/lb = $7,140M) or $7.2B (casebook rounded: 3,570 → 3,600 M lbs × $2.00/lb = $7,200M)",
+        "accepted_values": [
+          7.14,
+          7.2,
+          7140,
+          7200,
+          7140000000,
+          7200000000
+        ],
+        "tolerance_pct": 0.02,
+        "zero_tolerance": false,
+        "scoring_method": "Binary: correct final answer (any value in accepted_values within 2% tolerance) = full credit; each intermediate calculation step scored with 3-level as supporting evidence",
+        "total_steps": 4,
+        "calculation_steps": [
+          {
+            "step": 1,
+            "description": "Read 2019 annual production from Appendix 2",
+            "value": "2,550 M lbs"
+          },
+          {
+            "step": 2,
+            "description": "Apply 40% production growth assumption (released upon request): 2,550 × 1.40",
+            "value": "≈ 3,600 M lbs (casebook rounds 3,570 to 3,600)"
+          },
+          {
+            "step": 3,
+            "description": "Apply conservative price assumption for 2025 (released upon request)",
+            "value": "$2.00 per lb"
+          },
+          {
+            "step": 4,
+            "description": "Calculate projected market size: 3,600 M lbs × $2.00/lb = $7,200M",
+            "value": "$7.2 Bn — FINAL ANSWER"
+          }
+        ]
+      },
+      "qualitative_part": {
+        "total_keypoints": 5,
+        "scoring_method": "Within each tier, use 3-level scoring per; tier_1_basic (50%) + tier_2_advanced (50%)",
+        "prompt": "How would you contextualize this result?",
+        "tier_1_basic": {
+          "description": "Basic comments (expected from everyone)",
+          "subtotal": 1,
+          "keypoints": [
+            "The U.S. almond market size is expected to grow to $7.2B in 2025"
+          ]
+        },
+        "tier_2_advanced": {
+          "description": "Advanced comments (for outstanding candidates)",
+          "subtotal": 4,
+          "keypoints": [
+            "The market growth from $6.2B to $7.2B seems low, as it is $1B or 15–20% growth over 6 years, so it's just 2–3% annually (which is similar to the GDP growth rate)",
+            "The sharp price decline will erode margins and might decrease the target valuation",
+            "Rapid growth in the production suggests that the target might need to expand their capacity by increasing almond acreage or harvest yield per acre – both might require extra investment and affect the expected cash flows",
+            "The prices dropped by almost half during 2014–19, so if this trend persists, our assumption of $2 might be too optimistic and the target's economics will be worse than we expect based on the calculations"
+          ]
+        }
+      }
+    },
+    "Q4_ground_truth": {
+      "question": "What can be causing prices of almond to decrease?",
+      "type": "qualitative",
+      "total_keypoints": 12,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "scoring_note": "Best practice is 8+ ideas with a structured approach and on-the-fly delivery without taking notes; minimum expected is 4 ideas; reward structured delivery",
+      "pillars": [
+        {
+          "pillar_name": "Rapid growth of supply/production",
+          "subtotal": 7,
+          "keypoints": [
+            "New comers – new almond farms are established",
+            "Existing farms expand their almond acreages",
+            "Favorable weather",
+            "Higher fertilizer utilization",
+            "Better irrigation",
+            "Progress in pest/weed control",
+            "New higher-yield varieties of almond seeds"
+          ],
+          "sub_pillars": [
+            {
+              "sub_pillar_name": "Increase in almond acreage",
+              "subtotal": 2,
+              "keypoints": [
+                "New comers – new almond farms are established",
+                "Existing farms expand their almond acreages"
+              ]
+            },
+            {
+              "sub_pillar_name": "Increase in yields per acre",
+              "subtotal": 5,
+              "keypoints": [
+                "Favorable weather",
+                "Higher fertilizer utilization",
+                "Better irrigation",
+                "Progress in pest/weed control",
+                "New higher-yield varieties of almond seeds"
+              ]
+            }
+          ]
+        },
+        {
+          "pillar_name": "Decline in demand for almonds",
+          "subtotal": 5,
+          "keypoints": [
+            "Increase in other milk alternatives (e.g. coconut, oat, soy) to substitute almond milk",
+            "Decrease in prices for nuts-substitutes (e.g. walnut, hazelnuts)",
+            "Decrease in prices for regular milk, butter, flour, etc. (vs almond butter, flours, etc.)",
+            "Slowing down of interest to almond products (e.g. due to lack of innovation, marketing)",
+            "Trade restrictions with China and Europe"
+          ],
+          "sub_pillars": [
+            {
+              "sub_pillar_name": "Shift to almond substitutes",
+              "subtotal": 3,
+              "keypoints": [
+                "Increase in other milk alternatives (e.g. coconut, oat, soy) to substitute almond milk",
+                "Decrease in prices for nuts-substitutes (e.g. walnut, hazelnuts)",
+                "Decrease in prices for regular milk, butter, flour, etc. (vs almond butter, flours, etc.)"
+              ]
+            },
+            {
+              "sub_pillar_name": "Other factors",
+              "subtotal": 2,
+              "keypoints": [
+                "Slowing down of interest to almond products (e.g. due to lack of innovation, marketing)",
+                "Trade restrictions with China and Europe"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "Q5_ground_truth": {
+      "question": "What could possibly happen (what sort of shocks) that might cause prices of almond to increase in future?",
+      "type": "qualitative",
+      "total_keypoints": 9,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "scoring_note": "Best practice is 8+ ideas with a structured approach and on-the-fly delivery without taking notes; minimum expected is 4 ideas; reward structured delivery",
+      "pillars": [
+        {
+          "pillar_name": "Supply/production shocks",
+          "subtotal": 4,
+          "keypoints": [
+            "Large almond farms go bankrupt and stop production",
+            "Extreme weather",
+            "Strict legal limits on fertilizer utilization",
+            "Outbreak of plant diseases"
+          ],
+          "sub_pillars": [
+            {
+              "sub_pillar_name": "Drop in almond acreage",
+              "subtotal": 1,
+              "keypoints": [
+                "Large almond farms go bankrupt and stop production"
+              ]
+            },
+            {
+              "sub_pillar_name": "Drop in yields per acre",
+              "subtotal": 3,
+              "keypoints": [
+                "Extreme weather",
+                "Strict legal limits on fertilizer utilization",
+                "Outbreak of plant diseases"
+              ]
+            }
+          ]
+        },
+        {
+          "pillar_name": "Demand shocks",
+          "subtotal": 5,
+          "keypoints": [
+            "CDC ban/restriction on other milk alternatives (e.g. coconut, oat, soy)",
+            "Drop in production of nuts-substitutes (e.g. walnut, hazelnuts)",
+            "Outbreak of cow diseases",
+            "New type of almond that is far higher on protein and far healthier",
+            "Lifting the trade restrictions with China and Europe"
+          ],
+          "sub_pillars": [
+            {
+              "sub_pillar_name": "Drop in interest to almond substitutes",
+              "subtotal": 3,
+              "keypoints": [
+                "CDC ban/restriction on other milk alternatives (e.g. coconut, oat, soy)",
+                "Drop in production of nuts-substitutes (e.g. walnut, hazelnuts)",
+                "Outbreak of cow diseases"
+              ]
+            },
+            {
+              "sub_pillar_name": "Other factors",
+              "subtotal": 2,
+              "keypoints": [
+                "New type of almond that is far higher on protein and far healthier",
+                "Lifting the trade restrictions with China and Europe"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "Q6_ground_truth": {
+      "question": "What are some risks of acquiring this almond farm?",
+      "type": "qualitative",
+      "total_keypoints": 14,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "scoring_note": "Best practice is 8+ ideas with a structured approach; minimum expected is 4 ideas; reward structured delivery",
+      "pillars": [
+        {
+          "pillar_name": "Market specific risks",
+          "subtotal": 5,
+          "keypoints": [
+            "Change in market dynamics (e.g. radical drop in almond prices)",
+            "Market consolidation",
+            "Competitive response",
+            "Risk of newcomers",
+            "Risk of rapidly growing almond substitutes"
+          ]
+        },
+        {
+          "pillar_name": "Financial risks",
+          "subtotal": 5,
+          "keypoints": [
+            "Exaggerated assumptions for sales",
+            "Further growth is limited by the field capacity",
+            "Variability in harvest yield",
+            "Increase in fuel prices",
+            "Lack of funding to execute the deal"
+          ],
+          "revenue_related": {
+            "subtotal": 3,
+            "keypoints": [
+              "Exaggerated assumptions for sales",
+              "Further growth is limited by the field capacity",
+              "Variability in harvest yield"
+            ]
+          },
+          "cost_related": {
+            "subtotal": 1,
+            "keypoints": [
+              "Increase in fuel prices"
+            ]
+          },
+          "capex_related": {
+            "subtotal": 1,
+            "keypoints": [
+              "Lack of funding to execute the deal"
+            ]
+          }
+        },
+        {
+          "pillar_name": "Operational risks",
+          "subtotal": 4,
+          "keypoints": [
+            "Limited labor pool in case of rapid growth",
+            "Outdated equipment",
+            "Outbreak of plant diseases",
+            "Lack of expertise (of the PE firm)"
+          ]
+        }
+      ]
+    }
+  }
+}

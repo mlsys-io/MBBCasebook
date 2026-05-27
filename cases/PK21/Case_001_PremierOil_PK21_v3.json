@@ -1,0 +1,573 @@
+{
+  "case_id": "001",
+  "version": "v3",
+  "source": {
+    "title": "Premier Oil",
+    "inspired_by": "McKinsey & Company",
+    "year": 2021,
+    "author": "Peter K.",
+    "reference": "Peter-K.org, Case #1",
+    "casebook_abbr": "PK21"
+  },
+  "case_type": "interviewer_driven",
+  "case_arch": {
+    "primary": "Profitability",
+    "tags": [
+      "Profitability",
+      "Cost Optimization"
+    ]
+  },
+  "difficulty": "Easy",
+  "industry": "Energy / Oil & Gas",
+  "topic": "Profitability improvement — offshore upstream oil and gas producer",
+  "expected_duration_minutes": 20,
+  "opening_prompt": "Hi, I'd like to solve some consulting cases with you. Pls be a good interviewee to have a potential test in consulting cases. For the case problem-solving, pls do not assume any numbers or assumptions before my confirmation. I will give you the context upon request. I need you to answer the following questions for the client. Before you start, feel free to ask me 2-3 clarifying questions about the client.\n\nQ1. What factors would you consider to work on this problem?\nQ2. Given there is not much Premier Oil can do to increase sales, the manager wants us to focus on costs. To begin with, what are Premier Oil's major expenses?\nQ3. Let's talk about the maintenance costs now. We've learned that they have been increasing for Premier Oil's offshore platforms. What might be the reasons behind it?\nQ4. Retrofitting the existing equipment might reduce some costs. Can you calculate what cost savings the client will be able to capture?\n\nHere is the basic context for the client:\nThe pandemic-induced collapse in oil prices sharply reduced profitability of Premier Oil, a major UK-based offshore upstream oil and gas producer. Premier Oil operates rigs in seven areas in the North Sea. The CEO has brought your team in to design a profitability improvement plan.",
+  "structure_1_client_basic_context": {
+    "company": "Premier Oil",
+    "type": "major UK-based offshore upstream oil and gas producer",
+    "situation": "The pandemic-induced collapse in oil prices sharply reduced profitability of Premier Oil. Premier Oil operates rigs in seven areas in the North Sea.",
+    "action": "The CEO has brought your team in",
+    "ask": "to design a profitability improvement plan"
+  },
+  "structure_2_information_upon_request": {
+    "item_1": {
+      "item_id": "item_1",
+      "trigger": "Analyst asks about geographic focus or the scope of Premier Oil's asset portfolio",
+      "core_dimensional_concept": "geographic scope of Premier Oil's asset base",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar named 'Geography', 'Asset Portfolio', or 'Geographic Footprint'",
+          "explicit clarifying question about which regions or fields Premier Oil operates in",
+          "sub-bullet under company/operations analysis asking about geographic diversification or asset location"
+        ],
+        "alternative_phrasings": [
+          "where does Premier Oil operate",
+          "asset footprint",
+          "geographic diversification",
+          "which regions or fields",
+          "North Sea operations"
+        ]
+      },
+      "disqualifying": [
+        "Merely mentioning 'global market trends' without asking specifically about the client's geographic asset focus (F passing mention)",
+        "Vague reference to 'operations' as a pillar without touching the geographic dimension of the asset base (G pattern)"
+      ],
+      "info": "The client has assets only in the North Sea and doesn't plan to adjust its asset portfolio."
+    },
+    "item_2": {
+      "item_id": "item_2",
+      "trigger": "Analyst asks about specific financial performance figures, profit margin, or current profitability level",
+      "core_dimensional_concept": "Premier Oil's 2020 profitability level relative to industry",
+      "release_conditions": {
+        "structural_position": [
+          "explicit clarifying question about current profit margin or loss level",
+          "framework pillar named 'Current Financial State', 'Baseline Profitability', or 'Financial Metrics'",
+          "sub-bullet under financial analysis asking for current or baseline profitability numbers"
+        ],
+        "alternative_phrasings": [
+          "current profit margin",
+          "how much are the losses",
+          "financial performance in 2020",
+          "loss level",
+          "current EBIT or EBITDA margin",
+          "how bad is the profitability"
+        ]
+      },
+      "disqualifying": [
+        "Mentioning 'pandemic impact on revenue' without asking for specific profitability figures (F passing mention)",
+        "Listing 'financial analysis' as a pillar without asking for specific baseline metrics (G pattern)"
+      ],
+      "info": "The profitability for 2020 was -12% (losses), which was common in the industry that year."
+    },
+    "item_3": {
+      "item_id": "item_3",
+      "trigger": "Analyst asks about specific financial goals or targets for profitability improvement",
+      "core_dimensional_concept": "existence and level of specific profitability improvement target",
+      "release_conditions": {
+        "structural_position": [
+          "explicit clarifying question about the target profitability level or margin goal",
+          "framework pillar named 'Objectives', 'Success Metrics', 'KPIs', or 'Financial Targets'",
+          "sub-bullet asking what profitability level or margin the client is targeting"
+        ],
+        "alternative_phrasings": [
+          "profitability target",
+          "improvement goal",
+          "what KPI are we aiming for",
+          "target margin",
+          "what does success look like",
+          "what profitability should we reach"
+        ]
+      },
+      "disqualifying": [
+        "Asks about 'industry average margins' for benchmarking without asking for an internal improvement goal (adjacent dimension, G pattern)",
+        "Listing 'goals' as a framework pillar header without explicitly asking for a specific financial target"
+      ],
+      "info": "There is no specific goal to improve profitability."
+    },
+    "item_4": {
+      "item_id": "item_4",
+      "trigger": "Analyst asks about ownership structure, investors, or key stakeholders",
+      "core_dimensional_concept": "Premier Oil's ownership structure and investor base",
+      "release_conditions": {
+        "structural_position": [
+          "explicit clarifying question about who owns Premier Oil or who the key shareholders are",
+          "framework pillar named 'Ownership', 'Investors', or 'Stakeholders'",
+          "sub-bullet asking about investor expectations, shareholder profile, or whether Premier Oil is privately or publicly held"
+        ],
+        "alternative_phrasings": [
+          "who owns the client",
+          "shareholder base",
+          "investor profile",
+          "private or public",
+          "ownership structure",
+          "strategic vs financial investors"
+        ]
+      },
+      "disqualifying": [
+        "Mentioning 'customer relationships' or 'client segments' without touching on ownership (different dimension, G pattern)",
+        "Vague reference to 'stakeholder management' as strategy without asking who owns Premier Oil"
+      ],
+      "info": "The client is an independent oil and gas company owned by a wide variety of strategic investors."
+    }
+  },
+  "structure_3_case_questions": {
+    "Q1": {
+      "q_id": "Q1",
+      "type": "framework",
+      "question_text": "What factors would you consider to work on this problem?",
+      "information_to_share_upfront": null,
+      "information_upon_request": "See structure_2 items 1–4. Release only items by semantic touch (release when the analyst structurally engages the dimension; not on a passing reference), not by mere keyword presence.",
+      "state_machine": {
+        "next_question": "Q2",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable framework answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q2": {
+      "q_id": "Q2",
+      "type": "qualitative",
+      "question_text": "Given there is not much Premier Oil can do to increase sales, the manager wants us to focus on costs. To begin with, what are Premier Oil's major expenses?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q3",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q3": {
+      "q_id": "Q3",
+      "type": "qualitative",
+      "question_text": "Let's talk about the maintenance costs now. We've learned that they have been increasing for Premier Oil's offshore platforms. What might be the reasons behind it?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q4",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q4": {
+      "q_id": "Q4",
+      "type": "quantitative",
+      "question_text": "Retrofitting the existing equipment might reduce some costs. Can you calculate what cost savings the client will be able to capture?",
+      "information_to_share_upfront": [
+        "After retrofitting of the existing equipment:",
+        "— The operational expenses are expected to be $1 per extracted barrel",
+        "— The drilling costs are going to decrease by 30%"
+      ],
+      "information_upon_request": [
+        {
+          "item_id": "Q4_item_1",
+          "trigger": "Analyst asks for current (pre-retrofit) operational expenses",
+          "core_dimensional_concept": "Premier Oil's current annual operational expenses",
+          "release_conditions": {
+            "structural_position": [
+              "explicit calculation setup asking for the current opex baseline",
+              "direct question: 'What are the current operational expenses?'",
+              "quantitative formula requiring current opex as an input variable"
+            ],
+            "alternative_phrasings": [
+              "current opex",
+              "existing operational cost base",
+              "operating costs today",
+              "pre-retrofit expenses",
+              "operational cost level"
+            ]
+          },
+          "disqualifying": [
+            "Asking about 'future opex after retrofitting' rather than the current baseline",
+            "Mentioning 'operational expenses' in passing as a cost category without requesting a specific number (F pattern)"
+          ],
+          "info": "The current operational expenses are £50M per year."
+        },
+        {
+          "item_id": "Q4_item_2",
+          "trigger": "Analyst asks for current drilling costs",
+          "core_dimensional_concept": "Premier Oil's current annual drilling costs",
+          "release_conditions": {
+            "structural_position": [
+              "explicit calculation setup asking for the drilling cost figure",
+              "direct question: 'What are the current drilling costs?'",
+              "quantitative formula requiring drilling cost as a separate input"
+            ],
+            "alternative_phrasings": [
+              "drilling costs",
+              "exploration costs",
+              "E&P expenditure",
+              "current drilling expenditure",
+              "drilling cost level"
+            ]
+          },
+          "disqualifying": [
+            "Asking 'what are all the costs?' as a general brainstorm rather than specifically requesting a drilling cost figure",
+            "Listing 'drilling' in a cost brainstorm (Q2 context) without requesting specific numbers in Q4"
+          ],
+          "info": "The current drilling costs are £40M per year."
+        },
+        {
+          "item_id": "Q4_item_3",
+          "trigger": "Analyst asks whether drilling costs are included in operational expenses, or seeks cost category clarification",
+          "core_dimensional_concept": "cost categorization — drilling costs excluded from operational expenses",
+          "release_conditions": {
+            "structural_position": [
+              "explicit clarifying question about whether opex and drilling costs overlap",
+              "direct question: 'Are drilling costs part of operational expenses?'",
+              "calculation setup that requires knowing whether the two cost items are additive"
+            ],
+            "alternative_phrasings": [
+              "are drilling costs separate from opex",
+              "does opex include drilling",
+              "cost categorization",
+              "whether costs overlap",
+              "how are costs defined"
+            ]
+          },
+          "disqualifying": [
+            "Asking about cost reduction targets without touching on cost categorization or definitional boundaries",
+            "Listing cost items in brainstorm without asking about categorical overlap between opex and drilling"
+          ],
+          "info": "The operational expenses don't include drilling costs."
+        },
+        {
+          "item_id": "Q4_item_4",
+          "trigger": "Analyst asks for current production volume or daily extraction rate",
+          "core_dimensional_concept": "Premier Oil's current daily oil production volume",
+          "release_conditions": {
+            "structural_position": [
+              "explicit calculation setup requesting production volume to compute per-unit cost savings",
+              "direct question about barrels per day or annual production",
+              "quantitative formula requiring output volume as an input"
+            ],
+            "alternative_phrasings": [
+              "barrels per day",
+              "production volume",
+              "extraction rate",
+              "daily output",
+              "how many barrels does Premier Oil produce"
+            ]
+          },
+          "disqualifying": [
+            "Mentioning 'production capacity' in a risk context without requesting a specific volume number (G pattern)",
+            "Passing reference to 'high production' without asking for a specific figure (F pattern)"
+          ],
+          "info": "Current oil production is 200k barrels per day."
+        },
+        {
+          "item_id": "Q4_item_5",
+          "trigger": "Analyst asks about operating days per year or requests a time base for the calculation",
+          "core_dimensional_concept": "annual operating days assumption for the calculation",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question about days per year for annualizing production",
+              "direct question: 'How many days per year does Premier Oil operate?'",
+              "calculation setup requesting the time period to convert daily production to an annual figure"
+            ],
+            "alternative_phrasings": [
+              "days per year",
+              "annual operating days",
+              "working days",
+              "operating schedule",
+              "how many days a year"
+            ]
+          },
+          "disqualifying": [
+            "Asking about 'time horizon for the project' rather than annual operating days for the calculation",
+            "Mentioning 'annual production' without asking how many operating days per year are assumed"
+          ],
+          "info": "We can assume 360 days a year."
+        },
+        {
+          "item_id": "Q4_item_6",
+          "trigger": "Analyst asks about the foreign exchange rate or how to convert between dollars and pounds",
+          "core_dimensional_concept": "USD to GBP exchange rate for the cost savings calculation",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question about the exchange rate between $ and £",
+              "direct question: 'What is the forex rate?' or 'How do I convert dollars to pounds?'",
+              "calculation setup that identifies the currency mismatch ($1/barrel vs. £ cost base) and requests a conversion factor"
+            ],
+            "alternative_phrasings": [
+              "exchange rate",
+              "forex",
+              "USD to GBP",
+              "dollar to pound conversion",
+              "currency assumption",
+              "FX rate"
+            ]
+          },
+          "disqualifying": [
+            "Noting 'UK-based company' without asking about the specific exchange rate",
+            "Mentioning 'GBP costs' without explicitly requesting the conversion rate (F pattern)"
+          ],
+          "info": "The foreign exchange is $2 for £1."
+        }
+      ],
+      "state_machine": {
+        "next_question": null,
+        "skip_logic": false,
+        "transition_condition": "Case ends after Q4"
+      }
+    }
+  },
+  "structure_4_ground_truth": {
+    "Q1_ground_truth": {
+      "type": "framework",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_upstream_oil_and_gas_companies": {
+          "keypoints": [
+            "Typical margins",
+            "Cost structure of several major players [for benchmarking]",
+            "Major trends (apart from pandemic)"
+          ],
+          "subtotal": 3
+        },
+        "pillar_2_premier_oil": {
+          "keypoints": [
+            "Major accounts (clients)",
+            "Product portfolio (crude oil, gas?)",
+            "Operations and value chain (e.g. extraction, pipe transportation)"
+          ],
+          "subtotal": 3
+        },
+        "pillar_3_financial_analysis": {
+          "keypoints": [
+            "Revenue analysis",
+            "Cost structure - Fixed costs",
+            "Cost structure - Variable costs"
+          ],
+          "subtotal": 3
+        },
+        "pillar_4_profitability_improvement_areas": {
+          "keypoints": [
+            "Boost revenue - Secure new contracts",
+            "Reduce costs - Optimize fixed costs",
+            "Reduce costs - Streamline variable costs"
+          ],
+          "subtotal": 3
+        }
+      },
+      "total_keypoints": 12,
+      "minimum_expected": "Cover at least 2 pillars with keypoints; minimum 4 keypoints; structured MECE approach",
+      "outstanding_threshold": "All 4 pillars covered with majority of keypoints in a clearly structured issue tree"
+    },
+    "Q2_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_fixed_costs": {
+          "keypoints": [
+            "Maintenance [this is a capex-heavy business with lots of equipment]",
+            "R&D [oil companies do a lot of oil exploration]",
+            "Overhead [central services and management]",
+            "Energy [to run platform]",
+            "Marketing [as this is a B2B business] (likely minor cost)",
+            "Rent [rigs are likely owned by client] (likely minor cost)"
+          ],
+          "subtotal": 6
+        },
+        "pillar_2_variable_costs": {
+          "keypoints": [
+            "Labor",
+            "Supplies to accommodate employees who live on the platform",
+            "Supplies for oil extraction [if any]",
+            "Transportation [e.g. pipeline transportation; if paid by volume]"
+          ],
+          "subtotal": 4
+        }
+      },
+      "total_keypoints": 10,
+      "minimum_expected": "At least 4 cost items",
+      "outstanding_threshold": "7-8 items structured into fixed vs. variable costs, delivered fluently on the fly without taking notes"
+    },
+    "Q3_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_routine_scheduled_maintenance": {
+          "keypoints": [
+            "Aging equipment (older machinery requires more frequent maintenance)",
+            "More strict environmental restrictions requiring frequent check-ups (especially after the environmental disaster in Gulf of Mexico where offshore oil rig exploded 10 years ago)",
+            "Increasing prices of spare parts",
+            "Growing technicians' salaries",
+            "New equipment that requires more expensive maintenance",
+            "More expansive transportation of spare parts/technicians (e.g. helicopter)"
+          ],
+          "higher_frequency": [
+            "Aging equipment (older machinery requires more frequent maintenance)",
+            "More strict environmental restrictions requiring frequent check-ups (especially after the environmental disaster in Gulf of Mexico where offshore oil rig exploded 10 years ago)"
+          ],
+          "higher_costs_per_maintenance": [
+            "Increasing prices of spare parts",
+            "Growing technicians' salaries",
+            "New equipment that requires more expensive maintenance",
+            "More expansive transportation of spare parts/technicians (e.g. helicopter)"
+          ],
+          "subtotal": 6
+        },
+        "pillar_2_reactive_emergency_maintenance": {
+          "keypoints": [
+            "Poor alert system that led to accidents",
+            "Lack of training on how to maintain equipment",
+            "Low compliance",
+            "Aging equipment",
+            "Decreasing quality of extracted oil which erodes the equipment",
+            "Too long for technicians to arrive from land — critical machine might fail",
+            "Higher share of expensive equipment that broke down",
+            "Higher share of major accidents [that cause larger damage]"
+          ],
+          "higher_frequency": [
+            "Poor alert system that led to accidents",
+            "Lack of training on how to maintain equipment",
+            "Low compliance",
+            "Aging equipment",
+            "Decreasing quality of extracted oil which erodes the equipment",
+            "Too long for technicians to arrive from land — critical machine might fail"
+          ],
+          "higher_costs_per_repair": [
+            "Higher share of expensive equipment that broke down",
+            "Higher share of major accidents [that cause larger damage]"
+          ],
+          "subtotal": 8
+        }
+      },
+      "total_keypoints": 14,
+      "minimum_expected": "At least 4 drivers across any 2+ sub-categories",
+      "outstanding_threshold": "7-8 ideas structured into Routine vs. Reactive maintenance with sub-categories (higher frequency + higher cost), delivered fluently on the fly"
+    },
+    "Q4_ground_truth": {
+      "type": "quantitative",
+      "quantitative_part": {
+        "correct_final_answer": "£26M in total cost savings",
+        "accepted_values": [
+          26000000
+        ],
+        "tolerance_pct": 0.0,
+        "zero_tolerance": true,
+        "scoring_method": "Binary: correct number = full credit; incorrect = zero credit",
+        "calculation_steps": {
+          "step_1_new_operational_expenses": {
+            "formula": "$1 per barrel ÷ 2 (forex: $2 = £1) × 200k barrels/day × 360 days",
+            "result": "£36M per year"
+          },
+          "step_2_new_drilling_costs": {
+            "formula": "£40M × (1 − 30%)",
+            "result": "£28M per year"
+          },
+          "step_3_total_costs_after_retrofitting": {
+            "formula": "£36M + £28M",
+            "result": "£64M"
+          },
+          "step_4_total_cost_savings": {
+            "formula": "£90M (current: £50M opex + £40M drilling) − £64M (after retrofitting)",
+            "result": "£26M"
+          }
+        }
+      },
+      "qualitative_part": {
+        "scoring_note": "Qualitative portion of Q4 is scored as 100% total, split into two tiers. Within each tier, use 3-level scoring per",
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "tier_1_basic": {
+          "weight_of_Q4_qualitative_total": "50%",
+          "keypoints": [
+            "By retrofitting the existing equipment, the client will be able to capture £26M in cost savings"
+          ],
+          "note": "Expected from every candidate. Single point worth 50% of qualitative score."
+        },
+        "tier_2_advanced": {
+          "weight_of_Q4_qualitative_total": "50%",
+          "points_available": 3,
+          "weight_per_point": "~16.7% of qualitative total",
+          "keypoints": [
+            "30% reduction in costs sound like a no-brainer, but the client should consider potential risks like lengthy implementation, potential pause in production and thus drop in revenue, exaggerated assumptions, etc.",
+            "We didn't consider the investment needed to retrofit the equipment and potentially the expected ROI might not be too high to pursue this project",
+            "If retrofitting prolongs the useful life of equipment, that will further improve the economics of the rigs as the capital expenditures to replace the machinery will need to happen later"
+          ],
+          "note": "Not expected from every candidate. Each advanced point adds ~16.7% to qualitative score."
+        },
+        "minimum_expected": "Correct numerical answer + Tier 1 basic contextualization (covered)",
+        "outstanding_threshold": "Correct numerical answer + Tier 1 covered + at least 2 Tier 2 advanced comments covered"
+      }
+    }
+  },
+  "state_machine_global": {
+    "case_type": "interviewer_driven",
+    "skip_logic": false,
+    "mandatory_sequence": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4"
+    ],
+    "rules": [
+      "Q1 cannot be skipped under any circumstances",
+      "Questions must proceed in linear order Q1 → Q2 → Q3 → Q4",
+      "A question may not be advanced until the current question receives a scoreable answer (1st or 2nd attempt)",
+      "If analyst pre-covers a later question's keypoints in an earlier answer, record as pre-coverage but still ask the later question in sequence",
+      "No question may be skipped even if pre-covered"
+    ]
+  },
+  "scoring_summary": {
+    "Q1": {
+      "type": "framework",
+      "total_keypoints": 12,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q2": {
+      "type": "qualitative",
+      "total_keypoints": 10,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q3": {
+      "type": "qualitative",
+      "total_keypoints": 14,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q4": {
+      "type": "quantitative",
+      "part_1_quantitative": {
+        "correct_answer": "£26M",
+        "zero_tolerance": true,
+        "scoring": "Binary: Full credit if correct; zero credit if incorrect"
+      },
+      "part_2_qualitative": {
+        "total_keypoints": 4,
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "human_review_priority": "false-partial > false-not-covered > covered",
+        "tier_1_basic": {
+          "keypoints": 1,
+          "weight": "50% of qualitative score"
+        },
+        "tier_2_advanced": {
+          "keypoints": 3,
+          "weight_per_point": "~16.7% of qualitative score",
+          "weight_total": "50% of qualitative score"
+        }
+      }
+    }
+  }
+}

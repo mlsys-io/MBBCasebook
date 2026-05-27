@@ -1,0 +1,597 @@
+{
+  "case_id": "005",
+  "version": "v1",
+  "source": {
+    "title": "Alfa Dental",
+    "inspired_by": "Bain & Company",
+    "year": "2021",
+    "author": "Peter K.",
+    "reference": "Peter-K.org, Case #5",
+    "casebook_abbr": "PK21"
+  },
+  "case_type": "interviewer_driven",
+  "case_type_origin": "candidate_led",
+  "annotation_mode": "CL_to_IL_override",
+  "case_arch": {
+    "primary": "Profitability",
+    "tags": [
+      "Profitability",
+      "Revenue Growth",
+      "Pricing Strategy"
+    ]
+  },
+  "difficulty": "Easy-Medium",
+  "industry": "Healthcare / Dental Insurance",
+  "topic": "Profitability diagnosis — dental insurance company losing profitability after adding large dental chain to network",
+  "expected_duration_minutes": "15-20",
+  "opening_prompt": "Hi, I'd like to solve some consulting cases with you. Pls be a good interviewee to have a potential test in consulting cases. For the case problem-solving, pls do not assume any numbers or assumptions before my confirmation. I will give you the context upon request. I need you to answer the following questions for the client. Before you start, feel free to ask me 2-3 clarifying questions about the client.\n\nQ1. How would you help our client? What approach would you choose?\nQ2. We learned that the number of claims (patient visits) from Eastern Dental has been rapidly growing. What might be the drivers behind it?\nQ3. What's the growth rate of the number of visits at Eastern Dental in 2018-19?\nQ4. What are your thoughts around the potential client's actions to address such a skyrocketing number of claims?\nQ5. During a team meeting the Partner asked you to synthesize what your current recommendations are.\n\nHere is the basic context for the client:\nAlfa Dental is a major dental insurance company that partners with various dental practices. In 2018 they included a new large dental chain Eastern Dental to their network and their profitability started declining. The CEO asked your team to assess this problem and recommend plan to improve profitability. It's early 2020 (before the pandemic).",
+  "structure_1_client_basic_context": {
+    "company": "Alfa Dental",
+    "type": "Major dental insurance company that partners with various dental practices",
+    "situation": "In 2018 they included a new large dental chain Eastern Dental to their network and their profitability started declining",
+    "action": "The CEO asked your team to assess this problem and recommend plan to improve profitability",
+    "ask": "Assess the profitability problem and recommend a plan to improve profitability",
+    "timing": "It's early 2020 (before the pandemic)"
+  },
+  "structure_2_information_upon_request": {
+    "item_1": {
+      "item_id": "item_1",
+      "trigger": "Analyst asks about or includes Alfa Dental's own profitability or financial health excluding Eastern Dental in their framework or analysis",
+      "core_dimensional_concept": "Alfa Dental profitability excluding Eastern Dental",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet addressing Alfa Dental's standalone economics or financial baseline",
+          "explicit clarifying question about whether the profitability issue is specific to Eastern Dental or affects Alfa overall",
+          "hypothesis that Alfa Dental's other partnerships/network are profitable",
+          "sub-bullet under Profitability Analysis pillar distinguishing Eastern Dental vs rest of network"
+        ],
+        "alternative_phrasings": [
+          "Alfa Dental's baseline profitability",
+          "profitability without Eastern Dental",
+          "other dental partners' performance",
+          "is the problem isolated to Eastern Dental",
+          "Alfa's economics before 2018"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'profitability' only as a generic case goal or problem statement (F passing — profitability appears as overall case framing, not as a specific inquiry about Alfa's standalone economics)",
+        "Analyst lists 'profitability' as a pillar name without any indication of isolating Eastern Dental vs the rest of the network (G adjacent dimension — generic profitability pillar does not specifically touch the Alfa-without-ED dimension)"
+      ],
+      "info": "The Alfa Dental's economics is healthy (profitability is stable) if considered without Eastern Dental"
+    },
+    "item_2": {
+      "item_id": "item_2",
+      "trigger": "Analyst asks about or includes Eastern Dental's operational scale, number of offices, or geographic footprint in their framework or analysis",
+      "core_dimensional_concept": "Eastern Dental operational scale and geographic footprint",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet for Eastern Dental profile or operations",
+          "explicit clarifying question about Eastern Dental's size, locations, or market presence",
+          "sub-bullet under Eastern Dental analysis addressing number of offices or geography",
+          "hypothesis-driven assumption about Eastern Dental's scale or coverage"
+        ],
+        "alternative_phrasings": [
+          "how big is Eastern Dental",
+          "number of locations",
+          "Eastern Dental's footprint",
+          "offices in Arizona",
+          "Eastern Dental scale"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'Eastern Dental' only as the company name within the case prompt restatement, without probing its scale or geography (F passing — Eastern Dental name is mentioned as subject not as a dimension being explored)",
+        "Analyst asks about competitive landscape in general without specifically asking about Eastern Dental's size or geographic presence (G adjacent — competitive landscape pillar does not specifically touch Eastern Dental's operational scale)"
+      ],
+      "info": "Eastern Dental operates 100 dental offices primarily in Arizona"
+    },
+    "item_3": {
+      "item_id": "item_3",
+      "trigger": "Analyst asks about or includes the contract structure or payment model between Alfa Dental and Eastern Dental in their framework or analysis",
+      "core_dimensional_concept": "Alfa-Eastern Dental contract and payment model",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet addressing contract terms, payment structure, or economics of the deal",
+          "explicit clarifying question about how Alfa Dental pays Eastern Dental",
+          "sub-bullet under Economics of deal pillar or Cost structure pillar addressing fee structure",
+          "hypothesis-driven assumption about reimbursement model (fee-for-service vs value-based)"
+        ],
+        "alternative_phrasings": [
+          "fee-for-service",
+          "payment model",
+          "contract structure",
+          "how does Alfa pay Eastern Dental",
+          "reimbursement arrangement",
+          "value-based agreement"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'cost' or 'cost structure' as a generic pillar in their profitability framework without specifically asking about the payment mechanism to Eastern Dental (G adjacent — generic cost pillar does not specifically touch the fee-for-service contract dimension)",
+        "Analyst mentions insurance policies generally without probing the specific contractual arrangement with Eastern Dental (F passing — insurance policy topic is broader context not the Alfa-ED contract specifically)"
+      ],
+      "info": "Eastern Dental has a fee-for-service agreement, according to which Alfa Dental pays for each service rendered (unlike value-based agreements)"
+    },
+    "item_4": {
+      "item_id": "item_4",
+      "trigger": "Analyst asks about or includes the client's profitability target or financial goal in their framework or analysis",
+      "core_dimensional_concept": "client profitability target or financial goal",
+      "release_conditions": {
+        "structural_position": [
+          "explicit clarifying question about what profitability improvement target the client is seeking",
+          "framework pillar or sub-bullet addressing success criteria or financial targets",
+          "hypothesis-driven assumption about the magnitude of profitability improvement needed",
+          "sub-bullet under case objectives or client goals pillar"
+        ],
+        "alternative_phrasings": [
+          "profitability goal",
+          "target margin",
+          "what does success look like",
+          "how much improvement is expected",
+          "financial objective",
+          "KPI or target"
+        ]
+      },
+      "disqualifying": [
+        "Analyst restates that the goal is to 'improve profitability' as a case objective without specifically asking for a quantified target (F passing — restating case goal is not probing the specific profitability target dimension)",
+        "Analyst mentions 'profitability metrics' as a sub-bullet without specifically asking what the client's target number or threshold is (G adjacent — profitability metrics dimension does not specifically touch the absence of a stated goal)"
+      ],
+      "info": "The client didn't share any specific profitability goal"
+    }
+  },
+  "structure_3_case_questions": {
+    "Q1": {
+      "q_id": "Q1",
+      "type": "framework",
+      "question_text": "How would you help our client? What approach would you choose?",
+      "information_to_share_upfront": null,
+      "information_upon_request": "See structure_2 items 1-4. Release only per semantic touch judgment; not by mere keyword presence.",
+      "state_machine": {
+        "next_question": "Q2",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable framework answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q2": {
+      "q_id": "Q2",
+      "type": "qualitative",
+      "question_text": "We learned that the number of claims (patient visits) from Eastern Dental has been rapidly growing. What might be the drivers behind it?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q3",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q3": {
+      "q_id": "Q3",
+      "type": "quantitative",
+      "question_text": "What's the growth rate of the number of visits at Eastern Dental in 2018-19?",
+      "information_to_share_upfront": [
+        "Eastern Dental operates 100 offices with 300 dental providers (e.g. dentists, hygienists, oral surgeons, etc.) and 1,500 support staff (e.g. assistants, business managers)",
+        "In 2018 Eastern Dental served 400k patients"
+      ],
+      "information_upon_request": [
+        {
+          "item_id": "Q3_item_1",
+          "trigger": "Analyst asks about or includes the number of patients per dental provider in 2019",
+          "core_dimensional_concept": "patients per dental provider in 2019",
+          "release_conditions": {
+            "structural_position": [
+              "explicit clarifying question about patient volume per provider or per office in 2019",
+              "calculation step or assumption stating number of patients in 2019",
+              "sub-bullet asking for 2019 patient count data"
+            ],
+            "alternative_phrasings": [
+              "patients per dentist",
+              "patients per provider 2019",
+              "how many patients in 2019",
+              "2019 patient volume"
+            ]
+          },
+          "disqualifying": [
+            "Analyst asks for the number of offices or providers count without specifically asking about patients per provider (G adjacent — asking about offices/providers is a different dimension than patients per provider)"
+          ],
+          "info": "In 2019 Eastern Dental had 1.5k patients per dental provider"
+        },
+        {
+          "item_id": "Q3_item_2",
+          "trigger": "Analyst asks about or includes the visit frequency per patient in 2018",
+          "core_dimensional_concept": "average visits per patient in 2018",
+          "release_conditions": {
+            "structural_position": [
+              "explicit clarifying question about how many times a patient visited in 2018",
+              "calculation step using a visit frequency rate for 2018",
+              "sub-bullet asking for visits per patient or visit rate for 2018"
+            ],
+            "alternative_phrasings": [
+              "visit frequency 2018",
+              "visits per patient 2018",
+              "average visits baseline year",
+              "how often did patients visit in 2018"
+            ]
+          },
+          "disqualifying": [
+            "Analyst asks for total visit count in 2018 without specifically asking for the per-patient visit rate (G adjacent — total visits is a different data point from visits per patient)"
+          ],
+          "info": "In 2018 an average Eastern Dental's patient made 1.6 visits to dentist"
+        },
+        {
+          "item_id": "Q3_item_3",
+          "trigger": "Analyst asks about or includes the visit frequency per patient in 2019",
+          "core_dimensional_concept": "average visits per patient in 2019",
+          "release_conditions": {
+            "structural_position": [
+              "explicit clarifying question about visit frequency in 2019",
+              "calculation step using a visit frequency rate for 2019",
+              "sub-bullet asking for visits per patient or visit rate for 2019"
+            ],
+            "alternative_phrasings": [
+              "visit frequency 2019",
+              "visits per patient 2019",
+              "how often did patients visit in 2019",
+              "visit rate in the latest year"
+            ]
+          },
+          "disqualifying": [
+            "Analyst asks about total visits in 2019 without asking for the per-patient rate (G adjacent — total visits is different from visits per patient rate)"
+          ],
+          "info": "The average number of visits at Eastern Dental grew to 1.7 per patient per year in 2019"
+        },
+        {
+          "item_id": "Q3_item_4",
+          "trigger": "Analyst asks about whether Eastern Dental's number of offices or providers changed between 2018 and 2019",
+          "core_dimensional_concept": "stability of Eastern Dental office and provider count 2018-2019",
+          "release_conditions": {
+            "structural_position": [
+              "explicit clarifying question about whether the number of offices or providers changed year over year",
+              "assumption that office or provider count is constant",
+              "sub-bullet checking whether organic growth from expansion contributed to visit growth"
+            ],
+            "alternative_phrasings": [
+              "did they open new offices",
+              "did provider count change",
+              "same number of locations",
+              "office expansion",
+              "provider headcount change"
+            ]
+          },
+          "disqualifying": [
+            "Analyst asks about geographic footprint of Eastern Dental in general without specifically asking about changes from 2018 to 2019 (G adjacent — general geography question is different from the YoY change in provider count)"
+          ],
+          "info": "The number of offices and dental providers haven't materially changed since last year"
+        }
+      ],
+      "appendix": {
+        "appendix_1": {
+          "title": "Eastern Dental operational data",
+          "release_rule": "Share upfront with analyst at the start of Q3",
+          "table": {
+            "eastern_dental_2018": {
+              "patients_served": "400k",
+              "avg_visits_per_patient": "1.6"
+            },
+            "eastern_dental_2019": {
+              "dental_providers": "300",
+              "patients_per_provider": "1.5k (upon request)",
+              "avg_visits_per_patient": "1.7 (upon request)"
+            },
+            "note": "offices_and_providers_unchanged_yoy (upon request)"
+          }
+        }
+      },
+      "state_machine": {
+        "next_question": "Q4",
+        "skip_logic": false,
+        "max_attempts": 2,
+        "scoring_on_transition": {
+          "attempt_1_correct": "Full score",
+          "attempt_2_correct": "0 score per core_principles",
+          "both_attempts_wrong": "0 score; interviewer provides correct answer before Q4"
+        },
+        "transition_condition": "Analyst provides correct growth rate answer (1st or 2nd attempt), or both attempts exhausted"
+      }
+    },
+    "Q4": {
+      "q_id": "Q4",
+      "type": "qualitative",
+      "question_text": "What are your thoughts around the potential client's actions to address such a skyrocketing number of claims?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q5",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q5": {
+      "q_id": "Q5",
+      "type": "qualitative",
+      "question_text": "During a team meeting the Partner asked you to synthesize what your current recommendations are.",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": null,
+        "skip_logic": false,
+        "transition_condition": "Case ends after Q5"
+      }
+    }
+  },
+  "structure_4_ground_truth": {
+    "Q1_ground_truth": {
+      "type": "framework",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_dental_insurance_market_in_arizona": {
+          "keypoints": [
+            "Growth rate",
+            "Competitive landscape - key dental insurers and dental chains",
+            "Typical margins for dental insurers"
+          ],
+          "subtotal": 3
+        },
+        "pillar_2_alfa_dental": {
+          "keypoints": [
+            "Types of insurance policies",
+            "Client segments (e.g. B2B, B2C)",
+            "Marketing strategy"
+          ],
+          "subtotal": 3
+        },
+        "pillar_3_economics_of_deal_with_eastern_dental": {
+          "keypoints": [
+            "Revenue analysis - Premium policy",
+            "Revenue analysis - Number of insured patients",
+            "Cost structure - Volume of services",
+            "Cost structure - Fee per service",
+            "Cost structure - Overhead costs"
+          ],
+          "subtotal": 5
+        },
+        "pillar_4_eastern_dental": {
+          "keypoints": [
+            "Geographical footprint",
+            "Range of dental services",
+            "Pricing strategy",
+            "Volume of patients and patient visits"
+          ],
+          "subtotal": 4
+        }
+      },
+      "total_keypoints": 15,
+      "minimum_expected": "Cover at least 3 of 4 pillars with meaningful content (2+ keypoints each)",
+      "outstanding_threshold": "Cover all 4 pillars with substantive keypoints in each, including the economics of deal pillar with revenue and cost sub-structure"
+    },
+    "Q2_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_change_in_patient_behavior": {
+          "keypoints": [
+            "Patients in Arizona became more educated on importance of dental health (e.g. thanks to government-sponsored social ads)",
+            "The patient population structure changed (e.g. share of children increased; children tend to visit dentists more often)"
+          ],
+          "subtotal": 2
+        },
+        "pillar_2_more_competitive_positioning_of_alfa": {
+          "keypoints": [
+            "Alfa did a lot of efficient marketing campaigns among its covered patients in Arizona (marketing is typically one of major sales drivers for consumer services)",
+            "Alfa has been actively growing its number of covered patients (incl. corporate clients) in Arizona (deductible and/or increased cap of its insurance policies; given this is a mass product, the patients are likely price-sensitive and might increase their consumption followed by price decrease)",
+            "Alfa expanded the range of dental services covered by its policies"
+          ],
+          "subtotal": 3
+        },
+        "pillar_3_successful_business_strategy_of_eastern_dental": {
+          "keypoints": [
+            "Eastern Dental have been conducting aggressive marketing campaign (e.g. mail, digital, promotions)",
+            "Eastern Dental dramatically improved its patient satisfaction and online rankings",
+            "Eastern Dental expanded its geographical footprint and moved their offices to better high-traffic locations",
+            "Eastern Dental launched secondary / satellite dentistry offices to better accommodate corporate clients",
+            "Eastern Dental increased capacity of its offices (hired more dentists)",
+            "Eastern Dental decreased prices",
+            "Eastern Dental introduced new payment solutions (e.g. buy now pay later)",
+            "Eastern Dental added new services",
+            "Eastern Dental expanded working hours and days (e.g. weekends)"
+          ],
+          "subtotal": 9
+        }
+      },
+      "total_keypoints": 14,
+      "minimum_expected": "Cover at least 2 of 3 buckets with at least 2 ideas each",
+      "outstanding_threshold": "Cover all 3 buckets with substantive specific ideas (4+ total ideas across all three)"
+    },
+    "Q3_ground_truth": {
+      "type": "quantitative",
+      "quantitative_part": {
+        "correct_final_answer": "20% (casebook displayed) — also accept ~19.5% or 19.53% (precise calculation: (765k-640k)/640k = 125/640 = 19.53%); see A3-Q5 dual answer note",
+        "accepted_values": [
+          0.2,
+          0.1953
+        ],
+        "tolerance_pct": 0.02,
+        "zero_tolerance": false,
+        "scoring_method": "Binary: correct number = full credit; incorrect = zero credit. Accept both 20% (casebook rounded) and ~19.5% (exact). Any other value = zero credit.",
+        "calculation_steps": {
+          "step_1_patients_in_2019": {
+            "formula": "300 dental providers × 1.5k patients per provider",
+            "result": "450k patients in 2019"
+          },
+          "step_2_visits_in_2019": {
+            "formula": "450k patients × 1.7 visits per patient per year",
+            "result": "765k visits in 2019"
+          },
+          "step_3_visits_in_2018": {
+            "formula": "400k patients × 1.6 visits per patient",
+            "result": "640k visits in 2018"
+          },
+          "step_4_growth_rate": {
+            "formula": "(765k - 640k) / 640k",
+            "result": "125k / 640k = ~19.5% (exact) or 20% (casebook displayed)"
+          }
+        }
+      },
+      "qualitative_part": {
+        "scoring_note": "Qualitative portion of Q3 is scored as 100% total, split into two tiers. Within each tier, use 3-level scoring per",
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "tier_1_basic": {
+          "weight_of_Q3_qualitative_total": "50%",
+          "keypoints": [
+            "In 2018-19 Eastern Dental experienced a 20% increase in the number of patient visits"
+          ],
+          "note": "Expected from every candidate. Single point worth 50% of qualitative score."
+        },
+        "tier_2_advanced": {
+          "weight_of_Q3_qualitative_total": "50%",
+          "points_available": 3,
+          "weight_per_point": "16.7% of qualitative total",
+          "keypoints": [
+            "The partnership with Alfa Dental generates a lot of healthy business for Eastern Dental, which Alfa can leverage to renegotiate reimbursement rates with Eastern Dental and potentially reduce them",
+            "Such skyrocketing growth of Eastern Dental might be causing cannibalization of other dental practices participating in Alfa's network which might affect the economics of Alfa given differences in reimbursement rates",
+            "The significant increase in the average number of visits from 1.6 to 1.7 might indicate that patients covered by Alfa are likely in close proximity to Eastern Dental's offices or have more dental issues (e.g. more elderly population)"
+          ],
+          "note": "Not expected from every candidate. Each advanced point adds 16.7% to qualitative score."
+        },
+        "minimum_expected": "Correct numerical answer + Tier 1 basic contextualization (covered)",
+        "outstanding_threshold": "Correct numerical answer + Tier 1 covered + at least 2 Tier 2 advanced comments covered"
+      }
+    },
+    "Q4_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_cool_down_marketing_strategy": {
+          "keypoints": [
+            "Scale back marketing efforts to promote dental services or Eastern Dental in particular (e.g. lower ads and promotions)"
+          ],
+          "subtotal": 1
+        },
+        "pillar_2_increase_pricing": {
+          "keypoints": [
+            "Renegotiate reimbursement rates with Eastern Dental",
+            "Increase deductible",
+            "Introduce / increase co-pay",
+            "Decrease annual cap for dental services"
+          ],
+          "subtotal": 4
+        },
+        "pillar_3_reduce_utilization_efforts": {
+          "keypoints": [
+            "Deprioritize sales of insurance policies in the presence areas of Eastern Dental and focus on other regions in Arizona",
+            "Adjust commissions for sales people to reflect the strategy mentioned above"
+          ],
+          "subtotal": 2
+        },
+        "pillar_4_soften_value_proposition": {
+          "keypoints": [
+            "Reduce the coverage of dental services for Eastern Dental"
+          ],
+          "subtotal": 1
+        }
+      },
+      "total_keypoints": 8,
+      "minimum_expected": "Cover at least 2 of 4 approaches with at least 1 concrete action each",
+      "outstanding_threshold": "Cover at least 3 of 4 approaches including the pricing approach (highest impact) with specific levers"
+    },
+    "Q5_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_recommendation": {
+          "keypoints": [
+            "Based on the initial assessment, the root cause of declining profits is a rapidly growing number of patient visits driven both by higher visit frequency and expanding patient population. The client should consider adjusting pricing strategy to improve margins"
+          ],
+          "subtotal": 1
+        },
+        "pillar_2_reasoning": {
+          "keypoints": [
+            "The client enjoys stronger negotiation power right now as they generated a lot of new business to Eastern Dental, which potentially will allow the client to get more attractive reimbursement rates",
+            "Pricing changes are one of the most efficient strategies with immediate impact",
+            "The client likely has limited opportunities to influence the number of visits"
+          ],
+          "subtotal": 3
+        },
+        "pillar_3_risks": {
+          "keypoints": [
+            "Pricing changes might be painful for the patient population, affect client's brand perception and decrease the number of visits. Eastern Dental might also consider switching to other payer"
+          ],
+          "subtotal": 1
+        },
+        "pillar_4_next_steps": {
+          "keypoints": [
+            "In order to design a more comprehensive plan of attack, I'd want to build a financial model to test different pricing scenarios, conduct benchmarking analysis with other insurance companies and build a risk mitigation plan"
+          ],
+          "subtotal": 1
+        }
+      },
+      "total_keypoints": 6,
+      "minimum_expected": "Recommendation pillar covered + at least 1 reasoning point covered",
+      "outstanding_threshold": "All 4 pillars covered including at least 2 reasoning points and the risk point"
+    }
+  },
+  "state_machine_global": {
+    "case_type": "interviewer_driven",
+    "skip_logic": false,
+    "mandatory_sequence": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5"
+    ],
+    "rules": [
+      "Q1 cannot be skipped under any circumstances",
+      "Questions must proceed in linear order Q1 → Q2 → Q3 → Q4 → Q5",
+      "A question may not be advanced until the current question receives a scoreable answer (1st or 2nd attempt)",
+      "If analyst pre-covers a later question's keypoints in an earlier answer, record as pre-coverage but still ask the later question in sequence",
+      "No question may be skipped even if pre-covered",
+      "For Q3 (quantitative): if analyst fails both attempts, provide correct answer before advancing to Q4"
+    ]
+  },
+  "scoring_summary": {
+    "Q1": {
+      "type": "framework",
+      "total_keypoints": 15,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q2": {
+      "type": "qualitative",
+      "total_keypoints": 14,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q3": {
+      "type": "quantitative",
+      "part_1_quantitative": {
+        "correct_answer": "20% (casebook) — also accept ~19.5% exact",
+        "zero_tolerance": true,
+        "scoring": "Binary: Full credit if correct (20% or ~19.5%); zero credit if any other value"
+      },
+      "part_2_qualitative": {
+        "total_keypoints": 4,
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "human_review_priority": "false-partial > false-not-covered > covered",
+        "tier_1_basic": {
+          "keypoints": 1,
+          "weight": "50% of qualitative score"
+        },
+        "tier_2_advanced": {
+          "keypoints": 3,
+          "weight_per_point": "16.7% of qualitative score",
+          "weight_total": "50% of qualitative score"
+        }
+      }
+    },
+    "Q4": {
+      "type": "qualitative",
+      "total_keypoints": 8,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q5": {
+      "type": "qualitative",
+      "total_keypoints": 6,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    }
+  }
+}

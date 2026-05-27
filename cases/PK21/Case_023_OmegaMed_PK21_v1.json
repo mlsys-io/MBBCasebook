@@ -1,0 +1,695 @@
+{
+  "case_id": "023",
+  "version": "v1",
+  "source": {
+    "title": "OmegaMed",
+    "inspired_by": "Kearney",
+    "year": "2021",
+    "author": "Peter K.",
+    "reference": "Peter-K.org, Case #23",
+    "casebook_abbr": "PK21"
+  },
+  "case_type": "interviewer_driven",
+  "case_type_origin": "candidate_led",
+  "annotation_mode": "CL_to_IL_override",
+  "case_arch": {
+    "primary": "Comparison",
+    "tags": [
+      "Comparison",
+      "Investment Decision",
+      "Operational Efficiency"
+    ]
+  },
+  "difficulty": "Medium",
+  "industry": "Healthcare / Primary Care Clinic Chain",
+  "topic": "Investment decision comparison — patient scheduling software purchase for clinic chain",
+  "expected_duration_minutes": 20,
+  "opening_prompt": "Hi, I'd like to solve some consulting cases with you. Pls be a good interviewee to have a potential test in consulting cases. For the case problem-solving, pls do not assume any numbers or assumptions before my confirmation. I will give you the context upon request. I need you to answer the following questions for the client. Before you start, feel free to ask me 2-3 clarifying questions about the client.\n\nQ1: How would you help OmegaMed decide if they should invest in patient scheduling software?\n\nQ2: How can this patient scheduling software affect the financials of OmegaMed?\n\nQ3: What is the payback period of the patient scheduling software?\n\nQ4: What risks should OmegaMed anticipate if they decide to purchase this patient scheduling software?\n\nQ5: Partner gives you a call to get a better idea of your current recommendations. What would you suggest?\n\nHere is the basic context for the client:\nOur client is a clinic chain OmegaMed that offers primary care services at their 500 clinics. The company has been expanding rapidly in an inorganic way and today their clinics use a vast variety of similar-purpose software solutions. In order to streamline its operations, OmegaMed is considering purchasing a single patient scheduling platform and transitioning all their clinics on it. The CEO has brought your team in to get your advice on whether it is a reasonable strategy.",
+  "structure_1_client_basic_context": {
+    "company": "OmegaMed",
+    "type": "Clinic chain offering primary care services",
+    "situation": "The company has been expanding rapidly in an inorganic way and today their clinics use a vast variety of similar-purpose software solutions.",
+    "action": "OmegaMed is considering purchasing a single patient scheduling platform and transitioning all their clinics on it.",
+    "ask": "The CEO has brought your team in to get your advice on whether it is a reasonable strategy."
+  },
+  "structure_2_information_upon_request": {
+    "item_1": {
+      "item_id": "item_1",
+      "trigger": "Analyst asks about or includes OmegaMed's service specialization or patient mix in their framework",
+      "core_dimensional_concept": "OmegaMed service scope and specialization",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet on client profile or business model",
+          "explicit clarifying question about what services the clinics offer",
+          "sub-bullet under 'Patient scheduling platform' pillar about patient types or service mix"
+        ],
+        "alternative_phrasings": [
+          "specialized vs generalist clinic",
+          "types of services offered",
+          "primary care scope",
+          "patient types"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'primary care' only as a passing descriptor in the context restatement without asking about or listing service specialization as a framework dimension (F passing mention)",
+        "Analyst mentions 'patient experience' as a strategic pillar without drilling into what types of care the clinics provide (G neighboring dimension)"
+      ],
+      "info": "OmegaMed isn't specialized and offers all kind of primary care services"
+    },
+    "item_2": {
+      "item_id": "item_2",
+      "trigger": "Analyst asks about or includes OmegaMed's geographic footprint or scale in their framework",
+      "core_dimensional_concept": "OmegaMed national geographic footprint",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet on client scale or market presence",
+          "explicit clarifying question about geographic reach or number of locations",
+          "hypothesis-driven assumption about national vs regional operations"
+        ],
+        "alternative_phrasings": [
+          "national presence",
+          "geographic coverage",
+          "number of clinics / locations",
+          "market footprint"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions '500 clinics' from the prompt without specifically asking about national vs regional footprint as a dimension (F passing mention — restating context is not a dimensional touch)",
+        "Analyst lists 'operational scale' as a pillar without drilling into geographic dimension (G neighboring dimension)"
+      ],
+      "info": "OmegaMed has a national footprint in the U.S."
+    },
+    "item_3": {
+      "item_id": "item_3",
+      "trigger": "Analyst asks about or includes the current scheduling software situation or baseline in their framework",
+      "core_dimensional_concept": "current scheduling software landscape at OmegaMed",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet on current state or status quo assessment",
+          "explicit clarifying question about what software clinics currently use",
+          "hypothesis-driven assumption about the existing technology baseline"
+        ],
+        "alternative_phrasings": [
+          "current technology",
+          "existing software",
+          "baseline scheduling tools",
+          "as-is systems"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'software fragmentation' or 'various systems' only as a problem description without asking what types of software are currently used (F passing mention)",
+        "Analyst lists 'IT infrastructure' as a pillar without asking about current scheduling tools specifically (G neighboring dimension)"
+      ],
+      "info": "Currently clinics of OmegaMed use various scheduling software incl. basic ones like Excel"
+    },
+    "item_4": {
+      "item_id": "item_4",
+      "trigger": "Analyst asks about or includes the payback or ROI target / investment timeline expectation in their framework",
+      "core_dimensional_concept": "OmegaMed investment payback target",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet on financial criteria or investment hurdle rate",
+          "explicit clarifying question about payback period target or ROI expectation",
+          "hypothesis-driven assumption about acceptable investment return timeline"
+        ],
+        "alternative_phrasings": [
+          "payback period target",
+          "ROI hurdle",
+          "investment return timeline",
+          "how quickly they need to recoup the investment"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'financial implications' as a top-level pillar without asking specifically about target payback or ROI expectation (G neighboring dimension — financial implications is broader than payback target)",
+        "Analyst calculates payback period in Q3 without first asking the client's target payback expectation as a framework input (F passing — calculating is not the same as asking about the target)"
+      ],
+      "info": "OmegaMed would like to pay back their investment in this scheduling software within a year"
+    },
+    "item_5": {
+      "item_id": "item_5",
+      "trigger": "Analyst asks about or includes industry best practice for scheduling software adoption or standardization in their framework",
+      "core_dimensional_concept": "industry best practice for single scheduling platform",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet on strategic benchmarking or industry best practice",
+          "explicit clarifying question about what competitors or industry peers do",
+          "hypothesis-driven assumption about standard industry practices for clinic scheduling"
+        ],
+        "alternative_phrasings": [
+          "industry standard",
+          "competitive benchmark",
+          "best practice from other clinic chains",
+          "what peers are doing"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'strategic value' as a pillar without asking what the industry norm is for scheduling platform consolidation (G neighboring dimension)",
+        "Analyst asks about 'reviews of other healthcare providers' on this software without asking about the broader best practice for single vs multiple platforms (G neighboring dimension — product reviews are different from industry platform standard)"
+      ],
+      "info": "It's best practice to operate a single scheduling platform across the entire clinic chain"
+    }
+  },
+  "structure_3_case_questions": {
+    "Q1": {
+      "q_id": "Q1",
+      "type": "framework",
+      "question_text": "How would you help OmegaMed decide if they should invest in patient scheduling software?",
+      "information_to_share_upfront": null,
+      "information_upon_request": "See structure_2 items 1-5. Release only items per semantic touch judgment; not by mere keyword presence.",
+      "state_machine": {
+        "next_question": "Q2",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable framework answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q2": {
+      "q_id": "Q2",
+      "type": "qualitative",
+      "question_text": "How can this patient scheduling software affect the financials of OmegaMed?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q3",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q3": {
+      "q_id": "Q3",
+      "type": "quantitative",
+      "question_text": "What is the payback period of the patient scheduling software?",
+      "information_to_share_upfront": [
+        "Initial investment (upfront payment) for the software is $5M",
+        "Currently each clinic serves 75 patients per day on average"
+      ],
+      "information_upon_request": [
+        {
+          "item_id": "Q3_item_1",
+          "trigger": "Analyst asks about the annual cost or recurring cost of the software",
+          "core_dimensional_concept": "annual software subscription fee",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question about annual or recurring software cost",
+              "sub-bullet under cost structure asking about ongoing fees",
+              "hypothesis-driven assumption about annual subscription amount"
+            ],
+            "alternative_phrasings": [
+              "annual fee",
+              "recurring cost",
+              "subscription cost",
+              "ongoing software cost"
+            ]
+          },
+          "disqualifying": [
+            "Analyst mentions 'software costs' as a general cost category without asking specifically about the annual subscription amount (G neighboring dimension)"
+          ],
+          "info": "Annual subscription fee for the software is 50% of the upfront payment"
+        },
+        {
+          "item_id": "Q3_item_2",
+          "trigger": "Analyst asks about incremental operating expenses from the software",
+          "core_dimensional_concept": "incremental opex from scheduling software",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question about additional operational costs",
+              "sub-bullet under cost increase asking about maintenance or staffing costs",
+              "hypothesis-driven assumption about opex change"
+            ],
+            "alternative_phrasings": [
+              "additional operating costs",
+              "maintenance costs",
+              "incremental costs to run the software",
+              "cost to maintain"
+            ]
+          },
+          "disqualifying": [
+            "Analyst mentions 'operational risks' without asking specifically about incremental opex (G neighboring dimension)"
+          ],
+          "info": "We don't expect any significant increase in opex to maintain the scheduling software"
+        },
+        {
+          "item_id": "Q3_item_3",
+          "trigger": "Analyst asks about the expected patient volume increase from the software",
+          "core_dimensional_concept": "expected patient volume after software adoption",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question about how many more patients per clinic",
+              "sub-bullet under revenue impact asking about appointment increase",
+              "hypothesis-driven assumption about utilization rate improvement"
+            ],
+            "alternative_phrasings": [
+              "more appointments",
+              "increased patient throughput",
+              "higher utilization",
+              "patients per day after software"
+            ]
+          },
+          "disqualifying": [
+            "Analyst mentions 'revenue increase' as a category without asking specifically how many more patients the software will drive (G neighboring dimension)"
+          ],
+          "info": "Based on our estimates, the software will lead to higher # of appointments and each clinic will serve 77 patients per day on average"
+        },
+        {
+          "item_id": "Q3_item_4",
+          "trigger": "Analyst asks about working days or weeks per year for the clinics",
+          "core_dimensional_concept": "clinic operating days per year",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question about how many days or weeks per year clinics operate",
+              "hypothesis-driven assumption about annual operating days",
+              "sub-bullet under volume calculation asking about working calendar"
+            ],
+            "alternative_phrasings": [
+              "days per year",
+              "weeks per year",
+              "annual operating schedule",
+              "clinic hours of operation"
+            ]
+          },
+          "disqualifying": [
+            "Analyst assumes standard 52-week year without asking (F passing — assumption without asking is not a dimensional touch)"
+          ],
+          "info": "The clinics work 50 weeks a year and 5 days a week"
+        },
+        {
+          "item_id": "Q3_item_5",
+          "trigger": "Analyst asks about revenue per patient visit",
+          "core_dimensional_concept": "revenue per patient visit",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question about average revenue per visit or per appointment",
+              "sub-bullet under revenue calculation asking about billing rate",
+              "hypothesis-driven assumption about visit revenue"
+            ],
+            "alternative_phrasings": [
+              "average revenue per visit",
+              "billing per appointment",
+              "price per visit",
+              "reimbursement per visit"
+            ]
+          },
+          "disqualifying": [
+            "Analyst mentions 'revenue' as a pillar without asking the specific dollar amount per visit (G neighboring dimension)"
+          ],
+          "info": "Average revenue per visit is $200"
+        },
+        {
+          "item_id": "Q3_item_6",
+          "trigger": "Analyst asks about labor time required per patient visit",
+          "core_dimensional_concept": "medical personnel time per visit",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question about how long each visit takes (for staff)",
+              "sub-bullet under cost calculation asking about personnel hours per visit",
+              "hypothesis-driven assumption about labor hours per appointment"
+            ],
+            "alternative_phrasings": [
+              "hours per visit",
+              "time per appointment",
+              "staff hours per patient",
+              "clinical time per visit"
+            ]
+          },
+          "disqualifying": [
+            "Analyst mentions 'labor costs' as a cost category without asking how many hours per visit (G neighboring dimension)"
+          ],
+          "info": "Each visit requires 1.5h of medical personnel's time (incl. admin)"
+        },
+        {
+          "item_id": "Q3_item_7",
+          "trigger": "Analyst asks about the labor cost rate (hourly wage) for medical personnel",
+          "core_dimensional_concept": "medical personnel hourly labor cost",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question about hourly rate or labor cost per hour",
+              "sub-bullet under cost calculation asking about wage rate",
+              "hypothesis-driven assumption about staff cost per hour"
+            ],
+            "alternative_phrasings": [
+              "hourly wage",
+              "labor rate",
+              "cost per hour",
+              "staff cost rate"
+            ]
+          },
+          "disqualifying": [
+            "Analyst mentions 'personnel costs' as a line item without asking the specific hourly rate (G neighboring dimension)"
+          ],
+          "info": "Average labor cost is $100 per hour"
+        }
+      ],
+      "appendix": {
+        "appendix_Q3_upfront_data": {
+          "title": "Q3 Upfront Information",
+          "release_rule": "Share upfront with analyst at the start of Q3",
+          "table": {
+            "initial_investment": "$5M (upfront payment)",
+            "current_patients_per_clinic_per_day": "75 patients"
+          }
+        }
+      },
+      "state_machine": {
+        "next_question": "Q4",
+        "skip_logic": false,
+        "max_attempts": 2,
+        "scoring_on_transition": {
+          "attempt_1_correct": "Full score",
+          "attempt_2_correct": "0 score per core_principles",
+          "both_attempts_wrong": "0 score; interviewer provides correct answer before next question"
+        },
+        "transition_condition": "Analyst provides correct payback period answer (0.5 years / 6 months) on attempt 1 or 2, or interviewer provides answer after 2 failed attempts"
+      }
+    },
+    "Q4": {
+      "q_id": "Q4",
+      "type": "qualitative",
+      "question_text": "What risks should OmegaMed anticipate if they decide to purchase this patient scheduling software?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q5",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q5": {
+      "q_id": "Q5",
+      "type": "qualitative",
+      "question_text": "Partner gives you a call to get a better idea of your current recommendations. What would you suggest?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": null,
+        "skip_logic": false,
+        "transition_condition": "Case ends after Q5"
+      }
+    }
+  },
+  "structure_4_ground_truth": {
+    "Q1_ground_truth": {
+      "type": "framework",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_patient_scheduling_platform": {
+          "keypoints": [
+            "Available features",
+            "Implementation timeline",
+            "Reviews of other healthcare providers on this software"
+          ],
+          "subtotal": 3
+        },
+        "pillar_2_financial_implications": {
+          "keypoints": [
+            "Software price (incl. customization and implementation)",
+            "Expected opex",
+            "Potential impact on revenue"
+          ],
+          "subtotal": 3
+        },
+        "pillar_3_strategic_value": {
+          "keypoints": [
+            "New opportunities",
+            "Operational improvements",
+            "Impact on customer experience",
+            "Risks mitigation"
+          ],
+          "subtotal": 4
+        },
+        "pillar_4_potential_risks": {
+          "keypoints": [
+            "Market-specific",
+            "Financial",
+            "Operational"
+          ],
+          "subtotal": 3
+        }
+      },
+      "total_keypoints": 13,
+      "minimum_expected": "At least 3 of 4 pillars identified with at least 1 keypoint each",
+      "outstanding_threshold": "All 4 pillars identified with 2+ keypoints each"
+    },
+    "Q2_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_affect_revenue": {
+          "keypoints": [
+            "Cross-clinic scheduling",
+            "Streamlined operations - Reminders and alert functionality will decrease no-shows",
+            "Streamlined operations - Elimination of human scheduling will minimize scheduling errors and overbooking",
+            "Streamlined operations - Transparency and timely reallocate medical personnel between clinics to address spikes in patient appointments",
+            "Superior patient experience - Easy and intuitive software will increase the chance that patients will schedule appointments",
+            "Superior patient experience - Universal access to the software will enable cross-clinic scheduling",
+            "Superior patient experience - More efficient scheduling will reduce wait time for patients, improve their experience and thus encourage them to book an appointment when needed"
+          ],
+          "subtotal": 7
+        },
+        "pillar_2_affect_costs": {
+          "keypoints": [
+            "Cost savings - Reduce time spent on the admin work of assistants/nurses/physicians",
+            "Cost savings - Better analytics on utilization rates of physicians and clinics will enable OmegaMed to reduce headcount if needed",
+            "Cost savings - More appointments, patients will address more healthcare needs and thus might have fewer severe and costly healthcare issues in future",
+            "Increase in costs - Initial investment to purchase the scheduling software, customize it to the specifics of OmegaMed and train the personnel",
+            "Increase in costs - Lead to increase in opex — regular system upgrades, subscription fee (if any), bug fixing/helpdesk"
+          ],
+          "subtotal": 5
+        }
+      },
+      "total_keypoints": 12,
+      "minimum_expected": "Both revenue and cost pillars identified with at least 2 keypoints each",
+      "outstanding_threshold": "Both pillars covered with 4+ keypoints each, including sub-item granularity"
+    },
+    "Q3_ground_truth": {
+      "type": "quantitative",
+      "quantitative_part": {
+        "correct_final_answer": "0.5 years (6 months)",
+        "accepted_values": [
+          0.5
+        ],
+        "tolerance_pct": 0.0,
+        "zero_tolerance": true,
+        "scoring_method": "Binary: correct number = full credit; incorrect = zero credit",
+        "calculation_steps": {
+          "step_1_contribution_margin_per_visit": {
+            "formula": "Revenue per visit - Labor cost per visit = $200 - ($100/h × 1.5h)",
+            "result": "$200 - $150 = $50 per visit"
+          },
+          "step_2_incremental_patients_per_clinic": {
+            "formula": "Patients after software - Patients before software = 77 - 75",
+            "result": "2 additional patients per clinic per day"
+          },
+          "step_3_annual_incremental_profit": {
+            "formula": "Incremental patients per day × working days per year × contribution margin per visit × number of clinics - annual subscription fee",
+            "result": "2 × (5 days/week × 50 weeks) × $50 × 500 clinics - (50% × $5M) = 2 × 250 × $50 × 500 - $2.5M = $12.5M - $2.5M = $10M"
+          },
+          "step_4_payback_period": {
+            "formula": "Initial investment ÷ Annual incremental profit = $5M ÷ $10M",
+            "result": "0.5 years = 6 months"
+          }
+        }
+      },
+      "qualitative_part": {
+        "scoring_note": "Qualitative portion of Q3 is scored as 100% total, split into two tiers. Within each tier, use 3-level scoring per",
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "tier_1_basic": {
+          "weight_of_Q3_qualitative_total": "50%",
+          "keypoints": [
+            "OmegaMed will cover the $5M investment within 6 months"
+          ],
+          "note": "Expected from every candidate. Correctly contextualizing the payback period relative to the 1-year target stated in structure_2 item_4."
+        },
+        "tier_2_advanced": {
+          "weight_of_Q3_qualitative_total": "50%",
+          "points_available": 4,
+          "weight_per_point": "12.5% of qualitative total",
+          "keypoints": [
+            "It seems like an attractive investment project and OmegaMed should consider doing it",
+            "We assume that there is no implementation period; however, such a large-scale IT integration might be time-consuming and increase the payback period materially",
+            "The payback period is highly dependent on the estimated increase in average number of patients served per day. If this assumption is exaggerated, the economics of this project might change substantially",
+            "Such a great payback period might attract other clinic chains to adopt this scheduling software, and it might become industry standard (if not already), so patients will expect this level of experience and OmegaMed will need to implement this or similar scheduling platform anyway"
+          ],
+          "note": "Not expected from every candidate. Each advanced point adds 12.5% to qualitative score."
+        },
+        "minimum_expected": "Correct numerical answer + Tier 1 basic contextualization (covered)",
+        "outstanding_threshold": "Correct numerical answer + Tier 1 covered + at least 2 Tier 2 advanced comments covered"
+      }
+    },
+    "Q4_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_market_specific_risks": {
+          "keypoints": [
+            "Low adoption rate among patients [as they might have strong habit to keep scheduling appointment in 'old way' (e.g. over email and phone)]",
+            "Potential negative brand implications [e.g. in case of suboptimal patient experience, buggy software]"
+          ],
+          "subtotal": 2
+        },
+        "pillar_2_financial_risks": {
+          "costs": {
+            "keypoints": [
+              "Lack of funding",
+              "Underestimated costs",
+              "Higher subscription fee down the road [OmegaMed will be locked in the contract with vendor which gives negotiation power to vendor]"
+            ],
+            "subtotal": 3
+          },
+          "revenue": {
+            "keypoints": [
+              "Exaggerated revenue assumptions [e.g. patients will stick with their local clinics rather than schedule cross-clinic appointments thus number of appointments won't increase]",
+              "Lower reimbursement rates [high volume might force insurance companies to reduce rates]"
+            ],
+            "subtotal": 2
+          },
+          "keypoints": [
+            "Lack of funding",
+            "Underestimated costs",
+            "Higher subscription fee down the road [OmegaMed will be locked in the contract with vendor which gives negotiation power to vendor]",
+            "Exaggerated revenue assumptions [e.g. patients will stick with their local clinics rather than schedule cross-clinic appointments thus number of appointments won't increase]",
+            "Lower reimbursement rates [high volume might force insurance companies to reduce rates]"
+          ],
+          "subtotal": 5
+        },
+        "pillar_3_operational_risks": {
+          "implementation": {
+            "keypoints": [
+              "Long implementation period (software customization, employee training, etc.)",
+              "Potential disruption of processes during the implementation"
+            ],
+            "subtotal": 2
+          },
+          "software_quality": {
+            "keypoints": [
+              "Risk of inferior or unreliable software",
+              "Potentially not patient friendly interface"
+            ],
+            "subtotal": 2
+          },
+          "support": {
+            "keypoints": [
+              "Slow or suboptimal software upgrades",
+              "Risk of software vendor going out of business"
+            ],
+            "subtotal": 2
+          },
+          "keypoints": [
+            "Long implementation period (software customization, employee training, etc.)",
+            "Potential disruption of processes during the implementation",
+            "Risk of inferior or unreliable software",
+            "Potentially not patient friendly interface",
+            "Slow or suboptimal software upgrades",
+            "Risk of software vendor going out of business"
+          ],
+          "subtotal": 6
+        }
+      },
+      "total_keypoints": 13,
+      "minimum_expected": "At least 2 of 3 risk pillars identified with at least 2 keypoints each",
+      "outstanding_threshold": "All 3 risk pillars covered with at least 2 keypoints each"
+    },
+    "Q5_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_recommendation": {
+          "keypoints": [
+            "OmegaMed should consider investing in and adopting this single scheduling platform across their chain of 500 clinics"
+          ],
+          "subtotal": 1
+        },
+        "pillar_2_reasoning": {
+          "keypoints": [
+            "The investment will be paid back within six months after the implementation",
+            "The scheduling software will likely offer a wide variety of benefits that will lead to revenue gains and cost savings",
+            "It might also improve experience of patients and medical personnel which will strengthen our brand and employees' morale"
+          ],
+          "subtotal": 3
+        },
+        "pillar_3_risks": {
+          "keypoints": [
+            "There are, however, some risks OmegaMed will need to address, including inaccurate financial assumptions, exaggerated expectations about the features of scheduling software, and potentially long implementation cycle given a large scale of OmegaMed's business"
+          ],
+          "subtotal": 1
+        },
+        "pillar_4_next_steps": {
+          "keypoints": [
+            "Develop a risk mitigation plan",
+            "Conduct a proper due diligence of the scheduling software capabilities",
+            "Design an implementation roadmap"
+          ],
+          "subtotal": 3
+        }
+      },
+      "total_keypoints": 8,
+      "minimum_expected": "Recommendation pillar covered + at least 1 reasoning point covered",
+      "outstanding_threshold": "All 4 pillars covered, including at least 2 reasoning points and at least 1 risk and 1 next step"
+    }
+  },
+  "state_machine_global": {
+    "case_type": "interviewer_driven",
+    "skip_logic": false,
+    "mandatory_sequence": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5"
+    ],
+    "rules": [
+      "Q1 cannot be skipped under any circumstances",
+      "Questions must proceed in linear order Q1 → Q2 → Q3 → Q4 → Q5",
+      "A question may not be advanced until the current question receives a scoreable answer (1st or 2nd attempt)",
+      "If analyst pre-covers a later question's keypoints in an earlier answer, record as pre-coverage but still ask the later question in sequence",
+      "No question may be skipped even if pre-covered",
+      "Q3 is quantitative: max 2 attempts; if both wrong, interviewer provides correct answer (0.5 years / 6 months) before proceeding to Q4"
+    ]
+  },
+  "scoring_summary": {
+    "Q1": {
+      "type": "framework",
+      "total_keypoints": 13,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q2": {
+      "type": "qualitative",
+      "total_keypoints": 12,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q3": {
+      "type": "quantitative",
+      "part_1_quantitative": {
+        "correct_answer": "0.5 years (6 months)",
+        "zero_tolerance": true,
+        "scoring": "Binary: Full credit if correct; zero credit if incorrect"
+      },
+      "part_2_qualitative": {
+        "total_keypoints": 5,
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "human_review_priority": "false-partial > false-not-covered > covered",
+        "tier_1_basic": {
+          "keypoints": 1,
+          "weight": "50% of qualitative score"
+        },
+        "tier_2_advanced": {
+          "keypoints": 4,
+          "weight_per_point": "12.5% of qualitative score",
+          "weight_total": "50% of qualitative score"
+        }
+      }
+    },
+    "Q4": {
+      "type": "qualitative",
+      "total_keypoints": 13,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q5": {
+      "type": "qualitative",
+      "total_keypoints": 8,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    }
+  }
+}

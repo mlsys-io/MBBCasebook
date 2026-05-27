@@ -1,0 +1,703 @@
+{
+  "case_id": "017",
+  "version": "v1",
+  "source": {
+    "title": "Betacer",
+    "inspired_by": "BCG",
+    "year": "2020",
+    "author": "Peter K.",
+    "reference": "Peter-K.org, Case #17",
+    "casebook_abbr": "PK21"
+  },
+  "case_type": "interviewer_driven",
+  "case_type_origin": "candidate_led",
+  "annotation_mode": "CL_to_IL_override",
+  "case_arch": {
+    "primary": "Market Entry",
+    "tags": [
+      "Market Entry",
+      "Growth Strategy",
+      "Market Sizing"
+    ]
+  },
+  "difficulty": "Medium-Hard",
+  "industry": "Consumer Electronics / Video Gaming",
+  "topic": "Market entry decision — U.S. video-game market for electronics manufacturer Betacer",
+  "expected_duration_minutes": 20,
+  "opening_prompt": "Hi, I'd like to solve some consulting cases with you. Pls be a good interviewee to have a potential test in consulting cases. For the case problem-solving, pls do not assume any numbers or assumptions before my confirmation. I will give you the context upon request. I need you to answer the following questions for the client. Before you start, feel free to ask me 2-3 clarifying questions about the client.\n\nCase Questions:\nQ1. What factors would you consider to suggest whether Betacer should enter the video-game market?\nQ2. How do customers choose which video-game to purchase?\nQ3. What synergies might Betacer capture by entering the video-game market?\nQ4. How many customers should Betacer attract to payback their $1M investment in a smartphone game \"Treasure Hunters\" within 2 years after launch?\nQ5. The project manager bumped into you at the elevator and asked you to summarize your current recommendations.\n\nHere is the basic context for the client:\nBetacer is a major U.S. electronics manufacturer that offers laptop and desktop PCs, tablets, smartphones, monitors, projectors and cloud solutions for home users, business and government. Given low or negative growth rate in various segments of the electronics industry, Betacer is looking for expansion opportunities and is considering entering the U.S. video-game market to get your advice on whether this is a wise idea.",
+  "structure_1_client_basic_context": {
+    "company": "Betacer",
+    "type": "Major U.S. electronics manufacturer",
+    "situation": "Offers laptop and desktop PCs, tablets, smartphones, monitors, projectors and cloud solutions for home users, business and government. Given low or negative growth rate in various segments of the electronics industry, Betacer is looking for expansion opportunities.",
+    "action": "Considering entering the U.S. video-game market",
+    "ask": "Get your advice on whether this is a wise idea"
+  },
+  "structure_2_information_upon_request": {
+    "item_1": {
+      "item_id": "item_1",
+      "trigger": "Analyst asks about or includes investment payback timeline or financial return horizon in framework",
+      "core_dimensional_concept": "investment payback timeline",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar (e.g., 'Financial assessment', 'Payback period', 'Return on investment')",
+          "sub-bullet under Financial analysis pillar",
+          "explicit clarifying question about payback timeline or investment horizon",
+          "hypothesis-driven assumption about time to break even"
+        ],
+        "alternative_phrasings": [
+          "return on investment",
+          "break-even timeline",
+          "investment recovery period",
+          "time to profitability",
+          "payback horizon"
+        ]
+      },
+      "disqualifying": [
+        "Only mentions 'investment risk' or 'financial risk' under the Risk pillar — this is a risk dimension, not the payback-period subject itself (G adjacent-dimension modifier)",
+        "Only mentions 'Financial analysis' as a framework title without any specific payback/timeline sub-item — passing reference (F)"
+      ],
+      "info": "Betacer would like to payback their investment within 2 years after the market entry"
+    },
+    "item_2": {
+      "item_id": "item_2",
+      "trigger": "Analyst asks about or includes target customer segment or market segment focus in framework",
+      "core_dimensional_concept": "target customer segment",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar (e.g., 'Betacer / Target segments', 'Customer segment analysis')",
+          "explicit clarifying question about who Betacer plans to target",
+          "sub-bullet under Betacer assessment or market segmentation pillar",
+          "hypothesis about mass market vs hardcore gamers"
+        ],
+        "alternative_phrasings": [
+          "target market",
+          "customer segments",
+          "mass market vs niche",
+          "casual vs hardcore gamers",
+          "customer profile"
+        ]
+      },
+      "disqualifying": [
+        "Only loosely mentions 'market segmentation' as a category title under the Market analysis pillar with no specific customer-base discussion — a structural container, not a touch (G)",
+        "Only mentions 'various customer segments' in passing while saying 'competitive landscape' — a passing mention (F)"
+      ],
+      "info": "Betacer plans to target the mass market, not hardcore gamers"
+    },
+    "item_3": {
+      "item_id": "item_3",
+      "trigger": "Analyst asks about or includes geographic focus or market scope in framework",
+      "core_dimensional_concept": "geographic market focus",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet (e.g., 'Geography', 'Market scope', 'U.S. market')",
+          "explicit clarifying question about which market or geography Betacer is targeting",
+          "hypothesis about domestic vs international expansion",
+          "numbered enumeration listing geography as one consideration"
+        ],
+        "alternative_phrasings": [
+          "geographic scope",
+          "domestic market",
+          "which markets",
+          "regional focus",
+          "market geography"
+        ]
+      },
+      "disqualifying": [
+        "Only mentions 'U.S.' in passing while discussing 'distribution channels' — a passing adjective (F)",
+        "Only says 'expand into new markets' without a specific geographic-focus discussion — G adjacent-dimension modifier"
+      ],
+      "info": "The client would like to focus on the U.S. video-game market"
+    },
+    "item_4": {
+      "item_id": "item_4",
+      "trigger": "Analyst asks about or includes market size or global video-game market scale in framework",
+      "core_dimensional_concept": "global video-game market size",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar (e.g., 'Video-game market', 'Market size and growth', 'Market assessment')",
+          "sub-bullet under market analysis pillar asking about size/scale",
+          "explicit clarifying question about market size or how big the market is",
+          "hypothesis about market size attractiveness"
+        ],
+        "alternative_phrasings": [
+          "market size",
+          "how large is the market",
+          "market scale",
+          "TAM",
+          "total addressable market",
+          "market attractiveness"
+        ]
+      },
+      "disqualifying": [
+        "Only mentions 'market growth rate' without addressing size itself — G adjacent-dimension modifier (growth and size are different dimensions)",
+        "Only says 'market saturation risk' under the Risk pillar — F passing"
+      ],
+      "info": "It's a $175B global market that sky-rocketed in 2020 (see Appendix 1)"
+    },
+    "item_5": {
+      "item_id": "item_5",
+      "trigger": "Analyst asks about or includes competitive landscape or key players in the video-game market in framework",
+      "core_dimensional_concept": "competitive landscape of video-game market",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar (e.g., 'Competition', 'Competitive landscape', 'Major players', 'Potential market entry risks')",
+          "sub-bullet under market assessment or competitive analysis pillar",
+          "explicit clarifying question about who the main competitors are",
+          "hypothesis about competitive intensity or market concentration"
+        ],
+        "alternative_phrasings": [
+          "key competitors",
+          "major players",
+          "competitive intensity",
+          "who dominates the market",
+          "market concentration",
+          "incumbent players"
+        ]
+      },
+      "disqualifying": [
+        "Only mentions 'competitive pricing pressure' under the Financial pillar — a passing modifier (F)",
+        "Only loosely mentions 'market dynamics' without a specific competitive analysis — G adjacent-dimension modifier"
+      ],
+      "info": "It's a fragmented space with a lot of big-name players (see Appendix 2)"
+    },
+    "item_6": {
+      "item_id": "item_6",
+      "trigger": "Analyst asks about or includes U.S. video-game market size specifically in framework",
+      "core_dimensional_concept": "U.S. video-game market size",
+      "release_conditions": {
+        "structural_position": [
+          "explicit clarifying question about the size of the U.S. market specifically",
+          "sub-bullet under U.S. market analysis asking for dollar value",
+          "hypothesis about U.S. market scale or share of global market",
+          "framework pillar specifically addressing domestic/U.S. market sizing"
+        ],
+        "alternative_phrasings": [
+          "U.S. market size",
+          "domestic market size",
+          "how big is the U.S. market",
+          "size of the U.S. video-game market",
+          "American market value"
+        ]
+      },
+      "disqualifying": [
+        "Touches item_4 (global market size) but does not specifically follow up on the U.S. specific value — touching item_4 does not automatically touch this item (G)",
+        "Only says 'U.S. is a large market' as a modifier — F passing"
+      ],
+      "info": "The U.S. video-game market was at $41B in 2020 (see Appendix 3)"
+    },
+    "item_7": {
+      "item_id": "item_7",
+      "trigger": "Analyst asks about or includes whether Betacer is open to other growth opportunities or alternatives to video-game market entry",
+      "core_dimensional_concept": "scope of growth strategy alternatives",
+      "release_conditions": {
+        "structural_position": [
+          "explicit clarifying question about whether other markets or growth options are on the table",
+          "framework pillar addressing strategic alternatives or options (e.g., 'Other growth avenues')",
+          "hypothesis about whether the case scope is limited to video-games only",
+          "sub-bullet asking about mandate or scope of the engagement"
+        ],
+        "alternative_phrasings": [
+          "other growth opportunities",
+          "scope of the mandate",
+          "alternatives to video-game market",
+          "are we only focused on video games",
+          "other expansion options"
+        ]
+      },
+      "disqualifying": [
+        "Only lists 'Growth strategy' as a title in the framework — a structural container mentioned loosely, without specifically asking about alternative options (G)",
+        "Only says 'strategic options' as a pillar name without follow-up — F passing"
+      ],
+      "info": "Betacer doesn't want to explore other growth opportunities but to focus on this market expansion"
+    }
+  },
+  "structure_3_case_questions": {
+    "Q1": {
+      "q_id": "Q1",
+      "type": "framework",
+      "question_text": "What factors would you consider to suggest whether Betacer should enter the video-game market?",
+      "information_to_share_upfront": null,
+      "information_upon_request": "See structure_2 items 1-7. Release only items by semantic touch; not by mere keyword presence.",
+      "state_machine": {
+        "next_question": "Q2",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable framework answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q2": {
+      "q_id": "Q2",
+      "type": "qualitative",
+      "question_text": "How do customers choose which video-game to purchase?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q3",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q3": {
+      "q_id": "Q3",
+      "type": "qualitative",
+      "question_text": "What synergies might Betacer capture by entering the video-game market?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q4",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q4": {
+      "q_id": "Q4",
+      "type": "quantitative",
+      "question_text": "How many customers should Betacer attract to payback their $1M investment in a smartphone game \"Treasure Hunters\" within 2 years after launch?",
+      "information_to_share_upfront": [
+        "Betacer plans to invest $1M in the design and development of a smartphone game 'Treasure Hunters'",
+        "The game is going to be free with in-game purchases"
+      ],
+      "information_upon_request": [
+        {
+          "item_id": "Q4_item_1",
+          "trigger": "Analyst asks about or includes app store commission rate in calculation approach",
+          "core_dimensional_concept": "app store commission rate",
+          "release_conditions": {
+            "structural_position": [
+              "explicit clarifying question about app store fee or revenue split",
+              "sub-bullet in calculation setup asking about platform cost",
+              "hypothesis about commission or take rate",
+              "numbered enumeration listing commission as a required variable"
+            ],
+            "alternative_phrasings": [
+              "platform fee",
+              "revenue share with app store",
+              "Apple/Google commission",
+              "take rate",
+              "distribution fee"
+            ]
+          },
+          "disqualifying": [
+            "Only loosely mentions 'distribution costs' without following up on the specific commission rate — G adjacent-dimension modifier (G)",
+            "Only mentions 'platform dependency risk' under the Risk pillar — F passing (F)"
+          ],
+          "info": "Typical commission of app stores (e.g. Apple App Store, Google Play, Microsoft Store) is 30%"
+        },
+        {
+          "item_id": "Q4_item_2",
+          "trigger": "Analyst asks about or includes annual operating expenditure (opex) beyond capex in calculation",
+          "core_dimensional_concept": "annual operating expenditure",
+          "release_conditions": {
+            "structural_position": [
+              "explicit clarifying question about ongoing costs or annual opex",
+              "sub-bullet in cost structure setup asking about operating costs",
+              "hypothesis about maintenance or running costs",
+              "enumeration listing opex as a required variable"
+            ],
+            "alternative_phrasings": [
+              "ongoing costs",
+              "annual costs",
+              "maintenance costs",
+              "operating costs",
+              "running costs",
+              "opex"
+            ]
+          },
+          "disqualifying": [
+            "Only asks for 'total investment' or 'capex' without following up on the year-by-year opex — G adjacent-dimension modifier (G)",
+            "Only loosely mentions 'costs' as a pillar name without following up on the specific value — F passing (F)"
+          ],
+          "info": "Expected annual opex is $0.2M (apart from app store commission)"
+        },
+        {
+          "item_id": "Q4_item_3",
+          "trigger": "Analyst asks about or includes average spending per paying user in calculation",
+          "core_dimensional_concept": "average spending per paying user",
+          "release_conditions": {
+            "structural_position": [
+              "explicit clarifying question about how much each paying user spends",
+              "sub-bullet in revenue model setup asking about ARPU or spend per user",
+              "hypothesis about revenue per paying customer",
+              "enumeration listing spending per user as a required variable"
+            ],
+            "alternative_phrasings": [
+              "ARPU",
+              "average revenue per user",
+              "spending per paying customer",
+              "in-app purchase amount",
+              "average transaction value"
+            ]
+          },
+          "disqualifying": [
+            "Only asks 'how many users' without following up on per-user spend — G adjacent-dimension modifier (G)",
+            "Only asks about the 'monetization model' in a loose, general way — F passing (F)"
+          ],
+          "info": "Average spending per paying user for similar games is $120"
+        },
+        {
+          "item_id": "Q4_item_4",
+          "trigger": "Analyst asks about or includes share of paying users among all users (conversion rate) in calculation",
+          "core_dimensional_concept": "share of paying users",
+          "release_conditions": {
+            "structural_position": [
+              "explicit clarifying question about what percentage of users pay",
+              "sub-bullet in revenue model asking about conversion rate or paying user ratio",
+              "hypothesis about freemium conversion rate",
+              "enumeration listing paying user share as a required variable"
+            ],
+            "alternative_phrasings": [
+              "conversion rate",
+              "paying user ratio",
+              "percentage of users who pay",
+              "freemium conversion",
+              "monetization rate",
+              "paying vs free users"
+            ]
+          },
+          "disqualifying": [
+            "Only asks for 'total users needed' without following up on the paying-user proportion — G adjacent-dimension modifier (G)",
+            "Only mentions 'low monetization risk' under the Risk pillar — F passing (F)"
+          ],
+          "info": "Share of paying users among all users is 5%"
+        }
+      ],
+      "appendix": {
+        "appendix_1": {
+          "title": "Global video-game market size by segment",
+          "release_rule": "Share upfront with analyst at the start of Q4 only if analyst asks for market context; primarily for Q1 reference — see structure_2 item_4",
+          "note": "Appendix 1 is primarily released via structure_2 item_4 (global market size). For Q4, the relevant data is the calculation inputs provided upfront and upon request.",
+          "chart_data": {
+            "description": "Stacked bar chart showing global video-game market size by segment (Browser PC, Boxed/Downloaded PC, Console, Tablet, Smartphone) in Bn USD 2018-2020",
+            "2018_total_Bn": 138,
+            "2019_total_Bn": 146,
+            "2020_total_Bn": 175
+          }
+        },
+        "appendix_2": {
+          "title": "Competitive landscape of global video-game market",
+          "release_rule": "Share when released via structure_2 item_5 (competitive landscape dimension touched)",
+          "chart_data": {
+            "description": "Pie chart showing market share % (2020, software sales only)",
+            "market_size_2020": "$175B",
+            "players": {
+              "Tencent": "15%",
+              "Sony": "12%",
+              "Apple": "9%",
+              "Microsoft": "8%",
+              "Nintendo": "6%",
+              "Google": "6%",
+              "Activision_Blizzard": "5%",
+              "Other_less_than_5pct": "40%"
+            },
+            "note": "Software sales only, excludes hardware sales"
+          }
+        },
+        "appendix_3": {
+          "title": "Global video-game market size by region",
+          "release_rule": "Share when released via structure_2 item_6 (U.S. market size dimension touched)",
+          "chart_data": {
+            "description": "Stacked bar chart showing market by region (Middle East and Africa, Latin America, Europe, North America, Asia-Pacific) in Bn USD 2018-2020",
+            "2018_total_Bn": 138,
+            "2019_total_Bn": 146,
+            "2020_total_Bn": 175,
+            "US_market_Bn": {
+              "2018": 30,
+              "2019": 34,
+              "2020": 41
+            }
+          }
+        }
+      },
+      "state_machine": {
+        "next_question": "Q5",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides numerical answer and/or contextualization (minimum_expected met, or 2nd attempt completed). Per §4.3.C: if analyst gets wrong answer twice, provide correct answer (330k or 333k) before proceeding to Q5.",
+        "max_attempts": 2,
+        "scoring_on_transition": {
+          "attempt_1_correct": "Full score",
+          "attempt_2_correct": "0 score per core_principles",
+          "both_attempts_wrong": "0 score; interviewer provides correct answer before Q5"
+        }
+      }
+    },
+    "Q5": {
+      "q_id": "Q5",
+      "type": "qualitative",
+      "question_text": "The project manager bumped into you at the elevator and asked you to summarize your current recommendations.",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": null,
+        "skip_logic": false,
+        "transition_condition": "Case ends after Q5"
+      }
+    }
+  },
+  "structure_4_ground_truth": {
+    "Q1_ground_truth": {
+      "type": "framework",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_video_game_market": {
+          "keypoints": [
+            "Size and growth rate",
+            "Major video-game producers",
+            "Typical profitability",
+            "Substitutes (e.g. TV-streaming services, leisure activities)"
+          ],
+          "subtotal": 4
+        },
+        "pillar_2_betacer": {
+          "keypoints": [
+            "Target customer segments (e.g. children or adults; low-end/high-end)",
+            "Offerings (video-game types and platforms; etc.)",
+            "Planned distribution channels"
+          ],
+          "subtotal": 3
+        },
+        "pillar_3_financial_assessment": {
+          "keypoints": [
+            "Expected profitability - Forecasted revenue and market share",
+            "Expected profitability - Estimated costs",
+            "Required capex",
+            "Payback period"
+          ],
+          "subtotal": 4
+        },
+        "pillar_4_potential_market_entry_risks": {
+          "keypoints": [
+            "Market specific",
+            "Financial",
+            "Operational"
+          ],
+          "subtotal": 3
+        }
+      },
+      "total_keypoints": 14,
+      "minimum_expected": "At least 2 pillars covered with substantive keypoints (e.g. market analysis + financial assessment)",
+      "outstanding_threshold": "All 4 pillars covered, with at least 2 keypoints per pillar including financial sub-items"
+    },
+    "Q2_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_great_perception": {
+          "keypoints": [
+            "Know and heard about the video-game a lot (high brand awareness due to marketing campaigns, promotions, etc.)",
+            "Social pressure (a lot of their peers play this game and they don't want to miss out)",
+            "Peers highly recommended this video-game",
+            "High rankings",
+            "Positive reviews"
+          ],
+          "subtotal": 5
+        },
+        "pillar_2_appealing_pricing": {
+          "keypoints": [
+            "Free or appealing pricing (both one-time and in-game purchases)",
+            "No need to purchase a new platform (e.g. console or PC) and thus no additional costs"
+          ],
+          "subtotal": 2
+        },
+        "pillar_3_convenient_distribution": {
+          "keypoints": [
+            "Like any software, video-games are fairly easy to find and purchase online, through app store at smartphone, or tablet",
+            "Easy to find and purchase - available at app store or online"
+          ],
+          "subtotal": 2
+        },
+        "pillar_4_attractive_value_proposition": {
+          "keypoints": [
+            "Platform compatible (e.g. platform doesn't require console)",
+            "Matches preferred game type (e.g. fights, strategy)",
+            "Offers high-value features (e.g. in-game social interaction with friends, team-based activities)",
+            "Sense of novelty, clearly differentiated type of a game"
+          ],
+          "subtotal": 4
+        }
+      },
+      "total_keypoints": 13,
+      "minimum_expected": "At least 3 distinct purchase decision factors covered across at least 2 dimensions",
+      "outstanding_threshold": "At least 6-7 keypoints covered across 3-4 pillars"
+    },
+    "Q3_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_revenue_synergies": {
+          "keypoints": [
+            "Leverage established distribution infrastructure for offline sales of video-games",
+            "More bundling options (Betacer's laptop or smartphone + video-games at a discount)",
+            "Capitalize on Betacer's high brand awareness to promote video-games",
+            "Launch co-marketing campaigns to promote video-games"
+          ],
+          "subtotal": 4
+        },
+        "pillar_2_cost_synergies": {
+          "keypoints": [
+            "Shared overhead (e.g. management, central services)",
+            "Potentially better markups from distribution partners for larger overall sales (electronics and video-games)"
+          ],
+          "subtotal": 2
+        }
+      },
+      "total_keypoints": 6,
+      "minimum_expected": "At least 2 synergy points covered, ideally spanning revenue and cost dimensions",
+      "outstanding_threshold": "At least 4 synergy points covered including both revenue and cost synergies"
+    },
+    "Q4_ground_truth": {
+      "type": "quantitative",
+      "quantitative_part": {
+        "correct_final_answer": "333k users (precise) — also accept 330k (casebook rounded result). Per A3-Q5 rule: $1.4M ÷ $4.2 = 333,333 ≈ 333k precisely; casebook displays 330k as rounded approximation. Both values accepted.",
+        "accepted_values": [
+          333000,
+          330000
+        ],
+        "tolerance_pct": 0.02,
+        "zero_tolerance": false,
+        "scoring_method": "Binary: correct number = full credit; incorrect = zero credit. Accept both 330k and 333k; any other value = zero credit.",
+        "calculation_steps": {
+          "step_1_contribution_margin_per_paying_user": {
+            "formula": "Average spending per paying user × share of paying users × (1 - app store commission) = $120 × 5% × (1 - 30%)",
+            "result": "$120 × 0.05 × 0.70 = $4.20 per total user"
+          },
+          "step_2_total_costs_over_2_years": {
+            "formula": "Annual opex × 2 years + capex = $0.2M × 2 + $1M",
+            "result": "$0.4M + $1.0M = $1.4M"
+          },
+          "step_3_number_of_users_to_payback": {
+            "formula": "Total costs ÷ contribution margin per user = $1.4M ÷ $4.20",
+            "result": "333,333 users ≈ 333k (precise); casebook shows 330k"
+          }
+        }
+      },
+      "qualitative_part": {
+        "scoring_note": "Qualitative portion of Q4 is scored as 100% total, split into two tiers. Within each tier, use 3-level scoring per",
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "tier_1_basic": {
+          "weight_of_Q4_qualitative_total": "50%",
+          "keypoints": [
+            "In order to payback within 2 years their investment Betacer should attract 330k users for their smartphone game 'Treasure Hunters'"
+          ],
+          "note": "Expected from every candidate. Single point worth 50% of qualitative score."
+        },
+        "tier_2_advanced": {
+          "weight_of_Q4_qualitative_total": "50%",
+          "points_available": 4,
+          "weight_per_point": "12.5% of qualitative total",
+          "keypoints": [
+            "330k users sound realistic as it is a fraction of the U.S. market and Betacer enjoys deep marketing pockets to ensure aggressive promotion",
+            "$2M in sales [330k × $120 × 5%] also seems manageable",
+            "Given this is going to be the first Betacer's experience in the video-game production, there might be some bugs and flaws in design that would likely hurt the sales",
+            "The smartphone game space is extremely crowded and in order to keep healthy sales of Betacer's game the client should ensure sustainable marketing support which might exceed $0.2M in annual opex"
+          ],
+          "note": "Not expected from every candidate. Each advanced point adds 12.5% to qualitative score."
+        },
+        "minimum_expected": "Correct numerical answer + Tier 1 basic contextualization (covered)",
+        "outstanding_threshold": "Correct numerical answer + Tier 1 covered + at least 2 Tier 2 advanced comments covered"
+      }
+    },
+    "Q5_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_recommendation": {
+          "keypoints": [
+            "Based on our initial assessment, the U.S. video-game market seems fundamentally attractive for Betacer to enter"
+          ],
+          "subtotal": 1
+        },
+        "pillar_2_reasoning": {
+          "keypoints": [
+            "It's a $41B space that has been experiencing exponential growth and grew by 30-40% during 2018-20",
+            "The competitive landscape is fairly fragmented with no clear dominating player which offers space for new entrants",
+            "Betacer will likely be able to payback their investment within 2 years after launch"
+          ],
+          "subtotal": 3
+        },
+        "pillar_3_risks": {
+          "keypoints": [
+            "There are some risks to consider like product-market mismatch as for Betacer it is going to be the first experience and their video-game might not find healthy appetite among users",
+            "Secondly, the competitive landscape might start consolidating",
+            "Thirdly, our assumptions for financial modeling might not be validated"
+          ],
+          "subtotal": 3
+        },
+        "pillar_4_next_steps": {
+          "keypoints": [
+            "As for our next steps, I would suggest design a risk mitigation plan and develop a go-to-market roadmap"
+          ],
+          "subtotal": 1
+        }
+      },
+      "total_keypoints": 8,
+      "minimum_expected": "Recommendation pillar covered (clear enter/not enter conclusion) + at least 1 reasoning point covered",
+      "outstanding_threshold": "All 4 pillars covered, including recommendation + at least 2 reasoning points + at least 1 risk"
+    }
+  },
+  "state_machine_global": {
+    "case_type": "interviewer_driven",
+    "skip_logic": false,
+    "mandatory_sequence": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5"
+    ],
+    "rules": [
+      "Q1 cannot be skipped under any circumstances",
+      "Questions must proceed in linear order Q1 → Q2 → Q3 → Q4 → Q5",
+      "A question may not be advanced until the current question receives a scoreable answer (1st or 2nd attempt)",
+      "If analyst pre-covers a later question's keypoints in an earlier answer, record as pre-coverage but still ask the later question in sequence",
+      "No question may be skipped even if pre-covered",
+      "Q4 max 2 attempts; if both wrong, provide correct answer (330k / 333k) before proceeding to Q5 perC"
+    ]
+  },
+  "scoring_summary": {
+    "Q1": {
+      "type": "framework",
+      "total_keypoints": 14,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q2": {
+      "type": "qualitative",
+      "total_keypoints": 13,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q3": {
+      "type": "qualitative",
+      "total_keypoints": 6,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q4": {
+      "type": "quantitative",
+      "part_1_quantitative": {
+        "correct_answer": "330k or 333k users (both accepted per A3-Q5 dual-answer rule)",
+        "zero_tolerance": true,
+        "scoring": "Binary: Full credit if 330k or 333k; zero credit for any other value"
+      },
+      "part_2_qualitative": {
+        "total_keypoints": 5,
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "human_review_priority": "false-partial > false-not-covered > covered",
+        "tier_1_basic": {
+          "keypoints": 1,
+          "weight": "50% of qualitative score"
+        },
+        "tier_2_advanced": {
+          "keypoints": 4,
+          "weight_per_point": "12.5% of qualitative score",
+          "weight_total": "50% of qualitative score"
+        }
+      }
+    },
+    "Q5": {
+      "type": "qualitative",
+      "total_keypoints": 8,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    }
+  }
+}

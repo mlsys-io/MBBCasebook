@@ -1,0 +1,757 @@
+{
+  "case_id": "024",
+  "version": "v1",
+  "source": {
+    "title": "DrugGen",
+    "inspired_by": "Kearney",
+    "year": "2020",
+    "author": "Peter K.",
+    "reference": "Peter-K.org, Case #24",
+    "casebook_abbr": "PK21"
+  },
+  "case_type": "interviewer_driven",
+  "case_type_origin": "candidate_led",
+  "annotation_mode": "CL_to_IL_override",
+  "case_arch": {
+    "primary": "Comparison",
+    "tags": [
+      "Comparison",
+      "Investment Decision",
+      "Operational Efficiency"
+    ]
+  },
+  "difficulty": "Hard",
+  "industry": "Pharmaceutical / Oncology",
+  "topic": "Comparison decision — whether to switch to new packaging for an oncology drug",
+  "expected_duration_minutes": "20",
+  "opening_prompt": "Hi, I'd like to solve some consulting cases with you. Pls be a good interviewee to have a potential test in consulting cases. For the case problem-solving, pls do not assume any numbers or assumptions before my confirmation. I will give you the context upon request. I need you to answer the following questions for the client. Before you start, feel free to ask me 2-3 clarifying questions about the client.\n\nQ1: What factors do you need to consider to help DrugGen determine if they should switch to the new packaging?\nQ2: What are potential non-financial benefits and disadvantages of the new packaging?\nQ3: How do you think the patients would react to the new packaging?\nQ4: What incremental annual profit should DrugGen expect after introduction of the new packaging?\nQ5: You are at the client's meeting and your manager asks you to summarize your recommendations.\n\nHere is the basic context for the client:\nDrugGen is a U.S.-based drug company. Given trends toward patient compliance and eco-friendliness, they are considering changing the packaging of an oncology drug. After assessing a lot of options (plastic bottles, parenteral containers, blister packaging, pens, etc.) through a set of strict requirements (like cold storage, enhanced protection against moisture, oxygen and other gases, unit-dose control, counterfeit protection, child-resistant properties, and cost efficiency) DrugGen identified a potential new cold chain tech packaging. The CEO has hired you to suggest if they should go for it.",
+  "structure_1_client_basic_context": {
+    "company": "DrugGen",
+    "type": "U.S.-based drug company",
+    "situation": "Given trends toward patient compliance and eco-friendliness, they are considering changing the packaging of an oncology drug. After assessing a lot of options (plastic bottles, parenteral containers, blister packaging, pens, etc.) through a set of strict requirements (like cold storage, enhanced protection against moisture, oxygen and other gases, unit-dose control, counterfeit protection, child-resistant properties, and cost efficiency) DrugGen identified a potential new cold chain tech packaging.",
+    "action": "Considering switching to the new cold chain tech packaging",
+    "ask": "The CEO has hired you to suggest if they should go for it."
+  },
+  "structure_2_information_upon_request": {
+    "item_1": {
+      "item_id": "item_1",
+      "trigger": "Analyst asks about or includes 'packaging characteristics' or 'what the new packaging is' in framework",
+      "core_dimensional_concept": "new packaging composition and temperature requirements",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet under 'DrugGen's oncology drug' or 'Properties of new packaging'",
+          "explicit clarifying question about packaging type or specs",
+          "hypothesis about packaging technology"
+        ],
+        "alternative_phrasings": [
+          "packaging specs",
+          "cold chain",
+          "temperature-controlled packaging",
+          "packaging technology"
+        ]
+      },
+      "disqualifying": [
+        "Only mentions 'packaging failure risk' under the Risk pillar — packaging here merely modifies the risk dimension, not packaging itself (F passing)"
+      ],
+      "info": "New packaging comprises a low temperature container"
+    },
+    "item_2": {
+      "item_id": "item_2",
+      "trigger": "Analyst asks about or includes 'patient dosage' or 'drug regimen' or 'dosage frequency' in framework",
+      "core_dimensional_concept": "patient drug regimen and daily dosage",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet under 'DrugGen's oncology drug' or 'Patient population'",
+          "explicit clarifying question about how patients take the drug",
+          "sub-bullet under dosage/frequency pillar"
+        ],
+        "alternative_phrasings": [
+          "dosage",
+          "daily pills",
+          "drug intake",
+          "pill count",
+          "treatment regimen"
+        ]
+      },
+      "disqualifying": [
+        "Only says 'patient compliance' without specifically asking about the medication method — compliance is an outcome dimension, not the dosing-regimen subject itself (G adjacent-dimension modifier)"
+      ],
+      "info": "Patients take 4 pills of this drug and then 2 additional generic steroids per day"
+    },
+    "item_3": {
+      "item_id": "item_3",
+      "trigger": "Analyst asks about or includes 'competitive landscape' or 'market competition' in framework",
+      "core_dimensional_concept": "competitor count and competitive intensity in oncology drug market",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet under 'Risk analysis' or 'Strategic benefits' or 'Market-specific'",
+          "explicit clarifying question about competitors or market players",
+          "hypothesis about competition level"
+        ],
+        "alternative_phrasings": [
+          "competitors",
+          "other pharma companies",
+          "market players",
+          "competitive environment",
+          "alternatives to DrugGen's drug"
+        ]
+      },
+      "disqualifying": [
+        "Only says 'competitive response risk' without asking about the number of competitors or the landscape — risk is an outcome, not the competitor subject itself (F passing)"
+      ],
+      "info": "Five other pharma companies offer similar oncology drugs"
+    },
+    "item_4": {
+      "item_id": "item_4",
+      "trigger": "Analyst asks about or includes 'distribution' or 'geographic reach' or 'market geography' in framework",
+      "core_dimensional_concept": "DrugGen distribution scope and geographic footprint",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet under 'Strategic benefits' or 'Operational improvements' or 'Distribution'",
+          "explicit clarifying question about where DrugGen sells or distributes",
+          "sub-bullet under New opportunities or geo expansion"
+        ],
+        "alternative_phrasings": [
+          "global distribution",
+          "geographic reach",
+          "markets served",
+          "where does DrugGen sell",
+          "international presence"
+        ]
+      },
+      "disqualifying": [
+        "Only says 'transportation logistics' without touching DrugGen's global sales scope — logistics is an operational layer, not the geographic-coverage subject itself (G adjacent-dimension modifier)"
+      ],
+      "info": "DrugGen distributes this drug globally"
+    },
+    "item_5": {
+      "item_id": "item_5",
+      "trigger": "Analyst asks about or includes 'market share' or 'market size' or 'sales volume' in framework",
+      "core_dimensional_concept": "DrugGen market share and annual sales volume",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet under 'Financial assessment' or 'Impact on revenue' or 'Market-specific'",
+          "explicit clarifying question about DrugGen's market position or volume",
+          "hypothesis about current sales scale"
+        ],
+        "alternative_phrasings": [
+          "market share",
+          "sales volume",
+          "units sold",
+          "market position",
+          "how much does DrugGen sell"
+        ]
+      },
+      "disqualifying": [
+        "Only says 'revenue impact' without asking about the specific market-share or sales-volume figure — revenue is a financial metric, not the market-share subject itself (G adjacent-dimension modifier)"
+      ],
+      "info": "DrugGen captures 1-2% of the global market, or 20k units of drug per year"
+    },
+    "item_6": {
+      "item_id": "item_6",
+      "trigger": "Analyst asks about or includes 'drug price' or 'pricing' or 'revenue per unit' in framework",
+      "core_dimensional_concept": "drug price per monthly supply",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet under 'Financial assessment' or 'Impact on revenue'",
+          "explicit clarifying question about what the drug costs or its price point",
+          "hypothesis about revenue per patient"
+        ],
+        "alternative_phrasings": [
+          "price per unit",
+          "drug price",
+          "revenue per patient",
+          "monthly cost",
+          "price point"
+        ]
+      },
+      "disqualifying": [
+        "Only says 'pricing strategy' without asking about the current drug price — strategy is an action direction, not the current-price subject itself (G adjacent-dimension modifier)"
+      ],
+      "info": "The drug's price is $4k for monthly supply (120 pills)"
+    },
+    "item_7": {
+      "item_id": "item_7",
+      "trigger": "Analyst asks about or includes 'patient population growth' or 'market growth' or 'demand trends' in framework",
+      "core_dimensional_concept": "patient population size trend for this cancer type",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet under 'Strategic benefits' or 'New opportunities' or 'Market-specific'",
+          "explicit clarifying question about market growth or patient population dynamics",
+          "hypothesis about addressable market expansion"
+        ],
+        "alternative_phrasings": [
+          "patient population",
+          "market growth",
+          "demand growth",
+          "cancer prevalence trend",
+          "addressable market size"
+        ]
+      },
+      "disqualifying": [
+        "Only says 'patient experience improvement' without asking whether patient volume grows — experience is a service-quality dimension, not the population-size subject itself (F passing)"
+      ],
+      "info": "The patient population for this cancer type isn't expanding"
+    },
+    "item_8": {
+      "item_id": "item_8",
+      "trigger": "Analyst asks about or includes 'client goals' or 'strategic objectives' or 'financial targets' in framework",
+      "core_dimensional_concept": "client strategic goals and financial targets",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet under 'Financial assessment' or 'Strategic benefits'",
+          "explicit clarifying question about DrugGen's objectives or success criteria",
+          "hypothesis about what DrugGen wants to achieve"
+        ],
+        "alternative_phrasings": [
+          "client goals",
+          "objectives",
+          "KPIs",
+          "success metrics",
+          "what does the client want to achieve"
+        ]
+      },
+      "disqualifying": [
+        "Only mentions 'financial risk' under the Risk pillar without asking about the goal or objective — risk is an outcome dimension, not the target itself (G adjacent-dimension modifier)"
+      ],
+      "info": "No specific goals provided"
+    }
+  },
+  "structure_3_case_questions": {
+    "Q1": {
+      "q_id": "Q1",
+      "type": "framework",
+      "question_text": "What factors do you need to consider to help DrugGen determine if they should switch to the new packaging?",
+      "information_to_share_upfront": null,
+      "information_upon_request": "See structure_2 items 1-8. Release only items per semantic touch judgment; not by mere keyword presence.",
+      "state_machine": {
+        "next_question": "Q2",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable framework answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q2": {
+      "q_id": "Q2",
+      "type": "qualitative",
+      "question_text": "What are potential non-financial benefits and disadvantages of the new packaging?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q3",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q3": {
+      "q_id": "Q3",
+      "type": "qualitative",
+      "question_text": "How do you think the patients would react to the new packaging?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q4",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q4": {
+      "q_id": "Q4",
+      "type": "quantitative",
+      "question_text": "What incremental annual profit should DrugGen expect after introduction of the new packaging?",
+      "information_to_share_upfront": [
+        "Patients take 4 pills of this drug per day and then 2 additional generic steroids",
+        "Current packaging has monthly supply of the drug only",
+        "The new packaging will have monthly supply of the drug and generic steroids",
+        "DrugGen sells 20k units of monthly supply per year",
+        "The drug's price is $4k for monthly supply"
+      ],
+      "information_upon_request": [
+        {
+          "item_id": "Q4_item_1",
+          "trigger": "Analyst asks about or includes 'current packaging cost' or 'cost of current packaging' in calculation setup",
+          "core_dimensional_concept": "current packaging cost per unit",
+          "release_conditions": {
+            "structural_position": [
+              "explicit clarifying question about current packaging cost",
+              "variable in calculation steps for current contribution margin",
+              "hypothesis about packaging cost"
+            ],
+            "alternative_phrasings": [
+              "current packaging cost",
+              "old packaging cost",
+              "packaging cost today"
+            ]
+          },
+          "disqualifying": [
+            "Only says 'cost analysis' without specifically asking about the current packaging's unit cost — cost analysis is a broad framework dimension, not the specific current packaging cost (G adjacent-dimension modifier)"
+          ],
+          "info": "Current packaging costs $160"
+        },
+        {
+          "item_id": "Q4_item_2",
+          "trigger": "Analyst asks about or includes 'drug production cost' or 'cost per pill' in calculation setup",
+          "core_dimensional_concept": "production cost per pill of the oncology drug",
+          "release_conditions": {
+            "structural_position": [
+              "explicit clarifying question about manufacturing or production cost per pill",
+              "variable in contribution margin calculation",
+              "hypothesis about unit production cost"
+            ],
+            "alternative_phrasings": [
+              "cost to produce",
+              "manufacturing cost",
+              "COGS per pill",
+              "variable cost per pill"
+            ]
+          },
+          "disqualifying": [
+            "Only says 'production cost reduction potential' without asking about the current drug production cost — discussing potential cuts is forward-looking, not the current-cost subject itself (G adjacent-dimension modifier)"
+          ],
+          "info": "The production cost of the drug is $7 per pill"
+        },
+        {
+          "item_id": "Q4_item_3",
+          "trigger": "Analyst asks about or includes 'generic steroid cost' or 'steroid pill cost' in calculation setup",
+          "core_dimensional_concept": "cost per pill of generic steroid",
+          "release_conditions": {
+            "structural_position": [
+              "explicit clarifying question about the steroid cost per pill",
+              "variable in new contribution margin calculation",
+              "hypothesis about steroid cost"
+            ],
+            "alternative_phrasings": [
+              "steroid cost",
+              "generic drug cost",
+              "additional pill cost",
+              "cost per generic pill"
+            ]
+          },
+          "disqualifying": [
+            "Only says 'additional components cost' without specifically asking for the steroid unit price — a broad components cost cannot precisely touch single-drug pricing (G adjacent-dimension modifier)"
+          ],
+          "info": "The cost of a generic steroid is $1 per pill"
+        },
+        {
+          "item_id": "Q4_item_4",
+          "trigger": "Analyst asks about or includes 'new packaging cost' or 'cost of the new packaging' in calculation setup",
+          "core_dimensional_concept": "new packaging cost per unit",
+          "release_conditions": {
+            "structural_position": [
+              "explicit clarifying question about new packaging cost",
+              "variable in new contribution margin calculation",
+              "hypothesis about new packaging unit cost"
+            ],
+            "alternative_phrasings": [
+              "new packaging cost",
+              "cold chain packaging cost",
+              "cost of proposed packaging"
+            ]
+          },
+          "disqualifying": [
+            "Only says 'total implementation cost' without asking for the new packaging's unit cost — implementation cost may include equipment investment etc., not the new-packaging unit price itself (G adjacent-dimension modifier)"
+          ],
+          "info": "New packaging will cost $200"
+        },
+        {
+          "item_id": "Q4_item_5",
+          "trigger": "Analyst asks about or includes 'demand increase' or 'sales growth' or 'patient adherence impact on volume' in calculation setup",
+          "core_dimensional_concept": "expected demand growth rate due to higher patient adherence",
+          "release_conditions": {
+            "structural_position": [
+              "explicit clarifying question about demand uplift or volume growth",
+              "variable in new annual gross profit calculation",
+              "hypothesis about sales increase from better adherence"
+            ],
+            "alternative_phrasings": [
+              "demand growth",
+              "volume increase",
+              "adherence-driven sales uplift",
+              "growth rate",
+              "5% increase"
+            ]
+          },
+          "disqualifying": [
+            "Only says 'patient adherence improves' without asking for the expected demand-increase figure — qualitatively mentioning adherence does not touch the growth-rate subject itself (F passing)"
+          ],
+          "info": "Due to higher patient adherence we expect increase in drug consumption and growth in demand for DrugGen's drug by 5%"
+        },
+        {
+          "item_id": "Q4_item_6",
+          "trigger": "Analyst asks about or includes 'variable cost assumptions' or 'other variable costs' in calculation setup",
+          "core_dimensional_concept": "other variable cost assumptions beyond packaging and drug",
+          "release_conditions": {
+            "structural_position": [
+              "explicit clarifying question about whether there are other variable costs",
+              "variable cost list in contribution margin calculation",
+              "assumption check about cost completeness"
+            ],
+            "alternative_phrasings": [
+              "other costs",
+              "additional variable costs",
+              "cost structure",
+              "are there other costs"
+            ]
+          },
+          "disqualifying": [
+            "Only says 'fixed costs' without asking about other variable costs — the fixed-cost topic does not touch confirmation of other variable costs (G adjacent-dimension modifier)"
+          ],
+          "info": "We assume there are no other variable costs except mentioned above"
+        },
+        {
+          "item_id": "Q4_item_7",
+          "trigger": "Analyst asks about or includes 'fixed cost changes' or 'fixed cost impact' in calculation setup",
+          "core_dimensional_concept": "fixed cost behavior after demand increase",
+          "release_conditions": {
+            "structural_position": [
+              "explicit clarifying question about whether fixed costs change with 5% demand increase",
+              "assumption in profit calculation about fixed costs",
+              "hypothesis about cost structure scalability"
+            ],
+            "alternative_phrasings": [
+              "fixed costs",
+              "overhead costs",
+              "do fixed costs change",
+              "cost leverage"
+            ]
+          },
+          "disqualifying": [
+            "Only says 'operational cost efficiency' without asking whether fixed costs change after 5% demand growth — efficiency is an outcome, not the fixed-cost-behavior subject itself (G adjacent-dimension modifier)"
+          ],
+          "info": "Fixed costs aren't going to change after 5% increase in demand"
+        }
+      ],
+      "state_machine": {
+        "next_question": "Q5",
+        "skip_logic": false,
+        "max_attempts": 2,
+        "scoring_on_transition": {
+          "attempt_1_correct": "Full score",
+          "attempt_2_correct": "0 score per core_principles",
+          "both_attempts_wrong": "0 score; interviewer provides correct answer before next question"
+        },
+        "transition_condition": "Analyst provides correct numerical answer, or 2nd attempt completed"
+      }
+    },
+    "Q5": {
+      "q_id": "Q5",
+      "type": "qualitative",
+      "question_text": "You are at the client's meeting and your manager asks you to summarize your recommendations.",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": null,
+        "skip_logic": false,
+        "transition_condition": "Case ends after Q5"
+      }
+    }
+  },
+  "structure_4_ground_truth": {
+    "Q1_ground_truth": {
+      "type": "framework",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_druggen_oncology_drug": {
+          "keypoints": [
+            "Patient population",
+            "Dosage, frequency",
+            "Properties of the current and potential new packaging"
+          ],
+          "subtotal": 3
+        },
+        "pillar_2_financial_assessment": {
+          "keypoints": [
+            "Planned investment (e.g. new packaging equipment, marketing)",
+            "Impact on revenue",
+            "Expected change in opex"
+          ],
+          "subtotal": 3
+        },
+        "pillar_3_strategic_benefits": {
+          "keypoints": [
+            "New opportunities",
+            "Operational improvements",
+            "Impact on patient experience",
+            "Risks mitigation"
+          ],
+          "subtotal": 4
+        },
+        "pillar_4_risk_analysis": {
+          "keypoints": [
+            "Market-specific",
+            "Financial",
+            "Operational"
+          ],
+          "subtotal": 3
+        }
+      },
+      "total_keypoints": 13,
+      "minimum_expected": "At least 2 pillars covered with 2+ keypoints each; financial assessment and strategic benefits must both appear",
+      "outstanding_threshold": "All 4 pillars covered with most keypoints; structured top-down 15-sec overview given"
+    },
+    "Q2_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_new_opportunities": {
+          "keypoints": [
+            "Larger geo footprint if it allows longer distance transportation",
+            "Brand implications depending on patient experience and level of eco-friendliness"
+          ],
+          "subtotal": 2
+        },
+        "pillar_2_operational_considerations": {
+          "sub_pillar_production": {
+            "keypoints": [
+              "Shorter/longer production cycle",
+              "Change in waste/spoilage",
+              "Higher supply chain security if more suppliers can offer this new packaging",
+              "Change to operational complexity",
+              "Change to minimal production batch and thus planning flexibility"
+            ],
+            "subtotal": 5
+          },
+          "sub_pillar_storage": {
+            "keypoints": [
+              "Limited storage facilities due to potential need for special fridges",
+              "Less/more storage space needed"
+            ],
+            "subtotal": 2
+          },
+          "sub_pillar_transportation": {
+            "keypoints": [
+              "Less energy to ship if lightweight vs heavy",
+              "Less flexibility if requires specialized freeze trucks"
+            ],
+            "subtotal": 2
+          },
+          "sub_pillar_distribution": {
+            "keypoints": [
+              "Enhanced/ shortened shelf life",
+              "Potentially limited distribution partners if requires special freezers to store"
+            ],
+            "subtotal": 2
+          },
+          "flat_keypoints": [
+            "Shorter/longer production cycle",
+            "Change in waste/spoilage",
+            "Higher supply chain security if more suppliers can offer this new packaging",
+            "Change to operational complexity",
+            "Change to minimal production batch and thus planning flexibility",
+            "Limited storage facilities due to potential need for special fridges",
+            "Less/more storage space needed",
+            "Less energy to ship if lightweight vs heavy",
+            "Less flexibility if requires specialized freeze trucks",
+            "Enhanced/ shortened shelf life",
+            "Potentially limited distribution partners if requires special freezers to store"
+          ],
+          "subtotal": 11
+        },
+        "pillar_3_patient_experience": {
+          "keypoints": [
+            "Higher/lower patient adherence",
+            "Easier or not to administer, track and dose"
+          ],
+          "subtotal": 2
+        },
+        "pillar_4_risk_mitigation": {
+          "keypoints": [
+            "Lower/higher level of counterfeit protection",
+            "Lower/higher level of contaminant properties",
+            "Lower/higher risk of spoilage or packaging/product damage"
+          ],
+          "subtotal": 3
+        }
+      },
+      "total_keypoints": 18,
+      "minimum_expected": "At least 3 categories covered with at least 1 keypoint each; operational considerations and patient experience should both appear",
+      "outstanding_threshold": "All 4 categories covered; operational sub-pillars (Production/Storage/Transportation/Distribution) all addressed; at least 4 ideas total"
+    },
+    "Q3_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_immediate_short_term_reaction": {
+          "keypoints": [
+            "Get confused or curious [if it is complicated and implies a learning curve]",
+            "Do research on whether this packaging is efficient for the drug or they should switch to other drugs with previous packaging type [e.g. pills vs capsules for injections]"
+          ],
+          "subtotal": 2
+        },
+        "pillar_2_long_term_reaction": {
+          "keypoints": [
+            "Appreciate better experience [in case it allows to easier administer, track, and control unit dose]",
+            "Spread the word [share their experience with their physician and similar patients]"
+          ],
+          "subtotal": 2
+        }
+      },
+      "total_keypoints": 4,
+      "minimum_expected": "At least 1 short-term and 1 long-term reaction covered",
+      "outstanding_threshold": "Both pillars covered with both keypoints; contextualization provided in [brackets] touched upon"
+    },
+    "Q4_ground_truth": {
+      "type": "quantitative",
+      "quantitative_part": {
+        "correct_final_answer": "$1M (casebook, using $61M rounded from $2.9k × 21k) — also accept $0.9M (exact: $2,900 × 20,000 × 1.05 = $60,900,000 → $60.9M - $60M = $0.9M); Accept both $1M and $0.9M; any other value = zero credit",
+        "accepted_values": [
+          1000000,
+          900000
+        ],
+        "tolerance_pct": 0.02,
+        "zero_tolerance": false,
+        "scoring_method": "Binary: correct number = full credit; incorrect = zero credit. Accept both $1M and $0.9M; any other value = zero credit (A3-Q5 dual-answer triggered: casebook uses rounded $61M mid-step)",
+        "calculation_steps": {
+          "step_1_current_contribution_margin": {
+            "formula": "$4k (price) - $160 (current packaging) - ($7 × 4 pills × 30 days) = $4,000 - $160 - $840",
+            "result": "$3,000 (= $3k)"
+          },
+          "step_2_current_annual_gross_profit": {
+            "formula": "$3k × 20k units",
+            "result": "$60,000,000 (= $60M)"
+          },
+          "step_3_new_contribution_margin": {
+            "formula": "$4k (price) - $200 (new packaging) - (($7 × 4 pills + $1 × 2 pills) × 30 days) = $4,000 - $200 - ($30 × 30) = $4,000 - $200 - $900",
+            "result": "$2,900 (= $2.9k)"
+          },
+          "step_4_new_annual_gross_profit": {
+            "formula": "$2,900 × 20k units × (1 + 5%) = $2,900 × 21,000",
+            "result": "$60,900,000 (casebook rounds to $61M)"
+          },
+          "step_5_incremental_annual_profit": {
+            "formula": "$61M (casebook rounded) - $60M = $1M; OR $60.9M (exact) - $60M = $0.9M",
+            "result": "$1M (casebook) or $0.9M (exact)"
+          }
+        }
+      },
+      "qualitative_part": {
+        "scoring_note": "Qualitative portion of Q4 is scored as 100% total, split into two tiers. Within each tier, use 3-level scoring per",
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "tier_1_basic": {
+          "weight_of_Q4_qualitative_total": "50%",
+          "keypoints": [
+            "The new packaging will lead to additional profit of $1M which sounds promising and DrugGen should consider adopting it"
+          ],
+          "note": "Expected from every candidate. Single point worth 50% of qualitative score."
+        },
+        "tier_2_advanced": {
+          "weight_of_Q4_qualitative_total": "50%",
+          "points_available": 4,
+          "weight_per_point": "12.5% of qualitative total",
+          "keypoints": [
+            "Such material improvement in patients' compliance might get attention of oncologists and they might start recommending DrugGen's drug expanding the client's patient base and increasing their sales even more",
+            "Other oncology drug manufacturers might appreciate the efficiency of this packaging as well and adopt it soon which will take away the competitive advantage from DrugGen",
+            "Oncology drug packaging is likely subject to strict regulation, so DrugGen should make sure that this packaging meets all the legal requirements in all the markets of DrugGen's presence",
+            "Healthy economics of this packaging is highly dependent on the assumption of 5% increase in the patient adherence which might not hold true, and this is the risk the client needs to mitigate"
+          ],
+          "note": "Not expected from every candidate. Each advanced point adds 12.5% to qualitative score."
+        },
+        "minimum_expected": "Correct numerical answer + Tier 1 basic contextualization (covered)",
+        "outstanding_threshold": "Correct numerical answer + Tier 1 covered + at least 2 Tier 2 advanced comments covered"
+      }
+    },
+    "Q5_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_recommendation": {
+          "keypoints": [
+            "DrugGen should strongly consider the launch of the new packaging"
+          ],
+          "subtotal": 1
+        },
+        "pillar_2_reasoning": {
+          "keypoints": [
+            "It is expected to strengthen the patient adherence and thus improve the treatment efficiency and contribute to the growth of sales",
+            "Cutting edge technology like this one will reinforce the positive outlook for DrugGen's brand as a R&D heavy drug manufacturer that actively invests in the latest tech",
+            "It might also offer additional benefits like counterfeit protection and longer shelf life"
+          ],
+          "subtotal": 3
+        },
+        "pillar_3_risks": {
+          "keypoints": [
+            "Financial assumptions might be off",
+            "New packaging might cause disruptions across the entire value chain in production, storage, transportation and distribution",
+            "Given potential success, we should expect strong competitive response"
+          ],
+          "subtotal": 3
+        },
+        "pillar_4_next_steps": {
+          "keypoints": [
+            "Run a pilot with a new packaging and validate some of the hypotheses",
+            "Design a detailed implementation plan and create a risk mitigation strategy"
+          ],
+          "subtotal": 2
+        }
+      },
+      "total_keypoints": 9,
+      "minimum_expected": "Recommendation pillar covered + at least 1 reasoning point covered; RRRN structure attempted",
+      "outstanding_threshold": "All 4 pillars covered; at least 2 reasoning points and at least 1 risk; next steps provided"
+    }
+  },
+  "state_machine_global": {
+    "case_type": "interviewer_driven",
+    "skip_logic": false,
+    "mandatory_sequence": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5"
+    ],
+    "rules": [
+      "Q1 cannot be skipped under any circumstances",
+      "Questions must proceed in linear order Q1 → Q2 → Q3 → Q4 → Q5",
+      "A question may not be advanced until the current question receives a scoreable answer (1st or 2nd attempt)",
+      "If analyst pre-covers a later question's keypoints in an earlier answer, record as pre-coverage but still ask the later question in sequence",
+      "No question may be skipped even if pre-covered"
+    ]
+  },
+  "scoring_summary": {
+    "Q1": {
+      "type": "framework",
+      "total_keypoints": 13,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q2": {
+      "type": "qualitative",
+      "total_keypoints": 18,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q3": {
+      "type": "qualitative",
+      "total_keypoints": 4,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q4": {
+      "type": "quantitative",
+      "part_1_quantitative": {
+        "correct_answer": "$1M (casebook) or $0.9M (exact)",
+        "zero_tolerance": true,
+        "scoring": "Binary: Full credit if correct ($1M or $0.9M); zero credit if any other value"
+      },
+      "part_2_qualitative": {
+        "total_keypoints": 5,
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "human_review_priority": "false-partial > false-not-covered > covered",
+        "tier_1_basic": {
+          "keypoints": 1,
+          "weight": "50% of qualitative score"
+        },
+        "tier_2_advanced": {
+          "keypoints": 4,
+          "weight_per_point": "12.5% of qualitative score",
+          "weight_total": "50% of qualitative score"
+        }
+      }
+    },
+    "Q5": {
+      "type": "qualitative",
+      "total_keypoints": 9,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    }
+  }
+}

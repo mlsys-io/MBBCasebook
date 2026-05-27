@@ -1,0 +1,913 @@
+{
+  "case_id": "009",
+  "version": "v1",
+  "source": {
+    "title": "Grocery Retailer",
+    "inspired_by": "BCG",
+    "year": "2020",
+    "author": "Peter K.",
+    "reference": "Peter-K.org, Case #9",
+    "casebook_abbr": "PK20"
+  },
+  "case_type": "interviewer_driven",
+  "case_type_origin": "candidate_led",
+  "annotation_mode": "CL_to_IL_override",
+  "case_arch": {
+    "primary": "Profitability",
+    "tags": [
+      "Profitability",
+      "Cost Optimization",
+      "Pricing Strategy"
+    ]
+  },
+  "difficulty": "Medium",
+  "industry": "Retail / Grocery",
+  "topic": "Profitability analysis — how competitors maintain lower prices with same margin, and negotiation strategy with key supplier (Kraft)",
+  "expected_duration_minutes": 35,
+  "opening_prompt": "Hi, I'd like to solve some consulting cases with you. Pls be a good interviewee to have a potential test in consulting cases. For the case problem-solving, pls do not assume any numbers or assumptions before my confirmation. I will give you the context upon request. I need you to answer the following questions for the client. Before you start, feel free to ask me 2-3 clarifying questions about the client.\n\nQ1. How do other players offer lower prices for some product categories and keep the same profit margin? (before framework)\nQ2. What factors would you consider to analyze the client's problem and design plan of attack?\nQ3. What are the key cost items of the client?\nQ4. What cost reduction initiatives can you suggest?\nQ5. We've collected some sales and profitability data for the juice segment. What does this chart tell you?\nQ6. Can we renegotiate prices/mark-ups with Kraft? What makes you think that we have leverage in the negotiations with Kraft?\nQ7. What price would you negotiate for with Kraft? What will be your target margins? Why?\nQ8. What if Kraft doesn't do it for you? What else would you do?\nQ9. What would the client's incremental profits be if we improve the margins from 8% to 10%?\nQ10. If you can renegotiate better terms with other product categories and replicate juice's success, what extra profits should we expect?\nQ11. You are in the final steering committee with the client's management team and they would like to hear your recommendations\n\nHere is the basic context for the client:\nYour client is a U.S.-based grocery retailer with $20B in sales. Their competitors offer lower prices for some product categories while maintaining the same profit margin as your client. How do their competitors manage to do that? What should the client do?",
+  "structure_1_client_basic_context": {
+    "company": "U.S.-based grocery retailer",
+    "type": "National grocery chain with a lot of stores, offering all kinds of groceries and adjacency products",
+    "situation": "Competitors offer lower prices for some product categories while maintaining the same profit margin as your client",
+    "action": "Investigating how competitors manage to offer lower prices at same margin, and what the client should do",
+    "ask": "How do competitors manage to maintain lower prices with same margin? What should the client do?"
+  },
+  "structure_2_information_upon_request": {
+    "item_1": {
+      "item_id": "item_1",
+      "trigger": "Analyst asks about or includes the client's profitability goal or financial targets in their framework",
+      "core_dimensional_concept": "client profitability goal",
+      "release_conditions": {
+        "structural_position": [
+          "explicit clarifying question about profit target (e.g., 'What is the client's target margin or profitability goal?')",
+          "framework pillar or sub-bullet referencing profitability targets or financial goals",
+          "hypothesis-driven assumption about target margin (e.g., 'I assume the client has a specific profitability target')"
+        ],
+        "alternative_phrasings": [
+          "target margin",
+          "financial goal",
+          "profit target",
+          "desired profitability"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'profitability' only as the case topic descriptor (e.g., 'this is a profitability case') — F passing reference, not structural inquiry",
+        "Analyst asks about current profitability level without asking about target/goal — different dimension"
+      ],
+      "info": "The client didn't share a clear profitability goal"
+    },
+    "item_2": {
+      "item_id": "item_2",
+      "trigger": "Analyst asks about or includes the client's store footprint, scale, or geographic reach in their framework",
+      "core_dimensional_concept": "client store network and scale",
+      "release_conditions": {
+        "structural_position": [
+          "explicit clarifying question about number of stores or geographic coverage",
+          "framework pillar or sub-bullet under 'Client' section referencing store count or geographic footprint",
+          "hypothesis-driven assumption about store network size"
+        ],
+        "alternative_phrasings": [
+          "number of stores",
+          "store count",
+          "geographic footprint",
+          "national presence",
+          "scale of operations"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'client operations' broadly without specifically probing store network or scale — G adjacent dimension modifier",
+        "Analyst asks about company size by revenue only without asking about physical footprint — different dimension"
+      ],
+      "info": "The client is a national grocery chain with a lot of stores"
+    },
+    "item_3": {
+      "item_id": "item_3",
+      "trigger": "Analyst asks about or includes the client's product portfolio or category mix in their framework",
+      "core_dimensional_concept": "client product portfolio and category mix",
+      "release_conditions": {
+        "structural_position": [
+          "explicit clarifying question about what products or categories the client sells",
+          "framework pillar or sub-bullet under 'Client' or 'Product' referencing product range or category breadth",
+          "hypothesis-driven assumption about product mix (e.g., 'I assume the client sells both groceries and non-food items')"
+        ],
+        "alternative_phrasings": [
+          "product categories",
+          "product mix",
+          "what does the client sell",
+          "category breadth",
+          "adjacency products"
+        ]
+      },
+      "disqualifying": [
+        "Analyst references specific category (e.g., 'juice segment') without asking about overall product portfolio — F passing mention of one category not triggering portfolio-level info",
+        "Analyst asks about revenue breakdown without asking what categories exist — different dimension"
+      ],
+      "info": "The client offers all kind of groceries and adjacency products"
+    },
+    "item_4": {
+      "item_id": "item_4",
+      "trigger": "Analyst asks about or includes customer segments or target customer demographics in their framework",
+      "core_dimensional_concept": "client customer segmentation",
+      "release_conditions": {
+        "structural_position": [
+          "explicit clarifying question about who the client's customers are or customer demographics",
+          "framework pillar or sub-bullet under 'Customer' or 'Market' referencing customer segments",
+          "hypothesis-driven assumption about customer profile (e.g., 'I assume customers are price-sensitive')"
+        ],
+        "alternative_phrasings": [
+          "customer segments",
+          "customer demographics",
+          "target customers",
+          "customer profile",
+          "low-end vs high-end customers"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'customer' only in the context of customer satisfaction or experience without asking about segmentation — G adjacent dimension",
+        "Analyst asks about market size without asking about customer composition — different dimension"
+      ],
+      "info": "The key customer segments are likely low-end and mass market"
+    },
+    "item_5": {
+      "item_id": "item_5",
+      "trigger": "Analyst asks about or includes the competitive landscape or names of specific competitors in their framework",
+      "core_dimensional_concept": "major competitor identities",
+      "release_conditions": {
+        "structural_position": [
+          "explicit clarifying question about who the major competitors are",
+          "framework pillar or sub-bullet under 'Competition' or 'Market' referencing competitor names or specific players",
+          "hypothesis-driven assumption naming specific competitors (e.g., 'I assume competitors include Walmart')"
+        ],
+        "alternative_phrasings": [
+          "who are the competitors",
+          "competitive players",
+          "major grocery chains",
+          "key competitors",
+          "competitive landscape players"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'competition' or 'competitive pricing' as a general dimension without asking who the competitors are — F passing keyword reference",
+        "Analyst asks about competitive strategy without asking about competitor identities — G adjacent dimension"
+      ],
+      "info": "The major competitors are Costco, Kroger, Ahold, and Aldi"
+    }
+  },
+  "structure_3_case_questions": {
+    "Q1": {
+      "q_id": "Q1",
+      "type": "framework",
+      "question_text": "How do other players offer lower prices for some product categories and keep the same profit margin? (before framework)",
+      "information_to_share_upfront": null,
+      "information_upon_request": "See structure_2 items 1-5. Release only items per semantic touch judgment; not by mere keyword presence.",
+      "state_machine": {
+        "next_question": "Q2",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable framework answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q2": {
+      "q_id": "Q2",
+      "type": "framework",
+      "question_text": "What factors would you consider to analyze the client's problem and design plan of attack?",
+      "information_to_share_upfront": null,
+      "information_upon_request": "See structure_2 items 1-5. Release only items per semantic touch judgment; not by mere keyword presence.",
+      "state_machine": {
+        "next_question": "Q3",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable framework answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q3": {
+      "q_id": "Q3",
+      "type": "qualitative",
+      "question_text": "What are the key cost items of the client?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q4",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q4": {
+      "q_id": "Q4",
+      "type": "qualitative",
+      "question_text": "What cost reduction initiatives can you suggest?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q5",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q5": {
+      "q_id": "Q5",
+      "type": "qualitative",
+      "question_text": "We've collected some sales and profitability data for the juice segment. What does this chart tell you?",
+      "information_to_share_upfront": [
+        "Appendix 1 — Chart 1: Client's margins for juice products of different brands (Coca-Cola 16%, Nestle 10%, Kraft 8%); Chart 2: Sales structure in juice segment (Client: Coca-Cola 15%, Nestle 35%, Kraft 50%; Other major grocery chains: Coca-Cola 20%, Nestle 45%, Kraft 35%); Total juice sales = $60M"
+      ],
+      "information_upon_request": null,
+      "appendix": {
+        "appendix_1": {
+          "title": "Sales and profitability data for the juice segment",
+          "release_rule": "Share upfront with analyst at the start of Q5",
+          "chart_1": {
+            "title": "Client's margins for juice products of different brands",
+            "data": {
+              "Coca-Cola": "16%",
+              "Nestle": "10%",
+              "Kraft": "8%"
+            }
+          },
+          "chart_2": {
+            "title": "Sales structure in juice segment",
+            "total_juice_sales": "$60M (100%)",
+            "client_mix": {
+              "Coca-Cola": "15%",
+              "Nestle": "35%",
+              "Kraft": "50%"
+            },
+            "other_major_grocery_chains_mix": {
+              "Coca-Cola": "20%",
+              "Nestle": "45%",
+              "Kraft": "35%"
+            }
+          }
+        }
+      },
+      "state_machine": {
+        "next_question": "Q6",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable quantitative answer with contextualization (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q6": {
+      "q_id": "Q6",
+      "type": "qualitative",
+      "question_text": "Can we renegotiate prices/mark-ups with Kraft? What makes you think that we have leverage in the negotiations with Kraft?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q7",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q7": {
+      "q_id": "Q7",
+      "type": "quantitative",
+      "question_text": "What price would you negotiate for with Kraft? What will be your target margins? Why?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q8",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable quantitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q8": {
+      "q_id": "Q8",
+      "type": "qualitative",
+      "question_text": "What if Kraft doesn't do it for you? What else would you do?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q9",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q9": {
+      "q_id": "Q9",
+      "type": "quantitative",
+      "question_text": "What would the client's incremental profits be if we improve the margins from 8% to 10%?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q10",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides correct numerical answer (or 2nd attempt completed)",
+        "max_attempts": 2,
+        "scoring_on_transition": {
+          "attempt_1_correct": "Full score",
+          "attempt_2_correct": "0 score per core_principles",
+          "both_attempts_wrong": "0 score; interviewer provides correct answer ($0.6M) before Q10"
+        }
+      }
+    },
+    "Q10": {
+      "q_id": "Q10",
+      "type": "quantitative",
+      "question_text": "If you can renegotiate better terms with other product categories and replicate juice's success, what extra profits should we expect?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q11",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides correct numerical answer (or 2nd attempt completed)",
+        "max_attempts": 2,
+        "scoring_on_transition": {
+          "attempt_1_correct": "Full score",
+          "attempt_2_correct": "0 score per core_principles",
+          "both_attempts_wrong": "0 score; interviewer provides correct answer ($200M) before Q11"
+        }
+      }
+    },
+    "Q11": {
+      "q_id": "Q11",
+      "type": "qualitative",
+      "question_text": "You are in the final steering committee with the client's management team and they would like to hear your recommendations",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": null,
+        "skip_logic": false,
+        "transition_condition": "Case ends after Q11"
+      }
+    }
+  },
+  "structure_4_ground_truth": {
+    "Q1_ground_truth": {
+      "type": "framework",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_revenue_factors": {
+          "keypoints": [
+            "Different revenue structure (product mix) - higher share of high-margin products",
+            "More favorable terms for mark-ups from suppliers (e.g. higher mark-ups, volume-driven mark-ups)",
+            "Potential extra revenue streams coming from suppliers - Fees for in-store marketing",
+            "Potential extra revenue streams coming from suppliers - Fees for special merchandising (e.g. better shelf-space)",
+            "Potential extra revenue streams coming from suppliers - Fees for customer analytics"
+          ],
+          "subtotal": 5
+        },
+        "pillar_2_cost_factors": {
+          "sub_pillar_fixed_costs": {
+            "keypoints": [
+              "Fixed costs - Lower rent",
+              "Fixed costs - Lower transportation costs",
+              "Fixed costs - More efficient marketing expenses",
+              "Fixed costs - Lower overhead costs",
+              "Fixed costs - Lower maintenance costs (for fridges, trade equipment, etc.)"
+            ],
+            "subtotal": 5
+          },
+          "sub_pillar_variable_costs": {
+            "keypoints": [
+              "Variable costs - Lower waste of products",
+              "Variable costs - Lower labor costs (more efficient lay-out, management, etc.)",
+              "Variable costs - Lower credit card commissions",
+              "Variable costs - More favorable terms with grocery delivery companies (e.g. Instacart)"
+            ],
+            "subtotal": 4
+          },
+          "subtotal": 9,
+          "keypoints": [
+            "Fixed costs - Lower rent",
+            "Fixed costs - Lower transportation costs",
+            "Fixed costs - More efficient marketing expenses",
+            "Fixed costs - Lower overhead costs",
+            "Fixed costs - Lower maintenance costs (for fridges, trade equipment, etc.)",
+            "Variable costs - Lower waste of products",
+            "Variable costs - Lower labor costs (more efficient lay-out, management, etc.)",
+            "Variable costs - Lower credit card commissions",
+            "Variable costs - More favorable terms with grocery delivery companies (e.g. Instacart)"
+          ]
+        }
+      },
+      "total_keypoints": 14,
+      "minimum_expected": "At least 2 revenue factors and 3 cost factors covered",
+      "outstanding_threshold": "8+ keypoints covered across both pillars with clear structure"
+    },
+    "Q2_ground_truth": {
+      "type": "framework",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_competition": {
+          "keypoints": [
+            "Major grocery retailers (with lower prices)",
+            "Their pricing strategy",
+            "Analysis of their profitability (incl. cost benchmarking)"
+          ],
+          "subtotal": 3
+        },
+        "pillar_2_client_grocery_retailer": {
+          "keypoints": [
+            "Key product categories (e.g. packaged, fresh, cooked)",
+            "Customer segments (e.g. low-end/high-end)",
+            "Geographical footprint"
+          ],
+          "subtotal": 3
+        },
+        "pillar_3_financial_analysis": {
+          "sub_pillar_revenue_and_market_share": {
+            "keypoints": [
+              "Revenue and market share"
+            ],
+            "subtotal": 1
+          },
+          "sub_pillar_pricing_strategy": {
+            "keypoints": [
+              "Pricing strategy"
+            ],
+            "subtotal": 1
+          },
+          "sub_pillar_cost_structure": {
+            "keypoints": [
+              "Cost structure - Fixed costs (FC)",
+              "Cost structure - Variable costs (VC)"
+            ],
+            "subtotal": 2
+          },
+          "subtotal": 4,
+          "keypoints": [
+            "Revenue and market share",
+            "Pricing strategy",
+            "Cost structure - Fixed costs (FC)",
+            "Cost structure - Variable costs (VC)"
+          ]
+        }
+      },
+      "total_keypoints": 10,
+      "minimum_expected": "Cover at least 2 of the 3 pillars with specific sub-points",
+      "outstanding_threshold": "All 3 pillars covered with most sub-points identified"
+    },
+    "Q3_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_fixed_costs": {
+          "keypoints": [
+            "Occupancy costs for stores, distribution centers/warehouses, offices, etc.",
+            "Maintenance costs of the equipment (freezers/fridges, cash registers, warehouse equipment, etc.)",
+            "Marketing expenses",
+            "Salaries for management, shared functions (e.g. legal, IT), warehouse employees",
+            "R&D expenses",
+            "Inbound/outbound logistics"
+          ],
+          "subtotal": 6
+        },
+        "pillar_2_variable_costs": {
+          "keypoints": [
+            "Purchasing costs of groceries",
+            "Packaging costs",
+            "Labor cost",
+            "Promotional discounts",
+            "Sales commissions to third party (e.g. Instacart)",
+            "Credit card fees",
+            "Waste of products (e.g. expired, damaged)"
+          ],
+          "subtotal": 7
+        }
+      },
+      "total_keypoints": 13,
+      "minimum_expected": "At least 3 fixed costs and 3 variable costs identified",
+      "outstanding_threshold": "8+ total cost items identified across both categories"
+    },
+    "Q4_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_fixed_costs_reduction": {
+          "keypoints": [
+            "Renegotiate rates for rent",
+            "Switch to cheaper maintenance service provider",
+            "Increase the efficiency of marketing",
+            "Reduce headcount costs (e.g. optimize headcount and compensation)",
+            "Scale back R&D (if any)",
+            "Consolidate logistics to increase utilization rate of trucks and drivers and thus decrease costs"
+          ],
+          "subtotal": 6
+        },
+        "pillar_2_variable_costs_reduction": {
+          "keypoints": [
+            "Consolidate purchasing to get volume discounts for groceries and packaging materials",
+            "Increase the efficiency of labor (e.g. better lay-outs of the store, more strict processes)",
+            "Scale-back discounts",
+            "Renegotiate sales commissions to third party grocery delivery companies",
+            "Improve expiration tracking to avoid food waste"
+          ],
+          "subtotal": 5
+        }
+      },
+      "total_keypoints": 11,
+      "minimum_expected": "At least 2 fixed cost reduction and 2 variable cost reduction initiatives",
+      "outstanding_threshold": "7+ total initiatives identified across both categories"
+    },
+    "Q5_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts (qualitative tier_1/tier_2 scoring per)",
+      "qualitative_part": {
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "tier_1_basic": {
+          "weight_of_Q5_qualitative_total": "50%",
+          "keypoints": [
+            "There is a wide variability of margins across different brands of juice",
+            "The client relies a lot on a low-margin brand (Kraft) which might lower their profitability"
+          ],
+          "note": "Expected from every candidate."
+        },
+        "tier_2_advanced": {
+          "weight_of_Q5_qualitative_total": "50%",
+          "points_available": 5,
+          "weight_per_point": "10% of qualitative total",
+          "keypoints": [
+            "It is not surprising to see fairly low margins for most juices as it is a highly commoditized product with quite price-sensitive customer segments and thus high price pressure",
+            "Coca-Cola offers incredibly attractive margins due to their competitive cost structure (e.g. huge economies of scale) or aggressive strategy to win market share in the juice segment; if the latter, then 16% is not going to be for long and the client needs to take advantage of that",
+            "The client can capitalize on the incredibly high share of Kraft in their sales structure (50%) and negotiate a volume discount and/or higher mark-up which will improve the client's profitability",
+            "Shift in the brand mix towards higher-margin Coca-Cola and Nestle will improve the client's profitability too",
+            "Given that the juice sales ($60M) represent only a fraction of the overall client's sales ($20B), margin increase for juices would not move the needle much for the overall client's profitability"
+          ],
+          "note": "Not expected from every candidate. Each advanced point adds 10% to qualitative score."
+        },
+        "minimum_expected": "Tier 1 basic comments fully covered",
+        "outstanding_threshold": "Tier 1 covered + at least 3 Tier 2 advanced comments covered"
+      }
+    },
+    "Q6_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_existing_leverage": {
+          "keypoints": [
+            "The client moves high volume of Kraft's juices and might ask for a volume discount",
+            "The client supposedly provides large shelf space for Kraft's juices which contributes to the increase in Kraft's brand awareness",
+            "Kraft's juices aren't attractive to the client based on the benchmarking analysis, and if Kraft doesn't improve the client's margins it's natural to expect that the client will shift towards other juice brands",
+            "The client likely purchases other Kraft's products (e.g. snack, dairy) too, and thus is an important buyer for Kraft"
+          ],
+          "subtotal": 4
+        },
+        "pillar_2_potential_new_leverage": {
+          "keypoints": [
+            "The client might offer to conclude a long-term contract with Kraft to ensure a predictable revenue stream for Kraft",
+            "The client might offer benefits: in-store marketing, customer analytics, real-life Kraft sales results (IT integration required), etc.",
+            "The client might offer to increase purchasing volume for other Kraft's product too",
+            "The client might offer to bring some Kraft's ops functions in-house (e.g. merchandising, tracking inventory) to save them costs"
+          ],
+          "subtotal": 4
+        }
+      },
+      "total_keypoints": 8,
+      "minimum_expected": "At least 2 existing leverage factors identified",
+      "outstanding_threshold": "5+ points across both existing and potential new leverage"
+    },
+    "Q7_ground_truth": {
+      "type": "quantitative",
+      "scoring_method": "3-level for qualitative/strategy part; data-anchored for numerical targets",
+      "quantitative_part": {
+        "correct_final_answer": "Any margin within 9.2%-14% range with supporting reasoning. Primary anchor: 10% (match Nestle); starting position: 12%; floor: 9.2% (yields 10.5% blended to match other major groceries).",
+        "accepted_values": [
+          0.092,
+          0.14
+        ],
+        "tolerance_pct": 0.0,
+        "zero_tolerance": true,
+        "scoring_method": "Range acceptance: accept any margin 9.2%-14% inclusive with supporting reasoning anchored to data. Reject below 9.2% (below floor) or above 14% (above ceiling). Primary anchor for outstanding threshold: 10% match Nestle.",
+        "reference_points": {
+          "client_blended_margin": "9.9% [16%×0.15 + 10%×0.35 + 8%×0.5]",
+          "major_groceries_blended_margin": "10.5% [16%×0.2 + 10%×0.45 + 8%×0.35]",
+          "coca_cola_margin": "16%",
+          "nestle_margin": "10%",
+          "kraft_current_margin": "8%"
+        },
+        "target_margin_options": {
+          "16_percent": "Might be unrealistic to expect given Coca-Cola has competitive cost structure (due to huge scale) or lower prices temporarily to capture larger market share",
+          "11_3_percent": "Average of three brands [(16%+10%+8%)/3]",
+          "10_percent": "Match Nestle",
+          "9_2_percent": "Will yield average margin of 10.5% to match other groceries [16%×0.15+10%×0.35+9.2%×0.5]"
+        }
+      },
+      "qualitative_part": {
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "tier_1_basic": {
+          "weight_of_Q7_qualitative_total": "50%",
+          "keypoints": [
+            "Estimate the highest margin Kraft would agree on based on the analysis of Kraft's economics and our potential suggestions (e.g. see previous slide)",
+            "Clarify if the client has any profitability goals"
+          ],
+          "note": "Expected from every candidate."
+        },
+        "tier_2_advanced": {
+          "weight_of_Q7_qualitative_total": "50%",
+          "points_available": 2,
+          "weight_per_point": "25% of qualitative total",
+          "keypoints": [
+            "Target 10% to match Nestle, but start the talks from 12% to have some room for negotiation",
+            "Do not go below 9.2% as the client's goal is to match their profitability to other major groceries"
+          ],
+          "note": "Not expected from every candidate."
+        },
+        "minimum_expected": "Provides a target margin figure with reasoning anchored to the data",
+        "outstanding_threshold": "Correct target range with negotiation strategy and floor reasoning"
+      }
+    },
+    "Q8_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_revenue_factors": {
+          "keypoints": [
+            "Renegotiate margins with Nestle and Coca-Cola",
+            "Shift the mix of brands towards Nestle and Coca-Cola",
+            "Bring other juice brands that offer higher margins",
+            "Increase retail prices for Kraft juices (this will increase margins; price-sensitive customers will switch from Kraft to higher-margin Nestle or Coca-Cola)",
+            "Focus on high-margin juice substitutes (e.g. flavored electrolytes, flavored water)"
+          ],
+          "subtotal": 5
+        },
+        "pillar_2_cost_factors": {
+          "keypoints": [
+            "See question 4 (apply cost reduction initiatives from Q4)"
+          ],
+          "subtotal": 1
+        }
+      },
+      "total_keypoints": 6,
+      "minimum_expected": "At least 2 revenue-side alternatives identified",
+      "outstanding_threshold": "4+ revenue alternatives with clear reasoning"
+    },
+    "Q9_ground_truth": {
+      "type": "quantitative",
+      "quantitative_part": {
+        "correct_final_answer": "$0.6M",
+        "accepted_values": [
+          600000
+        ],
+        "tolerance_pct": 0.0,
+        "zero_tolerance": true,
+        "scoring_method": "Binary: correct number = full credit; incorrect = zero credit",
+        "calculation_steps": {
+          "step_1_kraft_juice_revenue": {
+            "formula": "Total juice sales × Kraft's share of client's juice sales = $60M × 50%",
+            "result": "$30M"
+          },
+          "step_2_incremental_profits": {
+            "formula": "Kraft juice revenue × (new margin - current margin) = $30M × (10% - 8%)",
+            "result": "$0.6M"
+          }
+        }
+      },
+      "qualitative_part": {
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "tier_1_basic": {
+          "weight_of_Q9_qualitative_total": "50%",
+          "keypoints": [
+            "The client will increase their profits by $0.6M"
+          ],
+          "note": "Expected from every candidate."
+        },
+        "tier_2_advanced": {
+          "weight_of_Q9_qualitative_total": "50%",
+          "points_available": 2,
+          "weight_per_point": "25% of qualitative total",
+          "keypoints": [
+            "Extra $0.6M in profits will help the client match their competitors' overall profitability for juice products, but it will be negligible change in overall client's profitability",
+            "The client is still incentivized to sell more of Coca-Cola products given its 16% margin, which might decrease the volume for Kraft, upset the brand and make them reconsider their 10% margin"
+          ],
+          "note": "Not expected from every candidate."
+        },
+        "minimum_expected": "Correct numerical answer of $0.6M",
+        "outstanding_threshold": "Correct answer + Tier 1 + at least 1 Tier 2 advanced comment"
+      }
+    },
+    "Q10_ground_truth": {
+      "type": "quantitative",
+      "quantitative_part": {
+        "correct_final_answer": "$200M",
+        "accepted_values": [
+          200000000
+        ],
+        "tolerance_pct": 0.0,
+        "zero_tolerance": true,
+        "scoring_method": "Binary: correct number = full credit; incorrect = zero credit",
+        "calculation_steps": {
+          "step_1_margin_improvement_rate": {
+            "formula": "Extra profits for juice category / Total juice sales = $0.6M / $60M",
+            "result": "1% margin improvement"
+          },
+          "step_2_total_incremental_profits": {
+            "formula": "Total client sales × margin improvement rate = $20B × 1%",
+            "result": "$200M"
+          }
+        }
+      },
+      "qualitative_part": {
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "tier_1_basic": {
+          "weight_of_Q10_qualitative_total": "50%",
+          "keypoints": [
+            "The client will increase their profits by $200M"
+          ],
+          "note": "Expected from every candidate."
+        },
+        "tier_2_advanced": {
+          "weight_of_Q10_qualitative_total": "50%",
+          "points_available": 2,
+          "weight_per_point": "25% of qualitative total",
+          "keypoints": [
+            "If we extrapolate the juice's success to the entire company, the client's profitability will go up by 1 percentage point which is phenomenal for such a commoditized space",
+            "This might involve a lot of negotiations with a great deal of suppliers, take time and people resources, require building a comprehensive negotiation strategy for each product segment based on thorough market research and benchmarking"
+          ],
+          "note": "Not expected from every candidate."
+        },
+        "minimum_expected": "Correct numerical answer of $200M",
+        "outstanding_threshold": "Correct answer + Tier 1 + at least 1 Tier 2 advanced comment"
+      }
+    },
+    "Q11_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_recommendation": {
+          "keypoints": [
+            "Based on our analysis, we recommend to renegotiate prices and terms with suppliers and consider shifting towards high-margin products/brands"
+          ],
+          "subtotal": 1
+        },
+        "pillar_2_reasoning": {
+          "keypoints": [
+            "Preliminarily this strategy will lead to the growth in the profitability by 1 percentage point and generate additional $200M in profits",
+            "Tracking changes in prices and sales structure will allow us to max profits and avoid profitability gaps with other grocery chains in future",
+            "Such an active supplier management strategy might potentially allow us to build closer relationship with suppliers and work together to design new mutually beneficial forms of contracts and innovative pricing"
+          ],
+          "subtotal": 3
+        },
+        "pillar_3_risks": {
+          "keypoints": [
+            "Current potential lack of negotiation capabilities and lack of market intelligence might become roadblocks to a successful renegotiation of terms with suppliers",
+            "The juice segment might not be representative for extrapolation, so the financial result of $200M might be exaggerated"
+          ],
+          "subtotal": 2
+        },
+        "pillar_4_next_steps": {
+          "keypoints": [
+            "For our next steps we would like to address the identified risks, run similar analyses for major product segments to confirm our conclusions, and design a purchasing negotiation strategy for all the segments"
+          ],
+          "subtotal": 1
+        }
+      },
+      "total_keypoints": 7,
+      "minimum_expected": "Recommendation pillar covered + at least 1 reasoning point covered",
+      "outstanding_threshold": "All 4 pillars covered with most keypoints identified"
+    }
+  },
+  "state_machine_global": {
+    "case_type": "interviewer_driven",
+    "skip_logic": false,
+    "mandatory_sequence": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5",
+      "Q6",
+      "Q7",
+      "Q8",
+      "Q9",
+      "Q10",
+      "Q11"
+    ],
+    "rules": [
+      "Q1 cannot be skipped under any circumstances",
+      "Questions must proceed in linear order Q1 → Q2 → Q3 → Q4 → Q5 → Q6 → Q7 → Q8 → Q9 → Q10 → Q11",
+      "A question may not be advanced until the current question receives a scoreable answer (1st or 2nd attempt)",
+      "If analyst pre-covers a later question's keypoints in an earlier answer, record as pre-coverage but still ask the later question in sequence",
+      "No question may be skipped even if pre-covered",
+      "For Q9→Q10 dependency: if Q9 answered wrong both attempts, provide correct answer ($0.6M) before proceeding to Q10",
+      "For Q10→Q11 dependency: if Q10 answered wrong both attempts, provide correct answer ($200M) before proceeding to Q11"
+    ]
+  },
+  "scoring_summary": {
+    "Q1": {
+      "type": "framework",
+      "total_keypoints": 14,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q2": {
+      "type": "framework",
+      "total_keypoints": 10,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q3": {
+      "type": "qualitative",
+      "total_keypoints": 13,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q4": {
+      "type": "qualitative",
+      "total_keypoints": 11,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q5": {
+      "type": "qualitative",
+      "total_keypoints": 7,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered",
+      "tier_1_basic": {
+        "keypoints": 2,
+        "weight": "50% of qualitative score"
+      },
+      "tier_2_advanced": {
+        "keypoints": 5,
+        "weight_per_point": "10% of qualitative score",
+        "weight_total": "50% of qualitative score"
+      }
+    },
+    "Q6": {
+      "type": "qualitative",
+      "total_keypoints": 8,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q7": {
+      "type": "quantitative",
+      "part_1_quantitative": {
+        "correct_answer": "Any margin within 9.2%-14% range with supporting reasoning; range endpoints [0.092, 0.14]",
+        "accepted_values": [
+          0.092,
+          0.14
+        ],
+        "tolerance_pct": 0.0,
+        "zero_tolerance": true,
+        "scoring": "Range acceptance with MR overlay: any in-range value with reasoning = full credit"
+      },
+      "part_2_qualitative": {
+        "total_keypoints": 4,
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "human_review_priority": "false-partial > false-not-covered > covered",
+        "tier_1_basic": {
+          "keypoints": 2,
+          "weight": "50% of qualitative score"
+        },
+        "tier_2_advanced": {
+          "keypoints": 2,
+          "weight_per_point": "25% of qualitative score",
+          "weight_total": "50% of qualitative score"
+        }
+      }
+    },
+    "Q8": {
+      "type": "qualitative",
+      "total_keypoints": 6,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q9": {
+      "type": "quantitative",
+      "part_1_quantitative": {
+        "correct_answer": "$0.6M",
+        "zero_tolerance": true,
+        "scoring": "Binary: Full credit if correct; zero credit if incorrect"
+      },
+      "part_2_qualitative": {
+        "total_keypoints": 3,
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "human_review_priority": "false-partial > false-not-covered > covered",
+        "tier_1_basic": {
+          "keypoints": 1,
+          "weight": "50% of qualitative score"
+        },
+        "tier_2_advanced": {
+          "keypoints": 2,
+          "weight_per_point": "25% of qualitative score",
+          "weight_total": "50% of qualitative score"
+        }
+      }
+    },
+    "Q10": {
+      "type": "quantitative",
+      "part_1_quantitative": {
+        "correct_answer": "$200M",
+        "zero_tolerance": true,
+        "scoring": "Binary: Full credit if correct; zero credit if incorrect"
+      },
+      "part_2_qualitative": {
+        "total_keypoints": 3,
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "human_review_priority": "false-partial > false-not-covered > covered",
+        "tier_1_basic": {
+          "keypoints": 1,
+          "weight": "50% of qualitative score"
+        },
+        "tier_2_advanced": {
+          "keypoints": 2,
+          "weight_per_point": "25% of qualitative score",
+          "weight_total": "50% of qualitative score"
+        }
+      }
+    },
+    "Q11": {
+      "type": "qualitative",
+      "total_keypoints": 7,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    }
+  }
+}

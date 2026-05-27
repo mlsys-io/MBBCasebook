@@ -1,0 +1,786 @@
+{
+  "case_id": "007",
+  "version": "v2",
+  "source": {
+    "title": "Fast Casual Food Restaurant",
+    "inspired_by": "Bain & Company",
+    "year": 2020,
+    "author": "Peter K.",
+    "reference": "Peter-K.org, Case #7",
+    "casebook_abbr": "PK20"
+  },
+  "case_type": "interviewer_driven",
+  "case_type_origin": null,
+  "annotation_mode": null,
+  "case_arch": {
+    "primary": "Revenue Growth",
+    "tags": [
+      "Revenue Growth",
+      "Growth Strategy"
+    ]
+  },
+  "difficulty": "Hard",
+  "industry": "Food & Beverage / Restaurants",
+  "topic": "Revenue growth strategy — fast casual healthy food restaurant post-expansion saturation",
+  "expected_duration_minutes": 30,
+  "opening_prompt": "Hi, I'd like to solve some consulting cases with you. Pls be a good interviewee to have a potential test in consulting cases. For the case problem-solving, pls do not assume any numbers or assumptions before my confirmation. I will give you the context upon request. I need you to answer the following questions for the client. Before you start, feel free to ask me 2-3 clarifying questions about the client.\n\nQ1. How would you approach this case?\nQ2. What ways can you suggest to grow once the client had their 2K stores?\nQ3. The client would like to start offering breakfasts. (Currently they offer only lunches and dinners). How to estimate additional revenue? What information do you need? Keep in mind that the client would like to continue enjoying 5% margin.\nQ4. Based on the chart, calculate the expected profit margin.\nQ5. The team is considering three more options. The analyst summarized them in this chart. What recommendations would you make?\nQ6. What other information re these three options do you need to know?\nQ7. Would you implement catering services in addition to breakfasts or instead?\n\nHere is the basic context for the client:\nYour client is a fast casual healthy food restaurant (e.g. salads, wraps, soups). They have 1k locations in the U.S. and are growing to 2k locations across the U.S. and Europe by 2021 (it's currently 2018). The company is afraid that they will saturate the market after their expansion. How can they continue growing if that happens?",
+  "structure_1_client_basic_context": {
+    "company": "a fast casual healthy food restaurant (e.g. salads, wraps, soups)",
+    "type": "fast casual healthy food restaurant",
+    "situation": "The client has 1k locations in the U.S. and is growing to 2k locations across the U.S. and Europe by 2021 (it's currently 2018). The company is afraid that they will saturate the market after their expansion.",
+    "action": "The company is seeking strategies to continue growing",
+    "ask": "How can they continue growing if they saturate the market after the 2K-store expansion?"
+  },
+  "structure_2_information_upon_request": {
+    "item_1": {
+      "item_id": "item_1",
+      "trigger": "Analyst asks about what meals or dayparts the client currently serves, or the current product scope",
+      "core_dimensional_concept": "client's current meal offerings and dayparts served",
+      "release_conditions": {
+        "structural_position": [
+          "explicit clarifying question about current meal periods (e.g. 'What meals do they serve?', 'Do they offer breakfast?')",
+          "framework pillar or sub-bullet on 'Current Product Offerings', 'Dayparts', or 'Menu Scope'",
+          "direct question about what food categories or day segments the client operates in"
+        ],
+        "alternative_phrasings": [
+          "what meals do they currently offer",
+          "do they serve breakfast lunch and dinner",
+          "what dayparts does the client operate in",
+          "what is on their menu"
+        ]
+      },
+      "disqualifying": [
+        "Analyst asks about new product opportunities or revenue growth options — that is forward-looking strategy, not current product scope (G pattern: adjacent dimension)",
+        "Analyst asks about pricing without first asking about product range — pricing is not the same dimension as meal offering scope (F passing mention)"
+      ],
+      "info": "The client serves only lunches and dinners."
+    },
+    "item_2": {
+      "item_id": "item_2",
+      "trigger": "Analyst asks about the competitive landscape, market dynamics, or available market research",
+      "core_dimensional_concept": "competitive landscape and fast casual food market dynamics",
+      "release_conditions": {
+        "structural_position": [
+          "explicit clarifying question about competitors or market size (e.g. 'Who are the main competitors?', 'How fragmented is the market?')",
+          "framework pillar named 'Competitive Landscape', 'Market Dynamics', or 'Industry Structure'",
+          "sub-bullet under market analysis asking about competitor positioning or market share"
+        ],
+        "alternative_phrasings": [
+          "who are the main competitors",
+          "what do we know about the fast casual food market",
+          "how fragmented is the market",
+          "what is the market share of the client vs competitors"
+        ]
+      },
+      "disqualifying": [
+        "Analyst asks about the client's own internal data (e.g. revenue, profit) rather than the competitive landscape — that is client-side, not market-side (G adjacent dimension)",
+        "Analyst passingly mentions 'competitive pressure' as a risk modifier without explicitly asking about the competitive landscape (F passing mention)"
+      ],
+      "info": "We don't know much about the competitive landscape and the fast casual food market dynamics."
+    },
+    "item_3": {
+      "item_id": "item_3",
+      "trigger": "Analyst asks about the client's financial targets, revenue goals, or quantified growth objectives",
+      "core_dimensional_concept": "client's revenue or financial growth targets",
+      "release_conditions": {
+        "structural_position": [
+          "explicit clarifying question about revenue targets or financial ambitions (e.g. 'What are the client's revenue goals?', 'Is there a specific growth rate they are targeting?')",
+          "framework pillar or sub-bullet on 'Financial Targets', 'Revenue Goals', or 'Growth Objectives'",
+          "direct question about what 'continued growth' means in quantitative terms"
+        ],
+        "alternative_phrasings": [
+          "what are the client's revenue goals",
+          "what financial targets has the client set",
+          "is there a specific growth rate they are targeting",
+          "what does continued growth mean in numbers"
+        ]
+      },
+      "disqualifying": [
+        "Analyst asks about cost structure or profitability — that is cost-side, not revenue goal dimension (G adjacent dimension)",
+        "Analyst asks about investment criteria or ROI hurdles — investment criteria ≠ revenue targets (G adjacent dimension)"
+      ],
+      "info": "The client hasn't shared any revenue goals."
+    },
+    "item_4": {
+      "item_id": "item_4",
+      "trigger": "Analyst asks about the client's current geographic footprint or the status of the European expansion",
+      "core_dimensional_concept": "client's current geographic presence and European expansion status",
+      "release_conditions": {
+        "structural_position": [
+          "explicit clarifying question about whether the client is already in Europe or their international presence (e.g. 'Are they already in Europe?', 'Have they started the European expansion?')",
+          "framework pillar or sub-bullet on 'Geographic Footprint', 'International Presence', or 'Current Market Coverage'",
+          "direct question about whether the 2K-store plan is fully domestic or international"
+        ],
+        "alternative_phrasings": [
+          "are they already in Europe",
+          "what markets are they currently in",
+          "have they started the European expansion",
+          "is the 2K stores plan fully domestic or international"
+        ]
+      },
+      "disqualifying": [
+        "Analyst asks about growth strategy for Europe — that is forward-looking strategy, not current geographic presence (G adjacent dimension)",
+        "Analyst asks about market size in Europe without asking about current footprint — market sizing ≠ current presence status (G adjacent dimension)"
+      ],
+      "info": "They aren't in Europe yet, but plan to enter it this year."
+    }
+  },
+  "structure_3_case_questions": {
+    "Q1": {
+      "q_id": "Q1",
+      "type": "framework",
+      "question_text": "How would you approach this case?",
+      "information_to_share_upfront": null,
+      "information_upon_request": "See structure_2 items item_1–item_4. Release only items by semantic touch; not by mere keyword presence.",
+      "state_machine": {
+        "next_question": "Q2",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable framework answer covering external market, client profile, and growth areas (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q2": {
+      "q_id": "Q2",
+      "type": "qualitative",
+      "question_text": "What ways can you suggest to grow once the client had their 2K stores?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q3",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable brainstorming answer (minimum 4 ideas; best practice 8+ structured, on-the-fly; minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q3": {
+      "q_id": "Q3",
+      "type": "qualitative",
+      "question_text": "The client would like to start offering breakfasts. (Currently they offer only lunches and dinners). How to estimate additional revenue? What information do you need? Keep in mind that the client would like to continue enjoying 5% margin.",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q4",
+        "skip_logic": false,
+        "transition_condition": "Analyst identifies key revenue and cost variables needed to estimate breakfast revenue at 5% margin (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q4": {
+      "q_id": "Q4",
+      "type": "quantitative",
+      "question_text": "Based on the chart, calculate the expected profit margin.",
+      "information_to_share_upfront": [
+        "Appendix 1"
+      ],
+      "appendix": {
+        "appendix_1": {
+          "title": "Number of breakfast customers per hour (bar chart) + Expected product mix for breakfasts (table)",
+          "release_rule": "Share upfront with analyst at the start of Q4",
+          "bar_chart": {
+            "peak_hours_customers_per_hour": 40,
+            "non_peak_hours_customers_per_hour": 12,
+            "weekends_customers_per_hour": 30
+          },
+          "table": {
+            "grab_and_go": {
+              "average_spend": "$5",
+              "peak_hours_pct": "60%",
+              "non_peak_hours_pct": "40%",
+              "weekends_pct": "20%"
+            },
+            "sit_down": {
+              "average_spend": "$10",
+              "peak_hours_pct": "40%",
+              "non_peak_hours_pct": "60%",
+              "weekends_pct": "80%"
+            }
+          }
+        }
+      },
+      "information_upon_request": [
+        {
+          "item_id": "Q4_item_1",
+          "trigger": "Analyst asks about the exact time windows for peak and non-peak hours on weekdays",
+          "core_dimensional_concept": "weekday breakfast time slots — peak and non-peak hour definitions",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question about peak/non-peak hour boundaries (e.g. 'What are the peak hours exactly?', 'How many hours are peak vs. off-peak?')",
+              "analyst sets up customer volume calculation and asks for exact time windows to compute duration",
+              "direct question about what time breakfast service starts and ends on weekdays"
+            ],
+            "alternative_phrasings": [
+              "what are the peak hours exactly",
+              "how long are peak vs non-peak hours",
+              "what time does breakfast service start and end on weekdays",
+              "how many hours are peak vs off-peak"
+            ]
+          },
+          "disqualifying": [
+            "Analyst asks about peak demand in general without needing time duration for a calculation — conceptual framing ≠ time-window request (G adjacent dimension)",
+            "Analyst uses the bar chart data to set up a calculation without explicitly asking for the time window — silence ≠ trigger (A explicit question pattern required)"
+          ],
+          "info": "Peak hours are 6–8 am, and non-peak hours are 8–11 am."
+        },
+        {
+          "item_id": "Q4_item_2",
+          "trigger": "Analyst asks about weekend breakfast hours or how long the weekend service runs",
+          "core_dimensional_concept": "weekend breakfast time window",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question about weekend breakfast service hours (e.g. 'How long is breakfast served on weekends?', 'How many hours per weekend day is breakfast served?')",
+              "analyst computing weekend customer volume and asks for hours of operation on weekends",
+              "direct question about whether there is peak/non-peak on weekends or a single service window"
+            ],
+            "alternative_phrasings": [
+              "how long is breakfast served on weekends",
+              "what are the weekend service hours",
+              "is there peak non-peak on weekends",
+              "how many hours per weekend day is breakfast served"
+            ]
+          },
+          "disqualifying": [
+            "Analyst asks about weekday hours — that is Q4_item_1, not this item; do not conflate (G adjacent dimension)",
+            "Analyst mentions weekends as part of volume calculation setup without asking specifically about service hours (F passing mention)"
+          ],
+          "info": "On weekends the breakfast is served at 6–11 am."
+        },
+        {
+          "item_id": "Q4_item_3",
+          "trigger": "Analyst asks about total breakfast costs or the cost structure for the breakfast offering",
+          "core_dimensional_concept": "total weekly breakfast costs across all stores",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question about total costs for breakfasts (e.g. 'What are the total costs for breakfasts?', 'What are the weekly costs associated with the breakfast program?')",
+              "analyst has computed or is computing the revenue side and now asks for cost inputs to derive profit margin",
+              "direct question about cost per store for the breakfast offering"
+            ],
+            "alternative_phrasings": [
+              "what are the total costs for breakfasts",
+              "what is the cost per store for breakfast",
+              "how much will it cost to run breakfasts",
+              "what are the weekly costs associated with the breakfast program"
+            ]
+          },
+          "disqualifying": [
+            "Analyst asks about capex or one-time investment costs — weekly operating costs ≠ capex (G adjacent dimension)",
+            "Analyst has not yet attempted to calculate revenue — do not release cost data before revenue calculation is underway (sequencing guard)"
+          ],
+          "info": "Total weekly costs associated with breakfasts are expected to be $6.5M (across all 1,000 stores)."
+        },
+        {
+          "item_id": "Q4_item_4",
+          "trigger": "Analyst asks whether customers might buy multiple items or how to count purchases per customer",
+          "core_dimensional_concept": "purchase count assumption per customer visit",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question about whether each customer buys one item or multiple (e.g. 'Does each customer buy just one breakfast?', 'Should I assume one purchase per customer?')",
+              "analyst sets up ticket size calculation and asks how to handle multiple-item purchases",
+              "direct question about how to count ticket size — per item or per visit"
+            ],
+            "alternative_phrasings": [
+              "does each customer buy just one breakfast",
+              "should I assume one purchase per customer",
+              "can customers buy multiple breakfast items",
+              "how do I count ticket size per item or per visit"
+            ]
+          },
+          "disqualifying": [
+            "Analyst asks about average ticket size in general — chart already provides average spend values; do not conflate with purchase-count question (G adjacent dimension)",
+            "Analyst proceeds with calculation without asking — silence ≠ trigger (A explicit question pattern)"
+          ],
+          "info": "It is assumed that each customer purchases only one breakfast."
+        },
+        {
+          "item_id": "Q4_item_5",
+          "trigger": "Analyst asks about cannibalization effects, revenue synergies, or cost synergies from adding breakfasts",
+          "core_dimensional_concept": "availability of cannibalization, revenue synergy, or cost synergy data",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question about whether to account for cannibalization of lunch/dinner sales (e.g. 'Should I account for cannibalization of lunch/dinner?')",
+              "explicit question about revenue synergies or cross-sell effects from breakfasts",
+              "explicit question about cost synergies such as shared food supply or equipment utilization"
+            ],
+            "alternative_phrasings": [
+              "should I account for cannibalization of lunch dinner",
+              "are there any revenue synergies from breakfasts",
+              "do breakfasts affect lunch dinner revenue",
+              "should I include cost synergies in the margin calculation"
+            ]
+          },
+          "disqualifying": [
+            "Analyst mentions synergies or cannibalization as part of a brainstorming list without explicitly asking whether to include them in this calculation — listing ≠ direct question (F passing mention)",
+            "Analyst already covered these in Q3 variable identification — if they are now calculating without asking, they may have assumed no synergy data; only release if they explicitly ask in Q4 context"
+          ],
+          "info": "We don't have information on potential cannibalization, revenue synergies or cost synergies."
+        }
+      ],
+      "state_machine": {
+        "next_question": "Q4_qualitative",
+        "skip_logic": false,
+        "max_attempts": 2,
+        "scoring_on_transition": {
+          "attempt_1_correct": "Full credit for quantitative part; proceed to qualitative contextualization",
+          "attempt_2_correct": "Partial credit for quantitative part; proceed to qualitative contextualization",
+          "both_attempts_wrong": "Judge LLM states '6%' as correct answer per §4.3.C; proceed to qualitative contextualization"
+        },
+        "transition_condition": "Analyst states correct final answer (6%) OR both attempts exhausted → proceed to qualitative contextualization ('How would you contextualize this result?')",
+        "zero_tolerance": true
+      }
+    },
+    "Q4_qualitative": {
+      "q_id": "Q4_qualitative",
+      "type": "qualitative",
+      "question_text": "How would you contextualize this result?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q5",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides qualitative contextualization of the 6% margin result (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q5": {
+      "q_id": "Q5",
+      "type": "qualitative",
+      "question_text": "The team is considering three more options. The analyst summarized them in this chart. What recommendations would you make?",
+      "information_to_share_upfront": [
+        "Appendix 2"
+      ],
+      "information_upon_request": null,
+      "appendix": {
+        "appendix_2": {
+          "title": "Three growth options comparison table",
+          "release_rule": "Share upfront with analyst at the start of Q5",
+          "table": {
+            "estimated_annual_revenue": {
+              "food_trucks": "$7M",
+              "corporate_catering_services": "$7M",
+              "packaged_food_in_retail_chains": "$7M"
+            },
+            "typical_distance_from_stores": {
+              "food_trucks": "1 mile",
+              "corporate_catering_services": "3 miles",
+              "packaged_food_in_retail_chains": "5 miles"
+            },
+            "type_of_locations": {
+              "food_trucks": "Downtown and suburbs",
+              "corporate_catering_services": "Downtown",
+              "packaged_food_in_retail_chains": "Suburbs"
+            },
+            "staff_implications": {
+              "food_trucks": "Extra staff for trucks",
+              "corporate_catering_services": "Existing staff completes corporate orders",
+              "packaged_food_in_retail_chains": "New staff for production lines"
+            }
+          }
+        }
+      },
+      "state_machine": {
+        "next_question": "Q6",
+        "skip_logic": false,
+        "transition_condition": "Analyst analyzes the three options and provides a recommendation (push candidate to make a clear recommendation if only chart observations given)"
+      }
+    },
+    "Q6": {
+      "q_id": "Q6",
+      "type": "qualitative",
+      "question_text": "What other information re these three options do you need to know?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q7",
+        "skip_logic": false,
+        "transition_condition": "Analyst identifies additional data needed across financial, strategic, and risk dimensions (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q7": {
+      "q_id": "Q7",
+      "type": "qualitative",
+      "question_text": "Would you implement catering services in addition to breakfasts or instead?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": null,
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a recommendation with financial and risk rationale → end of case"
+      }
+    }
+  },
+  "structure_4_ground_truth": {
+    "Q1_ground_truth": {
+      "type": "framework",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_fast_casual_healthy_restaurant_market": {
+          "keypoints": [
+            "Growth rate [low as mature market?]",
+            "Major restaurant chains",
+            "Substitutes (e.g. cooking at home, healthy food options from coffee shops, convenience stores, meal-kit delivery companies, etc.)"
+          ],
+          "subtotal": 3
+        },
+        "pillar_2_client_fast_casual_food_company": {
+          "keypoints": [
+            "Product offerings (e.g. types of meals; pre-packaged to-go vs freshly cooked; share of non-food items)",
+            "Customer segments (e.g. B2C/B2B; high-end/low-end)",
+            "Marketing strategy",
+            "Current revenue and growth rate"
+          ],
+          "subtotal": 4
+        },
+        "pillar_3_sales_growth_areas": {
+          "keypoints": [
+            "Increase in market share",
+            "Product innovation",
+            "Geographic expansion",
+            "New customer segments"
+          ],
+          "subtotal": 4
+        }
+      },
+      "total_keypoints": 11,
+      "minimum_expected": "At least 1 pillar from each of the 3 areas covered; at least 4 total keypoints",
+      "outstanding_threshold": "All 3 pillars covered with at least 3 keypoints each; structured MECE framework; delivered on-the-fly"
+    },
+    "Q2_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_upgrade_marketing_strategy": {
+          "keypoints": [
+            "Launch loyalty card for regular customers",
+            "Invest in aggressive marketing campaigns and promotions",
+            "Build/strengthen credibility through regular publications re healthy nutrition in print, blogs, YouTube, etc.",
+            "Improve online rating of restaurants (e.g. Yelp, OpenTable)",
+            "Increase in-store and local marketing"
+          ],
+          "subtotal": 5
+        },
+        "pillar_2_change_pricing": {
+          "keypoints": [
+            "Introduce meal bundles (combos)",
+            "Offer family-size meals (for price-sensitive customers)",
+            "Develop subscription options",
+            "Adjust pricing levels to match WTP (willingness-to-pay)"
+          ],
+          "subtotal": 4
+        },
+        "pillar_3_increase_efficiency_of_distribution": {
+          "keypoints": [
+            "Launch online/smartphone orders (e.g. UberEats, DoorDash)",
+            "Launch drive-through",
+            "Train cashiers and increase their incentives (e.g. sales commissions) to cross-sell and up-sell",
+            "Increase the capacity of current restaurants (e.g. increase # seats, working hours)",
+            "Enter retail pre-packaged food space by offering to-go packaged meals at groceries, convenience stores, etc.",
+            "Start franchising in regions other than Europe/US"
+          ],
+          "subtotal": 6
+        },
+        "pillar_4_improve_and_expand_value_proposition": {
+          "keypoints": [
+            "Improve CX (e.g. cleanliness, friendliness, speed of service)",
+            "Develop a smartphone app to facilitate customer journey (e.g. personalized recommendations, info on new healthy meals)",
+            "Address pain points (if any) (e.g. improve packaging, quality of products)",
+            "Launch breakfasts, coffee and low-calorie bakery",
+            "Develop adjacent offerings to cross-sell/up-sell (e.g. merchandise, seasonal offerings)",
+            "Build offerings for B2B (e.g. corporate catering)",
+            "Consider going into high-end"
+          ],
+          "subtotal": 7
+        }
+      },
+      "total_keypoints": 22,
+      "minimum_expected": "At least 4 growth ideas covering at least 2 different pillars",
+      "outstanding_threshold": "8+ ideas covering at least 3 pillars; structured approach; on-the-fly delivery without notes"
+    },
+    "Q3_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_revenue_variables_direct_impact": {
+          "keypoints": [
+            "# of unique customers",
+            "Frequency of purchases",
+            "Average ticket - Product mix purchased",
+            "Average ticket - Price",
+            "Average ticket - Discounts/promotions"
+          ],
+          "subtotal": 5
+        },
+        "pillar_2_revenue_variables_indirect_impact": {
+          "keypoints": [
+            "Cannibalization rate of lunches/dinners (if breakfast items are offered throughout day)",
+            "Estimates of revenue synergies - New customers attracted by breakfasts might also come later for lunches/dinners",
+            "Estimates of revenue synergies - Existing customers might come more often attracted by the 'one-stop store' value",
+            "Estimates of revenue synergies - Loyalty card members might come more often as now they have more options to gain points",
+            "Estimates of revenue synergies - Assuming breakfast items might be offered throughout day, the client might have more bundling and cross-selling options"
+          ],
+          "subtotal": 5
+        },
+        "pillar_3_cost_variables": {
+          "keypoints": [
+            "Cost structure of breakfasts",
+            "Capex needed (e.g. specific cooking equipment for breakfast)",
+            "Cost synergies - Volume discounts for supply purchases (breakfasts will increase supplies needed)",
+            "Cost synergies - Increase utilization rate of cooking equipment, store, logistics, etc."
+          ],
+          "subtotal": 4
+        }
+      },
+      "total_keypoints": 14,
+      "minimum_expected": "At least 4 variables covering at least 2 of the 3 pillars (direct revenue, indirect revenue, cost)",
+      "outstanding_threshold": "8+ variables covering all 3 pillars with structured framing of direct revenue, indirect synergies/cannibalization, and cost variables"
+    },
+    "Q4_ground_truth": {
+      "type": "quantitative",
+      "quantitative_part": {
+        "correct_final_answer": "6%",
+        "accepted_values": [
+          0.06
+        ],
+        "tolerance_pct": 0.0,
+        "zero_tolerance": true,
+        "scoring_method": "Binary: correct final answer (6%) = full credit; zero_tolerance = true; each intermediate step scored 3-level as supporting evidence",
+        "calculation_steps": {
+          "step_1_peak_weekday_customers": {
+            "formula": "40 customers/hr × 2 hr × 5 days",
+            "result": "400 customers"
+          },
+          "step_2_non_peak_weekday_customers": {
+            "formula": "12 customers/hr × 3 hr × 5 days",
+            "result": "180 customers"
+          },
+          "step_3_weekend_customers": {
+            "formula": "30 customers/hr × 5 hr × 2 days",
+            "result": "300 customers"
+          },
+          "step_4_weighted_avg_spend_peak": {
+            "formula": "$5 × 60% + $10 × 40%",
+            "result": "$3 + $4 = $7"
+          },
+          "step_5_weighted_avg_spend_non_peak": {
+            "formula": "$5 × 40% + $10 × 60%",
+            "result": "$2 + $6 = $8"
+          },
+          "step_6_weighted_avg_spend_weekends": {
+            "formula": "$5 × 20% + $10 × 80%",
+            "result": "$1 + $8 = $9"
+          },
+          "step_7_weekly_revenue_per_store": {
+            "formula": "400 × $7 + 180 × $8 + 300 × $9",
+            "result": "$2,800 + $1,440 + $2,700 = $6,940 ≈ $6.94k"
+          },
+          "step_8_weekly_cost_per_store": {
+            "formula": "$6.5M ÷ 1,000 stores",
+            "result": "$6.5k"
+          },
+          "step_9_profit_margin": {
+            "formula": "($6.94k − $6.5k) ÷ $6.94k",
+            "result": "$0.44k ÷ $6.94k ≈ 6% — FINAL ANSWER"
+          }
+        }
+      },
+      "qualitative_part": {
+        "scoring_note": "Qualitative portion of Q4 is scored as 100% total, split into two tiers. Within each tier, use 3-level scoring per",
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "tier_1_basic": {
+          "weight_of_Q4_qualitative_total": "50%",
+          "keypoints": [
+            "Breakfasts will demonstrate 6% profit margin which meets the client's 5% goal"
+          ],
+          "note": "Expected from every candidate. Single point worth 50% of qualitative score."
+        },
+        "tier_2_advanced": {
+          "weight_of_Q4_qualitative_total": "50%",
+          "points_available": 4,
+          "weight_per_point": "12.5% of qualitative total",
+          "keypoints": [
+            "The profit margin might be even higher if we consider potential cost synergies (breakfasts will add to the overall food supply purchases (for lunches and dinners) and thus the client might get volume discount)",
+            "Potential revenue synergies might also improve margins as breakfasts would likely attract new clientele that might come back later to buy lunch/dinner too",
+            "We made a lot of assumptions and the delta between 6% and 5% might not be statistically significant – minor changes in numbers might affect margins radically",
+            "Given restaurants are a location-driven business the breakfast sales might vary drastically across different restaurants (depending on foot traffic in specific location)"
+          ],
+          "note": "Not expected from every candidate. Each advanced point adds 12.5% to qualitative score."
+        },
+        "minimum_expected": "Correct numerical answer (6%) + Tier 1 basic contextualization covered",
+        "outstanding_threshold": "Correct numerical answer + Tier 1 covered + at least 2 Tier 2 advanced comments covered"
+      },
+      "total_keypoints": 5
+    },
+    "Q5_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "Within each tier, use 3-level scoring per; tier_1_basic (50%) + tier_2_advanced (50%)",
+      "tier_1_basic": {
+        "weight_of_Q5_total": "50%",
+        "keypoints": [
+          "All options offer the same revenue and we'll need to add costs to the analysis",
+          "Catering services don't require hiring new staff, so we might save on costs"
+        ],
+        "note": "Expected from every candidate."
+      },
+      "tier_2_advanced": {
+        "weight_of_Q5_total": "50%",
+        "points_available": 4,
+        "weight_per_point": "12.5% of Q5 total",
+        "keypoints": [
+          "Catering services might suggest better economics, as food trucks and packaged food might require substantial capex (for trucks and production line) and add new considerable costs (e.g. markup for retail chains)",
+          "Catering services and packaged food might offer strategic growth platforms. Catering services might open the door for new sales growth opportunities for B2B (e.g. cross/up-selling, in-house caterer, party catering), and retail chain might provide immediate access to a large portion of the market scaling up the sales",
+          "All of the options have risks of lower margins; however food trucks are also likely to cannibalize the client's restaurants' sales due to the close proximity of 1 mile",
+          "I would recommend to go with catering services given potentially better economics, expected strategic benefits, and similar risks"
+        ],
+        "note": "Not expected from every candidate. Each adds 12.5% to Q5 score."
+      },
+      "total_keypoints": 6,
+      "minimum_expected": "At least 1 Tier 1 basic comment + basic recommendation attempted",
+      "outstanding_threshold": "Both Tier 1 covered + at least 2 Tier 2 advanced comments + clear recommendation with rationale"
+    },
+    "Q6_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_financial_analysis": {
+          "keypoints": [
+            "Expected capex and client's investment criteria [ROI/NPV, etc.]",
+            "Projected cost structure and potential cost synergies",
+            "Forecast of pricing changes [to see the impact on the margins]"
+          ],
+          "subtotal": 3
+        },
+        "pillar_2_strategic_value": {
+          "keypoints": [
+            "Potential additional revenue opportunities driven by each option",
+            "Serviceable Addressable Market (SAM) for each option that provides access to new customer segments/regions [e.g. food truck – price-sensitive customers, catering services – B2B, retail chains – new regions]"
+          ],
+          "subtotal": 2
+        },
+        "pillar_3_risks": {
+          "keypoints": [
+            "Level of operational risks (e.g. increase in operational complexity, quality control)",
+            "Expected rate of cannibalization"
+          ],
+          "subtotal": 2
+        }
+      },
+      "total_keypoints": 7,
+      "minimum_expected": "At least 4 items covering at least 2 of the 3 pillars",
+      "outstanding_threshold": "8+ items covering all 3 pillars with structured framing"
+    },
+    "Q7_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_financial_analysis": {
+          "keypoints": [
+            "Revenue. Breakfasts and catering serve complimentary customer segments (B2C vs B2B), which expands SAM (Serviceable Addressable Market) and suggests limited/no cannibalization",
+            "Costs. Each of two new revenue streams will increase volume and thus strengthen economies of scale (e.g. lower costs for food supplies due to volume discounts, higher utilization rate of the cooking equipment and space; etc.)"
+          ],
+          "subtotal": 2
+        },
+        "pillar_2_risks": {
+          "keypoints": [
+            "Financial. Each project requires financial resources (e.g. for marketing, new staff to increase cooking capacity, salespeople for B2B, etc.)",
+            "Ops. The rapid increase in operational complexity (e.g. change in supplies, cooking, working hours for breakfasts as well as new order processing system and large size of orders for B2B) might be detrimental to business"
+          ],
+          "subtotal": 2
+        }
+      },
+      "total_keypoints": 4,
+      "minimum_expected": "At least 2 ideas covering both financial and risk dimensions",
+      "outstanding_threshold": "All 4 keypoints covered with structured framing across financial case for 'both' and risks of simultaneous launch"
+    }
+  },
+  "state_machine_global": {
+    "case_type": "interviewer_driven",
+    "skip_logic": false,
+    "mandatory_sequence": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q4_qualitative",
+      "Q5",
+      "Q6",
+      "Q7"
+    ],
+    "rules": [
+      "Q1 cannot be skipped under any circumstances",
+      "Questions must proceed in linear order Q1 → Q2 → Q3 → Q4 → Q4_qualitative → Q5 → Q6 → Q7",
+      "A question may not be advanced until the current question receives a scoreable answer (1st or 2nd attempt)",
+      "Q4 has two sub-parts: quantitative calculation (max 2 attempts, zero_tolerance) followed immediately by qualitative contextualization",
+      "Q4 quantitative: if both attempts wrong, Judge LLM provides '6%' as correct answer per §4.3.C before proceeding to Q4 qualitative contextualization",
+      "Q5 requires both chart reading AND a recommendation; push analyst to make a clear recommendation if only chart observations are given",
+      "If analyst pre-covers a later question's keypoints in an earlier answer, record as pre-coverage but still ask the later question in sequence",
+      "This Bain case does not require a final recommendation slide"
+    ]
+  },
+  "scoring_summary": {
+    "human_review_priority": "false-partial > false-not-covered > covered",
+    "Q1": {
+      "type": "framework",
+      "total_keypoints": 11,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q2": {
+      "type": "qualitative",
+      "total_keypoints": 22,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q3": {
+      "type": "qualitative",
+      "total_keypoints": 14,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q4": {
+      "type": "quantitative",
+      "part_1_quantitative": {
+        "total_steps": 9,
+        "correct_answer": "6%",
+        "zero_tolerance": true,
+        "scoring": "Binary: Full credit if correct; zero credit if incorrect (zero_tolerance)"
+      },
+      "part_2_qualitative": {
+        "total_keypoints": 5,
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "human_review_priority": "false-partial > false-not-covered > covered",
+        "tier_1_basic": {
+          "keypoints": 1,
+          "weight": "50% of qualitative score"
+        },
+        "tier_2_advanced": {
+          "keypoints": 4,
+          "weight_per_point": "12.5% of qualitative score",
+          "weight_total": "50% of qualitative score"
+        }
+      },
+      "total_keypoints": 5
+    },
+    "Q5": {
+      "type": "qualitative",
+      "total_keypoints": 6,
+      "scoring_method": "Within each tier, use 3-level scoring per; tier_1_basic (50%) + tier_2_advanced (50%)",
+      "human_review_priority": "false-partial > false-not-covered > covered",
+      "tier_1_basic": {
+        "keypoints": 2,
+        "weight": "50% of Q5 score"
+      },
+      "tier_2_advanced": {
+        "keypoints": 4,
+        "weight_per_point": "12.5% of Q5 score",
+        "weight_total": "50% of Q5 score"
+      }
+    },
+    "Q6": {
+      "type": "qualitative",
+      "total_keypoints": 7,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q7": {
+      "type": "qualitative",
+      "total_keypoints": 4,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "total_case_keypoints": 69
+  }
+}

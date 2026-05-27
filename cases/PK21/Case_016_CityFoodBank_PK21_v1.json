@@ -1,0 +1,631 @@
+{
+  "case_id": "016",
+  "version": "v1",
+  "source": {
+    "title": "City Food Bank",
+    "inspired_by": "BCG",
+    "year": "2021",
+    "author": "Peter K.",
+    "reference": "Peter-K.org, Case #16",
+    "casebook_abbr": "PK21"
+  },
+  "case_type": "interviewer_driven",
+  "case_type_origin": "candidate_led",
+  "annotation_mode": "CL_to_IL_override",
+  "case_arch": {
+    "primary": "Market Entry",
+    "tags": [
+      "Market Entry",
+      "Growth Strategy",
+      "Operational Efficiency"
+    ]
+  },
+  "difficulty": "Medium",
+  "industry": "Non-profit / Food assistance",
+  "topic": "Market entry strategy — geographic expansion of food bank operations",
+  "expected_duration_minutes": 20,
+  "opening_prompt": "Hi, I'd like to solve some consulting cases with you. Pls be a good interviewee to have a potential test in consulting cases. For the case problem-solving, pls do not assume any numbers or assumptions before my confirmation. I will give you the context upon request. I need you to answer the following questions for the client. Before you start, feel free to ask me 2-3 clarifying questions about the client.\n\nQ1. How would you structure your approach to help CFB with their expansion plans?\nQ2. Once you identify the most attractive regions to expand to, what factors of go-to-market (GTM) strategy would you consider?\nQ3. For their expansion plans, the client will need to scale up their operations. Should they move from their current warehouse to a bigger one or should they rent a second similar-size warehouse?\nQ4. What warehousing capacity in pounds (either by moving to a bigger warehouse or renting a second warehouse) should the client ensure to accommodate increasing demand?\nQ5. The client has just entered the room and they would like to know your current recommendations.\n\nHere is the basic context for the client:\nOne of the U.S. largest food banks - City Food Bank (CFB) - experienced an increase in both demand and donations during the pandemic in 2020. The donations sky-rocketed by 60% and CFB would like to leverage this momentum and expand its geographical footprint in the U.S. CFB has brought your team in on a pro bono project to help them strategize their market expansion effort. We're in early 2021.",
+  "structure_1_client_basic_context": {
+    "company": "City Food Bank (CFB)",
+    "type": "One of the U.S. largest food banks",
+    "situation": "CFB experienced an increase in both demand and donations during the pandemic in 2020. The donations sky-rocketed by 60%.",
+    "action": "CFB would like to leverage this momentum and expand its geographical footprint in the U.S.",
+    "ask": "CFB has brought your team in on a pro bono project to help them strategize their market expansion effort. We're in early 2021."
+  },
+  "structure_2_information_upon_request": {
+    "item_1": {
+      "item_id": "item_1",
+      "trigger": "Analyst asks about or includes 'food insecurity trends' or 'demand landscape' or 'size of problem' in framework or clarifying questions",
+      "core_dimensional_concept": "food insecurity growth and household prevalence",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar (e.g., 'Market need / Demand assessment')",
+          "sub-bullet under hunger-relief organization space pillar",
+          "explicit clarifying question about food insecurity levels or market need",
+          "hypothesis-driven assumption about rising food insecurity"
+        ],
+        "alternative_phrasings": [
+          "hunger demand",
+          "need for food assistance",
+          "scale of food insecurity",
+          "households in need"
+        ]
+      },
+      "disqualifying": [
+        "Only mentions 'food insecurity risk in certain regions' under the Risk pillar — here food insecurity is a risk modifier, not the dimension itself (G adjacent-dimension modifier)",
+        "Only says in passing 'given high food insecurity in the U.S.' as background setup — mentioned in passing without follow-up (F passing)"
+      ],
+      "info": "The number of people experiencing food insecurity grew exponentially across the U.S. due to loss of home, unemployment, child and elder care needs, etc. Percent of all U.S. households that experienced food insecurity jumped from 11% in 2019 to 23% in 2020."
+    },
+    "item_2": {
+      "item_id": "item_2",
+      "trigger": "Analyst asks about or includes 'geographic distribution of food insecurity' or 'state-level data' or 'which regions have highest need' in framework or clarifying questions",
+      "core_dimensional_concept": "state-level food insecurity distribution",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet referencing regional or geographic variation in food insecurity",
+          "explicit clarifying question about which states or regions have the highest need",
+          "hypothesis referencing geographic concentration of hunger"
+        ],
+        "alternative_phrasings": [
+          "food insecurity by state",
+          "regional prevalence",
+          "geographic distribution of need",
+          "which states are most affected"
+        ]
+      },
+      "disqualifying": [
+        "Only loosely says 'geographic expansion criteria' without naming the specific state-level data need — an adjacent dimension, but does not name the distribution data (G adjacent-dimension modifier)",
+        "Only uses Appendix 1 as a passing data reference, not as an analysis dimension (F passing)"
+      ],
+      "info": "Distribution of food insecurity differs by state (see Appendix 1)."
+    },
+    "item_3": {
+      "item_id": "item_3",
+      "trigger": "Analyst asks about or includes 'donation amount' or 'funding base' or 'financial capacity' of CFB in framework or clarifying questions",
+      "core_dimensional_concept": "CFB donation level and funding capacity",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar referencing CFB's financial resources or donation base",
+          "sub-bullet under financial analysis pillar asking about available funding",
+          "explicit clarifying question about CFB's annual donations or fundraising",
+          "hypothesis-driven assumption about CFB's budget size"
+        ],
+        "alternative_phrasings": [
+          "fundraising capacity",
+          "CFB annual revenue",
+          "donation income",
+          "available funds for expansion"
+        ]
+      },
+      "disqualifying": [
+        "Only says 'financial sustainability' as a risk consideration rather than asking about the specific donation amount (G adjacent-dimension modifier)",
+        "Only a passing mention of 'CFB relies on donations' in context without following up on the specific figure (F passing)"
+      ],
+      "info": "CFB used to raise $100M per year in donations, but in 2020 their donation collection jumped by 60%."
+    },
+    "item_4": {
+      "item_id": "item_4",
+      "trigger": "Analyst asks about or includes 'fund allocation' or 'overhead ratio' or 'admin cost constraint' in framework or clarifying questions",
+      "core_dimensional_concept": "fund allocation constraint and admin cost ceiling",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet referencing operational cost efficiency or admin overhead",
+          "explicit clarifying question about what percentage of funds must go to program delivery",
+          "hypothesis-driven assumption about non-profit cost structure constraints"
+        ],
+        "alternative_phrasings": [
+          "overhead percentage",
+          "admin costs",
+          "program spending ratio",
+          "operational efficiency requirement"
+        ]
+      },
+      "disqualifying": [
+        "Only mentions 'risk of high admin costs undermining mission' under the Risk pillar — a risk-angle modifier, not the fund-allocation dimension itself (G adjacent-dimension modifier)",
+        "Only says 'CFB is a non-profit with cost constraints' without following up on the specific ratio requirement (F passing)"
+      ],
+      "info": "CFB would like to ensure at least 90% of funds will be applied to hunger-relief efforts in new regions (i.e. no more than 10% will be used to cover admin costs)."
+    }
+  },
+  "structure_3_case_questions": {
+    "Q1": {
+      "q_id": "Q1",
+      "type": "framework",
+      "question_text": "How would you structure your approach to help CFB with their expansion plans?",
+      "information_to_share_upfront": null,
+      "information_upon_request": "See structure_2 items 1–4. Release only items by semantic touch; not by mere keyword presence.",
+      "state_machine": {
+        "next_question": "Q2",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable framework answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q2": {
+      "q_id": "Q2",
+      "type": "qualitative",
+      "question_text": "Once you identify the most attractive regions to expand to, what factors of go-to-market (GTM) strategy would you consider?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q3",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q3": {
+      "q_id": "Q3",
+      "type": "qualitative",
+      "question_text": "For their expansion plans, the client will need to scale up their operations. Should they move from their current warehouse to a bigger one or should they rent a second similar-size warehouse?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q4",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q4": {
+      "q_id": "Q4",
+      "type": "quantitative",
+      "question_text": "What warehousing capacity in pounds (either by moving to a bigger warehouse or renting a second warehouse) should the client ensure to accommodate increasing demand?",
+      "information_to_share_upfront": [
+        "CFB used to raise $100M in donations annually, but in 2020 their donation collection jumped by 60%",
+        "A typical length of a rent contract for a warehouse is 3 years",
+        "We can assume that all the donations are spent to purchase food"
+      ],
+      "information_upon_request": [
+        {
+          "item_id": "Q4_item_1",
+          "trigger": "Analyst asks about or states they need the donation per meal unit cost to calculate number of meals",
+          "core_dimensional_concept": "donation cost per meal",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question about cost per meal or price per meal",
+              "setup step in calculation asking for unit cost of food",
+              "hypothesis-driven assumption about meal cost asking for confirmation"
+            ],
+            "alternative_phrasings": [
+              "cost per meal",
+              "price of one meal",
+              "unit food cost",
+              "meal purchase price"
+            ]
+          },
+          "disqualifying": [
+            "Only mentions 'total food costs' without reaching per-meal granularity (G adjacent-dimension modifier)",
+            "Only mentions in passing 'meals are funded by donations' without following up on the unit price (F passing)"
+          ],
+          "info": "The total donation per one meal is $2."
+        },
+        {
+          "item_id": "Q4_item_2",
+          "trigger": "Analyst asks about or states they need the weight per meal to convert meals to pounds",
+          "core_dimensional_concept": "average weight per meal",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question about meal weight or pounds per meal",
+              "calculation step asking for conversion factor from meals to pounds/lbs",
+              "hypothesis-driven assumption about meal weight"
+            ],
+            "alternative_phrasings": [
+              "pounds per meal",
+              "weight of a meal",
+              "lbs per meal",
+              "meal weight conversion"
+            ]
+          },
+          "disqualifying": [
+            "Only mentions 'weight capacity' or 'storage capacity in pounds' without following up on per-meal weight (G adjacent-dimension modifier)",
+            "Only says 'need to calculate storage requirements' without specifically asking for the per-meal weight (F passing)"
+          ],
+          "info": "Average weight of one meal is 1.25 lbs."
+        },
+        {
+          "item_id": "Q4_item_3",
+          "trigger": "Analyst asks about or states they need to know how many weeks of supply the warehouse must hold",
+          "core_dimensional_concept": "required weeks of supply buffer",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question about safety stock weeks or supply buffer requirement",
+              "calculation step asking for the number of weeks the warehouse should cover",
+              "hypothesis about inventory or supply weeks"
+            ],
+            "alternative_phrasings": [
+              "weeks of inventory",
+              "supply buffer",
+              "how long the warehouse covers",
+              "weeks of stock"
+            ]
+          },
+          "disqualifying": [
+            "Only loosely mentions 'warehouse storage needs' without following up on the specific number of weeks (G adjacent-dimension modifier)",
+            "Only says 'warehouse should be large enough' without quantifying the buffer need (F passing)"
+          ],
+          "info": "The warehouse should have 5-week supply of meals."
+        },
+        {
+          "item_id": "Q4_item_4",
+          "trigger": "Analyst asks about or states they need the demand growth rate for 3-year projection",
+          "core_dimensional_concept": "demand growth rate over 3 years",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question about expected demand growth or increase in food assistance programs",
+              "calculation step asking for growth rate to project future demand",
+              "hypothesis about demand increase percentage"
+            ],
+            "alternative_phrasings": [
+              "expected growth rate",
+              "demand increase",
+              "growth in food assistance",
+              "how much will demand increase"
+            ]
+          },
+          "disqualifying": [
+            "Only mentions 'growing demand' or 'increasing need for food assistance' without following up on the specific growth rate (F passing)",
+            "Only frames demand growth as a market opportunity without following up on the rate (G adjacent-dimension modifier)"
+          ],
+          "info": "We expect the demand for CFB's food assistance programs to increase by 30% in 3 years."
+        },
+        {
+          "item_id": "Q4_item_5",
+          "trigger": "Analyst asks about or states they need to know whether food costs will change over time",
+          "core_dimensional_concept": "food cost inflation assumption",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question about food price inflation or cost structure changes",
+              "calculation setup step asking whether to assume constant or variable food costs",
+              "hypothesis about zero or nonzero inflation for food purchases"
+            ],
+            "alternative_phrasings": [
+              "food price inflation",
+              "cost structure changes",
+              "inflation assumption",
+              "will food costs change"
+            ]
+          },
+          "disqualifying": [
+            "Only mentions 'inflation risk on food costs' under the Risk pillar without following up, in the calculation setup, on the specific assumption (G adjacent-dimension modifier)",
+            "Only mentions 'assume stable costs' in passing without following up to confirm it (F passing)"
+          ],
+          "info": "We can assume that cost structure will remain the same (e.g. zero inflation for food)."
+        }
+      ],
+      "appendix": {
+        "appendix_1": {
+          "title": "Prevalence of household-level food insecurity by state",
+          "release_rule": "Share upfront with analyst at the start of Q1 if food insecurity distribution is triggered via structure_2 item_2; also available as reference for Q4 context if analyst asks about state-level demand data",
+          "chart_description": "Scatter plot: X-axis = Number of households (M), Y-axis = Food insecurity % (2017-19 average). U.S. average dashed line at ~11%. States range from ~7% to ~16% food insecurity; number of households range from 0 to ~16M."
+        }
+      },
+      "state_machine": {
+        "next_question": "Q5",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a numerical answer (1st or 2nd attempt completed); interviewer provides correct answer before Q5 if both attempts wrong perC",
+        "max_attempts": 2,
+        "scoring_on_transition": {
+          "attempt_1_correct": "Full score",
+          "attempt_2_correct": "0 score per core_principles",
+          "both_attempts_wrong": "0 score; interviewer provides correct answer (13M lbs or 12.5M lbs) before Q5"
+        }
+      }
+    },
+    "Q5": {
+      "q_id": "Q5",
+      "type": "qualitative",
+      "question_text": "The client has just entered the room and they would like to know your current recommendations.",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": null,
+        "skip_logic": false,
+        "transition_condition": "Case ends after Q5"
+      }
+    }
+  },
+  "structure_4_ground_truth": {
+    "Q1_ground_truth": {
+      "type": "framework",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_hunger_relief_organization_space": {
+          "keypoints": [
+            "Size of population facing food insecurity by state",
+            "Forecasted growth",
+            "Federal/state/local food assistance programs by state",
+            "Food banks and hunger-relief NGOs by state"
+          ],
+          "subtotal": 4
+        },
+        "pillar_2_city_food_bank": {
+          "keypoints": [
+            "Target population groups (e.g. families, children)",
+            "Food assistance offerings",
+            "Distribution infrastructure",
+            "Marketing strategy"
+          ],
+          "subtotal": 4
+        },
+        "pillar_3_financial_analysis": {
+          "keypoints": [
+            "Required capex",
+            "Expected costs (to meet 90% goal)",
+            "Planned donation amount"
+          ],
+          "subtotal": 3
+        },
+        "pillar_4_risk_assessment": {
+          "keypoints": [
+            "Financial",
+            "Operational",
+            "Space-specific"
+          ],
+          "subtotal": 3
+        }
+      },
+      "total_keypoints": 14,
+      "minimum_expected": "Cover at least 3 of 4 pillars with substantive content; Q1 is a framework question so structure and coverage matter",
+      "outstanding_threshold": "Cover all 4 pillars with multiple sub-bullets per pillar; demonstrate insight into non-profit market entry nuances"
+    },
+    "Q2_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_financial_considerations": {
+          "keypoints": [
+            "Projected economics",
+            "Expected donation flow",
+            "Estimated costs",
+            "Potential synergies",
+            "Planned investment",
+            "Scenario and sensitivity analysis (e.g. poor, basic, best case)"
+          ],
+          "subtotal": 6
+        },
+        "pillar_2_business_model_considerations": {
+          "keypoints": [
+            "Donation attraction - Salesforce",
+            "Donation attraction - Methods and events",
+            "Marketing strategy - Target population groups",
+            "Marketing strategy - Planned campaigns",
+            "Marketing strategy - Marketing channels",
+            "Distribution infrastructure - Warehouse",
+            "Distribution infrastructure - Logistics",
+            "Distribution infrastructure - Points of food distribution"
+          ],
+          "subtotal": 8
+        },
+        "pillar_3_operational_considerations": {
+          "keypoints": [
+            "Food purchasing: suppliers, price and terms negotiation",
+            "Volunteer management (incl. attraction and retention)",
+            "Timeline",
+            "Operational complexity"
+          ],
+          "subtotal": 4
+        }
+      },
+      "total_keypoints": 18,
+      "minimum_expected": "Cover at least 2 of 3 dimensions with substantive ideas; minimum 4 ideas total",
+      "outstanding_threshold": "Cover all 3 dimensions with multiple structured sub-points; demonstrate GTM sophistication"
+    },
+    "Q3_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_financial_criteria": {
+          "keypoints": [
+            "Rent costs and utilities",
+            "Maintenance costs for building and equipment",
+            "Insurance",
+            "Warehouse labor costs",
+            "Change in transportation costs (depends on the location)",
+            "Equipment for warehouse"
+          ],
+          "subtotal": 6
+        },
+        "pillar_2_strategic_criteria": {
+          "keypoints": [
+            "Potential platform for further expansion to other regions",
+            "Capacity",
+            "Operational hours",
+            "Logistical accessibility",
+            "Capabilities to store different types of food",
+            "Reporting options (e.g. RFID trackers, activity trackers)"
+          ],
+          "subtotal": 6
+        },
+        "pillar_3_risks_assessment": {
+          "sub_pillar_a_operational_risks_two_warehouses": {
+            "keypoints": [
+              "Increased operational complexity",
+              "More challenging to exchange best practices between employees",
+              "More challenging quality control"
+            ],
+            "subtotal": 3
+          },
+          "sub_pillar_b_general": {
+            "keypoints": [
+              "Potential lack of employees in a new location",
+              "Bad log implementation and launch"
+            ],
+            "subtotal": 2
+          },
+          "sub_pillar_c_financial_risks_two_warehouses": {
+            "keypoints": [
+              "Loss in economies of scale",
+              "Underestimated costs/exaggerated revenues"
+            ],
+            "subtotal": 2
+          },
+          "keypoints": [
+            "Increased operational complexity",
+            "More challenging to exchange best practices between employees",
+            "More challenging quality control",
+            "Potential lack of employees in a new location",
+            "Bad log implementation and launch",
+            "Loss in economies of scale",
+            "Underestimated costs/exaggerated revenues"
+          ],
+          "subtotal": 7
+        }
+      },
+      "total_keypoints": 19,
+      "minimum_expected": "Cover at least 2 of 3 dimensions (financial/strategic/risk) with substantive ideas; minimum 4 ideas total",
+      "outstanding_threshold": "Cover all 3 dimensions; articulate the tradeoffs between one big warehouse vs two smaller ones"
+    },
+    "Q4_ground_truth": {
+      "type": "quantitative",
+      "quantitative_part": {
+        "correct_final_answer": "13M lbs (casebook rounded) — also accept 12.5M lbs (exact calculation: 130M lbs × 5/52 = 12.5M lbs)",
+        "accepted_values": [
+          13000000,
+          12500000
+        ],
+        "tolerance_pct": 0.02,
+        "zero_tolerance": false,
+        "scoring_method": "Binary: correct number = full credit; incorrect = zero credit. Accept both 13M lbs and 12.5M lbs. Any other value = zero credit.",
+        "calculation_steps": {
+          "step_1_meals_in_2020": {
+            "formula": "$100M donations × (1 + 60%) ÷ $2 per meal",
+            "result": "80M meals"
+          },
+          "step_2_annual_weight_in_3_years": {
+            "formula": "80M meals × 1.25 lbs/meal × (1 + 30%)",
+            "result": "130M lbs per year"
+          },
+          "step_3_weight_5_week_supply_2023": {
+            "formula": "130M lbs × 5/52 weeks",
+            "result": "12.5M lbs (exact) — casebook rounds to 13M lbs"
+          }
+        }
+      },
+      "qualitative_part": {
+        "scoring_note": "Qualitative portion of Q4 is scored as 100% total, split into two tiers. Within each tier, use 3-level scoring per",
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "tier_1_basic": {
+          "weight_of_Q4_qualitative_total": "50%",
+          "keypoints": [
+            "City Food Bank should increase the capacity of their warehouse(s) to 13M lbs to accommodate growing demand"
+          ],
+          "note": "Expected from every candidate. Correct contextualization of the numerical answer."
+        },
+        "tier_2_advanced": {
+          "weight_of_Q4_qualitative_total": "50%",
+          "points_available": 3,
+          "weight_per_point": "16.7% of qualitative total",
+          "keypoints": [
+            "Such a radical increase in food storage might lead to more waste and thus higher warehouse management costs and potentially larger required warehousing capacity",
+            "Explosive expansion of operations might offer stronger economies of scale and thus more attractive cost structure for meals, which might allow CFB to ensure larger volume of meals",
+            "Reducing required amount of food supply from 5 weeks to 4 weeks might reduce the warehouse costs by 20% [(5-4)/5] and allow to channel freed funds into more food assistance programs"
+          ],
+          "note": "Not expected from every candidate. Each advanced point adds ~16.7% to qualitative score."
+        },
+        "minimum_expected": "Correct numerical answer + Tier 1 basic contextualization (covered)",
+        "outstanding_threshold": "Correct numerical answer + Tier 1 covered + at least 2 Tier 2 advanced comments covered"
+      }
+    },
+    "Q5_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_recommendation": {
+          "keypoints": [
+            "CFB should focus on regions with large population facing food insecurity, low level of penetration of hunger-relief NGOs and fair proximity to CFB's current geographical footprint"
+          ],
+          "subtotal": 1
+        },
+        "pillar_2_reasoning": {
+          "keypoints": [
+            "It will likely maximize the impact of CFB's food assistance programs due to large unassisted population",
+            "It will likely ensure healthy economies of CFB as large volume will drive stronger economies of scale and large population might make marketing more efficient",
+            "It will make it operationally feasible and allow CFB to leverage existing warehouse"
+          ],
+          "subtotal": 3
+        },
+        "pillar_3_risks": {
+          "keypoints": [
+            "Before giving a green light to the expansion we need to consider risks of exaggerated assumptions for financial evaluation, potential fluctuations of donations and operational complexity of enlarged organization"
+          ],
+          "subtotal": 1
+        },
+        "pillar_4_next_steps": {
+          "keypoints": [
+            "As for the next steps, I'd like to conduct more comprehensive analysis of potential states to expand to and develop a risk mitigation plan"
+          ],
+          "subtotal": 1
+        }
+      },
+      "total_keypoints": 6,
+      "minimum_expected": "Recommendation pillar covered + at least 1 reasoning point covered",
+      "outstanding_threshold": "All 4 pillars covered, including the recommendation, at least 2 reasoning points, the risk point, and next steps"
+    }
+  },
+  "state_machine_global": {
+    "case_type": "interviewer_driven",
+    "skip_logic": false,
+    "mandatory_sequence": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5"
+    ],
+    "rules": [
+      "Q1 cannot be skipped under any circumstances",
+      "Questions must proceed in linear order Q1 → Q2 → Q3 → Q4 → Q5",
+      "A question may not be advanced until the current question receives a scoreable answer (1st or 2nd attempt)",
+      "If analyst pre-covers a later question's keypoints in an earlier answer, record as pre-coverage but still ask the later question in sequence",
+      "No question may be skipped even if pre-covered",
+      "Q4 is quantitative: max 2 attempts; if both wrong, interviewer provides correct answer (13M lbs or 12.5M lbs) before proceeding to Q5 perC"
+    ]
+  },
+  "scoring_summary": {
+    "Q1": {
+      "type": "framework",
+      "total_keypoints": 14,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q2": {
+      "type": "qualitative",
+      "total_keypoints": 18,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q3": {
+      "type": "qualitative",
+      "total_keypoints": 19,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q4": {
+      "type": "quantitative",
+      "part_1_quantitative": {
+        "correct_answer": "13M lbs (casebook) — also accept 12.5M lbs (exact)",
+        "zero_tolerance": true,
+        "scoring": "Binary: Full credit if correct (either 13M or 12.5M lbs); zero credit if incorrect"
+      },
+      "part_2_qualitative": {
+        "total_keypoints": 4,
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "human_review_priority": "false-partial > false-not-covered > covered",
+        "tier_1_basic": {
+          "keypoints": 1,
+          "weight": "50% of qualitative score"
+        },
+        "tier_2_advanced": {
+          "keypoints": 3,
+          "weight_per_point": "16.7% of qualitative score",
+          "weight_total": "50% of qualitative score"
+        }
+      }
+    },
+    "Q5": {
+      "type": "qualitative",
+      "total_keypoints": 6,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    }
+  }
+}

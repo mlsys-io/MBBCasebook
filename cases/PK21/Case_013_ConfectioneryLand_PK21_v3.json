@@ -1,0 +1,665 @@
+{
+  "case_id": "013",
+  "version": "v3",
+  "source": {
+    "title": "Confectionery Land",
+    "inspired_by": "McKinsey & Company",
+    "year": 2021,
+    "author": "Peter K.",
+    "reference": "Peter-K.org, Case #13",
+    "casebook_abbr": "PK21"
+  },
+  "case_type": "interviewer_driven",
+  "case_type_origin": null,
+  "annotation_mode": null,
+  "case_arch": {
+    "primary": "Market Entry",
+    "tags": [
+      "Market Entry",
+      "Market Sizing",
+      "Growth Strategy"
+    ]
+  },
+  "difficulty": "Medium",
+  "industry": "Consumer Goods / Confectionery",
+  "topic": "Market entry decision — entering a European developing country X with chocolate products",
+  "expected_duration_minutes": 18,
+  "opening_prompt": "Hi, I'd like to solve some consulting cases with you. Pls be a good interviewee to have a potential test in consulting cases. For the case problem-solving, pls do not assume any numbers or assumptions before my confirmation. I will give you the context upon request. I need you to answer the following questions for the client. Before you start, feel free to ask me 2-3 clarifying questions about the client.\n\nQ1. What factors do we need to consider to suggest if it makes sense for Confectionery Land to enter country X?\nQ2. If country X turns out to be an attractive market, how would you design your go-to-market (GTM) strategy?\nQ3. Your analyst has put together some data on chocolate consumption in country X (see Appendix 1). Can you calculate the size of the market in two years?\nQ4. What are some risks of entering country X?\n\nHere is the basic context for the client:\nConfectionery Land is a house of major brands of chocolate and sugar confectionery sold primarily in Europe. The company is pursuing an active expansion strategy. Currently they are considering entering a European developing country X with their best-selling chocolate products. Their CEO reached out to your team to help them justify this decision.",
+  "structure_1_client_basic_context": {
+    "company": "Confectionery Land",
+    "type": "House of major brands of chocolate and sugar confectionery sold primarily in Europe",
+    "situation": "The company is pursuing an active expansion strategy. Currently they are considering entering a European developing country X with their best-selling chocolate products.",
+    "action": "Considering entering a European developing country X with their best-selling chocolate products.",
+    "ask": "Their CEO reached out to your team to help them justify this decision."
+  },
+  "structure_2_information_upon_request": {
+    "item_1": {
+      "item_id": "item_1",
+      "trigger": "Analyst asks about the population size or demographics of country X",
+      "core_dimensional_concept": "country X population size",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar named 'Market Size', 'Demographics', or 'Country X Profile'",
+          "explicit clarifying question about how many people live in country X or country size",
+          "sub-bullet under market assessment asking about population or demographic base"
+        ],
+        "alternative_phrasings": [
+          "how big is country X",
+          "how many people live in country X",
+          "population of country X",
+          "country size",
+          "demographic base"
+        ]
+      },
+      "disqualifying": [
+        "Only loosely states 'country X market' without touching the population-size dimension (passing reference, F pattern)",
+        "Only mentions 'country-specific risk' under the Risk pillar without actively asking about population size"
+      ],
+      "info": "Country X has a population of 9M people."
+    },
+    "item_2": {
+      "item_id": "item_2",
+      "trigger": "Analyst asks about the size of the chocolate market or total consumption in country X",
+      "core_dimensional_concept": "total annual chocolate market size in country X",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar named 'Market Size', 'TAM', or 'Chocolate Market'",
+          "explicit clarifying question about total annual chocolate consumption or market value",
+          "sub-bullet under market assessment asking for the scale or value of the chocolate market"
+        ],
+        "alternative_phrasings": [
+          "total addressable market",
+          "chocolate market value",
+          "annual spending on chocolate",
+          "market size in country X",
+          "how big is the chocolate market"
+        ]
+      },
+      "disqualifying": [
+        "Only says 'attractive market' without touching the market-size figure (passing reference, F pattern)",
+        "Only lists 'revenue potential' as a calculation framework under Financial Analysis rather than actively asking for the specific market size"
+      ],
+      "info": "The annual chocolate consumption in country X is $600M."
+    },
+    "item_3": {
+      "item_id": "item_3",
+      "trigger": "Analyst asks about the growth rate of the chocolate market in country X",
+      "core_dimensional_concept": "historical chocolate market growth rate in country X",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar named 'Market Growth', 'Growth Rate', or 'Market Dynamics'",
+          "explicit clarifying question about how fast the chocolate market is growing",
+          "sub-bullet under market assessment asking for historical growth or CAGR"
+        ],
+        "alternative_phrasings": [
+          "how fast is the market growing",
+          "annual growth rate",
+          "CAGR",
+          "market trend",
+          "growth dynamics",
+          "historical growth"
+        ]
+      },
+      "disqualifying": [
+        "Only says 'growing market' as a passing mention without actively asking for the specific growth-rate figure (F pattern)",
+        "Only mentions 'market slowdown risk' under the Risk pillar without touching the current growth-rate dimension"
+      ],
+      "info": "The annual growth rate of chocolate product market was 10% over the last three years."
+    },
+    "item_4": {
+      "item_id": "item_4",
+      "trigger": "Analyst asks about competition or the competitive landscape in country X",
+      "core_dimensional_concept": "competitive landscape and market concentration in country X chocolate market",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar named 'Competitive Landscape', 'Competition', or 'Key Players'",
+          "explicit clarifying question about who the major competitors are in country X",
+          "sub-bullet under market assessment asking about market players, market shares, or competitive intensity"
+        ],
+        "alternative_phrasings": [
+          "who are the major players",
+          "competitive intensity",
+          "market leaders",
+          "market concentration",
+          "who controls the market",
+          "local vs global players"
+        ]
+      },
+      "disqualifying": [
+        "Only says 'competitive response risk' under the Risk pillar without actively asking about the specific competitive landscape (adjacent dimension, G pattern)",
+        "Only loosely states 'competitive market' without touching specific players or market concentration (F pattern)"
+      ],
+      "info": "More than half of the market is controlled by Mondelez, Nestle and Mars, however there are a lot of small and medium size local players."
+    },
+    "item_5": {
+      "item_id": "item_5",
+      "trigger": "Analyst asks about Confectionery Land's financial goals or success criteria for this market entry",
+      "core_dimensional_concept": "Confectionery Land's stated financial goals or investment criteria for country X entry",
+      "release_conditions": {
+        "structural_position": [
+          "explicit clarifying question about financial goal, ROI target, or what success looks like",
+          "framework sub-bullet asking what the client's target return or investment criterion is",
+          "direct question about hurdle rate, NPV threshold, or success metrics"
+        ],
+        "alternative_phrasings": [
+          "what are the financial targets",
+          "what return does the client expect",
+          "does the client have a goal",
+          "what does success look like",
+          "hurdle rate",
+          "investment objective"
+        ]
+      },
+      "disqualifying": [
+        "Only lists 'Financial Analysis' as a pillar name in the framework without touching the target question (stating a framework dimension, not actively asking about the target, F pattern)",
+        "Only lists 'ROI / NPV / payback' as analysis methods under Investment Criteria rather than asking whether the client has a specific target"
+      ],
+      "info": "The client didn't provide any goals."
+    },
+    "item_6": {
+      "item_id": "item_6",
+      "trigger": "Analyst asks about Confectionery Land's product portfolio or what the client sells",
+      "core_dimensional_concept": "Confectionery Land's product portfolio and chocolate offerings",
+      "release_conditions": {
+        "structural_position": [
+          "explicit clarifying question about what products Confectionery Land offers or sells",
+          "framework sub-bullet under company analysis asking about product range or offerings",
+          "direct question about business model, product categories, or product lineup"
+        ],
+        "alternative_phrasings": [
+          "what does the client sell",
+          "product range",
+          "chocolate product offerings",
+          "what products",
+          "business model",
+          "product categories"
+        ]
+      },
+      "disqualifying": [
+        "Only lists 'Confectionery Land' as a company-analysis dimension under the Business Model pillar without actively asking about the specific product line (stating a framework dimension, F pattern)",
+        "Only says 'client's product portfolio' as a framework item without touching the specific product question (adjacent dimension, G pattern)"
+      ],
+      "info": "Confectionery Land offers chocolate bars, chocolate candies, and biscuits (cookies and crackers)."
+    }
+  },
+  "structure_3_case_questions": {
+    "Q1": {
+      "q_id": "Q1",
+      "type": "framework",
+      "question_text": "What factors do we need to consider to suggest if it makes sense for Confectionery Land to enter country X?",
+      "information_to_share_upfront": null,
+      "information_upon_request": "See structure_2 items 1–6. Release only items by semantic touch (release when the analyst structurally engages the dimension; not on a passing reference), not by mere keyword presence.",
+      "state_machine": {
+        "next_question": "Q2",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable framework answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q2": {
+      "q_id": "Q2",
+      "type": "qualitative",
+      "question_text": "If country X turns out to be an attractive market, how would you design your go-to-market (GTM) strategy?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q3",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q3": {
+      "q_id": "Q3",
+      "type": "quantitative",
+      "question_text": "Your analyst has put together some data on chocolate consumption in country X (see Appendix 1). Can you calculate the size of the market in two years?",
+      "information_to_share_upfront": [
+        "Appendix 1 (Annual chocolate consumption in country X — see appendix field below)"
+      ],
+      "information_upon_request": [
+        {
+          "item_id": "Q3_item_1",
+          "trigger": "Analyst asks about how children's chocolate consumption or spending will change in 2 years",
+          "core_dimensional_concept": "projected spending change for the children segment",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question about how children's consumption or spending will change",
+              "quantitative setup requesting children's segment growth rate or change",
+              "direct question: 'How will the children segment's spending change?' or 'What happens to kids' consumption?'"
+            ],
+            "alternative_phrasings": [
+              "children's consumption growth",
+              "kids segment change",
+              "under-age spending increase",
+              "how will children's spending evolve",
+              "child segment dynamics"
+            ]
+          },
+          "disqualifying": [
+            "Only lists 'Children' as a customer segment in the framework without asking about its consumption change (stating a category, not a question about change, F pattern)",
+            "Only says 'I need to analyze each segment' without touching the specific children's-change dimension"
+          ],
+          "info": "Overall spending in group \"Children\" will increase by 20%."
+        },
+        {
+          "item_id": "Q3_item_2",
+          "trigger": "Analyst asks about changes in the 18-44 yo segment's spending behavior or average purchase amount",
+          "core_dimensional_concept": "projected average spend per purchase change for 18-44 yo segment",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question about 18-44 yo spending or purchase amount changes",
+              "quantitative setup requesting young adult segment behavioral change",
+              "direct question: 'How will spending per purchase change for the 18-44 group?'"
+            ],
+            "alternative_phrasings": [
+              "young adult spending change",
+              "18-44 segment behavior",
+              "average spend per purchase change",
+              "how will young adults' spending evolve",
+              "18 to 44 year old consumption"
+            ]
+          },
+          "disqualifying": [
+            "Only lists '18-44 yo' as an age segment in the framework without asking about its consumption change (F pattern)",
+            "Only says 'key demographic' without touching the average-purchase-amount change dimension"
+          ],
+          "info": "The average spend per purchase for group \"18-44 yo\" will jump from $6 to $7.5."
+        },
+        {
+          "item_id": "Q3_item_3",
+          "trigger": "Analyst asks about changes in the 45-64 yo segment's purchase frequency or consumption",
+          "core_dimensional_concept": "projected purchase frequency change for 45-64 yo segment",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question about 45-64 yo purchase frequency or consumption changes",
+              "quantitative setup requesting middle-aged segment behavioral change",
+              "direct question: 'How will purchase frequency change for the 45-64 group?'"
+            ],
+            "alternative_phrasings": [
+              "45-64 segment behavior",
+              "middle-aged consumption change",
+              "purchase frequency change",
+              "how often will 45-64 buy",
+              "45 to 64 year old spending"
+            ]
+          },
+          "disqualifying": [
+            "Only lists '45-64 yo' as an age segment in the framework without asking about its consumption change (F pattern)",
+            "Only says 'mature consumer segment' without touching the purchase-frequency change dimension"
+          ],
+          "info": "Group \"45-64 yo\" will purchase chocolate products more often - 16 times a year."
+        },
+        {
+          "item_id": "Q3_item_4",
+          "trigger": "Analyst asks about changes in the 65+ yo segment's consumption or purchasing behavior",
+          "core_dimensional_concept": "projected spending behavior of the 65+ yo segment",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question about elderly consumption or behavior changes",
+              "quantitative setup requesting senior segment change data",
+              "direct question: 'What happens to the 65+ group's purchasing behavior?'"
+            ],
+            "alternative_phrasings": [
+              "senior spending change",
+              "elderly consumption",
+              "65+ segment dynamics",
+              "older adults purchasing behavior",
+              "65 and above spending"
+            ]
+          },
+          "disqualifying": [
+            "Only lists '65+ yo' as an age segment in the framework without asking about its consumption change (F pattern)",
+            "Only says 'senior market' without touching the specific behavior-change dimension"
+          ],
+          "info": "The behavior of group \"65+ yo\" isn't expected to change."
+        },
+        {
+          "item_id": "Q3_item_5",
+          "trigger": "Analyst asks about whether the population structure or age distribution will remain constant",
+          "core_dimensional_concept": "population age distribution stability assumption for country X",
+          "release_conditions": {
+            "structural_position": [
+              "explicit clarifying question about whether the age distribution or demographic composition is constant",
+              "quantitative assumption request about whether segment proportions will change",
+              "direct question: 'Is the population structure expected to change?' or 'Will the age breakdown stay the same?'"
+            ],
+            "alternative_phrasings": [
+              "demographic distribution stable",
+              "age breakdown constant",
+              "will the proportion of each age group change",
+              "population composition",
+              "age structure assumption"
+            ]
+          },
+          "disqualifying": [
+            "Only asks about 'total population' without touching the population-age-composition stability assumption (adjacent dimension, G pattern)",
+            "Only says 'I'll use the segment data' in the market-sizing calculation without actively asking whether the structure changes"
+          ],
+          "info": "Population structure will remain the same."
+        },
+        {
+          "item_id": "Q3_item_6",
+          "trigger": "Analyst asks about population growth rate or whether total population will change in country X",
+          "core_dimensional_concept": "population growth rate assumption for country X",
+          "release_conditions": {
+            "structural_position": [
+              "explicit clarifying question about country X population growth",
+              "quantitative setup asking whether to assume population size changes over 2 years",
+              "direct question: 'Is the population growing?' or 'Should I assume any population growth?'"
+            ],
+            "alternative_phrasings": [
+              "population growth rate",
+              "will population size change",
+              "demographic growth",
+              "country X population trend",
+              "is the population stable"
+            ]
+          },
+          "disqualifying": [
+            "Only asks about 'market growth rate' without touching the population-growth-rate dimension (adjacent dimension, G pattern)",
+            "Only says '9M population' without actively asking about its growth assumption (passing reference, F pattern)"
+          ],
+          "info": "Population growth rate is negligible."
+        }
+      ],
+      "appendix": {
+        "appendix_1": {
+          "title": "Annual chocolate consumption in country X",
+          "release_rule": "Share upfront with analyst at the start of Q3",
+          "table": {
+            "children": {
+              "segment_size": "$120M",
+              "segment_share": "20%",
+              "purchases_per_year": 12,
+              "average_spend_per_purchase": "$5",
+              "annual_spending_per_person": "$60"
+            },
+            "18_44_yo": {
+              "segment_size": "$180M",
+              "segment_share": "30%",
+              "purchases_per_year": 14,
+              "average_spend_per_purchase": "$6",
+              "annual_spending_per_person": "$84"
+            },
+            "45_64_yo": {
+              "segment_size": "$180M",
+              "segment_share": "30%",
+              "purchases_per_year": 14,
+              "average_spend_per_purchase": "$6",
+              "annual_spending_per_person": "$84"
+            },
+            "65_plus_yo": {
+              "segment_size": "$120M",
+              "segment_share": "20%",
+              "purchases_per_year": 10,
+              "average_spend_per_purchase": "$4",
+              "annual_spending_per_person": "$40"
+            }
+          }
+        }
+      },
+      "state_machine": {
+        "next_question": "Q4",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable quantitative answer (correct final answer, or 2nd attempt completed; per §4.3.C, if both attempts wrong, provide correct answer $695M before proceeding to Q4)"
+      }
+    },
+    "Q4": {
+      "q_id": "Q4",
+      "type": "qualitative",
+      "question_text": "What are some risks of entering country X?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": null,
+        "skip_logic": false,
+        "transition_condition": "Case ends after Q4"
+      }
+    }
+  },
+  "structure_4_ground_truth": {
+    "Q1_ground_truth": {
+      "type": "framework",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_chocolate_market_in_country_X": {
+          "keypoints": [
+            "Market size and growth rate",
+            "Major chocolate brands (incl. market shares, positioning)",
+            "Typical profitability",
+            "Local tastes"
+          ],
+          "subtotal": 4
+        },
+        "pillar_2_confectionery_land": {
+          "keypoints": [
+            "Chocolate offerings (e.g. bars, candies, brownies, etc.)",
+            "Customer segments (e.g. B2C, B2B, value/premium)",
+            "Differentiating points"
+          ],
+          "subtotal": 3
+        },
+        "pillar_3_financial_analysis": {
+          "keypoints": [
+            "Forecasted revenue and market share",
+            "Estimated costs",
+            "Expected investment",
+            "Investment criteria (e.g. ROI, NPV, payback period)"
+          ],
+          "subtotal": 4
+        },
+        "pillar_4_risk_assessment": {
+          "keypoints": [
+            "Market-specific",
+            "Financial",
+            "Operational"
+          ],
+          "subtotal": 3
+        }
+      },
+      "total_keypoints": 14,
+      "minimum_expected": "Cover at least 2 pillars with sub-items; minimum 4 keypoints; structured MECE approach (market assessment + business model dimensions at minimum)",
+      "outstanding_threshold": "All 4 pillars covered with majority of sub-items in a clearly structured issue tree; delivered with 15-second big-picture overview"
+    },
+    "Q2_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_financial_considerations": {
+          "keypoints": [
+            "Projected profitability/cashflow - Expected market share and revenue",
+            "Projected profitability/cashflow - Estimated costs",
+            "Projected profitability/cashflow - Potential synergies",
+            "Planned investment",
+            "Investment criteria (e.g. ROI)",
+            "Scenario and sensitivity analysis (e.g. poor, basic, best case)"
+          ],
+          "subtotal": 6
+        },
+        "pillar_2_business_model_considerations": {
+          "keypoints": [
+            "Marketing strategy - Target customer groups",
+            "Marketing strategy - Planned promotions and campaigns",
+            "Marketing strategy - Marketing channels",
+            "Distribution channels",
+            "Pricing strategy",
+            "Offerings to enter with"
+          ],
+          "subtotal": 6
+        },
+        "pillar_3_operational_considerations": {
+          "keypoints": [
+            "Timeline",
+            "Operational complexity",
+            "Potential bottlenecks (e.g. lack of production or logistics capacity)",
+            "Identified capability gaps"
+          ],
+          "subtotal": 4
+        }
+      },
+      "total_keypoints": 16,
+      "minimum_expected": "At least 4 ideas across at least 2 pillars; delivered on the fly ideally without taking notes",
+      "outstanding_threshold": "Cover all 3 pillars with clear sub-structure; 7-8 keypoints; 10-second top-down overview (financials, business model, operational); contextualized delivery"
+    },
+    "Q3_ground_truth": {
+      "type": "quantitative",
+      "quantitative_part": {
+        "correct_final_answer": "$695M (total chocolate market size in country X in 2 years); equivalently, the market will increase by $95M in 2 years",
+        "accepted_values": [
+          695000000,
+          95000000
+        ],
+        "tolerance_pct": 0.02,
+        "zero_tolerance": false,
+        "scoring_method": "Binary: correct number = full credit; incorrect = zero credit",
+        "calculation_steps": {
+          "step_1_children_growth": {
+            "formula": "$120M (children segment size) × 20% (overall spending increase)",
+            "result": "$24M additional spending from children segment"
+          },
+          "step_2_18_44_yo_growth": {
+            "formula": "$180M × ($7.5 − $6) / $6 = $180M × $1.5 / $6 = $180M × 25%",
+            "result": "$45M additional spending from 18-44 yo segment"
+          },
+          "step_3_45_64_yo_growth": {
+            "formula": "$180M × (16 − 14) / 14 = $180M × 2/14 ≈ $180M × 14.3%",
+            "result": "$26M additional spending from 45-64 yo segment (rounded from $25.7M)"
+          },
+          "step_4_65_plus_yo_change": {
+            "formula": "Behavior of 65+ yo isn't expected to change",
+            "result": "$0 additional spending from 65+ yo segment"
+          },
+          "step_5_total_market_increase": {
+            "formula": "$24M + $45M + $26M + $0",
+            "result": "$95M total market increase in 2 years"
+          },
+          "step_6_new_market_size": {
+            "formula": "$600M (current market) + $95M (total increase)",
+            "result": "$695M total market size in 2 years"
+          }
+        }
+      },
+      "qualitative_part": {
+        "scoring_note": "Qualitative portion of Q3 is scored as 100% total, split into two tiers. Within each tier, use 3-level scoring per",
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "tier_1_basic": {
+          "weight_of_Q3_qualitative_total": "50%",
+          "keypoints": [
+            "The market for chocolate products will go up by $95M in 2 years (reaching $695M)"
+          ],
+          "note": "Expected from every candidate. Single point worth 50% of qualitative score."
+        },
+        "tier_2_advanced": {
+          "weight_of_Q3_qualitative_total": "50%",
+          "points_available": 5,
+          "weight_per_point": "10% of qualitative total",
+          "keypoints": [
+            "$95M is around 15% growth rate (95/600), or 7-8% annually, which suggests that the market is going to slow down after growing for 10% every year for the last three years",
+            "Still 7-8% annually seems attractive as mature markets typically grow by low single-digit numbers",
+            "Chocolate consumption might be driven by aggressive marketing campaign of new entrants attracted by this large growing space",
+            "It's surprising that adults eat more chocolate than children, although it might be as kids often aren't allowed to eat chocolate until 5-10 yo",
+            "It makes sense that elderly people won't change their purchasing behavior as this group might not adjust their eating habits easily"
+          ],
+          "note": "Not expected from every candidate. Each advanced point adds 10% to qualitative score. Casebook note: 'The candidate is not expected to mention all the advanced comments, but adding some of them will demonstrate that the candidate can connect the dots, see the depth, add colors and bring some insights even if the candidate is not that familiar with the industry/topic.'"
+        },
+        "minimum_expected": "Correct numerical answer ($695M or $95M increase) + Tier 1 basic contextualization (covered)",
+        "outstanding_threshold": "Correct numerical answer + Tier 1 covered + at least 2 Tier 2 advanced comments covered"
+      }
+    },
+    "Q4_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_market_specific_risks": {
+          "keypoints": [
+            "Change in consumer behavior [e.g. strong trend for healthy food]",
+            "Competitive response [e.g. aggressive marketing campaign or pricing war]",
+            "Market consolidation [this is a volume-driven business, so to compete against big-name players, smaller brands might try to merge]",
+            "Lots of newcomers [in case the market is attractive]",
+            "Growing demand for substitutes (e.g. ice-cream)"
+          ],
+          "subtotal": 5
+        },
+        "pillar_2_financial_risks": {
+          "keypoints": [
+            "Lower-than-expected revenue and market share [e.g. due to different tastes and product-market mismatch, poor messaging, etc.]",
+            "Underestimated costs (e.g. high distribution commissions, high logistics costs due to spike in fuel prices)",
+            "Lack of funding"
+          ],
+          "subtotal": 3
+        },
+        "pillar_3_operational_risks": {
+          "keypoints": [
+            "Lack of production capacity",
+            "Lack of warehouse and logistics capacity",
+            "Cannibalization of production, warehouse or logistics resources from other markets",
+            "Long negotiation cycles with major distribution channels",
+            "Increase in operational complexity"
+          ],
+          "subtotal": 5
+        }
+      },
+      "total_keypoints": 13,
+      "minimum_expected": "At least 4 risk ideas across at least 2 categories; delivered on the fly",
+      "outstanding_threshold": "Cover all 3 risk categories with clear sub-structure; 7-8 keypoints; 10-second top-down overview (market-specific, financial, operational)"
+    }
+  },
+  "state_machine_global": {
+    "case_type": "interviewer_driven",
+    "skip_logic": false,
+    "mandatory_sequence": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4"
+    ],
+    "rules": [
+      "Q1 cannot be skipped under any circumstances",
+      "Questions must proceed in linear order Q1 → Q2 → Q3 → Q4",
+      "A question may not be advanced until the current question receives a scoreable answer (1st or 2nd attempt)",
+      "If analyst pre-covers a later question's keypoints in an earlier answer, record as pre-coverage but still ask the later question in sequence",
+      "No question may be skipped even if pre-covered",
+      "For Q3 (quantitative): if both attempts wrong, provide correct answer $695M before proceeding to Q4 per §4.3.C"
+    ]
+  },
+  "scoring_summary": {
+    "Q1": {
+      "type": "framework",
+      "total_keypoints": 14,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q2": {
+      "type": "qualitative",
+      "total_keypoints": 16,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q3": {
+      "type": "quantitative",
+      "part_1_quantitative": {
+        "correct_answer": "$695M (or equivalently: $95M market increase over 2 years)",
+        "zero_tolerance": true,
+        "scoring": "Binary: Full credit if correct; zero credit if incorrect"
+      },
+      "part_2_qualitative": {
+        "total_keypoints": 6,
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "human_review_priority": "false-partial > false-not-covered > covered",
+        "tier_1_basic": {
+          "keypoints": 1,
+          "weight": "50% of qualitative score"
+        },
+        "tier_2_advanced": {
+          "keypoints": 5,
+          "weight_per_point": "10% of qualitative score",
+          "weight_total": "50% of qualitative score"
+        }
+      }
+    },
+    "Q4": {
+      "type": "qualitative",
+      "total_keypoints": 13,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    }
+  }
+}

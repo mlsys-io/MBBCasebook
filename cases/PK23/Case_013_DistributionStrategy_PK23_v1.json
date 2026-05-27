@@ -1,0 +1,602 @@
+{
+  "case_id": "013",
+  "version": "v1",
+  "source": {
+    "title": "Distribution Strategy",
+    "inspired_by": "McKinsey & Company",
+    "year": "2023",
+    "author": "Peter K.",
+    "reference": "Peter-K.org, Case #13",
+    "casebook_abbr": "PK23"
+  },
+  "case_type": "interviewer_driven",
+  "case_type_origin": null,
+  "annotation_mode": null,
+  "case_arch": {
+    "primary": "Growth Strategy",
+    "tags": [
+      "Growth Strategy",
+      "Operational Efficiency",
+      "Revenue Growth"
+    ],
+    "standard_tags": [
+      "Profitability",
+      "Market Entry",
+      "Revenue Growth",
+      "Cost Optimization",
+      "Investment Decision",
+      "Merger and Acquisition",
+      "Pricing Strategy",
+      "Growth Strategy",
+      "Operational Efficiency",
+      "Due Diligence",
+      "Market Sizing",
+      "Competitive Response",
+      "Digital Transformation",
+      "Turnaround / Restructuring",
+      "Supply Chain",
+      "Comparison"
+    ]
+  },
+  "difficulty": "Hard",
+  "industry": "Food & Beverage / Fast-Casual Restaurant",
+  "topic": "Distribution strategy — how to strengthen distribution channels for a fast-casual salad chain",
+  "expected_duration_minutes": "15-20",
+  "opening_prompt": "Hi, I'd like to solve some consulting cases with you. Pls be a good interviewee to have a potential test in consulting cases. For the case problem-solving, pls do not assume any numbers or assumptions before my confirmation. I will give you the context upon request. I need you to answer the following questions for the client. Before you start, feel free to ask me 2-3 clarifying questions about the client.\n\nQ1: What factors would you consider in analyzing how to strengthen Fresh Bites' distribution strategy?\n\nQ2: Fresh Bites would like to build a best-in-class app to launch its digital distribution channel and better connect with its customers. What ideas of in-app experience personalization can you suggest?\n\nQ3: To expand customer reach, Fresh Bites would like to partner with delivery companies such as DoorDash and UberEats. How will it affect the client's bottom line?\n\nQ4: Despite expected short-term losses, Fresh Bites plans to proceed and partner with Uber Eats, DoorDash, and other delivery services. What are some operational implications that Fresh Bites will encounter as a result of these partnerships?\n\nHere is the basic context for the client:\nA popular fast-casual salad chain Fresh Bites has gained a loyal following for its healthy and customizable salads. The chain has been rapidly expanding and today exceeds 90 restaurants across the U.S. Fresh Bites generates $240M in revenue but is currently losing money with $100M in net losses (2022). The company's CEO has engaged your team to help them upgrade their distribution strategy in order to propel their sales, increase economies of scale, and thus improve their economics. How would you help the client improve their distribution given such a fierce competition in the healthy fast-casual restaurant industry?",
+  "structure_1_client_basic_context": {
+    "company": "Fresh Bites",
+    "type": "Popular fast-casual salad chain with loyal following for healthy and customizable salads",
+    "situation": "Rapidly expanding chain with 90+ restaurants across the U.S.; generates $240M in revenue but is currently losing money with $100M in net losses (2022)",
+    "action": "The company's CEO has engaged your team to help upgrade their distribution strategy in order to propel their sales, increase economies of scale, and thus improve their economics",
+    "ask": "Help the client improve their distribution given such a fierce competition in the healthy fast-casual restaurant industry"
+  },
+  "structure_2_information_upon_request": {
+    "item_1": {
+      "item_id": "item_1",
+      "trigger": "Analyst asks about or includes Fresh Bites' current distribution model or how it currently sells its products",
+      "core_dimensional_concept": "Fresh Bites current distribution model",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet about current distribution channels or sales model",
+          "explicit clarifying question about how Fresh Bites currently sells or distributes",
+          "hypothesis about whether Fresh Bites franchises or uses retail stores"
+        ],
+        "alternative_phrasings": [
+          "current sales channels",
+          "how does Fresh Bites sell today",
+          "existing distribution setup",
+          "franchise model"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'distribution' only as a passing reference to the overall problem statement without specifically asking about the current model (F passing mention)"
+      ],
+      "info": "Fresh Bites sells mostly through their retail stores, but doesn't franchise"
+    },
+    "item_2": {
+      "item_id": "item_2",
+      "trigger": "Analyst asks about or includes industry trends for delivery/digital channels in fast-food and fast-casual restaurants",
+      "core_dimensional_concept": "fast-food and fast-casual restaurant delivery adoption trends",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet about industry trends or competitive landscape for delivery",
+          "explicit question about whether delivery is gaining traction in the industry",
+          "hypothesis about industry-wide adoption of digital channels or delivery apps"
+        ],
+        "alternative_phrasings": [
+          "industry standard for delivery",
+          "competitor delivery adoption",
+          "market trends in digital distribution",
+          "pandemic impact on restaurant delivery"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'competition' only in passing without specifically asking about delivery or digital channel adoption trends (F passing mention)"
+      ],
+      "info": "The vast majority of fast-food and fast-casual restaurant chains expanded and/or boosted a delivery option to support their sales during the pandemic. Digital channels (e.g. app, site, delivery apps) gain traction. For example, they generated 32% of Starbuck's (2021) and 62% of sweetgreen's (2022) U.S. sales"
+    },
+    "item_3": {
+      "item_id": "item_3",
+      "trigger": "Analyst asks about or includes digital channel revenue metrics or benchmarks for digital sales as a share of total sales",
+      "core_dimensional_concept": "digital channel revenue benchmarks for restaurant chains",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet about benchmarking or competitive data on digital sales",
+          "explicit question about how much revenue digital channels generate for competitors",
+          "quantitative hypothesis about digital channel share of sales"
+        ],
+        "alternative_phrasings": [
+          "digital sales percentage",
+          "app revenue share",
+          "online order contribution",
+          "sweetgreen or Starbucks digital metrics"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'digital channels' only as a passing reference to the general trend without asking for specific data or benchmarks (F passing mention)"
+      ],
+      "info": "Digital channels (e.g. app, site, delivery apps) gain traction. For example, they generated 32% of Starbuck's (2021) and 62% of sweetgreen's (2022) U.S. sales"
+    },
+    "item_4": {
+      "item_id": "item_4",
+      "trigger": "Analyst asks about or includes the feasibility or consideration of vending machines as a distribution channel",
+      "core_dimensional_concept": "vending machine distribution feasibility for Fresh Bites",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet about vending machines as a potential distribution channel",
+          "explicit question about whether vending machines have been considered",
+          "hypothesis or suggestion about using vending machines to expand distribution"
+        ],
+        "alternative_phrasings": [
+          "automated retail",
+          "self-service kiosks",
+          "vending distribution",
+          "machine-based distribution"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'kiosks' in the context of in-store self-service ordering, not external vending distribution (G adjacent dimension)"
+      ],
+      "info": "Fresh Bites doesn't consider vending machines as an option due to the short shelf-life of their offerings"
+    },
+    "item_5": {
+      "item_id": "item_5",
+      "trigger": "Analyst asks about or includes grocery store or retail grocery distribution as a channel option, referencing competitors who sell through grocery stores",
+      "core_dimensional_concept": "grocery store retail distribution channel for restaurant chains",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet about grocery or retail store partnerships",
+          "explicit question about whether competitors sell through grocery stores",
+          "hypothesis about distributing Fresh Bites products through grocery retail"
+        ],
+        "alternative_phrasings": [
+          "supermarket distribution",
+          "retail grocery channel",
+          "Whole Foods or Target as channel",
+          "CPG distribution"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'retail' only in the context of Fresh Bites' own retail store locations, not third-party grocery retail distribution (G adjacent dimension)"
+      ],
+      "info": "Panera Bread, Starbucks, Krispy Kreme, Taco Bell and other restaurant chains sell their products through grocery stores like Walmart, Wholefoods, and Target"
+    }
+  },
+  "structure_3_case_questions": {
+    "Q1": {
+      "q_id": "Q1",
+      "type": "framework",
+      "question_text": "What factors would you consider in analyzing how to strengthen Fresh Bites' distribution strategy?",
+      "information_to_share_upfront": null,
+      "information_upon_request": "See structure_2 items 1-5. Release only items per semantic touch judgment; not by mere keyword presence.",
+      "state_machine": {
+        "next_question": "Q2",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable framework answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q2": {
+      "q_id": "Q2",
+      "type": "qualitative",
+      "question_text": "Fresh Bites would like to build a best-in-class app to launch its digital distribution channel and better connect with its customers. What ideas of in-app experience personalization can you suggest?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q3",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q3": {
+      "q_id": "Q3",
+      "type": "quantitative",
+      "question_text": "To expand customer reach, Fresh Bites would like to partner with delivery companies such as DoorDash and UberEats. How will it affect the client's bottom line?",
+      "information_to_share_upfront": [
+        "Based on the benchmarking analysis (Appendix 1), delivery partners will likely generate 25% of own channel sales"
+      ],
+      "information_upon_request": [
+        {
+          "item_id": "Q3_item_1",
+          "trigger": "Analyst asks about or includes the commission rate charged by delivery partners",
+          "core_dimensional_concept": "delivery partner sales commission rate",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question about commission or fee charged by delivery platforms",
+              "calculation setup identifying commission as an input variable",
+              "framework sub-bullet about cost of delivery partnership"
+            ],
+            "alternative_phrasings": [
+              "platform fee",
+              "delivery app take rate",
+              "commission percentage",
+              "cost of partnering with DoorDash or UberEats"
+            ]
+          },
+          "disqualifying": [
+            "Analyst mentions 'costs' only as a general category without specifically asking about the commission rate (F passing mention)"
+          ],
+          "info": "Delivery partners typically charge 20% in sales commission"
+        },
+        {
+          "item_id": "Q3_item_2",
+          "trigger": "Analyst asks about or includes Fresh Bites' gross profit margin",
+          "core_dimensional_concept": "Fresh Bites gross profit margin",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question about Fresh Bites' margin or profitability",
+              "calculation setup identifying margin as an input variable",
+              "framework sub-bullet about current profitability or unit economics"
+            ],
+            "alternative_phrasings": [
+              "profit margin",
+              "gross margin",
+              "unit economics",
+              "profitability per sale"
+            ]
+          },
+          "disqualifying": [
+            "Analyst mentions 'net losses' only by referencing the context already given in the prompt (F passing of upfront info)"
+          ],
+          "info": "Fresh Bites enjoys 30% gross profit margin currently [whereas net profit margin is negative]"
+        },
+        {
+          "item_id": "Q3_item_3",
+          "trigger": "Analyst asks about or includes the cannibalization rate of existing sales from delivery partnerships",
+          "core_dimensional_concept": "delivery partner cannibalization rate of existing sales",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question about how much delivery partnerships will cannibalize existing own-channel sales",
+              "calculation setup identifying cannibalization as an input variable",
+              "framework sub-bullet about cannibalization risk"
+            ],
+            "alternative_phrasings": [
+              "cannibalization effect",
+              "sales substitution rate",
+              "how much own-channel sales will be displaced",
+              "cannibalization of in-store orders"
+            ]
+          },
+          "disqualifying": [
+            "Analyst mentions 'cannibalization' as a concept in Q1 framework without explicitly asking for a number in the Q3 context (G adjacent dimension in wrong structural position)"
+          ],
+          "info": "Delivery partners will likely cannibalize 10% of existing sales"
+        },
+        {
+          "item_id": "Q3_item_4",
+          "trigger": "Analyst asks to confirm Fresh Bites' revenue figure to use in calculation",
+          "core_dimensional_concept": "Fresh Bites annual revenue figure",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question confirming the revenue figure to use",
+              "calculation setup identifying revenue as a starting input variable",
+              "clarifying question about what sales base to use"
+            ],
+            "alternative_phrasings": [
+              "current revenue",
+              "total sales",
+              "what is Fresh Bites annual revenue",
+              "revenue base for calculation"
+            ]
+          },
+          "disqualifying": [
+            "Analyst simply restates $240M from the prompt without actually asking for confirmation (F passing mention of upfront info)"
+          ],
+          "info": "Fresh Bites sales were given in the prompt [$240M]"
+        }
+      ],
+      "appendix": {
+        "appendix_1": {
+          "title": "Benchmarking analysis — sweetgreen's revenue structure by distribution channel (M USD, 2020-22)",
+          "release_rule": "Share upfront with analyst at the start of Q3",
+          "table": {
+            "note": "sweetgreen revenue by channel, used to derive the 25% delivery-partner-of-own-channel benchmark",
+            "year_2020": {
+              "total_revenue_M": "$220M",
+              "delivery_partners_pct": "18%",
+              "in_store_pct": "25%",
+              "own_digital_pct": "56%"
+            },
+            "year_2021": {
+              "total_revenue_M": "$340M",
+              "delivery_partners_pct": "21%",
+              "in_store_pct": "33%",
+              "own_digital_pct": "46%"
+            },
+            "year_2022": {
+              "total_revenue_M": "$470M",
+              "delivery_partners_pct": "21%",
+              "in_store_pct": "38%",
+              "own_digital_pct": "41%"
+            }
+          }
+        }
+      },
+      "state_machine": {
+        "next_question": "Q4",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides both a numerical answer and qualitative contextualization (minimum_expected met, or 2nd attempt completed)",
+        "max_attempts": 2,
+        "scoring_on_transition": {
+          "attempt_1_correct": "Full score",
+          "attempt_2_correct": "0 score per core_principles",
+          "both_attempts_wrong": "0 score; interviewer provides correct answer before next question"
+        }
+      }
+    },
+    "Q4": {
+      "q_id": "Q4",
+      "type": "qualitative",
+      "question_text": "Despite expected short-term losses, Fresh Bites plans to proceed and partner with Uber Eats, DoorDash, and other delivery services. What are some operational implications that Fresh Bites will encounter as a result of these partnerships?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": null,
+        "skip_logic": false,
+        "transition_condition": "Case ends after Q4"
+      }
+    }
+  },
+  "structure_4_ground_truth": {
+    "Q1_ground_truth": {
+      "type": "framework",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_own_stores": {
+          "keypoints": [
+            "Chain size and growth rate",
+            "Geo footprint",
+            "Capacity",
+            "Quality of locations"
+          ],
+          "subtotal": 4
+        },
+        "pillar_2_own_smartphone_app": {
+          "keypoints": [
+            "Financial assessment",
+            "Operational feasibility",
+            "Benefits for customer experience",
+            "Brand implications"
+          ],
+          "subtotal": 4
+        },
+        "pillar_3_food_delivery_companies": {
+          "keypoints": [
+            "Financial terms",
+            "Market reach - Geo coverage",
+            "Market reach - New customer groups",
+            "Cannibalization",
+            "Execution timeline and risks"
+          ],
+          "subtotal": 5
+        },
+        "pillar_4_retail_chain_partners": {
+          "keypoints": [
+            "Revenue/cost projections",
+            "Shelf stability of existing offerings",
+            "Our production and logistics capabilities (to make it happen)"
+          ],
+          "subtotal": 3
+        }
+      },
+      "total_keypoints": 16,
+      "minimum_expected": "Framework covers at least 2 of the 4 distribution channel pillars with supporting factors; includes both financial and operational feasibility dimensions for at least one channel",
+      "outstanding_threshold": "Framework covers all 4 distribution channel pillars with most supporting factors; explicitly covers areas to change (stakeholders, supply/demand, PPS) and feasibility assessment (financial + operational)"
+    },
+    "Q2_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_personalized_marketing": {
+          "recommendations": {
+            "keypoints": [
+              "Personalized menu recommendations",
+              "Personalized upselling options (e.g. frequently bought together with...)"
+            ],
+            "subtotal": 2
+          },
+          "keypoints": [
+            "Promotions based on purchases and profile",
+            "Birthday gifts and discounts",
+            "Personalized pricing (e.g. special discounts for active customers)",
+            "Geo-targeted notifications for customers near stores with seasonal offerings",
+            "Gamification (e.g. rewards, points, statuses)",
+            "Personalized menu recommendations",
+            "Personalized upselling options (e.g. frequently bought together with...)"
+          ],
+          "subtotal": 7
+        },
+        "pillar_2_personalized_processes": {
+          "order_selection": {
+            "keypoints": [
+              "Pre-selected items in an order based on past regular purchases",
+              "Personalized menu based on purchase history"
+            ],
+            "subtotal": 2
+          },
+          "order_placement": {
+            "keypoints": [
+              "Automatic recurring orders (e.g. for office workers)",
+              "\"One-click\" purchase feature",
+              "Integration with voice assistants (e.g. Siri, Alexa) to make purchases with voice"
+            ],
+            "subtotal": 3
+          },
+          "trouble_shooting": {
+            "keypoints": [
+              "Personalized customer support (e.g. chatbots that are fed with the data from a current order)"
+            ],
+            "subtotal": 1
+          },
+          "keypoints": [
+            "Pre-selected items in an order based on past regular purchases",
+            "Personalized menu based on purchase history",
+            "Automatic recurring orders (e.g. for office workers)",
+            "\"One-click\" purchase feature",
+            "Integration with voice assistants (e.g. Siri, Alexa) to make purchases with voice",
+            "Personalized customer support (e.g. chatbots that are fed with the data from a current order)"
+          ],
+          "subtotal": 6
+        },
+        "pillar_3_personalized_look_and_feel": {
+          "keypoints": [
+            "Personalized in-app greetings",
+            "Customized homepage (e.g. background, font size, colors)",
+            "Personalized feedback surveys on specific features"
+          ],
+          "subtotal": 3
+        }
+      },
+      "total_keypoints": 16,
+      "minimum_expected": "Analyst provides at least 4 personalization ideas across at least 2 of the 3 categories",
+      "outstanding_threshold": "Analyst provides 7-8 or more ideas spanning all 3 categories with specific, concrete feature suggestions"
+    },
+    "Q3_ground_truth": {
+      "type": "quantitative",
+      "quantitative_part": {
+        "correct_final_answer": "-$1.8M (profit decline by $1.8M)",
+        "accepted_values": [
+          -1800000
+        ],
+        "tolerance_pct": 0.0,
+        "zero_tolerance": true,
+        "scoring_method": "Binary: correct number = full credit; incorrect = zero credit",
+        "calculation_steps": {
+          "step_1_cannibalization_loss": {
+            "formula": "$240M × (-10%) × 30% = cannibalization-induced profit loss for own channels",
+            "result": "-$7.2M"
+          },
+          "step_2_new_own_channel_sales": {
+            "formula": "$240M × (1 - 10%) = new own-channel sales after cannibalization",
+            "result": "$216M"
+          },
+          "step_3_profits_from_delivery_partners": {
+            "formula": "$216M × 25% × (30% - 20%) = delivery partner sales × delivery margin net of commission",
+            "result": "$5.4M"
+          },
+          "step_4_change_in_overall_profits": {
+            "formula": "-$7.2M + $5.4M = change in overall profits",
+            "result": "-$1.8M"
+          }
+        }
+      },
+      "qualitative_part": {
+        "scoring_note": "Qualitative portion of Q3 is scored as 100% total, split into two tiers. Within each tier, use 3-level scoring per",
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "tier_1_basic": {
+          "weight_of_Q3_qualitative_total": "50%",
+          "keypoints": [
+            "Due to high sales commissions and expected cannibalization, using delivery companies will lead to deepening losses by $1.8M"
+          ],
+          "note": "Expected from every candidate. Single point worth 50% of qualitative score."
+        },
+        "tier_2_advanced": {
+          "weight_of_Q3_qualitative_total": "50%",
+          "points_available": 3,
+          "weight_per_point": "approximately 16.7% of qualitative total",
+          "keypoints": [
+            "The revenue increase driven by delivery companies might strengthen economies of scale and thus improve unit economics which might end up increasing, not decreasing Fresh Bites margins",
+            "The economics of third-party delivery services might be even worse as customers might place smaller orders than they would for in-person dining. Customers might also order fewer high-margin items like refreshments as drinks might be challenging to transport",
+            "Increase in convenience and accessibility might improve loyalty and retention rate of customers, which will increase marketing ROI and lifetime value of customers. Thus, potentially lower marketing expenses (customer acquisition costs) will improve bottom-line (despite lower gross margins)"
+          ],
+          "note": "Not expected from every candidate. Each advanced point adds ~16.7% to qualitative score."
+        },
+        "minimum_expected": "Correct numerical answer (-$1.8M) + Tier 1 basic contextualization (covered)",
+        "outstanding_threshold": "Correct numerical answer + Tier 1 covered + at least 2 Tier 2 advanced comments covered"
+      }
+    },
+    "Q4_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_people": {
+          "keypoints": [
+            "Hire account manager(s) and analyst(s) to work with delivery partners",
+            "Train in-store staff and call center operators on the specifics of these new delivery methods and new processes",
+            "Get ready for a rapid headcount increase (e.g. in-store, logistics, and warehouse staff) in case of sales spike driven by delivery partners and relevant marketing"
+          ],
+          "subtotal": 3
+        },
+        "pillar_2_processes": {
+          "keypoints": [
+            "Design new packaging for delivery partners (e.g. to prevent access to food during delivery and ensure food safety)",
+            "Build pick-up procedures for couriers",
+            "Establish coordination mechanism between Fresh Bites and delivery partners on trouble-shooting (e.g. delivery delays, mislaid items)"
+          ],
+          "subtotal": 3
+        },
+        "pillar_3_systems": {
+          "keypoints": [
+            "Integrate software systems of Fresh Bites with delivery partners - Order processing (e.g. menu, order placement, queuing)",
+            "Integrate software systems of Fresh Bites with delivery partners - Food inventory (e.g. what salads are available today)",
+            "Integrate software systems of Fresh Bites with delivery partners - Financial flows (e.g. customer payments)",
+            "Integrate software systems of Fresh Bites with delivery partners - Customer data storage and processing"
+          ],
+          "subtotal": 4
+        }
+      },
+      "total_keypoints": 10,
+      "minimum_expected": "Analyst covers at least 4 operational implications across at least 2 of the 3 pillars (People/Processes/Systems)",
+      "outstanding_threshold": "Analyst covers 7+ operational implications across all 3 pillars with specific, actionable details"
+    }
+  },
+  "state_machine_global": {
+    "case_type": "interviewer_driven",
+    "skip_logic": false,
+    "mandatory_sequence": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4"
+    ],
+    "rules": [
+      "Q1 cannot be skipped under any circumstances",
+      "Questions must proceed in linear order Q1 → Q2 → Q3 → Q4",
+      "A question may not be advanced until the current question receives a scoreable answer (1st or 2nd attempt)",
+      "If analyst pre-covers a later question's keypoints in an earlier answer, record as pre-coverage but still ask the later question in sequence",
+      "No question may be skipped even if pre-covered",
+      "For Q3: if analyst fails both attempts, provide correct answer (-$1.8M profit decline) before proceeding to Q4 perC"
+    ]
+  },
+  "scoring_summary": {
+    "Q1": {
+      "type": "framework",
+      "total_keypoints": 16,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q2": {
+      "type": "qualitative",
+      "total_keypoints": 16,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q3": {
+      "type": "quantitative",
+      "part_1_quantitative": {
+        "correct_answer": "-$1.8M (profit decline by $1.8M)",
+        "zero_tolerance": true,
+        "scoring": "Binary: Full credit if correct; zero credit if incorrect"
+      },
+      "part_2_qualitative": {
+        "total_keypoints": 4,
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "human_review_priority": "false-partial > false-not-covered > covered",
+        "tier_1_basic": {
+          "keypoints": 1,
+          "weight": "50% of qualitative score"
+        },
+        "tier_2_advanced": {
+          "keypoints": 3,
+          "weight_per_point": "approximately 16.7% of qualitative score",
+          "weight_total": "50% of qualitative score"
+        }
+      }
+    },
+    "Q4": {
+      "type": "qualitative",
+      "total_keypoints": 10,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    }
+  }
+}

@@ -1,0 +1,613 @@
+{
+  "case_id": "011",
+  "version": "v1",
+  "source": {
+    "title": "The Hunter's Dog",
+    "inspired_by": "L.E.K. Consulting",
+    "year": "2021",
+    "author": "Peter K.",
+    "reference": "Peter-K.org, Case #11",
+    "casebook_abbr": "PK21"
+  },
+  "case_type": "interviewer_driven",
+  "case_type_origin": "candidate_led",
+  "annotation_mode": "CL_to_IL_override",
+  "case_arch": {
+    "primary": "Revenue Growth",
+    "tags": [
+      "Revenue Growth",
+      "Market Entry",
+      "Growth Strategy"
+    ]
+  },
+  "difficulty": "Medium",
+  "industry": "Consumer / Pet Food (DTC Online)",
+  "topic": "Revenue growth strategy — tripling top-line sales for an online DTC pet food company",
+  "expected_duration_minutes": 20,
+  "opening_prompt": "Hi, I'd like to solve some consulting cases with you. Pls be a good interviewee to have a potential test in consulting cases. For the case problem-solving, pls do not assume any numbers or assumptions before my confirmation. I will give you the context upon request. I need you to answer the following questions for the client. Before you start, feel free to ask me 2-3 clarifying questions about the client.\n\nQ1: What factors should we consider to design a sales strategy to triple client's top-line over the next three years?\n\nQ2: The direct-to-customer (DTC) sector sky-rocketed in 2020. What might be the drivers of such an explosive growth?\n\nQ3: One of the sales growth opportunities for the Hunter's Dog is to start distributing through the traditional offline channels like Petsmart, Chewy and Petco. What are some risks about doing it though?\n\nQ4: Petco, a pet product retailer, offers The Hunter's Dog to sell their dog food. The Hunter's Dog will need to expand its factory to accommodate Petco's demand. What is 1-year break-even number of customers for this deal?\n\nQ5: During the team problem-solving session, the Partner asks you to synthesize the current version of your recommendations.\n\nHere is the basic context for the client:\nOur client is The Hunter's Dog, an online service that delivers freshly made dog food and allows customers to personalize food plans based on their dogs' preferences. The company's sales exceeded $120M in 2020. Despite their overall market share is less than 1%, their share in the direct-to-consumer (DTC) segment is 15%. Their current growth is healthy, but they would like to triple their sales over the next three years. They brought your team in to design a strategy to make it happen.",
+  "structure_1_client_basic_context": {
+    "company": "The Hunter's Dog",
+    "type": "Online service that delivers freshly made dog food and allows customers to personalize food plans based on their dogs' preferences",
+    "situation": "The company's sales exceeded $120M in 2020. Despite their overall market share is less than 1%, their share in the direct-to-consumer (DTC) segment is 15%. Their current growth is healthy.",
+    "action": "They would like to triple their sales over the next three years.",
+    "ask": "They brought your team in to design a strategy to make it happen."
+  },
+  "structure_2_information_upon_request": {
+    "item_1": {
+      "item_id": "item_1",
+      "trigger": "Analyst asks about or includes 'pet food U.S. market size or growth' in framework or clarifying questions",
+      "core_dimensional_concept": "U.S. pet food market growth rate and size",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar (e.g., 'Market analysis', 'U.S. pet food market', 'Industry context')",
+          "sub-bullet under external/market pillar",
+          "explicit clarifying question about market size or market growth",
+          "hypothesis-driven assumption about market trajectory"
+        ],
+        "alternative_phrasings": [
+          "market size",
+          "industry growth",
+          "total addressable market",
+          "market dynamics",
+          "pet food industry trends"
+        ]
+      },
+      "disqualifying": [
+        "Only says 'competitive market' or 'growing industry' as an adjective modifying another point — here market growth is an adjective, not the subject (F passing mention)",
+        "Only mentions 'market saturation risk' under the Risk pillar — this is a risk dimension, not the market-size subject itself (G adjacent-dimension modifier)"
+      ],
+      "info": "The pet food U.S. market jumped by 10% in 2020, reaching $42B. The dog food market experienced similar dynamics."
+    },
+    "item_2": {
+      "item_id": "item_2",
+      "trigger": "Analyst asks about or includes 'competitive landscape for dog food in U.S.' or 'market concentration' in framework or clarifying questions",
+      "core_dimensional_concept": "U.S. dog food competitive landscape and market concentration",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar (e.g., 'Competition', 'Competitive landscape', 'Market structure')",
+          "sub-bullet under external/competition pillar",
+          "explicit clarifying question about key competitors or market shares",
+          "hypothesis-driven assumption about concentration levels"
+        ],
+        "alternative_phrasings": [
+          "competitors",
+          "market share distribution",
+          "industry players",
+          "market concentration",
+          "competitive intensity"
+        ]
+      },
+      "disqualifying": [
+        "Only says 'competitive space' as a background modifier, without a specific analysis of the competitive landscape — a F passing mention",
+        "Only mentions 'competitive pressure' under the Risk dimension — competitive pressure is not the same as competitive-landscape analysis (G adjacent-dimension modifier)"
+      ],
+      "info": "The competitive landscape for dog food in the U.S. is fairly consolidated with Mars and Nestle controlling more than 60% of the market."
+    },
+    "item_3": {
+      "item_id": "item_3",
+      "trigger": "Analyst asks about or includes 'DTC space growth' or 'DTC channel dynamics' in framework or clarifying questions",
+      "core_dimensional_concept": "DTC channel rapid growth and market dynamics",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar (e.g., 'DTC channel', 'Direct-to-consumer', 'Channel analysis')",
+          "sub-bullet under channel or distribution pillar",
+          "explicit clarifying question about DTC segment size or growth",
+          "hypothesis about DTC expansion opportunity"
+        ],
+        "alternative_phrasings": [
+          "direct-to-consumer growth",
+          "online channel expansion",
+          "DTC penetration",
+          "e-commerce pet food",
+          "online sales trend"
+        ]
+      },
+      "disqualifying": [
+        "Only says 'online is growing' as a generic statement with no structural DTC analysis — a F passing mention",
+        "Only mentions 'expand DTC' as an action item under the strategy pillar — this is a strategy, not a touch on the DTC market-dynamics dimension (G adjacent-dimension modifier)"
+      ],
+      "info": "The DTC space is rapidly growing with a lot of newcomers."
+    },
+    "item_4": {
+      "item_id": "item_4",
+      "trigger": "Analyst asks about or includes 'traditional distribution channels' or 'offline channel players' in framework or clarifying questions",
+      "core_dimensional_concept": "traditional offline distribution channel players for pet food",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar (e.g., 'Distribution channels', 'Offline channels', 'Channel strategy')",
+          "sub-bullet under distribution or go-to-market pillar",
+          "explicit clarifying question about offline retail partners or channel options",
+          "hypothesis about traditional channel entry"
+        ],
+        "alternative_phrasings": [
+          "offline retailers",
+          "retail distribution",
+          "brick-and-mortar channels",
+          "traditional retail partners",
+          "pet specialty stores"
+        ]
+      },
+      "disqualifying": [
+        "Only mentions 'Petco' as context for the math question (Q4-specific); does not trigger this structure_2 item — a question-specific reference (F passing mention)",
+        "Only says 'channel conflict risk' under the Risk dimension — this is a risk dimension, not the channel-information subject itself (G adjacent-dimension modifier)"
+      ],
+      "info": "Traditional distribution channels include Petsmart, Chewy, Petco, Amazon and Walmart."
+    }
+  },
+  "structure_3_case_questions": {
+    "Q1": {
+      "q_id": "Q1",
+      "type": "framework",
+      "question_text": "What factors should we consider to design a sales strategy to triple client's top-line over the next three years?",
+      "information_to_share_upfront": null,
+      "information_upon_request": "See structure_2 items 1–4. Release only items by semantic touch; not by mere keyword presence.",
+      "state_machine": {
+        "next_question": "Q2",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable framework answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q2": {
+      "q_id": "Q2",
+      "type": "qualitative",
+      "question_text": "The direct-to-customer (DTC) sector sky-rocketed in 2020. What might be the drivers of such an explosive growth?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q3",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q3": {
+      "q_id": "Q3",
+      "type": "qualitative",
+      "question_text": "One of the sales growth opportunities for the Hunter's Dog is to start distributing through the traditional offline channels like Petsmart, Chewy and Petco. What are some risks about doing it though?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q4",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q4": {
+      "q_id": "Q4",
+      "type": "quantitative",
+      "question_text": "Petco, a pet product retailer, offers The Hunter's Dog to sell their dog food. The Hunter's Dog will need to expand its factory to accommodate Petco's demand. What is 1-year break-even number of customers for this deal?",
+      "information_to_share_upfront": [
+        "The client had 100k unique customers in 2020",
+        "Petco operates 1,400 stores across the U.S."
+      ],
+      "information_upon_request": [
+        {
+          "item_id": "Q4_item_1",
+          "trigger": "Analyst asks about or needs the client's gross margin percentage",
+          "core_dimensional_concept": "client gross margin percentage (Revenue minus Variable Costs)",
+          "release_conditions": {
+            "structural_position": [
+              "explicit clarifying question about gross margin or profitability percentage",
+              "calculation step asking for margin data",
+              "hypothesis-driven assumption about margin level"
+            ],
+            "alternative_phrasings": [
+              "gross margin",
+              "margin percentage",
+              "profitability rate",
+              "contribution margin"
+            ]
+          },
+          "disqualifying": [
+            "Only loosely says 'the business is profitable' — does not ask for the specific margin value (F passing mention)"
+          ],
+          "info": "Our client's gross margin is 40% (Revenue minus Variable Costs)."
+        },
+        {
+          "item_id": "Q4_item_2",
+          "trigger": "Analyst asks about pricing for Petco channel vs. DTC channel",
+          "core_dimensional_concept": "price parity between Petco and DTC channel",
+          "release_conditions": {
+            "structural_position": [
+              "explicit clarifying question about pricing or price difference between channels",
+              "calculation step asking for Petco pricing",
+              "hypothesis about pricing differential"
+            ],
+            "alternative_phrasings": [
+              "Petco price",
+              "offline channel price",
+              "pricing strategy",
+              "channel pricing"
+            ]
+          },
+          "disqualifying": [
+            "Only mentions 'pricing strategy' as a framework pillar — not the same as asking about the specific price relationship between Petco and DTC (G adjacent-dimension modifier)"
+          ],
+          "info": "The client plans to keep the same prices for Petco and their DTC channel."
+        },
+        {
+          "item_id": "Q4_item_3",
+          "trigger": "Analyst asks about Petco's commission or take rate",
+          "core_dimensional_concept": "Petco commission rate",
+          "release_conditions": {
+            "structural_position": [
+              "explicit clarifying question about commission, distributor cut, or retailer fee",
+              "calculation step asking for distribution cost",
+              "hypothesis about channel commission level"
+            ],
+            "alternative_phrasings": [
+              "retailer commission",
+              "distributor margin",
+              "channel fee",
+              "Petco's cut",
+              "wholesale discount"
+            ]
+          },
+          "disqualifying": [
+            "Only loosely mentions 'distribution costs' in the cost-analysis framework — does not specifically ask about Petco's specific commission rate (F passing mention)"
+          ],
+          "info": "Petco's commission is 25% of sales."
+        },
+        {
+          "item_id": "Q4_item_4",
+          "trigger": "Analyst asks about additional operational expenses (opex) for the Petco deal",
+          "core_dimensional_concept": "additional operational expenses for Petco channel",
+          "release_conditions": {
+            "structural_position": [
+              "explicit clarifying question about additional opex, operational costs, or distribution expenses",
+              "calculation step asking for incremental costs",
+              "hypothesis about supply chain or logistics costs"
+            ],
+            "alternative_phrasings": [
+              "additional opex",
+              "operational costs",
+              "incremental expenses",
+              "transportation and storage costs",
+              "logistics costs"
+            ]
+          },
+          "disqualifying": [
+            "Only loosely says 'operational complexity will increase' — does not ask for the specific opex value (F passing mention)"
+          ],
+          "info": "Additional opex is expected to be 5% of sales (incl. transportation and storage)."
+        },
+        {
+          "item_id": "Q4_item_5",
+          "trigger": "Analyst asks about the factory expansion capex requirement",
+          "core_dimensional_concept": "factory expansion capital expenditure (capex)",
+          "release_conditions": {
+            "structural_position": [
+              "explicit clarifying question about investment required or factory capex",
+              "calculation step asking for upfront investment or fixed cost",
+              "hypothesis about capital requirement for expansion"
+            ],
+            "alternative_phrasings": [
+              "factory investment",
+              "capex",
+              "capital expenditure",
+              "expansion cost",
+              "fixed investment"
+            ]
+          },
+          "disqualifying": [
+            "Only mentions 'investment decision' as a pillar in the framework — does not specifically ask about the capex value (G adjacent-dimension modifier)"
+          ],
+          "info": "Capex to expand the client's factory is $30M."
+        }
+      ],
+      "appendix": {
+        "appendix_1": {
+          "title": "Q4 Upfront Data",
+          "release_rule": "Share upfront with analyst at the start of Q4",
+          "table": {
+            "unique_customers_2020": "100k",
+            "petco_stores_us": {
+              "value": "1,400"
+            }
+          }
+        }
+      },
+      "state_machine": {
+        "next_question": "Q5",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides numerical answer (or 2nd attempt completed); Judge provides correct answer if both attempts wrong before proceeding to Q5"
+      }
+    },
+    "Q5": {
+      "q_id": "Q5",
+      "type": "qualitative",
+      "question_text": "During the team problem-solving session, the Partner asks you to synthesize the current version of your recommendations.",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": null,
+        "skip_logic": false,
+        "transition_condition": "Case ends after Q5"
+      }
+    }
+  },
+  "structure_4_ground_truth": {
+    "Q1_ground_truth": {
+      "type": "framework",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_dog_food_us_market": {
+          "keypoints": [
+            "Growth rate",
+            "Key dog food brands (e.g. market shares, positioning, DTC or not)",
+            "Dog owners' pain points and needs, recent trends"
+          ],
+          "subtotal": 3
+        },
+        "pillar_2_the_hunters_dog": {
+          "keypoints": [
+            "Product range",
+            "Target customer segments",
+            "Geographical footprint",
+            "Marketing strategy"
+          ],
+          "subtotal": 4
+        },
+        "pillar_3_sales_profile": {
+          "keypoints": [
+            "Pricing strategy (e.g. subscription, tiers)",
+            "Volume dynamics",
+            "Sales structure by product line, location, customer group"
+          ],
+          "subtotal": 3
+        },
+        "pillar_4_revenue_growth_areas": {
+          "keypoints": [
+            "Increase market share",
+            "Expand geographically",
+            "Approach new customer group",
+            "Do production innovation"
+          ],
+          "subtotal": 4
+        }
+      },
+      "total_keypoints": 14,
+      "minimum_expected": "Cover at least 2 of the 4 pillars with substantive content (4+ keypoints total)",
+      "outstanding_threshold": "Cover all 4 pillars with at least 3 keypoints each (12+ keypoints total)"
+    },
+    "Q2_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_overall_market": {
+          "keypoints": [
+            "Covid-induced isolation and more time at home encouraged people to adopt pets to feel less lonely",
+            "Millennials show increasing appetite to get a pet (e.g. new form of parenthood; driven by positive image and regular presence of pets at social media)",
+            "In general, e-commerce have been booming for the last several years"
+          ],
+          "subtotal": 3
+        },
+        "pillar_2_competition": {
+          "keypoints": [
+            "DTC might provide differentiation as potentially DTC isn't as wide-spread to become an industry standard",
+            "Covid-affected sales forced companies to be more creative and customer-centric developing new distribution channels like DTC"
+          ],
+          "subtotal": 2
+        },
+        "pillar_3_customers": {
+          "keypoints": [
+            "More customers are looking for healthier and fresh food not only for themselves, but also for their pets which are often perceived as family members",
+            "Food delivery trend is on the rise (e.g. Doordash, UberEats)",
+            "Make-at-home trend is strong"
+          ],
+          "subtotal": 3
+        }
+      },
+      "total_keypoints": 8,
+      "minimum_expected": "Cover at least 2 of the 3 pillars with at least 2 keypoints total from each covered pillar",
+      "outstanding_threshold": "Cover all 3 pillars with at least 2 keypoints per pillar (6+ total)"
+    },
+    "Q3_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_market_specific_risks": {
+          "keypoints": [
+            "High competitive pressure for the access to the channels and best shelves",
+            "Potential negative brand implications (e.g. offline channels aren't associated with 'freshness' which is at the core of the client's value proposition)"
+          ],
+          "subtotal": 2
+        },
+        "pillar_2_financial_risks": {
+          "sub_pillar_revenue_related": {
+            "keypoints": [
+              "Cannibalization of online sales",
+              "Exaggerated revenue assumptions (e.g. mass channels are usually tailored to more price-sensitive target audience, not high-end customers)"
+            ],
+            "subtotal": 2
+          },
+          "sub_pillar_cost_related": {
+            "keypoints": [
+              "High negotiation power of distributor and thus high wholesale discounts (as they offer volume and a lot of brands want to be on their shelves)",
+              "Potentially high storage expenses, incl. refrigeration (which are fairly small right now given fresh food is delivered right away)",
+              "Underestimated costs"
+            ],
+            "subtotal": 3
+          },
+          "keypoints": [
+            "Cannibalization of online sales",
+            "Exaggerated revenue assumptions (e.g. mass channels are usually tailored to more price-sensitive target audience, not high-end customers)",
+            "High negotiation power of distributor and thus high wholesale discounts (as they offer volume and a lot of brands want to be on their shelves)",
+            "Potentially high storage expenses, incl. refrigeration (which are fairly small right now given fresh food is delivered right away)",
+            "Underestimated costs"
+          ],
+          "subtotal": 5
+        },
+        "pillar_3_operational_risks": {
+          "keypoints": [
+            "Increase in operational complexity",
+            "Lack of capacity in production, transportation and storage to accommodate the demand from offline distribution channel",
+            "Potential supply chain constraints given boost to volume needed",
+            "Potentially high waste (as the product is highly perishable and now it might need to be in transit and at the store for multiple days)",
+            "Potentially higher risk of contamination give rapid scaling of operations and lack of expertise of running a large facility"
+          ],
+          "subtotal": 5
+        }
+      },
+      "total_keypoints": 12,
+      "minimum_expected": "Cover at least 2 pillars with 2+ keypoints total (4+ keypoints)",
+      "outstanding_threshold": "Cover all 3 pillars with at least 3 keypoints per pillar (9+ keypoints total)"
+    },
+    "Q4_ground_truth": {
+      "type": "quantitative",
+      "quantitative_part": {
+        "correct_final_answer": "250,000 customers (250k)",
+        "accepted_values": [
+          250000
+        ],
+        "tolerance_pct": 0.0,
+        "zero_tolerance": true,
+        "scoring_method": "Binary: correct number = full credit; incorrect = zero credit",
+        "calculation_steps": {
+          "step_1_average_ticket_per_year": {
+            "formula": "$120M (total sales 2020) ÷ 100k (unique customers) = $1,200 per customer per year",
+            "result": "$1,200"
+          },
+          "step_2_contribution_margin_percent": {
+            "formula": "Gross margin 40% − Petco commission 25% − Additional opex 5% = 10%",
+            "result": "10%"
+          },
+          "step_3_contribution_margin_usd": {
+            "formula": "$1,200 × 10% = $120 per customer per year",
+            "result": "$120"
+          },
+          "step_4_break_even_customers": {
+            "formula": "Capex $30M ÷ $120 (contribution margin per customer) = 250,000 customers",
+            "result": "250,000 customers (250k)"
+          }
+        }
+      },
+      "qualitative_part": {
+        "scoring_note": "Qualitative portion of Q4 is scored as 100% total, split into two tiers. Within each tier, use 3-level scoring per",
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "tier_1_basic": {
+          "weight_of_Q4_qualitative_total": "50%",
+          "keypoints": [
+            "The Hunter's Dog will break-even during the first year if they attract 250k new customers purchasing annual volume of dog food"
+          ],
+          "note": "Expected from every candidate. Single point worth 50% of qualitative score. Also accept: 250k will be x3.5 sales (100k+250k) after 1st year which might sound ambitious and even unrealistic."
+        },
+        "tier_2_advanced": {
+          "weight_of_Q4_qualitative_total": "50%",
+          "points_available": 4,
+          "weight_per_point": "12.5% of qualitative total",
+          "keypoints": [
+            "We didn't consider churn rate which might be high given DTC likely attracts newcomers that do aggressive promotions and marketing campaigns, so the client might need to bring more than 250k customers",
+            "If the client considers a longer period to break-even (3-4 years), then the break-even point will be more manageable (60-80k)",
+            "One of the major risks is that Petco might break the deal, so the client might want some firm agreement and/or include cancellation penalties",
+            "A $30M factory expansion might take 1-2 years, and the economics of the business (e.g. gross margin) might change by then"
+          ],
+          "note": "Not expected from every candidate. Each advanced point adds 12.5% to qualitative score."
+        },
+        "minimum_expected": "Correct numerical answer + Tier 1 basic contextualization (covered)",
+        "outstanding_threshold": "Correct numerical answer + Tier 1 covered + at least 2 Tier 2 advanced comments covered"
+      }
+    },
+    "Q5_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_recommendation": {
+          "keypoints": [
+            "Based on our initial analysis, it seems like the Hunter's Dog already enjoys a major market share in the DTC channel and might want to explore expanding to conventional offline channels"
+          ],
+          "subtotal": 1
+        },
+        "pillar_2_reasoning": {
+          "keypoints": [
+            "First, offline channels are well developed with likely thousands of locations around the U.S. which will considerably strengthen the client's access to customers",
+            "Secondly, the Hunter's Dog might boost their brand awareness through offline channels which might propel the online sales",
+            "Thirdly, a contract with a big-name retailer might open doors to other retailers too"
+          ],
+          "subtotal": 3
+        },
+        "pillar_3_risks": {
+          "keypoints": [
+            "However, there are some obvious risks including drop in profitability as we'll need to pay considerable distribution commission, potentially high capex commitment, and damage to our brand as we might be moving from premium to mass market"
+          ],
+          "subtotal": 1
+        },
+        "pillar_4_next_steps": {
+          "keypoints": [
+            "To move forward, I plan to develop a risk mitigation plan, conduct in-depth analysis of potential distribution partners, and assess the competitive threat to this plan"
+          ],
+          "subtotal": 1
+        }
+      },
+      "total_keypoints": 6,
+      "minimum_expected": "Cover pillar_1_recommendation (covered) + at least 1 keypoint from pillar_2_reasoning",
+      "outstanding_threshold": "Cover all 4 pillars with recommendation + at least 2 reasoning points + risks + next steps"
+    }
+  },
+  "state_machine_global": {
+    "case_type": "interviewer_driven",
+    "skip_logic": false,
+    "mandatory_sequence": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5"
+    ],
+    "rules": [
+      "Q1 cannot be skipped under any circumstances",
+      "Questions must proceed in linear order Q1 → Q2 → Q3 → Q4 → Q5",
+      "A question may not be advanced until the current question receives a scoreable answer (1st or 2nd attempt)",
+      "If analyst pre-covers a later question's keypoints in an earlier answer, record as pre-coverage but still ask the later question in sequence",
+      "No question may be skipped even if pre-covered",
+      "For Q4 (quantitative): if analyst fails both attempts, Judge provides correct answer (250k) before proceeding to Q5"
+    ]
+  },
+  "scoring_summary": {
+    "Q1": {
+      "type": "framework",
+      "total_keypoints": 14,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q2": {
+      "type": "qualitative",
+      "total_keypoints": 8,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q3": {
+      "type": "qualitative",
+      "total_keypoints": 12,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q4": {
+      "type": "quantitative",
+      "part_1_quantitative": {
+        "correct_answer": "250,000 customers (250k)",
+        "zero_tolerance": true,
+        "scoring": "Binary: Full credit if correct; zero credit if incorrect"
+      },
+      "part_2_qualitative": {
+        "total_keypoints": 5,
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "human_review_priority": "false-partial > false-not-covered > covered",
+        "tier_1_basic": {
+          "keypoints": 1,
+          "weight": "50% of qualitative score"
+        },
+        "tier_2_advanced": {
+          "keypoints": 4,
+          "weight_per_point": "12.5% of qualitative score",
+          "weight_total": "50% of qualitative score"
+        }
+      }
+    },
+    "Q5": {
+      "type": "qualitative",
+      "total_keypoints": 6,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    }
+  }
+}

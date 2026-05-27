@@ -1,0 +1,824 @@
+{
+  "case_id": "Case_008_CoffeePodProducer_PK20",
+  "case_type": "interviewer_driven",
+  "case_type_origin": "interviewer_driven",
+  "case_arch": {
+    "primary": "New Business Decision / Make-or-Buy",
+    "tags": [
+      "Profitability",
+      "Pricing",
+      "Operations",
+      "Make-or-Buy",
+      "Sensitivity Analysis"
+    ]
+  },
+  "version": "v3",
+  "source": {
+    "casebook": "Peter K. 2020",
+    "firm": "Bain",
+    "year": 2020
+  },
+  "industry": "Consumer Goods / Food & Beverage",
+  "topic": "New Business Decision / In-house vs Outsource",
+  "difficulty": "Hard",
+  "expected_duration_minutes": 35,
+  "annotation_mode": "v14 retroactive (D24 schema migration + Phase 2 backfill + Q9 Multi-part rewrite)",
+  "opening_prompt": "Hi, I'd like to solve some consulting cases with you. Pls be a good interviewee to have a potential test in consulting cases. For the case problem-solving, pls do not assume any numbers or assumptions before my confirmation. I will give you the context upon request. I need you to answer the following questions for the client. Before you start, feel free to ask me 2-3 clarifying questions about the client. Please answer using standard units (e.g., revenue in $M; market size in $B; ratios as decimals; growth rates as %). Q1. How do we evaluate it? Should the client change their production process and accept the deal?\nQ2. What are the key cost items of the Brew Co?\nQ3. What are the risks of accepting the deal?\nQ4. What other ideas to increase sales can you suggest?\nQ5. What information do you need to assess the client's potential revenue from this deal?\nQ6. The client wants to hit $1M in weekly profits from selling coffee pods in the deal. Can you calculate their expected weekly profits?\nQ7. What would happen if % coffee-drinkers at the slide changed from 50% to 40%? [Mental Math — supposed to be done without writing]\nQ8. The client decided to pursue the contract. Should they produce the pods in-house or outsource? How to evaluate this decision?\nQ9. We managed to learn some details re in-house and outsource options. What recommendations would you make based on them? Pls quantify your analysis and feel the number. Here is the basic context for the client:\nBrew Co produces instant coffee makers and coffee pods. A large hotel chain wants to have their machines in hotel rooms but requires biodegradable pods as a condition of the contract. Currently Brew Co's pods are not biodegradable. The question is whether Brew Co should change their production process and accept the deal.",
+  "scoring_summary": {
+    "human_review_priority": "false-partial > false-not-covered > covered",
+    "Q1": {
+      "type": "framework",
+      "total_keypoints": 13,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q2": {
+      "type": "qualitative",
+      "total_keypoints": 11,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q3": {
+      "type": "qualitative",
+      "total_keypoints": 12,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q4": {
+      "type": "qualitative",
+      "total_keypoints": 18,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q5": {
+      "type": "qualitative",
+      "total_keypoints": 14,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q8": {
+      "type": "qualitative",
+      "total_keypoints": 13,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q6": {
+      "type": "quantitative",
+      "part_1_quantitative": {
+        "correct_answer": "$1.05M (casebook rounded 135k coffee-drinkers) or $1.035M (precise 134.4k)",
+        "accepted_values": [
+          1.035,
+          1.05,
+          1035000,
+          1050000
+        ],
+        "tolerance_pct": 0.02,
+        "zero_tolerance": false,
+        "scoring": "Binary: correct final answer (any value in accepted_values within 2% tolerance) = full credit"
+      },
+      "part_2_qualitative": {
+        "total_keypoints": 5,
+        "scoring_method": "Within each tier, use 3-level scoring per; tier_1_basic (50%) + tier_2_advanced (50%)",
+        "human_review_priority": "false-partial > false-not-covered > covered"
+      }
+    },
+    "Q7": {
+      "type": "quantitative",
+      "part_1_quantitative": {
+        "correct_answer": "$0.84M (precise: $1.05M × 0.8) or $0.8M (rounded one sig fig)",
+        "accepted_values": [
+          0.8,
+          0.84,
+          800000,
+          840000
+        ],
+        "tolerance_pct": 0.02,
+        "zero_tolerance": false,
+        "scoring": "Binary: correct final answer (any value in accepted_values within 2% tolerance) = full credit; mental math — no writing"
+      },
+      "part_2_qualitative": {
+        "total_keypoints": 3,
+        "scoring_method": "Within each tier, use 3-level scoring per; tier_1_basic (50%) + tier_2_advanced (50%)",
+        "human_review_priority": "false-partial > false-not-covered > covered"
+      }
+    },
+    "Q9": {
+      "type": "quantitative",
+      "part_1_quantitative": {
+        "correct_answer": "break_even = 20M pods (Logic 2 strict); annual_volume = 98.55M or 100M pods (Logic 1 dual)",
+        "accepted_answer_parts": {
+          "break_even_pods": {
+            "accepted_values": [
+              20000000
+            ],
+            "tolerance_pct": 0.0,
+            "zero_tolerance": true
+          },
+          "annual_volume_pods": {
+            "accepted_values": [
+              98550000,
+              100000000
+            ],
+            "tolerance_pct": 0.02,
+            "zero_tolerance": false
+          }
+        },
+        "scoring": "Across-AND: both parts must pass for full credit; break_even=L2 strict 20M; annual_volume=L1 dual [98.55M, 100M] ±2%"
+      },
+      "part_2_qualitative": {
+        "total_keypoints": 3,
+        "scoring_method": "Within each tier, use 3-level scoring per; tier_1_basic (1 kp, 50%) + tier_2_advanced (2 kp, 50%; 25% per kp)",
+        "human_review_priority": "false-partial > false-not-covered > covered"
+      }
+    },
+    "total_case_keypoints": 104
+  },
+  "state_machine_global": {
+    "flow": "Q1 → Q2 → Q3 → Q4 → Q5 → Q6 (Appendix 1) → Q7 [mental math] → Q8 → Q9 (Appendix 2) → End",
+    "rules": [
+      "All 9 questions asked sequentially; no conditional skip logic",
+      "Q6: quantitative sub-part (calculate $1.05M) followed by qualitative contextualization; max 2 attempts; §4.3.C if both wrong — provide $1.05M AND key intermediate steps including '135k coffee-drinkers'",
+      "Q7: mental math — candidate must not write; references $1.05M from Q6; max 2 attempts; §4.3.C if both wrong — provide $0.8M; qualitative follows",
+      "Q9: uses 135k coffee-drinkers from Q6 intermediate step for annual volume calculation; max 2 attempts; §4.3.C if both wrong — provide conclusion (in-house superior); qualitative follows",
+      "Cross-question §4.3.C dependencies: Q6 answer ($1.05M) → Q7 base; Q6 intermediate (135k coffee-drinkers) → Q9 annual volume",
+      "Q2, Q3, Q4, Q5, Q8 are brainstorming/framework questions: minimum 4 ideas expected; best practice 8+ ideas with structured approach and on-the-fly delivery without taking notes",
+      "Bain case does not require a final recommendation slide"
+    ]
+  },
+  "structure_1_client_basic_context": {
+    "client": "Brew Co (instant coffee maker and coffee pod producer)",
+    "client_context": "Established coffee pod producer; currently does not produce biodegradable pods",
+    "situation": "Brew Co produces instant coffee makers and coffee pods. A large hotel chain wants to have their machines in hotel rooms but requires biodegradable pods as a condition of the contract. Currently Brew Co's pods are not biodegradable. The question is whether Brew Co should change their production process and accept the deal.",
+    "objective": "Evaluate whether Brew Co should change their production process and accept the hotel chain deal"
+  },
+  "structure_2_information_upon_request": {
+    "description": "General background information released only upon candidate request. Do not volunteer proactively.",
+    "items": [
+      {
+        "item_id": "S2_1",
+        "trigger": "Candidate asks about Brew Co's financial targets, profit goals, or what they want to get from the deal",
+        "core_dimensional_concept": "Brew Co's financial target for the deal (weekly profit)",
+        "release_conditions": {
+          "structural_position": "Release when candidate explicitly asks about Brew Co's financial objectives for the hotel deal or what level of profit they need to make the deal worthwhile",
+          "alternative_phrasings": [
+            "What is the client's financial goal for this deal?",
+            "How much profit does Brew Co expect to make?",
+            "What is the minimum profit target for this contract?",
+            "Does Brew Co have a specific financial hurdle for the deal?"
+          ]
+        },
+        "disqualifying": "Do not release if candidate asks about the company's overall revenue or margins (not deal-specific); do not release if candidate asks about pricing without framing it as a profit target question",
+        "info": "Brew Co would want to have $1M in weekly profit from the deal."
+      },
+      {
+        "item_id": "S2_2",
+        "trigger": "Candidate asks about the hotel chain's size, scale, or number of hotels in the network",
+        "core_dimensional_concept": "Hotel chain size and network scale",
+        "release_conditions": {
+          "structural_position": "Release when candidate asks about the size of the hotel chain as a potential customer — how many hotels, how large the network is",
+          "alternative_phrasings": [
+            "How big is the hotel chain?",
+            "How many hotels are in the chain?",
+            "Is this a large or small hotel network?",
+            "What is the scale of the hotel chain?"
+          ]
+        },
+        "disqualifying": "Do not release redundantly if Appendix 1 has already been handed out (which contains the 1,200 hotel figure); do not release if candidate asks about hotel chain brand or market position without asking about size",
+        "info": "A hotel chain is one of the top chains in the U.S. with 1,200 hotels in its network."
+      },
+      {
+        "item_id": "S2_3",
+        "trigger": "Candidate asks about other competing bidders or whether Brew Co is competing for this contract",
+        "core_dimensional_concept": "Competitive bidding situation",
+        "release_conditions": {
+          "structural_position": "Release when candidate asks whether other coffee pod manufacturers are bidding for the same hotel deal or whether Brew Co has competition for this contract",
+          "alternative_phrasings": [
+            "Are there other companies bidding for this deal?",
+            "Is Brew Co the only one being considered?",
+            "What is the competitive situation for this contract?",
+            "Do we have any competition for this hotel deal?"
+          ]
+        },
+        "disqualifying": "Do not release if candidate asks about general market competition for Brew Co's regular business (not specific to this hotel contract)",
+        "info": "No information on other coffee pod makers bidding for this deal."
+      },
+      {
+        "item_id": "S2_4",
+        "trigger": "Candidate asks about how Brew Co plans to produce biodegradable pods or what production options they are exploring",
+        "core_dimensional_concept": "Biodegradable pod production options being considered (in-house vs outsource)",
+        "release_conditions": {
+          "structural_position": "Release when candidate explicitly asks whether Brew Co has explored how to produce biodegradable pods or what manufacturing path they are considering",
+          "alternative_phrasings": [
+            "How would Brew Co produce the biodegradable pods?",
+            "Has Brew Co considered in-house vs outsourcing for pod production?",
+            "What are the production options for biodegradable pods?",
+            "Has Brew Co looked at any options for manufacturing the new pods?"
+          ]
+        },
+        "disqualifying": "Do not release if candidate asks about the production timeline or costs (not about which production options exist); do not release if candidate is asking about current non-biodegradable pod production",
+        "info": "Brew Co is exploring both options: in-house and outsourced production for biodegradable pods."
+      }
+    ]
+  },
+  "structure_3_case_questions": {
+    "Q1": {
+      "q_id": "Q1",
+      "type": "framework",
+      "question_text": "How do we evaluate it? Should the client change their production process and accept the deal?",
+      "appendix_provided": null,
+      "information_upon_request": [],
+      "state_machine": {
+        "initial_prompt": "How do we evaluate it? Should the client change their production process and accept the deal?",
+        "transition_condition": "Candidate presents structured framework covering Brew Co's current situation, financial analysis, strategic value, and risks → proceed to Q2",
+        "zero_tolerance": false
+      }
+    },
+    "Q2": {
+      "q_id": "Q2",
+      "type": "qualitative",
+      "question_text": "What are the key cost items of the Brew Co?",
+      "appendix_provided": null,
+      "information_upon_request": [],
+      "state_machine": {
+        "initial_prompt": "What are the key cost items of the Brew Co?",
+        "transition_condition": "Candidate provides structured brainstorm of fixed and variable costs (minimum 4 ideas expected) → proceed to Q3",
+        "zero_tolerance": false
+      }
+    },
+    "Q3": {
+      "q_id": "Q3",
+      "type": "qualitative",
+      "question_text": "What are the risks of accepting the deal?",
+      "appendix_provided": null,
+      "information_upon_request": [],
+      "state_machine": {
+        "initial_prompt": "What are the risks of accepting the deal?",
+        "transition_condition": "Candidate provides structured brainstorm of risks across market, financial, and operational dimensions (minimum 4 ideas expected) → proceed to Q4",
+        "zero_tolerance": false
+      }
+    },
+    "Q4": {
+      "q_id": "Q4",
+      "type": "qualitative",
+      "question_text": "What other ideas to increase sales can you suggest?",
+      "appendix_provided": null,
+      "information_upon_request": [],
+      "state_machine": {
+        "initial_prompt": "What other ideas to increase sales can you suggest?",
+        "transition_condition": "Candidate provides structured brainstorm of revenue growth ideas (minimum 4, best practice 8+) → proceed to Q5",
+        "zero_tolerance": false
+      }
+    },
+    "Q5": {
+      "q_id": "Q5",
+      "type": "qualitative",
+      "question_text": "What information do you need to assess the client's potential revenue from this deal?",
+      "appendix_provided": null,
+      "information_upon_request": [],
+      "state_machine": {
+        "initial_prompt": "What information do you need to assess the client's potential revenue from this deal?",
+        "transition_condition": "Candidate identifies key data inputs across contract volume, pricing, and indirect revenue dimensions (minimum 4, best practice 8+) → proceed to Q6",
+        "zero_tolerance": false
+      }
+    },
+    "Q6": {
+      "q_id": "Q6",
+      "type": "quantitative",
+      "question_text": "The client wants to hit $1M in weekly profits from selling coffee pods in the deal. Can you calculate their expected weekly profits?",
+      "appendix_provided": "Appendix 1",
+      "information_upon_request": [],
+      "state_machine": {
+        "initial_prompt": "The client wants to hit $1M in weekly profits from selling coffee pods in the deal. Can you calculate their expected weekly profits? [Hand Appendix 1 to candidate]",
+        "max_attempts": 2,
+        "scoring_on_transition": {
+          "attempt_1_correct": "Full credit for quantitative_part; proceed to qualitative contextualization",
+          "attempt_2_correct": "Partial credit for quantitative_part; proceed to qualitative contextualization",
+          "both_attempts_wrong": "Judge LLM states '$1.05M' and key steps (including 135k coffee-drinkers) per §4.3.C; proceed to qualitative contextualization"
+        },
+        "transition_condition": "Candidate states correct final answer ($1.05M or $1,050k) OR both attempts exhausted → proceed to qualitative contextualization",
+        "zero_tolerance": true
+      }
+    },
+    "Q7": {
+      "q_id": "Q7",
+      "type": "quantitative",
+      "question_text": "What would happen if % coffee-drinkers at the slide changed from 50% to 40%? [Mental Math — supposed to be done without writing]",
+      "appendix_provided": null,
+      "information_upon_request": [],
+      "state_machine": {
+        "initial_prompt": "What would happen if % coffee-drinkers at the slide changed from 50% to 40%? This is supposed to be mental math — please don't write.",
+        "max_attempts": 2,
+        "scoring_on_transition": {
+          "attempt_1_correct": "Full credit for quantitative_part; proceed to qualitative contextualization",
+          "attempt_2_correct": "Partial credit for quantitative_part; proceed to qualitative contextualization",
+          "both_attempts_wrong": "Judge LLM states '$0.8M' per §4.3.C; proceed to qualitative contextualization"
+        },
+        "transition_condition": "Candidate states correct answer ($0.8M or $0.84M) OR both attempts exhausted → proceed to qualitative contextualization",
+        "zero_tolerance": true
+      }
+    },
+    "Q8": {
+      "q_id": "Q8",
+      "type": "qualitative",
+      "question_text": "The client decided to pursue the contract. Should they produce the pods in-house or outsource? How to evaluate this decision?",
+      "appendix_provided": null,
+      "information_upon_request": [],
+      "state_machine": {
+        "initial_prompt": "The client decided to pursue the contract. Should they produce the pods in-house or outsource? How to evaluate this decision?",
+        "transition_condition": "Candidate provides a structured framework for evaluating in-house vs outsource across financial and strategic dimensions → proceed to Q9",
+        "zero_tolerance": false
+      }
+    },
+    "Q9": {
+      "q_id": "Q9",
+      "type": "quantitative",
+      "question_text": "We managed to learn some details re in-house and outsource options. What recommendations would you make based on them? Pls quantify your analysis and feel the number.",
+      "appendix_provided": "Appendix 2",
+      "information_upon_request": [],
+      "state_machine": {
+        "initial_prompt": "We managed to learn some details re in-house and outsource options. What recommendations would you make based on them? [Hand Appendix 2 to candidate]",
+        "max_attempts": 2,
+        "scoring_on_transition": {
+          "attempt_1_correct": "Full credit for quantitative_part; proceed to qualitative recommendation",
+          "attempt_2_correct": "Partial credit for quantitative_part; proceed to qualitative recommendation",
+          "both_attempts_wrong": "Judge LLM states '20M pod break-even vs ~100M annual volume → in-house financially superior' per §4.3.C; proceed to qualitative recommendation"
+        },
+        "transition_condition": "Candidate arrives at correct conclusion (in-house superior, ~20M pod break-even) OR both attempts exhausted → proceed to qualitative recommendation",
+        "zero_tolerance": true
+      }
+    }
+  },
+  "structure_4_ground_truth": {
+    "Q1_ground_truth": {
+      "question": "How do we evaluate it? Should the client change their production process and accept the deal?",
+      "type": "framework",
+      "total_keypoints": 13,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": [
+        {
+          "pillar_name": "Brew Co",
+          "keypoints": [
+            "Product portfolio",
+            "Customer segments",
+            "Biodegradable pods: value prop and operational implications"
+          ]
+        },
+        {
+          "pillar_name": "Financial analysis",
+          "keypoints": [
+            "Capex and investment criteria",
+            "Expected revenue",
+            "Expected costs"
+          ]
+        },
+        {
+          "pillar_name": "Strategic value",
+          "keypoints": [
+            "New opportunities",
+            "Advantages in operations",
+            "Improvement in CX",
+            "Risk diversification"
+          ]
+        },
+        {
+          "pillar_name": "Risks",
+          "keypoints": [
+            "Market specific risks",
+            "Operational risks",
+            "Financial risks"
+          ]
+        }
+      ]
+    },
+    "Q2_ground_truth": {
+      "question": "What are the key cost items of the Brew Co?",
+      "type": "qualitative",
+      "total_keypoints": 11,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "scoring_note": "Best practice is 8+ ideas with structured approach; minimum expected is 4 ideas; reward fixed vs variable cost distinction",
+      "pillars": [
+        {
+          "pillar_name": "Fixed costs",
+          "keypoints": [
+            "Rent",
+            "Maintenance costs for the equipment (e.g. spare part, maintenance services)",
+            "Marketing expenses",
+            "Overhead (e.g. shared functions, management team)",
+            "Transportation/logistics costs"
+          ]
+        },
+        {
+          "pillar_name": "Variable costs",
+          "keypoints": [
+            "Supplies (e.g. coffee, pods, spare parts for coffee machines)",
+            "Packaging materials",
+            "Labor",
+            "Distribution fees (e.g. markups for retail stores for B2C sales)",
+            "Discounts",
+            "Credit cards commissions"
+          ]
+        }
+      ]
+    },
+    "Q3_ground_truth": {
+      "question": "What are the risks of accepting the deal?",
+      "type": "qualitative",
+      "total_keypoints": 12,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "scoring_note": "Best practice is 8+ ideas with structured approach; minimum expected is 4 ideas",
+      "pillars": [
+        {
+          "pillar_name": "Market specific risks",
+          "keypoints": [
+            "Change in customer preferences (e.g. drop in interest for biodegradable pods due to shorter shelf life)",
+            "Intensified competition (e.g. lower pricing, aggressive marketing)",
+            "Rise in new entrants to biodegradable space",
+            "Rise of substitutes (e.g. coffee paper filters)"
+          ]
+        },
+        {
+          "pillar_name": "Financial risks",
+          "revenue_related": {
+            "keypoints": [
+              "Exaggerated assumptions for sales",
+              "Hotel's withdrawal from the deal or deal renegotiation mid-way"
+            ],
+            "subtotal": 2
+          },
+          "keypoints": [
+            "Exaggerated assumptions for sales",
+            "Hotel's withdrawal from the deal or deal renegotiation mid-way",
+            "Higher waste given potential shorter shelf life of biodegradable pods",
+            "Lack of funding for new equipment"
+          ]
+        },
+        {
+          "pillar_name": "Operational risks",
+          "keypoints": [
+            "Delays in new production line launch",
+            "Quality control for biodegradable pods",
+            "Increase in operational complexity for production, storage, distribution",
+            "Lack of tech personnel to support production equipment for biodegradable pods"
+          ]
+        }
+      ]
+    },
+    "Q4_ground_truth": {
+      "question": "What other ideas to increase sales can you suggest?",
+      "type": "qualitative",
+      "total_keypoints": 18,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "scoring_note": "Best practice is 8+ ideas with structured approach and on-the-fly delivery without taking notes; minimum expected is 4 ideas",
+      "pillars": [
+        {
+          "pillar_name": "Upgrade marketing strategy",
+          "keypoints": [
+            "Invest in aggressive marketing campaigns and promotions",
+            "Partner with complementary brands to do co-branding (e.g. with bakery chains, business magazines, etc.)"
+          ]
+        },
+        {
+          "pillar_name": "Change pricing",
+          "keypoints": [
+            "Introduce bundles (e.g. annual supply of coffee pods with a coffee mug/coffee maker)",
+            "Develop subscription options (e.g. monthly delivery of coffee pods)",
+            "Adjust pricing levels to match competition/WTP (willingness-to-pay)",
+            "Introduce different sizes of packages (e.g. coffee singles, family-size package for price-sensitive groups)"
+          ]
+        },
+        {
+          "pillar_name": "Increase efficiency of distribution",
+          "keypoints": [
+            "Launch e-commerce",
+            "Start their own chain of coffee shops to promote their brand of coffee",
+            "Expand the network of their distributors (e.g. grocery chains, retail chains)",
+            "Incentivize better their distributors (e.g. increase markups)",
+            "Better select, train, and incentivize the sales team to sell to B2B",
+            "Build a network of coffee vending machines"
+          ]
+        },
+        {
+          "pillar_name": "Improve and expand value proposition",
+          "keypoints": [
+            "Launch a high-end premium / low-end standard coffee",
+            "Enter coffee-based beverages (e.g. bottled iced coffee, cold brew)",
+            "Offer a variety of coffee pod options",
+            "Expand in B2B (e.g. partner with fast food chains, airlines, large employers)",
+            "Develop adjacent offerings to cross-sell/up-sell (e.g. merchandise, seasonal offerings)",
+            "Consider white-labelling"
+          ]
+        }
+      ]
+    },
+    "Q5_ground_truth": {
+      "question": "What information do you need to assess the client's potential revenue from this deal?",
+      "type": "qualitative",
+      "total_keypoints": 14,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "scoring_note": "Best practice is 8+ variables identified; minimum expected is 4; reward structured framing across contract volume, pricing, and indirect revenue",
+      "pillars": [
+        {
+          "pillar_name": "Contract volume data",
+          "keypoints": [
+            "# of hotels in the chain",
+            "# rooms per hotel",
+            "Average occupancy rate",
+            "# of guests per room",
+            "% coffee-drinkers among guests",
+            "# coffee pods consumed per coffee-drinker per day",
+            "Expected changes in any of the above"
+          ]
+        },
+        {
+          "pillar_name": "Contract pricing data",
+          "keypoints": [
+            "Expected price of the contract/per pod",
+            "Potential discounts",
+            "Forecasted changes in any of the above due to inflation, change in volume, etc."
+          ]
+        },
+        {
+          "pillar_name": "Indirect impact on revenue growth",
+          "keypoints": [
+            "Estimated revenue for adjacency products/services (e.g. cross-sell of coffee mugs to hotel guests)",
+            "Expected future revenue from new customers who enjoyed coffee at the hotel and will start purchasing it for themselves after their stay",
+            "Estimated improvement in the retention rate of existing customers whose loyalty to the client's coffee brand will strengthen after their hotel stay",
+            "Estimated increase in coffee consumption of existing customers whose loyalty to the client's coffee brand will strengthen after their hotel stay"
+          ]
+        }
+      ]
+    },
+    "Q8_ground_truth": {
+      "question": "The client decided to pursue the contract. Should they produce the pods in-house or outsource? How to evaluate this decision?",
+      "type": "qualitative",
+      "total_keypoints": 13,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "scoring_note": "Best practice is 8+ ideas with structured approach; minimum expected is 4 ideas; reward structured framing across financial and strategic dimensions",
+      "pillars": [
+        {
+          "pillar_name": "Financial analysis",
+          "costs_factors": {
+            "keypoints": [
+              "Cost structure for in-house vs outsourced production"
+            ],
+            "subtotal": 1
+          },
+          "revenue_factors": {
+            "keypoints": [
+              "Production capacity of in-house vs outsource"
+            ],
+            "subtotal": 1
+          },
+          "investment": {
+            "keypoints": [
+              "Capex required to develop in-house production",
+              "Expected ROI/payback/etc."
+            ],
+            "subtotal": 2
+          },
+          "keypoints": [
+            "Cost structure for in-house vs outsourced production",
+            "Production capacity of in-house vs outsource",
+            "Capex required to develop in-house production",
+            "Expected ROI/payback/etc."
+          ]
+        },
+        {
+          "pillar_name": "Strategic value",
+          "sub_pillars": [
+            {
+              "sub_pillar_name": "New opportunities",
+              "keypoints": [
+                "Ability to produce different types of pods in-house vs outsource",
+                "In-house might offer more opportunities to innovate to design new types of coffee pods"
+              ]
+            },
+            {
+              "sub_pillar_name": "Advantages in operations – In-house (potentially)",
+              "keypoints": [
+                "Better quality control",
+                "Higher production flexibility",
+                "Quicker lead times"
+              ]
+            },
+            {
+              "sub_pillar_name": "Advantages in operations – Outsource (potentially)",
+              "keypoints": [
+                "Less operational complexity",
+                "Immediate launch",
+                "All necessary expertise available",
+                "Quick scale-up (if needed)"
+              ]
+            }
+          ],
+          "keypoints": [
+            "Ability to produce different types of pods in-house vs outsource",
+            "In-house might offer more opportunities to innovate to design new types of coffee pods",
+            "Better quality control",
+            "Higher production flexibility",
+            "Quicker lead times",
+            "Less operational complexity",
+            "Immediate launch",
+            "All necessary expertise available",
+            "Quick scale-up (if needed)"
+          ]
+        }
+      ]
+    },
+    "Q6_ground_truth": {
+      "question": "The client wants to hit $1M in weekly profits from selling coffee pods in the deal. Can you calculate their expected weekly profits?",
+      "type": "quantitative",
+      "total_keypoints": 10,
+      "quantitative_part": {
+        "correct_final_answer": "$1.05M (casebook rounded 135k coffee-drinkers × 2 pods × $0.55/pod × 7 days) or $1.035M (precise: 134,400 × 2 × $0.55 × 7 = $1,034,880)",
+        "accepted_values": [
+          1.035,
+          1.05,
+          1035000,
+          1050000
+        ],
+        "tolerance_pct": 0.02,
+        "zero_tolerance": false,
+        "scoring_method": "Binary: correct final answer (any value in accepted_values within 2% tolerance) = full credit; each intermediate calculation step scored with 3-level as supporting evidence; accept both $1.035M (precise) and $1.05M (casebook rounded)",
+        "total_steps": 5,
+        "calculation_steps": [
+          {
+            "step": 1,
+            "description": "# occupied rooms = 1,200 hotels × 200 rooms × 70% occupancy rate",
+            "value": "168,000 occupied rooms"
+          },
+          {
+            "step": 2,
+            "description": "# coffee-drinkers = 168,000 × 1.6 guests/room × 50% coffee-drinkers",
+            "value": "134,400 ≈ 135,000 coffee-drinkers (KEY INTERMEDIATE: used in Q9)"
+          },
+          {
+            "step": 3,
+            "description": "Weighted margin per pod = $0.8×50% + $0.3×50%",
+            "value": "$0.40 + $0.15 = $0.55 per pod"
+          },
+          {
+            "step": 4,
+            "description": "Daily profits = 135,000 coffee-drinkers × 2 pods/day × $0.55/pod",
+            "value": "≈ $148,500 ≈ $150k"
+          },
+          {
+            "step": 5,
+            "description": "Weekly profits = $150k/day × 7 days",
+            "value": "$1,050k = $1.05M — FINAL ANSWER"
+          }
+        ]
+      },
+      "qualitative_part": {
+        "total_keypoints": 5,
+        "scoring_method": "Within each tier, use 3-level scoring per; tier_1_basic (50%) + tier_2_advanced (50%)",
+        "prompt": "How would you contextualize this result?",
+        "tier_1_basic": {
+          "description": "Basic comments (expected from everyone)",
+          "keypoints": [
+            "The client will be able to hit their target of $1M in weekly profits"
+          ]
+        },
+        "tier_2_advanced": {
+          "description": "Advanced comments (for outstanding candidates)",
+          "keypoints": [
+            "The contract might also lead to indirect impact on the client's revenue: in addition to coffee the hotel guests might purchase some adjacency products (e.g. clients' coffee mugs)",
+            "The presence of the client's coffee makers and pods in the hotel will increase the client's brand awareness contributing to sales outside of the hotel",
+            "It's not clear if the hotel is going to purchase the client's coffee makers too (which will increase revenue) or the client provides them at no charge (which would increase opex)",
+            "Overall, ~$52M in annual profits seem attractive, as it is also going to be a predictable and consistent cash flow"
+          ]
+        }
+      }
+    },
+    "Q7_ground_truth": {
+      "question": "What would happen if % coffee-drinkers at the slide changed from 50% to 40%? [Mental Math — supposed to be done without writing]",
+      "type": "quantitative",
+      "total_keypoints": 5,
+      "quantitative_part": {
+        "correct_final_answer": "$0.84M (precise: $1.05M × 0.8) or $0.8M (rounded one sig fig)",
+        "accepted_values": [
+          0.8,
+          0.84,
+          800000,
+          840000
+        ],
+        "tolerance_pct": 0.02,
+        "zero_tolerance": false,
+        "scoring_method": "Binary: correct final answer (any value in accepted_values within 2% tolerance) = full credit; mental math — no writing allowed; each step scored with 3-level as supporting evidence",
+        "total_steps": 2,
+        "calculation_steps": [
+          {
+            "step": 1,
+            "description": "Apply ratio of new to old coffee-drinker percentage: 40%/50% = 0.8",
+            "value": "0.8 (ratio)"
+          },
+          {
+            "step": 2,
+            "description": "New weekly profits = $1.05M × 0.8",
+            "value": "$0.84M ≈ $0.8M — FINAL ANSWER"
+          }
+        ]
+      },
+      "qualitative_part": {
+        "total_keypoints": 3,
+        "scoring_method": "Within each tier, use 3-level scoring per; tier_1_basic (50%) + tier_2_advanced (50%)",
+        "prompt": "How would you contextualize this result?",
+        "tier_1_basic": {
+          "description": "Basic comments (expected from everyone)",
+          "keypoints": [
+            "The expected weekly profits will drop to $0.8M"
+          ]
+        },
+        "tier_2_advanced": {
+          "description": "Advanced comments (for outstanding candidates)",
+          "keypoints": [
+            "We made a lot of assumptions in our calculations and there is quite little room for error as $1.05M is not that far from the client's goal of $1M (only 5% difference)",
+            "If any of the assumptions (e.g. # guests per room, # coffee pods consumed) changes slightly, the client won't be able to hit their financial target"
+          ]
+        }
+      }
+    },
+    "Q9_ground_truth": {
+      "question": "We managed to learn some details re in-house and outsource options. What recommendations would you make based on them? Pls quantify your analysis and feel the number.",
+      "type": "quantitative",
+      "total_keypoints": 8,
+      "quantitative_part": {
+        "correct_final_answer": "Multi-part answer: (1) break_even = 20M pods; (2) annual_volume = 98.55M (precise) or 100M (casebook rounded); conclusion: In-house financially superior (annual volume >> break-even, payback ~0.2 years)",
+        "accepted_answer_parts": {
+          "break_even_pods": {
+            "accepted_values": [
+              20000000
+            ],
+            "tolerance_pct": 0.0,
+            "zero_tolerance": true
+          },
+          "annual_volume_pods": {
+            "accepted_values": [
+              98550000,
+              100000000
+            ],
+            "tolerance_pct": 0.02,
+            "zero_tolerance": false
+          }
+        },
+        "scoring_method": "Across-AND: both parts must pass for full credit. break_even_pods = Logic 2 strict 20M (zero tolerance); annual_volume_pods = Logic 1 dual [98.55M, 100M] within 2% tolerance. Each calculation step scored with 3-level as supporting evidence.",
+        "total_steps": 5,
+        "calculation_steps": [
+          {
+            "step": 1,
+            "description": "Calculate incremental capex (in-house vs outsource): $40M − $10M",
+            "value": "$30M incremental capex for in-house"
+          },
+          {
+            "step": 2,
+            "description": "Calculate variable cost savings per pod (in-house vs outsource): $2.5 − $1",
+            "value": "$1.5 savings per pod with in-house"
+          },
+          {
+            "step": 3,
+            "description": "Break-even volume: $30M ÷ $1.5/pod",
+            "value": "20M pods break-even"
+          },
+          {
+            "step": 4,
+            "description": "Annual contract volume: 135k coffee-drinkers × 2 pods/day × 365 days",
+            "value": "~98.5M ≈ 100M pods per year"
+          },
+          {
+            "step": 5,
+            "description": "Compare: 100M annual pods >> 20M break-even → in-house recovers incremental capex in ~0.2 years",
+            "value": "In-house is financially far superior — FINAL CONCLUSION"
+          }
+        ]
+      },
+      "qualitative_part": {
+        "scoring_method": "Within each tier, use 3-level scoring per; tier_1_basic (1 kp, 50%) + tier_2_advanced (2 kp, 50%; 25% per kp)",
+        "prompt": "What is your recommendation and how would you qualify it?",
+        "tier_1_basic": {
+          "description": "Basic comments (expected from everyone)",
+          "subtotal": 1,
+          "weight": "50% of qualitative score",
+          "keypoints": [
+            "The in-house option seems far more attractive financially"
+          ]
+        },
+        "tier_2_advanced": {
+          "description": "Advanced comments (for outstanding candidates)",
+          "subtotal": 2,
+          "weight_per_point": "25% of qualitative score",
+          "weight_total": "50% of qualitative score",
+          "keypoints": [
+            "Given the margins are $0.3–$0.8 per pod, the variable costs for outsourcing ($2.5) seem incredibly high and might eat the whole margins making the deal unprofitable",
+            "The client might consider a hybrid option: start with outsourcing and build the in-house capabilities in parallel (if outsourcing economics can be improved) – this will help avoid five months of wait period [6 months − 1 month] and get extra sales"
+          ]
+        },
+        "minimum_expected": "tier_1_basic covered (1 kp)",
+        "outstanding_threshold": "tier_1 + at least 1 of 2 tier_2 advanced keypoints"
+      }
+    }
+  },
+  "appendices": [
+    "Appendix 1: Details on the expected hotel deal — # hotels (1,200), rooms/hotel (200), occupancy rate (70%), guests/room (1.6), % coffee-drinkers (50%), pods/drinker/day (2), product mix margins (Premium 50%: $0.8/pod; Regular 50%: $0.3/pod)",
+    "Appendix 2: In-house vs Outsource comparison — Time to implementation, Capex required, Variable costs per pod, % utilization rate"
+  ]
+}

@@ -1,0 +1,806 @@
+{
+  "case_id": "021",
+  "version": "v1",
+  "source": {
+    "title": "POS Vend",
+    "inspired_by": "BCG",
+    "year": "2021",
+    "author": "Peter K.",
+    "reference": "Peter-K.org, Case #21",
+    "casebook_abbr": "PK21"
+  },
+  "case_type": "interviewer_driven",
+  "case_type_origin": "candidate_led",
+  "annotation_mode": "CL_to_IL_override",
+  "case_arch": {
+    "primary": "Comparison",
+    "tags": [
+      "Comparison",
+      "Pricing Strategy",
+      "Investment Decision"
+    ]
+  },
+  "difficulty": "Hard",
+  "industry": "Technology / Software (Point-of-Sale Systems)",
+  "topic": "Comparison case — whether POS Vend should switch from legacy on-premise business model to cloud-based (SaaS) system, including pricing strategy analysis",
+  "expected_duration_minutes": 20,
+  "opening_prompt": "Hi, I'd like to solve some consulting cases with you. Pls be a good interviewee to have a potential test in consulting cases. For the case problem-solving, pls do not assume any numbers or assumptions before my confirmation. I will give you the context upon request. I need you to answer the following questions for the client. Before you start, feel free to ask me 2-3 clarifying questions about the client.\n\nQ1. How would you decide if POS Vend should switch from the legacy business model to a cloud-based system?\n\nQ2. What are the advantages of cloud-based POS systems for end-users (restaurants and retailers)?\n\nQ3. POS Vend is considering changing their pricing strategy if they switch to cloud. Currently they charge one-time fee and subscription fee and they would like to shift to subscription fee only. What are the pros & cons?\n\nQ4. What annual subscription fee should the client charge in the new pricing model to reach a point of indifference in 3 years?\n\nQ5. POS Vend management team would like to hear your current recommendations. What would you suggest?\n\nHere is the basic context for the client:\nOur client is a U.S.-based point-of-sale (POS) software provider POS Vend that offers inventory systems for retailers and restaurants to process customer sales and track product stock levels. They work primarily with new and small businesses. Given that continuous advancements in cloud computing fuel the growing use of SaaS (Software-as-a-Service) POS systems, POS Vend is considering changing their business model and switching to cloud as well. Thanks to cloud, end-users won't need on-site servers as their data will be stored and processed in the datacenters of POS Vend. Should POS Vend switch to cloud?",
+  "structure_1_client_basic_context": {
+    "company": "POS Vend",
+    "type": "U.S.-based point-of-sale (POS) software provider",
+    "situation": "Offers inventory systems for retailers and restaurants to process customer sales and track product stock levels. Works primarily with new and small businesses. Continuous advancements in cloud computing fuel the growing use of SaaS (Software-as-a-Service) POS systems.",
+    "action": "POS Vend is considering changing their business model and switching to cloud. Thanks to cloud, end-users won't need on-site servers as their data will be stored and processed in the datacenters of POS Vend.",
+    "ask": "Should POS Vend switch to cloud?"
+  },
+  "structure_2_information_upon_request": {
+    "item_1": {
+      "item_id": "item_1",
+      "trigger": "Analyst asks about or includes POS Vend's current business model, product mix, or customer types in their framework or analysis",
+      "core_dimensional_concept": "POS Vend current business model and hardware focus",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar (e.g., 'POS Vend today' / 'Current business model')",
+          "sub-bullet under client-side analysis pillar",
+          "explicit clarifying question about what POS Vend sells or how they make money",
+          "hypothesis-driven assumption about their revenue model"
+        ],
+        "alternative_phrasings": [
+          "what does POS Vend sell",
+          "how does the client make money",
+          "current product offering",
+          "hardware vs software revenue split",
+          "on-premise vs cloud today"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'business model' only as a passing modifier in a risk statement (e.g., 'risks to their business model') — this is F passing mention, not structural touch",
+        "Analyst says 'switching business models' without asking what the current one is — referring to the transition concept, not probing the actual model"
+      ],
+      "info": "POS Vend is mostly focused on on-selling hardware (e.g. scanners, terminals, receipt printers, guest-facing display) and POS software that should be installed on-premise"
+    },
+    "item_2": {
+      "item_id": "item_2",
+      "trigger": "Analyst asks about or includes the size or growth of the U.S. POS market or cloud adoption rates in their analysis",
+      "core_dimensional_concept": "U.S. POS market size and cloud adoption rate",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar (e.g., 'Market size' / 'Market analysis' / 'Industry landscape')",
+          "sub-bullet under market or strategic opportunity pillar",
+          "explicit clarifying question about total market size or cloud penetration",
+          "hypothesis-driven assumption about market growth"
+        ],
+        "alternative_phrasings": [
+          "market size",
+          "total addressable market",
+          "TAM",
+          "cloud penetration",
+          "how big is the market",
+          "market growth"
+        ]
+      },
+      "disqualifying": [
+        "Mentions 'market' as a general category pillar name without asking about size (e.g., listing 'Market' as a pillar but not probing market size specifically) — G adjacent-dimension modifier, not a structural touch on market size",
+        "Analyst mentions 'cloud is growing' as an assertion without asking for data — F passing reference"
+      ],
+      "info": "U.S. restaurant and retail POS market was valued at $12B (2020) with the share of cloud-based POS rapidly growing (see Appendix 1)"
+    },
+    "item_3": {
+      "item_id": "item_3",
+      "trigger": "Analyst asks about or includes current cloud adoption rates among restaurants and retailers in their framework or analysis",
+      "core_dimensional_concept": "current cloud POS adoption rate among end-users",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet about market penetration or adoption rate",
+          "explicit clarifying question about what percentage of customers use cloud POS",
+          "hypothesis-driven assumption about current cloud penetration among restaurants or retailers",
+          "sub-bullet under competitive landscape or market opportunity"
+        ],
+        "alternative_phrasings": [
+          "cloud adoption",
+          "how many restaurants use cloud POS",
+          "penetration rate",
+          "current cloud usage",
+          "share of cloud-based systems"
+        ]
+      },
+      "disqualifying": [
+        "Analyst says 'cloud is becoming more popular' without asking for a specific adoption percentage — F passing mention",
+        "Mentions 'adoption' only in a trend statement (e.g., 'the trend toward cloud adoption') without probing the specific rate — G adjacent-dimension modifier"
+      ],
+      "info": "30% of restaurants and 22% of retailers currently use cloud-based POS systems"
+    },
+    "item_4": {
+      "item_id": "item_4",
+      "trigger": "Analyst asks about or includes the competitive landscape for cloud POS software or key competitors in their analysis",
+      "core_dimensional_concept": "cloud POS software competitive landscape and key players",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar (e.g., 'Competitive landscape' / 'Competition' / 'Market players')",
+          "sub-bullet under strategic analysis or market assessment",
+          "explicit clarifying question about who the key competitors are",
+          "hypothesis-driven assumption about competitive intensity"
+        ],
+        "alternative_phrasings": [
+          "who are the competitors",
+          "competitive environment",
+          "other players in the market",
+          "industry players",
+          "comparable companies"
+        ]
+      },
+      "disqualifying": [
+        "Mentions 'competitive response' as a risk category without asking about specific competitors or the competitive landscape — a risk dimension, not a structural touch on the competitive landscape itself (G adjacent-dimension modifier)",
+        "Analyst says 'the market is competitive' as an assertion without asking for specifics — F passing mention"
+      ],
+      "info": "The POS software space is crowded with a lot of legacy and new players (see Appendix 2)"
+    }
+  },
+  "structure_3_case_questions": {
+    "Q1": {
+      "q_id": "Q1",
+      "type": "framework",
+      "question_text": "How would you decide if POS Vend should switch from the legacy business model to a cloud-based system?",
+      "information_to_share_upfront": null,
+      "information_upon_request": "See structure_2 items 1–4. Release only items per semantic touch; not by mere keyword presence.",
+      "state_machine": {
+        "next_question": "Q2",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable framework answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q2": {
+      "q_id": "Q2",
+      "type": "qualitative",
+      "question_text": "What are the advantages of cloud-based POS systems for end-users (restaurants and retailers)?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q3",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q3": {
+      "q_id": "Q3",
+      "type": "qualitative",
+      "question_text": "POS Vend is considering changing their pricing strategy if they switch to cloud. Currently they charge one-time fee and subscription fee and they would like to shift to subscription fee only. What are the pros & cons?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q4",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q4": {
+      "q_id": "Q4",
+      "type": "quantitative",
+      "question_text": "What annual subscription fee should the client charge in the new pricing model to reach a point of indifference in 3 years?",
+      "information_to_share_upfront": [
+        "Currently POS Vend charges one-time fee and subscription fee and they would like to shift to subscription fee only",
+        "Average price for hardware (e.g. tablet, card reader, receipt printer) is $3k for a 2-register store/restaurant (typical client of POS Vend)"
+      ],
+      "information_upon_request": [
+        {
+          "item_id": "Q4_item_1",
+          "trigger": "Analyst asks what is included in the current one-time fee or what installation costs are",
+          "core_dimensional_concept": "current one-time fee composition (hardware and installation)",
+          "release_conditions": {
+            "structural_position": [
+              "explicit clarifying question about what the one-time fee includes",
+              "sub-bullet under calculation setup — asking about fee components",
+              "hypothesis-driven assumption about whether installation is included"
+            ],
+            "alternative_phrasings": [
+              "what does the one-time fee include",
+              "is installation included",
+              "upfront fee breakdown",
+              "what costs are in the one-time payment"
+            ]
+          },
+          "disqualifying": [
+            "Analyst mentions 'one-time fee' as part of describing the current model without asking what it includes — F passing mention"
+          ],
+          "info": "Current one-time fee includes hardware and installation costs"
+        },
+        {
+          "item_id": "Q4_item_2",
+          "trigger": "Analyst asks for the specific dollar amount of the current one-time fee / installation cost",
+          "core_dimensional_concept": "current one-time installation fee amount",
+          "release_conditions": {
+            "structural_position": [
+              "explicit clarifying question about the dollar value of the one-time or installation fee",
+              "hypothesis-driven assumption about installation fee magnitude",
+              "sub-bullet in calculation setup listing fee amounts"
+            ],
+            "alternative_phrasings": [
+              "how much is the one-time fee",
+              "installation fee amount",
+              "upfront fee value",
+              "what is the one-time installation cost"
+            ]
+          },
+          "disqualifying": [
+            "Analyst assumes an installation fee amount without asking — F passing assumption without probing"
+          ],
+          "info": "Current one-time fee is $500"
+        },
+        {
+          "item_id": "Q4_item_3",
+          "trigger": "Analyst asks for the current monthly subscription fee for POS software",
+          "core_dimensional_concept": "current monthly POS software subscription fee",
+          "release_conditions": {
+            "structural_position": [
+              "explicit clarifying question about current monthly fee",
+              "sub-bullet in calculation setup listing recurring fee",
+              "hypothesis-driven assumption about monthly subscription rate"
+            ],
+            "alternative_phrasings": [
+              "monthly fee",
+              "recurring fee",
+              "current subscription price",
+              "what do they currently charge per month"
+            ]
+          },
+          "disqualifying": [
+            "Analyst mentions 'subscription fee' in the context of describing the problem statement without asking for the specific amount — F passing reference"
+          ],
+          "info": "Current monthly fee for POS software is $70"
+        },
+        {
+          "item_id": "Q4_item_4",
+          "trigger": "Analyst asks about or includes the discount rate in their calculation approach",
+          "core_dimensional_concept": "discount rate assumption for the calculation",
+          "release_conditions": {
+            "structural_position": [
+              "explicit clarifying question about discount rate or NPV calculation",
+              "framework pillar or hypothesis about time value of money",
+              "sub-bullet in calculation setup about discount rate"
+            ],
+            "alternative_phrasings": [
+              "discount rate",
+              "time value of money",
+              "NPV",
+              "present value",
+              "cost of capital"
+            ]
+          },
+          "disqualifying": [
+            "Analyst mentions 'discounting' as a concept in a passing observation without asking for the specific rate — F passing mention"
+          ],
+          "info": "Discount rate is 0% (for the sake of this case)"
+        },
+        {
+          "item_id": "Q4_item_5",
+          "trigger": "Analyst asks about the hardware pricing model under the new cloud subscription structure",
+          "core_dimensional_concept": "hardware treatment under new subscription pricing model",
+          "release_conditions": {
+            "structural_position": [
+              "explicit clarifying question about whether hardware is included in subscription",
+              "sub-bullet in calculation setup about hardware cost treatment",
+              "hypothesis-driven assumption about hardware bundling"
+            ],
+            "alternative_phrasings": [
+              "is hardware included",
+              "what happens to hardware costs",
+              "will hardware be sold separately",
+              "hardware in subscription model"
+            ]
+          },
+          "disqualifying": [
+            "Mentions 'hardware' only as context for the current business model without asking how it would be priced in the new model — G adjacent-dimension modifier"
+          ],
+          "info": "According to the new pricing, hardware will be rent out and included into a single subscription fee"
+        },
+        {
+          "item_id": "Q4_item_6",
+          "trigger": "Analyst asks about churn rate assumption for the calculation",
+          "core_dimensional_concept": "churn rate assumption",
+          "release_conditions": {
+            "structural_position": [
+              "explicit clarifying question about customer retention or churn",
+              "sub-bullet in calculation setup about attrition",
+              "hypothesis-driven assumption about churn rate"
+            ],
+            "alternative_phrasings": [
+              "churn rate",
+              "customer retention",
+              "attrition rate",
+              "how many customers will leave",
+              "retention assumption"
+            ]
+          },
+          "disqualifying": [
+            "Analyst mentions 'churn' as an advanced commentary or risk observation after completing the calculation without having asked for the assumption upfront — F passing mention in contextualization"
+          ],
+          "info": "We can assume 0% churn rate"
+        }
+      ],
+      "appendix": {
+        "appendix_1": {
+          "title": "U.S. POS market by segment",
+          "release_rule": "Share upfront with analyst at the start of Q1 if they ask about market data; also available for Q4 context if relevant",
+          "table": {
+            "restaurants": {
+              "components_total": "$4.6B",
+              "software_share": "33%",
+              "hardware_share": "67%",
+              "deployment_total": "$1.5B",
+              "cloud_based_share": "30%",
+              "on_premises_share": "70%"
+            },
+            "retailers": {
+              "components_total": "$7.2B",
+              "software_share": "37%",
+              "hardware_share": "63%",
+              "deployment_total": "$2.6B",
+              "cloud_based_share": "22%",
+              "on_premises_share": "78%"
+            }
+          }
+        },
+        "appendix_2": {
+          "title": "U.S. cloud-based POS software landscape",
+          "release_rule": "Share upon request when analyst asks about competitive landscape",
+          "table": {
+            "both_sectors": {
+              "Revel Systems": {
+                "retail": true,
+                "restaurants": true,
+                "free_trial": false,
+                "starting_monthly_fee": "$99"
+              },
+              "Lightspeed": {
+                "retail": true,
+                "restaurants": true,
+                "free_trial": true,
+                "starting_monthly_fee": "$69"
+              },
+              "Clover": {
+                "retail": true,
+                "restaurants": true,
+                "free_trial": true,
+                "starting_monthly_fee": "$69"
+              },
+              "Square": {
+                "retail": true,
+                "restaurants": true,
+                "free_trial": true,
+                "starting_monthly_fee": "$60"
+              }
+            },
+            "only_retail": {
+              "Shopify": {
+                "retail": true,
+                "restaurants": false,
+                "free_trial": true,
+                "starting_monthly_fee": "$89"
+              },
+              "Hike": {
+                "retail": true,
+                "restaurants": false,
+                "free_trial": false,
+                "starting_monthly_fee": "$69"
+              },
+              "Epos Now": {
+                "retail": true,
+                "restaurants": false,
+                "free_trial": true,
+                "starting_monthly_fee": "$39"
+              }
+            },
+            "only_restaurants": {
+              "Lavu": {
+                "retail": false,
+                "restaurants": true,
+                "free_trial": false,
+                "starting_monthly_fee": "$69"
+              },
+              "TouchBistro": {
+                "retail": false,
+                "restaurants": true,
+                "free_trial": false,
+                "starting_monthly_fee": "$69"
+              },
+              "Toast": {
+                "retail": false,
+                "restaurants": true,
+                "free_trial": false,
+                "starting_monthly_fee": "$69"
+              },
+              "Upserve": {
+                "retail": false,
+                "restaurants": true,
+                "free_trial": false,
+                "starting_monthly_fee": "$59"
+              }
+            }
+          }
+        }
+      },
+      "state_machine": {
+        "next_question": "Q5",
+        "skip_logic": false,
+        "max_attempts": 2,
+        "scoring_on_transition": {
+          "attempt_1_correct": "Full score",
+          "attempt_2_correct": "0 score per core_principles",
+          "both_attempts_wrong": "0 score; interviewer provides correct answer ($2k) before Q5"
+        },
+        "transition_condition": "Analyst provides numerical answer (quantitative part) and qualitative contextualization (or 2nd attempt completed)"
+      }
+    },
+    "Q5": {
+      "q_id": "Q5",
+      "type": "qualitative",
+      "question_text": "POS Vend management team would like to hear your current recommendations. What would you suggest?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": null,
+        "skip_logic": false,
+        "transition_condition": "Case ends after Q5"
+      }
+    }
+  },
+  "structure_4_ground_truth": {
+    "Q1_ground_truth": {
+      "type": "framework",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_pos_vend": {
+          "keypoints": [
+            "Current business model - Offerings",
+            "Current business model - End-users",
+            "Specifics of cloud-based option - Expected model",
+            "Specifics of cloud-based option - Vs industry best-practices"
+          ],
+          "subtotal": 4
+        },
+        "pillar_2_financial_assessment": {
+          "keypoints": [
+            "Expected investment",
+            "Forecasted impact on revenue",
+            "Estimated changes in costs - Fixed",
+            "Estimated changes in costs - Variable"
+          ],
+          "subtotal": 4
+        },
+        "pillar_3_analysis_of_strategic_benefits": {
+          "keypoints": [
+            "New opportunities",
+            "Operational improvements",
+            "Impact on customer experience",
+            "Risks mitigation"
+          ],
+          "subtotal": 4
+        },
+        "pillar_4_potential_risks": {
+          "keypoints": [
+            "Market-specific",
+            "Financial",
+            "Operational"
+          ],
+          "subtotal": 3
+        }
+      },
+      "total_keypoints": 15,
+      "minimum_expected": "Cover at least 3 of 4 pillars with at least 2 keypoints each",
+      "outstanding_threshold": "Cover all 4 pillars including sub-items (Offerings/End-users, Fixed/Variable costs) and demonstrate industry-specific insight"
+    },
+    "Q2_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_financial_advantages": {
+          "sub_pillar_capex": {
+            "keypoints": [
+              "Potentially no upfront payment for POS software [typically SaaS systems are subscription-based]",
+              "Less assets [no need to have on-premise servers which reduces costs]"
+            ],
+            "subtotal": 2
+          },
+          "sub_pillar_opex": {
+            "keypoints": [
+              "Higher subscription fee [due to likely low or no fixed payment]"
+            ],
+            "subtotal": 1
+          },
+          "keypoints": [
+            "Potentially no upfront payment for POS software [typically SaaS systems are subscription-based]",
+            "Less assets [no need to have on-premise servers which reduces costs]",
+            "Higher subscription fee [due to likely low or no fixed payment]"
+          ],
+          "subtotal": 3
+        },
+        "pillar_2_strategic_advantages": {
+          "sub_pillar_new_opportunities": {
+            "keypoints": [
+              "Lower switching costs [no or low upfront costs makes it easier to switch to other POS software]"
+            ],
+            "subtotal": 1
+          },
+          "sub_pillar_operational_improvements": {
+            "keypoints": [
+              "Higher (raw) quality [as it isn't limited by on-premise servers but by far larger cloud data-centers]",
+              "Higher storage flexibility [instant access to higher bandwidth]",
+              "Automatic and streamlined software upgrades",
+              "Lower operational complexity [no need in server installation and maintenance]"
+            ],
+            "subtotal": 4
+          },
+          "sub_pillar_better_team_experience": {
+            "keypoints": [
+              "Easy access from any location",
+              "Access from smartphones",
+              "More efficient team collaboration [as they can work on the same docs simultaneously]"
+            ],
+            "subtotal": 3
+          },
+          "sub_pillar_risk_mitigation": {
+            "keypoints": [
+              "Disaster protection [datacenters are usually protected against fire, flood, etc. far better than servers in the offices/retail stores]"
+            ],
+            "subtotal": 1
+          },
+          "keypoints": [
+            "Lower switching costs [no or low upfront costs makes it easier to switch to other POS software]",
+            "Higher (raw) quality [as it isn't limited by on-premise servers but by far larger cloud data-centers]",
+            "Higher storage flexibility [instant access to higher bandwidth]",
+            "Automatic and streamlined software upgrades",
+            "Lower operational complexity [no need in server installation and maintenance]",
+            "Easy access from any location",
+            "Access from smartphones",
+            "More efficient team collaboration [as they can work on the same docs simultaneously]",
+            "Disaster protection [datacenters are usually protected against fire, flood, etc. far better than servers in the offices/retail stores]"
+          ],
+          "subtotal": 9
+        }
+      },
+      "total_keypoints": 12,
+      "minimum_expected": "At least 4 keypoints covering both financial and strategic dimensions",
+      "outstanding_threshold": "Cover both financial and strategic pillars with at least 7 keypoints including sub-categories (Capex/Opex, Operational improvements, Better team experience)"
+    },
+    "Q3_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_financial_criteria": {
+          "sub_pillar_revenue": {
+            "keypoints": [
+              "Drop in revenue in short-term due to the elimination of one-time fee"
+            ],
+            "subtotal": 1
+          },
+          "sub_pillar_costs": {
+            "keypoints": [
+              "Potential increase in retention costs (e.g. more marketing and R&D for new/upgraded features) [switching costs for clients will decrease and it'll be less challenging for clients to switch to other POS software]",
+              "Increase in efficiency of customer acquisition expenses [clients will be more attracted by lower price and lower switching costs]"
+            ],
+            "subtotal": 2
+          },
+          "keypoints": [
+            "Drop in revenue in short-term due to the elimination of one-time fee",
+            "Potential increase in retention costs (e.g. more marketing and R&D for new/upgraded features) [switching costs for clients will decrease and it'll be less challenging for clients to switch to other POS software]",
+            "Increase in efficiency of customer acquisition expenses [clients will be more attracted by lower price and lower switching costs]"
+          ],
+          "subtotal": 3
+        },
+        "pillar_2_strategic_criteria": {
+          "sub_pillar_new_opportunities": {
+            "keypoints": [
+              "Larger SAM* [lower price will attract more price-sensitive businesses that didn't consider our software before]"
+            ],
+            "subtotal": 1
+          },
+          "sub_pillar_operational_considerations": {
+            "keypoints": [
+              "Simplified pricing might streamline billing paperwork"
+            ],
+            "subtotal": 1
+          },
+          "sub_pillar_client_experience": {
+            "keypoints": [
+              "Simplified pricing might improve customer experience"
+            ],
+            "subtotal": 1
+          },
+          "sub_pillar_risk_mitigation": {
+            "keypoints": [
+              "More predictable and consistent cashflow"
+            ],
+            "subtotal": 1
+          },
+          "keypoints": [
+            "Larger SAM* [lower price will attract more price-sensitive businesses that didn't consider our software before]",
+            "Simplified pricing might streamline billing paperwork",
+            "Simplified pricing might improve customer experience",
+            "More predictable and consistent cashflow"
+          ],
+          "subtotal": 4
+        },
+        "pillar_3_risk_assessment": {
+          "sub_pillar_financial_risks": {
+            "keypoints": [
+              "Exaggerated revenue assumptions",
+              "Inadequately high subscription fee that materially exceeds clients' willingness-to-pay (WTP)"
+            ],
+            "subtotal": 2
+          },
+          "sub_pillar_market_specific_risks": {
+            "keypoints": [
+              "Dissatisfaction of old clients who needed to pay upfront fee",
+              "Potentially high churn rate given lower switching costs",
+              "Potential brand devaluation if the subscription fee is too low"
+            ],
+            "subtotal": 3
+          },
+          "keypoints": [
+            "Exaggerated revenue assumptions",
+            "Inadequately high subscription fee that materially exceeds clients' willingness-to-pay (WTP)",
+            "Dissatisfaction of old clients who needed to pay upfront fee",
+            "Potentially high churn rate given lower switching costs",
+            "Potential brand devaluation if the subscription fee is too low"
+          ],
+          "subtotal": 5
+        }
+      },
+      "total_keypoints": 12,
+      "minimum_expected": "At least 4 keypoints covering both pros (financial and strategic) and cons/risks dimensions",
+      "outstanding_threshold": "Cover all 3 pillars with at least 8 keypoints including sub-categories"
+    },
+    "Q4_ground_truth": {
+      "type": "quantitative",
+      "quantitative_part": {
+        "correct_final_answer": "$2k annual subscription fee",
+        "accepted_values": [
+          2000
+        ],
+        "tolerance_pct": 0.0,
+        "zero_tolerance": true,
+        "scoring_method": "Binary: correct number = full credit; incorrect = zero credit",
+        "calculation_steps": {
+          "step_1_average_3yr_revenue_per_client_old_model": {
+            "formula": "Hardware price + One-time installation fee + Monthly software fee × 12 months × 3 years = $3k + $0.5k + $70 × 12 × 3",
+            "result": "$3k + $0.5k + $2.52k = $6k (rounded)"
+          },
+          "step_2_point_of_indifference_annual_subscription": {
+            "formula": "3-year revenue ÷ 3 years = $6k ÷ 3",
+            "result": "$2k per year"
+          }
+        }
+      },
+      "qualitative_part": {
+        "scoring_note": "Qualitative portion of Q4 is scored as 100% total, split into two tiers. Within each tier, use 3-level scoring per",
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "tier_1_basic": {
+          "weight_of_Q4_qualitative_total": "50%",
+          "keypoints": [
+            "The client should consider charging an annual fee of $2k that would ensure the same 3-year revenue as the current pricing"
+          ],
+          "note": "Expected from every candidate. Single point worth 50% of qualitative score."
+        },
+        "tier_2_advanced": {
+          "weight_of_Q4_qualitative_total": "50%",
+          "points_available": 4,
+          "weight_per_point": "12.5% of qualitative total",
+          "keypoints": [
+            "As the discount rate in the real life is likely not zero, the point of indifference will be higher",
+            "Given fairly low switching costs, POS Vend might face material churn rate which should be baked in the calculations",
+            "POS Vend's clients might expand their business over the course of three years and might need more POS equipment which put upward pressure on the point of indifference",
+            "If POS Vend offers payment processing services as well, they will generate revenue and thus decrease the point of indifference"
+          ],
+          "note": "Not expected from every candidate. Each advanced point adds 12.5% to qualitative score."
+        },
+        "minimum_expected": "Correct numerical answer ($2k) + Tier 1 basic contextualization covered",
+        "outstanding_threshold": "Correct numerical answer + Tier 1 covered + at least 2 Tier 2 advanced comments covered"
+      }
+    },
+    "Q5_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_recommendation": {
+          "keypoints": [
+            "POS Vend should develop a cloud-based POS platform"
+          ],
+          "subtotal": 1
+        },
+        "pillar_2_reasoning": {
+          "keypoints": [
+            "Cloud-based POS software offers a lot of advantages for end-users from financial and operational stand-points",
+            "A lot of competitors have already developed cloud-based versions of their platforms which might indicate healthy appetite from clients to this format",
+            "POS Vend will likely expand its SAM as cloud-based software might be less pricey"
+          ],
+          "subtotal": 3
+        },
+        "pillar_3_risks": {
+          "keypoints": [
+            "Switching costs for clients of SaaS-based plans might be far lower and POS Vend's churn rate might jump",
+            "Pricing design might be complicated given a lot of variables",
+            "If we're a large player, we should expect a competitive response"
+          ],
+          "subtotal": 3
+        },
+        "pillar_4_next_steps": {
+          "keypoints": [
+            "Develop a plan to address identified risks",
+            "Conduct in-depth financial modeling of potential cloud-based business",
+            "Design execution roadmap"
+          ],
+          "subtotal": 3
+        }
+      },
+      "total_keypoints": 10,
+      "minimum_expected": "Recommendation pillar covered + at least 1 reasoning point covered",
+      "outstanding_threshold": "All 4 pillars covered with at least 2 reasoning points and at least 1 risk and 1 next step"
+    }
+  },
+  "state_machine_global": {
+    "case_type": "interviewer_driven",
+    "skip_logic": false,
+    "mandatory_sequence": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5"
+    ],
+    "rules": [
+      "Q1 cannot be skipped under any circumstances",
+      "Questions must proceed in linear order Q1 → Q2 → Q3 → Q4 → Q5",
+      "A question may not be advanced until the current question receives a scoreable answer (1st or 2nd attempt)",
+      "If analyst pre-covers a later question's keypoints in an earlier answer, record as pre-coverage but still ask the later question in sequence",
+      "No question may be skipped even if pre-covered",
+      "If analyst fails Q4 quantitative on both attempts, interviewer provides correct answer ($2k) before proceeding to Q5"
+    ]
+  },
+  "scoring_summary": {
+    "Q1": {
+      "type": "framework",
+      "total_keypoints": 15,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q2": {
+      "type": "qualitative",
+      "total_keypoints": 12,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q3": {
+      "type": "qualitative",
+      "total_keypoints": 12,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q4": {
+      "type": "quantitative",
+      "part_1_quantitative": {
+        "correct_answer": "$2k annual subscription fee",
+        "zero_tolerance": true,
+        "scoring": "Binary: Full credit if correct; zero credit if incorrect"
+      },
+      "part_2_qualitative": {
+        "total_keypoints": 5,
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "human_review_priority": "false-partial > false-not-covered > covered",
+        "tier_1_basic": {
+          "keypoints": 1,
+          "weight": "50% of qualitative score"
+        },
+        "tier_2_advanced": {
+          "keypoints": 4,
+          "weight_per_point": "12.5% of qualitative score",
+          "weight_total": "50% of qualitative score"
+        }
+      }
+    },
+    "Q5": {
+      "type": "qualitative",
+      "total_keypoints": 10,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    }
+  }
+}

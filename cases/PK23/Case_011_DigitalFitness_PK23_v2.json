@@ -1,0 +1,683 @@
+{
+  "case_id": "011",
+  "version": "v2",
+  "source": {
+    "title": "Digital Fitness",
+    "inspired_by": "McKinsey & Company",
+    "year": "2023",
+    "author": "Peter K.",
+    "reference": "Peter-K.org, Case #11",
+    "casebook_abbr": "PK23"
+  },
+  "case_type": "interviewer_driven",
+  "case_type_origin": null,
+  "annotation_mode": null,
+  "case_arch": {
+    "primary": "Impact of Trend",
+    "tags": [
+      "Impact of Trend",
+      "Digital Transformation",
+      "Competitive Response",
+      "Growth Strategy"
+    ],
+    "standard_tags": [
+      "Profitability",
+      "Market Entry",
+      "Revenue Growth",
+      "Cost Optimization",
+      "Investment Decision",
+      "Merger and Acquisition",
+      "Pricing Strategy",
+      "Growth Strategy",
+      "Operational Efficiency",
+      "Due Diligence",
+      "Market Sizing",
+      "Competitive Response",
+      "Digital Transformation",
+      "Turnaround / Restructuring",
+      "Supply Chain",
+      "Comparison",
+      "Impact of Trend"
+    ]
+  },
+  "difficulty": "Hard",
+  "industry": "Health & Fitness / Gyms",
+  "topic": "Impact of trend — assess how rapidly growing digital fitness market affects DoubleSweat's business and what actions to take",
+  "expected_duration_minutes": "20-25",
+  "opening_prompt": "Hi, I'd like to solve some consulting cases with you. Pls be a good interviewee to have a potential test in consulting cases. For the case problem-solving, pls do not assume any numbers or assumptions before my confirmation. I will give you the context upon request. I need you to answer the following questions for the client. Before you start, feel free to ask me 2-3 clarifying questions about the client.\n\nQ1: What factors would you consider in assessing the potential impact of the rapidly growing digital fitness market in the U.S. on DoubleSweat's business over the next five years?\n\nQ2: The digital fitness attracts a lot of first-time and casual gym-goers and is expected to grow exponentially (see Appendix 1). What are the major differentiation points of the digital fitness vs conventional gyms that attract sport enthusiasts?\n\nQ3: The analyst has just emailed you these charts with some market and client's data (Appendix 2 and 3). What do these charts tell you? What insights can you derive?\n\nQ4: DoubleSweat was able to capitalize on the drop in number of gym clubs and rapidly expanded its own chain. This is a short-term success, but how can the client stay competitive long-term and fight against digital fitness?\n\nQ5: DoubleSweat considers building a mobile app to provide work-out routines, live-streamed group classes and other fitness content. What payback period should they expect?\n\nHere is the basic context for the client:\nDoubleSweat is a national low-end gym chain with 2,400 clubs across the U.S. They're concerned about the sky-rocketed demand for digital fitness (e.g. live-streamed, on-demand, and pre-recorded online fitness content) fueled by the pandemic. Their target audience - first-time and casual gym goers (primarily Millennials and Gen Z) - are among the most interested in digital fitness options. DoubleSweat's CEO has hired your team to assess how digital fitness will affect their business over the next five years and what the chain should do about it.",
+  "structure_1_client_basic_context": {
+    "company": "DoubleSweat",
+    "type": "National low-end gym chain with 2,400 clubs across the U.S.",
+    "situation": "Concerned about the sky-rocketed demand for digital fitness (e.g. live-streamed, on-demand, and pre-recorded online fitness content) fueled by the pandemic. Their target audience - first-time and casual gym goers (primarily Millennials and Gen Z) - are among the most interested in digital fitness options.",
+    "action": "DoubleSweat's CEO has hired your team to assess how digital fitness will affect their business over the next five years",
+    "ask": "Assess how digital fitness will affect their business over the next five years and what the chain should do about it"
+  },
+  "structure_2_information_upon_request": {
+    "item_1": {
+      "item_id": "item_1",
+      "trigger": "Analyst asks about or includes the size/growth of the digital fitness market in framework or questions",
+      "core_dimensional_concept": "global digital fitness market size and growth",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar (e.g., 'Market trends', 'Digital fitness growth', 'Market size')",
+          "sub-bullet under competitive landscape or market analysis pillar",
+          "explicit clarifying question about digital fitness market size or trajectory"
+        ],
+        "alternative_phrasings": [
+          "digital fitness market growth",
+          "market size of digital fitness",
+          "how fast is digital fitness growing",
+          "digital fitness TAM"
+        ]
+      },
+      "disqualifying": [
+        "Only says 'digital fitness is growing' in passing while noting the competitive threat DoubleSweat faces — this is a passing reference (F pattern), not a structural follow-up on market size itself",
+        "Only says 'digital fitness poses a risk' under the risk pillar — a risk dimension, not the market-size subject itself (G adjacent-dimension-modifier pattern)"
+      ],
+      "info": "The global digital fitness market is to grow from $11B to $79B in 2021-28"
+    },
+    "item_2": {
+      "item_id": "item_2",
+      "trigger": "Analyst asks about or includes the number of digital health/fitness apps in framework",
+      "core_dimensional_concept": "number of digital health and fitness apps launched",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar (e.g., 'Digital fitness players', 'App landscape')",
+          "sub-bullet under competitive landscape pillar",
+          "explicit question about the number of competing digital fitness apps"
+        ],
+        "alternative_phrasings": [
+          "fitness apps",
+          "health apps",
+          "digital fitness competitors",
+          "app-based fitness solutions"
+        ]
+      },
+      "disqualifying": [
+        "Only mentions 'digital fitness companies' as a passing competitive mention — does not specifically follow up on app count (F pattern)",
+        "Only loosely mentions technology trends under the 'digital fitness trends' framework — does not touch the specific app-count dimension (G adjacent-dimension modifier)"
+      ],
+      "info": "In 2020 71k health-and-fitness smartphone apps were launched globally"
+    },
+    "item_3": {
+      "item_id": "item_3",
+      "trigger": "Analyst asks about or includes the impact of pandemic on gym/health club market",
+      "core_dimensional_concept": "pandemic impact on U.S. gym and health club market",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar (e.g., 'Pandemic impact', 'Market disruption', 'Health club industry trend')",
+          "sub-bullet under competitive landscape or market context pillar",
+          "explicit question about how the pandemic affected the gym industry or health club closures"
+        ],
+        "alternative_phrasings": [
+          "gym closures",
+          "health club market decline",
+          "pandemic effect on fitness industry",
+          "physical gym market contraction"
+        ]
+      },
+      "disqualifying": [
+        "Only mentions 'pandemic changed consumer habits' without focusing on the decline in gym-market size or club closures (G adjacent-dimension-modifier pattern)",
+        "Only says 'DoubleSweat faced pandemic challenges' — a client-side passing mention, not gym-industry market data (F pattern)"
+      ],
+      "info": "The U.S. market of gym and health clubs fell off the cliff from $43B to $31B in 2019-22 due to the pandemic with 28% of the clubs shutting down permanently"
+    },
+    "item_4": {
+      "item_id": "item_4",
+      "trigger": "Analyst asks about whether DoubleSweat currently offers any digital fitness solutions",
+      "core_dimensional_concept": "DoubleSweat's current digital fitness offering",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar (e.g., 'DoubleSweat's product portfolio', 'Current digital capabilities')",
+          "sub-bullet under DoubleSweat's product innovation or business model pillar",
+          "explicit clarifying question about DoubleSweat's digital products or services"
+        ],
+        "alternative_phrasings": [
+          "digital offerings",
+          "online fitness content",
+          "app or platform",
+          "DoubleSweat's digital strategy",
+          "does DoubleSweat have an app"
+        ]
+      },
+      "disqualifying": [
+        "Only says, under the 'Go digital' strategy-recommendation pillar, that DoubleSweat should enter the digital space — this is a strategic recommendation, not a probe of the current state (G adjacent-dimension modifier)",
+        "Only mentions DoubleSweat's competitive advantage without following up on its digital status (F pattern)"
+      ],
+      "info": "DoubleSweat doesn't offer any digital fitness solutions"
+    },
+    "item_5": {
+      "item_id": "item_5",
+      "trigger": "Analyst asks about the ownership structure of DoubleSweat's clubs (corporate-owned vs franchised)",
+      "core_dimensional_concept": "DoubleSweat club ownership structure",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar (e.g., 'Business model', 'Operating model', 'Franchise vs corporate structure')",
+          "sub-bullet under DoubleSweat's operating model or business model pillar",
+          "explicit clarifying question about DoubleSweat's club ownership or franchising"
+        ],
+        "alternative_phrasings": [
+          "franchise model",
+          "corporate-owned clubs",
+          "franchisee network",
+          "owned vs franchised"
+        ]
+      },
+      "disqualifying": [
+        "Only mentions 'DoubleSweat's scale' without specifically asking about the ownership structure (F pattern)",
+        "Only mentions 'franchise quality control challenges' under the operational-risk pillar — a risk dimension, not a probe of the ownership-structure subject itself (G adjacent-dimension-modifier pattern)"
+      ],
+      "info": "10% of the client's clubs are corporate-owned and the rest is franchisees"
+    },
+    "item_6": {
+      "item_id": "item_6",
+      "trigger": "Analyst asks about DoubleSweat's membership base or pricing",
+      "core_dimensional_concept": "DoubleSweat membership size and pricing",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar (e.g., 'DoubleSweat's market position', 'Membership base', 'Pricing strategy')",
+          "sub-bullet under DoubleSweat's customer or revenue model pillar",
+          "explicit clarifying question about DoubleSweat's number of members or subscription price"
+        ],
+        "alternative_phrasings": [
+          "member count",
+          "subscribers",
+          "membership fee",
+          "pricing model",
+          "how much does DoubleSweat charge"
+        ]
+      },
+      "disqualifying": [
+        "Only loosely mentions revenue sources under the 'DoubleSweat's revenue' framework without following up on membership count or price (G adjacent-dimension modifier)",
+        "Only says 'DoubleSweat targets price-sensitive customers' — a passing mention, without focusing on the actual membership size or pricing figure (F pattern)"
+      ],
+      "info": "DoubleSweat has 17M members (2022) and offers one of the cheapest memberships in the market - $10/month (and $25/month for premium plan)"
+    }
+  },
+  "structure_3_case_questions": {
+    "Q1": {
+      "q_id": "Q1",
+      "type": "framework",
+      "question_text": "What factors would you consider in assessing the potential impact of the rapidly growing digital fitness market in the U.S. on DoubleSweat's business over the next five years?",
+      "information_to_share_upfront": null,
+      "information_upon_request": "See structure_2 items 1–6. Release only items by semantic touch; not by mere keyword presence.",
+      "state_machine": {
+        "next_question": "Q2",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable framework answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q2": {
+      "q_id": "Q2",
+      "type": "qualitative",
+      "question_text": "The digital fitness attracts a lot of first-time and casual gym-goers and is expected to grow exponentially (see Appendix 1). What are the major differentiation points of the digital fitness vs conventional gyms that attract sport enthusiasts?",
+      "information_to_share_upfront": [
+        "Appendix 1: Global market size of selected fitness industry segments (2019-2021, 2028F), B USD — share upfront at start of Q2"
+      ],
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q3",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q3": {
+      "q_id": "Q3",
+      "type": "qualitative",
+      "question_text": "The analyst has just emailed you these charts with some market and client's data (Appendix 2 and 3). What do these charts tell you? What insights can you derive?",
+      "information_to_share_upfront": [
+        "Appendix 2: Number of health and gym clubs in the U.S. (2018-22), k; and Number of health and gym clubs of DoubleSweat (2018-22), units — share upfront at start of Q3",
+        "Appendix 3: DoubleSweat's revenue (2018-22), M USD; and DoubleSweat's system-wide sales (2018-22), M USD — share upfront at start of Q3"
+      ],
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q4",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q4": {
+      "q_id": "Q4",
+      "type": "qualitative",
+      "question_text": "DoubleSweat was able to capitalize on the drop in number of gym clubs and rapidly expanded its own chain. This is a short-term success, but how can the client stay competitive long-term and fight against digital fitness?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q5",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q5": {
+      "q_id": "Q5",
+      "type": "quantitative",
+      "question_text": "DoubleSweat considers building a mobile app to provide work-out routines, live-streamed group classes and other fitness content. What payback period should they expect?",
+      "information_to_share_upfront": [
+        "DoubleSweat plans to invest $3M in the smartphone app development",
+        "Appendix 3: DoubleSweat's revenue data (2018-22) — share upfront at start of Q5"
+      ],
+      "information_upon_request": [
+        {
+          "item_id": "Q5_item_1",
+          "trigger": "Analyst asks about or includes additional operating expenses (opex) for the app",
+          "core_dimensional_concept": "additional annual opex for the app",
+          "release_conditions": {
+            "structural_position": [
+              "calculation step mentioning ongoing operating costs",
+              "explicit question about annual maintenance or operational expenses for the app",
+              "framework component listing app-related costs beyond initial investment"
+            ],
+            "alternative_phrasings": [
+              "maintenance cost",
+              "running cost",
+              "annual operating expense",
+              "ongoing costs of the app"
+            ]
+          },
+          "disqualifying": [
+            "Only mentions 'development cost' / 'initial investment' — this is the initial-outlay dimension, not a probe of the annual operating expense (G adjacent-dimension-modifier pattern)",
+            "Only says 'there will be ongoing costs' without explicitly following up on the amount (F passing pattern)"
+          ],
+          "info": "Additional opex (e.g. bug fixing, software updates) is expected to be $0.4M/year"
+        },
+        {
+          "item_id": "Q5_item_2",
+          "trigger": "Analyst asks about expected membership increase driven by the app",
+          "core_dimensional_concept": "app-driven membership increase rate",
+          "release_conditions": {
+            "structural_position": [
+              "calculation step estimating revenue uplift from app",
+              "explicit question about how many new members the app will attract",
+              "framework component for revenue impact or growth rate from the app"
+            ],
+            "alternative_phrasings": [
+              "membership growth",
+              "new member acquisition",
+              "revenue increase from app",
+              "incremental revenue"
+            ]
+          },
+          "disqualifying": [
+            "Only mentions 'app will help grow the business' — a passing mention, without following up on the specific growth rate (F pattern)",
+            "Only mentions membership growth under the 'digital strategy benefits' pillar — this is passing context, not a probe of the percentage figure (G adjacent-dimension modifier)"
+          ],
+          "info": "Based on the current scenario, the app will increase membership by 2%"
+        },
+        {
+          "item_id": "Q5_item_3",
+          "trigger": "Analyst asks about the profit margin from clubs (excluding equipment sales)",
+          "core_dimensional_concept": "profit margin from clubs excluding equipment sales",
+          "release_conditions": {
+            "structural_position": [
+              "calculation step requiring profit margin to compute incremental profit",
+              "explicit question about DoubleSweat's margin or profitability",
+              "framework component for profitability or margin analysis"
+            ],
+            "alternative_phrasings": [
+              "club margin",
+              "operating margin",
+              "profit margin",
+              "profitability of club operations"
+            ]
+          },
+          "disqualifying": [
+            "Only mentions 'DoubleSweat is profitable' without following up on the specific margin figure (F pattern)",
+            "Only loosely mentions profitability under the 'financial analysis' pillar — does not explicitly ask for the margin percentage (G adjacent-dimension modifier)"
+          ],
+          "info": "Current profit margin from clubs [equipment sales excluded] is 10%"
+        }
+      ],
+      "appendix": {
+        "appendix_3": {
+          "title": "DoubleSweat's revenue data (2018-22), M USD",
+          "release_rule": "Share upfront with analyst at the start of Q5",
+          "table": {
+            "doublesweat_revenue_2022_M_USD": {
+              "corporate_owned_clubs": 379,
+              "franchise_fees": 330,
+              "gym_equipment": {
+                "value": 228
+              },
+              "total_revenue": 937
+            }
+          }
+        }
+      },
+      "state_machine": {
+        "next_question": null,
+        "skip_logic": false,
+        "transition_condition": "Case ends after Q5"
+      }
+    }
+  },
+  "structure_4_ground_truth": {
+    "Q1_ground_truth": {
+      "type": "framework",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_fitness_enthusiasts": {
+          "keypoints": [
+            "Adoption cycle for digital fitness (e.g. early adopter, laggards)",
+            "Customer mix (e.g. fitness fanatics, routine-focused, casuals)",
+            "Purchasing decision-making criteria / preferences"
+          ],
+          "subtotal": 3
+        },
+        "pillar_2_competitive_landscape": {
+          "keypoints": [
+            "Digital fitness players (e.g. apps, fitness mirrors, e-courses)",
+            "Legacy gym chains with hybrid model",
+            "Pure offline gym clubs",
+            "Trends in digital fitness"
+          ],
+          "subtotal": 4
+        },
+        "pillar_3_doublesweat_product_innovation": {
+          "keypoints": [
+            "Own online content options and best practices",
+            "Partnerships (e.g. with fitness trackers, fitness influencer)",
+            "Pain points and unmet needs in existing offline services"
+          ],
+          "subtotal": 3
+        },
+        "pillar_4_doublesweat_marketing": {
+          "keypoints": [
+            "Brand implications",
+            "Market education",
+            "New drivers (e.g. convenience, personalization)"
+          ],
+          "subtotal": 3
+        }
+      },
+      "total_keypoints": 13,
+      "minimum_expected": "Cover at least 3 pillars with meaningful content (≥ 7 keypoints across pillars)",
+      "outstanding_threshold": "Cover all 4 pillars with at least 10 keypoints, including competitive landscape and product innovation pillars"
+    },
+    "Q2_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_convenience": {
+          "keypoints": [
+            "No lines",
+            "24/7 accessibility",
+            "No commute needed",
+            "Distraction free",
+            "Easy to set up",
+            "Aligned with strong habits of digital consumption",
+            "Endorses pandemic-induced habits to work out at home"
+          ],
+          "subtotal": 7
+        },
+        "pillar_2_perceived_efficiency": {
+          "potential_features": {
+            "keypoints": [
+              "Integration with fitness trackers to track progress and consolidate results",
+              "Personalization of workout routines"
+            ],
+            "subtotal": 2
+          },
+          "flat_keypoints": [
+            "A wide variety of content (e.g. workout routines, online group classes) to choose for specific purpose",
+            "High quality content as created by professional athletes and coaches",
+            "Integration with fitness trackers to track progress and consolidate results",
+            "Personalization of workout routines"
+          ],
+          "subtotal": 4
+        },
+        "pillar_3_enhanced_motivation": {
+          "potential_features": {
+            "keypoints": [
+              "Gamification (e.g. rewards, milestones)",
+              "Cheers from online community (incl. sharing progress, comments)"
+            ],
+            "subtotal": 2
+          },
+          "flat_keypoints": [
+            "Cheers from coaches (e.g. pre-recorded, live)",
+            "No intimidation, shame, or social pressure of working out at gyms",
+            "Privacy of working out from home",
+            "Gamification (e.g. rewards, milestones)",
+            "Cheers from online community (incl. sharing progress, comments)"
+          ],
+          "subtotal": 5
+        },
+        "pillar_4_low_budget": {
+          "keypoints": [
+            "Typically low prices or free",
+            "Typically no locked periods (e.g. annual membership) - stop at any time"
+          ],
+          "subtotal": 2
+        }
+      },
+      "total_keypoints": 18,
+      "minimum_expected": "Cover at least 3 differentiation categories with meaningful content (≥ 6 keypoints)",
+      "outstanding_threshold": "Cover all 4 categories with at least 12 keypoints including Potential features items"
+    },
+    "Q3_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_chart1_industry_gym_clubs": {
+          "keypoints": [
+            "During 2018-19 the industry experienced low single-digit growth which is typical",
+            "The pandemic was devastating for gyms as they depend on foot traffic which was wiped out by the mandatory isolation. I'd imagine that small-scale chains and clubs in low-foot traffic areas (e.g. towns) were hit the most and closed down permanently",
+            "I'd imagine that in 2022 and onwards we should witness short-term exponential growth. Survived players likely aggressively expanded to fill the void after 10k+ health clubs shut down"
+          ],
+          "subtotal": 3
+        },
+        "pillar_2_chart1_doublesweat_clubs": {
+          "keypoints": [
+            "It seems like DoubleSweat captures 7.9% of the market which confirms that it's a major player",
+            "The client's market share jumped in 2020 as DoubleSweat managed to keep all their clubs running and even expand their chain whereas the entire market fell off the cliff. Saying that the revenue per DoubleSweat's location should have plummeted driven by the pandemic restrictions",
+            "DoubleSweat relies heavily on the franchising model as the vast majority of their locations are franchised. That is one of the key drivers for its rapid growth, but also might cause service quality issues as it's challenging to control so many partners",
+            "DoubleSweat doubled the number of their own stores in 2022 which is unusual for the company and might be inorganic (through M&A). It seems like the client took advantage of decreased competitive pressure as 10k+ gym clubs went out of business"
+          ],
+          "subtotal": 4
+        },
+        "pillar_3_chart2_doublesweat_revenue": {
+          "keypoints": [
+            "DoubleSweat is a large player with almost $1B in revenues, which suggests the company enjoys high brand awareness, deep marketing pockets, and economies of scale",
+            "Not surprisingly it was hit hard by the pandemic in 2020",
+            "Before the pandemic DoubleSweat grew explosively (~20% in 2018-19 vs single digits for the market) mostly driven by aggressive chain expansion",
+            "In 2022 DoubleSweat's revenue went through the roof as the company doubled the number of their own stores and the number of members per location likely went up given so many clubs shut down after the pandemic",
+            "I anticipate that the client's growth will slow down dramatically in the upcoming years. First, the market will soon get back to the pre-pandemic level. Secondly, the landscape will become more competitive as larger, survived large chains will expand quickly taking space of those clubs that left the market"
+          ],
+          "subtotal": 5
+        },
+        "pillar_4_chart3_system_wide_sales": {
+          "keypoints": [
+            "DoubleSweat's system-wide sales mimics the revenue data so all the insights from the chart above are applicable here too"
+          ],
+          "subtotal": 1
+        }
+      },
+      "total_keypoints": 13,
+      "minimum_expected": "Cover at least 2 chart groups with meaningful insights (≥ 4 keypoints), including at least 1 forward-looking insight",
+      "outstanding_threshold": "Cover all 3-4 chart groups with at least 8 keypoints, with strong forward-looking analysis"
+    },
+    "Q4_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_adjust_marketing": {
+          "keypoints": [
+            "Focus messaging on what digital fitness can't offer: equipment, face-to-face interaction with coaches and peers, etc.",
+            "Attack downsides of digital fitness: less safe, less accountable, etc.",
+            "Promote DoubleSweat's convenience (to fight the key differentiation point of digital fitness)"
+          ],
+          "subtotal": 3
+        },
+        "pillar_2_strengthen_current_differentiation": {
+          "upgrade_equipment": {
+            "keypoints": [
+              "Add new types of equipment",
+              "Minimize outdated/worn-out equipment",
+              "Avoid lay-out if needed (e.g. add more treadmills if higher demand for cardio)"
+            ],
+            "subtotal": 3
+          },
+          "boost_community": {
+            "keypoints": [
+              "Plan networking events (e.g. happy hours, holiday parties)",
+              "Do charitable events (e.g. blood drives with the Red Cross)",
+              "Offer monthly challenges and competitions",
+              "Create clubs (e.g. run club, dance club)"
+            ],
+            "subtotal": 4
+          },
+          "increase_convenience": {
+            "keypoints": [
+              "Expand working hours",
+              "Reduce lines (e.g. add more equipment in demand)",
+              "Add more parking spots"
+            ],
+            "subtotal": 3
+          },
+          "flat_keypoints": [
+            "Add new types of equipment",
+            "Minimize outdated/worn-out equipment",
+            "Avoid lay-out if needed (e.g. add more treadmills if higher demand for cardio)",
+            "Plan networking events (e.g. happy hours, holiday parties)",
+            "Do charitable events (e.g. blood drives with the Red Cross)",
+            "Offer monthly challenges and competitions",
+            "Create clubs (e.g. run club, dance club)",
+            "Expand working hours",
+            "Reduce lines (e.g. add more equipment in demand)",
+            "Add more parking spots"
+          ],
+          "subtotal": 10
+        },
+        "pillar_3_go_digital": {
+          "keypoints": [
+            "Live-stream group classes",
+            "Launch an app with work-outs",
+            "Offer online courses on wellness, diet, and exercises",
+            "Offer virtual training sessions",
+            "Integrate gym machines (e.g. cardio) with major fitness trackers"
+          ],
+          "subtotal": 5
+        }
+      },
+      "total_keypoints": 18,
+      "minimum_expected": "Cover at least 2 pillars with meaningful content (≥ 5 keypoints), including at least one sub-pillar under Strengthen",
+      "outstanding_threshold": "Cover all 3 pillars with at least 12 keypoints including multiple sub-pillar items under Strengthen"
+    },
+    "Q5_ground_truth": {
+      "type": "quantitative",
+      "quantitative_part": {
+        "correct_final_answer": "3 years",
+        "accepted_values": [
+          3
+        ],
+        "tolerance_pct": 0.0,
+        "zero_tolerance": true,
+        "scoring_method": "Binary: correct number = full credit; incorrect = zero credit",
+        "calculation_steps": {
+          "step_1_expected_revenue_increase": {
+            "formula": "(Corporate-owned clubs revenue + Franchise fees revenue) × membership increase rate = (379 + 330)M × 2%",
+            "result": "709M × 2% = 14.18M ≈ 14M (casebook rounds to 14M)"
+          },
+          "step_2_expected_profit_increase": {
+            "formula": "Revenue increase × profit margin - additional annual opex = 14M × 10% - 0.4M",
+            "result": "1.4M - 0.4M = 1M"
+          },
+          "step_3_payback_period": {
+            "formula": "Initial investment ÷ annual profit increase = 3M ÷ 1M",
+            "result": "3 years"
+          }
+        }
+      },
+      "qualitative_part": {
+        "scoring_note": "Qualitative portion of Q5 is scored as 100% total, split into two tiers. Within each tier, use 3-level scoring per",
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "tier_1_basic": {
+          "weight_of_Q5_qualitative_total": "50%",
+          "keypoints": [
+            "All else being equal, DoubleSweat will need 3 years to cover the initial investment after the smartphone app launch"
+          ],
+          "note": "Expected from every candidate. Single point worth 50% of qualitative score."
+        },
+        "tier_2_advanced": {
+          "weight_of_Q5_qualitative_total": "50%",
+          "points_available": 3,
+          "weight_per_point": "16.7% of qualitative total",
+          "keypoints": [
+            "The payback period doesn't consider the development cycle which might take from months to 2-3 years given the potential complexity of the app's features (e.g. booking, streaming, messaging) and likely its large scale of millions of users",
+            "Given the magnitude of expenses of $3M, I'd imagine DoubleSweat envisions a top-notch smartphone app with best-in-class features and intuitive design. So, such a substantial 2% app-driven increase in membership seems reasonable",
+            "The high investment might increase the barriers for entry for other fitness players as it will be challenging for them to replicate such a capex-heavy app. This strategic move might help DoubleSweat build a strong competitive edge over peers"
+          ],
+          "note": "Not expected from every candidate. Each advanced point adds 16.7% to qualitative score."
+        },
+        "minimum_expected": "Correct numerical answer (3 years) + Tier 1 basic contextualization (covered)",
+        "outstanding_threshold": "Correct numerical answer + Tier 1 covered + at least 2 Tier 2 advanced comments covered"
+      }
+    }
+  },
+  "state_machine_global": {
+    "case_type": "interviewer_driven",
+    "skip_logic": false,
+    "mandatory_sequence": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5"
+    ],
+    "rules": [
+      "Q1 cannot be skipped under any circumstances",
+      "Questions must proceed in linear order Q1 → Q2 → Q3 → Q4 → Q5",
+      "A question may not be advanced until the current question receives a scoreable answer (1st or 2nd attempt)",
+      "If analyst pre-covers a later question's keypoints in an earlier answer, record as pre-coverage but still ask the later question in sequence",
+      "No question may be skipped even if pre-covered"
+    ]
+  },
+  "scoring_summary": {
+    "Q1": {
+      "type": "framework",
+      "total_keypoints": 13,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q2": {
+      "type": "qualitative",
+      "total_keypoints": 18,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q3": {
+      "type": "qualitative",
+      "total_keypoints": 13,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q4": {
+      "type": "qualitative",
+      "total_keypoints": 18,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q5": {
+      "type": "quantitative",
+      "part_1_quantitative": {
+        "correct_answer": "3 years",
+        "zero_tolerance": true,
+        "scoring": "Binary: Full credit if correct; zero credit if incorrect"
+      },
+      "part_2_qualitative": {
+        "total_keypoints": 4,
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "human_review_priority": "false-partial > false-not-covered > covered",
+        "tier_1_basic": {
+          "keypoints": 1,
+          "weight": "50% of qualitative score"
+        },
+        "tier_2_advanced": {
+          "keypoints": 3,
+          "weight_per_point": "16.7% of qualitative score",
+          "weight_total": "50% of qualitative score"
+        }
+      }
+    }
+  }
+}

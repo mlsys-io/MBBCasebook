@@ -1,0 +1,610 @@
+{
+  "case_id": "007",
+  "version": "v1",
+  "source": {
+    "title": "Sustainability",
+    "inspired_by": "McKinsey & Company",
+    "year": "2022",
+    "author": "Peter K.",
+    "reference": "Peter-K.org, Case #7",
+    "casebook_abbr": "PK23"
+  },
+  "case_type": "interviewer_driven",
+  "case_type_origin": null,
+  "annotation_mode": null,
+  "case_arch": {
+    "primary": "Growth Strategy",
+    "tags": [
+      "Growth Strategy",
+      "Operational Efficiency",
+      "Supply Chain"
+    ],
+    "standard_tags": [
+      "Profitability",
+      "Market Entry",
+      "Revenue Growth",
+      "Cost Optimization",
+      "Investment Decision",
+      "Merger and Acquisition",
+      "Pricing Strategy",
+      "Growth Strategy",
+      "Operational Efficiency",
+      "Due Diligence",
+      "Market Sizing",
+      "Competitive Response",
+      "Digital Transformation",
+      "Turnaround / Restructuring",
+      "Supply Chain",
+      "Comparison"
+    ]
+  },
+  "difficulty": "Hard",
+  "industry": "Consumer Goods / Laundry Detergent",
+  "topic": "Sustainability strategy design — how to boost sustainability across product, supply chain, and operations for a top-5 US laundry detergent brand",
+  "expected_duration_minutes": "15-20",
+  "opening_prompt": "Hi, I'd like to solve some consulting cases with you. Pls be a good interviewee to have a potential test in consulting cases. For the case problem-solving, pls do not assume any numbers or assumptions before my confirmation. I will give you the context upon request. I need you to answer the following questions for the client. Before you start, feel free to ask me 2-3 clarifying questions about the client.\n\nQ1: What factors should your team consider to design a sustainability strategy for Curex?\n\nQ2: Curex's supply chain might do a lot of harm to the environment and cause high social costs. It creates long-term risks for Curex as Curex might lose suppliers due to potential new laws. What can Curex do to increase sustainability of its supply chain?\n\nQ3: The partner got intrigued by your sustainability ideas for product design. They'd like to hear more thoughts on how to boost Curex's sustainability via altering detergent design.\n\nQ4: Inspired by the findings of the team, Curex would like to invest $50M to reach four sustainability goals by 2025. By how much will it increase Curex's annual profits?\n\nHere is the basic context for the client:\nCurex, one of top-5 laundry detergent brands in the U.S., has been experiencing pressure from their parent company to push the sustainability of their business to a new level. Curex enjoys $400M in annual revenue and healthy margins (2021). The company is proud of top-notch quality of their detergent products and high brand recognition they have developed over decades. The CEO has invited your team to help them navigate this new strategic challenge and achieve best-in-class sustainability in the industry.",
+  "structure_1_client_basic_context": {
+    "company": "Curex",
+    "type": "One of top-5 laundry detergent brands in the U.S.",
+    "situation": "Experiencing pressure from their parent company to push the sustainability of their business to a new level. The company is proud of top-notch quality of their detergent products and high brand recognition they have developed over decades.",
+    "action": "The CEO has invited your team to help them navigate this new strategic challenge and achieve best-in-class sustainability in the industry.",
+    "ask": "What factors would you consider to design a strategy to boost sustainability? Curex enjoys $400M in annual revenue and healthy margins (2021)."
+  },
+  "structure_2_information_upon_request": {
+    "item_1": {
+      "item_id": "item_1",
+      "trigger": "Analyst asks about or includes geographic scope or international expansion in their framework",
+      "core_dimensional_concept": "Curex geographic scope and international expansion plans",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet related to geographic scope (e.g., 'Markets / Geography')",
+          "explicit clarifying question about international presence or expansion",
+          "hypothesis-driven assumption about international operations"
+        ],
+        "alternative_phrasings": [
+          "international markets",
+          "global expansion",
+          "geographic footprint",
+          "overseas operations"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'domestic market focus' only as a passing contextual comment while discussing competitive landscape — the geographic concept is not the structural subject (F passing mention pattern)"
+      ],
+      "info": "Curex operates only in the U.S. and doesn't plan to go internationally."
+    },
+    "item_2": {
+      "item_id": "item_2",
+      "trigger": "Analyst asks about or includes Curex's existing sustainability approach or framework in their analysis",
+      "core_dimensional_concept": "Curex's existing sustainability approach and strategy",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar related to current sustainability posture (e.g., 'Current sustainability state' / 'Baseline assessment')",
+          "explicit clarifying question about existing sustainability initiatives or frameworks",
+          "hypothesis about current sustainability practices"
+        ],
+        "alternative_phrasings": [
+          "current sustainability initiatives",
+          "existing sustainability framework",
+          "sustainability track record",
+          "current ESG strategy"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'sustainability' as a broad topic label for the whole case framework without specifically probing Curex's existing approach — this is a passing use of the word not a structural inquiry into the current state (F passing mention pattern)"
+      ],
+      "info": "Curex doesn't have a specific approach to think about sustainability (one of the reasons they have hired you)."
+    },
+    "item_3": {
+      "item_id": "item_3",
+      "trigger": "Analyst asks about or includes product portfolio or customer segment details in their framework",
+      "core_dimensional_concept": "Curex product portfolio and market positioning",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar about product types or SKUs (e.g., 'Product portfolio' / 'Product formats')",
+          "sub-bullet under customer or market pillar asking about product range",
+          "explicit clarifying question about what products Curex sells",
+          "hypothesis-driven assumption about Curex's product range"
+        ],
+        "alternative_phrasings": [
+          "detergent formats",
+          "product range",
+          "SKU mix",
+          "product line-up",
+          "market segment served"
+        ]
+      },
+      "disqualifying": [
+        "Analyst broadly mentions 'product design' as a pillar of the sustainability framework without specifically asking what types of detergent Curex currently offers — product types dimension is not the structural subject (G adjacent dimension pattern)"
+      ],
+      "info": "Curex is focused on mass market and offers all common types of detergent at affordable prices: liquid, single-dose packs, and powder."
+    },
+    "item_4": {
+      "item_id": "item_4",
+      "trigger": "Analyst asks about or includes community engagement, philanthropy, or social responsibility in their framework",
+      "core_dimensional_concept": "Curex nonprofit and community sustainability engagement",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet about community engagement or corporate social responsibility (e.g., 'Community / Philanthropy')",
+          "explicit clarifying question about Curex's social contributions or partnerships with nonprofits",
+          "hypothesis about Curex's existing sustainability-related partnerships"
+        ],
+        "alternative_phrasings": [
+          "nonprofit partnerships",
+          "community investment",
+          "corporate social responsibility",
+          "charitable giving",
+          "social impact initiatives"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'social sustainability' as a general sub-category label within a sustainability definition pillar without asking specifically about Curex's current philanthropic activities (G adjacent dimension pattern)"
+      ],
+      "info": "Curex donates regularly to nonprofits that are on a mission to preserve the environment."
+    }
+  },
+  "structure_3_case_questions": {
+    "Q1": {
+      "q_id": "Q1",
+      "type": "framework",
+      "question_text": "What factors should your team consider to design a sustainability strategy for Curex?",
+      "information_to_share_upfront": null,
+      "information_upon_request": "See structure_2 items 1-4. Release only items per semantic touch judgment; not by mere keyword presence.",
+      "state_machine": {
+        "next_question": "Q2",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable framework answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q2": {
+      "q_id": "Q2",
+      "type": "qualitative",
+      "question_text": "Curex's supply chain might do a lot of harm to the environment and cause high social costs. It creates long-term risks for Curex as Curex might lose suppliers due to potential new laws. What can Curex do to increase sustainability of its supply chain?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q3",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q3": {
+      "q_id": "Q3",
+      "type": "qualitative",
+      "question_text": "The partner got intrigued by your sustainability ideas for product design. They'd like to hear more thoughts on how to boost Curex's sustainability via altering detergent design.",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q4",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q4": {
+      "q_id": "Q4",
+      "type": "quantitative",
+      "question_text": "Inspired by the findings of the team, Curex would like to invest $50M to reach four sustainability goals by 2025. By how much will it increase Curex's annual profits?",
+      "information_to_share_upfront": [
+        "Sustainability goals: (1) All the factories are powered with 100% renewable energy; (2) All the detergent packaging is 100% recyclable; (3) All the detergent products are 100% phosphate free; (4) Zero waste to landfill for all the factories"
+      ],
+      "information_upon_request": [
+        {
+          "item_id": "Q4_item_1",
+          "trigger": "Analyst asks about expected impact on sales or revenue growth from the sustainability investment",
+          "core_dimensional_concept": "projected sales growth from brand image improvement",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question about revenue impact or sales uplift from sustainability",
+              "hypothesis about demand increase driven by sustainability",
+              "framework sub-bullet about revenue side of investment analysis"
+            ],
+            "alternative_phrasings": [
+              "sales uplift",
+              "revenue growth from sustainability",
+              "demand increase from brand improvement",
+              "volume growth"
+            ]
+          },
+          "disqualifying": [
+            "Analyst mentions 'brand image' only in passing as context for the investment without specifically asking about its impact on sales volume (F passing mention pattern)"
+          ],
+          "info": "Due to improved brand image, Curex's detergent sales are expected to grow by 5%."
+        },
+        {
+          "item_id": "Q4_item_2",
+          "trigger": "Analyst asks about the impact of sustainability investments on cost structure or profit margin",
+          "core_dimensional_concept": "margin improvement from raw materials and energy changes",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question about margin impact or cost savings from the sustainability goals",
+              "hypothesis about profit margin improvement from operational changes",
+              "sub-bullet under cost/margin analysis"
+            ],
+            "alternative_phrasings": [
+              "cost savings from renewable energy",
+              "margin uplift",
+              "profit margin improvement",
+              "operational cost reduction"
+            ]
+          },
+          "disqualifying": [
+            "Analyst mentions 'cost' as a broad pillar label when discussing the investment case without specifically asking how costs or margins change (G adjacent dimension pattern)"
+          ],
+          "info": "Changes in raw materials and energy sources are estimated to boost Curex's profit margin by 2 percentage points."
+        },
+        {
+          "item_id": "Q4_item_3",
+          "trigger": "Analyst asks about the current profit margin or profitability baseline for Curex",
+          "core_dimensional_concept": "Curex current profit margin baseline",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question about current margin percentage",
+              "hypothesis-driven assumption about current margin",
+              "sub-bullet requesting profitability baseline data"
+            ],
+            "alternative_phrasings": [
+              "current profitability",
+              "margin today",
+              "baseline margin",
+              "existing profit margin"
+            ]
+          },
+          "disqualifying": [
+            "Analyst mentions 'healthy margins' from the prompt context as a factual reference without asking what the actual margin number is (F passing mention pattern)"
+          ],
+          "info": "The current Curex's margin is 10%."
+        },
+        {
+          "item_id": "Q4_item_4",
+          "trigger": "Analyst asks to confirm the revenue base or annual revenue figure for the calculation",
+          "core_dimensional_concept": "Curex annual revenue confirmation for Q4 calculation",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question to confirm the revenue number to use in calculation",
+              "hypothesis-driven assumption about revenue base",
+              "sub-bullet requesting the revenue data point"
+            ],
+            "alternative_phrasings": [
+              "annual revenue base",
+              "top-line figure",
+              "revenue for calculation",
+              "sales figure"
+            ]
+          },
+          "disqualifying": [
+            "Analyst mentions '$400M' from memory of the opening prompt without actually asking to confirm the number — this is recall not a structural information request (F passing mention pattern)"
+          ],
+          "info": "As specified in the prompt, Curex's annual revenue is $400M."
+        }
+      ],
+      "appendix": {
+        "appendix_1": {
+          "title": "Q4 Math Exercise — Sustainability Goals and Financial Inputs",
+          "release_rule": "Share sustainability goals upfront with analyst at the start of Q4; release financial inputs only upon request per Q4_item_1 through Q4_item_4",
+          "table": {
+            "sustainability_goals": {
+              "goal_1": "All the factories are powered with 100% renewable energy",
+              "goal_2": "All the detergent packaging is 100% recyclable",
+              "goal_3": "All the detergent products are 100% phosphate free",
+              "goal_4": "Zero waste to landfill for all the factories"
+            },
+            "financial_inputs_upon_request": {
+              "sales_growth": "5% (due to improved brand image)",
+              "margin_improvement": "+2 percentage points (changes in raw materials and energy sources)",
+              "current_margin": "10%",
+              "annual_revenue": "$400M"
+            }
+          }
+        }
+      },
+      "state_machine": {
+        "next_question": null,
+        "skip_logic": false,
+        "transition_condition": "Case ends after Q4",
+        "max_attempts": 2,
+        "scoring_on_transition": {
+          "attempt_1_correct": "Full score",
+          "attempt_2_correct": "0 score per core_principles",
+          "both_attempts_wrong": "0 score; interviewer provides correct answer before ending case"
+        }
+      }
+    }
+  },
+  "structure_4_ground_truth": {
+    "Q1_ground_truth": {
+      "type": "framework",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_sustainability_definition": {
+          "sub_pillar_social": {
+            "keypoints": [
+              "Fair trade",
+              "Fair working conditions",
+              "Inequalities"
+            ],
+            "subtotal": 3
+          },
+          "sub_pillar_environmental": {
+            "keypoints": [
+              "Carbon footprint",
+              "Deforestation",
+              "Pollution (soil, water)"
+            ],
+            "subtotal": 3
+          },
+          "keypoints": [
+            "Fair trade",
+            "Fair working conditions",
+            "Inequalities",
+            "Carbon footprint",
+            "Deforestation",
+            "Pollution (soil, water)"
+          ],
+          "subtotal": 6
+        },
+        "pillar_2_supply_chain": {
+          "keypoints": [
+            "Supplier selection process (incl. sustainability requirements)",
+            "Transparency in suppliers' sustainability (e.g. inspections)",
+            "Sustainability goals, support and incentives for suppliers"
+          ],
+          "subtotal": 3
+        },
+        "pillar_3_production_and_logistics": {
+          "keypoints": [
+            "Product design (e.g. materials, packaging)",
+            "Energy usage (e.g. electricity vs fuel)",
+            "Waste management",
+            "Working conditions (e.g. hours, rest, discrimination)"
+          ],
+          "subtotal": 4
+        },
+        "pillar_4_customers": {
+          "keypoints": [
+            "Key customer groups (e.g. B2C/B2B)",
+            "Typical laundry cycle and its sustainability assessment",
+            "Required changes in customer behavior (e.g. recycling)"
+          ],
+          "subtotal": 3
+        }
+      },
+      "total_keypoints": 16,
+      "minimum_expected": "At least 3 of 4 pillars covered with at least 1 keypoint each (covered or false-partial); sustainability definition pillar must be present",
+      "outstanding_threshold": "All 4 pillars covered with 2+ keypoints each; both Social and Environmental sub-dimensions covered under Sustainability definition; 10+ total keypoints covered"
+    },
+    "Q2_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_new_suppliers": {
+          "keypoints": [
+            "Include sustainability requirements in the supplier selection criteria",
+            "Expand database of suppliers to add vendors with high sustainability level",
+            "Add sustainability goals to SLAs (service level agreements)",
+            "Move supply chains to low-cost countries with stricter sustainability legislation"
+          ],
+          "subtotal": 4
+        },
+        "pillar_2_existing_suppliers": {
+          "sub_pillar_assess": {
+            "keypoints": [
+              "Do regular inspections/audits of suppliers",
+              "Offer digital tools to suppliers for free to track sustainability metrics"
+            ],
+            "subtotal": 2
+          },
+          "sub_pillar_incentivize": {
+            "keypoints": [
+              "Offer awards for reaching sustainability goals",
+              "Provide endorsements to highly sustainable suppliers"
+            ],
+            "subtotal": 2
+          },
+          "sub_pillar_develop": {
+            "keypoints": [
+              "Provide trainings on sustainability strategies",
+              "Help suppliers design and implement sustainability programs",
+              "Offer low-interest loans to suppliers for sustainability initiatives",
+              "Conduct regular conferences for suppliers on sustainability"
+            ],
+            "subtotal": 4
+          },
+          "keypoints": [
+            "Do regular inspections/audits of suppliers",
+            "Offer digital tools to suppliers for free to track sustainability metrics",
+            "Offer awards for reaching sustainability goals",
+            "Provide endorsements to highly sustainable suppliers",
+            "Provide trainings on sustainability strategies",
+            "Help suppliers design and implement sustainability programs",
+            "Offer low-interest loans to suppliers for sustainability initiatives",
+            "Conduct regular conferences for suppliers on sustainability"
+          ],
+          "subtotal": 8
+        },
+        "pillar_3_product_design": {
+          "keypoints": [
+            "Change the detergent formulation to minimize ingredients with poor sustainability footprint (e.g. high-pollution manufacturing)",
+            "Change packaging to avoid ingredients similar to above"
+          ],
+          "subtotal": 2
+        }
+      },
+      "total_keypoints": 14,
+      "minimum_expected": "At least 2 of 3 pillars covered with at least 2 keypoints each (covered or false-partial); both New and Existing suppliers pillars should be present",
+      "outstanding_threshold": "All 3 pillars covered; at least 2 of Assess/Incentivize/Develop sub-pillars covered within Existing suppliers; 8+ total keypoints covered"
+    },
+    "Q3_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_offering": {
+          "sub_pillar_product": {
+            "keypoints": [
+              "Make the detergent's composition eco-friendly, without toxic chemicals",
+              "Increase the shelf-life of detergent (to reduce waste)",
+              "Create detergent with water-saving packaging (e.g. refilling stations at supermarkets)"
+            ],
+            "subtotal": 3
+          },
+          "sub_pillar_packaging": {
+            "keypoints": [
+              "Offer water-saving packaging",
+              "Limit paper in packaging (to reduce deforestation)",
+              "Limit plastics in packaging",
+              "Offer recyclable/reusable containers"
+            ],
+            "subtotal": 4
+          },
+          "keypoints": [
+            "Make the detergent's composition eco-friendly, without toxic chemicals",
+            "Increase the shelf-life of detergent (to reduce waste)",
+            "Create detergent with water-saving packaging (e.g. refilling stations at supermarkets)",
+            "Offer water-saving packaging",
+            "Limit paper in packaging (to reduce deforestation)",
+            "Limit plastics in packaging",
+            "Offer recyclable/reusable containers"
+          ],
+          "subtotal": 7
+        },
+        "pillar_2_consumers_behavior": {
+          "keypoints": [
+            "Design a new detergent formulation that offers high quality laundry - low temperature (avoiding hot washing saves energy)",
+            "Design a new detergent formulation that offers high quality laundry - shorter cycles (saves water and energy)",
+            "Design a new detergent formulation that increases lifespan of clothes (thus, reduces waste and consumption of new clothes)",
+            "Partner with laundry chains to offer a new Curex's detergent and messaging about their use",
+            "Offer messaging about ways to encourage more environmentally conscious behavior"
+          ],
+          "subtotal": 5
+        },
+        "pillar_3_companies_behavior": {
+          "keypoints": [
+            "Create detergents for B2B clients (e.g. hotels, hospitals, gyms, and other large-scale laundry users) to offer solutions for low temperature laundry (e.g. hotels do very high-temperature laundry due to sanitary norms)",
+            "Shorter laundry cycles",
+            "Lower water use",
+            "Create strategic partnerships with hotels, gyms and other consumer-facing companies (heavy laundry users) to encourage more sustainable clothes washing (see above)"
+          ],
+          "subtotal": 4
+        }
+      },
+      "total_keypoints": 16,
+      "minimum_expected": "At least 2 of 3 pillars covered with at least 2 keypoints each (covered or false-partial); Offering pillar must be present",
+      "outstanding_threshold": "All 3 pillars covered; Offering covers both Product and Packaging sub-pillars; Consumers' behavior covers at least 3 keypoints; 10+ total keypoints covered"
+    },
+    "Q4_ground_truth": {
+      "type": "quantitative",
+      "quantitative_part": {
+        "correct_final_answer": "$10M (casebook rounded) — also accept $10.4M (exact, using $420M × 12% = $50.4M unrounded)",
+        "accepted_values": [
+          10000000,
+          10400000
+        ],
+        "tolerance_pct": 0.02,
+        "zero_tolerance": false,
+        "scoring_method": "Binary: correct number = full credit; incorrect = zero credit. Accept both $10M and $10.4M; any other value = zero credit.",
+        "calculation_steps": {
+          "step_1_current_annual_profit": {
+            "formula": "$400M × 10% = $40M",
+            "result": "$40M"
+          },
+          "step_2_new_annual_revenue": {
+            "formula": "$400M × (1 + 5%) = $400M × 1.05",
+            "result": "$420M"
+          },
+          "step_3_new_annual_profits": {
+            "formula": "$420M × (10% + 2%) = $420M × 12%",
+            "result": "$50.4M (exact) / $50M (casebook rounds to $50M)"
+          },
+          "step_4_annual_profit_increase": {
+            "formula": "New profits − Current profits = $50M − $40M (casebook) or $50.4M − $40M (exact)",
+            "result": "$10M (casebook) or $10.4M (exact)"
+          }
+        }
+      },
+      "qualitative_part": {
+        "scoring_note": "Qualitative portion of Q4 is scored as 100% total, split into two tiers. Within each tier, use 3-level scoring per",
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "tier_1_basic": {
+          "weight_of_Q4_qualitative_total": "50%",
+          "keypoints": [
+            "We expect the annual profits to jump by 25% driven by financial implications of the sustainability gains"
+          ],
+          "subtotal": 1,
+          "note": "Expected from every candidate. Single point worth 50% of qualitative score."
+        },
+        "tier_2_advanced": {
+          "weight_of_Q4_qualitative_total": "50%",
+          "points_available": 3,
+          "weight_per_point": "~16.7% of qualitative total",
+          "keypoints": [
+            "$10M in additional profits means 5 years of payback period for $50M investment, which isn't too lucrative but coupled with the sustainability gains seems like an attractive project",
+            "10% profit margin for such a highly commoditized product as detergent seems on the higher end which makes me believe that Curex might be perceived as a premium brand. Alternatively, Curex might benefit from the economies of scope of its parent company",
+            "$50M investment over 3-4 years is a large project for a $400M company. It'll send a clear signal to the market that Curex isn't greenwashing but actually takes serious steps to create meaningful environmental and social benefits"
+          ],
+          "subtotal": 3,
+          "note": "Not expected from every candidate. Each advanced point adds ~16.7% to qualitative score."
+        },
+        "minimum_expected": "Correct numerical answer ($10M or $10.4M) + Tier 1 basic contextualization (covered)",
+        "outstanding_threshold": "Correct numerical answer + Tier 1 covered + at least 2 Tier 2 advanced comments covered"
+      }
+    }
+  },
+  "state_machine_global": {
+    "case_type": "interviewer_driven",
+    "skip_logic": false,
+    "mandatory_sequence": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4"
+    ],
+    "rules": [
+      "Q1 cannot be skipped under any circumstances",
+      "Questions must proceed in linear order Q1 → Q2 → Q3 → Q4",
+      "A question may not be advanced until the current question receives a scoreable answer (1st or 2nd attempt)",
+      "If analyst pre-covers a later question's keypoints in an earlier answer, record as pre-coverage but still ask the later question in sequence",
+      "No question may be skipped even if pre-covered"
+    ]
+  },
+  "scoring_summary": {
+    "Q1": {
+      "type": "framework",
+      "total_keypoints": 16,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q2": {
+      "type": "qualitative",
+      "total_keypoints": 14,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q3": {
+      "type": "qualitative",
+      "total_keypoints": 16,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q4": {
+      "type": "quantitative",
+      "part_1_quantitative": {
+        "correct_answer": "$10M (also accept $10.4M per A3-Q5 rounding protocol)",
+        "zero_tolerance": true,
+        "scoring": "Binary: Full credit if correct ($10M or $10.4M); zero credit for any other value"
+      },
+      "part_2_qualitative": {
+        "total_keypoints": 4,
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "human_review_priority": "false-partial > false-not-covered > covered",
+        "tier_1_basic": {
+          "keypoints": 1,
+          "weight": "50% of qualitative score"
+        },
+        "tier_2_advanced": {
+          "keypoints": 3,
+          "weight_per_point": "~16.7% of qualitative score",
+          "weight_total": "50% of qualitative score"
+        }
+      }
+    }
+  }
+}

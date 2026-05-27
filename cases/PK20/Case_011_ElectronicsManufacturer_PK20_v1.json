@@ -1,0 +1,675 @@
+{
+  "case_id": "011",
+  "version": "v1",
+  "source": {
+    "title": "Electronics Manufacturer",
+    "inspired_by": "BCG",
+    "year": "2020",
+    "author": "Peter K.",
+    "reference": "Peter-K.org, Case #11",
+    "casebook_abbr": "PK20"
+  },
+  "case_type": "interviewer_driven",
+  "case_type_origin": "candidate_led",
+  "annotation_mode": "CL_to_IL_override",
+  "case_arch": {
+    "primary": "Profitability",
+    "tags": [
+      "Profitability",
+      "Revenue Growth",
+      "Cost Optimization"
+    ]
+  },
+  "difficulty": "Medium",
+  "industry": "Electronics / Consumer Technology",
+  "topic": "Profitability decline analysis and turnaround strategy for laptop business of US-based electronics manufacturer",
+  "expected_duration_minutes": 30,
+  "opening_prompt": "Hi, I'd like to solve some consulting cases with you. Pls be a good interviewee to have a potential test in consulting cases. For the case problem-solving, pls do not assume any numbers or assumptions before my confirmation. I will give you the context upon request. I need you to answer the following questions for the client. Before you start, feel free to ask me 2-3 clarifying questions about the client.\n\nQ1: What are the reasons behind the profitability drop and how to turn things around?\nQ2: What reasons might be behind the declining profitability?\nQ3: Your team put together some data about the laptop market dynamics. What does it tell you? (We're in 2019)\nQ4: Based on our research, the laptop market is going to decline over the next four years. What might the reasons be behind it?\nQ5: Assuming the client will keep the same market share, will they be able to hit $3.5B in sales by 2023? What EBITDA should they expect in 2023?\nQ6: The manager has just entered the room and they would like you to summarize your conclusions.\n\nHere is the basic context for the client:\nYour client is a U.S.-based electronics manufacturer. They have three product lines: PC, laptop, and tablet. Laptop's profitability has been declining recently. What are the reasons behind it and how to turn things around?",
+  "structure_1_client_basic_context": {
+    "company": "U.S.-based electronics manufacturer (name not specified)",
+    "type": "Electronics manufacturer with three product lines: PC, laptop, and tablet",
+    "situation": "Laptop's profitability has been declining recently",
+    "action": "Client has engaged consulting team to investigate the reasons behind the profitability decline",
+    "ask": "What are the reasons behind the profitability decline and how to turn things around?"
+  },
+  "structure_2_information_upon_request": {
+    "item_1": {
+      "item_id": "item_1",
+      "trigger": "Analyst asks about or includes the client's business focus or product portfolio scope in framework",
+      "core_dimensional_concept": "client business focus and product scope",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet about client overview or business scope",
+          "explicit clarifying question about which business line to focus on",
+          "sub-bullet under 'client' or 'company' pillar asking about product priorities"
+        ],
+        "alternative_phrasings": [
+          "product line focus",
+          "business unit scope",
+          "which product to prioritize",
+          "laser focus on laptops"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'product lines' only as a passing reference while describing the company background (F passing mention — product scope is not the subject of analysis)",
+        "Analyst lists product lines (PC, laptop, tablet) as context but does not probe which to focus on (G adjacent dimension — listing vs. scoping)"
+      ],
+      "info": "The client wants us to be laser-focused on their laptop business"
+    },
+    "item_2": {
+      "item_id": "item_2",
+      "trigger": "Analyst asks about or includes client's market position or competitive standing in framework",
+      "core_dimensional_concept": "client market position and competitive rank",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet about competitive landscape or market position",
+          "explicit clarifying question about client's market share or ranking",
+          "sub-bullet under 'client' or 'laptop market' pillar asking about competitive standing"
+        ],
+        "alternative_phrasings": [
+          "market share",
+          "competitive ranking",
+          "size of the client",
+          "where does the client stand in the market"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'competition' in a generic sense without asking about the client's own position (F passing mention — competition is the subject, not the client's rank)",
+        "Analyst mentions 'top players' or 'market leaders' while discussing industry dynamics but not specifically asking about where the client sits (G adjacent dimension)"
+      ],
+      "info": "The client is a medium-size player, not in top-5"
+    },
+    "item_3": {
+      "item_id": "item_3",
+      "trigger": "Analyst asks about or includes current profitability level or EBITDA margin in framework",
+      "core_dimensional_concept": "client current profitability or margin level",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet about profitability analysis or financial performance",
+          "explicit clarifying question about current margin or EBITDA percentage",
+          "hypothesis-driven assumption about what margin the client might have"
+        ],
+        "alternative_phrasings": [
+          "current margin",
+          "EBITDA margin",
+          "current profitability",
+          "how profitable is the client today"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'margins' only as a factor in competitive analysis without asking about the client's specific margin level (F passing mention — margins are a market factor, not the client's own level)",
+        "Analyst says 'the client is struggling with profitability' restating the prompt without asking for the actual number (G adjacent — restating the problem not asking for the metric)"
+      ],
+      "info": "The client's current profitability is 2%"
+    },
+    "item_4": {
+      "item_id": "item_4",
+      "trigger": "Analyst asks about or includes client's geographic footprint or sales regions in framework",
+      "core_dimensional_concept": "client geographic sales footprint",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet about distribution or geography",
+          "explicit clarifying question about whether client sells only in the U.S. or globally",
+          "sub-bullet under 'client' or 'revenue' pillar asking about geographic breakdown"
+        ],
+        "alternative_phrasings": [
+          "geographic coverage",
+          "international sales",
+          "global vs. domestic",
+          "where does the client sell"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'distribution channels' without specifically asking about geographic scope (G adjacent — channels not geography)",
+        "Analyst references 'markets' in general competitive landscape without asking about client's specific geographic reach (F passing mention)"
+      ],
+      "info": "The client sells their laptops globally, not just in the U.S."
+    },
+    "item_5": {
+      "item_id": "item_5",
+      "trigger": "Analyst asks about or includes client's customer segments or product portfolio breadth in framework",
+      "core_dimensional_concept": "client customer segments and product variety",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet about customer segments (B2B/B2C)",
+          "explicit clarifying question about what types of customers the client serves",
+          "sub-bullet asking about high-end vs. low-end product offering"
+        ],
+        "alternative_phrasings": [
+          "B2B vs B2C",
+          "customer types",
+          "product portfolio breadth",
+          "who are the client's customers"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'B2B' or 'B2C' only while describing industry-level trends without asking about the client's own segment mix (F passing mention)",
+        "Analyst mentions 'customer concentration' as a risk factor without probing what segments the client actually serves (G adjacent — risk framing not segment inquiry)"
+      ],
+      "info": "The client offers a wide variety of laptops for B2C and B2B"
+    }
+  },
+  "structure_3_case_questions": {
+    "Q1": {
+      "q_id": "Q1",
+      "type": "framework",
+      "question_text": "What are the reasons behind the profitability drop and how to turn things around?",
+      "information_to_share_upfront": null,
+      "information_upon_request": "See structure_2 items 1–5. Release only items by semantic touch; not by mere keyword presence.",
+      "state_machine": {
+        "next_question": "Q2",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable framework answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q2": {
+      "q_id": "Q2",
+      "type": "qualitative",
+      "question_text": "What reasons might be behind the declining profitability?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q3",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q3": {
+      "q_id": "Q3",
+      "type": "qualitative",
+      "question_text": "Your team put together some data about the laptop market dynamics. What does it tell you? (We're in 2019)",
+      "information_to_share_upfront": [
+        "Appendix 1 — Global laptop unit shipments chart and CAGR forecast chart (share upfront at start of Q3)"
+      ],
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q4",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q4": {
+      "q_id": "Q4",
+      "type": "qualitative",
+      "question_text": "Based on our research, the laptop market is going to decline over the next four years. What might the reasons be behind it?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q5",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q5": {
+      "q_id": "Q5",
+      "type": "quantitative",
+      "question_text": "Assuming the client will keep the same market share, will they be able to hit $3.5B in sales by 2023? What EBITDA should they expect in 2023?",
+      "information_to_share_upfront": null,
+      "information_upon_request": [
+        {
+          "item_id": "Q5_item_1",
+          "trigger": "Analyst asks about or needs the client's current shipment volume to begin calculations",
+          "core_dimensional_concept": "client laptop shipment volume in 2019",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question about how many laptops the client ships or sells",
+              "calculation setup requesting volume data",
+              "hypothesis about client's unit sales"
+            ],
+            "alternative_phrasings": [
+              "how many laptops does the client sell",
+              "client unit volume",
+              "laptops sold per year",
+              "client shipments"
+            ]
+          },
+          "disqualifying": [
+            "Analyst mentions 'volume' generically while discussing revenue formula without specifically asking for the client's actual shipment number (F passing mention)"
+          ],
+          "info": "The client shipped 5.3M laptops in 2019"
+        },
+        {
+          "item_id": "Q5_item_2",
+          "trigger": "Analyst asks about or needs the average selling price to begin calculations",
+          "core_dimensional_concept": "average laptop price and price assumption",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question about the average price or ASP of the client's laptops",
+              "calculation setup requesting price data",
+              "hypothesis about average selling price"
+            ],
+            "alternative_phrasings": [
+              "average selling price",
+              "ASP",
+              "price per laptop",
+              "how much does a laptop cost on average"
+            ]
+          },
+          "disqualifying": [
+            "Analyst mentions 'pricing strategy' as a strategic lever without asking for the actual average price figure needed for the math (G adjacent — strategy not data request)"
+          ],
+          "info": "The average price of a laptop is $600. We assume that it's not going to change by 2023"
+        },
+        {
+          "item_id": "Q5_item_3",
+          "trigger": "Analyst asks about or needs the current EBITDA margin to calculate expected EBITDA",
+          "core_dimensional_concept": "current EBITDA margin assumption",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question about current EBITDA margin percentage",
+              "calculation setup requesting margin assumption",
+              "hypothesis about margin level"
+            ],
+            "alternative_phrasings": [
+              "current margin",
+              "EBITDA margin",
+              "profitability rate",
+              "what is the margin assumption"
+            ]
+          },
+          "disqualifying": [
+            "Analyst mentions 'margin' in context of discussing why profitability is low without asking for the specific margin number needed for the calculation (F passing mention)"
+          ],
+          "info": "The current EBITDA margin for the client is 2%. We don't expect it to change materially over time"
+        }
+      ],
+      "appendix": {
+        "appendix_1": {
+          "title": "Global laptop market data (two charts)",
+          "release_rule": "Share upfront with analyst at the start of Q3 per casebook instruction",
+          "chart_1": {
+            "title": "Global laptop unit shipments, MM units",
+            "data_points": {
+              "2016": 161.2,
+              "2017": 164.7,
+              "2018_actual": 163.7,
+              "2019_actual": 162.1,
+              "2020F": 168.1,
+              "2021F": 171.9,
+              "2022F": 175.0,
+              "2023F": 178.2
+            },
+            "note": "The expected shipments in 2019-23 are based on the forecast from June 2018"
+          },
+          "chart_2": {
+            "title": "Forecast of CAGR for shipments in 2019-23 made in different months, %",
+            "data_points": {
+              "6/18": "~2.4%",
+              "7/18": "~2.5%",
+              "8/18": "~1.0%",
+              "9/18": "~0.8%",
+              "10/18": "~0.6%",
+              "11/18": "~0.5%",
+              "12/18": "~0.5%",
+              "1/19": "~0.2%",
+              "2/19": "~0.1%",
+              "3/19": "~0.1%",
+              "4/19": "~-0.5%",
+              "5/19": "~-0.8%",
+              "6/19": "~-1.0%"
+            },
+            "note": "CAGR forecast for 2019-23 has been revised downward from ~2.4% (June 2018) to approximately -1% (June 2019)"
+          }
+        }
+      },
+      "state_machine": {
+        "next_question": "Q6",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides numerical answer (attempt 1 or 2) and qualitative contextualization; proceed to Q6 after",
+        "max_attempts": 2,
+        "scoring_on_transition": {
+          "attempt_1_correct": "Full score",
+          "attempt_2_correct": "0 score per core_principles",
+          "both_attempts_wrong": "0 score; interviewer provides correct answer before Q6"
+        }
+      }
+    },
+    "Q6": {
+      "q_id": "Q6",
+      "type": "qualitative",
+      "question_text": "The manager has just entered the room and they would like you to summarize your conclusions.",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": null,
+        "skip_logic": false,
+        "transition_condition": "Case ends after Q6"
+      }
+    }
+  },
+  "structure_4_ground_truth": {
+    "Q1_ground_truth": {
+      "type": "framework",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_laptop_market": {
+          "keypoints": [
+            "Market dynamics (incl. growth rate, trends)",
+            "Largest laptop manufacturers",
+            "Average margin in the industry"
+          ],
+          "subtotal": 3
+        },
+        "pillar_2_client_electronics_manufacturer": {
+          "keypoints": [
+            "Product range of laptops offered by the client",
+            "Customer segments (B2B/B2C, low-end/high-end)",
+            "Distribution strategy (incl. major channels)"
+          ],
+          "subtotal": 3
+        },
+        "pillar_3_profitability_analysis": {
+          "keypoints": [
+            "Revenue dynamics - Pricing strategy",
+            "Revenue dynamics - Volume currently and growth rate",
+            "Cost structure - Fixed costs (FC)",
+            "Cost structure - Variable costs (VC) (high VC business?)"
+          ],
+          "subtotal": 4
+        }
+      },
+      "total_keypoints": 10,
+      "minimum_expected": "At least 1 pillar from each of the 3 areas with minimum 5 KPs covered",
+      "outstanding_threshold": "All 3 pillars covered with 8+ KPs covered including both revenue and cost dimensions in Profitability analysis"
+    },
+    "Q2_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_shrinking_sales": {
+          "volume_related": {
+            "keypoints": [
+              "Decreasing demand for laptops (e.g. due to the shift to tablets/smartphones)",
+              "Intensifying competition that steals our market share - More aggressive marketing",
+              "Intensifying competition that steals our market share - More appealing pricing",
+              "Intensifying competition that steals our market share - More attractive value proposition (e.g. more laptop power, more features)",
+              "Intensifying competition that steals our market share - More efficient distribution",
+              "Discontinuation of some client's brand/models/regions"
+            ],
+            "subtotal": 6
+          },
+          "price_related": {
+            "keypoints": [
+              "Lower prices for client's laptops",
+              "More aggressive promotions and discounts for client's laptops"
+            ],
+            "subtotal": 2
+          },
+          "keypoints": [
+            "Decreasing demand for laptops (e.g. due to the shift to tablets/smartphones)",
+            "Intensifying competition that steals our market share - More aggressive marketing",
+            "Intensifying competition that steals our market share - More appealing pricing",
+            "Intensifying competition that steals our market share - More attractive value proposition (e.g. more laptop power, more features)",
+            "Intensifying competition that steals our market share - More efficient distribution",
+            "Discontinuation of some client's brand/models/regions",
+            "Lower prices for client's laptops",
+            "More aggressive promotions and discounts for client's laptops"
+          ],
+          "subtotal": 8
+        },
+        "pillar_2_rising_costs": {
+          "fixed_costs_related": {
+            "keypoints": [
+              "Rapidly growing marketing budget",
+              "Ballooning overhead costs",
+              "Increase in transportation costs (e.g. due to growth in oil prices)",
+              "Aging equipment causing higher maintenance costs and drop in utilization rate"
+            ],
+            "subtotal": 4
+          },
+          "variable_costs_related": {
+            "keypoints": [
+              "Increase in commodity prices (e.g. chips, metal, plastics, packaging)",
+              "More expensive license fees for pre-installed laptop software"
+            ],
+            "subtotal": 2
+          },
+          "keypoints": [
+            "Rapidly growing marketing budget",
+            "Ballooning overhead costs",
+            "Increase in transportation costs (e.g. due to growth in oil prices)",
+            "Aging equipment causing higher maintenance costs and drop in utilization rate",
+            "Increase in commodity prices (e.g. chips, metal, plastics, packaging)",
+            "More expensive license fees for pre-installed laptop software"
+          ],
+          "subtotal": 6
+        },
+        "pillar_3_focus_on_low_margin": {
+          "keypoints": [
+            "Rapidly growing sales of low-margin laptop models/brands",
+            "Shifting sales structure towards low-end customer segment and/or regions with low profitability profile"
+          ],
+          "subtotal": 2
+        }
+      },
+      "total_keypoints": 16,
+      "minimum_expected": "At least 4 KPs covered across the 3 pillars, structured approach",
+      "outstanding_threshold": "8+ KPs covered with representation across all 3 pillars (shrinking sales + rising costs + low-margin focus)"
+    },
+    "Q3_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_basic_comments": {
+          "keypoints": [
+            "The market has been slowly declining but was expected to grow for the next four years. However, the CAGR forecast was revisited from about 2.4% to negative 1%. So, it seems like the market would likely keep shrinking"
+          ],
+          "subtotal": 1
+        },
+        "pillar_2_advanced_comments": {
+          "keypoints": [
+            "The laptop market is a mature space, so I am not surprised to see that it has been fairly flat since 2016 and that the original CAGR forecast was in single digit numbers",
+            "It seems like the industry is facing a lot of ambiguity and unpredictability as the forecast has been revisited all the time",
+            "The radical change in CAGR forecast might suggest rapidly changing market conditions like - Customer preferences shifting to smartphones and tablets",
+            "The radical change in CAGR forecast might suggest rapidly changing market conditions like - Dramatic lack in laptop innovation with old models quickly reaching the end of their product cycle",
+            "The radical change in CAGR forecast might suggest rapidly changing market conditions like - Trump's trade war with China which caused disruption in supply chains"
+          ],
+          "subtotal": 5
+        }
+      },
+      "total_keypoints": 6,
+      "minimum_expected": "Basic comment covered (1 KP); recognition that market is shrinking and CAGR has revised downward",
+      "outstanding_threshold": "Basic comment covered + at least 2 advanced comments covered"
+    },
+    "Q4_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_pricing_factors": {
+          "keypoints": [
+            "Accelerating price war",
+            "Considerable market-wide drop in costs - Drop in chip prices",
+            "Considerable market-wide drop in costs - Drop in metal/plastic prices",
+            "Considerable market-wide drop in costs - Drop in license fees for pre-installed laptop software",
+            "Considerable market-wide drop in costs - Drop in export duties from China (assuming that most world laptop production happens there)"
+          ],
+          "subtotal": 5
+        },
+        "pillar_2_volume_factors": {
+          "keypoints": [
+            "Potential market saturation – lack of product innovation with old models quickly reaching the end of their product cycle",
+            "Rise of substitutes - Tablets and smartphones (e.g. decrease in demand from B2C, while same demand from B2B)",
+            "Rise of substitutes - More powerful PC and game-consoles stealing gamers from laptop market",
+            "Change in trade policies that disrupts supply chain and limits laptop production"
+          ],
+          "subtotal": 4
+        }
+      },
+      "total_keypoints": 9,
+      "minimum_expected": "At least 4 KPs covered across both pricing and volume factors",
+      "outstanding_threshold": "6+ KPs covered with both pillars represented"
+    },
+    "Q5_ground_truth": {
+      "type": "quantitative",
+      "quantitative_part": {
+        "correct_final_answer": "Revenue: $3.07B (casebook path using rounded $3.2B intermediate) — also accept ~$3.05B (precise path: 5.3M × $600 = $3.18B × 0.96 = $3.053B); EBITDA: $60M (casebook path) — also accept ~$61M (precise path)",
+        "accepted_answer_parts": {
+          "revenue_USD": {
+            "accepted_values": [
+              3050000000,
+              3070000000
+            ],
+            "tolerance_pct": 0.02,
+            "zero_tolerance": false
+          },
+          "EBITDA_USD": {
+            "accepted_values": [
+              60000000,
+              61000000
+            ],
+            "tolerance_pct": 0.02,
+            "zero_tolerance": false
+          }
+        },
+        "scoring_method": "Binary: correct number = full credit; incorrect = zero credit. Accept both casebook-path answer and precise-path answer per A3-Q5 rounding rule.",
+        "calculation_steps": {
+          "step_1_revenue_2019": {
+            "formula": "5.3M units × $600 = $3.18B (casebook rounds to $3.2B)",
+            "result": "$3.2B (casebook rounded intermediate)"
+          },
+          "step_2_apply_cagr": {
+            "formula": "Using CAGR of -1% for 4 years (linear approximation): $3.2B × (1 - 1% × 4) = $3.2B × 0.96",
+            "result": "$3.07B (expected revenue in 2023)"
+          },
+          "step_3_ebitda_2023": {
+            "formula": "$3.07B × 2% (EBITDA margin)",
+            "result": "$0.06B = $60M (expected EBITDA in 2023)"
+          }
+        }
+      },
+      "qualitative_part": {
+        "scoring_note": "Qualitative portion of Q5 is scored as 100% total, split into two tiers. Within each tier, use 3-level scoring per",
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "tier_1_basic": {
+          "weight_of_Q5_qualitative_total": "50%",
+          "keypoints": [
+            "It is unlikely that the client will hit $3.5B in 2023. Based on the current forecast, the client's sales are expected to be $3.07B and EBITDA is going to be $60M in 2023."
+          ],
+          "note": "Expected from every candidate. Single point worth 50% of qualitative score."
+        },
+        "tier_2_advanced": {
+          "weight_of_Q5_qualitative_total": "50%",
+          "points_available": 4,
+          "weight_per_point": "12.5% of qualitative total",
+          "keypoints": [
+            "It seems like the laptop business is an incredibly commoditized space with huge price pressure which explains such a low EBITDA of 2%",
+            "On the other hand the client is fairly small and enjoys just 2-3% of the market [5.3M/162.1M], so small scale might be the reason of non-competitive cost structure and thus low margins",
+            "Given that the sales are expected to shrink, the client would face diseconomies of scale which would push EBITDA down – it is likely that EBITDA would be less than 2% by 2023",
+            "The CAGR forecast varies substantially as the time goes [see question 3], so we can't 100% rely on the calculated $3.07B and $60M and might need to adjust the calculations every month"
+          ],
+          "note": "Not expected from every candidate. Each advanced point adds 12.5% to qualitative score."
+        },
+        "minimum_expected": "Correct numerical answer + Tier 1 basic contextualization (covered)",
+        "outstanding_threshold": "Correct numerical answer + Tier 1 covered + at least 2 Tier 2 advanced comments covered"
+      }
+    },
+    "Q6_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_recommendation": {
+          "keypoints": [
+            "Based on our research, the decline in profitability is caused by rapidly changing market conditions. In order to improve margins the client should either increase market share or optimize their cost structure."
+          ],
+          "subtotal": 1
+        },
+        "pillar_2_reasoning": {
+          "keypoints": [
+            "The forecast for laptop market growth rate has been changing all the time with the latest expected 4-year CAGR of -1%.",
+            "The laptop business is highly commoditized and requires large scale to ensure healthy margins. The client's market share of 2-3% might be limiting the profitability growth.",
+            "Operational excellence and best-in-class unit economics are key success factors for commoditized industries, and we need to ensure that the client's opex is aligned with the industry's benchmarks"
+          ],
+          "subtotal": 3
+        },
+        "pillar_3_risks": {
+          "keypoints": [
+            "We should keep in mind risks of changing market dynamics, competitive response to the client's potential actions, and increasing pressure on margins due to the diseconomies of scale."
+          ],
+          "subtotal": 1
+        },
+        "pillar_4_next_steps": {
+          "keypoints": [
+            "As for the next step, we would like to design a sales growth strategy, conduct diagnostics of client's operations, and build a cost optimization plan."
+          ],
+          "subtotal": 1
+        }
+      },
+      "total_keypoints": 6,
+      "minimum_expected": "Recommendation pillar covered + at least 1 reasoning point covered",
+      "outstanding_threshold": "All 4 pillars covered, including recommendation + at least 2 reasoning points + risks + next steps"
+    }
+  },
+  "state_machine_global": {
+    "case_type": "interviewer_driven",
+    "skip_logic": false,
+    "mandatory_sequence": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5",
+      "Q6"
+    ],
+    "rules": [
+      "Q1 cannot be skipped under any circumstances",
+      "Linear progression Q1 → Q2 → Q3 → Q4 → Q5 → Q6, no skipping",
+      "A question may not be advanced until the current question receives a scoreable answer (1st or 2nd attempt)",
+      "If analyst pre-covers a later question's keypoints in an earlier answer, record as pre-coverage but still ask the later question in sequence",
+      "No question may be skipped even if pre-covered"
+    ]
+  },
+  "scoring_summary": {
+    "Q1": {
+      "type": "framework",
+      "total_keypoints": 10,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q2": {
+      "type": "qualitative",
+      "total_keypoints": 16,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q3": {
+      "type": "qualitative",
+      "total_keypoints": 6,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q4": {
+      "type": "qualitative",
+      "total_keypoints": 9,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q5": {
+      "type": "quantitative",
+      "part_1_quantitative": {
+        "correct_answer": "Revenue $3.07B / EBITDA $60M (casebook path); also accept Revenue ~$3.05B / EBITDA ~$61M (precise path)",
+        "zero_tolerance": true,
+        "scoring": "Binary: Full credit if correct (either accepted answer); zero credit if incorrect"
+      },
+      "part_2_qualitative": {
+        "total_keypoints": 5,
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "human_review_priority": "false-partial > false-not-covered > covered",
+        "tier_1_basic": {
+          "keypoints": 1,
+          "weight": "50% of qualitative score"
+        },
+        "tier_2_advanced": {
+          "keypoints": 4,
+          "weight_per_point": "12.5% of qualitative score",
+          "weight_total": "50% of qualitative score"
+        }
+      }
+    },
+    "Q6": {
+      "type": "qualitative",
+      "total_keypoints": 6,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    }
+  }
+}

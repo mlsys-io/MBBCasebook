@@ -1,0 +1,674 @@
+{
+  "case_id": "006",
+  "version": "v2",
+  "source": {
+    "title": "Banknote manufacturer",
+    "inspired_by": "Bain & Company",
+    "year": "2020",
+    "author": "Peter K. More",
+    "reference": "Peter-K.thinkific.com, Case #6",
+    "casebook_abbr": "PK20"
+  },
+  "case_type": "interviewer_driven",
+  "case_type_origin": "candidate_led",
+  "annotation_mode": "CL_to_IL_override",
+  "case_arch": {
+    "primary": "Revenue Growth",
+    "tags": [
+      "Revenue Growth",
+      "Market Entry",
+      "Growth Strategy",
+      "Comparison",
+      "Market Sizing"
+    ]
+  },
+  "difficulty": "Medium",
+  "industry": "Banknote production / Government printing (B2G)",
+  "topic": "Revenue growth strategy for a banknote manufacturer serving governments, including market sizing, pricing sensitivity, growth opportunities, and expansion into passport / credit card production.",
+  "expected_duration_minutes": 30,
+  "opening_prompt": "Hi, I'd like to solve some consulting cases with you. Pls be a good interviewee to have a potential test in consulting cases. For the case problem-solving, pls do not assume any numbers or assumptions before my confirmation. I will give you the context upon request. I need you to answer the following questions for the client. Before you start, feel free to ask me 2-3 clarifying questions about the client.\n\nQ1. How would you structure your approach?\nQ2. What is the market size for U.S. banknote production in 2020? (based on the Chart #3. U.S. paper currency circulation data)\nQ3. How price-sensitive do you think the governments are? What will happen if we change the pricing? [No numbers are provided.]\nQ4. What revenue growth opportunities can you suggest to the client?\nQ5. Our client would like to expand into two other adjacent businesses — passport production and credit card production. What are the pros and cons of each of them?\nQ6. The client just entered the room and they would like to know your recommendations.\n\nHere is the basic context for the client:\nOur client is a manufacturer of banknotes for the government. There are two major players in the field (incl. our client). They hired you to increase their revenue. How would you start thinking about the client's request?",
+  "structure_1_client_basic_context": {
+    "company": "Banknote manufacturer (UK-headquartered, founded 1813)",
+    "type": "B2G manufacturer of banknotes for governments",
+    "situation": "There are two major players in the field (including our client). Industry is duopoly-like.",
+    "action": "The client wants to increase their revenue.",
+    "ask": "How would you start thinking about the client's request?"
+  },
+  "structure_2_information_upon_request": {
+    "item_1": {
+      "item_id": "item_1",
+      "trigger": "Analyst asks about or includes 'banknote market size / volume / private vs government share' in framework or clarifying question",
+      "core_dimensional_concept": "global banknote issuance volume and private-sector manufacturing share",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar (e.g., 'Banknote market' / 'Market size and structure')",
+          "sub-bullet under market pillar (e.g., 'how big is the market / who manufactures')",
+          "explicit clarifying question about banknote volume or private-sector role"
+        ],
+        "alternative_phrasings": [
+          "annual banknote issuance",
+          "global banknote volume",
+          "private companies' share of banknote production",
+          "how many banknotes are printed each year"
+        ]
+      },
+      "disqualifying": [
+        "Only mentions 'volume risk' or 'demand risk' under the Risk pillar — a modifier of the risk dimension, not the banknote-market volume itself (G adjacent-dimension modifier)",
+        "Only a passing mention of 'large banknote industry' without any structural touch on the volume / share / private-sector concept (F passing mention)"
+      ],
+      "info": "183B banknotes were issued in 2019, 11% of which were manufactured by private companies for governments."
+    },
+    "item_2": {
+      "item_id": "item_2",
+      "trigger": "Analyst asks about or includes 'commercial banknote production market size / growth rate' in framework",
+      "core_dimensional_concept": "commercial banknote production market size and growth rate",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar (e.g., 'Market sizing' / 'Banknote market growth')",
+          "sub-bullet under market pillar (e.g., 'growth rate / market expansion')",
+          "explicit clarifying question about commercial banknote market size or growth"
+        ],
+        "alternative_phrasings": [
+          "addressable market for private manufacturers",
+          "commercial banknote production TAM",
+          "growth rate of banknote outsourcing market",
+          "how fast is the private banknote market growing"
+        ]
+      },
+      "disqualifying": [
+        "Only loosely says 'grow the market' under the Revenue growth area pillar without engaging the commercial-banknote market itself (G adjacent-dimension modifier)",
+        "Only a passing reference to 'growing industry' modifying another point (F passing mention)"
+      ],
+      "info": "The commercial banknote production market is at $3-4Bn and is expected to grow by 3-5% annually over the next four years."
+    },
+    "item_3": {
+      "item_id": "item_3",
+      "trigger": "Analyst asks about or includes 'client's competitive advantages / differentiation vs competitors' in framework",
+      "core_dimensional_concept": "client's competitive advantages relative to other banknote manufacturers",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar (e.g., 'Client - banknote manufacturer' / 'Competitive advantages')",
+          "sub-bullet under client-side pillar (e.g., 'differentiation / strengths')",
+          "explicit clarifying question about what makes our client different"
+        ],
+        "alternative_phrasings": [
+          "differentiation vs the 2nd major player",
+          "client's USP",
+          "key differentiating points",
+          "client strengths"
+        ]
+      },
+      "disqualifying": [
+        "Only says 'competitive pressure risk' or 'losing edge to competitors' under the Risk pillar — a modifier of the risk dimension, not competitive advantage itself (G adjacent-dimension modifier)",
+        "Only a passing reference to 'client is competitive' with no structural touch (F passing mention)"
+      ],
+      "info": "The client's competitive advantages are shorter banknote replacement lead time and higher security level for banknotes."
+    },
+    "item_4": {
+      "item_id": "item_4",
+      "trigger": "Analyst asks about or includes 'market share / data on major banknote manufacturers / 2nd player profile' in framework",
+      "core_dimensional_concept": "comparative profile of the two major banknote manufacturers (market share, employees, geography)",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar (e.g., 'Other players' / 'Competitive landscape')",
+          "sub-bullet under market pillar (e.g., 'market share / who are the competitors')",
+          "explicit clarifying question about market share or 2nd player"
+        ],
+        "alternative_phrasings": [
+          "share of the banknote production market",
+          "competitor market share",
+          "2nd major player profile",
+          "geographic footprint of competitors"
+        ]
+      },
+      "disqualifying": [
+        "Only a passing mention of 'two major players in the market' without engaging market share / comparative profile itself (F passing mention)",
+        "Only says 'competitive landscape is intense' with no specific player concept (G adjacent-dimension modifier)"
+      ],
+      "info": "Chart #2 — Information on the major banknote manufacturers. Our client: Foundation year 1813, 141 countries served (today and in the past), 27% share of the banknote production market, 2,750 employees globally, HQ in UK. 2nd major player: Foundation year 1852, 145 countries served, 23% share of the banknote production market, 11,600 employees globally, HQ in Germany."
+    }
+  },
+  "structure_3_case_questions": {
+    "Q1": {
+      "q_id": "Q1",
+      "type": "framework",
+      "question_text": "How would you structure your approach?",
+      "information_to_share_upfront": "Chart #1 — Typical value chain of banknote production: (1) Supplies — Banknote paper / Ink / Foil application (security strips) / Chemicals. (2) Production — 10 production stages / Equipment of precise printing, micro-perforating, cutting, etc. (3) Inspection and quality control — Equipment to check the quality: Visually / Through magnetic fields / Mechanically. (4) Delivery to Central Bank — Quality double-check / Storage / Entry into circulation. [Note from casebook PNG 5: 'This is for the candidate's information. No insights are expected. To be given to the candidate before framework.']",
+      "information_upon_request": "See structure_2 items 1-4. Release only items per semantic touch judgment; not by mere keyword presence.",
+      "state_machine": {
+        "next_question": "Q2",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable framework answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q2": {
+      "q_id": "Q2",
+      "type": "quantitative",
+      "question_text": "What is the market size for U.S. banknote production in 2020? (based on the Chart #3. U.S. paper currency circulation data)",
+      "information_to_share_upfront": [
+        "Chart #3 — U.S. paper currency circulation data (full table provided at start of Q2).",
+        "Footnote (PNG 9): In the U.S. only the Treasury Department prints banknotes. In other countries private companies produce banknotes for the governments too. For the sake of this case it is assumed that U.S. is also part of the commercial banknote production market."
+      ],
+      "information_upon_request": [
+        {
+          "item_id": "Q2_item_1",
+          "trigger": "Analyst asks about printing cost trajectory / whether 2020 printing costs differ from prior years",
+          "core_dimensional_concept": "stability of printing costs into 2020",
+          "release_conditions": {
+            "structural_position": [
+              "explicit clarifying question (e.g., 'are printing costs the same in 2020?')",
+              "hypothesis-driven assumption (e.g., 'I'll assume printing costs are flat year-over-year')",
+              "calculation step input clarification"
+            ],
+            "alternative_phrasings": [
+              "printing cost change over time",
+              "are the cents-per-note figures still valid for 2020",
+              "cost inflation assumption"
+            ]
+          },
+          "disqualifying": [
+            "Only a passing mention of 'costs may vary' without a specific question about 2020 cost stability (F passing mention)"
+          ],
+          "info": "We expect the printing costs to remain the same for 2020."
+        },
+        {
+          "item_id": "Q2_item_2",
+          "trigger": "Analyst asks about what 'projected volume to be printed in 2020' represents / drivers of demand",
+          "core_dimensional_concept": "composition of 2020 projected banknote volume (replacement + demand growth)",
+          "release_conditions": {
+            "structural_position": [
+              "explicit clarifying question (e.g., 'what drives the 2020 projected volume?')",
+              "hypothesis-driven assumption about replacement vs growth split",
+              "sub-bullet under demand-side reasoning"
+            ],
+            "alternative_phrasings": [
+              "what's included in projected volume",
+              "drivers of 2020 demand",
+              "replacement vs new currency demand"
+            ]
+          },
+          "disqualifying": [
+            "Only a passing reference to 'currency demand will change' without an explicit question on volume composition (F passing mention)"
+          ],
+          "info": "Projected volume for 2020 includes the replacement of old/damaged banknotes and the increase in demand for currency from domestic and international customers."
+        },
+        {
+          "item_id": "Q2_item_3",
+          "trigger": "Analyst asks about scope of printing costs / whether costs include only printing or more",
+          "core_dimensional_concept": "scope of printing costs (full banknote production cost paid by Federal Reserve)",
+          "release_conditions": {
+            "structural_position": [
+              "explicit clarifying question (e.g., 'what is included in printing costs?')",
+              "calculation-step input clarification",
+              "hypothesis-driven assumption about cost scope"
+            ],
+            "alternative_phrasings": [
+              "definition of printing costs",
+              "what does printing cost include",
+              "all-in production cost vs printing-only"
+            ]
+          },
+          "disqualifying": [
+            "Only a passing mention of 'production costs are complex' without an explicit question about cost scope (F passing mention)"
+          ],
+          "info": "Printing costs are all the banknote production costs that the Federal Reserve pays."
+        }
+      ],
+      "appendix": {
+        "appendix_1": {
+          "title": "Chart #3 — U.S. paper currency circulation data",
+          "release_rule": "Share upfront with analyst at the start of Q2",
+          "table": {
+            "denominations": {
+              "$1": {
+                "printing_cost_cents_per_note": 10,
+                "currency_in_circulation_Bn_notes": 12.4,
+                "projected_volume_2020_Bn_pieces": 1.6,
+                "lifespan_years": 6.6
+              },
+              "$2": {
+                "printing_cost_cents_per_note": 10,
+                "currency_in_circulation_Bn_notes": 1.3,
+                "projected_volume_2020_Bn_pieces": 0.0,
+                "lifespan_years": "N/A"
+              },
+              "$5": {
+                "printing_cost_cents_per_note": 15,
+                "currency_in_circulation_Bn_notes": 3.1,
+                "projected_volume_2020_Bn_pieces": 0.7,
+                "lifespan_years": 4.7
+              },
+              "$10": {
+                "printing_cost_cents_per_note": 15,
+                "currency_in_circulation_Bn_notes": 2.0,
+                "projected_volume_2020_Bn_pieces": 0.5,
+                "lifespan_years": 5.3
+              },
+              "$20": {
+                "printing_cost_cents_per_note": 15,
+                "currency_in_circulation_Bn_notes": 9.4,
+                "projected_volume_2020_Bn_pieces": 1.2,
+                "lifespan_years": 7.8
+              },
+              "$50": {
+                "printing_cost_cents_per_note": 15,
+                "currency_in_circulation_Bn_notes": 1.8,
+                "projected_volume_2020_Bn_pieces": 0.1,
+                "lifespan_years": 12.2
+              },
+              "$100": {
+                "printing_cost_cents_per_note": 20,
+                "currency_in_circulation_Bn_notes": 13.4,
+                "projected_volume_2020_Bn_pieces": 1.1,
+                "lifespan_years": 22.9
+              }
+            }
+          }
+        }
+      },
+      "state_machine": {
+        "next_question": "Q3",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides correct market size answer (or after 2nd attempt). Then proceeds to Q3."
+      }
+    },
+    "Q3": {
+      "q_id": "Q3",
+      "type": "qualitative",
+      "question_text": "How price-sensitive do you think the governments are? What will happen if we change the pricing? [No numbers are provided.]",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q4",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q4": {
+      "q_id": "Q4",
+      "type": "qualitative",
+      "question_text": "What revenue growth opportunities can you suggest to the client?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q5",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q5": {
+      "q_id": "Q5",
+      "type": "qualitative",
+      "question_text": "Our client would like to expand into two other adjacent businesses – passport production and credit card production. What are the pros and cons of each of them?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q6",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q6": {
+      "q_id": "Q6",
+      "type": "qualitative",
+      "question_text": "The client just entered the room and they would like to know your recommendations.",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": null,
+        "skip_logic": false,
+        "transition_condition": "Case ends after Q6"
+      }
+    }
+  },
+  "structure_4_ground_truth": {
+    "Q1_ground_truth": {
+      "type": "framework",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_banknote_market": {
+          "keypoints": [
+            "Growth rate (e.g. trends in bills in circulation)",
+            "Other players (e.g. market share, offerings, key differentiating points)"
+          ],
+          "subtotal": 2
+        },
+        "pillar_2_client_banknote_manufacturer": {
+          "keypoints": [
+            "Product portfolio (e.g. banknotes only or any adjacency services?)",
+            "Countries-customers",
+            "Competitive advantages"
+          ],
+          "subtotal": 3
+        },
+        "pillar_3_revenue_analysis": {
+          "keypoints": [
+            "Volume currently and growth rate",
+            "Pricing strategy",
+            "Revenue break-down by region (incl. market share)"
+          ],
+          "subtotal": 3
+        },
+        "pillar_4_revenue_growth_areas": {
+          "keypoints": [
+            "Increase in market share (winning more countries)",
+            "Cross-selling/up-selling opportunities",
+            "Diversification in adjacency markets"
+          ],
+          "subtotal": 3
+        }
+      },
+      "total_keypoints": 11,
+      "minimum_expected": "Cover at least 3 of 4 pillars with at least 1 keypoint each, including the revenue growth areas pillar (the case's core ask).",
+      "outstanding_threshold": "All 4 pillars covered with multiple keypoints each (8+ keypoints total) AND analyst explicitly raises external market analysis + client-side business model + revenue growth options as MECE pillars."
+    },
+    "Q2_ground_truth": {
+      "type": "quantitative",
+      "quantitative_part": {
+        "correct_final_answer": "$755M (precise unrounded) — also accept $760M (casebook rounds mid-denomination group $0.375B → $0.38B)",
+        "accepted_values": [
+          755000000,
+          760000000
+        ],
+        "tolerance_pct": 0.02,
+        "zero_tolerance": false,
+        "scoring_method": "Binary: correct number = full credit; incorrect = zero credit. Accept BOTH $755M (precise) and $760M (casebook-rounded mid group). Any other answer = zero credit.",
+        "calculation_steps": {
+          "step_1_group_low_denominations_1_2": {
+            "formula": "$0.10 × (1.6 + 0.0) Bn pieces",
+            "result": "$0.16B"
+          },
+          "step_2_group_mid_denominations_5_10_20_50": {
+            "formula": "$0.15 × (0.7 + 0.5 + 1.2 + 0.1) Bn pieces = $0.15 × 2.5 Bn",
+            "result": "$0.375B (precise) — casebook rounds to $0.38B"
+          },
+          "step_3_high_denomination_100": {
+            "formula": "$0.20 × 1.1 Bn pieces",
+            "result": "$0.22B"
+          },
+          "step_4_total_market_size_precise": {
+            "formula": "$0.16B + $0.375B + $0.22B",
+            "result": "$0.755B = $755M (precise, no rounding)"
+          },
+          "step_4_total_market_size_casebook_rounded": {
+            "formula": "$0.16B + $0.38B + $0.22B",
+            "result": "$0.76B = $760M (casebook canonical, mid group rounded)"
+          }
+        }
+      },
+      "qualitative_part": {
+        "scoring_note": "Qualitative portion of Q2 is scored as 100% total, split into two tiers. Within each tier, use 3-level scoring per",
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "tier_1_basic": {
+          "weight_of_Q2_qualitative_total": "50%",
+          "keypoints": [
+            "The market size of the U.S. banknote production in 2020 is expected to be $760M"
+          ],
+          "note": "Expected from every candidate. Single point worth 50% of qualitative score."
+        },
+        "tier_2_advanced": {
+          "weight_of_Q2_qualitative_total": "50%",
+          "points_available": 3,
+          "weight_per_point": "16.67% of qualitative total",
+          "keypoints": [
+            "Potential change in export/import operations due to new trade restrictions might affect the demand for US currency and needed volume of new banknotes",
+            "Aggressive development of cashless payments (e.g. Apple pay, Google pay) might decrease the appetite for banknotes and thus needed volume of new bills",
+            "We should also keep in mind that change in such macroeconomic factors like country's debt, inflation, interest rates, etc. will affect the demand for U.S. currency, and thus the demand for U.S. banknotes"
+          ],
+          "note": "Not expected from every candidate. Each advanced point adds 16.67% to qualitative score."
+        },
+        "minimum_expected": "Correct numerical answer ($760M) + Tier 1 basic contextualization (covered)",
+        "outstanding_threshold": "Correct numerical answer + Tier 1 covered + at least 2 Tier 2 advanced comments covered"
+      }
+    },
+    "Q3_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_financial_analysis": {
+          "keypoints": [
+            "Price of banknote production",
+            "Lifespan of banknotes",
+            "Expected capex to upgrade case processing equipment in the economy (mostly in banks)",
+            "Potential price increases for future banknote production (to replace old/damaged bills and meet higher demand for banknotes)"
+          ],
+          "subtotal": 4
+        },
+        "pillar_2_strategic_value": {
+          "keypoints": [
+            "High level of banknote security - Contributes to the consumer confidence and improves the business climate",
+            "High level of banknote security - Decreases criminal rate of counterfeit and leads to savings from fewer prosecution and anti-fraud measures",
+            "Top-notch design of banknote might become part of citizens' pride and a good PR-story for the country"
+          ],
+          "subtotal": 3
+        },
+        "pillar_3_risks": {
+          "operational_risks": [
+            "Lack of capacity to meet the needed production volumes",
+            "Long lead times (e.g. from order to production and delivery)",
+            "Banknote quality control issues",
+            "Storage and transportation security issues"
+          ],
+          "financial_risks": [
+            "The government might lose in negotiation power for future orders given just one banknote supplier",
+            "Banknote producer might go bankrupt"
+          ],
+          "keypoints": [
+            "Lack of capacity to meet the needed production volumes",
+            "Long lead times (e.g. from order to production and delivery)",
+            "Banknote quality control issues",
+            "Storage and transportation security issues",
+            "The government might lose in negotiation power for future orders given just one banknote supplier",
+            "Banknote producer might go bankrupt"
+          ],
+          "subtotal": 6
+        }
+      },
+      "total_keypoints": 13,
+      "minimum_expected": "Cover at least 2 of 3 pillars with at least 1 keypoint each, including at least one risk dimension.",
+      "outstanding_threshold": "All 3 pillars covered with 7+ keypoints total, including at least 1 operational risk AND 1 financial risk."
+    },
+    "Q4_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_increase_share_of_banknote_market": {
+          "keypoints": [
+            "Invest in relationship building with the central banks (e.g. more events, dedicated account managers)",
+            "Select, train, and highly incentivize top-notch sales people",
+            "Adjust pricing to offer various discounts",
+            "Increase efficiency of PR/marketing to strengthen credibility and brand",
+            "Ensure state-of-the-art quality and cutting edge security of banknotes"
+          ],
+          "subtotal": 5
+        },
+        "pillar_2_launch_new_products": {
+          "keypoints": [
+            "Develop new optional security and/or optical features to up-sell",
+            "Explore entering adjacency markets in B2G: passport/ID production, document security consulting services, anti-counterfeit excise tax stamps, etc.",
+            "Explore entering adjacency markets in B2B: anti-counterfeit labels for packages, banknote paper, security features for credit cards, cash processing machines, etc."
+          ],
+          "subtotal": 3
+        }
+      },
+      "total_keypoints": 8,
+      "minimum_expected": "Cover both pillars with at least 1 keypoint each (4+ total keypoints).",
+      "outstanding_threshold": "Both pillars covered with 6+ keypoints total, including at least 1 adjacency-market expansion idea (B2G or B2B)."
+    },
+    "Q5_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_financial_analysis": {
+          "keypoints": [
+            "Both will require capex in new equipment",
+            "Each will have different expected revenue depending on market size, its growth rate, and realistic market share",
+            "Passport production might offer some cost synergies with the core business like volume discounts for materials (e.g. paper, ink) and savings on overhead cost (no need to hire new salesforce and do lots of marketing - the client is the same B2G)"
+          ],
+          "subtotal": 3
+        },
+        "pillar_2_strategic_value": {
+          "new_opportunities": [
+            "Success with passports might open a door to other segments like ID and other official documents",
+            "Success with credit cards might be a platform for other opportunities in B2B (see previous slide)",
+            "Passports strengthen the value proposition of the client as a one-stop shop for B2G"
+          ],
+          "advantages_in_operations": [
+            "Both can increase utilization rate of equipment, logistics, warehouses, etc."
+          ],
+          "risk_diversification": [
+            "Passports will diversify business risks across different product lines",
+            "Credit cards - across different customer segments"
+          ],
+          "keypoints": [
+            "Success with passports might open a door to other segments like ID and other official documents",
+            "Success with credit cards might be a platform for other opportunities in B2B (see previous slide)",
+            "Passports strengthen the value proposition of the client as a one-stop shop for B2G",
+            "Both can increase utilization rate of equipment, logistics, warehouses, etc.",
+            "Passports will diversify business risks across different product lines",
+            "Credit cards - across different customer segments"
+          ],
+          "subtotal": 6
+        },
+        "pillar_3_risks": {
+          "market_specific_risks": [
+            "Each has different competitive pressure",
+            "Barriers for entry for credit cards might be higher due to lack of reputation in B2B"
+          ],
+          "operational_risks": [
+            "Potential lack of capabilities to produce passports/credit cards",
+            "Increase in operational complexity"
+          ],
+          "financial_risks": [
+            "Lack of funding to execute",
+            "Exaggerated assumptions in financial analysis"
+          ],
+          "keypoints": [
+            "Each has different competitive pressure",
+            "Barriers for entry for credit cards might be higher due to lack of reputation in B2B",
+            "Potential lack of capabilities to produce passports/credit cards",
+            "Increase in operational complexity",
+            "Lack of funding to execute",
+            "Exaggerated assumptions in financial analysis"
+          ],
+          "subtotal": 6
+        }
+      },
+      "total_keypoints": 15,
+      "minimum_expected": "Cover all 3 pillars (financial / strategic / risk) with at least 1 keypoint each, AND mention both passport and credit card differentially (not bundled).",
+      "outstanding_threshold": "All 3 pillars covered with 10+ keypoints total, with explicit treatment of synergies, diversification, AND multi-type risks (market/operational/financial)."
+    },
+    "Q6_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_recommendation": {
+          "keypoints": [
+            "Based on our analysis we recommend to enter the passport production and credit card production markets"
+          ],
+          "subtotal": 1
+        },
+        "pillar_2_reasoning": {
+          "keypoints": [
+            "First, the growth potential of the banknote space is limited given slow growth rate of the market (3-5%), fairly high competitive pressure from almost equally sized 2nd player, and long sales cycle",
+            "Secondly, passports and credit cards are presumingly attractive markets comparable in size to the banknote space and can offer new growth opportunities to further expand to adjacent segments",
+            "Thirdly, it is where our client can leverage their core capabilities in producing anti-counterfeit solutions with high level of security"
+          ],
+          "subtotal": 3
+        },
+        "pillar_3_risks": {
+          "keypoints": [
+            "Potentially tough competitive landscape",
+            "Lack of expertise/credibility in the domain",
+            "Unreasonable assumptions in projected market share and costs"
+          ],
+          "subtotal": 3
+        },
+        "pillar_4_next_steps": {
+          "keypoints": [
+            "Build a risk mitigation plan",
+            "Conduct a comprehensive due diligence of the passport/credit card markets",
+            "Design a go-to-market strategy"
+          ],
+          "subtotal": 3
+        }
+      },
+      "total_keypoints": 10,
+      "minimum_expected": "Recommendation pillar covered + at least 1 reasoning point covered + at least 1 risk OR next step covered",
+      "outstanding_threshold": "All 4 RRRN pillars covered, including the recommendation, at least 2 reasoning points, at least 1 risk, and at least 1 next step"
+    }
+  },
+  "state_machine_global": {
+    "case_type": "interviewer_driven",
+    "skip_logic": false,
+    "mandatory_sequence": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5",
+      "Q6"
+    ],
+    "rules": [
+      "Q1 cannot be skipped under any circumstances",
+      "Questions must proceed in linear order Q1 → Q2 → Q3 → Q4 → Q5 → Q6",
+      "A question may not be advanced until the current question receives a scoreable answer (1st or 2nd attempt)",
+      "If analyst pre-covers a later question's keypoints in an earlier answer, record as pre-coverage but still ask the later question in sequence",
+      "No question may be skipped even if pre-covered"
+    ]
+  },
+  "scoring_summary": {
+    "Q1": {
+      "type": "framework",
+      "total_keypoints": 11,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q2": {
+      "type": "quantitative",
+      "part_1_quantitative": {
+        "correct_answer": "$755M (precise) or $760M (casebook-rounded) — both accepted",
+        "zero_tolerance": true,
+        "scoring": "Binary: Full credit if $755M or $760M; zero credit for any other answer"
+      },
+      "part_2_qualitative": {
+        "total_keypoints": 4,
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "human_review_priority": "false-partial > false-not-covered > covered",
+        "tier_1_basic": {
+          "keypoints": 1,
+          "weight": "50% of qualitative score"
+        },
+        "tier_2_advanced": {
+          "keypoints": 3,
+          "weight_per_point": "16.67% of qualitative score",
+          "weight_total": "50% of qualitative score"
+        }
+      }
+    },
+    "Q3": {
+      "type": "qualitative",
+      "total_keypoints": 13,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q4": {
+      "type": "qualitative",
+      "total_keypoints": 8,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q5": {
+      "type": "qualitative",
+      "total_keypoints": 15,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q6": {
+      "type": "qualitative",
+      "total_keypoints": 10,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    }
+  }
+}

@@ -1,0 +1,681 @@
+{
+  "case_id": "019",
+  "version": "v8",
+  "source": {
+    "title": "Beta Optics",
+    "inspired_by": "McKinsey & Company",
+    "year": 2021,
+    "author": "Peter K.",
+    "reference": "Peter-K.org, Case #19",
+    "casebook_abbr": "PK21"
+  },
+  "case_type": "interviewer_driven",
+  "case_arch": {
+    "primary": "Comparison",
+    "tags": [
+      "Comparison",
+      "Investment Decision",
+      "Cost Optimization"
+    ]
+  },
+  "difficulty": "Hard",
+  "industry": "Manufacturing / Optical Products",
+  "topic": "Investment decision — new production technology",
+  "expected_duration_minutes": 20,
+  "opening_prompt": "Hi, I'd like to solve some consulting cases with you. Pls be a good interviewee to have a potential test in consulting cases. For the case problem-solving, pls do not assume any numbers or assumptions before my confirmation. I will give you the context upon request. I need you to answer the following questions for the client. Before you start, feel free to ask me 2-3 clarifying questions about the client. \n\nQ1. How would you structure your approach to analyse if the client should invest in the new production technology?\nQ2. Warby Parker, a major retailer of glasses in the U.S., is one of the Beta Optics' clients. What factors does Warby Parker consider in choosing their suppliers of prescription eyeglass lenses?\nQ3. Lower prices for lenses might trigger a lot of interest from Warby Parker and other eyeglass retailers. We hope that the new technology will help Beta Optics push their costs down to offer more appealing prices. What are the key cost items of Beta Optics?\nQ4. So, does it make economic sense to invest in this new production technology? Can you estimate the value that this new equipment can generate for Beta Optics?\n\nHere is the basic context for the client:\nBeta Optics is a U.S.-based mid-size prescription eyeglass lens manufacturer. Due to the pandemic their revenues dropped by 30% in 2020 as far fewer people got their eye exams for glass prescription and a lot of optical retailers were closed. In order to improve their economics Beta Optics is considering investing in a cutting-edge digitized production process. They reached out to you to get your advice on whether they should do it.",
+  "structure_1_client_basic_context": {
+    "company": "Beta Optics",
+    "type": "U.S.-based mid-size prescription eyeglass lens manufacturer",
+    "situation": "Due to the pandemic their revenues dropped by 30% in 2020 as far fewer people got their eye exams for glass prescription and a lot of optical retailers were closed.",
+    "action": "In order to improve their economics Beta Optics is considering investing in a cutting-edge digitized production process.",
+    "ask": "They reached out to you to get your advice on whether they should do it."
+  },
+  "structure_2_information_upon_request": {
+    "item_1": {
+      "item_id": "item_1",
+      "trigger": "Analyst asks about business model or who Beta Optics serves",
+      "core_dimensional_concept": "client business model and direct customer types",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar named 'Business Model', 'Client Profile', or 'Customer Types'",
+          "sub-bullet under client/company analysis asking who Beta Optics sells to",
+          "explicit clarifying question about B2B vs B2C or who the direct customers are"
+        ],
+        "alternative_phrasings": [
+          "B2B vs B2C",
+          "who are Beta Optics' customers",
+          "revenue model",
+          "distribution channel",
+          "who does the client sell to"
+        ]
+      },
+      "disqualifying": [
+        "Only mentions 'customer concentration risk' under the Risk pillar — a risk dimension, not a direct question about the business model itself",
+        "Only loosely states 'client's business' without touching the B2B/B2C model or specific customer types (passing reference)"
+      ],
+      "info": "Beta Optics is a B2B business and supplies for prescription glass manufacturers like Warby Parker."
+    },
+    "item_2": {
+      "item_id": "item_2",
+      "trigger": "Analyst asks about geography or market focus",
+      "core_dimensional_concept": "geographic scope of Beta Optics' operations",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar named 'Geography', 'Market', or 'Geographies served'",
+          "explicit clarifying question about domestic vs international or which countries/regions served",
+          "sub-bullet under market analysis pillar asking about geographic footprint"
+        ],
+        "alternative_phrasings": [
+          "where does Beta Optics operate",
+          "domestic or international",
+          "U.S. market only",
+          "geographic presence",
+          "which markets"
+        ]
+      },
+      "disqualifying": [
+        "Only says 'geographic concentration risk' under the Risk pillar — a risk dimension, not the geographic-coverage subject itself",
+        "Only says 'market scope' as a passing reference without explicitly touching the geography dimension"
+      ],
+      "info": "Beta Optics is focused on the U.S."
+    },
+    "item_3": {
+      "item_id": "item_3",
+      "trigger": "Analyst asks about investment objectives or financial goals",
+      "core_dimensional_concept": "Beta Optics' investment objectives and return targets",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar named 'Investment Objectives', 'Goals', or 'Financial Targets'",
+          "explicit clarifying question about ROI target, hurdle rate, or what success looks like",
+          "sub-bullet under strategic rationale asking for the desired outcome of the investment"
+        ],
+        "alternative_phrasings": [
+          "what return is expected",
+          "financial targets",
+          "what does success look like",
+          "investment goal",
+          "ROI threshold",
+          "hurdle rate"
+        ]
+      },
+      "disqualifying": [
+        "Only lists the 'capex / NPV' calculation items under the Financials pillar — this is an analysis method, not a question about the target",
+        "Only asks, in the opening clarification, 'what is the timeline' without touching the investment-goal or expected-return dimension"
+      ],
+      "info": "Beta Optics didn't share any objectives for this investment."
+    },
+    "item_4": {
+      "item_id": "item_4",
+      "trigger": "Analyst asks about total market size or industry scale",
+      "core_dimensional_concept": "total U.S. eyeglass market size by annual volume",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar named 'Market Size', 'TAM', or 'Industry Overview'",
+          "explicit clarifying question about total units sold annually or total market volume",
+          "sub-bullet under market/industry analysis asking for scale of the eyeglass market"
+        ],
+        "alternative_phrasings": [
+          "total addressable market",
+          "TAM",
+          "how big is the eyeglass market",
+          "industry annual volume",
+          "pairs sold in the U.S. annually"
+        ]
+      },
+      "disqualifying": [
+        "Only says 'market growth potential' under the Revenue Growth pillar without touching the current market size",
+        "Only says 'large market' as a passing mention without actively asking for the specific size figure (F pattern)"
+      ],
+      "info": "80M pairs of eyeglasses are sold annually in the U.S."
+    },
+    "item_5": {
+      "item_id": "item_5",
+      "trigger": "Analyst asks about Beta Optics' sales volume, revenue, or business scale",
+      "core_dimensional_concept": "Beta Optics' annual sales volume and average selling price",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar named 'Revenue Analysis', 'Financial Profile', or 'Market Share'",
+          "explicit clarifying question about how many units Beta Optics sells or what its revenue is",
+          "sub-bullet under company analysis asking for current scale of operations"
+        ],
+        "alternative_phrasings": [
+          "client revenue",
+          "Beta Optics' sales volume",
+          "how many lenses does Beta Optics sell",
+          "average price per lens",
+          "market share in volume"
+        ]
+      },
+      "disqualifying": [
+        "Only asks 'what is Beta Optics' market share' under Competitive Analysis without pointing specifically at the sales-volume or revenue figure (adjacent dimension, G pattern)",
+        "Only lists 'revenue per unit' as a calculation framework under Cost Analysis rather than actively asking for the specific figure"
+      ],
+      "cross_question_note": "This data point also appears in Q4 upon_request. May be re-released here if analyst asks again in Q4 context.",
+      "info": "Beta Optics sold 1M pair of eyeglass lenses in 2020 at an average price of $50 per pair."
+    },
+    "item_6": {
+      "item_id": "item_6",
+      "trigger": "Analyst asks about the current production process or its complexity",
+      "core_dimensional_concept": "complexity and characteristics of the conventional production process",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar named 'Current Operations', 'Existing Process', or 'Production Capabilities'",
+          "explicit clarifying question about how many stages the current process has or how it works",
+          "sub-bullet under operational analysis asking about current manufacturing steps or labor intensity"
+        ],
+        "alternative_phrasings": [
+          "how does the current process work",
+          "existing production steps",
+          "current manufacturing process",
+          "how labor-intensive is production",
+          "legacy process complexity"
+        ]
+      },
+      "disqualifying": [
+        "Only says 'operational disruption risk from transition' under the Risk pillar — a risk dimension, not the process-complexity subject itself",
+        "Only mentions 'labor costs are high' as a cost dimension without touching the process / number-of-stages (passing reference, F pattern)"
+      ],
+      "info": "The conventional lens manufacturing process has 10+ stages and is quite labor-intensive."
+    },
+    "item_7": {
+      "item_id": "item_7",
+      "trigger": "Analyst asks about what the new technology does or its capabilities",
+      "core_dimensional_concept": "new technology capabilities and how it improves the production process",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar named 'New Technology', 'Technology Capabilities', or 'Process Innovation'",
+          "explicit clarifying question about what the new technology does or how it differs from conventional",
+          "sub-bullet under technology analysis asking for automation level, digitization scope, or process improvement"
+        ],
+        "alternative_phrasings": [
+          "what does the new technology do",
+          "automation benefits",
+          "how is the new process different",
+          "digitization capabilities",
+          "technology specifications"
+        ]
+      },
+      "disqualifying": [
+        "Only says 'technology implementation risk' under the Risk pillar — a risk dimension, not the capability subject itself",
+        "Only says 'new technology investment' without touching the specific function or improvement dimension (passing reference, F pattern)"
+      ],
+      "info": "The new technology will shorten, automatize and digitize a lot of parts of lens production process."
+    }
+  },
+  "structure_3_case_questions": {
+    "Q1": {
+      "q_id": "Q1",
+      "type": "framework",
+      "question_text": "How would you structure your approach to analyse if the client should invest in the new production technology?",
+      "information_to_share_upfront": null,
+      "information_upon_request": "See structure_2 items 1–7. Release only items by semantic touch (release when the analyst structurally engages the dimension; not on a passing reference), not by mere keyword presence.",
+      "state_machine": {
+        "next_question": "Q2",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable framework answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q2": {
+      "q_id": "Q2",
+      "type": "qualitative",
+      "question_text": "Warby Parker, a major retailer of glasses in the U.S., is one of the Beta Optics' clients. What factors does Warby Parker consider in choosing their suppliers of prescription eyeglass lenses?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q3",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q3": {
+      "q_id": "Q3",
+      "type": "qualitative",
+      "question_text": "Lower prices for lenses might trigger a lot of interest from Warby Parker and other eyeglass retailers. We hope that the new technology will help Beta Optics push their costs down to offer more appealing prices. What are the key cost items of Beta Optics?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q4",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q4": {
+      "q_id": "Q4",
+      "type": "quantitative",
+      "question_text": "So, does it make economic sense to invest in this new production technology? Can you estimate the value that this new equipment can generate for Beta Optics?",
+      "information_to_share_upfront": [
+        "Appendix 1 (elements of current cost structure and cost implications of new technology — see appendix field below)",
+        "For the sake of this calculation we can assume discount rate equal 0%"
+      ],
+      "information_upon_request": [
+        {
+          "item_id": "Q4_item_1",
+          "trigger": "Analyst asks about investment cost or capex",
+          "core_dimensional_concept": "new technology capital investment (capex)",
+          "release_conditions": {
+            "structural_position": [
+              "explicit calculation question asking for initial investment amount",
+              "quantitative setup requesting capex input for NPV / payback calculation",
+              "direct question: 'How much does the new technology / equipment cost?'"
+            ],
+            "alternative_phrasings": [
+              "capital expenditure",
+              "how much does it cost",
+              "initial investment",
+              "upfront cost",
+              "equipment price"
+            ]
+          },
+          "disqualifying": [
+            "Only says 'financial risk of large investment' under the Risk pillar — a risk dimension, not a question about the specific amount",
+            "Only lists 'capex as a cost item' within the DCF framework without actively requesting the specific figure"
+          ],
+          "info": "Expected investment for new technology is $50M."
+        },
+        {
+          "item_id": "Q4_item_2",
+          "trigger": "Analyst asks about equipment lifetime or time horizon",
+          "core_dimensional_concept": "new equipment useful life and analysis time horizon",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question about how many years the equipment lasts",
+              "NPV / payback calculation setup asking for time period",
+              "direct question: 'What is the useful life of the equipment?' or 'Over how many years should I calculate?'"
+            ],
+            "alternative_phrasings": [
+              "useful life",
+              "depreciation period",
+              "how many years",
+              "time horizon",
+              "investment period"
+            ]
+          },
+          "disqualifying": [
+            "Only says 'technology obsolescence risk' under the Risk pillar — a risk dimension, not a question about the asset lifespan",
+            "Only says 'long-term investment' without touching the specific number of years (passing reference, F pattern)"
+          ],
+          "info": "Lifetime of the new equipment is 10 years."
+        },
+        {
+          "item_id": "Q4_item_3",
+          "trigger": "Analyst asks about working hours / labor hours per employee",
+          "core_dimensional_concept": "annual working hours per production line employee",
+          "release_conditions": {
+            "structural_position": [
+              "explicit calculation question asking for annual hours per FTE to compute total labor cost",
+              "quantitative formula setup: hours × hourly rate × headcount",
+              "direct question: 'How many hours per year does each employee work?'"
+            ],
+            "alternative_phrasings": [
+              "hours per employee",
+              "annual working hours",
+              "FTE hours",
+              "labor hours per year",
+              "working hours per person"
+            ]
+          },
+          "disqualifying": [
+            "Only says 'labor is a key cost driver' without requesting the number of hours (passing reference)",
+            "Only mentions '500 employees and $19/hr' without actively touching the annual-work-hours dimension"
+          ],
+          "info": "Production line employees work 2k hours per year on average."
+        },
+        {
+          "item_id": "Q4_item_4",
+          "trigger": "Analyst asks about revenue base / sales volume / scale of operations",
+          "core_dimensional_concept": "Beta Optics annual sales volume and unit price (revenue basis for cost savings calculation)",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question about sales volume to anchor cost savings calculation",
+              "quantitative setup asking for revenue or unit baseline",
+              "direct question: 'What is Beta Optics' current revenue or sales volume?'"
+            ],
+            "alternative_phrasings": [
+              "revenue baseline",
+              "how many units sold",
+              "sales volume",
+              "average selling price",
+              "top-line revenue"
+            ]
+          },
+          "disqualifying": [
+            "Only says 'Beta Optics' market share' under Market Analysis without touching the specific sales-volume / revenue figure (adjacent dimension, G pattern)",
+            "Only says 'revenue at risk from investment' under the Risk pillar"
+          ],
+          "cross_question_note": "Also in structure_2 item_5. May be re-released here if analyst asks again in Q4 context.",
+          "info": "Beta Optics sold 1M pair of eyeglass lenses in 2020 at an average price $50 per pair."
+        },
+        {
+          "item_id": "Q4_item_5",
+          "trigger": "Analyst asks about growth assumptions or future economic changes",
+          "core_dimensional_concept": "growth rate and economic assumptions for the 10-year analysis period",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question about whether to assume revenue or cost growth during the analysis period",
+              "quantitative setup asking whether to hold economics constant or model changes",
+              "direct question: 'Should I assume any growth rate?' or 'Are we assuming ceteris paribus?'"
+            ],
+            "alternative_phrasings": [
+              "growth assumption",
+              "should I assume revenue growth",
+              "ceteris paribus",
+              "constant economics",
+              "future projections",
+              "will volumes change"
+            ]
+          },
+          "disqualifying": [
+            "Only says 'macro economic risk' under the Risk pillar — a risk dimension, not a request for the calculation assumption",
+            "Only asks 'what is the industry growth rate' under Introduction rather than making a specific request about the analysis-period assumption"
+          ],
+          "info": "We can assume zero growth rate and no change in economics for the next 10 years."
+        }
+      ],
+      "appendix": {
+        "appendix_1": {
+          "title": "Elements of current cost structure and cost implications of new technology",
+          "release_rule": "Share upfront with analyst at the start of Q4",
+          "table": {
+            "variable_costs": {
+              "labor": {
+                "sub_items": {
+                  "number_of_production_line_employees": {
+                    "conventional": 500,
+                    "new_technology": "Ensures high automation level leading to 30% decrease in labor"
+                  },
+                  "average_hourly_salary_incl_benefits": {
+                    "conventional": "$19/hr",
+                    "new_technology": "Same"
+                  }
+                }
+              },
+              "raw_materials": {
+                "sub_items": {
+                  "annual_raw_material_spend": {
+                    "conventional": "$6M",
+                    "new_technology": "N/A"
+                  },
+                  "waste_pct_due_to_human_errors": {
+                    "conventional": "5%",
+                    "new_technology": "Eliminates waste"
+                  }
+                }
+              }
+            },
+            "annual_fixed_costs": {
+              "energy_consumption": {
+                "conventional": "$1M",
+                "new_technology": "More energy efficient, saving 30% of energy bills"
+              },
+              "maintenance": {
+                "conventional": "$1M",
+                "new_technology": "Requires less maintenance, reducing costs by 30%"
+              },
+              "rent": {
+                "conventional": "$1M",
+                "new_technology": "Takes 20% less space"
+              }
+            }
+          }
+        }
+      },
+      "state_machine": {
+        "next_question": null,
+        "skip_logic": false,
+        "transition_condition": "Case ends after Q4"
+      }
+    }
+  },
+  "structure_4_ground_truth": {
+    "Q1_ground_truth": {
+      "type": "framework",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_beta_optics": {
+          "keypoints": [
+            "Business model - Client groups",
+            "Business model - Offerings",
+            "Existing production process (e.g. flow, capabilities)",
+            "New technology"
+          ],
+          "subtotal": 4
+        },
+        "pillar_2_financial_analysis_of_new_tech": {
+          "keypoints": [
+            "Expected investment (capex)",
+            "Estimated ongoing expenses (opex)",
+            "Forecasted impact on revenue"
+          ],
+          "subtotal": 3
+        },
+        "pillar_3_strategic_benefits_of_new_tech": {
+          "keypoints": [
+            "New opportunities",
+            "Operational improvements",
+            "Impact on customer experience",
+            "Risks mitigation"
+          ],
+          "subtotal": 4
+        },
+        "pillar_4_potential_risks_of_new_tech": {
+          "keypoints": [
+            "Financial risks",
+            "Operational risks"
+          ],
+          "subtotal": 2
+        }
+      },
+      "total_keypoints": 13,
+      "minimum_expected": "Cover at least 2 pillars with sub-items; minimum 4 keypoints; structured MECE approach",
+      "outstanding_threshold": "All 4 pillars covered with majority of sub-items in a clearly structured issue tree"
+    },
+    "Q2_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_financial_criteria": {
+          "keypoints": [
+            "Price of the eyeglass lenses",
+            "Potential volume discounts",
+            "Shipment costs",
+            "Percentage of flawed lenses (waste)",
+            "Payment terms and options"
+          ],
+          "subtotal": 5
+        },
+        "pillar_2_strategic_criteria": {
+          "keypoints": [
+            "Ability to offer specific features (e.g. scratch resistance, UV protection, blue light protection)",
+            "Sustainability practices for brand considerations",
+            "Geographical footprint (to support offline operations)",
+            "Supplier's production capacity",
+            "Delivery time (speed)",
+            "Quality of lenses",
+            "Supplier's reputation in the market",
+            "Supplier's pool of current clients",
+            "Supplier risk diversification (in case Warby Parker doesn't want to depend on one supplier)"
+          ],
+          "new_opportunities": [
+            "Ability to offer specific features (e.g. scratch resistance, UV protection, blue light protection)",
+            "Sustainability practices for brand considerations"
+          ],
+          "operational_considerations": [
+            "Geographical footprint (to support offline operations)",
+            "Supplier's production capacity",
+            "Delivery time (speed)",
+            "Quality of lenses"
+          ],
+          "client_experience": [
+            "Supplier's reputation in the market",
+            "Supplier's pool of current clients"
+          ],
+          "risk_mitigation": [
+            "Supplier risk diversification (in case Warby Parker doesn't want to depend on one supplier)"
+          ],
+          "subtotal": 9
+        },
+        "pillar_3_risk_assessment": {
+          "keypoints": [
+            "Longer delivery time, delays",
+            "Lack of supplier's production capacity",
+            "Low quality of lenses",
+            "Lack of experience working with this supplier",
+            "Allocating too large volumes to one supplier which will give them negotiation power for future contracts"
+          ],
+          "operational_risks": [
+            "Longer delivery time, delays",
+            "Lack of supplier's production capacity",
+            "Low quality of lenses",
+            "Lack of experience working with this supplier"
+          ],
+          "financial_risks": [
+            "Allocating too large volumes to one supplier which will give them negotiation power for future contracts"
+          ],
+          "subtotal": 5
+        }
+      },
+      "total_keypoints": 19,
+      "minimum_expected": "At least 4 ideas across at least 2 pillars",
+      "outstanding_threshold": "Cover all 3 pillars with sub-categories structured clearly; 7-8 keypoints; delivered fluently on the fly"
+    },
+    "Q3_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "fixed_costs": [
+          "Rent and utilities (energy, water, etc.)",
+          "Maintenance [this is a capex-heavy business with lots of equipment]",
+          "Marketing [might be minor costs as this is a B2B business which typically relies on direct salesforce]",
+          "Overhead [central services and management]",
+          "Transportation",
+          "R&D [lenses are commoditized so the players might invest a lot in R&D to innovate and differentiate]"
+        ],
+        "variable_costs": [
+          "Labor [depends on the level of production automation]",
+          "Raw materials (e.g. glass, plastic)"
+        ]
+      },
+      "total_keypoints": 8,
+      "minimum_expected": "At least 4 cost items",
+      "outstanding_threshold": "7-8 items structured into fixed vs. variable costs, delivered fluently on the fly without taking notes"
+    },
+    "Q4_ground_truth": {
+      "type": "quantitative",
+      "quantitative_part": {
+        "correct_final_answer": "$18M net value over 10 years",
+        "accepted_values": [
+          18000000
+        ],
+        "tolerance_pct": 0.0,
+        "zero_tolerance": true,
+        "scoring_method": "Binary: correct number = full credit; incorrect = zero credit",
+        "calculation_steps": {
+          "step_1_annual_labor_cost_savings": {
+            "formula": "500 FTEs × 2,000 hrs/yr × $19/hr × 30%",
+            "result": "$5.7M"
+          },
+          "step_2_annual_waste_elimination": {
+            "formula": "$6M in raw materials × 5% eliminated waste",
+            "result": "$0.3M"
+          },
+          "step_3_annual_fixed_cost_savings": {
+            "formula": "Energy $1M×30% + Maintenance $1M×30% + Rent $1M×20%",
+            "result": "$0.3M + $0.3M + $0.2M = $0.8M"
+          },
+          "step_4_total_annual_savings": {
+            "formula": "$5.7M + $0.3M + $0.8M",
+            "result": "$6.8M"
+          },
+          "step_5_estimated_net_value": {
+            "formula": "$6.8M × 10 years − $50M of investment",
+            "result": "$18M"
+          }
+        }
+      },
+      "qualitative_part": {
+        "scoring_note": "Qualitative portion of Q4 is scored as 100% total, split into two tiers. Within each tier, use 3-level scoring per",
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "tier_1_basic": {
+          "weight_of_Q4_qualitative_total": "50%",
+          "keypoints": [
+            "If Beta Optics invests $50M in this new technology, they would capture $18M in extra value (earnings) over 10 years"
+          ],
+          "note": "Expected from every candidate. Single point worth 50% of qualitative score."
+        },
+        "tier_2_advanced": {
+          "weight_of_Q4_qualitative_total": "50%",
+          "points_available": 4,
+          "weight_per_point": "12.5% of qualitative total",
+          "keypoints": [
+            "It seems like a lucrative investment and the client should consider it",
+            "Other players might realize the potential of this new technology and implement it as well, making it a new industry standard and taking away from our competitive advantage, so Beta Optics needs to move fast",
+            "We need to stress-test a lot of our assumptions; for example, we assumed that discount rate is going to be 0% and that there will be zero growth rate",
+            "$50M in capex might be too heavy for our client to lift as their total top-line is $50M as well, so this investment might carry prohibitive financial risk"
+          ],
+          "note": "Not expected from every candidate. Each advanced point adds 12.5% to qualitative score."
+        },
+        "minimum_expected": "Correct numerical answer + Tier 1 basic contextualization (covered)",
+        "outstanding_threshold": "Correct numerical answer + Tier 1 covered + at least 2 Tier 2 advanced comments covered"
+      }
+    }
+  },
+  "state_machine_global": {
+    "case_type": "interviewer_driven",
+    "skip_logic": false,
+    "mandatory_sequence": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4"
+    ],
+    "rules": [
+      "Q1 cannot be skipped under any circumstances",
+      "Questions must proceed in linear order Q1 → Q2 → Q3 → Q4",
+      "A question may not be advanced until the current question receives a scoreable answer (1st or 2nd attempt)",
+      "If analyst pre-covers a later question's keypoints in an earlier answer, record as pre-coverage but still ask the later question in sequence",
+      "No question may be skipped even if pre-covered"
+    ]
+  },
+  "scoring_summary": {
+    "Q1": {
+      "type": "framework",
+      "total_keypoints": 13,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q2": {
+      "type": "qualitative",
+      "total_keypoints": 19,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q3": {
+      "type": "qualitative",
+      "total_keypoints": 8,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q4": {
+      "type": "quantitative",
+      "part_1_quantitative": {
+        "correct_answer": "$18M",
+        "zero_tolerance": true,
+        "scoring": "Binary: Full credit if correct; zero credit if incorrect"
+      },
+      "part_2_qualitative": {
+        "total_keypoints": 5,
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "human_review_priority": "false-partial > false-not-covered > covered",
+        "tier_1_basic": {
+          "keypoints": 1,
+          "weight": "50% of qualitative score"
+        },
+        "tier_2_advanced": {
+          "keypoints": 4,
+          "weight_per_point": "12.5% of qualitative score",
+          "weight_total": "50% of qualitative score"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,515 @@
+{
+  "case_id": "004",
+  "version": "v1",
+  "source": {
+    "title": "K-12 Teachers",
+    "inspired_by": "McKinsey & Company",
+    "year": "2023",
+    "author": "Peter K.",
+    "reference": "Peter-K.org, Case #4",
+    "casebook_abbr": "PK23"
+  },
+  "case_type": "interviewer_driven",
+  "case_type_origin": null,
+  "annotation_mode": null,
+  "case_arch": {
+    "primary": "Wild Card",
+    "tags": [
+      "Wild Card",
+      "Operational Efficiency",
+      "Revenue Growth"
+    ]
+  },
+  "difficulty": "Hard",
+  "industry": "Education / Public Sector",
+  "topic": "Wild card — K-12 teacher attrition reduction strategy for U.S. Secretary of Education",
+  "expected_duration_minutes": "15-20",
+  "opening_prompt": "Hi, I'd like to solve some consulting cases with you. Pls be a good interviewee to have a potential test in consulting cases. For the case problem-solving, pls do not assume any numbers or assumptions before my confirmation. I will give you the context upon request. I need you to answer the following questions for the client. Before you start, feel free to ask me 2-3 clarifying questions about the client.\n\nQ1: What areas would you like to explore to help the client turn things around and decrease the number of quitting K-12 teachers?\n\nQ2: What are the major reasons driving K-12 teachers to leave?\n\nQ3: Your team has led a survey of 2k K-12 teachers on the key attrition factors (Appendix 1). The inadequate compensation is the top problem. What can you suggest to address it?\n\nQ4: By how much did the number of employed education workers change in 2018-22 in the U.S.?\n\nHere is the basic context for the client:\nAround a quarter of U.S. K-12 teachers are thinking of leaving their jobs (~900k educators). 9% of teachers left the profession in 2022 (e.g. to switch to other industry) which is more than double that of comparable high-performing K-12 systems (e.g. Finland and Singapore). The nation's education talent challenges are on the top of the agenda of the U.S. Education Secretary. They have hired your team to suggest a plan on how to dramatically lower the teacher attrition rate and get the situation under control. What areas would you like to explore to help the client turn things around and decrease the number of quitting K-12 teachers?",
+  "structure_1_client_basic_context": {
+    "company": "U.S. Department of Education / U.S. Education Secretary",
+    "type": "U.S. federal government education authority",
+    "situation": "Around a quarter of U.S. K-12 teachers are thinking of leaving their jobs (~900k educators). 9% of teachers left the profession in 2022 (e.g. to switch to other industry) which is more than double that of comparable high-performing K-12 systems (e.g. Finland and Singapore). The nation's education talent challenges are on the top of the agenda of the U.S. Education Secretary.",
+    "action": "Hired a team to suggest a plan on how to dramatically lower the teacher attrition rate and get the situation under control.",
+    "ask": "Suggest a plan to dramatically lower the K-12 teacher attrition rate and decrease the number of quitting teachers."
+  },
+  "structure_2_information_upon_request": {
+    "item_1": {
+      "item_id": "item_1",
+      "trigger": "Analyst asks about or includes the total number / size of K-12 teachers in the U.S. in their framework or clarifying questions",
+      "core_dimensional_concept": "total K-12 teacher workforce size",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet under Teacher Attrition / Current Level",
+          "explicit clarifying question about how many teachers there are",
+          "hypothesis or assumption about teacher workforce scale"
+        ],
+        "alternative_phrasings": [
+          "how many K-12 teachers",
+          "total number of teachers",
+          "teacher workforce",
+          "size of teaching profession"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'attrition rate' or '9%' without asking about total headcount — attrition rate is already given upfront, total headcount is a separate dimension",
+        "Analyst mentions teachers in passing as part of general context without structurally including teacher count as an analysis dimension (F passing reference)"
+      ],
+      "info": "There were 3.5M K-12 teachers (full- and part-time) in the U.S. in 2022."
+    },
+    "item_2": {
+      "item_id": "item_2",
+      "trigger": "Analyst asks about or includes the trend / growth rate of K-12 teacher numbers over time in their framework",
+      "core_dimensional_concept": "K-12 teacher workforce trend over time",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet under Teacher Attrition / Historical Data",
+          "explicit question about teacher supply trend",
+          "hypothesis about whether teacher supply is growing or shrinking"
+        ],
+        "alternative_phrasings": [
+          "teacher supply trend",
+          "growth of teacher workforce",
+          "historical teacher numbers",
+          "teacher pipeline"
+        ]
+      },
+      "disqualifying": [
+        "Analyst only references the current attrition rate without asking about historical growth of the teacher pool (G adjacent dimension — attrition rate is not teacher workforce trend)",
+        "Analyst mentions 'pandemic impact' in passing without specifically probing teacher workforce numbers (F passing reference)"
+      ],
+      "info": "The number of K-12 teachers grew by 2% annually in 2013-19, but then declined by 5% over 2019-22 due to the pandemic-induced layoffs."
+    },
+    "item_3": {
+      "item_id": "item_3",
+      "trigger": "Analyst asks about or includes the volume of teachers quitting the profession entirely (vs. switching schools) in their framework or analysis",
+      "core_dimensional_concept": "volume of teachers leaving the profession entirely vs. switching schools",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet under Attrition breakdown / Depth of attrition",
+          "explicit question about how many teachers leave the profession entirely",
+          "hypothesis or assumption about profession-leaving vs. school-switching distinction"
+        ],
+        "alternative_phrasings": [
+          "leaving the profession",
+          "career change",
+          "leaving education entirely",
+          "profession exit vs. school switch"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions '9% attrition' without breaking down profession-leaving vs. school-switching — the 9% figure is already upfront, the breakdown is a separate dimension (G adjacent dimension)",
+        "Analyst mentions turnover without distinguishing between inter-school mobility and full profession exit (F passing reference)"
+      ],
+      "info": "2M K-12 teachers quit their jobs in 2022 (e.g. to switch to another school), out of which 315k left the profession entirely (e.g. joined another sector)."
+    },
+    "item_4": {
+      "item_id": "item_4",
+      "trigger": "Analyst asks about or includes the teacher education pipeline / supply of new teachers entering the profession in their framework",
+      "core_dimensional_concept": "teacher education pipeline and new teacher supply",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet under teacher supply / pipeline",
+          "explicit question about new teacher graduates or teacher training programs",
+          "hypothesis about whether the pipeline is adequate to replace attrition"
+        ],
+        "alternative_phrasings": [
+          "new teacher graduates",
+          "teacher training programs",
+          "teacher pipeline",
+          "teacher education completion rate",
+          "supply of new teachers"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions teacher recruitment broadly without specifically probing the education program completion trend (G adjacent dimension — retention is not the same as new supply)",
+        "Analyst mentions 'future teacher shortage' as a risk without probing current pipeline data (F passing reference)"
+      ],
+      "info": "In 2010-18 the number of people completing a teacher-education program declined by a quarter (from 220k to 160k per year)."
+    },
+    "item_5": {
+      "item_id": "item_5",
+      "trigger": "Analyst asks about or includes K-12 student population size or trend in their framework or analysis",
+      "core_dimensional_concept": "K-12 student population size and trend",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet under demand for teachers / student-to-teacher ratio",
+          "explicit question about how many K-12 students there are",
+          "hypothesis about whether demand for teachers is driven by student population growth"
+        ],
+        "alternative_phrasings": [
+          "student population",
+          "number of students",
+          "K-12 enrollment",
+          "demand for teachers",
+          "student-to-teacher ratio drivers"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'student-to-teacher ratio' as a work condition burden without asking about actual student population data (G adjacent — work conditions is not student population size)",
+        "Analyst references schools or education system broadly without specifically probing student enrollment numbers (F passing reference)"
+      ],
+      "info": "The number of K-12 students in the U.S. was flat in 2013-19 at ~51M and decreased by 2-3% during the pandemic in 2020-21."
+    }
+  },
+  "structure_3_case_questions": {
+    "Q1": {
+      "q_id": "Q1",
+      "type": "framework",
+      "question_text": "What areas would you like to explore to help the client turn things around and decrease the number of quitting K-12 teachers?",
+      "information_to_share_upfront": null,
+      "information_upon_request": "See structure_2 items 1-5. Release only items per semantic touch judgment; not by mere keyword presence.",
+      "state_machine": {
+        "next_question": "Q2",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable framework answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q2": {
+      "q_id": "Q2",
+      "type": "qualitative",
+      "question_text": "What are the major reasons driving K-12 teachers to leave?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q3",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q3": {
+      "q_id": "Q3",
+      "type": "qualitative",
+      "question_text": "Your team has led a survey of 2k K-12 teachers on the key attrition factors (Appendix 1). The inadequate compensation is the top problem. What can you suggest to address it?",
+      "information_to_share_upfront": [
+        "Appendix 1 (bar chart: Top reasons that drove U.S. K-12 teachers to leave or plan to leave, % of respondents n=2,000, 2022. Categories: Compensation 42%/48%, Expectations 31%/33%, Well-being 23%/31%, Leadership 31%/30%, Workplace flexibility 21%/26%. Orange = Left, Blue = Plan to leave.)"
+      ],
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q4",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q4": {
+      "q_id": "Q4",
+      "type": "quantitative",
+      "question_text": "By how much did the number of employed education workers change in 2018-22 in the U.S.?",
+      "information_to_share_upfront": [
+        "Appendix 2 (stacked bar chart: Average monthly separations of workers in state and local government education in the U.S., k. Data by year: 2018=161k, 2019=162k, 2020=203k, 2021=136k, 2022=166k. Each bar broken into: Quits %, Layoffs and discharges %, Other separations %.)",
+        "The number of education workers job openings almost doubled from 160k (Jan'18) to 280k (Jan'23)."
+      ],
+      "information_upon_request": [
+        {
+          "item_id": "Q4_item_1",
+          "trigger": "Analyst asks about or notes the total number of education workers hired during 2018-22",
+          "core_dimensional_concept": "total education worker hires 2018-22",
+          "release_conditions": {
+            "structural_position": [
+              "explicit clarifying question about how many workers were hired",
+              "hypothesis or assumption about hiring volumes to compute net change",
+              "attempt to set up the calculation with 'hires minus separations' logic"
+            ],
+            "alternative_phrasings": [
+              "how many were hired",
+              "new hires",
+              "hiring volume",
+              "teachers hired",
+              "inflows"
+            ]
+          },
+          "disqualifying": [
+            "Analyst sets up the separation side of the calculation only without asking about the hiring/inflow side (G adjacent — separations data is already given, hires is a separate dimension)"
+          ],
+          "info": "10M education workers were hired during 2018-22 (incl. double-counting as same teachers, for example, might have changed schools)."
+        }
+      ],
+      "appendix": {
+        "appendix_2": {
+          "title": "Average monthly separations of workers in state and local government education in the U.S., k",
+          "release_rule": "Share upfront with analyst at the start of Q4",
+          "table": {
+            "2018": {
+              "monthly_separations_k": 161
+            },
+            "2019": {
+              "monthly_separations_k": 162
+            },
+            "2020": {
+              "monthly_separations_k": 203
+            },
+            "2021": {
+              "monthly_separations_k": 136
+            },
+            "2022": {
+              "monthly_separations_k": 166
+            }
+          }
+        }
+      },
+      "state_machine": {
+        "next_question": null,
+        "skip_logic": false,
+        "transition_condition": "Case ends after Q4"
+      }
+    }
+  },
+  "structure_4_ground_truth": {
+    "Q1_ground_truth": {
+      "type": "framework",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_teacher_attrition": {
+          "keypoints": [
+            "Current level and historical data",
+            "Break-down by region/tenure/subject",
+            "Benchmarking against top K-12 systems (e.g. Finland, Singapore)"
+          ],
+          "subtotal": 3
+        },
+        "pillar_2_impact_of_teacher_turnover": {
+          "keypoints": [
+            "Changes in education level",
+            "Financial assessment",
+            "Analysis of perception/morale of teachers and students"
+          ],
+          "subtotal": 3
+        },
+        "pillar_3_attrition_drivers": {
+          "keypoints": [
+            "Career opportunities",
+            "Compensation",
+            "Workload & work-life balance",
+            "Leadership quality"
+          ],
+          "subtotal": 4
+        },
+        "pillar_4_retention_factors": {
+          "keypoints": [
+            "Community factors",
+            "Meaningful work",
+            "Non-financial perks (e.g. proximity)"
+          ],
+          "subtotal": 3
+        }
+      },
+      "total_keypoints": 13,
+      "minimum_expected": "Cover at least 2 pillars with 2+ keypoints each (e.g. Attrition drivers + Teacher attrition data)",
+      "outstanding_threshold": "Cover all 4 pillars with 3+ keypoints each"
+    },
+    "Q2_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_compensation_and_benefits": {
+          "keypoints": [
+            "Low salary and bonuses",
+            "Poor perks (e.g. health insurance, retirement plan, childcare)",
+            "Large student loan payments (for their teacher education programs)",
+            "Weak or no labor union to ensure a fair pay"
+          ],
+          "subtotal": 4
+        },
+        "pillar_2_work_conditions": {
+          "keypoints": [
+            "Unsustainable work-life balance (e.g. hefty workload, incl. high student-to-teacher ratio)",
+            "Lack of necessary equipment and materials for adequate teaching",
+            "Covid-induced burnout",
+            "Restricted teaching method flexibility",
+            "Limited work schedule flexibility",
+            "Unsafe workplace"
+          ],
+          "subtotal": 6
+        },
+        "pillar_3_development": {
+          "keypoints": [
+            "Limited career growth opportunities",
+            "No meaningful professional development",
+            "No skills transferable to other industries/roles",
+            "Lack of professional satisfaction (no meaningful results)"
+          ],
+          "subtotal": 4
+        },
+        "pillar_4_culture": {
+          "keypoints": [
+            "Poor school leadership (lack of administrative support)",
+            "Inadequate colleague support",
+            "Lack of or toxic parent-teacher-student community (e.g. low respect)",
+            "Overall feeling of being undervalued"
+          ],
+          "subtotal": 4
+        }
+      },
+      "total_keypoints": 18,
+      "minimum_expected": "Cover at least 2 pillars with 2+ keypoints each",
+      "outstanding_threshold": "Cover all 4 pillars with 3+ keypoints each"
+    },
+    "Q3_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_increase_compensation": {
+          "keypoints": [
+            "Increase salaries for specific subjects (e.g. STEM) and tenure",
+            "Consider launching pay-for-performance programs (e.g. to reward best teachers)",
+            "Increase size of classes (in case of per-student funding)",
+            "Pay for extra responsibilities taken by teachers",
+            "Offer more lucrative retirement plans"
+          ],
+          "subtotal": 5
+        },
+        "pillar_2_reduce_teachers_living_costs": {
+          "sub_pillar_a_general_costs": {
+            "keypoints": [
+              "Offer free/subsidized childcare",
+              "Offer free/reduced-price public transportation",
+              "Offer more affordable healthcare plan",
+              "Engage NGOs that provide classroom supplies for free"
+            ],
+            "subtotal": 4
+          },
+          "sub_pillar_b_professional_development_costs": {
+            "keypoints": [
+              "Introduce student loan forgiveness programs (e.g. for teaching majors)",
+              "Subsidize upskilling programs",
+              "Offer tax dedications for professional development costs"
+            ],
+            "subtotal": 3
+          },
+          "keypoints": [
+            "Offer free/subsidized childcare",
+            "Offer free/reduced-price public transportation",
+            "Offer more affordable healthcare plan",
+            "Engage NGOs that provide classroom supplies for free",
+            "Introduce student loan forgiveness programs (e.g. for teaching majors)",
+            "Subsidize upskilling programs",
+            "Offer tax dedications for professional development costs"
+          ],
+          "subtotal": 7
+        },
+        "pillar_3_administer_targeted_interventions": {
+          "keypoints": [
+            "Offer bonuses for teachers in high-need schools",
+            "Introduce cash awards for best results in high-need schools"
+          ],
+          "subtotal": 2
+        }
+      },
+      "total_keypoints": 14,
+      "minimum_expected": "Cover at least 2 pillars with 2+ keypoints each",
+      "outstanding_threshold": "Cover all 3 pillars with 4+ keypoints each including both sub-pillars of pillar_2"
+    },
+    "Q4_ground_truth": {
+      "type": "quantitative",
+      "quantitative_part": {
+        "correct_final_answer": "0 (no change; casebook solution: separations ≈ 10M, hires = 10M, net = 0). A3-Q5 note: exact separations = 9,936k; hires stated as round '10M'. Precision of hires figure does not support distinguishing 10,000k vs 9,936k — both round to 10M. Accept any answer that conveys 'no significant change / approximately zero'. Casebook canonical answer = 0.",
+        "accepted_values": [
+          0
+        ],
+        "tolerance_pct": 0.0,
+        "zero_tolerance": true,
+        "scoring_method": "Binary: correct answer (change = 0 / no change) = full credit; incorrect = zero credit",
+        "calculation_steps": {
+          "step_1_total_monthly_separations_per_year": {
+            "formula": "Sum of monthly separations 2018-2022 from Appendix 2: 161k + 162k + 203k + 136k + 166k = 828k per month (average)",
+            "result": "828k average monthly separations"
+          },
+          "step_2_total_annual_separations_2018_22": {
+            "formula": "828k × 12 months = 9,936k ≈ 10M total separations over 5 years (annualized: ~2M/year)",
+            "result": "~10M total separations"
+          },
+          "step_3_total_hires_2018_22": {
+            "formula": "Given (upon request): 10M education workers were hired during 2018-22",
+            "result": "10M total hires"
+          },
+          "step_4_net_change": {
+            "formula": "Net change = Hires - Separations = 10M - 10M = 0",
+            "result": "0 change"
+          }
+        }
+      },
+      "qualitative_part": {
+        "scoring_note": "Qualitative portion of Q4 is scored as 100% total, split into two tiers. Within each tier, use 3-level scoring per",
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "tier_1_basic": {
+          "weight_of_Q4_qualitative_total": "50%",
+          "keypoints": [
+            "The number of education workers hasn't changed since 2018 as new hired staff offsets existing attrition"
+          ],
+          "note": "Expected from every candidate. Single point worth 50% of qualitative score."
+        },
+        "tier_2_advanced": {
+          "weight_of_Q4_qualitative_total": "50%",
+          "points_available": 3,
+          "weight_per_point": "16.7% of qualitative total",
+          "keypoints": [
+            "The education worker shortage has likely become more acute over the last five years given the flat dynamic of the education worker number and almost doubled amount of education worker job openings",
+            "This zero increase might be misleading as the teacher labor markets are hyper-localized. So, the change in the teacher number might be very uneven across the country resulting in regions with high need in teachers and regions with teacher abundance",
+            "High attrition rate might be very costly due to hiring and onboarding expenses. Lower turnover will enable schools to capture cost savings and potentially channel these additional funds to increase teacher compensation which will improve retention rate even more"
+          ],
+          "note": "Not expected from every candidate. Each advanced point adds 16.7% to qualitative score."
+        },
+        "minimum_expected": "Correct numerical answer (change = 0) + Tier 1 basic contextualization (covered)",
+        "outstanding_threshold": "Correct numerical answer + Tier 1 covered + at least 2 Tier 2 advanced comments covered"
+      }
+    }
+  },
+  "state_machine_global": {
+    "case_type": "interviewer_driven",
+    "skip_logic": false,
+    "mandatory_sequence": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4"
+    ],
+    "rules": [
+      "Q1 cannot be skipped under any circumstances",
+      "Questions must proceed in linear order Q1 → Q2 → Q3 → Q4",
+      "A question may not be advanced until the current question receives a scoreable answer (1st or 2nd attempt)",
+      "If analyst pre-covers a later question's keypoints in an earlier answer, record as pre-coverage but still ask the later question in sequence",
+      "No question may be skipped even if pre-covered"
+    ]
+  },
+  "scoring_summary": {
+    "Q1": {
+      "type": "framework",
+      "total_keypoints": 13,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q2": {
+      "type": "qualitative",
+      "total_keypoints": 18,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q3": {
+      "type": "qualitative",
+      "total_keypoints": 14,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q4": {
+      "type": "quantitative",
+      "part_1_quantitative": {
+        "correct_answer": "0 (no change in employed education workers 2018-22)",
+        "zero_tolerance": true,
+        "scoring": "Binary: Full credit if correct (change = 0); zero credit if incorrect"
+      },
+      "part_2_qualitative": {
+        "total_keypoints": 4,
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "human_review_priority": "false-partial > false-not-covered > covered",
+        "tier_1_basic": {
+          "keypoints": 1,
+          "weight": "50% of qualitative score"
+        },
+        "tier_2_advanced": {
+          "keypoints": 3,
+          "weight_per_point": "16.7% of qualitative score",
+          "weight_total": "50% of qualitative score"
+        }
+      }
+    }
+  }
+}

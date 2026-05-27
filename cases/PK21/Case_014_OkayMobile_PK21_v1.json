@@ -1,0 +1,514 @@
+{
+  "case_id": "014",
+  "version": "v1",
+  "source": {
+    "title": "Okay Mobile",
+    "inspired_by": "McKinsey & Company",
+    "year": "2021",
+    "author": "Peter K.",
+    "reference": "Peter-K.org, Case #14",
+    "casebook_abbr": "PK21"
+  },
+  "case_type": "interviewer_driven",
+  "case_type_origin": null,
+  "annotation_mode": null,
+  "case_arch": {
+    "primary": "Market Entry",
+    "tags": [
+      "Market Entry",
+      "Investment Decision",
+      "Profitability"
+    ],
+    "standard_tags": [
+      "Profitability",
+      "Market Entry",
+      "Revenue Growth",
+      "Cost Optimization",
+      "Investment Decision",
+      "Merger and Acquisition",
+      "Pricing Strategy",
+      "Growth Strategy",
+      "Operational Efficiency",
+      "Due Diligence",
+      "Market Sizing",
+      "Competitive Response",
+      "Digital Transformation",
+      "Turnaround / Restructuring",
+      "Supply Chain",
+      "Comparison"
+    ]
+  },
+  "difficulty": "Medium-Hard",
+  "industry": "Telecommunications / Energy Retail",
+  "topic": "Market entry decision — Australian MVNO expanding into energy retail vertical",
+  "expected_duration_minutes": "20",
+  "opening_prompt": "Hi, I'd like to solve some consulting cases with you. Pls be a good interviewee to have a potential test in consulting cases. For the case problem-solving, pls do not assume any numbers or assumptions before my confirmation. I will give you the context upon request. I need you to answer the following questions for the client. Before you start, feel free to ask me 2-3 clarifying questions about the client.\n\nQ1. Do you think Okay Mobile should expand to this new vertical and how would you assess this decision?\nQ2. What synergies should the client anticipate between the energy vertical and their core business?\nQ3. Your manager was wondering if you could assess what profit Okay Mobile will have from its energy business one year after launch.\nQ4. What are some risks of moving to the energy plan space for our client?\n\nHere is the basic context for the client:\nOkay Mobile is an Australian provider of mobile phone plans and operates as a MVNO (Mobile Virtual Network Operator) on one of top-3 cellphone service providers in Australia - Optus. Okay Mobile enjoys a base of 1M subscribers. The company is considering expanding to energy plans and become a \"virtual\" energy retailer that has no power generation assets, but resells energy from electricity and gas providers. They hope to get $5M in profits from the energy business one year after launch. Your team is to advise them on whether it is a wise idea.",
+  "structure_1_client_basic_context": {
+    "company": "Okay Mobile",
+    "type": "Australian provider of mobile phone plans; operates as a MVNO (Mobile Virtual Network Operator) on one of top-3 cellphone service providers in Australia - Optus",
+    "situation": "Okay Mobile enjoys a base of 1M subscribers. The company is considering expanding to energy plans and become a \"virtual\" energy retailer that has no power generation assets, but resells energy from electricity and gas providers.",
+    "action": "Expanding to energy plans and becoming a virtual energy retailer",
+    "ask": "They hope to get $5M in profits from the energy business one year after launch. Your team is to advise them on whether it is a wise idea."
+  },
+  "structure_2_information_upon_request": {
+    "item_1": {
+      "item_id": "item_1",
+      "trigger": "Analyst asks about or includes 'how MVNO business model works' or 'how Okay Mobile operates its mobile business' in framework",
+      "core_dimensional_concept": "MVNO business model and wholesale mobile services",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar (e.g., 'Okay Mobile's business model' / 'Client today')",
+          "sub-bullet under client-side pillar about how the company sources services",
+          "explicit clarifying question about how Okay Mobile delivers mobile services"
+        ],
+        "alternative_phrasings": [
+          "virtual network operator",
+          "wholesale mobile services",
+          "how Okay Mobile provides phone plans",
+          "client's operating model"
+        ]
+      },
+      "disqualifying": [
+        "Only mentions 'operational complexity of MVNO model' under the Risk pillar — this is a risk dimension, not the business-model subject itself (G adjacent-dimension modifier)"
+      ],
+      "info": "MNVOs purchase wholesale mobile services from one of top-3 carriers and provide cellphone services to end users under their own brand"
+    },
+    "item_2": {
+      "item_id": "item_2",
+      "trigger": "Analyst asks about or includes 'energy market structure' or 'how energy plans work' or 'energy sourcing' in framework",
+      "core_dimensional_concept": "energy plan sourcing and market structure",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar (e.g., 'Energy retail market in Australia' / 'Target market')",
+          "sub-bullet under energy market pillar about how energy is sourced or distributed",
+          "explicit clarifying question about energy plan mechanics"
+        ],
+        "alternative_phrasings": [
+          "energy providers",
+          "electricity and gas suppliers",
+          "how energy retailing works",
+          "energy supply chain"
+        ]
+      },
+      "disqualifying": [
+        "Only mentions 'energy costs' as a cost item under the Financial pillar — this is a financial dimension, not the market-structure subject itself (F passing)"
+      ],
+      "info": "Energy plans cover electricity and gas sourced from a wide variety of providers (100+ electricity and gas companies in Australia) and depend on usage amount, state and other variables"
+    },
+    "item_3": {
+      "item_id": "item_3",
+      "trigger": "Analyst asks about or includes 'electricity customer base size' or 'gas customer base size' or 'total addressable market customers' in framework",
+      "core_dimensional_concept": "total addressable customer base for energy retail in Australia",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet about market size or TAM",
+          "sub-bullet under energy market pillar about number of potential customers",
+          "explicit clarifying question about market size in terms of customers"
+        ],
+        "alternative_phrasings": [
+          "how many electricity customers",
+          "total energy customers",
+          "market size in customers",
+          "addressable customer pool"
+        ]
+      },
+      "disqualifying": [
+        "Only mentions '1M mobile subscribers' as Okay Mobile's existing customer base — this is the company's current state, not the energy-market size (G adjacent-dimension modifier)"
+      ],
+      "info": "There are 11M electricity customers and 5M gas customers in Australia"
+    },
+    "item_4": {
+      "item_id": "item_4",
+      "trigger": "Analyst asks about or includes 'energy market size' or 'energy market value' or 'market growth rate' in framework",
+      "core_dimensional_concept": "energy retail market size and growth rate in Australia",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar (e.g., 'Market size and growth rate')",
+          "sub-bullet under energy market pillar about market value or revenue pool",
+          "explicit clarifying question about the size of the energy market in dollars"
+        ],
+        "alternative_phrasings": [
+          "market revenue",
+          "energy market value",
+          "size of electricity market",
+          "market growth"
+        ]
+      },
+      "disqualifying": [
+        "Only mentions 'electricity is expensive in Australia' as a qualitative point — this is not a structural touch on market size (F passing)"
+      ],
+      "info": "The size of electricity retailing market is $20B and the size of gas retailing market is $3-4B. Both markets grow at 1-3% annually"
+    }
+  },
+  "structure_3_case_questions": {
+    "Q1": {
+      "q_id": "Q1",
+      "type": "framework",
+      "question_text": "Do you think Okay Mobile should expand to this new vertical and how would you assess this decision?",
+      "information_to_share_upfront": null,
+      "information_upon_request": "See structure_2 items 1-4. Release only items per semantic touch judgment; not by mere keyword presence.",
+      "state_machine": {
+        "next_question": "Q2",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable framework answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q2": {
+      "q_id": "Q2",
+      "type": "qualitative",
+      "question_text": "What synergies should the client anticipate between the energy vertical and their core business?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q3",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q3": {
+      "q_id": "Q3",
+      "type": "quantitative",
+      "question_text": "Your manager was wondering if you could assess what profit Okay Mobile will have from its energy business one year after launch.",
+      "information_to_share_upfront": [
+        "We expect to have 0.2M customers by the end of 1st year (we can assume gradual increase in number of customers throughout the year)"
+      ],
+      "information_upon_request": [
+        {
+          "item_id": "Q3_item_1",
+          "trigger": "Analyst asks about average customer spend on energy or revenue per customer",
+          "core_dimensional_concept": "average annual energy spend per customer",
+          "release_conditions": {
+            "structural_position": [
+              "explicit clarifying question about average revenue per user (ARPU) for energy",
+              "sub-bullet under revenue calculation about energy spend per household",
+              "hypothesis about average customer spending on energy"
+            ],
+            "alternative_phrasings": [
+              "average spend per customer",
+              "revenue per customer",
+              "energy bill per household",
+              "average energy expenditure"
+            ]
+          },
+          "disqualifying": [
+            "Only mentions 'revenue' as a dimension of the calculation framework without specifically following up on the per-customer spend — this is a passing mention, not a structural touch (F passing)"
+          ],
+          "info": "On average Australian spends $1.3k on electricity and $700 on gas annually"
+        },
+        {
+          "item_id": "Q3_item_2",
+          "trigger": "Analyst asks about Okay Mobile's commission rate or take rate on energy sales",
+          "core_dimensional_concept": "client retail commission rate on energy plans",
+          "release_conditions": {
+            "structural_position": [
+              "explicit clarifying question about commission or margin on energy retail",
+              "sub-bullet under revenue calculation about how Okay Mobile earns from each customer",
+              "hypothesis about the margin or take rate in energy retail"
+            ],
+            "alternative_phrasings": [
+              "margin on energy sales",
+              "take rate",
+              "revenue share",
+              "commission percentage"
+            ]
+          },
+          "disqualifying": [
+            "Only mentions 'profitability' as an analysis dimension without specifically following up on the commission rate — this is a passing mention, not a structural touch (F passing)"
+          ],
+          "info": "Client's retail commission that they charge electricity and gas companies is 10%"
+        },
+        {
+          "item_id": "Q3_item_3",
+          "trigger": "Analyst asks about fixed costs of the energy business",
+          "core_dimensional_concept": "annual fixed costs of energy business",
+          "release_conditions": {
+            "structural_position": [
+              "explicit clarifying question about fixed costs or operating costs",
+              "sub-bullet under cost structure about fixed overhead for energy operations",
+              "hypothesis about the cost base for the energy vertical"
+            ],
+            "alternative_phrasings": [
+              "operating expenses",
+              "overhead costs",
+              "annual cost base",
+              "fixed overhead"
+            ]
+          },
+          "disqualifying": [
+            "Only lists 'costs' as a pillar name in the framework without specifically following up on the fixed-cost amount — this is a passing mention (F passing)"
+          ],
+          "info": "The expected fixed costs are $10M per year"
+        },
+        {
+          "item_id": "Q3_item_4",
+          "trigger": "Analyst asks about variable costs of the energy business",
+          "core_dimensional_concept": "variable costs of energy business",
+          "release_conditions": {
+            "structural_position": [
+              "explicit clarifying question about variable costs",
+              "sub-bullet under cost structure about variable costs per customer",
+              "hypothesis about variable cost structure in energy retail"
+            ],
+            "alternative_phrasings": [
+              "per-unit costs",
+              "cost per customer",
+              "marginal costs",
+              "variable operating costs"
+            ]
+          },
+          "disqualifying": [
+            "Only mentions 'cost structure' as an analysis-framework dimension without specifically following up on variable cost — this is a passing mention (F passing)"
+          ],
+          "info": "Variable costs are close to zero"
+        }
+      ],
+      "appendix": {
+        "appendix_1": {
+          "title": "Q3 Customer and Revenue Data",
+          "release_rule": "Share upfront with analyst at the start of Q3",
+          "table": {
+            "customers_by_end_of_year_1": "0.2M (gradual increase throughout year assumed)",
+            "note": "Capex (investment) isn't considered in profit calculation so the candidate shouldn't ask about it. Depreciation is negligible."
+          }
+        }
+      },
+      "state_machine": {
+        "next_question": "Q4",
+        "skip_logic": false,
+        "max_attempts": 2,
+        "scoring_on_transition": {
+          "attempt_1_correct": "Full score",
+          "attempt_2_correct": "0 score per core_principles",
+          "both_attempts_wrong": "0 score; interviewer provides correct answer before next question"
+        },
+        "transition_condition": "Case proceeds to Q4 after Q3 answer (1st or 2nd attempt) or after providing correct answer"
+      }
+    },
+    "Q4": {
+      "q_id": "Q4",
+      "type": "qualitative",
+      "question_text": "What are some risks of moving to the energy plan space for our client?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": null,
+        "skip_logic": false,
+        "transition_condition": "Case ends after Q4"
+      }
+    }
+  },
+  "structure_4_ground_truth": {
+    "Q1_ground_truth": {
+      "type": "framework",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_energy_retail_market_in_Australia": {
+          "keypoints": [
+            "Market size and growth rate",
+            "Top energy plans (e.g. market shares, differentiating points)",
+            "Average margins"
+          ],
+          "subtotal": 3
+        },
+        "pillar_2_okay_mobiles_business_model": {
+          "keypoints": [
+            "Planned target customer segments (e.g. B2C/B2B)",
+            "Range of energy services",
+            "Potential energy partners"
+          ],
+          "subtotal": 3
+        },
+        "pillar_3_financial_analysis": {
+          "keypoints": [
+            "Profitability - Forecasted revenue",
+            "Profitability - Estimated costs",
+            "Synergies",
+            "Expected investment",
+            "Investment criteria (e.g. ROI, NPV)"
+          ],
+          "subtotal": 5
+        },
+        "pillar_4_risk_assessment": {
+          "keypoints": [
+            "Market-specific",
+            "Financial",
+            "Operational"
+          ],
+          "subtotal": 3
+        }
+      },
+      "total_keypoints": 14,
+      "minimum_expected": "At least 3 of 4 pillars covered with at least 1 keypoint each",
+      "outstanding_threshold": "All 4 pillars covered with majority of keypoints (10+ out of 14)"
+    },
+    "Q2_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_revenue_synergies": {
+          "keypoints": [
+            "Cross-selling opportunity",
+            "More bundling options (various packages of cell phone services + energy bills)",
+            "Better customer experience due to \"one-stop shop\" value proposition"
+          ],
+          "subtotal": 3
+        },
+        "pillar_2_cost_synergies": {
+          "keypoints": [
+            "Shared software systems for customers (e.g. single smartphone app and online account for both services)",
+            "Marketing costs [will be limited as Okay Mobile has direct access to 1M customers]",
+            "Shared overhead (e.g. management, central services)"
+          ],
+          "subtotal": 3
+        }
+      },
+      "total_keypoints": 6,
+      "minimum_expected": "At least 2 revenue synergies and 1 cost synergy covered",
+      "outstanding_threshold": "All 6 keypoints covered across both pillars"
+    },
+    "Q3_ground_truth": {
+      "type": "quantitative",
+      "quantitative_part": {
+        "correct_final_answer": "$10M profit in year 1",
+        "accepted_values": [
+          10000000
+        ],
+        "tolerance_pct": 0.0,
+        "zero_tolerance": true,
+        "scoring_method": "Binary: correct number = full credit; incorrect = zero credit",
+        "calculation_steps": {
+          "step_1_average_customers": {
+            "formula": "Average customers throughout year = 0.2M (end of year) / 2 = 0.1M",
+            "result": "0.1M average customers"
+          },
+          "step_2_expected_revenue": {
+            "formula": "Expected revenue = ($1,300 + $700) × 0.1M × 10% = $2,000 × 0.1M × 10%",
+            "result": "$20M"
+          },
+          "step_3_expected_profit": {
+            "formula": "Expected profit = $20M revenue - $10M fixed costs",
+            "result": "$10M"
+          }
+        }
+      },
+      "qualitative_part": {
+        "scoring_note": "Qualitative portion of Q3 is scored as 100% total, split into two tiers. Within each tier, use 3-level scoring per",
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "tier_1_basic": {
+          "weight_of_Q3_qualitative_total": "50%",
+          "keypoints": [
+            "The client will earn $10M in profits one year after the launch of its energy plan business"
+          ],
+          "note": "Expected from every candidate. Single point worth 50% of qualitative score."
+        },
+        "tier_2_advanced": {
+          "weight_of_Q3_qualitative_total": "50%",
+          "points_available": 3,
+          "weight_per_point": "16.7% of qualitative total",
+          "keypoints": [
+            "0.2M clients as a 1-year goal seems ambitious and might require an aggressive marketing campaign which might hurt profits",
+            "$10M is 5% profit margin which makes sense as this is a commoditized business and price pressure should be high",
+            "$2k per year for energy costs feels a bit on the higher end, but maybe electricity and gas are expensive in Australia"
+          ],
+          "note": "Not expected from every candidate. Each advanced point adds 16.7% to qualitative score."
+        },
+        "minimum_expected": "Correct numerical answer + Tier 1 basic contextualization (covered)",
+        "outstanding_threshold": "Correct numerical answer + Tier 1 covered + at least 2 Tier 2 advanced comments covered"
+      }
+    },
+    "Q4_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_market_specific_risks": {
+          "keypoints": [
+            "Competitive response (e.g. aggressive marketing campaign or pricing war)",
+            "Market consolidation [this is a volume-driven business, so consolidation is a natural trend as companies with higher market share benefit from economies of scale and can offer lower prices]",
+            "Lots of newcomers (in case the market is attractive)"
+          ],
+          "subtotal": 3
+        },
+        "pillar_2_financial_risks": {
+          "keypoints": [
+            "Lower-than-expected revenue and market share [e.g. due to poor marketing, inadequate pricing, sub-optimal distribution]",
+            "Underestimated costs (e.g. higher IT costs, promotion discounts, larger marketing budgets)",
+            "Lack of funding"
+          ],
+          "subtotal": 3
+        },
+        "pillar_3_operational_risks": {
+          "keypoints": [
+            "Lack of expertise in customer service execution",
+            "Delays in energy contract execution",
+            "Potential lack of capacity of customer service",
+            "Cannibalization of IT resources and salesforce resources from cell phone business",
+            "Increase in operational complexity"
+          ],
+          "subtotal": 5
+        }
+      },
+      "total_keypoints": 11,
+      "minimum_expected": "At least 2 risks from at least 2 different pillars (market-specific, financial, operational)",
+      "outstanding_threshold": "At least 6 keypoints covered across all 3 pillars"
+    }
+  },
+  "state_machine_global": {
+    "case_type": "interviewer_driven",
+    "skip_logic": false,
+    "mandatory_sequence": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4"
+    ],
+    "rules": [
+      "Q1 cannot be skipped under any circumstances",
+      "Questions must proceed in linear order Q1 → Q2 → Q3 → Q4",
+      "A question may not be advanced until the current question receives a scoreable answer (1st or 2nd attempt)",
+      "If analyst pre-covers a later question's keypoints in an earlier answer, record as pre-coverage but still ask the later question in sequence",
+      "No question may be skipped even if pre-covered"
+    ]
+  },
+  "scoring_summary": {
+    "Q1": {
+      "type": "framework",
+      "total_keypoints": 14,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q2": {
+      "type": "qualitative",
+      "total_keypoints": 6,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q3": {
+      "type": "quantitative",
+      "part_1_quantitative": {
+        "correct_answer": "$10M",
+        "zero_tolerance": true,
+        "scoring": "Binary: Full credit if correct; zero credit if incorrect"
+      },
+      "part_2_qualitative": {
+        "total_keypoints": 4,
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "human_review_priority": "false-partial > false-not-covered > covered",
+        "tier_1_basic": {
+          "keypoints": 1,
+          "weight": "50% of qualitative score"
+        },
+        "tier_2_advanced": {
+          "keypoints": 3,
+          "weight_per_point": "16.7% of qualitative score",
+          "weight_total": "50% of qualitative score"
+        }
+      }
+    },
+    "Q4": {
+      "type": "qualitative",
+      "total_keypoints": 11,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    }
+  }
+}

@@ -1,0 +1,673 @@
+{
+  "case_id": "022",
+  "version": "v4",
+  "source": {
+    "title": "Fertilizer Company",
+    "inspired_by": "McKinsey & Company",
+    "year": 2020,
+    "author": "Peter K.",
+    "reference": "Peter-K.org, Case #22",
+    "casebook_abbr": "PK21"
+  },
+  "case_type": "interviewer_driven",
+  "case_type_origin": null,
+  "annotation_mode": null,
+  "case_arch": {
+    "primary": "Comparison",
+    "tags": [
+      "Comparison",
+      "Investment Decision",
+      "Cost Optimization"
+    ]
+  },
+  "difficulty": "Hard",
+  "industry": "Manufacturing / Fertilizer",
+  "topic": "Capacity expansion decision — new factory vs. existing facility upgrade",
+  "expected_duration_minutes": 20,
+  "opening_prompt": "Hi, I'd like to solve some consulting cases with you. Pls be a good interviewee to have a potential test in consulting cases. For the case problem-solving, pls do not assume any numbers or assumptions before my confirmation. I will give you the context upon request. For all quantitative calculation results, you MUST include the unit alongside the number in your final answer. Always state both the number AND its unit together (e.g., \"$110M\", \"260,000 metric tons\", \"6.7%\", \"5,000 hires\") so your answer is unambiguous. I need you to answer the following questions for the client. Before you start, feel free to ask me 2-3 clarifying questions about the client.\n\nQ1. What factors would you consider to determine which option the client should choose?\nQ2. Apart from financials, what advantages and disadvantages does each of these two options offer?\nQ3. Digging into financials, what are the client's major expenses in general?\nQ4. The production design of each option is different. What set of production lines would you choose for each project and based on that what project would you recommend?\n\nHere is the basic context for the client:\nFertilizer Company is a U.S.-based fertilizer manufacturer that produces 1.5M tons of nitrogen, phosphatic and potash fertilizer annually. They have five factories across the country that work at capacity right now. Given bullish market forecast, Fertilizer Company would like to expand their production. They are considering two options — build a new factory or expand the existing one. The CEO has reached out to you to get your advice on which option to pursue. We're in early 2020 (before the pandemic).",
+  "structure_1_client_basic_context": {
+    "company": "Fertilizer Company",
+    "type": "U.S.-based fertilizer manufacturer",
+    "situation": "Fertilizer Company produces 1.5M tons of nitrogen, phosphatic and potash fertilizer annually. They have five factories across the country that work at capacity right now. Given bullish market forecast, Fertilizer Company would like to expand their production.",
+    "action": "They are considering two options — build a new factory or expand the existing one.",
+    "ask": "The CEO has reached out to you to get your advice on which option to pursue. We're in early 2020 (before the pandemic)."
+  },
+  "structure_2_information_upon_request": {
+    "item_1": {
+      "item_id": "item_1",
+      "trigger": "Analyst asks about investment budget or planned capital expenditure for the expansion",
+      "core_dimensional_concept": "planned total investment budget for capacity expansion",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar named 'Investment', 'Capex', 'Budget', or 'Financial Investment'",
+          "explicit clarifying question about how much the client plans to spend or what the total budget is",
+          "sub-bullet under economics / financial analysis pillar asking for the investment envelope"
+        ],
+        "alternative_phrasings": [
+          "total investment",
+          "how much does the client plan to invest",
+          "capital budget",
+          "investment envelope",
+          "planned capex"
+        ]
+      },
+      "disqualifying": [
+        "Only says 'financial risk of large investment' under the Risk pillar — a risk dimension, not the same as actively asking about the investment amount",
+        "Only lists 'capex as a cost item' within the DCF framework without requesting the specific amount (passing reference, F pattern)"
+      ],
+      "info": "The client plans to invest $0.5B in capacity expansion."
+    },
+    "item_2": {
+      "item_id": "item_2",
+      "trigger": "Analyst asks about project timeline or how long the expansion will take",
+      "core_dimensional_concept": "construction and design timeline for the capacity expansion",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar named 'Timeline', 'Project Duration', or 'Time to Complete'",
+          "explicit clarifying question about how many years the project will take or when capacity comes online",
+          "sub-bullet under operational / capacity analysis asking about project lead time"
+        ],
+        "alternative_phrasings": [
+          "how long will it take",
+          "time to completion",
+          "project duration",
+          "when will capacity be available",
+          "lead time for new factory"
+        ]
+      },
+      "disqualifying": [
+        "Only says 'construction delay risk' under the Risk pillar — a risk dimension, not a direct question about the timeline itself",
+        "Only says 'long-term project' as a passing mention without actively asking about the specific number of years (F pattern)"
+      ],
+      "info": "The project will take 2 years to design and 2 years to build (either a new factory or an upgrade of the existing facility)."
+    },
+    "item_3": {
+      "item_id": "item_3",
+      "trigger": "Analyst asks about government incentives, tax benefits, or subsidies",
+      "core_dimensional_concept": "government tax incentives for the capacity expansion",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar named 'Incentives', 'Government Support', or 'Tax Benefits'",
+          "explicit clarifying question about whether there are any government subsidies or tax offsets",
+          "sub-bullet under financial analysis or strategic benefits asking about external financial support"
+        ],
+        "alternative_phrasings": [
+          "tax incentives",
+          "government subsidies",
+          "state benefits",
+          "fiscal incentives",
+          "offset from government"
+        ]
+      },
+      "disqualifying": [
+        "Only mentions 'regulatory risk' under the Risk pillar — a regulatory-risk dimension is not the same as actively asking about incentive policy",
+        "Only says 'favorable government policy' as a passing reference (F pattern)"
+      ],
+      "info": "The state governments will offer tax incentives to offset some costs as your project will create a lot of jobs."
+    },
+    "item_4": {
+      "item_id": "item_4",
+      "trigger": "Analyst asks about market demand, industry growth rate, or market size",
+      "core_dimensional_concept": "U.S. fertilizer market demand growth rate",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar named 'Market Demand', 'Industry Growth', or 'Market Dynamics'",
+          "explicit clarifying question about how fast the fertilizer market is growing or what demand looks like",
+          "sub-bullet under market analysis asking for growth rate or volume trends"
+        ],
+        "alternative_phrasings": [
+          "market growth rate",
+          "industry CAGR",
+          "demand growth",
+          "how is the market growing",
+          "annual growth of fertilizer market"
+        ]
+      },
+      "disqualifying": [
+        "Only says 'market demand risk' under the Risk pillar — a risk dimension, not an active question about the specific growth-rate figure",
+        "Only says 'growing market' as a passing mention without touching the specific growth rate (F pattern)"
+      ],
+      "info": "The U.S. demand for fertilizer has been mostly stagnant as the annual growth rate has been 1% (2016-19). (Appendix 1 — U.S. demand for fertilizer by type and by country of origin — may be shared when this item is released.)",
+      "appendix_1": {
+        "title": "Appendix 1. U.S. demand for fertilizer",
+        "release_rule": "Share upfront with analyst at the start of QN",
+        "chart_type": "stacked_bar_chart",
+        "unit": "MM metric tons",
+        "by_type_of_fertilizer": {
+          "headers": [
+            "Type",
+            "2016",
+            "2017",
+            "2018",
+            "2019"
+          ],
+          "rows": [
+            {
+              "type": "Nitrogen",
+              "2016": 14.3,
+              "2017": 14.4,
+              "2018": 14.5,
+              "2019": 14.6
+            },
+            {
+              "type": "Potash",
+              "2016": 4.6,
+              "2017": 4.7,
+              "2018": 4.8,
+              "2019": 4.8
+            },
+            {
+              "type": "Phosphate",
+              "2016": 4.9,
+              "2017": 4.9,
+              "2018": 5.0,
+              "2019": 5.0
+            },
+            {
+              "type": "Total",
+              "2016": 23.8,
+              "2017": 24.0,
+              "2018": 24.3,
+              "2019": 24.4
+            }
+          ]
+        },
+        "by_country_of_origin": {
+          "headers": [
+            "Origin",
+            "2016",
+            "2017",
+            "2018",
+            "2019"
+          ],
+          "rows": [
+            {
+              "origin": "Produced domestically",
+              "2016": 18.4,
+              "2017": 19.6,
+              "2018": 19.5,
+              "2019": 19.7
+            },
+            {
+              "origin": "Imported",
+              "2016": 5.4,
+              "2017": 4.4,
+              "2018": 4.8,
+              "2019": 4.8
+            },
+            {
+              "origin": "Total",
+              "2016": 23.8,
+              "2017": 24.0,
+              "2018": 24.3,
+              "2019": 24.4
+            }
+          ]
+        }
+      }
+    },
+    "item_5": {
+      "item_id": "item_5",
+      "trigger": "Analyst asks about competitive landscape, number of producers, or market saturation",
+      "core_dimensional_concept": "number of U.S. fertilizer production sites and competitive dynamics",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar named 'Competitive Landscape', 'Competition', or 'Market Structure'",
+          "explicit clarifying question about how many competitors or production sites exist in the U.S.",
+          "sub-bullet under market or strategy analysis asking about competitive intensity or supply side"
+        ],
+        "alternative_phrasings": [
+          "how many competitors",
+          "number of producers",
+          "competitive intensity",
+          "market saturation",
+          "supply side dynamics"
+        ]
+      },
+      "disqualifying": [
+        "Only says 'competitive risk' under the Risk pillar — a risk dimension, not an active question about the number of competitors or the market structure",
+        "Only says 'competitive market' as a passing reference without touching the specific number of producers (F pattern)"
+      ],
+      "info": "Currently there are 81 operational U.S. fertilizer production sites and this number keeps increasing. (Appendix 2 — map of operational U.S. fertilizer production facilities by type — may be shared when this item is released.)"
+    },
+    "item_6": {
+      "item_id": "item_6",
+      "trigger": "Analyst asks about financial goals, investment criteria, hurdle rate, or success metrics",
+      "core_dimensional_concept": "client's financial goals or investment success criteria",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar named 'Investment Criteria', 'Financial Goals', or 'Success Metrics'",
+          "explicit clarifying question about ROI target, payback period, or what financial success looks like",
+          "sub-bullet under financial analysis asking for the desired return or threshold"
+        ],
+        "alternative_phrasings": [
+          "financial targets",
+          "what return is expected",
+          "hurdle rate",
+          "ROI threshold",
+          "what does success look like financially"
+        ]
+      },
+      "disqualifying": [
+        "Only lists 'NPV / IRR calculation' under the Financials pillar — this is an analysis method, not a question about the target",
+        "Only says 'profitable investment' as a passing reference without actively asking about the specific target (F pattern)"
+      ],
+      "info": "No specific goals provided."
+    }
+  },
+  "structure_3_case_questions": {
+    "Q1": {
+      "q_id": "Q1",
+      "type": "framework",
+      "question_text": "What factors would you consider to determine which option the client should choose?",
+      "information_to_share_upfront": null,
+      "information_upon_request": "See structure_2 items 1–6. Release only items by semantic touch (release when the analyst structurally engages the dimension; not on a passing reference), not by mere keyword presence.",
+      "state_machine": {
+        "next_question": "Q2",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable framework answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q2": {
+      "q_id": "Q2",
+      "type": "qualitative",
+      "question_text": "Apart from financials, what advantages and disadvantages does each of these two options offer?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q3",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q3": {
+      "q_id": "Q3",
+      "type": "qualitative",
+      "question_text": "Digging into financials, what are the client's major expenses in general?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q4",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q4": {
+      "q_id": "Q4",
+      "type": "quantitative",
+      "question_text": "The production design of each option is different. What set of production lines would you choose for each project and based on that what project would you recommend?",
+      "information_to_share_upfront": [
+        "Appendix 3 (Data on production lines and project designs — see appendix field below)"
+      ],
+      "information_upon_request": [
+        {
+          "item_id": "Q4_item_1",
+          "trigger": "Analyst asks whether production lines of different types can be combined or mixed within a single project",
+          "core_dimensional_concept": "ability to mix production line types within a single project design",
+          "release_conditions": {
+            "structural_position": [
+              "explicit clarifying question about whether Type 1 and Type 2 (or Type 2 and Type 3) can be combined",
+              "quantitative setup noting it might be optimal to mix line types and asking for confirmation",
+              "direct question: 'Can we combine different types of production lines in one project?'"
+            ],
+            "alternative_phrasings": [
+              "can we mix line types",
+              "can we combine different production lines",
+              "is it possible to have both Type 1 and Type 2",
+              "mixing different lines",
+              "hybrid production line set"
+            ]
+          },
+          "disqualifying": [
+            "Only says 'operational complexity from mixed equipment' under the Risk pillar — a risk dimension, not an active question about whether mixing is allowed",
+            "Only lists the Appendix 3 data-table items without explicitly asking whether mixing is allowed (passing reference, F pattern)"
+          ],
+          "info": "It is possible to mix production lines of different types."
+        },
+        {
+          "item_id": "Q4_item_2",
+          "trigger": "Analyst asks about the target capacity or production requirements to guide line selection",
+          "core_dimensional_concept": "target annual production capacity (240k metric tons)",
+          "release_conditions": {
+            "structural_position": [
+              "explicit clarifying question about the desired production volume or capacity target",
+              "quantitative setup requesting a capacity requirement to evaluate line options",
+              "direct question: 'What annual capacity does the client need to achieve?'"
+            ],
+            "alternative_phrasings": [
+              "target capacity",
+              "required production volume",
+              "minimum capacity needed",
+              "how much production do we need",
+              "capacity requirement"
+            ]
+          },
+          "disqualifying": [
+            "Only mentions '1.5M tons current capacity' as background without actively asking about the target increment (passing reference)",
+            "Only says 'demand may not justify the capacity' under the Risk pillar — a risk dimension, not a question about the capacity target"
+          ],
+          "info": "The client would like to ensure the annual capacity of 240k metric tons."
+        },
+        {
+          "item_id": "Q4_item_3",
+          "trigger": "Analyst asks about the optimization objective or criterion to use in selecting the production line set",
+          "core_dimensional_concept": "optimization objective for production line selection (cost efficiency)",
+          "release_conditions": {
+            "structural_position": [
+              "explicit clarifying question about whether to optimize for cost, capacity, speed, or another criterion",
+              "quantitative setup asking which objective function to use for the comparison",
+              "direct question: 'Should we focus on lowest cost, maximum capacity, or another goal?'"
+            ],
+            "alternative_phrasings": [
+              "what should we optimize for",
+              "is cost the primary criterion",
+              "cost efficiency objective",
+              "minimize investment",
+              "what is the decision criterion"
+            ]
+          },
+          "disqualifying": [
+            "Only lists 'cost analysis' as a pillar name in the framework without actively asking about the optimization target (a statement, not a question, F pattern)",
+            "Only says 'we want to find the best option' without touching the specific optimization dimension (passing reference)"
+          ],
+          "info": "The client is looking for the most cost-efficient option."
+        }
+      ],
+      "appendix": {
+        "appendix_3": {
+          "title": "Data on production lines and project designs",
+          "release_rule": "Share upfront with analyst at the start of Q4",
+          "production_lines": {
+            "type_1": {
+              "production_capacity": "8.3k metric tons/month",
+              "investment_required": "$40M"
+            },
+            "type_2": {
+              "production_capacity": "5.0k metric tons/month",
+              "investment_required": "$30M"
+            },
+            "type_3": {
+              "production_capacity": "40.0k metric tons/year",
+              "investment_required": "$25M"
+            }
+          },
+          "project_designs": {
+            "new_factory": {
+              "compatible_production_lines": [
+                "Type 1",
+                "Type 2"
+              ],
+              "project_limitations": "Maximum 3 production lines of any type"
+            },
+            "expansion_of_existing_facility": {
+              "compatible_production_lines": [
+                "Type 2",
+                "Type 3"
+              ],
+              "project_limitations": "No limitation"
+            }
+          }
+        }
+      },
+      "state_machine": {
+        "next_question": null,
+        "skip_logic": false,
+        "transition_condition": "Case ends after Q4"
+      }
+    }
+  },
+  "structure_4_ground_truth": {
+    "Q1_ground_truth": {
+      "type": "framework",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_capacity_expansion_options": {
+          "keypoints": [
+            "New factory (e.g., capacity, location, timeline, capabilities)",
+            "Current facility upgrade (e.g., capacity increase, timeline, capabilities)"
+          ],
+          "subtotal": 2
+        },
+        "pillar_2_economics_of_each_option": {
+          "keypoints": [
+            "Planned capex",
+            "Investment criteria",
+            "Expected profitability — Ongoing expenses",
+            "Expected profitability — Revenue"
+          ],
+          "subtotal": 4
+        },
+        "pillar_3_strategic_benefits_of_each_option": {
+          "keypoints": [
+            "New opportunities",
+            "Operational improvements",
+            "Impact on customer experience",
+            "Risks mitigation"
+          ],
+          "subtotal": 4
+        },
+        "pillar_4_risk_assessment_of_each_option": {
+          "keypoints": [
+            "Market-specific",
+            "Financial",
+            "Operational"
+          ],
+          "subtotal": 3
+        }
+      },
+      "total_keypoints": 13,
+      "minimum_expected": "Cover at least 2 pillars with sub-items; minimum 4 keypoints; structured MECE approach explicitly comparing both options",
+      "outstanding_threshold": "All 4 pillars covered with majority of sub-items in a clearly structured issue tree that compares both options side by side"
+    },
+    "Q2_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_strategic_considerations": {
+          "keypoints": [
+            "New factory will provide access to new regions",
+            "New factory will provide access to new talent pools",
+            "Options might offer different capabilities (e.g., to produce various types and quality of fertilizer)",
+            "Options might differ based on their capacity",
+            "New factory might make quality control more challenging [it's likely more feasible to ensure quality at the same facility]",
+            "New factory will increase operational complexity — Additional management team",
+            "New factory will increase operational complexity — More challenging best practice exchange (cross-trainings)",
+            "New factory will increase operational complexity — Additional supply and distribution chains",
+            "New factory might ensure higher delivery speed to some accounts",
+            "New factory (if located in a new region) might mitigate region-specific natural disaster risks of existing facilities"
+          ],
+          "new_opportunities": [
+            "New factory will provide access to new regions",
+            "New factory will provide access to new talent pools",
+            "Options might offer different capabilities (e.g., to produce various types and quality of fertilizer)"
+          ],
+          "operational_considerations": [
+            "Options might differ based on their capacity",
+            "New factory might make quality control more challenging [it's likely more feasible to ensure quality at the same facility]",
+            "New factory will increase operational complexity — Additional management team",
+            "New factory will increase operational complexity — More challenging best practice exchange (cross-trainings)",
+            "New factory will increase operational complexity — Additional supply and distribution chains"
+          ],
+          "customer_experience": [
+            "New factory might ensure higher delivery speed to some accounts"
+          ],
+          "risk_mitigation": [
+            "New factory (if located in a new region) might mitigate region-specific natural disaster risks of existing facilities"
+          ],
+          "subtotal": 10
+        },
+        "pillar_2_risk_considerations": {
+          "keypoints": [
+            "Longer design and construction cycles",
+            "Low transportation accessibility",
+            "Potential disruption of production processes during the upgrade",
+            "Potential lack of talent in a new location"
+          ],
+          "general_risks": [
+            "Longer design and construction cycles",
+            "Low transportation accessibility",
+            "Potential disruption of production processes during the upgrade"
+          ],
+          "new_factory_specific_risks": [
+            "Potential lack of talent in a new location"
+          ],
+          "subtotal": 4
+        }
+      },
+      "total_keypoints": 14,
+      "minimum_expected": "At least 4 ideas across at least 2 pillars (both strategic and risk perspectives)",
+      "outstanding_threshold": "Cover both strategic considerations and risk considerations with sub-categories; 7-8 keypoints; delivered fluently on the fly without taking notes"
+    },
+    "Q3_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_fixed_costs": {
+          "keypoints": [
+            "Rent and utilities (energy, water, etc.)",
+            "Maintenance [this is a capex-heavy business with lots of equipment]",
+            "Marketing [might be minor costs as this is a B2B business which typically relies on direct salesforce]",
+            "Overhead [central services and management]",
+            "Transportation",
+            "R&D [might be minor, as fertilizer is likely subject to established industry standards and thus there might be little room for innovation]"
+          ],
+          "subtotal": 6
+        },
+        "pillar_2_variable_costs": {
+          "keypoints": [
+            "Labor [depends on the level of production automation]",
+            "Raw materials (e.g. nitrogen, potash)",
+            "Distribution commissions",
+            "Discounts",
+            "Import/export duties"
+          ],
+          "subtotal": 5
+        }
+      },
+      "total_keypoints": 11,
+      "minimum_expected": "At least 4 cost items",
+      "outstanding_threshold": "7-8 items structured into fixed vs. variable costs, delivered fluently on the fly without taking notes"
+    },
+    "Q4_ground_truth": {
+      "type": "quantitative",
+      "quantitative_part": {
+        "correct_final_answer": "New factory: 2 production lines of Type 1 + 1 production line of Type 2 = $110M (capacity: 260k metric tons). Expansion: 4 production lines of Type 2 = $120M (capacity: 240k metric tons). Recommendation: New factory (most cost-efficient option at $110M vs. $120M for expansion).",
+        "accepted_groups": [
+          [
+            110000000,
+            260000
+          ],
+          [
+            120000000,
+            240000
+          ]
+        ],
+        "tolerance_pct": 0.02,
+        "zero_tolerance": false,
+        "scoring_method": "Binary: correct answer (right set for each option AND correct recommendation) = full credit; incorrect = zero credit",
+        "calculation_steps": {
+          "step_1_annual_capacity_per_line_type": {
+            "formula": "Type 1: 8.3k × 12 months = ~100k metric tons/year; Type 2: 5.0k × 12 months = 60k metric tons/year; Type 3: 40k metric tons/year",
+            "result": "Type 1 ≈ 100k | Type 2 = 60k | Type 3 = 40k (metric tons/year)"
+          },
+          "step_2_new_factory_options": {
+            "formula": "Set 1: 3×Type1 = $120M, 300k ✗ over-specified but meets target; Set 2: 2×Type1 + 1×Type2 = $110M, 260k ✓; Set 3: 1×Type1 + 2×Type2 = $100M, 220k ✗ below target; Set 4: 3×Type2 = $90M, 180k ✗ below target",
+            "result": "Set 2 (2×Type1 + 1×Type2) is the only set that meets ≥240k at lowest cost = $110M"
+          },
+          "step_3_expansion_options": {
+            "formula": "Type 2 vs Type 3 efficiency: Type 2 offers 50% more capacity (60k vs 40k) but costs only 20% more ($30M vs $25M) → Type 2 is more cost-efficient. 4×Type2 = $120M, 4×60k = 240k ✓",
+            "result": "4×Type2 = $120M, 240k metric tons (optimal expansion set)"
+          },
+          "step_4_comparison_and_recommendation": {
+            "formula": "New factory (2T1+1T2): $110M, 260k capacity vs. Expansion (4T2): $120M, 240k capacity",
+            "result": "New factory is more cost-efficient by $10M → Recommend new factory with 2 Type 1 + 1 Type 2 production lines"
+          }
+        }
+      },
+      "qualitative_part": {
+        "scoring_note": "Qualitative portion of Q4 is scored as 100% total, split into two tiers. Within each tier, use 3-level scoring per",
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "tier_1_basic": {
+          "weight_of_Q4_qualitative_total": "50%",
+          "keypoints": [
+            "The client should choose to build a new factory with two production lines of Type 1 and one production line of Type 2"
+          ],
+          "note": "Expected from every candidate. Single point worth 50% of qualitative score."
+        },
+        "tier_2_advanced": {
+          "weight_of_Q4_qualitative_total": "50%",
+          "points_available": 4,
+          "weight_per_point": "12.5% of qualitative total",
+          "keypoints": [
+            "Selected option also offers additional capacity of 20k metric tons to provide the company with extra room for potential growth in long-term",
+            "The final decision should consider non-financial advantages and disadvantages covered earlier in this case (see question 2)",
+            "Having two types of equipment increases operational complexity as the client will need to have two sets of spare parts and technicians, train operators to work on both production lines, etc.",
+            "Different production lines might require different maintenance costs that might affect the economics and thus the final decision"
+          ],
+          "note": "Not expected from every candidate. Each advanced point adds 12.5% to qualitative score."
+        },
+        "minimum_expected": "Correct identification of optimal set for each option + correct recommendation (new factory) + Tier 1 basic contextualization (covered)",
+        "outstanding_threshold": "Correct answer + Tier 1 covered + at least 2 Tier 2 advanced comments covered"
+      }
+    }
+  },
+  "state_machine_global": {
+    "case_type": "interviewer_driven",
+    "skip_logic": false,
+    "mandatory_sequence": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4"
+    ],
+    "rules": [
+      "Q1 cannot be skipped under any circumstances",
+      "Questions must proceed in linear order Q1 → Q2 → Q3 → Q4",
+      "A question may not be advanced until the current question receives a scoreable answer (1st or 2nd attempt)",
+      "If analyst pre-covers a later question's keypoints in an earlier answer, record as pre-coverage but still ask the later question in sequence",
+      "No question may be skipped even if pre-covered"
+    ]
+  },
+  "scoring_summary": {
+    "Q1": {
+      "type": "framework",
+      "total_keypoints": 13,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q2": {
+      "type": "qualitative",
+      "total_keypoints": 14,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q3": {
+      "type": "qualitative",
+      "total_keypoints": 11,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q4": {
+      "type": "quantitative",
+      "part_1_quantitative": {
+        "correct_answer": "New factory (2×Type1 + 1×Type2 = $110M); Expansion (4×Type2 = $120M); Recommendation: New factory",
+        "zero_tolerance": false,
+        "scoring": "Binary: Full credit if correct set for each option AND correct recommendation; zero credit if incorrect"
+      },
+      "part_2_qualitative": {
+        "total_keypoints": 5,
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "human_review_priority": "false-partial > false-not-covered > covered",
+        "tier_1_basic": {
+          "keypoints": 1,
+          "weight": "50% of qualitative score"
+        },
+        "tier_2_advanced": {
+          "keypoints": 4,
+          "weight_per_point": "12.5% of qualitative score",
+          "weight_total": "50% of qualitative score"
+        }
+      }
+    }
+  }
+}

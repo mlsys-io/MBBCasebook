@@ -1,0 +1,532 @@
+{
+  "case_id": "012",
+  "version": "v1",
+  "source": {
+    "title": "JobJedi AI",
+    "inspired_by": "McKinsey & Company",
+    "year": "2023",
+    "author": "Peter K.",
+    "reference": "Peter-K.org, Case #12",
+    "casebook_abbr": "PK23"
+  },
+  "case_type": "interviewer_driven",
+  "case_type_origin": null,
+  "annotation_mode": null,
+  "case_arch": {
+    "primary": "Impact of Trend",
+    "tags": [
+      "Impact of Trend",
+      "Digital Transformation",
+      "Growth Strategy"
+    ],
+    "standard_tags": [
+      "Profitability",
+      "Market Entry",
+      "Revenue Growth",
+      "Cost Optimization",
+      "Investment Decision",
+      "Merger and Acquisition",
+      "Pricing Strategy",
+      "Growth Strategy",
+      "Operational Efficiency",
+      "Due Diligence",
+      "Market Sizing",
+      "Competitive Response",
+      "Digital Transformation",
+      "Turnaround / Restructuring",
+      "Supply Chain",
+      "Comparison"
+    ]
+  },
+  "difficulty": "Hard",
+  "industry": "Technology / Online Job Recruitment",
+  "topic": "Impact of trend — assess how rapid AI development will affect a Philippines job board's business, workforce, and product strategy over five years",
+  "expected_duration_minutes": "15-20",
+  "opening_prompt": "Hi, I'd like to solve some consulting cases with you. Pls be a good interviewee to have a potential test in consulting cases. For the case problem-solving, pls do not assume any numbers or assumptions before my confirmation. I will give you the context upon request. I need you to answer the following questions for the client. Before you start, feel free to ask me 2-3 clarifying questions about the client.\n\nQ1: What factors would you consider in assessing how rapid development of AI technologies is going to affect JobJedi's business over the next five years?\n\nQ2: What implications will explosive growth of AI likely have for JobJedi's workforce over the next five years?\n\nQ3: What will be the overall change in the headcount at JobJedi as a result of the rapid development of AI?\n\nQ4: Based on the initial assessment (see Appendix 2 and 3), the competition has already started adopting new AI-enabled services. What AI-powered offerings can JobJedi build?\n\nHere is the basic context for the client:\nOur client, JobJedi, is a major job board in the Philippines that began operating in 2019 and has experienced rapid growth. Currently, the platform has over 700,000 registered job seekers and features more than 73,000 job postings from over 100 companies. Despite its success, the investors of JobJedi recognize that the job board industry is on the cusp of significant changes due to the rapid development of artificial intelligence and technologies, such as ChatGPT. They have enlisted the aid of your firm to help JobJedi assess how AI will impact their business over the next five years.",
+  "structure_1_client_basic_context": {
+    "company": "JobJedi",
+    "type": "Major job board in the Philippines",
+    "situation": "JobJedi began operating in 2019 and has experienced rapid growth. Currently, the platform has over 700,000 registered job seekers and features more than 73,000 job postings from over 100 companies. The job board industry is on the cusp of significant changes due to the rapid development of artificial intelligence and technologies, such as ChatGPT.",
+    "action": "The investors of JobJedi have enlisted the aid of the firm to help JobJedi assess how AI will impact their business over the next five years.",
+    "ask": "Assess how AI will impact JobJedi's business over the next five years."
+  },
+  "structure_2_information_upon_request": {
+    "item_1": {
+      "item_id": "item_1",
+      "trigger": "Analyst asks about or includes 'geographic scope' or 'where JobJedi operates' in framework or clarifying questions",
+      "core_dimensional_concept": "JobJedi geographic market scope",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet referencing geography or market scope",
+          "explicit clarifying question about where JobJedi operates or its market footprint",
+          "sub-bullet under client overview or competitive landscape pillar",
+          "hypothesis-driven assumption about multi-country presence"
+        ],
+        "alternative_phrasings": [
+          "market coverage",
+          "geographic footprint",
+          "countries of operation",
+          "regional presence"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'Philippines market' only as passing context in a risk discussion without probing where JobJedi operates — this is a F passing reference, not a structural touch on geographic scope"
+      ],
+      "info": "JobJedi operates only in the Philippines."
+    },
+    "item_2": {
+      "item_id": "item_2",
+      "trigger": "Analyst asks about or includes 'competitive landscape' or 'competitive environment' in framework or clarifying questions",
+      "core_dimensional_concept": "competitive landscape of Philippines job boards",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar named 'competitive landscape' or 'competition'",
+          "sub-bullet under market or industry analysis pillar referencing competitors",
+          "explicit clarifying question about how many or which competitors exist",
+          "hypothesis-driven assumption about market consolidation or competition intensity"
+        ],
+        "alternative_phrasings": [
+          "number of competitors",
+          "market players",
+          "industry rivalry",
+          "competitor analysis"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'competition' only in passing as a risk factor (e.g. 'we face competitive pressure') without structurally addressing the competitive landscape as a dimension — this is a F passing reference"
+      ],
+      "info": "The competitive landscape of job boards in the Philippines is crowded."
+    },
+    "item_3": {
+      "item_id": "item_3",
+      "trigger": "Analyst asks about or includes 'market size' or 'addressable market' or 'labor market' in framework or clarifying questions",
+      "core_dimensional_concept": "Philippines labor market size and unemployment rate",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet referencing market size or addressable population",
+          "explicit clarifying question about the size of the Philippines labor market",
+          "sub-bullet under market opportunity or growth potential pillar",
+          "hypothesis-driven assumption about how large the market is"
+        ],
+        "alternative_phrasings": [
+          "total addressable market",
+          "market opportunity",
+          "working population",
+          "labor force size"
+        ]
+      },
+      "disqualifying": [
+        "Mentions 'Philippines' as a passing reference about the business context without structurally asking about market sizing — G adjacent dimension: merely naming the country is not a structural touch on market size"
+      ],
+      "info": "The Philippines' population is 117M and unemployment rate is ~5% (2023)."
+    },
+    "item_4": {
+      "item_id": "item_4",
+      "trigger": "Analyst asks about or includes 'AI-enabled services' or 'AI adoption by competitors' or 'what competitors are doing with AI' in framework",
+      "core_dimensional_concept": "AI value-add services already adopted by job board competitors",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet referencing competitor AI adoption or AI-enabled offerings",
+          "explicit clarifying question about what AI services competitors already offer",
+          "sub-bullet under competitive landscape or technology adoption pillar",
+          "hypothesis about competitors having AI chatbots or screening tools"
+        ],
+        "alternative_phrasings": [
+          "AI capabilities of competitors",
+          "AI tools adopted by job boards",
+          "competitor AI features",
+          "AI screening tools in market"
+        ]
+      },
+      "disqualifying": [
+        "Mentions 'AI competition' generically without specifically probing what AI capabilities competitors have adopted — a G adjacent dimension: naming AI competition broadly does not touch the specific AI-services dimension"
+      ],
+      "info": "Some job boards have started offering AI-enabled value-add services like chatbots to screen candidates, artificial voice calls for reference-checking, etc."
+    },
+    "item_5": {
+      "item_id": "item_5",
+      "trigger": "Analyst asks about or includes 'AI impact on jobs' or 'job automation risk' or 'labor market disruption' in framework",
+      "core_dimensional_concept": "AI automation potential and new job creation dynamics",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet referencing AI automation of tasks or job displacement",
+          "explicit clarifying question about how much AI will automate vs create jobs",
+          "sub-bullet under workforce impact or macro trend analysis pillar",
+          "hypothesis-driven assumption about percentage of tasks that can be automated"
+        ],
+        "alternative_phrasings": [
+          "job displacement",
+          "automation risk",
+          "new job creation",
+          "task automation percentage"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'AI will change jobs' in passing without structurally framing automation potential as an analytical dimension — this is a F passing reference"
+      ],
+      "info": "AI has potential to automate a lot of jobs but it can also create new jobs. 25% of current work tasks could be automated by AI in the U.S. and Europe."
+    },
+    "item_6": {
+      "item_id": "item_6",
+      "trigger": "Analyst asks about or includes 'AI investment trends' or 'AI technology growth trajectory' or 'pace of AI advancement' in framework",
+      "core_dimensional_concept": "AI technology investment trajectory and major tech backing",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet referencing pace of AI technology advancement or investment levels",
+          "explicit clarifying question about AI funding or technology trajectory",
+          "sub-bullet under macro trend or technology landscape pillar",
+          "hypothesis about AI growth acceleration due to big-tech investment"
+        ],
+        "alternative_phrasings": [
+          "AI investment scale",
+          "pace of AI development",
+          "big-tech AI spending",
+          "technology adoption curve"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'AI is growing fast' without structurally addressing the investment trajectory or magnitude — this is a F passing mention that does not constitute a structural touch on AI investment dynamics"
+      ],
+      "info": "Backed by big-tech, AI will keep its explosive growth (in 2023 Microsoft invested $10B in ChatGPT maker OpenAI; Google released ChatGPT rival AI 'Bard'; etc.)."
+    }
+  },
+  "structure_3_case_questions": {
+    "Q1": {
+      "q_id": "Q1",
+      "type": "framework",
+      "question_text": "What factors would you consider in assessing how rapid development of AI technologies is going to affect JobJedi's business over the next five years?",
+      "information_to_share_upfront": null,
+      "information_upon_request": "See structure_2 items 1–6. Release only items per semantic touch judgment; not by mere keyword presence.",
+      "state_machine": {
+        "next_question": "Q2",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable framework answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q2": {
+      "q_id": "Q2",
+      "type": "qualitative",
+      "question_text": "What implications will explosive growth of AI likely have for JobJedi's workforce over the next five years?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q3",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q3": {
+      "q_id": "Q3",
+      "type": "quantitative",
+      "question_text": "What will be the overall change in the headcount at JobJedi as a result of the rapid development of AI?",
+      "information_to_share_upfront": [
+        "Appendix 1: Estimated headcount changes"
+      ],
+      "information_upon_request": null,
+      "appendix": {
+        "appendix_1": {
+          "title": "Estimated headcount changes",
+          "release_rule": "Share upfront with analyst at the start of Q3",
+          "table": {
+            "customer_facing_roles": {
+              "Salespeople": {
+                "current_headcount_FTEs": 20,
+                "AI_driven_headcount_change": "+30%"
+              },
+              "Account managers": {
+                "current_headcount_FTEs": 10,
+                "AI_driven_headcount_change": "-10%"
+              }
+            },
+            "headquarters": {
+              "Marketing": {
+                "current_headcount_FTEs": 20,
+                "AI_driven_headcount_change": "-15%"
+              },
+              "Software engineers": {
+                "current_headcount_FTEs": 15,
+                "AI_driven_headcount_change": "+40%"
+              },
+              "Product managers": {
+                "current_headcount_FTEs": 5,
+                "AI_driven_headcount_change": "+100%"
+              },
+              "HR": {
+                "current_headcount_FTEs": 15,
+                "AI_driven_headcount_change": "-20%"
+              },
+              "Accounting and Finance": {
+                "current_headcount_FTEs": 10,
+                "AI_driven_headcount_change": "-10%"
+              }
+            },
+            "other_functions": {
+              "Other functions": {
+                "current_headcount_FTEs": 25,
+                "AI_driven_headcount_change": null
+              }
+            },
+            "total_headcount": {
+              "Total Headcount": {
+                "current_headcount_FTEs": 120,
+                "AI_driven_headcount_change": null
+              }
+            }
+          }
+        }
+      },
+      "state_machine": {
+        "next_question": "Q4",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable quantitative answer (correct number confirmed, or 2nd attempt completed)",
+        "max_attempts": 2,
+        "scoring_on_transition": {
+          "attempt_1_correct": "Full score",
+          "attempt_2_correct": "0 score per core_principles",
+          "both_attempts_wrong": "0 score; interviewer provides correct answer (+9 FTEs) before next question"
+        }
+      }
+    },
+    "Q4": {
+      "q_id": "Q4",
+      "type": "qualitative",
+      "question_text": "Based on the initial assessment (see Appendix 2 and 3), the competition has already started adopting new AI-enabled services. What AI-powered offerings can JobJedi build?",
+      "information_to_share_upfront": [
+        "Appendix 2: Job boards in the Philippines",
+        "Appendix 3: Size of job boards in the Philippines"
+      ],
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": null,
+        "skip_logic": false,
+        "transition_condition": "Case ends after Q4"
+      }
+    }
+  },
+  "structure_4_ground_truth": {
+    "Q1_ground_truth": {
+      "type": "framework",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_change_in_competition": {
+          "keypoints": [
+            "Newcomers with AI-enabled offerings",
+            "Legacy players with enhanced AI capabilities",
+            "Trends in AI-enforced competencies"
+          ],
+          "subtotal": 3
+        },
+        "pillar_2_impact_on_business_model": {
+          "keypoints": [
+            "Product innovation - New value-add services",
+            "Product innovation - Upgraded existing offerings",
+            "Marketing strategy (e.g. new messages around matching quality, speed, personalization)"
+          ],
+          "subtotal": 3
+        },
+        "pillar_3_adjustments_to_operational_model": {
+          "keypoints": [
+            "New talent requirements (e.g. higher-skilled, new roles)",
+            "Shift in processes (e.g. towards less labor intensive)",
+            "New hard- and software systems"
+          ],
+          "subtotal": 3
+        }
+      },
+      "total_keypoints": 9,
+      "minimum_expected": "At least 2 of 3 pillars covered with at least 1 keypoint each; minimum 4 keypoints total covered",
+      "outstanding_threshold": "All 3 pillars covered; at least 7 of 9 keypoints covered"
+    },
+    "Q2_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_downsize": {
+          "keypoints": [
+            "Account managers [with AI-driven streamlined operations account managers will increase their capacity and thus be able to support more employers]",
+            "Marketing function [today ChatGPT already does copywriting, basic analytics and market research; in 5 years AI will likely perfect execution of these tasks]",
+            "Central services [AI will likely automate basic tasks of accounting, finance, and HR]"
+          ],
+          "subtotal": 3
+        },
+        "pillar_2_hire": {
+          "keypoints": [
+            "Software engineers [e.g. in AI and machine learning]",
+            "Salespeople [inevitable expansion of AI-enabled offerings and intensified competition will likely require more aggressive sales]",
+            "Product managers for new AI-enabled services",
+            "Data analysts [new offerings will increase number of touch points for job seekers and employers with JobJedi and thus generate a lot of additional data to analyze]"
+          ],
+          "subtotal": 4
+        },
+        "pillar_3_upskill": {
+          "keypoints": [
+            "Existing salespeople and account managers [educate them on new AI-enabled offerings and how AI works high-level]",
+            "Current software engineers [in case they'll need to cooperate with AI engineers]"
+          ],
+          "subtotal": 2
+        }
+      },
+      "total_keypoints": 9,
+      "minimum_expected": "At least 2 of 3 pillars (Downsize / Hire / Upskill) covered with at least 1 keypoint each; minimum 4 keypoints total covered",
+      "outstanding_threshold": "All 3 pillars covered; at least 7 of 9 keypoints covered"
+    },
+    "Q3_ground_truth": {
+      "type": "quantitative",
+      "quantitative_part": {
+        "correct_final_answer": "+9 FTEs (JobJedi should expect an increase in their headcount by 9 FTEs)",
+        "accepted_values": [
+          9
+        ],
+        "tolerance_pct": 0.0,
+        "zero_tolerance": true,
+        "scoring_method": "Binary: correct number (+9 FTEs increase) = full credit; incorrect = zero credit",
+        "calculation_steps": {
+          "step_1_salespeople": {
+            "formula": "20 FTEs × 30% = +6",
+            "result": "+6"
+          },
+          "step_2_account_managers": {
+            "formula": "10 FTEs × (-10%) = -1",
+            "result": "-1"
+          },
+          "step_3_marketing": {
+            "formula": "20 FTEs × (-15%) = -3",
+            "result": "-3"
+          },
+          "step_4_software_engineers": {
+            "formula": "15 FTEs × 40% = +6",
+            "result": "+6"
+          },
+          "step_5_product_managers": {
+            "formula": "5 FTEs × 100% = +5",
+            "result": "+5"
+          },
+          "step_6_HR": {
+            "formula": "15 FTEs × (-20%) = -3",
+            "result": "-3"
+          },
+          "step_7_accounting_and_finance": {
+            "formula": "10 FTEs × (-10%) = -1",
+            "result": "-1"
+          },
+          "step_8_total_change": {
+            "formula": "6 + (-1) + (-3) + 6 + 5 + (-3) + (-1)",
+            "result": "+9 FTEs"
+          }
+        }
+      },
+      "qualitative_part": {
+        "scoring_note": "Qualitative portion of Q3 is scored as 100% total, split into two tiers. Within each tier, use 3-level scoring per",
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "tier_1_basic": {
+          "weight_of_Q3_qualitative_total": "50%",
+          "keypoints": [
+            "The rapid AI development will bring some structural change to JobJedi resulting in its growth by 9 FTEs"
+          ],
+          "note": "Expected from every candidate. Single point worth 50% of qualitative score."
+        },
+        "tier_2_advanced": {
+          "weight_of_Q3_qualitative_total": "50%",
+          "points_available": 3,
+          "weight_per_point": "~16.7% of qualitative total",
+          "keypoints": [
+            "I'd imagine that over the next five years JobJedi might expand geographically and in scale, as well as add new verticals (e.g. recruiting services, HR software) which will inevitably affect the composition and size of its headcount",
+            "I'd think that not only JobJedi's headcount will grow, but also the staff composition will shift towards more expensive high-skilled employees across different functions as AI will take care of a lot of lower quality tasks. So, we should expect a jump in the HR expenses",
+            "Given JobJedi plans to double their PM staff, the company is going to materially expand their product portfolio with new value-add AI-driven services, which makes sense as it'll allow JobJedi to differentiate in this very commoditized market"
+          ],
+          "note": "Not expected from every candidate. Each advanced point adds ~16.7% to qualitative score."
+        },
+        "minimum_expected": "Correct numerical answer (+9 FTEs) + Tier 1 basic contextualization (covered)",
+        "outstanding_threshold": "Correct numerical answer + Tier 1 covered + at least 2 Tier 2 advanced comments covered"
+      }
+    },
+    "Q4_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_services_for_employers": {
+          "keypoints": [
+            "More accurate screening and candidate filtering (to better match job requirements)",
+            "Chatbots to schedule interviews, conduct assessments, and answer questions about jobs",
+            "Artificial voice calls for reference-checking",
+            "Job description improvement (e.g. less biased language, more clear messaging)",
+            "Advanced analytics (e.g. likelihood of job applications based on salary, requirement, etc.)"
+          ],
+          "subtotal": 5
+        },
+        "pillar_2_services_for_job_seekers": {
+          "keypoints": [
+            "Higher quality job search (better match with candidates' profiles)",
+            "More efficient job alerts",
+            "Cover letter preparation",
+            "Resume improvements (incl. automatic changes to match new jobs)",
+            "Advanced analytics (e.g. likelihood of interview invite)"
+          ],
+          "subtotal": 5
+        }
+      },
+      "total_keypoints": 10,
+      "minimum_expected": "At least 1 pillar (employers or job seekers) covered with at least 2 keypoints; minimum 3 keypoints total",
+      "outstanding_threshold": "Both pillars covered; at least 7 of 10 keypoints covered"
+    }
+  },
+  "state_machine_global": {
+    "case_type": "interviewer_driven",
+    "skip_logic": false,
+    "mandatory_sequence": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4"
+    ],
+    "rules": [
+      "Q1 cannot be skipped under any circumstances",
+      "Questions must proceed in linear order Q1 → Q2 → Q3 → Q4",
+      "A question may not be advanced until the current question receives a scoreable answer (1st or 2nd attempt)",
+      "If analyst pre-covers a later question's keypoints in an earlier answer, record as pre-coverage but still ask the later question in sequence",
+      "No question may be skipped even if pre-covered"
+    ]
+  },
+  "scoring_summary": {
+    "Q1": {
+      "type": "framework",
+      "total_keypoints": 9,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q2": {
+      "type": "qualitative",
+      "total_keypoints": 9,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q3": {
+      "type": "quantitative",
+      "part_1_quantitative": {
+        "correct_answer": "+9 FTEs",
+        "zero_tolerance": true,
+        "scoring": "Binary: Full credit if correct (+9 FTEs); zero credit if incorrect"
+      },
+      "part_2_qualitative": {
+        "total_keypoints": 4,
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "human_review_priority": "false-partial > false-not-covered > covered",
+        "tier_1_basic": {
+          "keypoints": 1,
+          "weight": "50% of qualitative score"
+        },
+        "tier_2_advanced": {
+          "keypoints": 3,
+          "weight_per_point": "~16.7% of qualitative score",
+          "weight_total": "50% of qualitative score"
+        }
+      }
+    },
+    "Q4": {
+      "type": "qualitative",
+      "total_keypoints": 10,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    }
+  }
+}

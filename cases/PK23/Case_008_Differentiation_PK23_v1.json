@@ -1,0 +1,565 @@
+{
+  "case_id": "008",
+  "version": "v1",
+  "source": {
+    "title": "Differentiation",
+    "inspired_by": "McKinsey & Company",
+    "year": "2022",
+    "author": "Peter K.",
+    "reference": "Peter-K.org, Case #8",
+    "casebook_abbr": "PK23"
+  },
+  "case_type": "interviewer_driven",
+  "case_type_origin": null,
+  "annotation_mode": null,
+  "case_arch": {
+    "primary": "Growth Strategy",
+    "tags": [
+      "Growth Strategy",
+      "Competitive Response"
+    ],
+    "standard_tags": [
+      "Profitability",
+      "Market Entry",
+      "Revenue Growth",
+      "Cost Optimization",
+      "Investment Decision",
+      "Merger and Acquisition",
+      "Pricing Strategy",
+      "Growth Strategy",
+      "Operational Efficiency",
+      "Due Diligence",
+      "Market Sizing",
+      "Competitive Response",
+      "Digital Transformation",
+      "Turnaround / Restructuring",
+      "Supply Chain",
+      "Comparison"
+    ]
+  },
+  "difficulty": "Hard",
+  "industry": "Consumer Goods / Athletic Footwear",
+  "topic": "Differentiation strategy for a sneaker brand facing commoditization pressure, followed by brand flagship platform expansion",
+  "expected_duration_minutes": 20,
+  "opening_prompt": "Hi, I'd like to solve some consulting cases with you. Pls be a good interviewee to have a potential test in consulting cases. For the case problem-solving, pls do not assume any numbers or assumptions before my confirmation. I will give you the context upon request. I need you to answer the following questions for the client. Before you start, feel free to ask me 2-3 clarifying questions about the client.\n\nQ1: What areas do you plan to explore to develop a differentiation strategy for New Equilibrium if pricing is off the table?\n\nQ2: After stage 1 of the project, New Equilibrium considers converting their online store into a brand flagship platform to expand their core offering and establish a direct connection with consumers. What new products/services can they offer at the platform?\n\nQ3: If New Equilibrium decides to proceed and launch a brand flagship platform, what key success metrics should they consider?\n\nQ4: Once New Equilibrium launches a flagship platform, they'd like to boost their marketing and invest in collaboration models, public endorsers, ambassadors, as well as ads and promotions. What revenue from the platform should the client expect in two years?\n\nHere is the basic context for the client:\nOur client is a privately-held Boston-based sport shoe company New Equilibrium with $6B in sales. New Equilibrium is a beloved brand among sneakerheads, and it also gains traction among the general consumers. With fierce competition from Nike, Puma, and other players, New Equilibrium is rapidly becoming a commoditized, generic brand of sneakers. They have asked your team to put together an aggressive strategy to reinforce the differentiation of the company without changing their pricing strategy. What factors do you want to consider to help the client?",
+  "structure_1_client_basic_context": {
+    "company": "New Equilibrium",
+    "type": "Privately-held Boston-based sport shoe company",
+    "situation": "New Equilibrium is a beloved brand among sneakerheads, and it also gains traction among the general consumers. With fierce competition from Nike, Puma, and other players, New Equilibrium is rapidly becoming a commoditized, generic brand of sneakers.",
+    "action": "Put together an aggressive strategy to reinforce the differentiation of the company without changing their pricing strategy.",
+    "ask": "What factors do you want to consider to help the client?"
+  },
+  "structure_2_information_upon_request": {
+    "item_1": {
+      "item_id": "item_1",
+      "trigger": "Analyst asks about or includes 'distribution channels' or 'how the company sells / reaches customers' in their framework",
+      "core_dimensional_concept": "New Equilibrium sales and distribution channels",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar (e.g., 'Distribution channels' / 'Go-to-market')",
+          "sub-bullet under market or channel pillar",
+          "explicit clarifying question about where New Equilibrium sells",
+          "hypothesis about channel mix (e.g., 'I assume mainly through retail stores')"
+        ],
+        "alternative_phrasings": [
+          "channel strategy",
+          "how they sell",
+          "retail footprint",
+          "direct-to-consumer",
+          "where customers can buy"
+        ]
+      },
+      "disqualifying": [
+        "Only says 'competitive landscape' without specifically mentioning channel structure — merely a generic reference to competition, not a touch on the distribution-channel subject itself (G adjacent-dimension modifier)",
+        "Only mentions 'channel conflict risk' under the Risk pillar — merely a risk dimension, not the channel subject itself (F passing mention)"
+      ],
+      "info": "New Equilibrium sells their sneakers through an offline chain of sport shoe stores, own online store and a network of offline and online distributors."
+    },
+    "item_2": {
+      "item_id": "item_2",
+      "trigger": "Analyst asks about or includes 'online revenue share' or 'e-commerce contribution' in framework or clarifying questions",
+      "core_dimensional_concept": "online store revenue contribution",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar or sub-bullet about digital / online channel",
+          "explicit question about how much revenue comes from online",
+          "hypothesis about online share (e.g., 'I'd assume online is a small portion')"
+        ],
+        "alternative_phrasings": [
+          "e-commerce share",
+          "digital sales",
+          "online revenue percentage",
+          "direct online sales"
+        ]
+      },
+      "disqualifying": [
+        "Only loosely mentions 'online presence' as a strategic direction rather than asking for the specific share value — a direction, not a data request (F passing mention)",
+        "Only mentions 'online marketing' under the Brand and marketing pillar — does not touch the distribution / revenue dimension (G adjacent-dimension modifier)"
+      ],
+      "info": "New Equilibrium's online store generates 5% of the company's revenue."
+    },
+    "item_3": {
+      "item_id": "item_3",
+      "trigger": "Analyst asks about or includes 'geographic footprint' or 'international expansion' in framework",
+      "core_dimensional_concept": "geographic scope and international expansion plans",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar (e.g., 'Geographic expansion' / 'Distribution footprint')",
+          "sub-bullet under distribution or market pillar",
+          "explicit clarifying question about where New Equilibrium operates",
+          "hypothesis about geography (e.g., 'Should we consider international markets?')"
+        ],
+        "alternative_phrasings": [
+          "geographic coverage",
+          "international markets",
+          "expansion markets",
+          "where they operate",
+          "global footprint"
+        ]
+      },
+      "disqualifying": [
+        "Only lists 'offline channels' under the Distribution channels pillar without touching the geography dimension — a channel type is not geography (G adjacent-dimension modifier)",
+        "Only loosely mentions 'market expansion strategy' without asking about geographic scope — no specific request directed at international/geography (F passing)"
+      ],
+      "info": "New Equilibrium operates only in the U.S. and doesn't plan to go internationally."
+    },
+    "item_4": {
+      "item_id": "item_4",
+      "trigger": "Analyst asks about or includes 'marketing strategy', 'influencer marketing', or 'ambassador strategy' in framework",
+      "core_dimensional_concept": "current marketing strategy and ambassador/influencer approach",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar (e.g., 'Brand and marketing' / 'Marketing strategy')",
+          "sub-bullet under brand or marketing pillar",
+          "explicit clarifying question about what marketing New Equilibrium currently does",
+          "hypothesis about influencer strategy (e.g., 'Are they using brand ambassadors?')"
+        ],
+        "alternative_phrasings": [
+          "brand marketing",
+          "advertising approach",
+          "sponsorships",
+          "influencer strategy",
+          "celebrity endorsement",
+          "marketing channels"
+        ]
+      },
+      "disqualifying": [
+        "Only mentions 'brand perception' under the Brand pillar without engaging the marketing-tactics dimension — brand perception is an outcome, not the strategy itself (G adjacent-dimension modifier)",
+        "Only mentions 'marketing budget' as a framework dimension without asking what specifically will be done — the budget dimension is not the tactics dimension (F passing)"
+      ],
+      "info": "New Equilibrium doesn't have any specific goals for this project. New Equilibrium uses traditional marketing like sponsorships, TV ads, marketing events, but they stay away from ambassadors and key cultural tastemakers as competitors' influencer strategies brought mixed results in the past."
+    }
+  },
+  "structure_3_case_questions": {
+    "Q1": {
+      "q_id": "Q1",
+      "type": "framework",
+      "question_text": "What areas do you plan to explore to develop a differentiation strategy for New Equilibrium if pricing is off the table?",
+      "information_to_share_upfront": null,
+      "information_upon_request": "See structure_2 items 1-4. Release only items per semantic touch judgment; not by mere keyword presence.",
+      "state_machine": {
+        "next_question": "Q2",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable framework answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q2": {
+      "q_id": "Q2",
+      "type": "qualitative",
+      "question_text": "After stage 1 of the project, New Equilibrium considers converting their online store into a brand flagship platform to expand their core offering and establish a direct connection with consumers. What new products/services can they offer at the platform?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q3",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q3": {
+      "q_id": "Q3",
+      "type": "qualitative",
+      "question_text": "If New Equilibrium decides to proceed and launch a brand flagship platform, what key success metrics should they consider?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q4",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q4": {
+      "q_id": "Q4",
+      "type": "quantitative",
+      "question_text": "Once New Equilibrium launches a flagship platform, they'd like to boost their marketing and invest in collaboration models, public endorsers, ambassadors, as well as ads and promotions. What revenue from the platform should the client expect in two years?",
+      "information_to_share_upfront": [
+        "New Equilibrium's online store generates 5% of the company's revenue"
+      ],
+      "information_upon_request": [
+        {
+          "item_id": "Q4_item_1",
+          "trigger": "Analyst asks about the current selling price of sneakers or unit economics",
+          "core_dimensional_concept": "average selling price per pair of sneakers",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question about average price or unit price",
+              "framework component about price or revenue per unit",
+              "hypothesis about selling price (e.g., 'If each pair is about $X...')"
+            ],
+            "alternative_phrasings": [
+              "price per unit",
+              "average ticket",
+              "unit selling price",
+              "price per pair"
+            ]
+          },
+          "disqualifying": [
+            "Only mentions 'pricing strategy is off the table' at the strategic level — this is a background constraint, not a request for unit-price data (F passing mention)"
+          ],
+          "info": "Each pair of sneakers is sold at $150 on average."
+        },
+        {
+          "item_id": "Q4_item_2",
+          "trigger": "Analyst asks about expected volume growth or unit sales increase through the platform",
+          "core_dimensional_concept": "expected volume growth multiplier for platform",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question about volume growth or sales multiplier",
+              "framework component about units sold or demand increase",
+              "hypothesis about volume growth (e.g., 'I'd assume volume doubles...')"
+            ],
+            "alternative_phrasings": [
+              "volume increase",
+              "sales growth",
+              "how many more units",
+              "demand multiplier",
+              "growth factor"
+            ]
+          },
+          "disqualifying": [
+            "Only mentions 'volume' as a variable name in the Revenue calculation without asking for the specific growth rate — listing a variable is not requesting specific data (F passing)"
+          ],
+          "info": "We expect the volume sold through the platform to quadruple in two years."
+        },
+        {
+          "item_id": "Q4_item_3",
+          "trigger": "Analyst asks about the impact of aggressive marketing on average selling price",
+          "core_dimensional_concept": "price reduction due to aggressive marketing",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question about price changes or discounts from marketing",
+              "framework component about pricing impact of promotions",
+              "hypothesis about price adjustment (e.g., 'Marketing might lower price...')"
+            ],
+            "alternative_phrasings": [
+              "price discount",
+              "average price decrease",
+              "price reduction from promotions",
+              "impact on pricing"
+            ]
+          },
+          "disqualifying": [
+            "Only mentions 'marketing spend' or 'promotion budget' in the framework — this is a cost dimension, not the price-impact dimension (G adjacent-dimension modifier)"
+          ],
+          "info": "Due to aggressive marketing, the average price per pair of sneakers is expected to decrease by 10%."
+        }
+      ],
+      "appendix": {
+        "appendix_1": {
+          "title": "Q4 Math Exercise Data",
+          "release_rule": "Share upfront with analyst: 5% online revenue share already in information_to_share_upfront. Release price ($150), volume multiplier (4x), and price decrease (-10%) upon request per Q4_item_1, Q4_item_2, Q4_item_3.",
+          "table": {
+            "current_revenue": "$6B total company revenue",
+            "online_store_share": "5% of company revenue",
+            "current_online_revenue": "$300M (= $6B × 5%)",
+            "average_price_per_pair": "$150",
+            "current_volume_online": "2M pairs (= $300M ÷ $150)",
+            "volume_growth_multiplier": "4x in two years",
+            "price_decrease_due_to_marketing": "-10% (new avg price = $135)",
+            "new_expected_revenue": "$1.08B (= 2M × 4 × $135)"
+          }
+        }
+      },
+      "state_machine": {
+        "next_question": null,
+        "skip_logic": false,
+        "transition_condition": "Case ends after Q4"
+      }
+    }
+  },
+  "structure_4_ground_truth": {
+    "Q1_ground_truth": {
+      "type": "framework",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_shoe_portfolio": {
+          "keypoints": [
+            "Breadth (# lines, types)",
+            "Depth (# SKUs per line)",
+            "Quality and unique features",
+            "Innovation cycle"
+          ],
+          "subtotal": 4
+        },
+        "pillar_2_customer_experience": {
+          "keypoints": [
+            "Key customer segments",
+            "Customer satisfaction",
+            "Major pain points",
+            "Typical purchasing decision making criteria"
+          ],
+          "subtotal": 4
+        },
+        "pillar_3_brand_and_marketing": {
+          "keypoints": [
+            "Brand awareness among different customer groups",
+            "Brand perception",
+            "Brand loyalty",
+            "Marketing strategy (e.g. channels, key messages)"
+          ],
+          "subtotal": 4
+        },
+        "pillar_4_distribution_channels": {
+          "keypoints": [
+            "Online and offline channels",
+            "Geographical footprint",
+            "Capacity and product availability per channel"
+          ],
+          "subtotal": 3
+        }
+      },
+      "total_keypoints": 15,
+      "minimum_expected": "Cover at least 3 out of 4 pillars with meaningful sub-dimensions",
+      "outstanding_threshold": "Cover all 4 pillars with most sub-dimensions; demonstrate insight about differentiation levers"
+    },
+    "Q2_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_brand_shop": {
+          "keypoints": [
+            "New shoe designs (incl. exclusive to online purchases)",
+            "New apparel",
+            "Sport accessories",
+            "Brand merchandise"
+          ],
+          "subtotal": 4
+        },
+        "pillar_2_self_led_practice": {
+          "keypoints": [
+            "Running app",
+            "Training app",
+            "Hiking app"
+          ],
+          "subtotal": 3
+        },
+        "pillar_3_coaching": {
+          "keypoints": [
+            "Guided group runs and workouts",
+            "Training, nutrition and wellness advice from professional trainers",
+            "Individual 1-on-1 training"
+          ],
+          "subtotal": 3
+        },
+        "pillar_4_community": {
+          "keypoints": [
+            "Networking tools to connect with fellow sport enthusiasts",
+            "Local social events",
+            "Work-out groups",
+            "Q&As with crowd-sourced answers"
+          ],
+          "subtotal": 4
+        }
+      },
+      "total_keypoints": 14,
+      "minimum_expected": "Cover at least 3 out of 4 product/service categories with at least 2 specific items each",
+      "outstanding_threshold": "Cover all 4 categories with most specific items; show understanding of community/experience differentiation"
+    },
+    "Q3_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_new_equilibrium": {
+          "aggregated_metrics": {
+            "sub_keypoints": [
+              "Overall traffic (# unique leads)",
+              "# page views",
+              "Conversion rates (e.g. to product page, purchase)",
+              "# purchases",
+              "Revenue generated"
+            ],
+            "subtotal": 5
+          },
+          "customer_data": {
+            "sub_keypoints": [
+              "# unique customers (who purchased products)",
+              "Visit/purchase frequency",
+              "Time spent per visit",
+              "Life-time value"
+            ],
+            "subtotal": 4
+          },
+          "keypoints": [
+            "Overall traffic (# unique leads)",
+            "# page views",
+            "Conversion rates (e.g. to product page, purchase)",
+            "# purchases",
+            "Revenue generated",
+            "# unique customers (who purchased products)",
+            "Visit/purchase frequency",
+            "Time spent per visit",
+            "Life-time value"
+          ],
+          "subtotal": 9
+        },
+        "pillar_2_customers": {
+          "customer_satisfaction": {
+            "sub_keypoints": [
+              "Overall customer satisfaction or NPS",
+              "Willingness to recommend to a friend",
+              "Rankings of apps and products"
+            ],
+            "subtotal": 3
+          },
+          "social_activities": {
+            "sub_keypoints": [
+              "# followers, comments, likes, reactions, etc.",
+              "# participants at the company's events",
+              "Amount of crowd-sourced content (e.g. answers to questions)"
+            ],
+            "subtotal": 3
+          },
+          "keypoints": [
+            "Overall customer satisfaction or NPS",
+            "Willingness to recommend to a friend",
+            "Rankings of apps and products",
+            "# followers, comments, likes, reactions, etc.",
+            "# participants at the company's events",
+            "Amount of crowd-sourced content (e.g. answers to questions)"
+          ],
+          "subtotal": 6
+        },
+        "pillar_3_third_party_vendors": {
+          "keypoints": [
+            "Revenue for 3rd party vendors (e.g. trainers, workout tracker apps)",
+            "# customers",
+            "Average purchase per customer",
+            "Retention rate"
+          ],
+          "subtotal": 4
+        }
+      },
+      "total_keypoints": 19,
+      "minimum_expected": "Cover metrics for at least 2 out of 3 stakeholder categories (New Equilibrium / Customers / 3rd party vendors) with specific metrics",
+      "outstanding_threshold": "Cover all 3 stakeholder categories with most specific metrics; demonstrate understanding of multi-sided platform economics"
+    },
+    "Q4_ground_truth": {
+      "type": "quantitative",
+      "quantitative_part": {
+        "correct_final_answer": "$1.08B",
+        "accepted_values": [
+          1080000000
+        ],
+        "tolerance_pct": 0.0,
+        "zero_tolerance": true,
+        "scoring_method": "Binary: correct number = full credit; incorrect = zero credit",
+        "calculation_steps": {
+          "step_1_current_volume": {
+            "formula": "Current online revenue ÷ average price = ($6B × 5%) ÷ $150 = $300M ÷ $150",
+            "result": "2M pairs sold through online store currently"
+          },
+          "step_2_new_average_price": {
+            "formula": "Current average price × (1 - 10% decrease) = $150 × 0.9",
+            "result": "$135 new average selling price"
+          },
+          "step_3_new_expected_revenue": {
+            "formula": "Current volume × 4x growth × new price = 2M × 4 × $135",
+            "result": "$1.08B"
+          }
+        }
+      },
+      "qualitative_part": {
+        "scoring_note": "Qualitative portion of Q4 is scored as 100% total, split into two tiers. Within each tier, use 3-level scoring per",
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "tier_1_basic": {
+          "weight_of_Q4_qualitative_total": "50%",
+          "keypoints": [
+            "Based on our assumptions, the revenue is going to more than triple from $300M to $1.08B in two years"
+          ],
+          "note": "Expected from every candidate. Single point worth 50% of qualitative score."
+        },
+        "tier_2_advanced": {
+          "weight_of_Q4_qualitative_total": "50%",
+          "points_available": 3,
+          "weight_per_point": "16.7% of qualitative total",
+          "keypoints": [
+            "The development of a brand flagship platform seems like a large-scale and time-demanding project that might take up to several years. By that time a lot of assumptions might become less reasonable",
+            "Given pandemic-induced spike in online shopping and large marketing resources that New Equilibrium can put behind this project, quadrupling volume sounds ambitious but feasible",
+            "With such promising revenue jump, we should expect other big-name sport shoe brands to launch their own brand flagship platforms, so we need to move fast to benefit from this competitive advantage before fast-followers catch up with us"
+          ],
+          "note": "Not expected from every candidate. Each advanced point adds 16.7% to qualitative score."
+        },
+        "minimum_expected": "Correct numerical answer + Tier 1 basic contextualization (covered)",
+        "outstanding_threshold": "Correct numerical answer + Tier 1 covered + at least 2 Tier 2 advanced comments covered"
+      }
+    }
+  },
+  "state_machine_global": {
+    "case_type": "interviewer_driven",
+    "skip_logic": false,
+    "mandatory_sequence": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4"
+    ],
+    "rules": [
+      "Q1 cannot be skipped under any circumstances",
+      "Questions must proceed in linear order Q1 → Q2 → Q3 → Q4",
+      "A question may not be advanced until the current question receives a scoreable answer (1st or 2nd attempt)",
+      "If analyst pre-covers a later question's keypoints in an earlier answer, record as pre-coverage but still ask the later question in sequence",
+      "No question may be skipped even if pre-covered"
+    ]
+  },
+  "scoring_summary": {
+    "Q1": {
+      "type": "framework",
+      "total_keypoints": 15,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q2": {
+      "type": "qualitative",
+      "total_keypoints": 14,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q3": {
+      "type": "qualitative",
+      "total_keypoints": 19,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q4": {
+      "type": "quantitative",
+      "part_1_quantitative": {
+        "correct_answer": "$1.08B",
+        "zero_tolerance": true,
+        "scoring": "Binary: Full credit if correct; zero credit if incorrect"
+      },
+      "part_2_qualitative": {
+        "total_keypoints": 4,
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "human_review_priority": "false-partial > false-not-covered > covered",
+        "tier_1_basic": {
+          "keypoints": 1,
+          "weight": "50% of qualitative score"
+        },
+        "tier_2_advanced": {
+          "keypoints": 3,
+          "weight_per_point": "16.7% of qualitative score",
+          "weight_total": "50% of qualitative score"
+        }
+      }
+    }
+  }
+}

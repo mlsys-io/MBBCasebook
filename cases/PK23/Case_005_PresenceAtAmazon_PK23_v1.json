@@ -1,0 +1,609 @@
+{
+  "case_id": "005",
+  "version": "v1",
+  "source": {
+    "title": "Presence at Amazon",
+    "inspired_by": "McKinsey & Company",
+    "year": "2022",
+    "author": "Peter K.",
+    "reference": "Peter-K.org, Case #5",
+    "casebook_abbr": "PK23"
+  },
+  "case_type": "interviewer_driven",
+  "case_type_origin": null,
+  "annotation_mode": null,
+  "case_arch": {
+    "primary": "Growth Strategy",
+    "tags": [
+      "Growth Strategy",
+      "Market Entry",
+      "Revenue Growth"
+    ],
+    "standard_tags": [
+      "Profitability",
+      "Market Entry",
+      "Revenue Growth",
+      "Cost Optimization",
+      "Investment Decision",
+      "Merger and Acquisition",
+      "Pricing Strategy",
+      "Growth Strategy",
+      "Operational Efficiency",
+      "Due Diligence",
+      "Market Sizing",
+      "Competitive Response",
+      "Digital Transformation",
+      "Turnaround / Restructuring",
+      "Supply Chain",
+      "Comparison"
+    ]
+  },
+  "difficulty": "Hard",
+  "industry": "Consumer Products / Pet Supplies / E-commerce",
+  "topic": "Growth strategy — how to strengthen a premium dog toy brand's presence on Amazon",
+  "expected_duration_minutes": 20,
+  "opening_prompt": "Hi, I'd like to solve some consulting cases with you. Pls be a good interviewee to have a potential test in consulting cases. For the case problem-solving, pls do not assume any numbers or assumptions before my confirmation. I will give you the context upon request. I need you to answer the following questions for the client. Before you start, feel free to ask me 2-3 clarifying questions about the client.\n\nQ1. What factors would you consider to strengthen PPP's presence at Amazon?\n\nQ2. As part of the pilot, the team would like to upgrade product images, infographics, compelling titles, and reviews for a best-selling PPP's product RopeBiter. By how much will it increase its annual sales?\n\nQ3. A quick benchmarking analysis revealed that PPP gets far fewer reviews than its peers at Amazon. What can PPP do in order to increase the number of reviews?\n\nQ4. Some high-end pet supply brands aren't present at Amazon at all (e.g. The Foggy Dog, Kanine, Tuft & Paw) which seems like a thought through strategy. What downsides might Amazon presence have for PPP?\n\nHere is the basic context for the client:\nPaw Pet Products (PPP) is a U.S. major premium dog toy manufacturer with $50M in revenue (2022). With over 300 items, they offer dog toys — from squeak to tug ropes — for all breeds and sizes. As part of their positioning strategy PPP would like to strengthen their presence at Amazon, a large distribution channel and an important marketing platform for them. The CEO has invited you to look into this and design a strategy on how to boost PPP's presence at Amazon.",
+  "structure_1_client_basic_context": {
+    "company": "Paw Pet Products (PPP)",
+    "type": "U.S. major premium dog toy manufacturer",
+    "situation": "PPP has $50M in revenue (2022). With over 300 items, they offer dog toys — from squeak to tug ropes — for all breeds and sizes. PPP sells through offline and online channels, including Amazon. PPP would like to strengthen their presence at Amazon, a large distribution channel and an important marketing platform for them.",
+    "action": "The CEO has invited the consulting team to look into this and design a strategy on how to boost PPP's presence at Amazon.",
+    "ask": "What factors would you consider to strengthen PPP's presence at Amazon?"
+  },
+  "structure_2_information_upon_request": {
+    "item_1": {
+      "item_id": "item_1",
+      "trigger": "Analyst asks about Amazon's scale, reach, or market dominance as a platform",
+      "core_dimensional_concept": "Amazon platform scale and market dominance",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar (e.g., 'Amazon as a platform' / 'Market context')",
+          "sub-bullet under Presence at Amazon or Brand and marketing pillar",
+          "explicit clarifying question about Amazon's market position",
+          "hypothesis-driven assumption about Amazon's importance"
+        ],
+        "alternative_phrasings": [
+          "Amazon's market share",
+          "e-commerce platform dominance",
+          "Amazon's reach",
+          "platform traffic",
+          "consumer shopping behavior on Amazon"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'Amazon' only in passing when referencing distribution channels generically — Amazon is merely named as one channel without exploring its scale as a dimension (F passing mention)",
+        "Analyst mentions 'e-commerce' as a broad category without probing Amazon specifically (G adjacent dimension)"
+      ],
+      "info": "Amazon is the most visited e-commerce platform in the U.S., with ~3B visits a month, 200M global Amazon Prime members, and ~$400B in revenue/year"
+    },
+    "item_2": {
+      "item_id": "item_2",
+      "trigger": "Analyst asks about how consumers start their product search or shopping journey",
+      "core_dimensional_concept": "consumer product search behavior on Amazon",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar (e.g., 'Customer journey' / 'Consumer behavior')",
+          "sub-bullet under Customer experience pillar",
+          "explicit question about where consumers search for products",
+          "hypothesis about Amazon as a discovery channel"
+        ],
+        "alternative_phrasings": [
+          "where do customers search for products",
+          "consumer discovery journey",
+          "product search starting point",
+          "shopping funnel entry point"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'SEO' or 'search' only in the context of optimizing product rankings on Amazon without asking about broader consumer search behavior (G adjacent — SEO is a tactic, not the consumer search behavior dimension)",
+        "Analyst references 'customer journey' as a pillar name without specifically probing where consumers start searching (F passing — pillar name alone without probing the dimension)"
+      ],
+      "info": "Two-thirds of U.S. consumers start their product search on Amazon"
+    },
+    "item_3": {
+      "item_id": "item_3",
+      "trigger": "Analyst asks about PPP's current sales channels or distribution setup",
+      "core_dimensional_concept": "PPP's current distribution channels and Amazon position",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar (e.g., 'Current channel mix' / 'Distribution')",
+          "sub-bullet under Presence at Amazon pillar exploring current state",
+          "explicit question about how PPP currently sells its products",
+          "hypothesis-driven assumption about PPP's channel strategy"
+        ],
+        "alternative_phrasings": [
+          "current sales channels",
+          "offline vs online split",
+          "where does PPP sell today",
+          "channel mix",
+          "distribution strategy"
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'distribution' only as a cost item (e.g., 'distribution costs') without probing the actual channel structure (G adjacent — cost dimension not channel structure)",
+        "Analyst only references Amazon as a channel without asking whether PPP also sells offline (F passing — acknowledges Amazon without probing the full channel picture)"
+      ],
+      "info": "PPP sells through offline and online channels, incl. Amazon"
+    },
+    "item_4": {
+      "item_id": "item_4",
+      "trigger": "Analyst asks about PPP's international expansion plans or geographic focus",
+      "core_dimensional_concept": "PPP's geographic focus and international expansion plans",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar (e.g., 'Geographic scope' / 'International expansion')",
+          "sub-bullet under Presence at Amazon pillar on geographic strategy",
+          "explicit clarifying question about whether PPP plans to expand internationally",
+          "hypothesis about growth via international markets"
+        ],
+        "alternative_phrasings": [
+          "international markets",
+          "geographic expansion",
+          "global strategy",
+          "U.S. vs international focus",
+          "expansion beyond U.S."
+        ]
+      },
+      "disqualifying": [
+        "Analyst mentions 'global' only when referencing Amazon's global reach (item_1) without specifically probing PPP's own geographic plans (G adjacent — Amazon's global scale is a different dimension)",
+        "Analyst references 'market entry' in the context of entering new product categories rather than geographies (G adjacent — product expansion vs geographic expansion)"
+      ],
+      "info": "PPP doesn't plan to go internationally and would like to focus on the U.S."
+    },
+    "item_5": {
+      "item_id": "item_5",
+      "trigger": "Analyst asks about the current state of PPP's product pages or Amazon presence quality",
+      "core_dimensional_concept": "current state of PPP's Amazon product pages and brand presence",
+      "release_conditions": {
+        "structural_position": [
+          "framework pillar (e.g., 'Current Amazon presence' / 'Product page quality')",
+          "sub-bullet under Presence at Amazon or Product pillar on current state assessment",
+          "explicit question about PPP's existing product pages on Amazon",
+          "hypothesis about whether PPP has an optimized Amazon presence"
+        ],
+        "alternative_phrasings": [
+          "PPP's Amazon store",
+          "product page quality",
+          "Amazon brand page",
+          "current rankings",
+          "product listing quality"
+        ]
+      },
+      "disqualifying": [
+        "Analyst only asks about 'rankings/reviews' as a metric to track without probing the overall state of PPP's Amazon presence (F passing — mentioning reviews as a KPI without exploring the broader underdevelopment)",
+        "Analyst mentions 'brand presence' only in the context of brand awareness generally rather than specifically on Amazon (G adjacent — brand awareness dimension vs Amazon-specific presence)"
+      ],
+      "info": "PPP doesn't have their own page/store at amazon.com, their product pages aren't that developed, and their rankings aren't the highest in comparison with other dog toy brands"
+    }
+  },
+  "structure_3_case_questions": {
+    "Q1": {
+      "q_id": "Q1",
+      "type": "framework",
+      "question_text": "What factors would you consider to strengthen PPP's presence at Amazon?",
+      "information_to_share_upfront": null,
+      "information_upon_request": "See structure_2 items 1-5. Release only items per semantic touch judgment; not by mere keyword presence.",
+      "state_machine": {
+        "next_question": "Q2",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable framework answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q2": {
+      "q_id": "Q2",
+      "type": "quantitative",
+      "question_text": "As part of the pilot, the team would like to upgrade product images, infographics, compelling titles, and reviews for a best-selling PPP's product RopeBiter. By how much will it increase its annual sales?",
+      "information_to_share_upfront": [
+        "Appendix 1: RopeBiter's monthly sales funnel at Amazon, 2021"
+      ],
+      "information_upon_request": [
+        {
+          "item_id": "Q2_item_1",
+          "trigger": "Analyst asks about the expected conversion rate improvement to PPP's RopeBiter page",
+          "core_dimensional_concept": "conversion rate improvement from dog toy pages to RopeBiter page",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question about conversion rate from general dog toy page visitors to RopeBiter page",
+              "step in calculation framework asking for the new funnel entry rate",
+              "hypothesis about how the pilot will change top-of-funnel conversion"
+            ],
+            "alternative_phrasings": [
+              "click-through rate",
+              "rate from dog toy page to product page",
+              "how many visitors will land on RopeBiter page",
+              "top-of-funnel conversion"
+            ]
+          },
+          "disqualifying": [
+            "Analyst asks about conversion to purchase (bottom-of-funnel) rather than conversion to the RopeBiter page (top-of-funnel) — these are two different conversion steps in the funnel (G adjacent — wrong step in funnel)"
+          ],
+          "info": "The conversion rate to PPP's RopeBiter page is expected to grow from 5% to 7%"
+        },
+        {
+          "item_id": "Q2_item_2",
+          "trigger": "Analyst asks about the expected conversion rate from RopeBiter page visitors to purchases",
+          "core_dimensional_concept": "conversion rate from RopeBiter page visitors to purchases",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question about purchase conversion rate from product page visitors",
+              "step in calculation asking for purchase probability given page visit",
+              "hypothesis about how improved content will boost purchase conversion"
+            ],
+            "alternative_phrasings": [
+              "purchase conversion rate",
+              "how many visitors actually buy",
+              "conversion from product page to purchase",
+              "bottom-of-funnel conversion"
+            ]
+          },
+          "disqualifying": [
+            "Analyst asks about conversion from dog toy pages to RopeBiter page (top-of-funnel, covered by Q2_item_1) rather than from RopeBiter page to purchase (G adjacent — wrong funnel step)"
+          ],
+          "info": "According to the base scenario, the conversion rate from unique RopeBiter page visitors to purchases should increase from 10% to 11%"
+        },
+        {
+          "item_id": "Q2_item_3",
+          "trigger": "Analyst asks about the unit price of RopeBiter",
+          "core_dimensional_concept": "RopeBiter unit selling price",
+          "release_conditions": {
+            "structural_position": [
+              "explicit question about how much RopeBiter costs or its price",
+              "revenue calculation step asking for unit price",
+              "hypothesis about RopeBiter pricing"
+            ],
+            "alternative_phrasings": [
+              "price per unit",
+              "selling price",
+              "ASP (average selling price)",
+              "how much does RopeBiter sell for"
+            ]
+          },
+          "disqualifying": [
+            "Analyst asks about PPP's overall revenue or revenue per product line rather than the specific unit price of RopeBiter (G adjacent — aggregate revenue vs unit price)",
+            "Analyst mentions pricing strategy broadly (e.g., premium pricing) without asking for the specific price point (F passing — strategy discussion without requesting the data)"
+          ],
+          "info": "The unit price for RopeBiter is $25"
+        }
+      ],
+      "appendix": {
+        "appendix_1": {
+          "title": "RopeBiter's monthly sales funnel at Amazon, 2021",
+          "release_rule": "Share upfront with analyst at the start of Q2",
+          "table": {
+            "number_of_unique_visitors_of_dog_toy_pages": "800k",
+            "conversion_rate_to_RopeBiter_page": "5%",
+            "number_of_unique_visitors_of_PPP_RopeBiter_page": "40k",
+            "conversion_rate_to_purchase": "10%",
+            "volume_of_RopeBiter_purchased_units": "4k"
+          }
+        }
+      },
+      "state_machine": {
+        "next_question": "Q3",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable quantitative answer (1st or 2nd attempt completed)",
+        "max_attempts": 2,
+        "scoring_on_transition": {
+          "attempt_1_correct": "Full score",
+          "attempt_2_correct": "0 score per core_principles",
+          "both_attempts_wrong": "0 score; interviewer provides correct answer before next question"
+        }
+      }
+    },
+    "Q3": {
+      "q_id": "Q3",
+      "type": "qualitative",
+      "question_text": "A quick benchmarking analysis revealed that PPP gets far fewer reviews than its peers at Amazon. What can PPP do in order to increase the number of reviews?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": "Q4",
+        "skip_logic": false,
+        "transition_condition": "Analyst provides a scoreable qualitative answer (minimum_expected met, or 2nd attempt completed)"
+      }
+    },
+    "Q4": {
+      "q_id": "Q4",
+      "type": "qualitative",
+      "question_text": "Some high-end pet supply brands aren't present at Amazon at all (e.g. The Foggy Dog, Kanine, Tuft & Paw) which seems like a thought through strategy. What downsides might Amazon presence have for PPP?",
+      "information_to_share_upfront": null,
+      "information_upon_request": null,
+      "state_machine": {
+        "next_question": null,
+        "skip_logic": false,
+        "transition_condition": "Case ends after Q4"
+      }
+    }
+  },
+  "structure_4_ground_truth": {
+    "Q1_ground_truth": {
+      "type": "framework",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_presence_at_amazon": {
+          "keypoints": [
+            "Definition of presence (e.g. strategic, financial)",
+            "PPP's revenue from Amazon (e.g. historical data and % of total)",
+            "Any recent changes to PPP's presence at Amazon"
+          ],
+          "subtotal": 3
+        },
+        "pillar_2_product": {
+          "keypoints": [
+            "Breadth (# listings) and depth (# SKUs) of PPP's offerings at Amazon",
+            "Product availability (e.g. % sold-out)",
+            "Latest additions to Amazon and innovation pace"
+          ],
+          "subtotal": 3
+        },
+        "pillar_3_customer_experience": {
+          "keypoints": [
+            "Product page design (e.g. clear overview, intuitive lay-out)",
+            "Customer journey (e.g. conversion rates at different steps)",
+            "Major pain points",
+            "Rankings/reviews"
+          ],
+          "subtotal": 4
+        },
+        "pillar_4_brand_and_marketing": {
+          "keypoints": [
+            "PPP's own page at Amazon",
+            "SEO (search engine optimization) at Amazon",
+            "Promotions/ads at Amazon",
+            "Community development (e.g. community-driven Q&As)"
+          ],
+          "subtotal": 4
+        }
+      },
+      "total_keypoints": 14,
+      "minimum_expected": "At least 3 of the 4 pillars identified with at least 1 keypoint each; clear framework structure",
+      "outstanding_threshold": "All 4 pillars covered with 3+ keypoints each; demonstrates understanding of Amazon-specific levers"
+    },
+    "Q2_ground_truth": {
+      "type": "quantitative",
+      "quantitative_part": {
+        "correct_final_answer": "$0.66M (casebook, using 6.2k rounded new volume) — also accept $0.648M or ~$0.65M (precise, using unrounded 6.16k new volume)",
+        "accepted_values": [
+          660000,
+          648000
+        ],
+        "tolerance_pct": 0.02,
+        "zero_tolerance": false,
+        "scoring_method": "Binary: correct number = full credit; incorrect = zero credit. Accept both $0.66M (casebook) and $0.648M/$0.65M (precise). Any other value = zero credit.",
+        "calculation_steps": {
+          "step_1_new_volume_sold": {
+            "formula": "800k × 7% × 11%",
+            "result": "6.16k (precise) ≈ 6.2k (casebook rounds to 6.2k)"
+          },
+          "step_2_current_annual_sales": {
+            "formula": "4k × $25 × 12 months",
+            "result": "$1.2M"
+          },
+          "step_3_new_annual_sales": {
+            "formula": "6.2k × $25 × 12 months (casebook) OR 6.16k × $25 × 12 months (precise)",
+            "result": "$1.86M (casebook) OR $1.848M (precise)"
+          },
+          "step_4_annual_sales_increase": {
+            "formula": "$1.86M - $1.2M (casebook) OR $1.848M - $1.2M (precise)",
+            "result": "$0.66M (casebook) OR $0.648M (precise)"
+          }
+        }
+      },
+      "qualitative_part": {
+        "scoring_note": "Qualitative portion of Q2 is scored as 100% total, split into two tiers. Within each tier, use 3-level scoring per",
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "tier_1_basic": {
+          "weight_of_Q2_qualitative_total": "50%",
+          "keypoints": [
+            "The expected annual revenue will increase by more than 50% to $1.86M"
+          ],
+          "note": "Expected from every candidate. Single point worth 50% of qualitative score."
+        },
+        "tier_2_advanced": {
+          "weight_of_Q2_qualitative_total": "50%",
+          "points_available": 3,
+          "weight_per_point": "16.7% of qualitative total",
+          "keypoints": [
+            "Double-digit conversion rate to purchase might be a bit aggressive. However, it might make sense as customers often come to Amazon specifically to make a purchase, and Amazon enjoys strong customers' trust which might boost the conversion rate",
+            "While expected 50% jump in sales is outstanding, it isn't reasonable to extrapolate this result to the overall PPP's business. RopeBiter is just ~2% of PPP's revenue ($1.2M/$50M) and given it's a best-seller, it might not be representative for other products",
+            "$25 per unit makes sense as PPP is a premium brand, so they target customers with low price sensitivity and high willingness to pay"
+          ],
+          "note": "Not expected from every candidate. Each advanced point adds 16.7% to qualitative score."
+        },
+        "minimum_expected": "Correct numerical answer + Tier 1 basic contextualization (covered)",
+        "outstanding_threshold": "Correct numerical answer + Tier 1 covered + at least 2 Tier 2 advanced comments covered"
+      }
+    },
+    "Q3_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_existing_buyers": {
+          "keypoints": [
+            "Use product inserts (a card in the packaging) to ask for a review",
+            "Ask for reviews through Amazon's review requests",
+            "Contact customers with poor reviews to address their problem (and hopefully they'll update their review)",
+            "Reach customers after customer service calls/emails to ask for product reviews"
+          ],
+          "subtotal": 4
+        },
+        "pillar_2_new_buyers": {
+          "marketing": {
+            "keypoints": [
+              "Invest in aggressive online marketing to attract more buyers",
+              "Encourage reviews through ads, offline events, newsletters, etc.",
+              "Create visually appealing packaging"
+            ],
+            "subtotal": 3
+          },
+          "pricing": {
+            "keypoints": [
+              "Offer limited-time steep discounts [great deals usually encourage reviews]"
+            ],
+            "subtotal": 1
+          },
+          "customer_experience": {
+            "keypoints": [
+              "Ensure quick lead times (e.g. join Amazon Fulfillment)",
+              "Offer 24/7 Customer Support Service",
+              "Launch 100% satisfaction guaranteed",
+              "Upgrade product images, include infographics, create compelling titles"
+            ],
+            "subtotal": 4
+          },
+          "keypoints": [
+            "Invest in aggressive online marketing to attract more buyers",
+            "Encourage reviews through ads, offline events, newsletters, etc.",
+            "Create visually appealing packaging",
+            "Offer limited-time steep discounts [great deals usually encourage reviews]",
+            "Ensure quick lead times (e.g. join Amazon Fulfillment)",
+            "Offer 24/7 Customer Support Service",
+            "Launch 100% satisfaction guaranteed",
+            "Upgrade product images, include infographics, create compelling titles"
+          ],
+          "subtotal": 8
+        },
+        "pillar_3_professional_reviewers": {
+          "keypoints": [
+            "Partner with influencers to review PPP's products",
+            "Contact top Amazon reviewers in dog toy category and ask for reviews"
+          ],
+          "subtotal": 2
+        }
+      },
+      "total_keypoints": 14,
+      "minimum_expected": "At least 2 of the 3 pillars covered with at least 2 keypoints each; demonstrates understanding of different reviewer segments",
+      "outstanding_threshold": "All 3 pillars covered with multiple actionable keypoints each"
+    },
+    "Q4_ground_truth": {
+      "type": "qualitative",
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "pillars": {
+        "pillar_1_financial": {
+          "revenue": {
+            "keypoints": [
+              "Cannibalization of sales from other channels (both offline and online)",
+              "Potential Amazon's restrictions on pricing"
+            ],
+            "subtotal": 2
+          },
+          "costs": {
+            "keypoints": [
+              "High sales commissions charged by Amazon",
+              "Additional opex to meet Amazon's requirements on delivery time and packaging"
+            ],
+            "subtotal": 2
+          },
+          "keypoints": [
+            "Cannibalization of sales from other channels (both offline and online)",
+            "Potential Amazon's restrictions on pricing",
+            "High sales commissions charged by Amazon",
+            "Additional opex to meet Amazon's requirements on delivery time and packaging"
+          ],
+          "subtotal": 4
+        },
+        "pillar_2_marketing": {
+          "brand": {
+            "keypoints": [
+              "Inability to tell a brand's story",
+              "Commoditization of PPP's premium brand (as customers compare products mostly based on price)"
+            ],
+            "subtotal": 2
+          },
+          "keypoints": [
+            "Inability to tell a brand's story",
+            "Commoditization of PPP's premium brand (as customers compare products mostly based on price)",
+            "No access to customer's data (thus, no newsletters, personalized offerings, customer segmentation)",
+            "Loss of control on customer experience"
+          ],
+          "subtotal": 4
+        },
+        "pillar_3_product": {
+          "product_flexibility": {
+            "keypoints": [
+              "Inability to personalize/ customize dog toys",
+              "Limited information for product innovation given no access to customers and their feedback"
+            ],
+            "subtotal": 2
+          },
+          "unethical_competition": {
+            "keypoints": [
+              "Elevated risks of rise in counterfeit and copycats",
+              "Risks of Amazon launching their own dog toys based on PPP's sales data"
+            ],
+            "subtotal": 2
+          },
+          "keypoints": [
+            "Inability to personalize/ customize dog toys",
+            "Limited information for product innovation given no access to customers and their feedback",
+            "Elevated risks of rise in counterfeit and copycats",
+            "Risks of Amazon launching their own dog toys based on PPP's sales data"
+          ],
+          "subtotal": 4
+        }
+      },
+      "total_keypoints": 12,
+      "minimum_expected": "At least 2 of the 3 pillars identified with at least 2 keypoints each; demonstrates understanding of strategic trade-offs of Amazon presence",
+      "outstanding_threshold": "All 3 pillars covered with multiple specific keypoints each; demonstrates nuanced understanding of brand, financial, and competitive risks"
+    }
+  },
+  "state_machine_global": {
+    "case_type": "interviewer_driven",
+    "skip_logic": false,
+    "mandatory_sequence": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4"
+    ],
+    "rules": [
+      "Q1 cannot be skipped under any circumstances",
+      "Questions must proceed in linear order Q1 → Q2 → Q3 → Q4",
+      "A question may not be advanced until the current question receives a scoreable answer (1st or 2nd attempt)",
+      "If analyst pre-covers a later question's keypoints in an earlier answer, record as pre-coverage but still ask the later question in sequence",
+      "No question may be skipped even if pre-covered"
+    ]
+  },
+  "scoring_summary": {
+    "Q1": {
+      "type": "framework",
+      "total_keypoints": 14,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q2": {
+      "type": "quantitative",
+      "part_1_quantitative": {
+        "correct_answer": "$0.66M (casebook) — also accept $0.648M (precise)",
+        "zero_tolerance": true,
+        "scoring": "Binary: Full credit if correct; zero credit if incorrect. Accept both $0.66M and $0.648M/$0.65M."
+      },
+      "part_2_qualitative": {
+        "total_keypoints": 4,
+        "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+        "human_review_priority": "false-partial > false-not-covered > covered",
+        "tier_1_basic": {
+          "keypoints": 1,
+          "weight": "50% of qualitative score"
+        },
+        "tier_2_advanced": {
+          "keypoints": 3,
+          "weight_per_point": "16.7% of qualitative score",
+          "weight_total": "50% of qualitative score"
+        }
+      }
+    },
+    "Q3": {
+      "type": "qualitative",
+      "total_keypoints": 14,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    },
+    "Q4": {
+      "type": "qualitative",
+      "total_keypoints": 12,
+      "scoring_method": "3-level: covered (1.0) / false-partial (0.5) / false-not-covered (0.0); evidence-based required for all 3 verdicts",
+      "human_review_priority": "false-partial > false-not-covered > covered"
+    }
+  }
+}
